@@ -1,0 +1,111 @@
+
+10_GLOSSARY.md
+Quick Reference Terminology
+
+---
+title: "Glossary"
+document_number: "10"
+project: "Keeping Time"
+version: "1.0"
+last_updated: "2026-01-21"
+purpose: "Alphabetical reference of all key terms in the Soundscape universe."
+---
+Glossary
+An alphabetical list of key terms, concepts, and phenomena within the Soundscape universe.
+
+A
+Alignment Conductor
+A user class specializing in the Harmony domain. They link multiple users into resonant chains, amplifying cooperation and creating mass effects. (See: 03_CHARACTERS_REGISTRY.md)
+Amplitude (AMP)
+One of the Five Core Variables. Defines the strength, volume, or power output of a resonant effect. High AMP increases effect size but raises costs non-linearly. It is the brute-force variable and a trap for the undisciplined.
+Architect, Structural
+A user class specializing in the Melody domain. They design and create complex, persistent resonance patterns, from constructs to behavior-enforcing architecture.
+B
+Bio-Plasma
+A field of ionized particles surrounding every living being, encoding the complete information pattern of the self. It is the "soul made manifest," the medium through which users interact with the Resonance Matrix.
+Black Sun
+The high-frequency plasma singularity at the center of the toroidal world of Ouroboros. It is the source of all potential and the final destination for supremely Coherent souls. It is not a star of light, but of pure resonance.
+Burnout
+One of the Three Universal Failure Modes. Caused by sustained overclocking of the Bio-Plasma field. Results in the permanent, irreversible loss of Frequency Range (FRQ), scarring the user's soul and limiting the "notes" they can play.
+C
+Calibration
+The conscious, constant act of maintaining one's Bio-Plasma integrity. A daily maintenance routine required to prevent Resonance Drift. It is not training; it is tuning. (See: 08_LORE_AND_CULTURE.md)
+Calibrator
+A user class specializing in stabilization. They project stable reference frequencies, allowing others to synchronize and restore their own Coherence. Essential for group integrity.
+Circle of Fifths Order
+The political structure of Ouroboros's major factions, based on the geometric and acoustic relationships of the Circle of Fifths. It defines natural alliances and ideological conflicts. (See: 02_FACTIONS_AND_POLITICS.md)
+Coherence (COH)
+A core attribute of Bio-Plasma, governing the stability, precision, and complexity of a user's signal. High COH allows for intricate work and resistance to Noise. It is a skill that manifests in different modes (Stable, Elastic, Rigid, Volatile).
+D
+Da'ath (pron. DAH-at)
+A hidden, non-numbered Sephira on the Path of Ascension, representing The Abyss. Passing this gate involves touching the source code of reality, a point of no return.
+Damping
+One of the Five Core Variables. Defines the limits and resistance that constrain an effect. Sourced from biology, materials, and laws, Damping prevents catastrophic feedback loops.
+Dead Zone
+An area where ambient resonance has been "scooped out" or cancelled, leaving it acoustically "dead." All resonant abilities are severely weakened, favoring conventional combat. The Glassened Plains is the largest known Dead Zone.
+Deck
+An external, often handheld, modulator that defines a user's combat philosophy by shaping the signal from their NAI. Types include Precision, Amplifier, and Hybrid. (See: 07_TECHNOLOGY_AND_GEAR.md)
+Desync
+One of the Three Universal Failure Modes. Caused by internal contradiction (projecting a frequency that conflicts with one's true state). Causes abilities to misfire, invert, or target the user.
+Disruption Specialist
+A user class specializing in the Noise domain. They break patterns, cancel effects, and introduce entropy into systems. Inherently unstable and dangerous to themselves and others.
+F
+Feedback
+One of the Three Universal Failure Modes. Caused by external overload, when a user tries to channel a frequency more powerful than their system can handle. Results in neural burn and system-wide damage as the user's own energy turns against them.
+Frequency (FRQ)
+One of the Five Core Variables. Defines *what* changes and the fineness of an effect. High frequencies allow for precise, intricate work, while low frequencies produce blunt, powerful force.
+Frequency Ghosting
+The result of imprinting a dying, high-Coherence Bio-Plasma signature onto a new host. The result is an unstable, partial copy—not a true resurrection—that suffers from constant Desync and phantom memories.
+H
+Harmony
+One of the Four Domains of Interaction. The function of Coherence Control, used for stabilizing, healing, and synchronizing groups. Harmony wins societies, not duels.
+High-Fidelity Zone
+An area with pristine, orderly ambient resonance, often due to engineered architecture (like Unison Hall). Boosts Melody and Harmony abilities.
+K
+Kether (pron. KET-her)
+The highest Sephira on the Path of Ascension, representing The Crown. Achieving Kether grants temporary "root access" to reality's source code, allowing a single, major edit to local physics at the cost of identity and memory.
+L
+Low-Fi Zone
+An area with chaotic, cacophonous ambient resonance, like an industrial ruin or crowded sprawl. Boosts Noise and Rhythm abilities.
+M
+Melody
+One of the Four Domains of Interaction. The function of Structural Control, used for altering matter and creating persistent constructs. Melody wins terrain, not people.
+N
+Neural-Acoustic Interface (NAI)
+The core cybernetic graft that translates a user's Bio-Plasma fluctuations into executable code for their gear. The bridge between intent and effect. (See: 07_TECHNOLOGY_AND_GEAR.md)
+Noise
+One of the Four Domains of Interaction. The function of Entropy Control, used for destabilizing systems, breaking structures, and corrupting information. Noise wins chaos, not longevity.
+O
+Octave Escalation
+The law stating that power scales in discrete, non-linear steps (Octaves). Each Octave doubles an ability's scope but quadruples its cost and halves the tolerance for error.
+Ouroboros
+The toroidal (donut-shaped) world where the story takes place, orbiting the central Black Sun.
+P
+Phase
+One of the Five Core Variables. Defines *when* an effect occurs relative to other events. Perfect phase alignment (timing) is the most decisive variable at high levels of mastery.
+Phase Bleed
+An advanced failure mode; a chronic state of Desync that erodes personal identity as the boundary between the user and the world thins.
+R
+Resonance
+The fundamental force of the universe, governing how change occurs. The "physics of the Soundscape." Power is the skill of manipulating resonance.
+Resonance Lock
+An advanced failure mode; the terminal state of the Rigid Coherence mode, where a user becomes locked into a single frequency, losing all ability to adapt.
+Rhythm
+One of the Four Domains of Interaction. The function of Temporal Control, used for dictating tempo, interrupting actions, and creating openings. Rhythm wins moments, not wars.
+Rhythm Operator
+A user class specializing in the Rhythm domain. They control the pace and timing of any engagement.
+S
+Sephirotic Path (pron. sef-ee-RO-tic)
+The formal path of progression, mapped by the Tree of Life. Ascension involves unlocking "permissions" at each Sephira (Gate) by meeting specific conditions. (See: 08_LORE_AND_CULTURE.md)
+Silence, The
+Both a physical phenomenon (the absence of resonance in Dead Zones) and a death cult ideology. The Silence faction seeks to "heal" the universe by returning it to a state of perfect, empty quiet.
+Soundscape, The
+The underlying physics of reality, governed by the laws of resonance. The "World Operating System."
+Sync
+The Shounen-translation term for a fighter's Coherence and phase-lock. Represents how "in tune" they are. Replaces HP/Stamina in combat descriptions.
+T
+Topology
+One of the Five Core Variables. Defines *where* and in what pattern an effect propagates through space (e.g., line, field, network).
+U
+Unison Court
+The C-Order faction at the center of the Circle of Fifths. The Calibration Authority and primary governing body of Ouroboros, dedicated to stability through order. (See: 02_FACTIONS_AND_POLITICS.md)

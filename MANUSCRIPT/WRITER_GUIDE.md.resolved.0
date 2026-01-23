@@ -1,0 +1,87 @@
+# WRITER'S GUIDE: THE AR MANUSCRIPT
+
+> **Tone**: "Hard System" Magic meets "Sensory Overload" Cyberpunk.
+> **Audience Accessibility**: Neurodivergent-Friendly (Explicit Systems, Validated Stimming).
+> **Format Aim**: Manga/Anime adaptation ready.
+
+---
+
+## 1. THE SCORE: FORMATTING RULES
+The AR Interface (The Score) is a character. It speaks in **Data**.
+
+### Text Conventions
+-   **System Messages**: Bold, All-Caps, Monospace (if possible).
+    -   **> SYSTEM: ONLINE**
+    -   **> ALERT: IMPEDANCE_MISMATCH**
+-   **Tags**: Use braces for variable data.
+    -   **> TARGET: {NAME} [{CLASS}]**
+    -   **> INTENT: {EMOTION} [CONFIDENCE: {XX}%]**
+
+### Usage Rules
+1.  **Never narrate what you can tag.**
+    -   *Bad*: "He looked angry."
+    -   *Good*: **> MICRO-EXPRESSION: RAGE [SUPPRESSED]**
+2.  **Use Error Codes for internal conflict.**
+    -   When Taro is confused: **> LOGIC_ERROR // CONTRADICTION_DETECTED**
+3.  **Glitch Text for horror.**
+    -   When facing The Silence: **> SI_GNAL L__OSS // N_ULL**
+
+---
+
+## 2. NEURO-ACCESSIBILITY GUIDELINES
+Make the internal experience external and validated.
+
+### 1. Social Prosthetics
+-   Autistic readers often struggle to read subtext. **The Score does it for them.**
+-   Explicitly label Sarcasm, Deception, and Threat.
+-   This validates the need for "Direct Communication" by making the System the ultimate direct communicator.
+
+### 2. Gamified Sensory Processing
+-   **Stimming = Calibration**. Describe tapping/rocking as "Syncing internal clock."
+-   **Masking = Damping**. Describe the fatigue of social interaction as "Thermal Load" or "CPU Drain."
+-   **Overload = Bandwidth**. Panic attacks are network crashes. Visuals pixelate, audio buffers.
+
+### 3. The "Square Wave" Ideal
+-   Hana Chord is the "Autistic Hero." She isn't "robotic" (negative); she is "High Fidelity" (positive).
+-   Her precision saves the day. Her literalism cuts through Voss's manipulation.
+
+---
+
+## 3. MANGA/ANIME VISUALIZATION
+Write prose that translates directly to panels.
+
+### Panel Direction (SFX)
+-   **Sound Effects**: Write sounds as physical impacts.
+    -   *THOOM.* (Bass Drop)
+    -   *ZZZTT.* (High Freq Arc)
+    -   *PING.* (Notification)
+-   **Camera Angles**:
+    -   *HUD View*: First-person perspective with UI overlay.
+    -   *Profile Scan*: Side view with "Wireframe" schematics of gear.
+    -   *Speed Lines*: Use "Motion Blur" descriptions for fast action.
+
+### Visual Metaphors
+-   **The Glitch**: Use digital corruption metaphors for injury. (Pixelation instead of blood).
+-   **The Aura**: Bio-plasma must look like **Waveforms** (Jagged, Smooth, Square), not generic "DBZ Aura."
+
+---
+
+## 4. CHAPTER TEMPLATE
+Every chapter must start with a **System Header**:
+
+```markdown
+**ZONE: {LOCATION_NAME}**
+**FIDELITY: {HI_FI / LO_FI}**
+**STATUS: {ACTIVE / CONNECTED / DANGER}**
+```
+
+Every chapter must end with a **Track Complete** signal:
+
+```markdown
+**> TRACK: {CHAPTER_NUM}_COMPLETE**
+**> SAVING...**
+```
+
+---
+
+*"We don't just tell the story. We render it."*

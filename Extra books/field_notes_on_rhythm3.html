@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" data-cid="S6kAjb"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="7nSMEj"/>
+<title data-cid="jWTYcl">The Soundscape Archives</title>
+<style data-cid="uHfusj">
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Cormorant+Garamond:wght@400;700&family=Inter:wght@300;400;700&display=swap');
+
+        body {
+            background-color: #1a1a1a;
+            color: #cccccc;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        article {
+            border: 1px solid #444;
+            margin-bottom: 4rem;
+            padding: 2rem 3rem;
+            background-color: #252525;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            color: #e0e0e0;
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.5em; }
+        h4 { font-size: 1.2em; }
+
+        p { margin-bottom: 1em; }
+        hr { border: 0; border-top: 1px solid #555; margin: 2rem 0; }
+
+        /* Book 1: The Unfinished Score (Academic) */
+        #book-unfinished-score {
+            background-color: #f4f1ea;
+            color: #3d3d3d;
+            font-family: 'Cormorant Garamond', serif;
+            border-left: 5px solid #8b0000;
+        }
+        #book-unfinished-score h1, #book-unfinished-score h2, #book-unfinished-score h3 {
+            color: #1a1a1a;
+            border-bottom: 1px solid #c9c0b1;
+            padding-bottom: 0.3em;
+        }
+        #book-unfinished-score .case-study-meta {
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+        }
+
+        /* Book 2: The Silent Intervals (Redacted Manual) */
+        #book-silent-intervals {
+            background-color: #111;
+            color: #a0a0a0;
+            font-family: 'Roboto Mono', monospace;
+            border: 2px solid #ff4136;
+            position: relative;
+        }
+        #book-silent-intervals::before {
+            content: 'CLASSIFIED // EYES ONLY // ARCHIVE COPY';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #ff4136;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        #book-silent-intervals h1 {
+            color: #ff4136;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        #book-silent-intervals h2 {
+            color: #f0e68c;
+            font-size: 1.4em;
+        }
+        .redacted {
+            background-color: #000;
+            color: #000;
+            user-select: none;
+            padding: 0 0.2em;
+            display: inline-block;
+        }
+        .margin-note {
+            float: right;
+            width: 200px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #2a2a00;
+            border: 1px dashed #f0e68c;
+            font-family: 'Special Elite', cursive;
+            font-size: 0.9em;
+            color: #f0e68c;
+            transform: rotate(1deg);
+        }
+        .margin-note::before {
+            content: 'NOTE: ';
+            font-weight: bold;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Book 3: Field Notes on Rhythm (Pocket Guide) */
+        #book-rhythm-guide {
+            background-color: #333;
+            color: #ddd;
+            font-family: 'Special Elite', cursive;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            padding: 1.5rem;
+            border: 1px solid #555;
+        }
+        #book-rhythm-guide h1 {
+            font-size: 1.8em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #book-rhythm-guide h2 {
+            font-size: 1.3em;
+            color: #aaffaa;
+            border-top: 1px solid #aaffaa;
+            padding-top: 0.5em;
+        }
+        #book-rhythm-guide p {
+            line-height: 1.8;
+        }
+        #book-rhythm-guide strong {
+            color: #fff;
+        }
+
+        /* Book 4: The Architect's Index (Technical Compendium) */
+        #book-architects-index {
+            background-color: #e9ecef;
+            color: #212529;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+        }
+        #book-architects-index h1, #book-architects-index h2 {
+            color: #003366;
+            font-weight: 400;
+        }
+        #book-architects-index .entry-header {
+            border-bottom: 2px solid #003366;
+            margin-bottom: 1em;
+        }
+        #book-architects-index .tech-spec {
+            background-color: #d8dfe4;
+            border-left: 3px solid #005a9c;
+            padding: 1em;
+            margin: 1em 0;
+            font-size: 0.9em;
+        }
+        #book-architects-index .tech-spec strong {
+            display: inline-block;
+            min-width: 150px;
+        }
+        #book-architects-index figure {
+            margin: 2em 0;
+            padding: 1em;
+            border: 1px solid #adb5bd;
+            background-color: #f8f9fa;
+        }
+        #book-architects-index figcaption {
+            font-style: italic;
+            color: #495057;
+            font-size: 0.9em;
+            margin-top: 0.5em;
+            text-align: center;
+        }
+        #book-architects-index .illustration-desc {
+            display: block;
+            padding: 2em;
+            border: 1px dashed #6c757d;
+            text-align: center;
+            color: #6c757d;
+        }
+
+        /* Book 5: The Circle and the Fracture (Political Essays) */
+        #book-faction-essays {
+            background-color: #2d2d2d;
+            font-family: 'Libre Baskerville', serif;
+        }
+        #book-faction-essays .essay {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            border: 1px solid #444;
+        }
+        #book-faction-essays .essay-title {
+            font-size: 1.7em;
+            font-weight: 700;
+            margin-bottom: 0.2em;
+        }
+        #book-faction-essays .essay-author {
+            font-style: italic;
+            color: #aaa;
+            margin-bottom: 1.5em;
+            border-bottom: 1px solid #555;
+            padding-bottom: 1em;
+        }
+        #book-faction-essays .unison-court { border-left: 4px solid #4682B4; }
+        #book-faction-essays .vanguard-spiral { border-left: 4px solid #FF8C00; }
+        #book-faction-essays .artificer-axis { border-left: 4px solid #9932CC; }
+        #book-faction-essays .choral-states { border-left: 4px solid #3CB371; }
+        #book-faction-essays .flux-syndicate { border-left: 4px solid #DC143C; }
+        #book-faction-essays blockquote {
+            border-left: 3px solid #777;
+            padding-left: 1em;
+            margin-left: 1em;
+            font-style: italic;
+            color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+<main class="collection-container">
+<article id="book-rhythm-guide" data-cid="Xb0D5t">
+<h1 id="section-3" data-cid="AoWLJD">Field Notes on Rhythm</h1>
+<h2 id="section-1" data-cid="Jxb1Fn">A Fighter’s Pocket Guide, by &#34;Old Man&#34; Kaito</h2>
+<p data-cid="IbN612">Listen up, kid. You&#39;ve passed your first Gate, you can feel the beat of the world, and you think you&#39;re hot stuff. You&#39;re not. You&#39;re a target. You&#39;re loud, you&#39;re clumsy, and you&#39;re predictable. This little book is what I wish someone had shoved in my face before I got my teeth kicked in for the first time. Pay attention. It might keep you alive.</p>
+<h2 id="section-2" data-cid="3bzT1Z">The First Beat is Your Breath</h2>
+<p data-cid="LdE5oE">Forget all the fancy footwork and high-amplitude punches for a second. Rhythm isn&#39;t about what you do, it&#39;s about <strong data-cid="2ALv7s">when</strong> you do it. And it all starts with your breath. Your opponent&#39;s too. Listen. Before they move, they breathe. Inhale is the wind-up, exhale is the strike. That&#39;s the first beat of their song. Learn to hear it, feel it in the air. If you can move on their inhale, you&#39;re already a step ahead.</p>
+<h2 id="section-3" data-cid="E9kjLp">Don&#39;t Chase the Echo</h2>
+<p data-cid="pIjjmn">Rookie mistake number one. You get into it with a Melody user. They throw a fast, flashy combo at you. You dodge, and then you charge right in where they just were. Trap. A good Melody fighter layers their frequencies. The attack you see is just the overture. The real damage is in the echo, the resonant wave they left hanging in the air. You charge into it, you get tangled, and then they pick you apart. <strong data-cid="SaBtER">Always</strong> let the air settle. Give it a beat. If it feels wrong, it is wrong.</p>
+<h2 id="section-4" data-cid="seTa4J">Break Their Tempo</h2>
+<p data-cid="lbSaDP">Everyone&#39;;s got a rhythm. Fast, slow, steady, erratic. Your job is to find it and break it. You&#39;re fighting a big bruiser who relies on heavy, predictable slams? Don&#39;t try to match his strength. Get inside his beat. Use quick, stuttering steps. Jab on the off-beat. Make him reset his stance. You&#39;ll drive him crazy. He&#39;ll get sloppy. That&#39;s when you hit him for real.</p>
+<p data-cid="E8B4Pg">Fighting a Harmony user? This is tough. They want to pull you into their rhythm, make you calm, slow you down. It feels nice. It feels like you&#39;;re moving through water. That&#39;s how you drown. <strong data-cid="DKPWgy">You have to be the jagged rock in their peaceful stream.</strong> Be unpredictable. Yell. Stomp. Do anything to introduce your own chaotic beat into their perfect little circle. Dissonance is your best weapon here.</p>
+<h2 id="section-5" data-cid="bnta0k">Amplitude is a Trap</h2>
+<p data-cid="VGzKB5">You&#39;;ve learned how to pump up the Amplitude of your Bio-Plasma field. You can hit like a freight train. Great. Every rookie does this. They get into a jam and they just pour on the power, thinking brute force is the answer. That&#39;s how you Burnout. Fast.</p>
+<p data-cid="JID9u8">Power is nothing without control. That&#39;s <strong data-cid="ozUxzk">Coherence</strong>. A perfectly coherent, low-amplitude strike that hits a resonant weak point is a hundred times better than a high-amplitude haymaker that just splashes off their field. Focus on the tip of the spear, not the size of the explosion. A clean, sharp note cuts deeper than a loud, muddy one.</p>
+<h2 id="section-6" data-cid="DMPZn7">When to Fold &#39;Em</h2>
+<p data-cid="VoKwGG">This is the most important lesson, and the one rookies never want to learn. There&#39;s no shame in running. Dead men don&#39;t get rematches.</p>
+<p data-cid="1Q0hIN">So when do you bail?
+            </p><ul data-cid="Ch7grM">
+<li data-cid="YBQiaX"><strong data-cid="pImtN9">You can&#39;;t find their rhythm.</strong> You&#39;ve been fighting for a minute and you still have no idea what their pattern is. They&#39;re either a master, or they&#39;re a Noise user. Either way, you&#39;re out of your depth. Get out.</li>
+<li data-cid="VhtuU4"><strong data-cid="1G31Jf">The environment starts singing.</strong> You&#39;re fighting a Harmony or Melody user and you notice the walls are humming, the ground is vibrating in time with them. They&#39;ve established environmental resonance. You&#39;re not fighting them anymore; you&#39;re fighting the whole damn room. You won&#39;t win. Leave.</li>
+<li data-cid="83aHG3"><strong data-cid="bcjRRr">You feel the Feedback loop start.</strong> You throw a punch, they block, the energy comes back at you, and you feel that jolt of your own attack hitting you. That&#39;s Feedback. If it happens once, be careful. If it happens twice, they&#39;ve got your number. They&#39;re using your own rhythm against you. The next one will put you on your back. Run.</li>
+</ul>
+<p data-cid="ntmaDg"></p>
+<p data-cid="YBI4E4">Living to fight another day is the oldest rhythm of all. Don&#39;t you forget it.</p>
+</article>
+</main>
+</body>
+</html>

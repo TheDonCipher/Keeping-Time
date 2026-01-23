@@ -1,0 +1,102 @@
+The Soundscape World Repository: Ouroboros
+07_TECHNOLOGY_AND_GEAR.md
+Equipment and Engineered Resonance
+
+---
+title: "Technology and Gear"
+document_number: "07"
+project: "Keeping Time"
+version: "1.0"
+last_updated: "2026-01-21"
+purpose: "Catalog of resonance-based technology, gear, and materials."
+---
+Technology and Gear
+Gear does not grant power. It modulates the user's risk curve, externalizing their philosophy into hardware.
+
+In the world of Ouroboros, technology is not a separate discipline from resonance manipulation; it is an extension of it. Every piece of equipment, from a personal Deck to a city-spanning Spire, is an instrument designed to filter, amplify, or shape resonance. The most advanced technology is not about creating energy from nothing, but about providing a clearer, more stable, or more powerful interface with the Soundscape.
+
+1. Core Technology
+These are the foundational pieces of technology that enable conscious interaction with the Resonance Matrix.
+
+1.1. Neural-Acoustic Interface (NAI) & "The Score"
+The NAI is the fundamental cybernetic graft that bridges the gap between a user's biological consciousness and the executable physics of the Soundscape. It doesn't just translate Bio-Plasma; it **Visualizes** it.
+
+CONSCIOUSNESS OVERLAY: "THE SCORE"
+Active users perceive reality through an immersive AR layer called "The Score." This interface translates invisible frequency data into visual metaphors, turning the world into a readable UI.
+
+-   **The Stave**: The overlay grid that defines the local "Key Signature" (environmental physics).
+-   **Note-Heads**: People and objects serve as distinct signal sources.
+-   **Dynamics Overlay**: Volume/Amplitude is represented by sizing, color intensity, and screen shake.
+-   **Glitch/Artifacts**: High-interference zones cause visual tearing, pixelation, and frame-rate drops.
+
+**Function**: Translates Bio-Plasma intent into executable code and renders the Soundscape as a navigable UI.
+**Form**: Biomechanical implant (spine/temple) paired with retinal projectors.
+**Boot Sequence (The Zap)**: Activating an NAI is violent. It forces the brain to sync with the device's clock speed. This "Zap" is a moment of sensory overload—white light, high-pitch feedback, dissociation—before The Score renders.
+**Risk**: "Jacked" (Remote Hacking) or "Blue-Screen" (Sensory Crash).
+
+1.2. Calibration Bands
+Issued by the Unison Court. These are **Limiters**.
+
+**Function**: They act as "Sensory Goggles," dimming the input intensity of The Score to prevent user overwhelm.
+**Mechanic**:
+-   **Active Damping**: Keeps the user's "Internal Volume" low (Socially Acceptable).
+-   **Heat Sink**: They physically heat up as they absorb excess emotion/resonance.
+-   **Breakable**: In emergency high-output scenarios, bands will overheat and slag (break), signaling "Unmasking."
+2. Vibe-Gear: The Instruments of Combat
+Vibe-Gear refers to the external modulators and interfaces that a user employs to shape their resonance in active situations. The choice of gear is a deep philosophical commitment to a particular style of interaction with the Soundscape.
+
+2.1. Decks (Resonance Modulators)
+Decks are the primary instruments of a user, handheld or worn units that process the raw signal from the NAI and shape it according to the user's will and the Deck's design philosophy.
+
+Deck Type	Philosophy	Advantage	Disadvantage	Typical User
+Precision Deck	"I will outlast you."	Significantly reduces risk of Desync and Feedback. Enhances fine Frequency control.	Hard-caps maximum Amplitude (AMP). Limits burst power.	Calibrators, Structural Architects, veterans.
+Amplifier Deck	"I will end this, no matter the cost."	Doubles or triples potential AMP output for devastating power.	Multiplies Burnout rate. Offers zero protection from Feedback. High risk of self-damage.	Rhythm Operators, Disruption Specialists, martyrs.
+Hybrid Deck	"I will flow around you."	Allows on-the-fly switching between Coherence Modes (e.g., Stable to Volatile).	Each mode-switch introduces a cumulative chance of a random, catastrophic Desync.	Alignment Conductors, spies, gamblers.
+2.2. Jacks (Environmental Interfaces)
+Jacks are robust, modular connection tools that allow a user to interface their NAI directly with the ambient resonance of a location, structure, or large system. Using a Jack is an attempt to "play" the environment itself as an instrument.
+
+Function: Read the resonant history of a place, influence the mood of a crowd by tapping into civic structures, or directly control resonance-enabled infrastructure.
+Risk: If the user's Coherence is insufficient to dominate the target's frequency (e.g., trying to "hack" a military base's resonant shield), the Jack will channel overwhelming Feedback directly into the user's NAI, causing massive neural damage.
+3. Black Market & Forbidden Technology
+Where the Unison Court imposes limits, the black market provides opportunities—at a steep price. This technology is illegal, unstable, and violates the fundamental laws of resonant conservation and safety.
+
+3.1. The Quiet Knife
+The signature weapon of The Silence cult, a Quiet Knife is not a blade that cuts flesh, but a device that severs resonance. It is a handheld, single-target Resonance Sink.
+
+Effect: Projects a focused, localized Dead Zone around a target for 5-10 seconds. Within this field, the target is completely cut off from the Resonance Matrix. All abilities fail, passive enhancements cease, and their Bio-Plasma field is rendered inert. They become terrifyingly mundane, vulnerable to a simple conventional attack.
+Cost: The phase-inverted crystal at its core is highly unstable. Each use risks a "leak,"; creating a miniature Dead Zone around the user's own body, causing permanent Burnout and cellular necrosis. It is a weapon that kills its wielder slowly.
+3.2. Phase Gloves
+A rumored piece of black market tech from the Tempo Wars, Phase Gloves are believed to allow for micro-manipulation of personal time. They are the ultimate tool for a Rhythm Operator, and utterly illegal.
+
+Effect: By creating a localized field of extreme Phase manipulation, the user can "borrow" or "lend" fractions of a second from their immediate future or past. This allows for impossible feats of speed, dodging attacks that have already landed, or striking before an opponent has even begun to move.
+Cost: This is a direct violation of temporal causality. The ";Reverb Debt" incurred is immense. Users suffer from chronic Desync, temporal stutters, and "Phase Bleed," where moments from their past and future intrude on their present. They become unstuck in time, eventually dissolving into a stream of incoherent moments.
+3.3. Echo-Jars
+A ghoulish technology developed by the E♭ Lament Orders and perfected in the black market. Echo-Jars are phase-shifting crystal containers designed to capture the "Frequency Ghost" of a dying individual.
+
+Effect: If activated at the moment of a high-Coherence individual's death, the jar can capture a resonant snapshot of their Bio-Plasma signature. This "echo" can then be temporarily imprinted onto a construct or a willing (or unwilling) host, creating a "Frequency Ghost."
+Cost: The captured echo is an unstable, partial copy, plagued by phantom memories and constant Desync. It degrades rapidly, usually dissipating into noise within weeks. For the user, trafficking in souls leaves a permanent, dissonant stain on their own Bio-Plasma, making true Coherence forever unattainable.
+4. Engineered Resonance: Materials & Architecture
+No material amplifies all frequencies equally. Every choice of material is a tactical and philosophical commitment.
+
+The physical world is a set of frequency filters. Mastery of the Soundscape includes understanding how to use the world itself as an instrument.
+
+4.1. Material Science
+There are no "magic metals," only engineering tradeoffs. The properties of a material dictate how it interacts with resonance.
+
+Resonant Alloys: Metals forged under specific resonant conditions. They amplify certain frequencies with high fidelity but are often brittle and prone to shattering if struck with a dissonant frequency. Used in high-performance Decks and weaponized tuning forks.
+Damping Fabrics: Woven materials with chaotic internal microstructures that absorb and dissipate resonant energy. Used for stealth gear and protective clothing, but they also limit the user's own ability to project resonance.
+Phase-Shifting Crystals: Unstable crystalline lattices that can store and release frequencies. They are the core of Echo-Jars and Phase Gloves. They can hold a resonant charge but degrade with each cycle, making them dangerously unpredictable.
+4.2. Architecture as Instrument
+In Ouroboros, architecture is acoustic engineering on a massive scale. Spaces are designed to be played.
+
+The Unison Spire: The ultimate example of Melody for social control. A city-scale instrument broadcasting a stable C4 frequency, it purifies ambient resonance into a High-Fidelity Zone. This promotes Coherence and order but actively dampens creativity and strong emotion, creating a "beautiful cage."
+Engineered Spaces: Tunnels and corridors are built to create predictable echo patterns, giving an advantage to Rhythm Operators. Cathedrals and domes use reverberation to amplify the effects of Harmony users. The entire city is a battlefield of acoustic design.
+FOR AI AGENTS: Generating Technology
+When creating new technology for the Soundscape, adhere to the following rules:
+
+No Free Lunch: Every piece of gear must have a clear tradeoff based on the core mechanics (e.g., boosts AMP, increases Burnout).
+Philosophy in Hardware: The design of a device should reflect a specific philosophy of resonance use (e.g., control vs. power, stability vs. adaptability).
+Grounded in Physics: Explain effects using the Five Core Variables (Frequency, Phase, Amplitude, Topology, Damping). A ";teleport" is a rapid Topology shift. "Invisibility" is Phase-slipping or Damping light-interactive frequencies.
+Cost is King: Illegal or powerful tech must have severe, world-consistent consequences (e.g., Desync, Burnout, Phase Bleed, Resonance Drift).
+08_LORE_AND_CULTURE.md
+Society, History, and Worldbuilding
