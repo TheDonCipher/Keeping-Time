@@ -67,6 +67,13 @@ The user requested "Reduced Frequency Talk" but "Manual Style."
     -   **Biological overlay**: Seeing organs/nervous systems as schematic diagrams.
 -   **Sensation**: Cold, Invasive, "Dirty" (seeing too much information).
 
+## 6.1 LORE EXPANSION: RESONANCE DYSPHORIA (THE WIREFRAME)
+**Concept**: Some individuals have an "Inner Resonance" (True Self) that conflicts with their "Assigned Resonance" (System-enforced Hull/Appearance).
+-   **The Glitch**: The System tries to "Error Correct" them into their assigned shape.
+-   **The Wireframe**: When "Masking" fails (or when viewed by Dissonance Vision), the texture map glitches, revealing the raw wireframe of the "True Self" pushing against the mesh.
+-   **The Illegal Mod**: "Retuning" or "Modulation" is the act of changing one's base frequency to match the inner self. The C-Order views this as "Hacktivism" or "Data Corruption."
+
+
 ---
 
 ## 7. VISUAL PROMPTS (ART STYLE GUIDE)

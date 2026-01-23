@@ -118,11 +118,30 @@ Building the foundational structure before continuing chapter writing.
 ## PHASE 5: DISSONANCE RISING (Act III)
 **Phase V Goal**: The new reality. Taro uses his "broken" perception to navigate C-Order politics and Silence threats.
 
-### [ ] Chapter 14: The Return
-- [ ] Setting: Malkuth Academy
-- [ ] UI Focus: Dissonance Vision
-- [ ] Action: Returning to class. Everything feels different.
-- [ ] Theme: "You can't go home again."
+### [x] Chapter 14: The Return
+- [x] Setting: Malkuth Academy
+- [x] UI Focus: Dissonance Vision
+- [x] Action: Returning to class. Everything feels different.
+- [x] Theme: "You can't go home again."
+
+### [x] Chapter 15: The Phantom Mesh
+- [x] Setting: The Academy Grounds / Student Dorms
+- [x] UI Focus: "Texture Popping" / "Wireframe" glitches
+- [x] Action: Investigating the "Wireframe Girl" (Senior Cadet).
+- [x] Theme: "The map is not the territory." (Resonance Dysphoria introduced).
+
+### [x] Chapter 16: Illegal Modulations
+- [x] Setting: Private Practice Room (Sound-proofed)
+- [x] UI Focus: Audio Spectrum Analysis (Identifying the "True Tone" vs "Assigned Tone")
+- [x] Action: The confrontation/conversation. Understanding the "Mask."
+- [x] Theme: "Factory Settings are a suggestion." (Trans Allegory).
+
+### [x] Chapter 17: The Underground (The Dead Zone Club)
+- [x] Setting: A hidden "Faraday Cage" club in the lower levels.
+- [x] UI Focus: "Open Source" custom UIs.
+- [x] Action: Seeing the sub-culture of those who mod their resonance.
+- [x] Theme: Finding your own frequency.
+
 
 ---
 
