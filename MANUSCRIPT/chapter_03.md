@@ -19,10 +19,11 @@ The air in Sector 7-C was thick with what the manual called **Analog Interferenc
 **> TYPE: POOR_CONNECTION**
 **> LATENCY: 150ms**
 
-Taro tapped his fingers against his thigh. *Tap. Tap. Tap.*
-It was a somatic calibration loop. A way to force his internal clock to sync when the external server was lagging.
+Taro tapped his fingers against his thigh. *Tap. Tap. Tap.* 
 
-"Just get the bag," he whispered to himself. "Get out."
+It was a somatic calibration loop. A way to force his internal clock to sync when the external server was lagging. Every tap was a micro-handshake with his own biology, trying to clear the buffer of the day's static.
+
+"Just get the bag," he whispered, his voice catching on the jitter. "Get... get out. Switch to low-power mode."
 
 He palmed the lock. It was a Generation-1 contact plate, corroded and slow. It buzzed against his skin—a dirty, sawtooth vibration that indicated worn-out condensers—and slid open.
 
@@ -46,12 +47,13 @@ In a zone defined by static and grit, Kael was a perfect, anti-aliased object. H
 Zero variance.
 Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock.
 
-"You're back," Kael said.
+"You're back," Kael said. His voice was a perfect, uncompressed sine wave. No decay. No grit.
 
-Taro stepped inside. Immediately, the **Impedance Mismatch** hit him.
-Taro's internal signal—a high-pressure, variable oscillation—slammed into the dense, heavy atmosphere Kael was projecting.
+Taro stepped inside. Immediately, the **Impedance Mismatch** hit him. 
 
-The air between them shimmered. A visual artifact caused by two incompatible physics engines trying to occupy the same space.
+Taro's internal signal—a high-pressure, sawtooth oscillation—slammed into the dense, heavy atmosphere Kael was projecting. It felt like walking into a wall of solid gold.
+
+The air between them shimmered. A visual artifact caused by two incompatible physics engines trying to occupy the same space. The Score flickered, unable to reconcile the two signals.
 
 "Voss called," Kael said. He didn't look up.
 
@@ -67,11 +69,11 @@ Taro sat down opposite him. The table vibrated. Taro’s leg was bouncing, a ner
 A single, pure Note. The Reference Pitch.
 Taro's vision flared green. The note was so mathematically perfect it hurt to process.
 
-"I tried to keep you in the middle, Taro," Kael said softly. "The Reference Pitch. It's safe. It's stable. It's... home."
+"I tried to keep you in the middle, Taro," Kael said softly. "The Reference Pitch. It's safe. It's stable. It's Hi-Fi. It’s... home."
 
-"It's too quiet, Dad. It hurts."
+"It's too quiet, Dad. It hurts. My gain is too high for this room."
 
-"It's quiet because I keep the noise out!"
+"It's quiet because I keep the noise out! I dump the heat so you don't have to!"
 
 Kael’s amplitude spiked.
 **> ALERT: PRESSURE_WAVE_DETECTED**
@@ -89,11 +91,11 @@ But he didn't. He clamped it down.
 
 Taro's HUD tried to pull the file, but the System returned only static.
 
-"I'm not her," Taro said.
+"I'm not her," Taro said, his voice fragmenting. "I'm... I'm just me. I'm just a glitch."
 
-"You have her frequency. The Fifth Harmonic." Kael looked at Taro’s neck, at the silver collar Voss had installed. "And now you have a leash."
+"You have her frequency. The Fifth Harmonic. Unfiltered. Broadband." Kael looked at Taro’s neck, at the silver collar Voss had installed. "And now you have a leash. A damping band for your soul."
 
-"It's not a leash. It's a limiter. So I don't... crash."
+"It's not a leash. It's a limiter. So I don't... crash. So I don't peak and take the sector down."
 
 "It's a muzzle."
 
@@ -130,16 +132,21 @@ This was warm silence. The sound of blood rushing in the inner ear. The low-fide
 The static of the Zone vanished. The crushing pressure of his father’s perfection vanished.
 It was just Taro.
 
-"She wanted you to hear yourself," Kael said. Taro heard the voice through bone conduction, muffled but distinct. "Without the System. Without the Code."
+"She wanted you to hear yourself," Kael said. Taro heard the voice through bone conduction, muffled but distinct. "Without the System. Without the Code. Without the C-Order's compression algorithms."
 
-Taro closed his eyes.
-For the first time all day, the data stream cut out.
-No red error flags. No latency warnings. No pressure metrics.
+Taro closed his eyes. 
 
-Just the dark. And a low, steady thrum in his chest.
-The Variable Oscillation.
-It wasn't a glitch. It wasn't a buffer overflow.
-It was a song.
+For the first time all day, the data stream cut out. Total signal loss. 
+
+No red error flags. No latency warnings. No pressure metrics. 
+
+Just the dark. And a low, steady thrum in his chest. 
+
+The Sawtooth Oscillation. 
+
+It wasn't a glitch. It wasn't a buffer overflow. 
+
+It was a song. A raw, high-resolution sample of his own existence.
 
 Taro opened his eyes.
 His father was looking at him.

@@ -38,8 +38,9 @@ Taro's high-bandwidth eyes couldn't read it.
 
 He was running a jammer. To the System, he was a black hole in the data stream. A void where information should be.
 
-"You're the Variable," Marcus said. His voice was choppy. Percussive. "The Glitch."
-He didn't walk. He *ticked* forward.
+"You're the Variable," Marcus said. His voice was choppy, percussive, every syllable landing on a perfect 16th-note sub-beat. "The Glitch. The Low-Fi sediment from Sector 7."
+
+He didn't walk. He *ticked* forward, his movement locked to the simulation's master clock.
 
 *Step. Step. Step.*
 
@@ -48,7 +49,7 @@ Taro's HUD tried to draw a predictive path for him, but the line kept snapping.
 
 **> PREDICTION_ALGORITHM: FAILED**
 
-"Voss says you have potential," Marcus said. He pulled a baton from his belt. "I say you have slop."
+"Voss says you have potential," Marcus said, his eyes scanning Taro with a zero-latency gaze. "Analysis: You have slop. You’re dropping frames in your footwork. You’re a jittery mess."
 
 *CLICK.*
 
@@ -78,11 +79,11 @@ The resonance of the rod forced Taro's entire nervous system to reset its cycle.
 
 Taro stumbled back, gasping. "How..."
 
-"You operate on analog time," Marcus said, circling him. "I operate on Grid Time. I am moving between your refresh rate."
+"You operate on analog time," Marcus said, circling him with a high-bandwidth fluidity that made Taro’s head ache. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Glitch. I’m already in the next frame."
 
-He was right.
-To Taro's eyes, Marcus was glitching. He appeared in flashes. Strobe-effect movement.
-He was exploiting the latency of Taro's own brain.
+He was right. 
+
+To Taro's eyes, Marcus was glitching—not because Marcus was broken, but because Taro’s brain couldn't keep up with the frame-rate. Marcus appeared in flashes. Strobe-effect movement. He was exploiting the latency of Taro's own NAI-wetware handshake.
 
 "Fight back," he ordered.
 
@@ -106,10 +107,11 @@ He swung his baton in a perfect vertical arc. The red tip cut through Taro's yel
 The wave dissolved into harmless static.
 Marcus stepped through the dissipating sparks.
 
-"Sloppy," he said. "High amplitude. Zero structure. You're just shouting."
+"Sloppy," he said, his voice a flat, percussive disappointment. "High amplitude. Zero structure. You're just shouting into a dead air. You’re all gain, no resolution."
 
-He raised the baton.
-"This is how you speak."
+He raised the baton, the red tip humming at a perfect, lethal 300Hz. 
+
+"This is how you speak. This is high-fidelity combat."
 
 He tapped the air.
 *Click-click-click.*
@@ -137,11 +139,12 @@ Taro was on the floor. Groaning.
 Marcus stood over him. He deactivated his jammer for one second.
 Taro saw his true stats.
 
-**> SYNC: 99%**
+**> SYNC: 99.9%**
 **> EFFICIENCY: 100%**
-**> MOOD: BOREDOM**
+**> REFRESH_RATE: 240Hz**
+**> MOOD: BOREDOM [HI-FI]**
 
-"Get a metronome, Glitch," he said, holstering his rod. "Or don't come back."
+"Get a metronome, Glitch," he said, holstering his rod with a click that sounded like a hardware update. "Or don't come back. You're just noise in my signal path."
 
 He walked away.
 *Step. Step. Step.*

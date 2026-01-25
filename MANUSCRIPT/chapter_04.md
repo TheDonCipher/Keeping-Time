@@ -39,38 +39,37 @@ The voice hit him like a binary command. `1` or `0`. No float values.
 Taro turned.
 
 A girl stood at the intake kiosk.
-To Taro's overloaded senses, she looked terrifyingly efficient.
+To Taro's overloaded senses, she looked terrifyingly efficient. Her AR presence was a high-resolution grid that seemed to organize the very air around her.
 
 **> TARGET: HANA_CHORD [PREFECT]**
 **> WAVEFORM: SQUARE [RIGID]**
 **> RISE_TIME: INSTANT**
 
-Her aura wasn't a soft glow. It was a geometric fortress. Sharp 90-degree corners. Vertical rises. Instant drops.
-A Square Wave.
-The most efficient, unnatural sound in physics. It cut through the ambient air like a razor.
+Her aura wasn't a soft glow. It was a geometric fortress. Sharp 90-degree corners. Vertical rises. Instant drops. A Square Wave. The most efficient, unnatural sound in physics. It cut through the ambient air like a razor.
 
-"Taro Nishimura," he said.
+"Name?"
 
-**> ANALYSIS: LATE**
-**> TOLERANCE: ZERO**
+The voice hit him like a binary command. `1` or `0`. No float values.
 
-"Intake closed at 0800," she said. Her voice matched her waveform. Flat. Clipped. "It is 0803. You are an error."
+"Taro Nishimura," he said, his voice fragmenting slightly as he tried to handshake with the local key signature.
 
-"My skiff got rerouted due to—"
+"Analysis: You are late," she said. Her voice matched her waveform. Flat. Clipped. "Intake closed at 0800. It is 0803. If/Then: If you are not inside by 0800, then you are a system error. You are currently an error."
 
-"Irrelevant. Variables do not excuse outcomes."
+"My... uh... my skiff got rerouted due to a broadband spike in Sector 7—"
+
+"Irrelevant. Variables do not excuse outcomes. Error correction is not a negotiation."
 
 She tapped her datapad. A red targeting reticle projected onto Taro's chest.
 **> STATUS: MARKED [TARDY]**
 
-"You are the anomaly from Sector 7," she said, looking up. Her eyes scanned him, and Taro felt the physical pressure of a **Deep Port Scan** rattling his firewall.
+"You are the anomaly from Sector 7," she said, looking up. Her eyes scanned him, blue pixels of the grid reflected in her pupils. Taro felt the physical pressure of a **Deep Port Scan** rattling his firewall.
 
 **> ALERT: EXTERNAL_PROBE_DETECTED**
 **> SOURCE: H.CHORD**
 
-"Your carrier wave is unstable," she noted, wrinkling her nose. "You are broadcasting variable noise across a calibrated platform. It is... messy."
+"Your carrier wave is unstable," she noted, wrinkling her nose. "You are broadcasting variable noise across a calibrated platform. Your damping is insufficient. It is... messy. Low-Fi."
 
-**> TAG: DISGUST**
+**> TAG: DISGUST [8.5%]**
 
 "I'm trying to clamp it," Taro said, tapping his thigh. *Tap-tap-tap.*
 His internal clock was struggling to handshake with the local server time.
@@ -86,16 +85,17 @@ The "Disgust" tag flickered and vanished.
 
 "Manual somatic calibration?" she asked.
 
-"Yeah. Polyrhythm tap. 3 over 4. It compensates for the latency."
+"Yeah. Polyrhythm tap. 3 over 4. It compensates for the latency in my internal clock."
 
-For the first time, Hana looked intrigued.
+For the first time, Hana paused. The "Disgust" tag flickered and vanished, replaced by a streaming metric of interest.
+**> ANALYSIS: RE-EVALUATING**
 **> TAG: CURIOSITY [TECHNICAL]**
 
-"Inefficient," she ruled. "But... structurally sound. You are running a legacy driver."
+"Inefficient," she ruled. "But... structurally sound. You are running a legacy driver with a manual override. It is an aesthetic choice, presumably."
 
 She stepped aside. The gate behind her dissolved into a cloud of green data particles.
 
-"Proceed to Orientation. Lecture Hall B. Do not touch the walls. They are tuned to C-Sharp minor and your dissonance will smudge the finish."
+"Proceed to Orientation. Lecture Hall B. Do not touch the walls. They are tuned to C-Sharp minor and your dissonance will smudge the finish. If you make physical contact, I will have to recalibrate the entire hallway."
 
 ---
 
@@ -121,30 +121,34 @@ It was too much bandwidth. Taro stumbed. His vision started to artifact—green 
 
 Taro blinked. Hana was walking beside him. Her rigid square-wave presence acted like a breakwater, cutting a clean, silent path through the chaotic data stream.
 
-"You are processing the visual representation of the resonance," she said. "You do not have the RAM for that. Switch to `AUDIO_ONLY`."
+"You are processing the visual representation of the resonance," she said. "Your bandwidth is too narrow for that load. You will peak and crash before we reach the hall. Switch to `AUDIO_ONLY`."
 
-"How?"
+"How? My... zzt... my menu is buried."
 
-"Dampen your optic nerve. Focus on the carrier."
+"Dampen your optic nerve. Focus on the carrier wave. Let the metadata go."
 
 Taro squeezed his eyes shut. He focused on the NAI port at the base of his skull.
-*throttle down.*
+*Throttle down. Cut the video feed.*
 
 **> COMMAND: DISABLE_VIDEO_LAYER**
 **> AUDIO_PROCESSING: ENHANCED**
+**> SIGNAL: RAW_ACOUSTIC**
 
 The world went black.
+
 And then... it opened up.
 
 Taro didn't *see* the students anymore. He *heard* them.
+
 Not as noise. As a Data Structure.
-A massive, complex, shifting chord. He could feel the geometry of the room, defined by the acoustic reflections. He could feel where the empty seats were by the drop in impedance.
+
+A massive, complex, shifting chord. He could feel the geometry of the room, defined by the acoustic reflections of the high-fidelity walls. He could feel where the empty seats were by the drop in impedance.
 
 "Better?" Hana asked.
 
-"Yeah," Taro breathed. "It's... cleaner."
+"Yeah," Taro breathed. "It's... cleaner. No frame-rate lag."
 
-"The Score is a tool, Nishimura. Do not let it overflow your buffer."
+"The Score is a tool, Nishimura. If/Then: If you let it overflow your buffer, then you are a liability. Do not be a liability."
 
 They entered the Lecture Hall.
 Taro kept his visual layer disabled, navigating by the sound of echoes. He found a seat in a "quiet" spot—a dead zone near a concrete pillar—and sat down.

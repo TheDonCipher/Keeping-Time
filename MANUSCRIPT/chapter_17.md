@@ -20,11 +20,11 @@ Silence. Real, heavy, analog silence.
 
 The elevator doors groaned open. The air here was thick, smelling of ozone and old coolant.
 
-"Welcome to the Dead Zone," Elara said.
+"Welcome to the Dead Zone," Elara said. Her voice was already starting to glitch without the C-Order to smooth her formants. "No network cover--zzt--age down here. Total analog territory."
 
 She was standing next to him, but she looked... unstable. Without the Network to enforce her Hull ID, her "Tank" avatar was flickering violently. The heavy shoulders were phasing in and out of existence, revealing the wireframe light beneath.
 
-"This way," she said.
+"This way," she said, her voice dropping into a grainier, lower resolution.
 
 They walked down a rusted maintenance tunnel. The walls were lined with copper mesh—a makeshift Faraday cage built to block out the world.
 
@@ -50,7 +50,7 @@ Taro saw a girl whose resonance took the shape of a storm cloud, lightning crack
 He saw a guy whose avatar was a geometric abstract—a floating collection of cubes and pyramids that shifted to the beat of the drum and bass.
 He saw people with impossible colors, impossible geometries, impossible sounds.
 
-"System-Free," Elara shouted over the music. "No Hull IDs. No Stabilizers. Just raw output."
+"System-Free," Elara shouted over the music, her voice now a clean, uncompressed treble that cut through the low-pass filter of the tunnel. "No Hull IDs. No Stabilizers. No Hi-Fi lies. Just raw output."
 
 She grabbed his arm and pulled him toward the center of the room.
 
@@ -131,13 +131,11 @@ Taro panicked. *Silence.* The enemy. The monsters that ate the city.
 
 "No," he gasped, trying to pull the mask back on. "No, I'm not... I'm not one of them!"
 
-"Not them," Elara said firmly. She reached out and took his hand. Her light didn't disappear into his darkness; it swirled around it, creating a beautiful, high-contrast event horizon.
+"Not them," Elara said firmly. She reached out and took his hand. Her light didn't disappear into his darkness; it swirled around it, creating a beautiful, high-contrast event horizon. "You're a Broadband-Killer, Taro. The Silence destroys. You... you absorb. You're a living Damping-Field."
 
-"You're the counter-frequency," she said. "The Silence destroys. You... you absorb. You're a Damper. A living mute button."
+She smiled, her glass face glowing in the dark.
 
-She smiled.
-
-"You're not a wrong note, Taro. You're the rest between the measures. The beat of silence that gives the music meaning."
+"You're not a wrong note, Taro. You're the rest between the measures. The perfect gap in the signal that gives the music meaning."
 
 Taro stared at his black capabilities. The "Void" wasn't chaos. It was peace. It was the only quiet thing in a world of noise.
 

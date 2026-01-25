@@ -29,10 +29,10 @@ Too beautiful.
 Through The Score, every building was sheathed in white marble and gold trim. The streets were clean. The people walked with a synchronized gait, their tags reading **> STATUS: CITIZEN [HAPPY]**.
 The sky was a perfect, gradient blue.
 
-"Sector 4 secured," Hana reported. Her voice was crisp. "Resonance levels stable at Reference Pitch."
+"Sector 4 secured," Hana reported. Her voice was crisp, a perfect digital signal. "Resonance levels stable at Standard Pitch. Local bandwidth is clear of unregistered noise."
 
 **> REPUTATION_GAIN: +10**
-**> MONITOR: VOSS [ACTIVE]**
+**> MONITOR: ADJUTANT_VOSS [HEARING_ALL]**
 
 Taro looked closer at the wall next to him.
 His HUD tagged it: **> MATERIAL: POLISHED_MARBLE**.
@@ -45,11 +45,12 @@ Beneath the white marble AR skin, the wall was actually crumbling concrete, cove
 **> GLITCH_DETECTED**
 **> TEXTURE_FAILURE: 5%**
 
-"It's a slum," Taro whispered.
+"It's a slum," Taro whispered, his voice catching on the dissonance he was seeing. "The architecture... it’s all low-bit placeholders."
 
-"Maintain comms discipline," Hana said. She was walking down the center of the street, following a glowing green **Nav-Line** that pulled her forward like a magnet. To her, this place *was* a paradise. Her NAI blocked the smell of sewage. Her perception erased the homeless people sitting in the gutters, replacing them with generic street furniture or empty space.
+"Maintain comms discipline and filter your inputs," Hana said, her tone a sharp, linear reminder. She was walking down the center of the street, following a glowing green **Nav-Line** that pulled her forward like a magnet. To her, this place *was* a high-fidelity paradise. Her NAI aggressively damped the smell of sewage. Her perception used a selective-masking algorithm to erase the homeless people sitting in the gutters, replacing them with generic street furniture or dead space.
 
-**> MASKING_PROTOCOL: ACTIVE**
+**> MASKING_PROTOCOL: MAX_LOAD**
+**> ANALYSIS: SELECTIVE_OMISSION_ACTIVE**
 
 Taro looked at a man sitting against a dumpster.
 To Hana, he was literally invisible. Her pathing algorithm walked her *around* him, but her brain didn't register his existence. He was "filtered noise."
@@ -64,13 +65,13 @@ The man looked up. He saw the Vanguard uniform. He didn't see a hero. He saw a b
 "Taro," Ven rumbled. "Heart rate spike."
 **> VEN_STATUS: CONCERNED**
 
-"The filters," Taro said, tapping his temple. "They're painting over everything. This place is rotting, Ven."
+"The filters," Taro said, tapping his temple. *Tap-tap-tap.* "They're painting over the rot, Ven. It’s a total texture-map lie."
 
-"Don't look at it," Hana ordered. She stopped. "If it is not indexed by the C-Order, it is not relevant to the mission."
+"Don't look at the raw data," Hana ordered. She stopped, her grid-presence flaring blue. "Analysis: If the data is not indexed by the C-Order, then it is not relevant to our current protocol. If/Then: If we focus on the indexed objects, then the mission succeeds."
 
-"It's people, Hana."
+"It's people, Hana. They’re not indexed, but they’re broadcasting pain."
 
-"It is Noise," she corrected. "And we are here to tune it."
+"They are Noise," she corrected. "And our objective is to tune them out. We are here for the Signal."
 
 She pointed to a structure ahead.
 It was a **Resonance Node**—a massive tuning fork embedded in the street.
@@ -86,9 +87,9 @@ Hana squinted.
 **> SCANNING...**
 **> ERROR: TARGET_NOT_FOUND**
 
-"I see a standard Node," she said. "Reading nominal. Slight drift."
+"I see a standard Node," she said, her voice flat. "Reading nominal. 440Hz baseline. Slight drift of 0.02%."
 
-"No," Taro said. "Look at the shadows. The data isn't drifting. It's... missing."
+"No," Taro said, his own SAWTOOTH wave jagged with alarm. "Look at the shadows in the metadata. The data isn't drifting. It's... it’s total signal loss. It’s being sinked."
 
 Taro walked toward the Node.
 The "Golden" AR texture peeled away like burnt skin.
@@ -107,12 +108,14 @@ It was an empty circle.
 
 **> SYMBOL_ID: THE_SILENCE**
 
-"Hana," Taro said, his voice dropping to a whisper. "We're not patrolling. We're hunting."
+"Hana," Taro said, his voice dropping to a whisper that even his HUD tagged as **> CAUTION**. "We're not patrolling. The system is lagging. We're being hunted by something the Score can't render."
 
-The shadows stretched.
-And for the first time, The Score gave him no data at all.
+The shadows stretched. 
 
-**> ENEMY: [REDACTED]**
+And for the first time, The Score gave him no data at all. Zero packets. 
+
+**> ENEMY: [REDACTED_ANOMALY]**
+**> SIGNAL: ABSOLUTE_SILENCE**
 
 ---
 

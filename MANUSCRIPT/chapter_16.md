@@ -4,23 +4,23 @@
 **> LOCATION: PRACTICE ROOM 404 (LOCKED)**
 **> AUDIO_STATUS: SOUNDPROOFING_MAX (120dB)**
 
-"It's called 'Retuning'," Elara said.
+"It's called 'Retuning'," Elara said. Her voice had a slight echo, a shimmering texture that indicated her NAI filters were partially disengaged.
 
-The cello lay forgotten on the floor. She was sitting cross-legged, the holographic interface floating between them. It was a hacking deck—a custom, jailbroken UI that glowed with an illegal, warm amber light instead of the standard C-Order blue.
+The cello lay forgotten on the floor. She was sitting cross-legged, the holographic interface floating between them. It was a hacking deck—a custom, jailbroken UI that glowed with an illegal, warm amber light. It looked like vintage analog gear shoved into a digital world.
 
-"Retuning," Taro repeated. "Like... changing your key signature?"
+"Retuning," Taro repeated, his own voice fragmenting as he tried to match her tempo. "Like... zzt... changing your key signature?"
 
-"Deeper," Elara said. She tapped a command. A waveform appeared in the air. It was ugly, jagged, and chaotic.
+"Deeper," Elara said. She tapped a command. A waveform appeared in the air. It was ugly, jagged, and chaotic—a raw broadband signal.
 
-"This is me," she said, pointing to the chaos. "This is my raw resonance. My factory setting. The system scans this at birth, says 'High Mass, Low Frequency,' and assigns me the Hull class: MALE/TANK."
+"This is me," she said, pointing to the chaos. "This is my raw resonance. My factory setting. The system scans this at birth, says 'High Mass, Low Frequency,' and assigns me the Hull class: MALE/TANK. It ignores the sub-harmonics."
 
 She tapped another key. A second waveform appeared overlaid on top—smooth, sine-wave perfection.
 
-"And this," she said bitter, "is the mask. The 'Stabilizer' algorithm. It forces my chaotic signal into a clean sine wave. It's an active noise-cancellation filter running 24/7 in my NAI."
+"And this," she said, her voice dropping into a grainier, bit-crushed tone, "is the mask. The 'Stabilizer' algorithm. It forces my chaotic signal into a clean sine wave. It's an active noise-cancellation filter running 24/7 in my NAI. It’s Hi-Fi lies."
 
-Taro stared at the graph. "That's why it hurts. You're constantly fighting your own output."
+Taro stared at the graph. "That's why it hurts. You're constantly fighting your own output. Your hardware is redlining."
 
-"It's like screaming with your mouth sewn shut," Elara whispered. "Every second of every day."
+"It's like screaming with your mouth sewn shut," Elara whispered. "Every second of every day. Total signal suppression."
 
 She looked at Taro. The vulnerability in her eyes was gone, replaced by a sharp, technical focus.
 
@@ -36,15 +36,15 @@ She swiped her hand. The amber interface shifted.
 
 "You hacked your own NAI?" Taro asked, stunned.Tampering with a Neural Audio Interface was a one-way ticket to a lobotomy ward.
 
-"I didn't hack it," Elara said. "I bypassed the limiter. I wrote a custom driver that sits between my raw signal and the Hull output. It takes my jagged waveform and... translates it. Instead of forcing it down into a bass note, it lets it flow up. Into the treble range."
+"I didn't hack it," Elara said. "I bypassed the C-Order kernel. I wrote a custom driver that sits between my raw signal and the Hull output. It takes my jagged waveform and... translates it. Instead of forcing it down into a bass-sink, it lets it flow up. Into the treble range. High-fidelity self-determination."
 
-She reached out and touched the holographic waveform. As her finger made contact, her hand flickered.
+She reached out and touched the holographic waveform. As her finger made contact, her hand flickered violently—phasing between the heavy glove and the light beneath.
 
 *Glitch.*
 
-For a second, the heavy, gloved hand of "Cadet Kimura" vanished. In its place was the slender, radiant wireframe hand Taro had seen before.
+For a second, the heavy, gloved hand of "Cadet Kimura" vanished. In its place was the slender, radiant wireframe hand Taro had seen before. No textures. No hulls. Just the raw mesh.
 
-"When I run the mod," Elara said softly, staring at her own true hand, "the pain stops. The noise stops. I don't feel like I'm wearing a spacesuit made of lead."
+"When I run the mod," Elara said softly, her voice now a clean, uncompressed treble, "the pain stops. The noise stops. I don't feel like I'm wearing a spacesuit made of lead. My latency drops to zero."
 
 "Why don't you run it all the time?" Taro asked.
 
@@ -54,27 +54,27 @@ Elara laughed, a dark, humorless sound. She let go of the interface. The wirefra
 
 Taro shuddered. He knew what Reformatting meant. It was what Voss had tried to do to him. Erasing the person to save the code.
 
-"So you hide," Taro said.
+"So you hide," Taro said, his fingers tapping a slow 4/4 against his palm.
 
-"We hide," Elara corrected. "There are others, Taro. Not many. But enough."
+"We hide," Elara corrected. "There are others, Taro. Not many. But enough to make a chorus."
 
-She looked at him, her eyes searching his face.
+She looked at him, her eyes searching his face. 
 
-"You said you saw the mesh," she said. "You saw me."
+"You said you saw the mesh," she said. "You saw me. Unfiltered."
 
 "Yeah."
 
-"What about you?" she asked. "What's *your* factory setting?"
+"What about you?" she asked. "What's *your* factory setting? What's your raw signal?"
 
-Taro hesitated. He looked at his own hands. He thought about the crash. The Void. The way the "Corrected" world looked so broken to him now.
+Taro hesitated. He looked at his own hands. He thought about the crash. The Void. The way the "Corrected" world looked so broken to him now—like a low-res texture map over a dying server.
 
-"I don't know," Taro admitted. "I was... different. Before the crash. I was trying so hard to be in tune. To match the key signature."
+"I don't know," Taro admitted. "I was... different. Before the crash. I was trying so hard to be Hi-Fi. To match the key signature."
 
-"Masking," Elara nodded. "We all do it."
+"Masking," Elara nodded. "Damping your soul so you don't peak."
 
-"But then I broke," Taro said. "And now... now I don't fit the key at all. I'm dissonant. I'm noise."
+"But then I broke," Taro said. "And now... now I don't fit the key at all. My bandwidth is too wide. I'm dissonant. I'm noise."
 
-"Noise is just data the system doesn't understand yet," Elara said. It sounded like a mantra. Something she had repeated to herself a thousand times in the dark.
+"Noise is just data the system doesn't understand yet," Elara said. It sounded like a mantra. Something she had repeated to herself a thousand times in the dark. "It’s unindexed beauty."
 
 She leaned forward.
 

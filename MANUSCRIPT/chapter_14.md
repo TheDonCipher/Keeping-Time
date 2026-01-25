@@ -35,7 +35,7 @@ He turned to see a Proctor droid hovering nearby. Its chassis was gleaming white
 
 "Identity confirmed," the droid chimed. "Welcome back. You are late for the morning assembly."
 
-"Medical leave," Taro said. His own voice sounded strange to him—flat, compressed. Like an MP3 that had been saved too many times.
+"Medical leave," Taro said. His own voice sounded strange to him—flat, compressed. Like an MP3 that had been saved too many times. "My... uh... my buffer was full. Had a total signal loss in the tank."
 
 "Logged," the droid replied. "Proceed to the Amphitheater. Major Staccato is conducting a review."
 
@@ -98,9 +98,9 @@ She was sitting three rows down, her posture rigid. Her ponytail was a sharp exc
 
 Staccato looked up. "Cadet Chord. You have an observation?"
 
-"The atmospheric density in that sector," Hana said. Her voice was clear, but Taro could hear the strain in it. She was vibrating with suppressed anger. "The replay doesn't show the barometric pressure. If it was a Low-Fi zone, the propagation delay is standard."
+"The atmospheric density in that sector," Hana said. Her voice was clear, but Taro could hear the strain in it. She was vibrating with suppressed anger, but her NAI was working overtime to keep her damped. "Analysis: The replay does not account for the local key signature. If the environment was anti-phase Low-Fi, then the propagation delay is within standard error margins."
 
-" excuses," Staccato snapped. "A true Resonator compensates for the medium. You tune the world, Chord. You don't let the world tune you."
+"Excuses," Staccato snapped. "A true Resonator compensates for the medium. You tune the world, Chord. You don't let the world tune you. Your logic is jittery."
 
 "But—"
 
@@ -126,19 +126,19 @@ Ven sat down opposite him, his massive frame taking up two seats. "Voss kept you
 
 "I almost did."
 
-Hana slid into the seat next to Ven. She didn't look at Taro. She was staring at her datapad, her fingers flying across the holographic keys.
+Hana slid into the seat next to Ven. She didn't look at Taro. She was staring at her datapad, her fingers flying across the holographic keys in a perfect 4/4 rhythm.
 
-"You're out of sync," she said, without looking up.
+"You're out of sync," she said, without looking up. "Your carrier wave is drifting. I'm detecting a 15% deviation from your standard baseline."
 
 "Hello to you too, Hana," Taro said.
 
-"Your resting frequency," she said, finally glancing at him. Her eyes were sharp, analytical. "It's drifting. You used to hum at a solid 440. Now you're... oscillating. You're phasing in and out of the spectrum."
+"Your resting frequency," she continued, finally glancing at him. Her eyes were sharp, blue pixels of the grid reflected in her pupils. "It's oscillating. You used to hum at a solid 440. Now you're... you're dropping frames. You're phasing in and out of the spectrum."
 
-"It's the patch," Taro said. "New driver."
+"It's the patch," Taro said. "New driver. I'm still... zzt... calibrating."
 
-"It's sloppy," she criticized. "Voss is usually cleaner with his code."
+"It's sloppy code," she criticized. "Voss is usually Hi-Fi. This looks like a legacy overclock."
 
-"It's not Voss," Taro said quietly. "It's me."
+"It's not Voss," Taro said quietly. "It's me. My hardware... it doesn't like the new filters."
 
 He looked at them. His team. Hana, the perfectionist, vibrating with the constant fear of failure. Ven, the tank, a solid wall of low-frequency endurance masking a deep, structural fatigue.
 
@@ -160,7 +160,7 @@ Ven stopped chewing. "Who would jam a cadet in a live-fire zone?"
 
 And underneath it all, the hissing, popping, grinding noise of a system that was eating itself alive.
 
-"I think," Taro whispered, "that the Silence isn't just outside the walls anymore."
+"I think," Taro whispered, leaning in so close his Static Aura crackled against the table. "I think... zzt... that the Silence isn't just outside the walls anymore. It’s broadband now. It’s inside the house."
 
 **> ALERT: PATTERN_MATCH**
 **> ANOMALY_DETECTED: INTERNAL**

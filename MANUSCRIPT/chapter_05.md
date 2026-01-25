@@ -22,11 +22,11 @@ The Sandbox was a void. A "Null State" environment where the Academy server susp
 **> NODE 2: VEN [SINK]**
 **> NODE 3: TARO [VARIABLE]**
 
-"Target is a simple C-Major Triad," Hana said. "I am the reference. Ven is the bass. Nishimura, you are the Fifth."
+"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional jitter. "Analysis: I am the root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the triad will stabilize."
 
-"The Fifth?" Taro asked.
+"The Fifth?" Taro asked, his heartbeat spiking. "My... uh... my frequency isn't fixed. I jitter."
 
-"Do not speak," Hana corrected. "Output."
+"Do not speak," Hana corrected. "Output. Manual speech introduces too much mechanical noise."
 
 A blue wireframe line shot out from Hana's chest interface. It plugged directly into Ven's aura.
 *Snap.*
@@ -52,11 +52,11 @@ It hit her blue firewall shield and... bounced off.
 **> TARGET_PHASE: 0**
 **> INCOMING_PHASE: 90**
 
-"You are late," Hana said. "You are pushing on the off-beat."
+"You are late," Hana said, her HUD flickering with red error flags. "Analysis: You are pushing on the off-beat. Your rise-time is inconsistent. You are currently noise."
 
-"I'm trying to find the pocket!"
+"I'm trying to find the pocket! My... my driver is lagging!"
 
-"There is no pocket," she stated. "There is the Grid. Align yourself to the Grid."
+"There is no pocket," she stated. "There is the Grid. If/Then: If you align yourself to the Grid, then the handshake succeeds. There is no 'feeling'. There is only math."
 
 Taro gritted his teeth.
 He tried again. This time, he forced the signal. He pushed the amplitude.
@@ -70,13 +70,13 @@ Hana winced. A red error flag appeared over her head.
 **> WARNING: FEEDBACK_LOOP**
 **> INTEGRITY: 95%**
 
-"You are clipping," she snapped. "Lower your amplitude. You are screaming at the server."
+"You are clipping," she snapped, her AR aura turning a dangerous, electric blue. "Lower your gain. You are peaking. You are screaming raw data at the server and it is rejecting your packets."
 
-"I can't!" Taro shouted. "It's all or nothing! I don't have a volume potentiometer!"
+"I can't!" Taro shouted, his fingers drumming a frantic polyrhythm against his leg. "It's... zzt... it's all or nothing! I don't have a volume potentiometer! My hardware is built for line-level only!"
 
-"Everyone has a volume knob. It is called Damping."
+"Everyone has a volume knob. It is called Damping. Use your bands or I will force-disconnect you."
 
-"I don't!"
+"I don't have any bands left! They slagged in Sector 7!"
 
 Taro's frustrated signal spiked.
 **> OUTPUT: 95% [CRITICAL]**
@@ -107,17 +107,17 @@ Ven looked up. His eyes—usually half-closed—were wide open. The pupils were 
 **> NODE_STATUS: VEN [CHARGED]**
 **> CAPACITY: 200%**
 
-"Whoa," Ven said. His voice rumbled in Taro's chest.
+"Whoa," Ven said. His voice rumbled in Taro's chest like a subwoofer hitting a resonant frequency. "I'm... I'm high-res for once. My buffer is completely clear."
 
+He was smiling a quiet, sleepy smile, but his aura was vast, golden, and terrifyingly solid.
 Hana stared at the telemetry stream.
 **> TOTAL_OUTPUT: 140dB [LETHAL]**
 
-"That wasn't a Triad," Hana said, her voice sounding shaken. "That was a Drop."
+"That wasn't a Triad," Hana said, her voice sounding shaken—a rare fragment of a float-value in her binary world. "That was a Drop. Total signal saturation."
 
-"I didn't mean to—"
+"I didn't... uh... I didn't mean to peak."
 
-"Do it again," Ven said.
-He was smiling. A quiet, sleepy smile.
+"Do it again," Ven said. He stepped forward, his low-frequency hum vibrating the entire room. "My bandwidth is open. I’ve never been at 100% capacity before."
 "I've never been full before."
 
 Hana looked at the data. She looked at Taro. Then at Ven.

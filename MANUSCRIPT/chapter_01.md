@@ -11,11 +11,11 @@
 
 ### [00:00:00] THE ZAP
 
-It hits you like a nail gun to the base of the skull.
+It hits you like a nail gun to the base of the skull. 
 
-White light. Static. The taste of copper and burning hair.
+White light. Static. The taste of copper and burning hair. 
 
-For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to handshake with a network that is infinitely larger than you. Your nervous system shrieks as the Neural-Acoustic Interface (NAI) overrides your optic nerve, forcing a new operating system onto your wetware.
+For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to handshake with a network that is infinitely larger than you. Your nervous system shrieks as the Neural-Acoustic Interface (NAI) overrides your optic nerve, forcing a new operating system onto your wetware. The local server is rejecting your presence; your heartbeat is lagging, and your pulses are dropping frames before they even hit your nerves.
 
 Then, the crash.
 
@@ -86,17 +86,18 @@ Remi hopped over the railing. To my synesthetic eyes, she was surrounded by a fa
 
 I touched my temple. No blood.
 
-"Your signal," she clarified. "I can taste the fuzz on your edges. Your damping bands are running hot."
+"You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your bandwidth is too wide for these standard damping bands. They're already hitting thermal limit."
 
-I glanced at my wrist. The three bands weren't just warm; they were glowing faint red in my thermal vision.
+I glanced at my wrist. The three bands weren't just warm; they were glowing faint red in my thermal vision. 
 
 **> HEAT_SINK: 60% CAPACITY**
+**> LOAD_WARNING: PEAKING**
 
-"Bad night," I muttered.
+"Bad night," I muttered. "My... my hardware feels like it's grinding. Too much jitter in the sector."
 
-"You need to vent," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling an 880 signal. It’s like trying to hold a grenade with the pin pulled."
+"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling an 880 signal. It’s like trying to hold a live wire with wet hands. You're gonna peak and take the whole floor with you."
 
-"It's not a grenade," I said. "It's noise."
+"It's not a grenade," I said. "It's just hardware noise. High-latency artifacts."
 
 "It's incredible," she corrected. "If you'd just let the system index it—"
 
@@ -197,12 +198,11 @@ I didn't scream. I didn't shout. I pulsed.
 **> SOURCE: 440 Hz**
 **> TARGET: 880 Hz [DOUBLE]**
 
-A massive, vertical pillar of Gold light erupted from my hand. It looked like a god-ray striking the earth. Solid. Infinite. Absolute.
-
-It hit the soldier’s purple static.
+A massive, vertical pillar of Gold light erupted from my hand. It looked like a god-ray striking the earth. Solid. Infinite. Absolute. A pure sine-wave strike that overrode the local key signature.
 
 **> INTERFERENCE: CONSTRUCTIVE**
-**> AMPLITUDE: MAX**
+**> AMPLITUDE: MAX [OVERFLOW]**
+**> OUTPUT: 4.2 MILLION JOULES**
 
 For one single frame of animation, we synced. His chaos locked into my order. The purple static aligned into a perfect, terrifying geometric pattern.
 
@@ -214,23 +214,23 @@ The numbers got too big. My brain couldn't render the magnitude.
 
 *CRACK.*
 
-The soldier’s bio-plasma field didn't stabilize. It didn't dampen. It *popped*.
+The soldier’s bio-plasma field didn't stabilize. It didn't dampen. It *popped*. 
 
-Like a balloon. One second, he was a storm of data. The next, he was just... a guy. Lying on the floor. His NAI dark. His aura gone.
+Like a balloon. One second, he was a storm of data. The next, he was just... a guy. A bricked unit. Lying on the floor. His NAI dark. His aura gone.
 
 **> TARGET: OFFLINE**
 **> SENSATION: NULL**
 
-Silence.
+Silence. 
 
 Real silence. No hum. No Middle C. No data.
 
-I stood there, my hand still outstretched. Smoke was rising from my wrist where the bands used to be.
+I stood there, my hand still outstretched. Smoke was rising from my wrist where the bands used to be. My bandwidth was still pegged, the raw signal screaming in the dead air.
 
 My vision was flickering. Glitching.
 
 **> DIAGNOSTIC: BASELINE_ALTERED**
-**> NEW_USER_ID: DETECTED**
+**> NEW_USER_ID: DETECTED [AUTHORITY_NULL]**
 
 I looked at my hand. In The Score, it wasn't a hand anymore.
 
@@ -240,17 +240,18 @@ Remi was staring at me. Or rather, staring at the space *above* me.
 
 I looked up.
 
-Floating above my head, where a normal ID tag should be, was a new symbol. It wasn't a Shield. It wasn't a Tuning Fork.
+Floating above my head, where a normal ID tag should be, was a new symbol. It wasn't a Shield. It wasn't a Tuning Fork. 
 
 It was a Crown.
 
 **> WARNING: VANGUARD_CLASS_DETECTED**
+**> STATUS: HIGH_FIDELITY_THREAT**
 
 The text burned into my retina. Once. Twice.
 
-Then the world went black.
+Then the world went black. 
 
-**> SYSTEM_CRASH**
+**> SYSTEM_CRASH [UNRECOVERABLE]**
 
 ---
 

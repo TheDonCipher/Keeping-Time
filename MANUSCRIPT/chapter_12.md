@@ -18,19 +18,19 @@ Not the color of the sky, or the ocean, or any organic thing. It was the blue of
 Taro lay on a flat plane. It was labeled `[BED_MEDICAL_STD]`.
 It had no texture. Just a white wireframe mesh defining its boundaries. He couldn't feel the sheets, only a variable called `PRESSURE` applied to his back.
 
-"Input lag," a voice said. "Zero point four seconds."
+"Input lag," a voice said. "Zero point four seconds. Your handshake is failing, Taro. Your wetware is rejecting the local host."
 
-Taro turned his head. The motion blurred, skipping frames.
-A figure stood next to the bed.
-It was a low-poly approximation of a human. Sharp triangular polygons formed the coat. The face was a blank geometric mask with two dark squares for eyes. A floating tag hovered above the head:
+Taro turned his head. The motion blurred, skip-framing across his vision.
+
+A figure stood next to the bed. It was a low-poly approximation of a human being. Sharp triangular polygons formed the coat. The face was a blank geometric mask with two dark squares for eyes. A floating tag hovered above the head, flickering with a high-fidelity refresh rate:
 
 **> ID: ADJUTANT_VOSS**
 **> CLASS: ADMIN**
 **> THREAT: NULL**
 
-"Voss?" Taro asked. His audio filters cracked. The name came out as `V-oss_ss_ss`.
+"V-Voss?" Taro asked. His audio filters cracked, the name trailing off into a stuttering delay. `V-oss_ss_ss_zzt`.
 
-"Stabilize your vocal drivers," the polygon-figure said. The voice was crisp, lacking any room reverb. In Safe Mode, acoustics weren't simulated. "You are running on emergency power, Taro. Don't try to render High-Fidelity emotions."
+"Stabilize your vocal drivers," the polygon-figure said. The voice was crisp, a perfect digital signal lacking any room reverb. In Safe Mode, the reality engine didn't simulate acoustics. "You are running on emergency power, Taro. Don't try to render emotions. Your bandwidth is too narrow for sentiment."
 
 Voss tapped the air. A floating menu appeared—a simple list of white text on a black background.
 
@@ -55,11 +55,12 @@ He watched the explosion of gold light.
 **> ERROR: INTEGER_OVERFLOW**
 **> OUTPUT: 3,000,000+ [INVALID]**
 
-"Look at that number," Voss said, pointing a sharp finger at the floating text. "Three million. That shouldn't be possible. The human nervous system melts at ten thousand. You didn't just break the limiter, Taro. You broke the math."
+"Look at that number," Voss said, pointing a sharp, wireframe finger at the floating text. "Three million output. That shouldn't be possible. The human nervous system peaks and melts at ten thousand. You didn't just break the limiter, Taro. You broke the math. You’re a walks-around buffer overflow."
 
-Taro stared at the recording. "I didn't mean to."
+Taro stared at the recording. "I... I didn't mean to peak. I was just trying to... to align."
 
-"Intent is irrelevant. The compiler doesn't care if you 'meant' to cause a stack overflow. It only cares that the system crashed."
+"Intent is irrelevant. The compiler doesn't care if you 'meant' to cause a stack overflow. It only cares that the system crashed and the local server went analog for three seconds."
+
 Voss closed the window. The room returned to sterile blue silence.
 
 "The Council wants you deleted," Voss said calmly. "They see a bug. A critical vulnerability that could destabilize the entire grid. They think you are a walking kernel panic."

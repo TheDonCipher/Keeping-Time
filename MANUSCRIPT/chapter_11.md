@@ -17,10 +17,10 @@ There was only Noise.
 
 Taro tried to scream, but "screaming" was a concept that required a medium, and the medium was gone. The air wasn't air anymore; it was a pressurized static that tasted like aluminum and dead batteries.
 
-He was falling through the architecture of the world.
+He was falling through the architecture of the world. 
 Or maybe the world was falling through him.
 
-Without the NAI to render the geometry of the alleyway, the brick walls were just meaningless data points. They didn't look like walls. They looked like jagged tears in the fabric of his perception. The ground wasn't solid; it was a vibrating field of unorganized molecular probability.
+Without the NAI to render the geometry of the alleyway, the brick walls were just meaningless data points. They didn't look like walls. They looked like jagged tears in the fabric of his perception. The ground wasn't solid; it was a vibrating field of unorganized molecular probability—an analog nightmare of raw, unindexed matter.
 
 He hit it.
 *CRASH.*
@@ -36,8 +36,9 @@ He scrambled backward, his hands clawing at... something. It felt wet. It felt g
 Mud?
 Or just un-rendered texture data?
 
-"Ven!" he choked out.
-His own voice sounded wrong. Without the auto-tune of the NAI, without the real-time acoustic processing, it was thin and wet and pathetic. It didn't resonate. It just fell out of his mouth and died.
+"Ven!" he choked out. 
+
+His own voice sounded wrong. Without the auto-tune of the NAI, without the real-time acoustic processing, it was thin and wet and pathetic. It didn't resonate. It was all noise, no signal. It just fell out of his mouth and died in the heavy, dampened air.
 
 He opened his eyes.
 He wished he hadn't.
@@ -54,18 +55,20 @@ It wasn't the golden dome of Sector 4.
 It wasn't a grey rainy day, either.
 It was a screaming abyss. A hole in the universe where the data stream simply *stopped*. It was the color of a television tuned to a dead channel. It was the color of madness.
 
-*Coherence is Safety.*
-Voss's voice echoed in his memory. *The System protects you from the Raw.*
+*Coherence is Safety.* 
+
+Voss's voice echoed in his memory, a high-fidelity ghost. *The System protects you from the Raw. It manages your bandwidth so you don't peak and shatter.*
 
 "Help," Taro whispered.
 The word had no shape.
 
 He felt something grab him.
 The heat-pillar. Ven.
-Ven's hands were hot, burning through Taro's jacket. But they were solid. They were an anchor in the static.
+Ven's hands were hot, burning through Taro's jacket. But they were solid. They were an anchor in the static. A low-frequency carrier wave for his failing mind.
 
-"Taro! Breathe!"
-Ven's voice was distorted, like audio playing through a blown-out speaker. It was clipping, full of artifacts.
+"Taro! Breathe! Handshake with me!"
+
+Ven's voice was distorted, like audio playing through a blown-out speaker. It was clipping, full of digital artifacts and packet loss.
 
 Taro gasped, sucking in the wet, metallic air.
 His chest heaved.
@@ -119,25 +122,31 @@ The sky was a wall of blue static.
 "Taro?"
 Ven's face resolved out of the heat-haze. He looked like a low-poly model, his features angular and sharp. He was terrified.
 
-"I'm... online," Taro rasped.
-"You're in Safe Mode," Ven said, checking a display that Taro couldn't see. "Your output is capped at 5%. Your resolution is garbage."
+"I'm... online," Taro rasped. 
 
-"I can see," Taro said. He looked at his hands. They were wireframe meshes. "Everything looks like a diagram."
+"You're in Safe Mode," Ven said, checking a display that Taro couldn't see. "Your output is capped at 5%. Your resolution is garbage. You're dropping frames just by blinking."
 
-"Better than the Void," Ven muttered. He looked over his shoulder. The Silence Agents were gone. Blasted away by the chaotic wave Taro had unleashed. Or maybe they had just retreated from the sheer wrongness of it.
+"I can see," Taro said. He looked at his hands. They were wireframe meshes. "Everything looks like a diagram. The textures aren't loading, but the physics is... it's holding."
 
-Hana was sitting against the wireframe wall, clutching her head. Her avatar was flickering, phasing in and out of high-fidelity.
-"My head," she moaned. "The silence... it's still echoing."
+"Better than the Void," Ven muttered. He looked over his shoulder at the analog chaos behind them. The Silence Agents were gone. Blasted away by the chaotic wave Taro had unleashed. Or maybe they had just retreated from the sheer wrongness of it.
 
-Taro tried to stand. His legs felt like they belonged to someone else. Input lag.
-"We need to move," he said. "Before they come back."
+Hana was sitting against the wireframe wall, clutching her head. Her avatar was flickering, phasing in and out of high-fidelity. 
 
-"Move where?" Hana snapped. "Look at the sky, Taro! The grid is broken. We're in a Dead Zone."
+"My head," she moaned. "The silence... it's still echoing. There's a 15-decibel ringing in my left buffer."
 
-Taro looked up at the blue static wall.
-"No," he said. "We're not in a Dead Zone."
-He reached out, his wireframe fingers brushing the air. He could feel the hum of the city beneath the noise. Faint. Distorted. But there.
-"I can still hear the server beat. It's just... completely out of tune."
+Taro tried to stand. His legs felt like they belonged to someone else. Input lag was a bitch.
+
+"We need to move," he said. "Before they come back. My ping is too high to fight."
+
+"Move where?" Hana snapped. "Look at the sky, Taro! The grid is broken. We're in analog territory now."
+
+Taro looked up at the blue static wall. 
+
+"No," he said. "We're not in a Dead Zone." 
+
+He reached out, his wireframe fingers brushing the air. He could feel the hum of the city beneath the noise. Faint. Distorted. But there. 
+
+"I can still hear the server beat. It's just... completely out of phase."
 
 He looked at Ven.
 "My limiter is gone."

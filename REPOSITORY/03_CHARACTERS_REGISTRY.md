@@ -123,8 +123,17 @@ This registry catalogs the types of resonance users in The Soundscape and provid
 -   *Masking*: Uses Damping Bands to suppress his "Loud" natural state.
 -   *Superpower*: Because he processes *all* noise, he can find patterns in chaos that others ignore.
 
-**Concept**: A "walking buffer overflow." He is overwhelmed by the world until he learns to surf the data stream instead of damming it.
-**Visuals**: Messy, analog vibes. Wears vintage headphones (Analog aesthetic). His AR aura is static-laced and jagged.
+**System Interaction Style (The Score)**: 
+- **The Glitch-Map**: His HUD is unstable, filled with "raw" data others don't see—heat maps of resonance, sub-harmonics, and discarded packets. 
+- **Visuals**: Pixelated, high-contrast, feels like a 90s CRT monitor failing. He sees ghosts of where signals *were*.
+
+**Voice Guide**: 
+- **The Stutter-Step**: Often pauses to "catch the beat" of a conversation.
+- **Glitch-Speak**: Uses hardware metaphors for his own brain state (`"My buffer is full"`, `"I'm dropping frames here"`).
+- **Rhythm-Driven**: His speech pattern speeds up/slows down based on the local BPM.
+- *Sample*: *"I’m not... I'm not ignoring you. I'm just filtering. There's 14 different signals in this room and your voice is currently out of phase with the air conditioning. It’s hard to... zzt... lock on."*
+
+---
 
 ---
 
@@ -136,6 +145,15 @@ This registry catalogs the types of resonance users in The Soundscape and provid
 -   *Trait*: Absolute processing power. No delay between input and output.
 -   *Presence*: His very existence "calms" the room (enforced Damping).
 -   *Conflict*: He represents the "Neurotypical Ideal" enforced by the C-Order—calm, quiet, compliant.
+
+**System Interaction Style (The Score)**:
+- **The Command Console**: A minimalist, high-fidelity interface. No clutter. 
+- **Visuals**: Clean, golden geometric lines. He sees the "ideal" version of reality, where everything is perfectly aligned.
+
+**Voice Guide**:
+- **The Absolute Pitch**: Never hesitates. Speaks in declarative, unshakeable truths.
+- **Damped Tone**: Flat, calm, almost devoid of dynamic range (emotion).
+- *Sample*: *"The frequency of this city is deviating from standard pitch by 0.5%. We will correct it. Chaos is not an option; it is a failure of calibration."*
 
 ---
 
@@ -149,8 +167,16 @@ This registry catalogs the types of resonance users in The Soundscape and provid
 -   *Social*: Uses "The Score" to navigate conversation manually.
 -   *Superpower*: **Phase Lock**. She is the unshakeable reference point for the team. If she says it is 120 BPM, it *is* 120 BPM.
 
-**Concept**: "The Metronome." She is not "robot girl"; she is High-Fidelity.
-**Visuals**: Sharp creases. Digital aesthetic. Her AR aura is a perfect geometric grid.
+**System Interaction Style (The Score)**:
+- **The Grid-Viewer**: Everything is categorized into spreadsheets and charts. 
+- **Visuals**: Blue, blocky, 8-bit aesthetic. She sees people as data points with specific attributes (`Friend [Lvl 4]`, `Threat [Alpha]`).
+
+**Voice Guide**:
+- **The Binary Logic**: Speaks in "If/Then" statements. Very literal.
+- **Quantified Speech**: Uses numbers and percentages to describe feelings.
+- *Sample*: *"My synchronization with your current mood is at 64. If you require empathy, I will need to switch to a different preset. The current social tempo does not support sarcasm."*
+
+---
 
 **Abilities**
 - **Fundamental Presence**: Merely being near Kael stabilizes resonance
@@ -181,6 +207,15 @@ CONTROL: =================--- 85
 | Affiliation | G Vanguard |
 | Primary Ability | Pattern doubling |
 | Coherence Mode | Elastic |
+
+**System Interaction Style (The Score)**:
+- **The Tactical Overlay**: Her view is all about vectors, velocities, and troop density. 
+- **Visuals**: Amber, high-contrast, with "Countdown" clocks everywhere. She sees the world in terms of "Time to Impact."
+
+**Voice Guide**:
+- **The High-Tempo**: Speaks quickly, cutting off unnecessary words.
+- **Urgent Command**: Uses military jargon and musical time signatures (`"Movement in 4/4 time, now!"`).
+- *Sample*: *"Buffer period is over. We push now or the pattern collapses. If you can't double-time, you're just noise. Move!"*
 
 **Background**
 A prodigy commander in the G Vanguard, Serah's signature ability is "Octave Jump" - she can double any pattern, including her own actions. This makes her a devastating force multiplier but comes with severe burnout risk.
@@ -217,6 +252,15 @@ CONTROL: ======-------------- 30 (compromised by burnout damage)
 | Primary Ability | Behavior-enforcing architecture |
 | Coherence Mode | Rigid |
 
+**System Interaction Style (The Score)**:
+- **The Blueprint**: He sees the skeleton of the world—the structural lines and support pillars of resonance.
+- **Visuals**: White wireframes on a deep blue background. He sees "stress points" in people's arguments as physical cracks in their AR tags.
+
+**Voice Guide**:
+- **The Structural Critic**: Speaks in architectural analogies (foundations, pillars, facades).
+- **Condescending Precision**: Corrects others' vocabulary to be technically accurate.
+- *Sample*: *"Your logic lacks a load-bearing foundation. It is a decorative facade at best. A truly harmonious society requires rigid structural integrity, not these... aesthetic whims."*
+
 **Background**
 Dorian designs cities. Not just buildings, but the resonance fields that shape how people think, feel, and behave within them. His creations are beautiful, functional, and deeply controlling. He sees no contradiction in this.
 
@@ -252,6 +296,15 @@ CONTROL: ==================-- 90
 | Primary Ability | Mass stabilization |
 | Coherence Mode | Elastic (dangerously so) |
 
+**System Interaction Style (The Score)**:
+- **The Choral Web**: She doesn't see individuals; she sees a singular, interconnected web of heartbeats and hums.
+- **Visuals**: Soft, pulsing waves of light that connect everyone in the room. Colors denote the "mood" of the collective.
+
+**Voice Guide**:
+- **The Collective Voice**: Frequently swaps "I" for "We" or "The Song."
+- **Musical Flow**: Soft, melodic cadence, often trailed off as she listens to the "unseen chorus."
+- *Sample*: *"We feel your dissonance... it is a sharp note in a soft room. Come, join the refrain. The Song has a place for you, if you would only let your individual rhythm rest."*
+
 **Background**
 The beloved Choir-Governor of the Living Choir, Lys can synchronize thousands of people into a single harmonious resonance. When the city sings, she is its voice. But each time she conducts, she loses a little more of herself to the collective.
 
@@ -286,6 +339,15 @@ CONTROL: =============------- 65
 | Affiliation | E Flux Syndicate (loosely) |
 | Primary Ability | Exists out of phase |
 | Coherence Mode | Volatile |
+
+**System Interaction Style (The Score)**:
+- **The Signal-Void**: Her HUD is a mess of static and "ghost" images. She sees multiple versions of the same room at once.
+- **Visuals**: Glitchy, flickering, inverted colors. She sees the "negative space" where resonance *isn't*.
+
+**Voice Guide**:
+- **The Static-Fragment**: Her speech is interrupted by long pauses or vocal "glitches" (represented by dashes or `zzt`).
+- **Nihilistic / Phasing**: Speaks as if she is already gone or never existed.
+- *Sample*: *"I’m... not really--zzt--here, you know? Just an echo of a bad frequency. Why bother trying to--static--sync? You're just a wave that hasn't crashed yet."*
 
 **Background**
 Nyx was born wrong - or was made wrong - no one is sure. She exists slightly out of phase with the rest of reality. This makes her impossible to pin down, hard to perceive, and deeply lonely. She causes feedback just by existing near others.

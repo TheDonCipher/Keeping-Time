@@ -20,8 +20,9 @@ The Silence Agents had pinned them against a dead-end wall. The air was dead. Ta
 **> VEN_STATUS: IMMOBILE**
 **> HANA_STATUS: UNCONSCIOUS**
 
-Hana was down. Her perfect square wave had flatlined.
-She couldn't breathe in the silence. She was dependent on the Grid, and the Grid was gone.
+Hana was down. Her perfect, Hi-Fi square wave had flatlined. 
+
+"She can't breathe in the silence," Taro whispered, his stutter returning as his NAI struggled to render his own vocal chords. "Analysis: She’s... zzt... dependent on the Grid. If/Then: If the master clock is gone, then her heart-rate is unindexed. She’s dropping packets."
 
 "Taro," Ven grunted. "I can't... hold them."
 
@@ -36,13 +37,13 @@ No options.
 Voss was right. Taro wasn't a soldier. He was a Variable.
 And variables break equations.
 
-"Ven," Taro whispered. "Drop the ground link."
+"Ven," Taro whispered, leaning into the Low-Fi grit. "Drop the ground link. Unplug me from your buffer."
 
-"What?"
+"What? No! I can ground you! Don't reboot now!"
 
-"Let me go. Unplug me."
+"Let me go. I need to peak. I need to... zzt... unmask."
 
-"You'll burn out. You'll fry your cortex."
+"You'll burn out. You'll fry your core logic."
 
 "Do it!"
 
@@ -77,11 +78,12 @@ The noise was beautiful.
 **> LIMITER: REMOVED**
 **> OUTPUT: 100%... 110%... 120%**
 
-Taro screamed.
-It wasn't a human scream. It was a raw, analog feedback loop amplified by bio-plasma.
-A massive, jagged, golden **Sawtooth Wave** erupted from his body.
+Taro screamed. 
+It wasn't a human scream. It was a raw, analog feedback loop amplified by bio-plasma. A total gain-override that shattered the local keyspace.
 
-It hit the Silence Field like a freight train hitting a wall of glass.
+A massive, jagged, golden **Sawtooth Wave** erupted from his body. It looked like a 4K texture being torn from a low-poly mesh.
+
+It hit the Silence Field like a server-farm exploding.
 
 *SHATTER.*
 
@@ -103,24 +105,28 @@ His vision was melting. Literally. The world wasn't just losing its overlay; it 
 He looked at Hana. She wasn't a girl anymore. She was a cloud of biological probabilities, a terrifying smear of motion without definition.
 He looked at Ven. Ven was a towering pillar of thermal gradients, devoid of human shape.
 
-Taro looked at his hands.
-They weren't hands. They were just... input. Raw, undefined interaction points.
-His NAI hadn't just crashed. It had stopped interpreting the universe.
+He looked at his hands. 
+They weren't hands anymore. They were just... uninitialized input. Raw, undefined interaction points flickering with missing texture flags. 
+
+His NAI hadn't just crashed. It had stopped interpreting the universe. The operating system was dead.
 
 **> SHUTDOWN_SEQUENCE: IRREVERSIBLE**
+**> SYSTEM_STATE: NULL_POINTER_EXCEPTION**
 
 The world dissolved.
 Not into silence.
 Into Noise.
 
-The last thing Taro saw before his mind collapsed was the sky.
-The "golden sky" of Sector 4 didn't tear open. It simply ceased to exist.
-And behind it, there was no grey rain. There were no clouds.
-There was only the screaming abyss of un-tuned reality. A vast, non-Euclidean static that defied depth, color, and logic.
-It wasn't the "Real World." It was the Void.
+The last thing Taro saw before his mind collapsed was the sky. 
 
-**> KERNEL_PANIC**
-**> SYSTEM_HALT**
+The "golden sky" of Sector 4 didn't tear open. It simply ceased to render. The texture map vanished, revealing the raw geometry of the abyss.
+
+And behind it, there was no grey rain. There were no clouds. No atmosphere. 
+
+There was only the screaming abyss of un-tuned reality. A vast, non-Euclidean static that defied depth, color, and logic. An analog hell of raw probability. It wasn't the "Real World." It was the **Source Code**.
+
+**> KERNEL_PANIC: REALITY_NOT_FOUND**
+**> SYSTEM_HALT [0x00000000]**
 
 ---
 

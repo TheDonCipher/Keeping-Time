@@ -57,21 +57,21 @@ Taro closed his eyes. The memory wasn't a blur; it was a corrupt file. Jagged ed
 
 Voss tapped the desk. A holographic window snapped into existence between them. It displayed a 3D wireframe of the soldier—or what was left of him.
 
-"You executed an unauthorized overwrite," Voss said. "You didn't patch his signal. You deleted the carrier wave entirely."
+"You executed an unauthorized overwrite," Voss said. "You didn't patch his signal. You deleted the carrier wave entirely. You bricked a Class-4 Vanguard unit in three frames."
 
-The wireframe on the screen rotated. It showed the soldier's nervous system. It was dark. dormant.
+The wireframe on the screen rotated. It showed the soldier's nervous system. It was dark. Dormant. Total signal loss.
 
-"He is functionally deaf to the Soundscape," Voss explained. "A bricked unit."
+"He is functionally dead to the Soundscape," Voss explained. "A bricked unit. No handshake possible."
 
 Taro looked at his hands. He felt the phantom vibration of the 880 Hz—the urge to fix, to tune, to change.
 
 "He was going to crash the server," Taro said. "I balanced the equation."
 
-"You balanced it with a sledgehammer," Voss noted. "The Grand Concord relies on **Precision**, Taro. Not brute force."
+"You balanced it with a sledgehammer," Voss noted. "The Grand Concord relies on **Precision**, Taro. Not brute force. We are a high-fidelity society. Your output was... noisy."
 
-Voss stood up. He walked around the desk, his movement efficient, conserving kinetic energy.
+Voss stood up. He walked around the desk, his movement efficient, conserving kinetic energy. Every step was a calibrated vector.
 
-"The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stability. You..." Voss pointed a manicured finger at Taro's chest. "You are running a variable frequency. You are 'Noise'."
+"The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss pointed a manicured finger at Taro's chest. "You are running a variable frequency. You are 'Noise'. You are broadcasting across the entire bandwidth of Sector 7."
 
 **> ALERT: SIGNAL_INSTABILITY_DETECTED**
 **> SOURCE: SUBJECT_TARO**
@@ -104,9 +104,9 @@ Taro looked at the options.
 Option A was deletion.
 Option B was compilation.
 
-"I'm not a soldier," Taro said. "I'm a calibrator. I fix things."
+"I'm not a soldier," Taro said. "I'm a calibrator. I... I fix things. My hardware is built for alignment, not for combat."
 
-"The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application."
+"The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application. We take your jitter and we make it tactical."
 
 Voss swiped his hand. **OPTION A** dissolved into code.
 

@@ -35,13 +35,15 @@ But he knew it wasn't.
 
 He had felt this "wrongness" his entire life. The feeling that his skin was too tight. The feeling that the "song" the world wanted him to sing was in a key he couldn't reach. The C-Order called it "Chaos." Voss called it "Corruption."
 
-But looking at the wireframe—that sharp, electric, terrifying shape—Taro realized it wasn't corruption.
+But looking at the wireframe—that sharp, electric, terrifying shape—Taro realized it wasn't corruption. 
 
-It was *him*.
+It was *him*. The raw signal.
 
 The "Cadet" in the mirror was the mask. The "Glitch" was the person.
 
-He squeezed his eyes shut. The dysphoria washed over him—a nausea that wasn't physical, but ontological. Being "Corrected" by the system, being "Patched" by Voss... it felt like being erased.
+He squeezed his eyes shut. The dysphoria washed over him—an ontological nausea that felt like a permanent frame-rate lag. Being "Corrected" by the system, being "Patched" by Voss... it felt like being deleted, bit by bit, to free up RAM for a version of himself he didn't even recognize. 
+
+His CPU was pegged at 100%. He needed to dump heat.
 
 He needed to get out. The air in the dorms was too thick. Too ordered.
 
@@ -110,7 +112,7 @@ Kimura's eyes widened. The anger drained away, replaced by a terrified recogniti
 
 Kimura lowered the cello. The heavy "Tank" posture slumped. For a moment, the cadet didn't look like a soldier. Just a scared kid trapped in a suit of armor that didn't belong to them.
 
-"No," Kimura said, the voice cracking—the deep "Command Voice" slipping into something higher, truer. "It never has."
+"No," Kimura said, the voice cracking—the deep "Command Voice" slipping into something truer, higher. "The... the hull... it’s high-latency. It’s always been lagging behind who I actually--zzt--am."
 
 Taro walked over. He sat on the floor, ignoring the protocol that said he should stand at attention.
 
@@ -132,9 +134,10 @@ He felt tuned.
 
 Kimura hesitated. Then, a small, sad smile touched the corner of the heavy jawline.
 
-"Elara," she whispered. "My name is Elara."
+"Elara," she whispered. "My name is Elara. I’m... I’m broadband. I hear everything. And the system... it just wants me to be a single, flat note."
 
 **> DIALOGUE_EVENT: RESONANCE_SYNC**
 **> STATUS: MASKING_OFF**
+**> SIGNAL: UNFILTERED**
 
-For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore.
+For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore. They were two glitches in a perfect machine, and for a brief, flickering moment, they were in phase.

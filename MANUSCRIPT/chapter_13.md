@@ -18,18 +18,19 @@ Then, the progress bar hit **100%**.
 **> EXECUTING: HIGH_FIDELITY_RENDERER**
 
 The world snapped.
-The blue wireframe mesh of the medical ward didn't just fade; it was aggressively paved over by textures. The flat grey polygons of the walls erupted into brushed steel and sterilized plastic. The low-poly light sources bloomed into complex volumetric glows, casting soft, ray-traced shadows across the floor.
+The blue wireframe mesh of the medical ward didn't just fade; it was aggressively paved over by textures. The flat grey polygons of the walls erupted into brushed steel and sterilized plastic. The low-poly light sources bloomed into complex volumetric glows, casting soft, ray-traced shadows across the floor. 
 
-It was violent. Like being slapped in the face with reality.
+It was violent. Like being slapped in the face with reality. 8K resolution hit his optic nerve with zero latency.
 
-Taro gasped, his hands gripping the sheets.
-They were sheets again. Cotton. Thread count 200. He could feel the friction data.
+Taro gasped, his hands gripping the sheets. 
+
+They were sheets again. Cotton. Thread count 200. He could feel the friction data. His haptics were coming back online, flooding his brain with high-bandwidth sensation.
 
 **> SENSORY_DRIVERS: ONLINE**
-**> HAPTICS: CALIBRATED**
+**> HAPTICS: CALIBRATED [HI-FI]**
 
-"Easy," Voss said.
-Voss wasn't a polygon anymore. He was a high-resolution human being. Taro could see the pores on his skin, the wear on his uniform's collar, the micro-scratches on his silver badge.
+"Easy," Voss said. 
+Voss wasn't a polygon anymore. He was a high-resolution human being. Taro could see the pores on his skin, the wear on his uniform's collar, the micro-scratches on his silver badge. He was a perfect C-Order sample.
 But there was something else.
 
 Taro blinked.
@@ -49,16 +50,18 @@ A blue line tracing his nervous system.
 Voss tapped his own temple.
 "Project Dissonance disables those filters. You don't just see the UI anymore, Taro. You see the source code."
 
-Taro looked around the room.
-It was overwhelming.
+Taro looked around the room. 
+
+It was overwhelming. Broadband perception was too much for his weary brain.
+
 The walls weren't just solid barriers; they were stress maps. He could see where the load-bearing beams were under tension (yellow lines). He could see a hairline fracture in the window glass (flashing red).
 
-He looked at his own hand.
-He could see the bio-plasma flowing under his skin like liquid gold.
-It looked... hungry.
+He looked at his own hand. 
+
+He could see the bio-plasma flowing under his skin like liquid gold. It looked... hungry. Vengeful.
 
 **> VITALITY: 100%**
-**> LIMITER: NONE**
+**> LIMITER: NONE [UNBOUND]**
 
 "Where is my ring?" Taro asked. He touched his neck. It was bare.
 
@@ -84,20 +87,27 @@ Ven was a walking furnace. The air shimmered around him. His resonance wasn't ju
 Hana was a razor. Her edges were too sharp. Her harmony wasn't peaceful; it was a high-tension wire waiting to snap.
 **> HANA_STATUS: VIBRATION [HIGH_FREQUENCY]**
 
-They stood up when they saw him.
-"Taro!" Hana moved first, bridging the gap. She grabbed his shoulders. "You're... you're high-res again."
+They stood up when they saw him. 
 
-"I'm back," Taro said.
-He looked at her. Really looked at her.
-He could see the worry lines rendered in wireframe under her skin. He could see the jagged spike in her pulse rate.
+"Taro!" Hana moved first, bridging the gap. She grabbed his shoulders. "You're... you're high-res again. Your texture map is actually loading. My analysis shows a 100% recovery."
+
+"I'm back," Taro said. 
+
+He looked at her. Really looked at her. 
+
+He could see the worry lines rendered in wireframe under her skin. He could see the jagged spike in her pulse rate. 
+
 **> EMOTION: RELIEF [GENUINE]**
+**> ANALYZED_INTENT: ATTACHMENT [98%]**
 
-"They said you burned out," Ven rumbled, stepping up behind her. "They said you hit 3 million output. That's impossible, Taro. That's a bomb, not a student."
+"They said you burned out," Ven rumbled, stepping up behind her. "They said you hit 3 million output. That's a total server crash, Taro. That's a bomb, not a student. You were peaking so hard I thought the whole sector would go analog."
 
-"It was a glitch," Taro lied. The word tasted synthetic.
+"It was a glitch," Taro lied. The word tasted synthetic. 
+
 **> SOCIAL_PROTOCOL: DECEPTION [ACTIVE]**
+**> CARRIER_WAVE: JITTER [12Hz]**
 
-"Voss fixed it," Taro added. "He gave me a patch."
+"Voss fixed it," Taro added. "He gave me a patch. Reset the whole kernel."
 
 Ven narrowed his eyes. He looked at Taro's neck.
 "Where's your collar?"

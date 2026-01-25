@@ -3,6 +3,7 @@
 > **Narrative Voice**: **Third Person Limited (Taro)** from Chapter 2 onwards.
 > **Magic Tone**: **The User Manual**. Magic is Engineering. Use technical, precise language.
 > **Visuals**: Hallucinogenic Reality (The System rewrites the world).
+> **Character & Voice**: **[03_CHARACTERS_REGISTRY.md](file:///c:/Users/Japan/OneDrive/Documents/Books/Keeping%20Time/REPOSITORY/03_CHARACTERS_REGISTRY.md)** and **[VOICE_GUIDE.md](file:///c:/Users/Japan/OneDrive/Documents/Books/Keeping%20Time/REPOSITORY/VOICE_GUIDE.md)** are the mandatory style guides for dialogue and personality.
 
 ---
 
@@ -40,7 +41,8 @@ The user requested "Reduced Frequency Talk" but "Manual Style."
 ## 4. FORMATTING RULES
 1.  **System Headers**: Use them to define the scene's "Operating Parameters."
 2.  **Visual Metaphors**: Use UI/UX metaphors. Glitches, Frame Drops, Rendering Errors, Blue Screens.
-3.  **The Manual**: Occasionally, the narrative should sound like it is quoting the *Keepers' Handbook*.
+4.  **The Manual**: Occasionally, the narrative should sound like it is quoting the *Keepers' Handbook*.
+5.  **Resonant Dialect**: Consult `VOICE_GUIDE.md` for slang (e.g., *Broadband*, *Damping*, *Hi-Fi*) and `03_CHARACTERS_REGISTRY.md` for character-specific system overlays.
 
 ---
 
