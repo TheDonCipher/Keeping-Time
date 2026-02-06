@@ -10,9 +10,9 @@ The cello lay forgotten on the floor. She was sitting cross-legged, the holograp
 
 "Retuning," Taro repeated, his own voice fragmenting as he tried to match her tempo. "Like... zzt... changing your key signature?"
 
-"Deeper," Elara said. She tapped a command. A waveform appeared in the air. It was ugly, jagged, and chaotic—a raw broadband signal.
+"Deeper," Elara said. She tapped a command. A waveform appeared in the air. It was ugly, jagged, and chaotic—a raw full-spectrum signal.
 
-"This is me," she said, pointing to the chaos. "This is my raw resonance. My factory setting. The system scans this at birth, says 'High Mass, Low Frequency,' and assigns me the Hull class: MALE/TANK. It ignores the sub-harmonics."
+"This is me," she said, pointing to the chaos. "This is my raw resonance. My [[Factory Setting::A derogatory slang for a user's biological 'destiny' or birth resonance, which the C-Order considers immutable and 'Right'.]] . The system scans this at birth, says 'High Mass, Low-End Pitch,' and locks the Hull class. It ignores the sub-harmonics."
 
 She tapped another key. A second waveform appeared overlaid on top—smooth, sine-wave perfection.
 
@@ -32,11 +32,13 @@ She swiped her hand. The amber interface shifted.
 **> TARGET: PITCH_SHIFT +2 OCTAVES**
 **> WARNING: WARRANTY_VOID**
 
-"The System locks our resonance," Elara explained. "It says your frequency is fixed. Immutable. Biological destiny." She scoffed. "But the NAI is software. And software can be cracked."
+It was illegal [[Modulation::Unauthorized code injection that modifies a user's resonant frequency, bypassing the Hull locks.]] .
+
+"The System locks our resonance," Elara explained. "It says your pitch is fixed. Immutable. Biological destiny." She scoffed. "But the NAI is software. And software can be cracked."
 
 "You hacked your own NAI?" Taro asked, stunned.Tampering with a Neural Audio Interface was a one-way ticket to a lobotomy ward.
 
-"I didn't hack it," Elara said. "I bypassed the C-Order kernel. I wrote a custom driver that sits between my raw signal and the Hull output. It takes my jagged waveform and... translates it. Instead of forcing it down into a bass-sink, it lets it flow up. Into the treble range. High-fidelity self-determination."
+"I didn't hack it," Elara said. "I bypassed the C-Order kernel. I wrote a custom driver that sits between my raw signal and the Hull output. It takes my jagged waveform and... translates it. Instead of forcing it down into a low-end sink, it lets it flow up. Into the treble range. High-fidelity self-determination."
 
 She reached out and touched the holographic waveform. As her finger made contact, her hand flickered violently—phasing between the heavy glove and the light beneath.
 
@@ -72,7 +74,7 @@ Taro hesitated. He looked at his own hands. He thought about the crash. The Void
 
 "Masking," Elara nodded. "Damping your soul so you don't peak."
 
-"But then I broke," Taro said. "And now... now I don't fit the key at all. My bandwidth is too wide. I'm dissonant. I'm noise."
+"But then I broke," Taro said. "And now... now I don't fit the key at all. My capacity is too wide. I'm dissonant. I'm noise."
 
 "Noise is just data the system doesn't understand yet," Elara said. It sounded like a mantra. Something she had repeated to herself a thousand times in the dark. "It’s unindexed beauty."
 

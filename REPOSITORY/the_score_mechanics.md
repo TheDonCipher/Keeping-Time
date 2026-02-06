@@ -110,6 +110,28 @@ The visual style of The Score depends on the user's NAI firmware and Faction.
 
 ---
 
+## 5. SYSTEM RENDER MODES (Visual Filters)
+
+### SAFE MODE (BIOS Level)
+**Status**: Emergency Protocol / Low Power.
+- **Visuals**: Blue wireframe geometry on a black void. No textures. No lighting.
+- **HUD**: Minimal text-only. Command line interface style.
+- **Sensation**: Cold, sterile, "blueprint" feeling.
+
+### HIGH-FIDELITY (Hi-Fi)
+**Status**: Admin / Unfiltered.
+- **Visuals**: 8K Hyper-realism. Shows structural stress lines (yellow), heat leaks (red), and biological imperfections.
+- **HUD**: Overloaded with data points.
+- **Sensation**: "Too Loud." Sensory overwhelm.
+
+### THE VOID (Source Code)
+**Status**: Fatal Error / Crash.
+- **Visuals**: "Texture Missing" purple/black checkerboards. Non-Euclidean geometry. Static walls.
+- **HUD**: System Crash / Kernel Panic text.
+- **Sensation**: Nausea, vertigo, primal fear.
+
+---
+
 ## 5. NARRATIVE INTEGRATION EXAMPLES
 
 **Scene: A Social Lie**

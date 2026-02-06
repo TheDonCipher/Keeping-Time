@@ -1,0 +1,136 @@
+:root {
+    /* Color Palette - Core Variables */
+    --cyan: #00f3ff;
+    --cyan-glow: rgba(0, 243, 255, 0.4);
+    --gold: #ffcc33;
+    --gold-glow: rgba(255, 204, 51, 0.3);
+    --bg-dark: #0a0a0c;
+    --bg-card: rgba(20, 20, 25, 0.8);
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.85); /* Increased for better contrast */
+    --red: #ff5252; /* Slightly brighter for AA compliance on dark bg */
+    --border: rgba(255, 255, 255, 0.15);
+    --glass: rgba(255, 255, 255, 0.07);
+    
+    /* Document Theme Colors */
+    --theme-nai: var(--cyan);
+    --theme-journal: #d8c8b8;
+    --theme-faction: var(--gold);
+    --theme-archival: #ffffff;
+    --theme-elder: #800000;
+    --theme-glitch: #ff00ff;
+
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Body resets for immersive feel */
+body.archive-page {
+    background: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Background Waveform Animation */
+.archive-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    pointer-events: none;
+    background: 
+        radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0a0a0c 100%),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></svg>');
+}
+
+/* NAI Header / Status Bar */
+.nai-status {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 12, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--border);
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem; /* Increased from 0.8 */
+    letter-spacing: 1px;
+}
+
+.nai-status .sync-indicator {
+    color: var(--cyan);
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+}
+
+/* Breadcrumbs */
+.archive-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.archive-nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.archive-nav a:hover {
+    color: var(--cyan);
+}
+
+/* Content Container */
+.archive-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* Typography Enhancements */
+h1, h2, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.glitch-text:hover {
+    animation: glitch 0.3s cubic-bezier(.25,.46,.45,.94) both infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+/* Utility: Glass Box */
+.glass-box {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* Faction Specific Utilities */
+.faction-rhythm { border-left: 4px solid var(--theme-nai); }
+.faction-harmony { border-left: 4px solid var(--gold); }
+.faction-noise { border-left: 4px solid var(--red); }
+.faction-silence { border-left: 4px solid #444; }

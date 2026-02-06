@@ -1,0 +1,598 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEEPING TIME | Volume 1: The Impulse - Complete Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @page { size: 6in 9in; margin: 0.75in; }
+        
+        :root {
+            /* Light Theme */
+            --accent: #00f3ff;
+            --accent-glow: rgba(0, 243, 255, 0.3);
+            --gold: #ffcc33;
+            --text: #1a1a1a;
+            --bg: #ffffff;
+            --sidebar-bg: #f8f9fa;
+            --system-bg: #f0f2f5;
+            --border: #ddd;
+            --font-main: 'Crimson Pro', serif;
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --max-width: 700px;
+            --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        [data-theme="dark"] {
+            --text: #e0e0e0;
+            --bg: #0a0a0c;
+            --sidebar-bg: #151518;
+            --system-bg: #1a1a1d;
+            --border: #333;
+            --accent-glow: rgba(0, 243, 255, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-main);
+            line-height: 1.8;
+            color: var(--text);
+            background: var(--bg);
+            transition: background-color var(--transition), color var(--transition);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Layout */
+        main {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 120px 24px;
+        }
+
+        /* Navigation */
+        .nav-ui {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(var(--bg), 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+            transition: transform 0.3s ease, background-color var(--transition);
+        }
+
+        .nav-ui.hidden { transform: translateY(-100%); }
+
+        .progress-container {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--border);
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: var(--accent);
+            width: 0%;
+            box-shadow: 0 0 10px var(--accent-glow);
+            transition: width 0.1s linear;
+        }
+
+        .nav-controls { display: flex; gap: 16px; align-items: center; }
+
+        .ui-btn {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+        }
+
+        .ui-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-glow);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 900; }
+        
+        header.title-page {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 100px;
+        }
+
+        h1 { 
+            font-size: clamp(3rem, 10vw, 5rem); 
+            text-transform: uppercase; 
+            letter-spacing: 0.25em; 
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--text) 30%, var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle { 
+            font-size: 1.2rem; 
+            opacity: 0.6; 
+            letter-spacing: 0.4em;
+            font-weight: 400;
+            margin-bottom: 64px;
+        }
+
+        h3 { 
+            font-size: clamp(1.8rem, 5vw, 2.5rem); 
+            margin: 160px 0 80px; 
+            text-align: center; 
+            text-transform: uppercase; 
+            letter-spacing: 0.15em;
+        }
+
+        h3::before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--accent);
+            margin: 0 auto 32px;
+        }
+
+        h4 { 
+            font-size: 0.9rem; 
+            margin: 60px 0 32px; 
+            text-transform: uppercase; 
+            letter-spacing: 0.2em; 
+            color: var(--accent);
+            font-family: var(--font-mono);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h4::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        p { 
+            margin: 2em 0; 
+            text-align: justify; 
+            font-size: 1.25rem;
+            color: var(--text);
+            opacity: 0.95;
+        }
+
+        /* Chapter Containers */
+        .chapter {
+            margin-bottom: 200px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .chapter.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* System Messages */
+        .system-block {
+            font-family: var(--font-mono);
+            background: var(--system-bg);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            padding: 32px;
+            margin: 48px 0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            border-radius: 4px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* Table of Contents */
+        .toc-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg);
+            z-index: 2000;
+            display: none;
+            padding: 80px 24px;
+            overflow-y: auto;
+        }
+
+        .toc-modal.active { display: block; }
+
+        .toc-list {
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .toc-list li { margin: 24px 0; }
+
+        .toc-list a {
+            text-decoration: none;
+            color: var(--text);
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            transition: color 0.2s;
+        }
+
+        .toc-list a:hover { color: var(--accent); }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 48px;
+            height: 48px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            color: var(--text);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        @media (max-width: 768px) {
+            main { padding: 80px 20px; }
+            .intermission { margin: 80px -20px; padding: 60px 32px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+        }
+
+        /* Sidebar Styling */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            right: -400px; /* Hidden by default */
+            width: 400px;
+            height: 100vh;
+            background: var(--sidebar-bg);
+            border-left: 1px solid var(--border);
+            box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+            transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 1500;
+            overflow-y: auto;
+            padding: 80px 24px 24px;
+        }
+
+        #sidebar.active {
+            right: 0;
+        }
+
+        .tooltip {
+            border-bottom: 1px dotted var(--accent);
+            cursor: help;
+            position: relative;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .tooltip::after {
+            content: attr(data-tip);
+            position: attribute; /* Fallback */
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: var(--system-bg);
+            color: var(--text);
+            padding: 8px 12px;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: var(--font-mono);
+            white-space: pre-wrap;
+            width: max-content;
+            max-width: 250px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            z-index: 10;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            pointer-events: none;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(-8px);
+        }
+
+        #sidebar-toggle {
+            position: fixed;
+            top: 90px;
+            right: 0;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-right: none;
+            padding: 8px 16px;
+            border-radius: 4px 0 0 4px;
+            cursor: pointer;
+            z-index: 1600;
+            font-family: var(--font-display);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: right 0.3s ease;
+            box-shadow: -2px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        details {
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+            border-bottom: 1px solid var(--border);
+        }
+
+        details:last-child { border-bottom: none; }
+
+        details:hover {
+            background: var(--system-bg);
+        }
+
+        summary {
+            padding: 16px;
+            font-weight: bold;
+            color: var(--text);
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: var(--accent);
+            transition: transform 0.2s;
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details blockquote, details p {
+            margin: 0;
+            padding: 0 16px 16px 16px;
+            color: var(--text);
+            border-left: none;
+            font-style: normal;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="nav-ui" id="main-nav">
+        <div class="nav-brand" style="font-family: var(--font-display); font-weight: 900; letter-spacing: 2px;">KEEPING TIME</div>
+        <div class="nav-controls">
+            <button class="ui-btn" onclick="toggleTOC()" aria-label="Open chapters menu">Chapters</button>
+            <button class="ui-btn" onclick="toggleTheme()" id="theme-icon" aria-label="Toggle dark mode">Theme</button>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar" id="reading-progress"></div>
+        </div>
+    </nav>
+    
+    <button id="sidebar-toggle" onclick="toggleSidebar()">Library</button>
+    <aside id="sidebar">
+        <div class="sidebar-header">
+            <h3>System Library</h3>
+            <p class="subtitle" style="margin-bottom: 24px; font-size: 0.9rem;">Verified Data Only</p>
+        </div>
+        <div class="sidebar-content">
+            <!-- NOTE: Sidebar content goes here -->
+        </div>
+    </aside>
+
+    <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script>
+        // Sidebar Toggle
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const btn = document.getElementById('sidebar-toggle');
+            sidebar.classList.toggle('active');
+            
+            if (sidebar.classList.contains('active')) {
+                btn.style.right = '400px';
+                btn.textContent = 'Close';
+            } else {
+                btn.style.right = '0';
+                btn.textContent = 'Library';
+            }
+        }
+
+        // Theme Management
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('novel-theme', newTheme);
+            document.getElementById('theme-icon').textContent = newTheme === 'dark' ? 'Light' : 'Dark';
+        }
+
+        // Initialize Theme
+        const savedTheme = localStorage.getItem('novel-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.body.setAttribute('data-theme', savedTheme);
+
+        // Scroll Progress & Navigation Visibility
+        let lastScrollY = window.scrollY;
+        const nav = document.getElementById('main-nav');
+        const progressBar = document.getElementById('reading-progress');
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + "%";
+
+            // Back to Top Visibility
+            if (winScroll > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Saved Scroll Position
+            localStorage.setItem('novel-scroll-pos', winScroll);
+
+            // Hide/Show Nav on scroll
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                nav.classList.add('hidden');
+            } else {
+                nav.classList.remove('hidden');
+            }
+            lastScrollY = window.scrollY;
+
+            // Reveal Chapters
+            revealOnScroll();
+        }, { passive: true });
+
+        // TOC Toggle
+        function toggleTOC() {
+            document.getElementById('toc-modal').classList.toggle('active');
+            document.body.style.overflow = document.getElementById('toc-modal').classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Scroll Reveal Implementation
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('.chapter');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const isVisible = (rect.top <= window.innerHeight * 0.85);
+                if (isVisible) el.classList.add('revealed');
+            });
+        }
+
+
+        // Initial Reveal and Restore Position
+        window.addEventListener('load', () => {
+            const savedPos = localStorage.getItem('novel-scroll-pos');
+            if (savedPos) window.scrollTo(0, parseInt(savedPos));
+            revealOnScroll();
+        });
+    </script>
+
+    <div class="toc-modal" id="toc-modal">
+        <button class="ui-btn" onclick="toggleTOC()" style="position: absolute; top: 24px; right: 24px;">Close</button>
+        <ul class="toc-list">
+            <li><a href="#ch1" onclick="toggleTOC()">Chapter 1: The Zap</a></li>
+            <li><a href="#ch2" onclick="toggleTOC()">Chapter 2: The Assessment</a></li>
+            <li><a href="#ch3" onclick="toggleTOC()">Chapter 3: Modulation</a></li>
+            <li><a href="#ch4" onclick="toggleTOC()">Chapter 4: The Medium</a></li>
+            <li><a href="#ch5" onclick="toggleTOC()">Chapter 5: The Sync Check</a></li>
+            <li><a href="#ch6" onclick="toggleTOC()">Chapter 6: The Ground State</a></li>
+            <li><a href="#ch7" onclick="toggleTOC()">Chapter 7: The Rival</a></li>
+            <li><a href="#ch8" onclick="toggleTOC()">Chapter 8: The Sortie</a></li>
+            <li><a href="#ch9" onclick="toggleTOC()">Chapter 9: The Silence</a></li>
+            <li><a href="#ch10" onclick="toggleTOC()">Chapter 10: The Breach</a></li>
+            <li><a href="#ch11" onclick="toggleTOC()">Chapter 11: The Blue Screen</a></li>
+            <li><a href="#ch12" onclick="toggleTOC()">Chapter 12: The Audit</a></li>
+            <li><a href="#ch13" onclick="toggleTOC()">Chapter 13: The Patch</a></li>
+            <li><a href="#ch14" onclick="toggleTOC()">Chapter 14: The Return</a></li>
+            <li><a href="#ch15" onclick="toggleTOC()">Chapter 15: The Phantom Mesh</a></li>
+            <li><a href="#ch16" onclick="toggleTOC()">Chapter 16: Illegal Modulations</a></li>
+            <li><a href="#ch17" onclick="toggleTOC()">Chapter 17: The Underground</a></li>
+        </ul>
+    </div>
+
+    <main id="main-content">
+<header class="title-page">
+    <h1>KEEPING TIME</h1>
+    <div class="subtitle">VOLUME 1: THE IMPULSE</div>
+    <p>By the Architect</p>
+    </header>
+    <!-- TABLE OF CONTENTS (Legacy Hidden) -->
+    <div style="display:none;">
+    <h2>Contents</h2>
+    <ul>
+    <li><a href="#ch1">Chapter 1: The Zap</a></li>
+    <li><a href="#ch2">Chapter 2: The Assessment</a></li>
+    <li><a href="#ch3">Chapter 3: Modulation</a></li>
+    <li><a href="#ch4">Chapter 4: The Medium</a></li>
+    <li><a href="#ch5">Chapter 5: The Sync Check</a></li>
+    <li><a href="#ch6">Chapter 6: The Ground State</a></li>
+    <li><a href="#ch7">Chapter 7: The Rival</a></li>
+    <li><a href="#ch8">Chapter 8: The Sortie</a></li>
+    <li><a href="#ch9">Chapter 9: The Silence</a></li>
+    <li><a href="#ch10">Chapter 10: The Breach</a></li>
+    <li><a href="#ch11">Chapter 11: The Blue Screen</a></li>
+    <li><a href="#ch12">Chapter 12: The Audit</a></li>
+    <li><a href="#ch13">Chapter 13: The Patch</a></li>
+    <li><a href="#ch14">Chapter 14: The Return</a></li>
+    <li><a href="#ch15">Chapter 15: The Phantom Mesh</a></li>
+    <li><a href="#ch16">Chapter 16: Illegal Modulations</a></li>
+    <li><a href="#ch17">Chapter 17: The Underground</a></li>
+    </ul>
+    </div>
+    <!-- NOTE: Full chapter content goes here -->
+    </main>
+</body>
+</html>

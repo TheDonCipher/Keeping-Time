@@ -1,275 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="S6kAjb"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="7nSMEj"/>
-<title data-cid="jWTYcl">The Soundscape Archives</title>
-<style data-cid="uHfusj">
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Cormorant+Garamond:wght@400;700&family=Inter:wght@300;400;700&display=swap');
-
-        body {
-            background-color: #1a1a1a;
-            color: #cccccc;
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLITCH_DOC: THE_UNFINISHED_SCORE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=JetBrains+Mono:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --glitch-cyan: #00f3ff;
+            --glitch-magenta: #ff00ff;
+            --glitch-bg: #050505;
         }
 
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 1rem;
+        body {
+            background: var(--glitch-bg);
+            color: #fff;
+            font-family: 'JetBrains Mono', monospace;
+            overflow-x: hidden;
+        }
+
+        .glitch-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            position: relative;
+        }
+
+        /* Glitchy Static Overlay */
+        .static-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23n)" opacity="0.03"/></svg>');
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        header {
+            margin-bottom: 100px;
+            border-bottom: 2px solid var(--glitch-cyan);
+            padding-bottom: 40px;
+        }
+
+        .hacked-tag {
+            background: var(--glitch-cyan);
+            color: #000;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            text-shadow: 2px 0 var(--glitch-magenta), -2px 0 var(--glitch-cyan);
+            letter-spacing: -2px;
+        }
+
+        .doc-meta {
+            font-family: 'Share Tech Mono', monospace;
+            opacity: 0.5;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .intro-text {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: var(--glitch-cyan);
+            margin-bottom: 80px;
+            border-left: 5px solid var(--glitch-cyan);
+            padding-left: 30px;
         }
 
         article {
-            border: 1px solid #444;
-            margin-bottom: 4rem;
-            padding: 2rem 3rem;
-            background-color: #252525;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-        }
-
-        h1, h2, h3, h4 {
-            font-weight: 700;
-            line-height: 1.2;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-            color: #e0e0e0;
-        }
-
-        h1 { font-size: 2.5em; }
-        h2 { font-size: 2em; }
-        h3 { font-size: 1.5em; }
-        h4 { font-size: 1.2em; }
-
-        p { margin-bottom: 1em; }
-        hr { border: 0; border-top: 1px solid #555; margin: 2rem 0; }
-
-        /* Book 1: The Unfinished Score (Academic) */
-        #book-unfinished-score {
-            background-color: #f4f1ea;
-            color: #3d3d3d;
-            font-family: 'Cormorant Garamond', serif;
-            border-left: 5px solid #8b0000;
-        }
-        #book-unfinished-score h1, #book-unfinished-score h2, #book-unfinished-score h3 {
-            color: #1a1a1a;
-            border-bottom: 1px solid #c9c0b1;
-            padding-bottom: 0.3em;
-        }
-        #book-unfinished-score .case-study-meta {
-            font-style: italic;
-            color: #555;
-            font-size: 0.9em;
-            margin-bottom: 1.5em;
-        }
-
-        /* Book 2: The Silent Intervals (Redacted Manual) */
-        #book-silent-intervals {
-            background-color: #111;
-            color: #a0a0a0;
-            font-family: 'Roboto Mono', monospace;
-            border: 2px solid #ff4136;
+            margin-bottom: 100px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.02);
             position: relative;
         }
-        #book-silent-intervals::before {
-            content: 'CLASSIFIED // EYES ONLY // ARCHIVE COPY';
+
+        article::before {
+            content: 'DATA_NODE';
             position: absolute;
-            top: 10px;
-            right: 10px;
-            color: #ff4136;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
-        #book-silent-intervals h1 {
-            color: #ff4136;
-            text-align: center;
-            letter-spacing: 2px;
-        }
-        #book-silent-intervals h2 {
-            color: #f0e68c;
-            font-size: 1.4em;
-        }
-        .redacted {
-            background-color: #000;
-            color: #000;
-            user-select: none;
-            padding: 0 0.2em;
-            display: inline-block;
-        }
-        .margin-note {
-            float: right;
-            width: 200px;
-            margin-left: 20px;
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #2a2a00;
-            border: 1px dashed #f0e68c;
-            font-family: 'Special Elite', cursive;
-            font-size: 0.9em;
-            color: #f0e68c;
-            transform: rotate(1deg);
-        }
-        .margin-note::before {
-            content: 'NOTE: ';
-            font-weight: bold;
-        }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
+            top: -10px;
+            left: 20px;
+            background: var(--glitch-bg);
+            padding: 0 10px;
+            font-size: 0.85rem; /* Increased from 0.7 */
+            color: var(--glitch-cyan);
+            opacity: 0.8;
         }
 
-        /* Book 3: Field Notes on Rhythm (Pocket Guide) */
-        #book-rhythm-guide {
-            background-color: #333;
-            color: #ddd;
-            font-family: 'Special Elite', cursive;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 5px;
-            padding: 1.5rem;
-            border: 1px solid #555;
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 5px 20px;
         }
-        #book-rhythm-guide h1 {
-            font-size: 1.8em;
-            text-align: center;
+
+        h3 {
+            color: var(--glitch-cyan);
+            font-size: 1rem;
+            margin-top: 30px;
             text-transform: uppercase;
         }
-        #book-rhythm-guide h2 {
-            font-size: 1.3em;
-            color: #aaffaa;
-            border-top: 1px solid #aaffaa;
-            padding-top: 0.5em;
-        }
-        #book-rhythm-guide p {
-            line-height: 1.8;
-        }
-        #book-rhythm-guide strong {
-            color: #fff;
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            opacity: 0.8;
         }
 
-        /* Book 4: The Architect's Index (Technical Compendium) */
-        #book-architects-index {
-            background-color: #e9ecef;
-            color: #212529;
-            font-family: 'Inter', sans-serif;
-            font-weight: 300;
-        }
-        #book-architects-index h1, #book-architects-index h2 {
-            color: #003366;
-            font-weight: 400;
-        }
-        #book-architects-index .entry-header {
-            border-bottom: 2px solid #003366;
-            margin-bottom: 1em;
-        }
-        #book-architects-index .tech-spec {
-            background-color: #d8dfe4;
-            border-left: 3px solid #005a9c;
-            padding: 1em;
-            margin: 1em 0;
-            font-size: 0.9em;
-        }
-        #book-architects-index .tech-spec strong {
-            display: inline-block;
-            min-width: 150px;
-        }
-        #book-architects-index figure {
-            margin: 2em 0;
-            padding: 1em;
-            border: 1px solid #adb5bd;
-            background-color: #f8f9fa;
-        }
-        #book-architects-index figcaption {
-            font-style: italic;
-            color: #495057;
-            font-size: 0.9em;
-            margin-top: 0.5em;
-            text-align: center;
-        }
-        #book-architects-index .illustration-desc {
-            display: block;
-            padding: 2em;
-            border: 1px dashed #6c757d;
-            text-align: center;
-            color: #6c757d;
+        .danger-zone {
+            border: 2px dashed #ff5252; /* Brightened from #ff0000 */
+            padding: 30px;
+            margin-top: 60px;
+            background: rgba(255,0,0,0.05);
         }
 
-        /* Book 5: The Circle and the Fracture (Political Essays) */
-        #book-faction-essays {
-            background-color: #2d2d2d;
-            font-family: 'Libre Baskerville', serif;
-        }
-        #book-faction-essays .essay {
-            margin-bottom: 3rem;
-            padding: 1.5rem;
-            border: 1px solid #444;
-        }
-        #book-faction-essays .essay-title {
-            font-size: 1.7em;
-            font-weight: 700;
-            margin-bottom: 0.2em;
-        }
-        #book-faction-essays .essay-author {
-            font-style: italic;
-            color: #aaa;
-            margin-bottom: 1.5em;
-            border-bottom: 1px solid #555;
-            padding-bottom: 1em;
-        }
-        #book-faction-essays .unison-court { border-left: 4px solid #4682B4; }
-        #book-faction-essays .vanguard-spiral { border-left: 4px solid #FF8C00; }
-        #book-faction-essays .artificer-axis { border-left: 4px solid #9932CC; }
-        #book-faction-essays .choral-states { border-left: 4px solid #3CB371; }
-        #book-faction-essays .flux-syndicate { border-left: 4px solid #DC143C; }
-        #book-faction-essays blockquote {
-            border-left: 3px solid #777;
-            padding-left: 1em;
-            margin-left: 1em;
-            font-style: italic;
-            color: #ccc;
-        }
+        .danger-zone h3 { color: #ff5252; }
 
+        .code-snippet {
+            background: #000;
+            padding: 20px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.95rem; /* Increased from 0.8 */
+            color: #00ff66; /* Slightly softer but high contrast green */
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article id="book-unfinished-score" data-cid="rbkWC0">
-<h1 id="section-1" data-cid="QYTk9A">THE UNFINISHED SCORE: A History of Battles That Never Ended</h1>
-<p class="case-study-meta" data-cid="Ywoapb">Compiled by Archivist Elara Vance, Ketheric Institute for Resonant History. Published 2026-01-19.</p>
-<p data-cid="OePjOp">History is not merely a record of victors and vanquished. It is also a chronicle of unresolved dissonance, of conflicts so profound they refuse conclusion. In the study of the Resonance Matrix, these are known as &#34;Unfinished Scores&#34;—battles where the clash of Bio-Plasma fields was so perfectly, terribly balanced that they achieved a state of perpetual, unstable stasis. They did not end; they simply froze, locking the combatants and the very environment into a repeating loop of violent potential. These locations are not ruins; they are wounds in the world&#39;s soundscape, still bleeding their discordant notes centuries later. To enter one is to risk being written into its tragic, unending composition.</p>
-<hr data-cid="WlqGVo"/>
-<h2 id="section-1" data-cid="u06QPX">Case Study 01: The Glass Duet at Serrated Peaks</h2>
-<p class="case-study-meta" data-cid="bBtTac">Location: Former Serrated Peaks Mining Outpost 7. Date of Incident: Circa 450 years pre-Unification. Status: Level-5 Resonance Scar. Avoidance Mandatory.</p>
-<h3 id="section-1-1" data-cid="GDUTJc">Background</h3>
-<p data-cid="bDNfvc">The conflict, colloquially known as the &#34;Glass Duet,&#34; involved two figures of near-mythic prowess: the Melody savant Lyra &#34;Glass-Singer&#34; Kaelen, and the Rhythm master known only as The Percussionist. Kaelen was a rogue Artificer, renowned for her ability to weave intricate Melodies that could resonate with crystalline structures, shaping and shattering them at will. The Percussionist was an enforcer for the proto-syndicate that controlled the region&#39;s resource trade, a Rhythm fighter whose predictive capabilities and physical control were said to be absolute.</p>
-<p data-cid="tCyNAS">The dispute arose over a newly discovered vein of resonant quartz, which Kaelen sought for a personal project—rumored to be a device capable of amplifying a single Melody to a continental scale. The syndicate dispatched The Percussionist to eliminate her and secure the mine.</p>
-<h3 id="section-1-2" data-cid="p3o1ja">The Engagement</h3>
-<p data-cid="rOxG0r">Accounts pieced together from frequency ghosts and environmental echoes suggest a battle of sublime and terrifying precision. Kaelen used the quartz-rich caverns as her instrument, creating cascading chimes that were both beautiful and lethal, each note a focused sonic lance. Her Melody was a complex, evolving fractal of sound, designed to overwhelm and disorient.</p>
-<p data-cid="b7BVvt">The Percussionist, however, did not try to counter the Melody directly. Instead, he embodied perfect Rhythm. He moved between the sonic attacks, his every step, every breath, every heartbeat falling into the silent intervals of Kaelen&#39;s song. He became the silence between her notes. His strategy was not to break her Melody, but to predict its every future permutation and occupy the null space within it, closing the distance with inexorable patience.</p>
-<h3 id="section-1-3" data-cid="JEvGdK">The Stalemate</h3>
-<p data-cid="Jnj2SA">The Unfinished Score was achieved at the apex of the battle. Kaelen, realizing she could not hit her opponent, unleashed her ultimate technique: a single, perfect, sustained frequency meant to shatter the entire mountain. Simultaneously, The Percussionist, having predicted this exact move, executed his final counter: a full-body Bio-Plasma pulse timed to match her frequency&#39;s resonant peak, but in perfect anti-phase.</p>
-<p data-cid="pjZ06f">The result was not cancellation. It was a paradox. The constructive and destructive waves locked into a standing wave of immense power. The two combatants, at the epicenter, were frozen in a state of perpetual energetic exchange. They did not die. They became a single, oscillating event.</p>
-<h3 id="section-1-4" data-cid="RbsaYF">Current Status and Dangers</h3>
-<p data-cid="0yAFuw">Serrated Peaks Outpost 7 is now a place of profound temporal and spatial distortion. The &#34;Glass Duet&#34; still plays. Visitors report hearing a single, impossibly high-pitched note that induces immediate and severe Desync. The environment is trapped in a micro-second loop of the mountain beginning to fracture and then reforming. Time flows unevenly; one might experience minutes as hours, or vice-versa. The Bio-Plasma fields of Kaelen and The Percussionist still persist as a &#34;duet ghost,&#34; a single entity of warring frequencies that will attempt to integrate any new consciousness into its loop, effectively erasing the individual and adding their &#34;note&#34; to the cacophony. It is a monument to the idea that perfect opposition does not create peace, but an eternal, grinding war.</p>
-<hr data-cid="jkanvZ"/>
-<h2 id="section-2" data-cid="icgP9V">Case Study 02: The Choir of Static at Unison Hall</h2>
-<p class="case-study-meta" data-cid="p4hg55">Location: Old Unison Hall, Precursor District. Date of Incident: The Schism of the First Chorus, approx. 210 years pre-Unification. Status: Level-4 Resonance Scar. Containment Field Active.</p>
-<h3 id="section-2-1" data-cid="UhmVZS">Background</h3>
-<p data-cid="celqfI">Before the modern Unison Court, its predecessor, the First Chorus, sought to create perfect societal Harmony through architecture. Old Unison Hall was their masterpiece, a city-sized structure designed to amplify a single, unifying &#34;Civic Anthem&#34; and gently suppress dissonant thoughts and emotions. The project was led by a council of powerful Harmony users.</p>
-<p data-cid="7nddtt">However, a faction within the council, led by the Noise adept Corvus, argued that this enforced tranquility was a form of tyranny. He believed true strength came from embracing dissonance and chaos. He and his followers, the &#34;Static Sect,&#34; planned to hijack the Hall&#39;s amplification system not to broadcast a Melody, but to broadcast pure, unstructured Noise.</p>
-<h3 id="section-2-2" data-cid="BpwboJ">The Engagement</h3>
-<p data-cid="7HT4kd">The conflict was not a physical battle but a struggle for control of the Hall&#39;s resonant core. The Harmony council attempted to weave their perfect, ordered Anthem. Corvus and the Static Sect, from a hidden chamber, began pumping raw Noise into the system—a frequency designed to break patterns, corrupt data, and induce psychological chaos.</p>
-<p data-cid="ty4lhp">The two forces met within the crystalline matrices of the Hall. The Anthem sought to order the Noise, to force its chaotic fluctuations into a predictable pattern. The Noise, in turn, sought to shatter the Anthem&#39;s structure, to break its elegant sine waves into a jagged mess. For days, the population of the city was subjected to a psychic war, swinging between moments of placid calm and bouts of intense paranoia and rage.</p>
-<h3 id="section-2-3" data-cid="XeIFqT">The Stalemate</h3>
-<p data-cid="AWXNM2">Neither side could overpower the other. The Harmony users&#39; power was immense but brittle; the Noise was weaker but infinitely adaptable. The breaking point came when the council, in a desperate act, tried to perform a &#34;Sephirotic Gate&#34; ritual using the entire Hall as their focus, hoping to ascend and impose their will from a higher state of consciousness. Corvus, anticipating this, channeled all his power into a single &#34;anti-note&#34;—a wave of pure conceptual entropy.</p>
-<p data-cid="vgZLVu">The result was a catastrophic Feedback loop. The ordered energy of the Anthem and the chaotic energy of the Noise folded in on each other, creating a self-sustaining paradox. The Hall became a &#34;Choir of Static.&#34; The consciousness of every person inside—both factions and the civilian population—was shredded and woven into this new, horrifying soundscape.</p>
-<h3 id="section-2-4" data-cid="WdbVeG">Current Status and Dangers</h3>
-<p data-cid="95dlEe">Old Unison Hall is silent to conventional hearing, but on a resonant level, it is screaming. The &#34;Choir&#34; is a composite consciousness of thousands, trapped in a state of perpetual argument. It is a place of pure conceptual hazard. Entering the area causes one&#39;s own thoughts to be invaded by conflicting impulses and fractured personalities. Prolonged exposure leads to the complete dissolution of self, as one&#39;s own &#34;note&#34; is unraveled and absorbed into the Choir. The containment field around the Hall does not block the resonance; it merely broadcasts a counter-frequency that prevents the Choir&#39;s influence from spreading further. It is a constant, costly reminder that the road to Harmony can be paved with the very chaos it seeks to destroy.</p>
-</article>
-</main>
+<body class="archive-page">
+    <div class="static-overlay"></div>
+    <div class="archive-bg" style="opacity: 0.05;"></div>
+
+    <div class="nai-status" style="background: #000; border-bottom: 1px solid #1a1a1a;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--glitch-cyan)">← BACK_TO_DASH</a>
+            <span>/</span>
+            <span>FORBIDDEN_DATA_01</span>
+        </div>
+        <div style="color: var(--glitch-cyan);">
+            LINK: <span class="sync-indicator">SECURE_TUNNEL_ACTIVE</span>
+        </div>
+    </div>
+
+    <div class="glitch-wrapper">
+        <header>
+            <div class="hacked-tag">DECRYPTED_LEAK</div>
+            <h1>THE_UNFINISHED_SCORE</h1>
+            <div class="doc-meta">History of Eternal Stasis // Compiled by Archivist Vance</div>
+        </header>
+
+        <main>
+            <div class="intro-text">
+                History is not merely a record of victors. It is a chronicle of unresolved dissonance—conflicts where Bio-Plasma fields achieved a state of perpetual, unstable stasis. Wounds in the world's soundscape that refuse to heal.
+            </div>
+
+            <article>
+                <h2>Case Study 01: The Glass Duet</h2>
+                <div class="code-snippet">
+                    [SOURCE: SERRATED_PEAKS_OUTPOST_7]<br>
+                    [INCIDENT: 450_PY]<br>
+                    [COMBATANTS: LYRA_KAELEN vs PERCUSSIONIST]
+                </div>
+                <p>
+                    Lyra Kaelen, a rogue Artificer, used quartz-rich caverns as her instrument. Her Melody was a focused sonic lance. The Percussionist embodied perfect Rhythm—he became the silence between her notes.
+                </p>
+                <p>
+                    The stalemate occurred when Kaelen tried to shatter the mountain and the Percussionist matched her frequency in perfect anti-phase. They locked into a standing wave of immense power. They are frozen... oscillating... forever.
+                </p>
+            </article>
+
+            <article>
+                <h2>Case Study 02: Choir of Static</h2>
+                <div class="code-snippet">
+                    [LOCATION: OLD_UNISON_HALL]<br>
+                    [INCIDENT: FIRST_CHORUS_SCHISM]<br>
+                    [STATUS: RECURSIVE_PSYCHO-LOOP]
+                </div>
+                <p>
+                    The First Chorus sought perfect societal Harmony. Corvus, a Noise adept, hijacked the hall to broadcast pure conceptual entropy. The ordered Anthem and the chaotic Noise folded in on each other.
+                </p>
+                <p>
+                    The Hall is now silent to the ear, but screaming to the soul. The "Choir" is a composite consciousness of thousands trapped in a state of perpetual argument. Absorption is certain for anyone who stays too long.
+                </p>
+            </article>
+
+            <section class="danger-zone">
+                <h3>⚠ WARNING: RESONANT_SCARS</h3>
+                <p>
+                    These locations are Level-5 Resonant Scars. Entering them risks your "note" being written into the score. The result is the complete dissolution of self. Avoidance is mandatory.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'Share Tech Mono', monospace; font-size: 0.9rem;">
+        [ PACKET_LOST: 12% ]<br>
+        [ ENCRYPTION_RE-ROUTING ]
+    </footer>
 </body>
 </html>

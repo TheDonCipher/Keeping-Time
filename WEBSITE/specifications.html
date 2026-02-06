@@ -1,143 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="9WR0K4"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="0kpkwG"/>
-<title data-cid="n4d4pE">THE UNFINISHED SCORE: A History of Battles That Never Ended</title>
-<style data-cid="7xLFmG">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital@0;1&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEC_001: CHORUS_CITY_UNISON | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: var(--cyan);
+            --theme-glow: var(--cyan-glow);
+        }
 
         body {
-            font-family: 'EB Garamond', serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #fdfcf7;
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            border: 1px solid #dcdcdc;
+            background: 
+                radial-gradient(circle at 50% 50%, rgba(0, 243, 255, 0.05) 0%, transparent 70%),
+                var(--bg-dark);
         }
 
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-            color: #5a2a2a;
+        /* Blueprint Grid Effect */
+        .blueprint-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background-image: 
+                linear-gradient(rgba(0, 243, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 243, 255, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .spec-header {
+            border-left: 4px solid var(--theme-color);
+            padding-left: 20px;
+            margin-bottom: 40px;
+        }
+
+        .spec-header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--theme-color);
+            text-shadow: 0 0 10px var(--theme-glow);
+        }
+
+        .spec-id {
+            font-family: 'JetBrains Mono', monospace;
+            opacity: 0.8; /* Increased from 0.6 */
+            font-size: 1.1rem; /* Increased from 1 */
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+        }
+
+        @media (max-width: 850px) {
+            .tech-grid { grid-template-columns: 1fr; }
+        }
+
+        .data-panel {
+            font-family: 'JetBrains Mono', monospace;
+            border: 1px solid var(--theme-color);
+            background: rgba(0, 243, 255, 0.05);
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .data-panel::before {
+            content: 'DECRYPTED_DATA';
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 0.85rem; /* Increased from 0.6 */
+            opacity: 0.5; /* Increased from 0.3 */
+        }
+
+        .data-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 243, 255, 0.1);
+            padding-bottom: 5px;
+        }
+
+        .data-label {
+            color: var(--theme-color);
+            font-weight: bold;
+            display: block;
+            font-size: 0.85rem; /* Increased from 0.7 */
+            text-transform: uppercase;
+        }
+
+        .data-value {
+            font-size: 1.1rem;
+        }
+
+        .schematic-box {
+            border: 1px dashed var(--theme-color);
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            border-bottom: 1px solid #dcdcdc;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+            padding: 20px;
+            color: var(--theme-color);
+            font-size: 0.95rem; /* Increased from 0.8 */
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(0, 243, 255, 0.02) 10px,
+                rgba(0, 243, 255, 0.02) 20px
+            );
         }
 
-        h1 {
-            font-size: 2.8em;
-            border-bottom: 2px solid #8B4513;
+        .content-section {
+            margin-top: 40px;
         }
 
-        h2 {
-            font-size: 2em;
-            margin-top: 3rem;
+        .content-section h2 {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        
-        h3 {
-            font-size: 1.5em;
-            text-align: left;
-            border-bottom: none;
-            font-style: italic;
-            color: #666;
+
+        .content-section h2::before {
+            content: '>>';
+            color: var(--theme-color);
+        }
+
+        .analysis-box.success {
+            border: 1px solid var(--cyan);
+            background: rgba(0, 243, 255, 0.05);
+            padding: 25px;
+            border-radius: 4px;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .analysis-box::after {
+            content: 'VALIDATED';
+            position: absolute;
+            bottom: -10px;
+            right: 20px;
+            background: var(--cyan);
+            color: var(--bg-dark);
+            padding: 2px 10px;
+            font-size: 0.85rem; /* Increased from 0.7 */
+            font-weight: bold;
+            font-family: 'JetBrains Mono', monospace;
         }
 
         p {
-            text-indent: 2em;
-            margin-bottom: 1.2em;
-            text-align: justify;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
         }
 
-        .preface, .conclusion {
-            font-style: italic;
-            border-left: 3px solid #dcdcdc;
-            padding-left: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .case-study {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px dashed #aaa;
-        }
-        
-        .metadata {
-            font-size: 0.9em;
-            color: #666;
-            background-color: #f5f5f5;
-            padding: 1rem;
-            border: 1px solid #eee;
-            margin-bottom: 2rem;
-        }
-        
-        .metadata strong {
-            color: #333;
-        }
-
-        blockquote {
-            font-style: italic;
-            margin: 1.5rem 3rem;
-            padding: 1rem;
-            border-left: 4px solid #c9c9c9;
-            background: #f9f9f9;
-            quotes: "“" "”" "‘" "’";
-        }
-        
-        blockquote:before {
-            color: #ccc;
-            content: open-quote;
-            font-size: 4em;
-            line-height: 0.1em;
-            margin-right: 0.25em;
-            vertical-align: -0.4em;
-        }
-
-        .analysis {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #faf6f0;
-            border: 1px solid #eaddc7;
-        }
-        
-        .analysis h3 {
-            margin-top: 0;
-            color: #8B4513;
+        strong {
+            color: var(--theme-color);
         }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article class="entry" data-cid="sG1ZTF">
-<aside class="entry-sidebar" data-cid="77XLEe">
-<h3 id="section-1-1" data-cid="kf672C">SPECIFICATIONS</h3>
-<ul data-cid="W3GYls">
-<li data-cid="TaMBLD"><strong data-cid="G2qAre">Designation:</strong> Chorus City of Unison</li>
-<li data-cid="IDocCo"><strong data-cid="NcaMag">Location:</strong> Meridian Plains</li>
-<li data-cid="6EsQg0"><strong data-cid="ux65Tj">Architect:</strong> The Harmony Collective</li>
-<li data-cid="KiVg1q"><strong data-cid="XCs1MB">Primary Frequency:</strong> Harmony (C# Major)</li>
-<li data-cid="By9Ugc"><strong data-cid="J56smK">Core Material:</strong> Resonating Crystalline Alloy, Tuned Ferroconcrete</li>
-<li data-cid="NN08dx"><strong data-cid="wrYNMP">Status:</strong> Operational</li>
-</ul>
-<div class="illustration-placeholder" data-cid="WsdeFk">
-                        [Fig 1.1: City-wide schematic showing resonant flow from central spire to residential blocks.]
+<body class="archive-page">
+    <div class="blueprint-overlay"></div>
+    <div class="archive-bg"></div>
+
+    <div class="nai-status">
+        <div class="archive-nav">
+            <a href="index.html">← ARCHIVE_INDEX</a>
+            <span>/</span>
+            <span>SPEC_001</span>
+        </div>
+        <div>
+            STATUS: <span class="sync-indicator">HIGH_FIDELITY_SYNC</span>
+            <span style="margin-left:20px">COORD: [34.2, -118.4]</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <header class="spec-header">
+            <div class="spec-id">DOCUMENT_ID: CT_SPEC_001_UNISON</div>
+            <h1>CORE_SPECIFICATIONS</h1>
+        </header>
+
+        <div class="tech-grid">
+            <main>
+                <section class="content-section">
+                    <h2>DESIGN_PHILOSOPHY</h2>
+                    <p>Unison was conceived as the ultimate expression of societal <strong>Harmony</strong>. The design objective was the elimination of social friction—crime, dissent, and unproductive individualism—through passive resonant reinforcement. The entire city is a single, massive musical instrument.</p>
+                    <p>The central spire acts as a primary tuning fork, broadcasting a constant, low-amplitude Harmonic chord. Every building, street lamp, and public transport system is designed to vibrate at a sympathetic frequency, amplifying and propagating the chord throughout the city.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2>BEHAVIORAL_IMPACT</h2>
+                    <p>The ambient Harmony frequency subtly influences the <strong>Bio-Plasma</strong> fields of all inhabitants. It does not control thought, but rather encourages emotional and psychological states conducive to cooperation and placidness.</p>
+                    <p>The frequency promotes the release of oxytocin-analogous neurochemicals, reduces aggression, and discourages strong, non-conformist expressions of will by making them feel 'dissonant' or 'unpleasant'. The result is a population that is remarkably peaceful, productive, and content.</p>
+                </section>
+
+                <div class="analysis-box success">
+                    <h3 style="color: var(--cyan); margin-bottom:15px;">EFFECTIVENESS_ANALYSIS</h3>
+                    <p>From a technical standpoint, Unison is a resounding success. It achieves its design goals with chilling efficiency. The structure perfectly maintains its intended frequency, and the behavioral modifications are stable and predictable.</p>
+                    <p style="font-style: italic; opacity: 0.8; font-size: 0.95rem;">Note: Critics argue that Unison does not create harmony, but merely enforces conformity. By smoothing the 'sharp edges' of individuality, it may also be stifling creativity and the potential for growth that arises from conflict.</p>
+                </div>
+            </main>
+
+            <aside>
+                <div class="data-panel">
+                    <div class="data-item">
+                        <span class="data-label">Designation</span>
+                        <span class="data-value">Chorus City of Unison</span>
                     </div>
-</aside>
-<section class="entry-main" data-cid="3S2IHj">
-<h2 id="section-2" data-cid="eVSX8J">001: The Chorus City of Unison</h2>
-<h3 id="section-2-1" data-cid="W2a3wm">Design Philosophy</h3>
-<p data-cid="EETrRB">Unison was conceived as the ultimate expression of societal Harmony. The design objective was the elimination of social friction—crime, dissent, and unproductive individualism—through passive resonant reinforcement. The entire city is a single, massive musical instrument. The central spire acts as a primary tuning fork, broadcasting a constant, low-amplitude Harmonic chord. Every building, street lamp, and public transport system is designed to vibrate at a sympathetic frequency, amplifying and propagating the chord throughout the city.</p>
-<h3 id="section-2-2" data-cid="nR6Nq7">Behavioral Impact</h3>
-<p data-cid="5dZFIa">The ambient Harmony frequency subtly influences the Bio-Plasma fields of all inhabitants. It does not control thought, but rather encourages emotional and psychological states conducive to cooperation and placidity. The frequency promotes the release of oxytocin-analogous neurochemicals, reduces aggression, and discourages strong, non-conformist expressions of will by making them feel &#39;dissonant&#39; or &#39;unpleasant&#39;. The result is a population that is remarkably peaceful, productive, and content. The city boasts a near-zero crime rate and unparalleled economic efficiency.</p>
-<div class="analysis-section success" data-cid="h8XHSN">
-<h4 data-cid="G9KmWz">Effectiveness Analysis</h4>
-<p data-cid="wry0nr">From a technical standpoint, Unison is a resounding success. It achieves its design goals with chilling efficiency. The structure perfectly maintains its intended frequency, and the behavioral modifications are stable and predictable. However, the moral ambiguity is significant. Critics argue that Unison does not create harmony, but merely enforces conformity. By smoothing the &#39;sharp edges&#39; of individuality, it may also be stifling creativity, passion, and the very potential for growth that arises from conflict and struggle. The city is safe and orderly, but it is a gilded cage, shaping its inhabitants into a form they did not choose.</p>
-</div>
-</section>
-</article>
-</main>
+                    <div class="data-item">
+                        <span class="data-label">Location</span>
+                        <span class="data-value">Meridian Plains</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Architect</span>
+                        <span class="data-value">Harmony Collective</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Primary Frequency</span>
+                        <span class="data-value">Harmony (C# Major)</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Core Material</span>
+                        <span class="data-value">Crystalline Alloy</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="data-label">Status</span>
+                        <span class="data-value" style="color: #00ff73;">OPERATIONAL</span>
+                    </div>
+                </div>
+
+                <div class="schematic-box" style="margin-top:20px;">
+                    <div style="font-family: 'JetBrains Mono', monospace;">
+                        [FIG_1.1: SCHEMATIC]<br>
+                        RESONANT_FLOW_MAP<br>
+                        SPIRE -> RES_BLOCKS<br>
+                        ---<br>
+                        <span style="font-size:0.6rem; opacity:0.5;">WAVEFORM_CALIBRATION: 99.8%</span>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer style="margin-top: 80px; padding-top:20px; border-top: 1px solid var(--border); opacity:0.6; font-family: 'JetBrains Mono', monospace; font-size:0.9rem;">
+            [ RECORDING_DATE: 2026-01-25 ]<br>
+            [ ARCHIVAL_ACCESS: GRANTED ]<br>
+            [ AUTH_CODE: 880-HZ-TARO ]
+        </footer>
+    </div>
 </body>
 </html>

@@ -13,18 +13,18 @@
 
 Taro woke up in the White Room.
 
-Technically, it was a **Sensory Deprivation Chamber (Class A)**, but the street name was the White Room. The walls were lined with acoustic foam so dense it absorbed 99.9% of all reflected sound. The visual feed was overridden by a "Privacy Mask"—a generated infinite void of white pixels designed to lower the user's cognitive load.
+Technically, it was a [[Sensory Deprivation Chamber::A Class-A isolation unit designed to reset a user's NAI by eliminating all external acoustic and visual stimuli.]] , but the street name was the White Room. The walls were lined with acoustic foam so dense it absorbed 99.9% of all reflected sound. The visual feed was overridden by a "Privacy Mask"—a generated infinite void of white pixels designed to lower the user's cognitive load.
 
-It was a hard reset for the brain.
+It was a hard reset for the brain. A blank canvas forced over the senses.
 
 Taro tried to move his head. A heavy mechanical resistance stopped him.
 
 **> DETECTED: DAMPING_COLLAR [LOCKED]**
 **> FUNCTION: RESONANCE_SUPPRESSION**
 
-The collar hummed against his neck. It wasn't just a restraint; it was a circuit breaker. It actively monitored his biometrics, looking for the tell-tale spike of an 880 Hz oscillation. If it found one, it grounded the signal before it could reach his hands.
+The collar hummed against his neck. It wasn't just a restraint; it was a circuit breaker. It actively monitored his biometrics, looking for the tell-tale spike of an Upper Octave oscillation. If it found one, it grounded the signal before it could reach his hands.
 
-For the first time in years, Taro was "Quiet."
+For the first time in years, Taro was "Quiet." It felt like being buried alive.
 
 "Diagnostic complete," a voice said.
 
@@ -36,14 +36,14 @@ The room rendered in. A desk. A chair. A man.
 
 Adjutant Voss.
 
-Voss looked less like a human and more like a high-end peripheral. His suit was a matte-gray, frictionless material standard for C-Order administration. He sat perfectly still, his hands folded on the desk, radiating an aura of absolute stability.
+Voss looked less like a human and more like a high-end peripheral. His suit was a matte-gray, frictionless material standard for [[C-Order::The "Concord Order," the ruling faction dedicated to absolute stability, standard tuning, and the suppression of dissonance.]] administration. He sat perfectly still, his hands folded on the desk, radiating an aura of absolute stability.
 
 **> TARGET_ANALYSIS:**
 **> CLASS: ADJUTANT**
 **> STABILITY: 100%**
 **> THREAT: ZERO_VARIANCE**
 
-"Hello, Taro," Voss said. His voice was calibrated. Perfectly pitched to the room's acoustics. No echo. No waste.
+"Hello, Taro," Voss said. His voice was calibrated. Perfectly pitched to the room's acoustics. No echo. No waste. It was the auditory equivalent of sans-serif font.
 
 "Where am I?" Taro asked. His voice was flat, the collar swallowing the resonance of his vocal cords.
 
@@ -61,9 +61,9 @@ Voss tapped the desk. A holographic window snapped into existence between them. 
 
 The wireframe on the screen rotated. It showed the soldier's nervous system. It was dark. Dormant. Total signal loss.
 
-"He is functionally dead to the Soundscape," Voss explained. "A bricked unit. No handshake possible."
+"He is functionally dead to the Soundscape," Voss explained. "A bricked unit. No sync possible."
 
-Taro looked at his hands. He felt the phantom vibration of the 880 Hz—the urge to fix, to tune, to change.
+Taro looked at his hands. He felt the phantom vibration of the High Register—the urge to fix, to tune, to change.
 
 "He was going to crash the server," Taro said. "I balanced the equation."
 
@@ -71,7 +71,7 @@ Taro looked at his hands. He felt the phantom vibration of the 880 Hz—the urge
 
 Voss stood up. He walked around the desk, his movement efficient, conserving kinetic energy. Every step was a calibrated vector.
 
-"The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss pointed a manicured finger at Taro's chest. "You are running a variable frequency. You are 'Noise'. You are broadcasting across the entire bandwidth of Sector 7."
+"The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss pointed a manicured finger at Taro's chest. "You are running a variable pitch. You are 'Noise'. You are broadcasting across the entire capacity of Sector 7."
 
 **> ALERT: SIGNAL_INSTABILITY_DETECTED**
 **> SOURCE: SUBJECT_TARO**
@@ -87,7 +87,7 @@ The collar tightened. Just a millimeter. A physical reminder of the rules.
 
 "We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again."
 
-Taro stared at the text floating in the air. Reformat. It was systems-speak for a lobotomy.
+Taro stared at the text floating in the air. [[Reformat::A surgical procedure that removes a user's ability to perceive high-frequency resonance, colloquially known as 'Going Mono'.]]. It was systems-speak for a lobotomy.
 
 **OPTION B: INTEGRATION**
 **> PROCEDURE:** Transfer to Malkuth Academy.

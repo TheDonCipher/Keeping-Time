@@ -28,10 +28,10 @@ Taro stood in the center of the arena. His danger sense was already redlining.
 **> FACTION: G_VANGUARD**
 **> THREAT_LEVEL: SEVERE**
 
-Marcus didn't look like a student. He looked like hardware.
+Marcus didn't look like a student. He looked like hardware. He was a [[Rhythm Operator::An anti-personnel specialist who uses high-speed percussive strikes to disrupt an opponent's internal clock and force a combat 'Reset'.]] .
 He wore the standard Vanguard carapace armor, but his was customized. Matte black. No reflections.
 And his aura?
-Taro's high-bandwidth eyes couldn't read it.
+Taro's high-capacity eyes couldn't read it.
 
 **> SCAN_RESULT: ERROR**
 **> ENCRYPTION: MIL-SPEC [CLASS 4]**
@@ -55,7 +55,7 @@ Taro's HUD tried to draw a predictive path for him, but the line kept snapping.
 
 The baton extended. A glowing red tuning fork at the tip.
 **> WEAPON_ID: TEMPO_ROD**
-**> FREQUENCY: 300 Hz**
+**> PITCH: SUSTAINED_MID**
 
 "Begin," the announcer said.
 
@@ -79,7 +79,7 @@ The resonance of the rod forced Taro's entire nervous system to reset its cycle.
 
 Taro stumbled back, gasping. "How..."
 
-"You operate on analog time," Marcus said, circling him with a high-bandwidth fluidity that made Taro’s head ache. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Glitch. I’m already in the next frame."
+"You operate on analog time," Marcus said, circling him with a high-capacity fluidity that made Taro’s head ache. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Glitch. I’m already in the next pulse."
 
 He was right. 
 
@@ -104,12 +104,12 @@ He swung his baton in a perfect vertical arc. The red tip cut through Taro's yel
 **> INTERFERENCE: DESTRUCTIVE**
 **> ATTACK: NULLIFIED**
 
-The wave dissolved into harmless static.
+The wave dissolved into harmless static. It was [[Destructive Interference::The phenomenon where two waves of equal frequency and opposite phase collide, resulting in instant silence. A perfect parry.]] .
 Marcus stepped through the dissipating sparks.
 
 "Sloppy," he said, his voice a flat, percussive disappointment. "High amplitude. Zero structure. You're just shouting into a dead air. You’re all gain, no resolution."
 
-He raised the baton, the red tip humming at a perfect, lethal 300Hz. 
+He raised the baton, the red tip humming at a perfect, lethal Mid-Pitch. 
 
 "This is how you speak. This is high-fidelity combat."
 
@@ -141,7 +141,7 @@ Taro saw his true stats.
 
 **> SYNC: 99.9%**
 **> EFFICIENCY: 100%**
-**> REFRESH_RATE: 240Hz**
+**> RECOVERY_RATE: OPTIMAL**
 **> MOOD: BOREDOM [HI-FI]**
 
 "Get a metronome, Glitch," he said, holstering his rod with a click that sounded like a hardware update. "Or don't come back. You're just noise in my signal path."

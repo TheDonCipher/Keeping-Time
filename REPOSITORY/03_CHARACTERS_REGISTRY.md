@@ -115,32 +115,38 @@ This registry catalogs the types of resonance users in The Soundscape and provid
 
 ### 1. TARO NISHIMURA
 **Role**: Protagonist / The Variable
-**Class**: Rhythm Operator (Unregistered) -> Vanguard
-**Waveform**: **Sawtooth (Variable)** - *Jittery, rich harmonics, prone to drift.*
+**Class**: **The Silence (Null/Void)** - *Originally misclassified as Unregistered Rhythm Operator.*
+**Waveform**: **Void (Absence)** - *A sinkhole in the data. Absorbs resonance. Looks like a silhouette cutout.*
 **Neuro-Type**: **High-Bandwidth / Filter-Agnostic**.
 -   *Trait*: Cannot naturally filter background noise. Hears *everything*.
 -   *Stimming*: Taps fingers (Polyrhythms) to maintain internal sync.
 -   *Masking*: Uses Damping Bands to suppress his "Loud" natural state.
--   *Superpower*: Because he processes *all* noise, he can find patterns in chaos that others ignore.
+-   *Superpower*: **Nullification**. He doesn't just read noise; he *is* the quiet. He can absorb infinite resonance, acting as a living damping field.
 
 **System Interaction Style (The Score)**: 
 - **The Glitch-Map**: His HUD is unstable, filled with "raw" data others don't see—heat maps of resonance, sub-harmonics, and discarded packets. 
-- **Visuals**: Pixelated, high-contrast, feels like a 90s CRT monitor failing. He sees ghosts of where signals *were*.
+- **Visuals**: Pixelated, high-contrast. When "Unmasked," his avatar becomes a black void that consumes light.
 
 **Voice Guide**: 
 - **The Stutter-Step**: Often pauses to "catch the beat" of a conversation.
 - **Glitch-Speak**: Uses hardware metaphors for his own brain state (`"My buffer is full"`, `"I'm dropping frames here"`).
 - **Rhythm-Driven**: His speech pattern speeds up/slows down based on the local BPM.
-- *Sample*: *"I’m not... I'm not ignoring you. I'm just filtering. There's 14 different signals in this room and your voice is currently out of phase with the air conditioning. It’s hard to... zzt... lock on."*
+- *Sample*: *"I’m not... I'm not ignoring you. I'm just filtering. There's 14 different signals in this room and your voice is currently out of phase with the air conditioning."*
+
+**Arc Trajectory**
+- **Starting State (The Receiver)**: Taro is overwhelmed, passive, and reactive. He sees his sensitivity as a glitch to be patched.
+- **Pressure (Systemic)**: The Academy demands he standardize. He tries to be a "Soldier" but fails. The System crashes around him.
+- **Transformation (The Silence)**: He realizes his "Glitch" isn't noise—it's Peace. He stops trying to sing the C-Order's song and becomes the "Rest" between the notes. The only thing that can silence the chaos.
+
 
 ---
 
 ---
 
-### 2. KAEL UNISON
-**Role**: The Anchor / Headmaster
-**Class**: Fundamental
-**Waveform**: **Sine (Pure)** - *Zero distortion, absolute stability.*
+### 2. KAEL UNISON (VOSS)
+**Role**: The Admin / Headmaster
+**Class**: **Admin (The Architect)**
+**Waveform**: **Sine (Pure)** - *Zero distortion, absolute stability. Artificial.*
 **Neuro-Type**: **Zero-Latency**.
 -   *Trait*: Absolute processing power. No delay between input and output.
 -   *Presence*: His very existence "calms" the room (enforced Damping).
@@ -154,6 +160,12 @@ This registry catalogs the types of resonance users in The Soundscape and provid
 - **The Absolute Pitch**: Never hesitates. Speaks in declarative, unshakeable truths.
 - **Damped Tone**: Flat, calm, almost devoid of dynamic range (emotion).
 - *Sample*: *"The frequency of this city is deviating from standard pitch by 0.5%. We will correct it. Chaos is not an option; it is a failure of calibration."*
+
+**Arc Trajectory**
+- **Starting State (The Standard)**: Kael believes he is the benevolent anchor of society. Stability is moral; chaos is immoral. He is the Perfect Note.
+- **Pressure (Dissonance)**: The stability he enforces begins to rot the city (Stagnation). He cannot "fix" Taro or the encroaching Silence with standard damping.
+- **Transformation (The Harmony)**: He must learn that true harmony requires the potential for dissonance. He moves from enforcing "Unison" (One Voice) to allowing "Harmony" (Many Voices).
+
 
 ---
 
@@ -175,6 +187,12 @@ This registry catalogs the types of resonance users in The Soundscape and provid
 - **The Binary Logic**: Speaks in "If/Then" statements. Very literal.
 - **Quantified Speech**: Uses numbers and percentages to describe feelings.
 - *Sample*: *"My synchronization with your current mood is at 64. If you require empathy, I will need to switch to a different preset. The current social tempo does not support sarcasm."*
+
+**Arc Trajectory**
+- **Starting State (The Compiler)**: Hana sees the world as code. People are variables. She is rigid, efficient, and socially isolated by her own binary nature.
+- **Pressure (The Irregular)**: She is forced to partner with Taro, a "Logic Virus." Her standard algorithms fail to predict him or the chaotic situations they face.
+- **Transformation (The Interface)**: She develops "Fuzzy Logic"—the ability to process emotional and ambiguous data without crashing. She becomes the bridge between the Machine World (C-Order) and the Human World (Chaos).
+
 
 ---
 
@@ -240,6 +258,12 @@ CONTROL: ======-------------- 30 (compromised by burnout damage)
 
 > *"I march double-time because I only have half the time."*
 
+**Arc Trajectory**
+- **Starting State (The Burnout)**: Serah is a martyr in motion. She believes she must carry the entire war on her own timeline because no one else is fast enough.
+- **Pressure (Decay)**: Her body begins to fail. The "Octave Jump" technique starts taking days, not minutes, off her life. She cannot outrun her own biology.
+- **Transformation (The Ritardando)**: She learns to slow down. She discovers that leadership isn't doing everything twice as fast—it's teaching others to keep the beat so she doesn't have to play solo.
+
+
 ---
 
 ### Dorian Vale
@@ -283,6 +307,12 @@ CONTROL: ==================-- 90
 ```
 
 > *"A city is a song in stone. And I am its composer."*
+
+**Arc Trajectory**
+- **Starting State (The Architect)**: Dorian believes people are flawed materials that must be shaped by superior design. He loves humanity in the abstract but despises actual humans.
+- **Pressure (Collapse)**: His "perfect" structures are used for horrific oppression (or fail to stop a chaotic threat). His designs are proven brittle.
+- **Transformation (The Ruin)**: He must watch his life's work crumble to save the people inside it. He moves from building *cages* to building *shelters*.
+
 
 ---
 
@@ -328,6 +358,12 @@ CONTROL: =============------- 65
 
 > *"We are... I am... We... the song is louder than the singer."*
 
+**Arc Trajectory**
+- **Starting State (The Chorus)**: Lys has almost no "Self" left. She is a vessel for the collective will. She is comforting but essentially hollow.
+- **Pressure (Silencing)**: A threat targets the connection between people. The Chorus is severed. Lys is left... alone. Silence is terrifying to her.
+- **Transformation (The Soloist)**: In the silence, she has to find her own voice again. She learns that a choir is made of *individuals*, and to lead them, she must be one too.
+
+
 ---
 
 ### Nyx Feedback
@@ -371,6 +407,40 @@ CONTROL: ====---------------- 20 (chaos is her nature)
 ```
 
 > *"You can't hit what isn't quite there. You can't love what causes pain by being."*
+
+**Arc Trajectory**
+- **Starting State (The Static)**: Nyx pushes everyone away before they can reject her. She weaponizes her loneliness. "If I can't be part of the song, I'll be the noise that ruins it."
+- **Pressure (Resonance)**: She meets people (Taro/Hana) who don't tune her out. She is needed *because* of her dissonance, not in spite of it.
+- **Transformation (The Counterpoint)**: She realizes that Dissonance is part of the music. She stops being "Noise" (destructive) and becomes "Counterpoint" (constructive tension).
+
+
+---
+
+### Elara (Kimura)
+**"The Wireframe"**
+
+| Aspect | Detail |
+|--------|--------|
+| Class | Structural Architect (Modulated) |
+| Affiliation | The Underground (The Null) |
+| Primary Ability | High-Fidelity Treble Construct |
+| Coherence Mode | Volatile (Glitching) |
+
+**System Interaction Style (The Score)**:
+- **The Dual-Overlay**: She sees the world in two layers: the "Heavy" C-Order render and the "Wireframe" truth underneath.
+- **Visuals**: Neon blue wireframes, glass textures, transparency.
+
+**Voice Guide**:
+- **The Modulation**: Her voice shifts. When masked (Kimura), it is deep, forced, and commanding. When unmasked (Elara), it is light, sharp, and chiming (Treble).
+- *Sample*: *"The hull is just a suggestion. Beneath the armor, we are all just light and math."*
+
+**Background**
+Assigned the "Tank" class (Kimura) at birth due to high-mass resonance. She suffers from severe **Resonance Dysphoria**, feeling trapped in a frequency that is too low for her soul. She frequents "The Null" to modulate her avatar into its true form: a slender, glass-winged treble construct.
+
+**Arc Trajectory**
+- **Starting State (The Mask)**: Trapped in the "Kimura" tank hull. Angry, rigid, unhappy.
+- **Pressure (The Glitch)**: Her hull starts failing. She catches Taro seeing her true form.
+- **Transformation (The Prism)**: She becomes Taro's guide to the Underground. She teaches him that "Glitching" is just "Modulating" without permission.
 
 ---
 

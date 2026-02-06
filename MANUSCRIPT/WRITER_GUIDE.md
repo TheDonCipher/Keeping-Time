@@ -8,7 +8,12 @@
 ---
 
 ## 1. THE PHYSICS (READS LIKE A MANUAL)
-The magic system is not "mystical." It is an operating system with strict rules. **Explain the rules.**
+The magic system is not "mystical." It is an operating system with strict rules. **Explain the rules ONLY when necessary for the plot.**
+
+> **CRITICAL RULE**: NO LORE DUMPS IN NARRATIVE.
+> If you need to explain a concept (e.g., "The Score", "Handshakes"), use the **Collapsible Sidebar** format.
+> **Reference**: [SIDEBAR_LIBRARY.md](file:///c:/Users/Japan/OneDrive/Documents/Books/Keeping%20Time/REPOSITORY/SIDEBAR_LIBRARY.md)
+
 
 -   **System Text**: Must be TECHNICAL and PRECISE.
     -   *Good*: **> ERROR: BUFFER_OVERFLOW [Type: Fatal]**
@@ -28,13 +33,21 @@ We observe Taro, but we see the data he sees.
 
 ---
 
-## 3. FREQUENCY VS. FUNCTION
-The user requested "Reduced Frequency Talk" but "Manual Style."
-**Solution**: Focus on the **Function**, not the Number.
+## 3. SENSORY FUNCTIONALISM (DE-JARGONING)
+The user requested "Reduced Frequency Talk." 
+**Solution**: Focus on the **Sensory Effect** and **Functional Outcome**, not the raw data.
 
--   Instead of: "He hit him with a 440Hz blast."
--   Use: "He deployed a Standard Calibration Pulse (A-440), intended to force a system reset."
--   *Why?* This sounds like a manual/technical functioning description rather than just a raw number.
+-   **Hz vs. Name**: Strip raw frequency numbers (440Hz, 880Hz) unless they are absolutely critical to a technical plot point.
+    -   *Old*: "He hit him with a 440Hz blast."
+    -   *New*: "He deployed a Standard Calibration Pulse, intended to force a system reset."
+-   **Numbers vs. Pitch**: Use musical names or descriptive "Zones" instead of numbers.
+    -   *Gold Standard*: "A-440", "Middle C", "The Ground Note".
+    -   *Zones*: "The Low-End", "The Sub-Bass", "High-Fidelity", "The Upper Register".
+-   **Networking vs. Experience**: Replace digital networking terms with mechanical or sensory metaphors.
+    -   *Instead of "Bandwidth"*: Use "Capacity", "Flow", "Breadth".
+    -   *Instead of "Handshake"*: Use "Sync", "Lock", "Contact".
+    -   *Instead of "Buffer/Latency"*: Use "Drift", "Lag", "Hitch".
+    -   *Instead of "Ping"*: Use "Pulse", "Call".
 
 ---
 
@@ -50,7 +63,32 @@ The user requested "Reduced Frequency Talk" but "Manual Style."
 
 ---
 
-## 5. WORLD-BUILDING: THE REALITY (CHAOS VS. STRUCTURE)
+## 5. THE SIDEBAR SYSTEM (NEW)
+**Objective**: Enable deep world-building without stalling the plot.
+
+### Rule:
+-   **Main Text**: Sensory, emotional, descriptive, experiential.
+-   **Sidebar**: Analytical, logical, speculative, technical.
+
+### Implementation:
+Use HTML `<details>` tags for all sidebars.
+```html
+<aside>
+<details>
+<summary><strong>SUBJECT: Term Name</strong></summary>
+<blockquote>
+<strong>Observation:</strong> Brief empirical definition.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+```
+
+---
+
+## 6. WORLD-BUILDING: THE REALITY (CHAOS VS. STRUCTURE)
+
 -   **The System (NAI)**: Is not a lie; it is a shield. It tunes raw energy into "Music/Order."
 -   **The Real World (No System)**: Is not "ugly grey buildings"; it is **Raw Chaos / Noise**. An unintelligible abyss of un-tuned resonance.
 -   **The Reveal**: When the System fails, we don't see the "truth" (a slum); we see the **Void** (terrifying, non-Euclidean static).
@@ -59,7 +97,7 @@ The user requested "Reduced Frequency Talk" but "Manual Style."
 
 ---
 
-## 6. PHASE 5 UPDATE: DISSONANCE VISION (POST-PATCH)
+## 7. PHASE 5 UPDATE: DISSONANCE VISION (POST-PATCH)
 **The Shift**: After "Project Dissonance" is installed (Chapter 13), Taro sees the Source Code.
 -   **Old Vision**: Musical, Immersive, Sensory.
 -   **New Vision**: Structural, Mathematical, Predatory.
@@ -69,7 +107,7 @@ The user requested "Reduced Frequency Talk" but "Manual Style."
     -   **Biological overlay**: Seeing organs/nervous systems as schematic diagrams.
 -   **Sensation**: Cold, Invasive, "Dirty" (seeing too much information).
 
-## 6.1 LORE EXPANSION: RESONANCE DYSPHORIA (THE WIREFRAME)
+## 7.1 LORE EXPANSION: RESONANCE DYSPHORIA (THE WIREFRAME)
 **Concept**: Some individuals have an "Inner Resonance" (True Self) that conflicts with their "Assigned Resonance" (System-enforced Hull/Appearance).
 -   **The Glitch**: The System tries to "Error Correct" them into their assigned shape.
 -   **The Wireframe**: When "Masking" fails (or when viewed by Dissonance Vision), the texture map glitches, revealing the raw wireframe of the "True Self" pushing against the mesh.
@@ -78,7 +116,7 @@ The user requested "Reduced Frequency Talk" but "Manual Style."
 
 ---
 
-## 7. VISUAL PROMPTS (ART STYLE GUIDE)
+## 8. VISUAL PROMPTS (ART STYLE GUIDE)
 
 ### SAFE MODE / BIOS
 > **Keywords**: `Wireframe`, `Low-Poly`, `Blueprint Aesthetic`, `Cyanotype`, `Retro-Computing`, `Flat Shading`, `Grid infinity`.

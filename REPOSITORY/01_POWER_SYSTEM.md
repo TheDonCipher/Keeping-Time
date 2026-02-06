@@ -71,9 +71,10 @@ All resonance manipulation comes down to controlling these five aspects:
 | High Frequency | Sharp, cutting, precise, short-range |
 | Low Frequency | Deep, pervasive, slow, long-range |
 | Combat Role | Determines what/who you can affect |
-| Failure | Frequency mismatch = inability to interact |
+| Failure | Frequency mismatch = Null Interaction |
+ 
+> **Scientific Note**: Frequency determines the *domain of interaction*. A resonant field tuned to 440Hz cannot physically affect a structure vibrating at 432Hz unless a "Bridge" technique is used. It is strictly a matter of harmonic compatibility.
 
-> Frequency is your *identity* as a resonator. It determines your fundamental nature.
 
 ### 2. PHASE
 **WHEN you resonate**
@@ -84,9 +85,10 @@ All resonance manipulation comes down to controlling these five aspects:
 | In-Phase | Perfect sync, constructive interference, amplification |
 | Anti-Phase | Destructive interference, cancellation, nullification |
 | Combat Role | Timing attacks, team coordination, countering |
-| Failure | Phase drift = desynchronization, isolation |
+| Failure | Phase drift = Destructive Interference (Self-Cancellation) |
+ 
+> **Scientific Note**: Phase determines *constructive vs. destructive interference*. Two identical waves meeting in-phase double their power (Amplitude). Meeting out-of-phase, they silence each other (Zero-Point). Combat is often a struggle for Phase dominance rather than raw power.
 
-> Phase is the difference between a punch that lands and one that passes through.
 
 ### 3. AMPLITUDE
 **HOW STRONG the resonance**
@@ -97,9 +99,10 @@ All resonance manipulation comes down to controlling these five aspects:
 | High Amplitude | Overwhelming force, area effect, draining |
 | Low Amplitude | Subtle influence, precision, sustainable |
 | Combat Role | Raw damage output, presence, intimidation |
-| Failure | Overamplification = feedback loops, self-destruction |
+| Failure | Overamplification = Thermal/Neural Feedback (Burnout) |
+ 
+> **Scientific Note**: Amplitude is the *magnitude of displacement* in the field. Higher amplitude requires exponentially more energy to sustain. It does not change *what* happens (Frequency) or *when* (Phase), only *how much* force is applied.
 
-> Amplitude is the voice that can whisper or scream.
 
 ### 4. TOPOLOGY
 **The SHAPE of the wave**
@@ -110,9 +113,10 @@ All resonance manipulation comes down to controlling these five aspects:
 | Simple Topology | Clean sine waves, predictable, efficient |
 | Complex Topology | Harmonics, overtones, versatile, unstable |
 | Combat Role | Technique complexity, special abilities |
-| Failure | Topology collapse = loss of technique structure |
+| Failure | Topology collapse = Field decoherence |
+ 
+> **Scientific Note**: Topology describes the *geometry* of the resonant field (Sphere, Cone, Fractal, Network). Complex topologies allow for multi-stage effects but require exponentially higher processing power to maintain stability.
 
-> Topology is the difference between a single note and a symphony.
 
 ### 5. DAMPING
 **Rate of energy LOSS**
@@ -123,9 +127,10 @@ All resonance manipulation comes down to controlling these five aspects:
 | High Damping | Quick fade, controlled bursts, low endurance |
 | Low Damping | Sustained vibration, echo effects, exhaustion risk |
 | Combat Role | Endurance, sustained techniques, recovery |
-| Failure | Damping failure = burnout, energy depletion |
+| Failure | Damping failure = Uncontrolled Oscillation (Feedback) |
+ 
+> **Scientific Note**: Damping is the *resistance* applied to the field to control its decay. Without damping, a resonance would vibrate infinitely (or until it shattered the medium). High damping allows for short, punchy (staccato) effects; low damping creates sustained (legato) fields.
 
-> Damping is the difference between a bell and a drum.
 
 ---
 
@@ -217,33 +222,65 @@ Every resonator fears these breakdowns:
 
 ---
 
-## Coherence Modes
+---
 
-How a resonator maintains stability under stress:
+## COHERENCE & SYSTEM STATES
 
-### STABLE Coherence
+How a resonator maintains stability and perceives reality:
+
+### Coherence Modes
+
+#### STABLE Coherence
 - **State**: Perfect equilibrium, efficient, sustainable
 - **Advantage**: Minimal energy loss, reliable techniques
 - **Disadvantage**: Limited peak output, predictable
 - **Character Type**: Veterans, teachers, support roles
 
-### ELASTIC Coherence
+#### ELASTIC Coherence
 - **State**: Flexible, adaptive, responsive
 - **Advantage**: Quick adjustment, versatile
 - **Disadvantage**: Requires constant attention, tiring
 - **Character Type**: Protagonists, growth characters
 
-### RIGID Coherence
+#### RIGID Coherence
 - **State**: Locked pattern, unchanging, powerful
 - **Advantage**: Maximum output in one mode, unshakeable
 - **Disadvantage**: Cannot adapt, brittle under novel stress
 - **Character Type**: Specialists, obstacles, early antagonists
 
-### VOLATILE Coherence
+#### VOLATILE Coherence
 - **State**: Unstable, chaotic, unpredictable
 - **Advantage**: Extreme peaks, terrifying potential
 - **Disadvantage**: Risk of all three failure modes
 - **Character Type**: Wildcards, tragic figures, final bosses
+
+### System Render Modes
+
+#### HIGH-FIDELITY (Hi-Fi)
+- **State**: Unfiltered rendering. Shows structural stress, micro-expressions, biological imperfections.
+- **Cost**: Extremely high CPU load. "Too loud" for civilians.
+- **Visuals**: Hyper-realistic textures, volumetric lighting, data overload.
+
+#### STANDARD (C-Order)
+- **State**: The default "smoothed" reality. Social lubricants active. Decay hidden.
+- **Visuals**: Clean, golden, idealized textures (Marble/Gold).
+
+#### SAFE MODE (BIOS Level)
+- **State**: Emergency protocol. Strips all textures to save processing power.
+- **Visuals**: Blue wireframe, low-poly geometry, black background. Cold and sterile.
+
+#### THE VOID (Source Code)
+- **State**: Render failure. Raw, unformatted data.
+- **Visuals**: Non-Euclidean static, "Texture Missing" purple/black checkerboards, absolute chaos.
+
+### Pathologies
+
+#### Resonance Dysphoria
+**"The Wrong Note"**
+- **Definition**: A psychological and physiological rejection of one's assigned Frequency or Class.
+- **Symptoms**: The "Hull" (avatar) feels heavy or tight. Glitching visuals. Sensation of "lag" between intent and action.
+- **C-Order View**: Treated as "Corruption" or "Drift".
+- **Underground View**: A sign of a hidden "True Frequency" that needs to be modulated.
 
 ---
 

@@ -13,7 +13,7 @@
 
 Taro stood outside the apartment door.
 
-The air in Sector 7-C was thick with what the manual called **Analog Interference**. To the naked eye, the hallway was just dim and dirty. To a user with an active Neural-Acoustic Interface, it was a sandstorm. Stray radio waves, unshielded power coupling hums, and the jagged, packet-loss chatter of cheap hardware cluttered the bandwidth.
+The air in Sector 7-C was thick with what the manual called **Analog Interference**. To the naked eye, the hallway was just dim and dirty. To a user with an active Neural-Acoustic Interface, it was a sandstorm. Stray radio waves, unshielded power coupling hums, and the jagged, stuttering chatter of cheap hardware cluttered the capacity.
 
 **> ENVIRONMENT_WARNING:**
 **> TYPE: POOR_CONNECTION**
@@ -21,7 +21,7 @@ The air in Sector 7-C was thick with what the manual called **Analog Interferenc
 
 Taro tapped his fingers against his thigh. *Tap. Tap. Tap.* 
 
-It was a somatic calibration loop. A way to force his internal clock to sync when the external server was lagging. Every tap was a micro-handshake with his own biology, trying to clear the buffer of the day's static.
+It was a somatic calibration loop. A way to force his internal clock to sync when the external server was lagging. Every tap was a micro-contact with his own biology, trying to clear the buffer of the day's static.
 
 "Just get the bag," he whispered, his voice catching on the jitter. "Get... get out. Switch to low-power mode."
 
@@ -45,7 +45,7 @@ In a zone defined by static and grit, Kael was a perfect, anti-aliased object. H
 **> WAVEFORM: PURE_SINE**
 
 Zero variance.
-Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock.
+Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a [[Fundamental::A rare class of resonator capable of becoming a 'Living Anchor', forcing order upon chaos through absolute stability.]] in a world of variables.
 
 "You're back," Kael said. His voice was a perfect, uncompressed sine wave. No decay. No grit.
 
@@ -79,7 +79,7 @@ Kael’s amplitude spiked.
 **> ALERT: PRESSURE_WAVE_DETECTED**
 **> MAGNITUDE: 85dB**
 
-For a second, the apartment's Damping Field buckled. Taro saw the raw power underneath his father's skin. Kael wasn't just a Calibrator; he was a Fundamental. A living anchor. He could overwrite the reality of the room in a microsecond if he chose to unclench his will.
+For a second, the apartment's [[Damping Field::An artificially imposed frequency floor that suppresses all resonance above a certain threshold (usually 440Hz).]] buckled. Taro saw the raw power underneath his father's skin. Kael wasn't just a Calibrator; he was a Fundamental. A living anchor. He could overwrite the reality of the room in a microsecond if he chose to unclench his will.
 
 But he didn't. He clamped it down.
 **> STATUS: CONTAINED.**
@@ -93,7 +93,7 @@ Taro's HUD tried to pull the file, but the System returned only static.
 
 "I'm not her," Taro said, his voice fragmenting. "I'm... I'm just me. I'm just a glitch."
 
-"You have her frequency. The Fifth Harmonic. Unfiltered. Broadband." Kael looked at Taro’s neck, at the silver collar Voss had installed. "And now you have a leash. A damping band for your soul."
+"You have her resonance. The Fifth Harmonic. Unfiltered. Full-spectrum." Kael looked at Taro’s neck, at the silver collar Voss had installed. "And now you have a leash. A damping band for your soul."
 
 "It's not a leash. It's a limiter. So I don't... crash. So I don't peak and take the sector down."
 
@@ -110,7 +110,7 @@ Taro opened it.
 Inside was a set of headphones.
 But not standard NAI-compatible gear. These were **Vintage Analog**. Heavy foam earcups. Braided copper cabling. Zero wireless chips. Zero smart-link integration.
 
-"Pure Analog," Kael said. "No handshake. No System. Just... physics."
+"Pure Analog," Kael said. "No sync. No System. Just... physics."
 
 Taro picked them up. They felt heavy. Cold. Real.
 **> OBJECT_ANALYSIS: UNKNOWN_TECH**

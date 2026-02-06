@@ -1,126 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="9WR0K4"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="0kpkwG"/>
-<title data-cid="n4d4pE">THE UNFINISHED SCORE: A History of Battles That Never Ended</title>
-<style data-cid="7xLFmG">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital@0;1&display=swap');
-
-        body {
-            font-family: 'EB Garamond', serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #fdfcf7;
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            border: 1px solid #dcdcdc;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER: THE_SILENT_ORDER | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --void-black: #000000;
+            --void-gray: #1a1a1a;
         }
 
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-            color: #5a2a2a;
+        body {
+            background: var(--void-black);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .void-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 150px 40px;
             text-align: center;
-            border-bottom: 1px solid #dcdcdc;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+        }
+
+        .void-symbol {
+            font-size: 10rem;
+            font-weight: 100;
+            margin-bottom: 40px;
+            opacity: 0.5;
+            line-height: 1;
         }
 
         h1 {
-            font-size: 2.8em;
-            border-bottom: 2px solid #8B4513;
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            margin-bottom: 80px;
+            opacity: 0.8;
+        }
+
+        .silence-quote {
+            font-size: 1.8rem;
+            font-weight: 100;
+            line-height: 1.6;
+            margin-bottom: 150px;
+            color: #888;
+        }
+
+        .section-separator {
+            width: 1px;
+            height: 100px;
+            background: #333;
+            margin: 60px auto;
+        }
+
+        .content-block {
+            text-align: left;
+            margin-bottom: 100px;
         }
 
         h2 {
-            font-size: 2em;
-            margin-top: 3rem;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-            text-align: left;
-            border-bottom: none;
-            font-style: italic;
-            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #444;
+            margin-bottom: 30px;
+            letter-spacing: 12px;
         }
 
         p {
-            text-indent: 2em;
-            margin-bottom: 1.2em;
-            text-align: justify;
+            font-size: 1.2rem;
+            line-height: 2;
+            font-weight: 300;
+            color: #aaa;
+            margin-bottom: 40px;
         }
 
-        .preface, .conclusion {
-            font-style: italic;
-            border-left: 3px solid #dcdcdc;
-            padding-left: 1.5rem;
-            margin: 2rem 0;
+        .analysis-dark {
+            background: var(--void-gray);
+            padding: 60px;
+            border: 1px solid #333;
+            text-align: left;
         }
 
-        .case-study {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px dashed #aaa;
-        }
-        
-        .metadata {
-            font-size: 0.9em;
-            color: #666;
-            background-color: #f5f5f5;
-            padding: 1rem;
-            border: 1px solid #eee;
-            margin-bottom: 2rem;
-        }
-        
-        .metadata strong {
-            color: #333;
+        .analysis-dark h2 { color: #666; }
+
+        .status-void {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem; /* Increased from 0.6 */
+            color: #555; /* Slightly brighter for contrast */
+            margin-bottom: 40px;
         }
 
-        blockquote {
-            font-style: italic;
-            margin: 1.5rem 3rem;
-            padding: 1rem;
-            border-left: 4px solid #c9c9c9;
-            background: #f9f9f9;
-            quotes: "“" "”" "‘" "’";
-        }
-        
-        blockquote:before {
-            color: #ccc;
-            content: open-quote;
-            font-size: 4em;
-            line-height: 0.1em;
-            margin-right: 0.25em;
-            vertical-align: -0.4em;
-        }
-
-        .analysis {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #faf6f0;
-            border: 1px solid #eaddc7;
-        }
-        
-        .analysis h3 {
-            margin-top: 0;
-            color: #8B4513;
-        }
+        strong { color: #fff; font-weight: 600; }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article class="essay" data-cid="l5x6Qp">
-<h2 id="section-5" data-cid="fw9u5L"><span class="faction-icon silence-icon" data-cid="yjBcfO">∅</span>The Silent Order (Silence)</h2>
-<blockquote class="silence-quote" data-cid="AbVG3s">&#34;You all sing so loudly, desperate to prove you exist. Your songs are the frantic activity of a dying star. You fight over the nature of the music, never asking if the music itself is the problem. Resonance is suffering. To have a note is to be in friction with the universe. The song of life is a cacophony of pain, ambition, and fear. There is only one true peace, one true purity. The absolute zero. The final rest. We are not here to win the argument. We are here to end it.&#34;</blockquote>
-<p data-cid="wp8bqd">The most enigmatic and feared faction, the Silent Order, is built on a philosophy of cosmic nihilism. They believe that the Resonance Matrix itself—the very principle of existence as a vibration—is the source of all suffering. They do not align with any frequency; they are the antithesis of frequency. They see the struggle for power, the creation of art, and the formation of societies as meaningless thrashing against the inevitable pull of entropy. Their goal is the &#34;Great Quieting&#34;;—the return of the entire Matrix to the state of non-existence from which it came, merging it with the &#34;Black Sun.&#34; They are assassins, saboteurs, and ideologues who wield Silence not as a weapon, but as a sacrament.</p>
-<div class="analysis-box" data-cid="34qdK9">
-<h3 id="section-5-1" data-cid="vkbyfy">Analysis</h3>
-<p data-cid="ex8yDA"><strong data-cid="VYExO6">Blind Spot:</strong> Their philosophy is a logical dead end. It offers nothing but annihilation, attracting only the most broken, traumatized, or fanatical individuals. They cannot build, they cannot create, and they cannot truly persuade, only destroy or convert those already on the brink. Their ideology is fundamentally unsustainable, as its ultimate success would mean its own end.</p>
-<p data-cid="y6sNEn"><strong data-cid="j2WDFq">Internal Schism:</strong> <em data-cid="skOG8R">The Ascetics vs. The Evangelists.</em> The Ascetics focus on personal oblivion, using Silence to erase their own &#39;note&#39; and achieve a state of perfect non-being, viewing it as a personal spiritual journey. The Evangelists are far more dangerous; they believe they have a sacred duty to bestow the &#34;gift&#34; of Silence upon the entire universe, and they are willing to use weapons of mass resonant destruction to achieve this final, horrifying peace.</p>
-</div>
-</article>
-</main>
+<body class="archive-page">
+    <div class="archive-bg" style="opacity: 0.02;"></div>
+
+    <div class="nai-status" style="background: transparent; border-bottom: 1px solid #222;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: #444">← RETURN_TO_VOID</a>
+            <span>/</span>
+            <span>PRIMER_SILENCE</span>
+        </div>
+        <div style="color: #444;">
+            SIGNAL: <span class="sync-indicator">ZERO_RESONANCE</span>
+        </div>
+    </div>
+
+    <div class="void-container">
+        <div class="void-symbol">∅</div>
+        <h1>THE_SILENT_ORDER</h1>
+        
+        <p class="silence-quote">
+            "Resonance is suffering. To have a note is to be in friction with the universe. We are not here to win the argument. We are here to end it."
+        </p>
+
+        <div class="section-separator"></div>
+
+        <div class="content-block">
+            <div class="status-void">DOC_REF: TERMINAL_NIHILISM // AUTH: NONE</div>
+            <h2>THE_GREAT_QUIETING</h2>
+            <p>The Silent Order is built on a philosophy of cosmic nihilism. They believe that the Resonance Matrix itself—the very principle of existence as a vibration—is the source of all suffering.</p>
+            <p>They align with no frequency. They are the <strong>antithesis of frequency.</strong> They see the struggle for power, art, and society as meaningless thrashing against entropy.</p>
+            <p>Their goal is the return of the Matrix to non-existence. Merging reality with the <strong>Black Sun.</strong></p>
+        </div>
+
+        <div class="analysis-dark">
+            <h2>INTERNAL_VOID_ANALYSIS</h2>
+            <p><strong>Blind Spot:</strong> Logical dead end. offers nothing but annihilation. Sustainability is impossible, as success means its own end.</p>
+            <p><strong>Schism:</strong> <em>Ascetics vs. Evangelists.</em> Private spiritual oblivion versus the global enforcement of the "gift" of Silence.</p>
+        </div>
+
+        <div style="margin-top: 150px; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #444;">
+            [...]
+        </div>
+    </div>
 </body>
 </html>

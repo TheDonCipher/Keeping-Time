@@ -22,7 +22,7 @@ The Sandbox was a void. A "Null State" environment where the Academy server susp
 **> NODE 2: VEN [SINK]**
 **> NODE 3: TARO [VARIABLE]**
 
-"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional jitter. "Analysis: I am the root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the triad will stabilize."
+"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional jitter. "Analysis: I am the root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the [[Triad::A standard tactical unit composed of three resonant frequencies: Root (Command), Third (Support), and Fifth (Offense).]] will stabilize."
 
 "The Fifth?" Taro asked, his heartbeat spiking. "My... uh... my frequency isn't fixed. I jitter."
 
@@ -39,7 +39,7 @@ It was a perfect handshake. A solid beam of blue light connecting them. They wer
 "Nishimura," Hana said. "Connect."
 
 Taro took a breath.
-He located the variable oscillation in his chest. The 880 Hz. He tried to push it out through his port.
+He located the variable oscillation in his chest. The High Register. He tried to push it out through his port.
 
 **> OUTPUT: 20%**
 
@@ -85,11 +85,15 @@ The yellow lightning turned white. It lashed out wildly, missing Hana entirely a
 Ven.
 
 Ven didn't move. He didn't block. He just... stood there.
-Ven was a **Sink**. His waveform was a massive, low-frequency rolling hill. High capacity. Low impedance.
+Ven was a [[Sink::A heavy-class resonator designed to absorb and ground incoming kinetic/acoustic energy, converting it to waste heat or stored bass potential.]] . His waveform was a massive, low-frequency rolling hill. High capacity. Low impedance.
 
-Taro's jagged 880 Hz bolt hit him.
+Taro's jagged High Register bolt hit him.
 
 And Ven ate it.
+
+It wasn't a block. It was a *consumption*.
+
+Ven's aura opened up like a black hole. The terrifying, low-pressure void swallowed Taro's lightning instantly. No splash. No reflection. Just... gone.
 
 *THOOM.*
 
@@ -117,7 +121,7 @@ Hana stared at the telemetry stream.
 
 "I didn't... uh... I didn't mean to peak."
 
-"Do it again," Ven said. He stepped forward, his low-frequency hum vibrating the entire room. "My bandwidth is open. I’ve never been at 100% capacity before."
+"Do it again," Ven said. He stepped forward, his low-frequency hum vibrating the entire room. "My capacity is open. I’ve never been at 100% before."
 "I've never been full before."
 
 Hana looked at the data. She looked at Taro. Then at Ven.

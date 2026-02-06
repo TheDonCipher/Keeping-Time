@@ -1,126 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="9WR0K4"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="0kpkwG"/>
-<title data-cid="n4d4pE">THE UNFINISHED SCORE: A History of Battles That Never Ended</title>
-<style data-cid="7xLFmG">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital@0;1&display=swap');
-
-        body {
-            font-family: 'EB Garamond', serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #fdfcf7;
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            border: 1px solid #dcdcdc;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER: THE_DISSONANCE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=JetBrains+Mono:wght@400;700&family=Bungee&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --faction-red: #ff4141;
+            --noise-bg: #0a0a0a;
         }
 
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-            color: #5a2a2a;
-            text-align: center;
-            border-bottom: 1px solid #dcdcdc;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+        body {
+            background: var(--noise-bg);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .noise-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            position: relative;
+        }
+
+        /* Glitchy Static Overlay */
+        .noise-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23n)" opacity="0.05"/></svg>');
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        header {
+            margin-bottom: 80px;
+            position: relative;
         }
 
         h1 {
-            font-size: 2.8em;
-            border-bottom: 2px solid #8B4513;
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size: 6rem;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 0.8;
+            margin: 0;
+            transform: skewX(-5deg) scaleY(1.2);
+            position: relative;
+            z-index: 2;
         }
 
-        h2 {
-            font-size: 2em;
-            margin-top: 3rem;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-            text-align: left;
-            border-bottom: none;
-            font-style: italic;
-            color: #666;
+        h1::after {
+            content: 'THE_DISSONANCE';
+            position: absolute;
+            top: 5px; left: 5px;
+            color: var(--faction-red);
+            z-index: -1;
+            opacity: 0.5;
         }
 
-        p {
-            text-indent: 2em;
-            margin-bottom: 1.2em;
+        .faction-symbol-large {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            font-family: 'Bungee', cursive;
+            font-size: 15rem;
+            color: var(--faction-red);
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .manifesto-shout {
+            background: var(--faction-red);
+            color: #000;
+            padding: 40px;
+            font-family: 'Bungee', cursive;
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-top: 40px;
+            transform: rotate(-2deg);
+            box-shadow: 15px 15px 0 #fff;
+        }
+
+        .content-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 100px;
             text-align: justify;
         }
 
-        .preface, .conclusion {
-            font-style: italic;
-            border-left: 3px solid #dcdcdc;
-            padding-left: 1.5rem;
-            margin: 2rem 0;
+        @media (max-width: 900px) {
+            .content-columns { grid-template-columns: 1fr; }
+            h1 { font-size: 3rem; }
         }
 
-        .case-study {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px dashed #aaa;
-        }
-        
-        .metadata {
-            font-size: 0.9em;
-            color: #666;
-            background-color: #f5f5f5;
-            padding: 1rem;
-            border: 1px solid #eee;
-            margin-bottom: 2rem;
-        }
-        
-        .metadata strong {
-            color: #333;
+        h2 {
+            font-family: 'Bungee', cursive;
+            font-size: 1.5rem;
+            color: var(--faction-red);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--faction-red);
+            display: inline-block;
         }
 
-        blockquote {
-            font-style: italic;
-            margin: 1.5rem 3rem;
-            padding: 1rem;
-            border-left: 4px solid #c9c9c9;
-            background: #f9f9f9;
-            quotes: "“" "”" "‘" "’";
-        }
-        
-        blockquote:before {
-            color: #ccc;
-            content: open-quote;
-            font-size: 4em;
-            line-height: 0.1em;
-            margin-right: 0.25em;
-            vertical-align: -0.4em;
+        p {
+            font-size: 1.3rem;
+            line-height: 1.4;
+            font-weight: 300;
+            margin-bottom: 40px;
         }
 
-        .analysis {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #faf6f0;
-            border: 1px solid #eaddc7;
+        .glitch-card {
+            border: 4px solid #fff;
+            padding: 40px;
+            background: rgba(255, 65, 65, 0.05);
+            position: relative;
+            transform: rotate(1deg);
         }
-        
-        .analysis h3 {
-            margin-top: 0;
-            color: #8B4513;
+
+        .glitch-card::before {
+            content: '';
+            position: absolute;
+            top: -10px; left: -10px; width: 100%; height: 100%;
+            border: 2px solid var(--faction-red);
+            z-index: -1;
+        }
+
+        .desync-status {
+            font-family: 'JetBrains Mono', monospace;
+            background: #fff;
+            color: #000;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 0.95rem; /* Increased from 0.8 */
+            display: inline-block;
+            margin-bottom: 30px;
         }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article class="essay" data-cid="WizBHD">
-<h2 id="section-4" data-cid="sO4J17"><span class="faction-icon noise-icon" data-cid="Mpkw9x">⚡</span>The Dissonance (Noise)</h2>
-<blockquote class="noise-quote" data-cid="fQmYqa">&#34;Look at their systems. Their &#39;order&#39;. Their &#39;beauty&#39;. It&#39;s all a lie, a carefully constructed cage of frequencies to keep you docile. The Cadence wants you to be a cog. The Virtuosos want you to be an audience. The Chorus wants you to be a slave. They are all just different verses of the same oppressive song. We are the feedback, the static, the screech that shatters the glass. We are the truth. And the truth is that the whole rotten system must be torn down before anything new can be built.&#34;</blockquote>
-<p data-cid="UZBuR5">The Dissonance is a faction of revolutionaries, anarchists, and deconstructionists. They believe the current systems of power—be they Rhythm, Melody, or Harmony—are fundamentally corrupt and built on lies. They wield the Noise frequency not just as a weapon, but as a tool of liberation. Their philosophy is that by introducing chaos, disruption, and Desynchronization into the established order, they can break the resonant chains that hold people captive. They seek to shatter the &#34;false songs&#34; of the other factions and force a confrontation with the raw, unfiltered reality of the Matrix.</p>
-<div class="analysis-box" data-cid="U7bcv4">
-<h3 id="section-4-1" data-cid="wQoAYN">Analysis</h3>
-<p data-cid="uGe0tZ"><strong data-cid="stlTFs">Blind Spot:</strong> A lack of a viable alternative. The Dissonance is exceptionally good at tearing things down, but they have no unified vision for what should be built in its place. Their ideology is almost entirely negative—defined by what it is against, rather than what it is for. This often leads to their &#34;liberated&#34; zones descending into violent chaos and self-destruction.</p>
-<p data-cid="KN30fQ"><strong data-cid="iJXwCb">Internal Schism:</strong> <em data-cid="PdtN5F">The Breakers vs. The Shapers.</em> The Breakers are nihilistic purists who believe that the act of destruction is an end in itself; their only goal is to reduce everything to static. The Shapers see Noise as a creative force, like the raw chaos before creation. They believe that after the old world is shattered, they can use the principles of Noise to shape a new, more dynamic and honest society from the ruins.</p>
-</div>
-</article>
-</main>
+<body class="archive-page">
+    <div class="noise-overlay"></div>
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: var(--faction-red); color: #000; border: none;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: #000; font-weight: 900;">← TEAR_IT_DOWN</a>
+            <span>/</span>
+            <span>PRIMER_DISSONANCE</span>
+        </div>
+        <div>
+            SECURITY: <span class="sync-indicator">BREACH_IN_PROGRESS</span>
+        </div>
+    </div>
+
+    <div class="noise-container">
+        <div class="faction-symbol-large">⚡</div>
+        
+        <header>
+            <h1>THE_DISSONANCE</h1>
+            <div class="manifesto-shout">
+                "WE ARE THE FEEDBACK. THE STATIC. THE SCREECH THAT SHATTERS THE GLASS."
+            </div>
+        </header>
+
+        <main class="content-columns">
+            <section>
+                <div class="desync-status">SIGNAL: NOISE_CASCADE</div>
+                <h2>THE_TRUTH_OF_CHAOS</h2>
+                <p>The Dissonance is a faction of revolutionaries. We believe the current systems of power—be they Rhythm, Melody, or Harmony—are fundamentally corrupt cages.</p>
+                <p>We wield <strong>Noise</strong> not just as a weapon, but as a tool of liberation. By introducing chaos and desynchronization, we break the resonant chains that hold people captive.</p>
+                <p>The false songs must be shattered. Only then can we confront the raw, unfiltered reality of the Matrix.</p>
+            </section>
+
+            <aside class="glitch-card">
+                <h2>RADICAL_ANALYSIS</h2>
+                <p><strong>Blind Spot:</strong> No alternative. We are masters of destruction, but have no unified vision for what comes after the crash.</p>
+                <p><strong>Schism:</strong> <em>Breakers vs. Shapers.</em> Those who want only static versus those who see Noise as a creative force for a new world.</p>
+                
+                <div style="font-family: 'JetBrains Mono', monospace; opacity: 0.8; font-size: 0.85rem; margin-top: 40px;">
+                    >> SYSTEM_OVERRIDE_ACTIVE<br>
+                    >> NO_MORE_MASTERS<br>
+                    >> NO_MORE_SONGS
+                </div>
+            </aside>
+        </main>
+    </div>
 </body>
 </html>

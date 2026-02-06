@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Guide | KEEPING TIME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #00f3ff;
+            --accent-glow: rgba(0, 243, 255, 0.3);
+            --gold: #ffcc33;
+            --text: #1a1a1a;
+            --bg: #ffffff;
+            --card-bg: #f8f9fa;
+            --border: #ddd;
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-main: 'Crimson Pro', serif;
+        }
+
+        [data-theme="dark"] {
+            --text: #e0e0e0;
+            --bg: #0a0a0c;
+            --card-bg: #151518;
+            --border: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-main);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 80px 24px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-align: center;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--text), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: var(--font-mono);
+            color: var(--accent);
+            margin-bottom: 80px;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .character-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .character-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 8px 24px var(--accent-glow);
+            transform: translateY(-4px);
+        }
+
+        .character-name {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+
+        .character-title {
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text);
+            opacity: 0.7;
+            margin-bottom: 24px;
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 12px 0;
+        }
+
+        .stat-label {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text);
+            opacity: 0.6;
+        }
+
+        .stat-value {
+            font-family: var(--font-display);
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .description {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .arc-summary {
+            margin-top: 16px;
+            padding: 16px;
+            background: var(--bg);
+            border-left: 3px solid var(--accent);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text);
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .waveform {
+            display: inline-block;
+            font-family: var(--font-mono);
+            background: var(--accent-glow);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+    
+    <div class="container">
+        <h1>Character Guide</h1>
+        <div class="subtitle">KEEPING TIME: Volume 1</div>
+
+        <div class="character-grid">
+            <!-- TARO -->
+            <div class="character-card">
+                <div class="character-name">TARO NISHIMURA</div>
+                <div class="character-title">"The Silence" <span class="waveform">VOID</span></div>
+                
+                <div class="stat-row">
+                    <span class="stat-label">Class</span>
+                    <span class="stat-value">Null/Void (Unregistered)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Waveform</span>
+                    <span class="stat-value">Absence</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Affiliation</span>
+                    <span class="stat-value">Malkuth Academy (Former)</span>
+                </div>
+
+                <div class="description">
+                    The protagonist. Initially misclassified as a Rhythm Operator, Taro is revealed to be "The Silence": a user who doesn't emit resonance but <em>absorbs</em> it. His overwhelming sensitivity to noise is not a glitch but the signature of a living damping field.
+                    
+                    <div class="arc-summary">
+                        <strong>Arc:</strong> From trying to "fix" himself to accepting his role as the quiet between the notes—the only force that can silence the chaos.
+                    </div>
+                </div>
+            </div>
+
+            <!-- HANA -->
+            <div class="character-card">
+                <div class="character-name">HANA CHORD</div>
+                <div class="character-title">"The Reference" <span class="waveform">SQUARE</span></div>
+                
+                <div class="stat-row">
+                    <span class="stat-label">Class</span>
+                    <span class="stat-value">Alignment Conductor</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Waveform</span>
+                    <span class="stat-value">Square (Rigid)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Affiliation</span>
+                    <span class="stat-value">Malkuth Academy</span>
+                </div>
+
+                <div class="description">
+                    The unshakeable reference point. Hana processes the world through literal, binary logic. She sees people as data and uses "The Score" to navigate social situations manually. Her <strong>Phase Lock</strong> ability makes her the team's metronome.
+                    
+                    <div class="arc-summary">
+                        <strong>Arc:</strong> From seeing the world as pure code to developing "fuzzy logic"—learning to process emotion and chaos without crashing.
+                    </div>
+                </div>
+            </div>
+
+            <!-- VEN -->
+            <div class="character-card">
+                <div class="character-name">VEN (VENTUS)</div>
+                <div class="character-title">"The Sink" <span class="waveform">BASS</span></div>
+                
+                <div class="stat-row">
+                    <span class="stat-label">Class</span>
+                    <span class="stat-value">Structural Architect (Tank)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Waveform</span>
+                    <span class="stat-value">Sub-Bass</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Affiliation</span>
+                    <span class="stat-value">Malkuth Academy</span>
+                </div>
+
+                <div class="description">
+                    The silent giant. Ven absorbs excess resonance from the team, acting as a thermal "Ground State." He rarely speaks, channeling overwhelming power into the earth through his connection to low-frequency architecture.
+                    
+                    <div class="arc-summary">
+                        <strong>Arc:</strong> Learning that being the foundation doesn't mean being invisible—finding his voice while carrying the weight.
+                    </div>
+                </div>
+            </div>
+
+            <!-- VOSS -->
+            <div class="character-card">
+                <div class="character-name">ADJUTANT VOSS</div>
+                <div class="character-title">"The Admin" <span class="waveform">SINE</span></div>
+                
+                <div class="stat-row">
+                    <span class="stat-label">Class</span>
+                    <span class="stat-value">Admin (Architect)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Waveform</span>
+                    <span class="stat-value">Pure Sine (Artificial)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Affiliation</span>
+                    <span class="stat-value">C-Order</span>
+                </div>
+
+                <div class="description">
+                    The Headmaster of Malkuth Academy. Voss doesn't "resonate"—he <strong>edits</strong>. As an Admin-class user, he can see and manipulate the raw code behind reality. He views Dissonance as corruption to be debugged.
+                    
+                    <div class="arc-summary">
+                        <strong>Arc:</strong> The enforcer of "stability." He must reckon with whether his perfect order is harmony or stagnation.
+                    </div>
+                </div>
+            </div>
+
+            <!-- ELARA -->
+            <div class="character-card">
+                <div class="character-name">ELARA (KIMURA)</div>
+                <div class="character-title">"The Wireframe" <span class="waveform">TREBLE</span></div>
+                
+                <div class="stat-row">
+                    <span class="stat-label">Class</span>
+                    <span class="stat-value">Structural Architect (Modulated)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Waveform</span>
+                    <span class="stat-value">Treble Construct (Glass)</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Affiliation</span>
+                    <span class="stat-value">The Underground (The Null)</span>
+                </div>
+
+                <div class="description">
+                    Assigned the "Tank" class at birth, Elara suffers from <strong>Resonance Dysphoria</strong>—her soul-frequency doesn't match her imposed hull. She illegally modulates herself into a high-fidelity treble construct: slender, glass-winged, and finally <em>right</em>.
+                    
+                    <div class="arc-summary">
+                        <strong>Arc:</strong> From being trapped in the "Kimura" hull to teaching Taro that "glitching" is just "modulating without permission."
+                    </div>
+                </div>
+            </div>
+
+            <!-- NYX -->
+            <div class="character-card">
+                <div class="character-name">NYX FEEDBACK</div>
+                <div class="character-title">"The Dissonant Overtone" <span class="waveform">STATIC</span></div>
+                
+                <div class="stat-row">
+                    <span class="stat-label">Class</span>
+                    <span class="stat-value">Disruption Specialist</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Waveform</span>
+                    <span class="stat-value">Out-of-Phase</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">Affiliation</span>
+                    <span class="stat-value">E Flux Syndicate (Loose)</span>
+                </div>
+
+                <div class="description">
+                    Born wrong—or made wrong. Nyx exists slightly out of phase with reality, causing feedback and instability wherever she goes. She's nearly impossible to hit, but her presence makes resonance unreliable for everyone nearby.
+                    
+                    <div class="arc-summary">
+                        <strong>Arc:</strong> From weaponizing her loneliness to realizing that Dissonance isn't destruction—it's <em>counterpoint</em>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+</html>

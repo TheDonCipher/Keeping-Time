@@ -1,305 +1,181 @@
-<!DOCTYPE html><html lang="en"><head>
-<meta charset="utf-8" data-cid="isGQCY"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="fnH7L1"/>
-<title data-cid="POowVH">The Soundscape Archives - Field Notes on Rhythm</title>
-<style data-cid="sSGrAE">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@400;700&family=Special+Elite&family=Roboto+Condensed:wght@400;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIELD_NOTES: RHYTHM_PT2 | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Architects+Daughter&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #d8c8b8;
+            --ink-color: #2a2a2a; /* Dark gray for excellent contrast on paper */
+            --accent-red: #8b1a1a;
+        }
 
         body {
-            font-family: 'EB Garamond', serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fdfcf9;
-            margin: 0;
-            padding: 0;
+            background: #1a1a1c;
+            color: var(--ink-color);
+            font-family: 'Outfit', sans-serif;
         }
 
-        .collection-container {
-            max-width: 1000px;
-            margin: 2rem auto;
-            padding: 1rem;
+        /* Journal Paper Effect */
+        .journal-paper {
+            background: #f4e4d4;
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+            background-size: 100% 30px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 100px rgba(0,0,0,0.1);
+            position: relative;
+            min-height: 1000px;
+            border-radius: 2px;
+            transform: rotate(0.3deg);
         }
 
-        .collection-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5em;
-            text-align: center;
-            margin-bottom: 0.5em;
+        .journal-paper::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 40px;
+            width: 2px;
+            height: 100%;
+            background: rgba(160, 48, 48, 0.2);
+            border-left: 1px solid rgba(160, 48, 48, 0.1);
+        }
+
+        .handwritten {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem;
             font-weight: 700;
-            color: #1a1a1a;
-            border-bottom: 2px solid #8B4513;
-            padding-bottom: 0.5rem;
+            line-height: 1.2;
+            color: var(--accent-red);
+            transform: rotate(-1deg);
+            display: inline-block;
         }
-        
-        .collection-subtitle {
+
+        h1 {
+            font-family: 'Architects Daughter', cursive;
+            font-size: 3rem;
             text-align: center;
-            font-style: italic;
-            color: #666;
-            margin-top: -1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--ink-color);
+            padding-bottom: 10px;
         }
 
-        .book-nav {
-            background-color: #f0ebe5;
-            padding: 1rem;
-            margin-bottom: 3rem;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-
-        .book-nav h2 {
-            margin-top: 0;
-            text-align: center;
-            font-family: 'Roboto Condensed', sans-serif;
-            color: #333;
-        }
-
-        .book-nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .book-nav li a {
-            display: block;
-            padding: 0.75rem 1.5rem;
-            background-color: #fff;
-            color: #8B4513;
-            text-decoration: none;
-            border-radius: 3px;
-            border: 1px solid #ccc;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .book-nav li a:hover {
-            background-color: #8B4513;
-            color: #fff;
-            border-color: #6a360f;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .book {
-            margin-bottom: 5rem;
-            padding-top: 2rem; /* For anchor linking */
-            border-top: 1px dashed #ccc;
-        }
-
-        .book-header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-        }
-
-        .book-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.8em;
-            font-weight: 700;
-            margin-bottom: 0.2rem;
-            color: #000;
-        }
-
-        .book-subtitle {
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 1.2em;
-            font-style: italic;
-            color: #555;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        h3, h4 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-            color: #222;
+        h2 {
+            font-family: 'Architects Daughter', cursive;
+            font-size: 2rem;
+            margin-top: 50px;
+            color: var(--accent-red);
         }
 
         h3 {
-            font-size: 1.8em;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 0.3em;
-            margin-top: 2em;
+            font-family: 'Architects Daughter', cursive;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            border-bottom: 1px dashed var(--ink-color);
+            display: inline-block;
         }
 
-        h4 {
-            font-size: 1.4em;
-            margin-top: 1.5em;
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-weight: 400; /* Increased */
         }
 
-        p, li {
-            font-size: 1.1em;
-            text-align: justify;
+        .note-box {
+            border: 2px dashed rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.3);
+            position: relative;
         }
 
-        blockquote {
-            font-style: italic;
-            margin: 1.5em 2em;
-            padding: 1em;
-            border-left: 4px solid #c9b7a7;
-            background-color: #f9f7f4;
-            color: #444;
+        li {
+            margin-bottom: 15px;
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
         }
 
-        /* Book 2: Redacted Manual Specific Styles */
-        #book2 {
-            font-family: 'Inconsolata', monospace;
-            background-color: #e8e8e8;
-            padding: 2rem;
-            border: 3px double #333;
-        }
-        #book2 .book-title { font-family: 'Special Elite', cursive; }
-        #book2 .book-subtitle { font-family: 'Inconsolata', monospace; }
-        #book2 h3, #book2 h4 { font-family: 'Inconsolata', monospace; font-weight: 700; }
-        #book2 p { text-align: left; }
-        .redacted {
-            background-color: #000;
-            color: #000;
-            user-select: none;
-            padding: 0 2px;
-            display: inline;
-            border-radius: 2px;
-        }
-        .marginalia {
-            font-family: 'Special Elite', cursive;
-            color: #8B0000;
-            font-size: 0.9em;
-            display: block;
-            margin: 0.5em 2em;
-            padding: 0.5em;
-            border: 1px dashed #8B0000;
-            background-color: #fffde7;
-        }
-        .marginalia::before {
-            content: 'NOTE: ';
-            font-weight: bold;
+        li::before {
+            content: '●';
+            position: absolute;
+            left: 0;
+            color: var(--accent-red);
+            font-size: 0.8rem;
+            top: 5px;
         }
 
-        /* Book 3: Field Guide Specific Styles */
-        #book3 {
-            background-color: #faf8f2;
-            border: 1px solid #d4c8b0;
-            padding: 2rem;
+        .tip-sketch {
+            border: 1px solid var(--ink-color);
+            padding: 15px;
+            margin: 20px 0;
+            background: #fffdf0;
+            font-family: 'Caveat', cursive;
+            font-size: 1.6rem; /* Increased */
+            font-weight: 600;
+            transform: rotate(1deg);
         }
-        #book3 .book-title { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; }
-        #book3 .book-subtitle { font-family: 'Special Elite', cursive; color: #4a4a4a; }
-        #book3 h3 { font-family: 'Roboto Condensed', sans-serif; border-bottom-style: dashed; }
-        #book3 p, #book3 li { font-family: 'Roboto Condensed', sans-serif; text-align: left; }
-        #book3 .tip {
-            background: #e3f2fd;
-            border-left: 5px solid #2196F3;
-            padding: 1em;
-            margin: 1em 0;
-        }
-
-        /* Book 4: Architect's Index Specific Styles */
-        #book4 {
-            font-family: 'Inconsolata', monospace;
-        }
-        #book4 .book-title { font-family: 'Inconsolata', monospace; font-weight: 700; }
-        #book4 .book-subtitle { letter-spacing: 2px; }
-        #book4 .case-study {
-            border: 1px solid #ccc;
-            padding: 1.5rem;
-            margin-top: 2rem;
-            background-color: #f9f9f9;
-        }
-        #book4 .case-study-header {
-            margin-top: 0;
-            font-size: 1.5em;
-            color: #333;
-        }
-        #book4 .spec-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-        }
-        #book4 .spec-table td, #book4 .spec-table th {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        #book4 .spec-table th {
-            background-color: #f2f2f2;
-        }
-
-        /* Book 5: Faction Essays Specific Styles */
-        #book5 .essay {
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #eee;
-        }
-        #book5 .essay-title {
-            font-size: 2.2em;
-            margin-bottom: 0.1em;
-        }
-        #book5 .essay-author {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
-        #book5 .analysis {
-            background-color: #f5f5f5;
-            padding: 1rem;
-            margin-top: 1.5rem;
-            border-top: 2px solid #ddd;
-        }
-        #book5 .analysis h4 {
-            margin-top: 0;
-            color: #333;
-        }
-
     </style>
 </head>
-<body>
-<main class="collection-container">
-<!-- BOOK 3: FIELD NOTES ON RHYTHM -->
-<article class="book" id="book3" data-cid="DLG2rL">
-<header class="book-header" data-cid="kegkvl">
-<h2 class="book-title" id="section-4" data-cid="qca7pq">FIELD NOTES ON RHYTHM</h2>
-<p class="book-subtitle" data-cid="tQMWYs">A Fighter’s Pocket Guide</p>
-</header>
-<section data-cid="8dIfAN">
-<h3 id="section-4-1" data-cid="8UsfYx">Introduction: Listen Up, Rookie.</h3>
-<p data-cid="oVbfHG">So you just jacked in. You can feel the hum of the world in your bones and you think you&#39;re hot stuff. You think because you can flare your Amplitude and make the pretty lights flicker, you&#39;re a Consciousness Engineer. Let me tell you something: you&#39;re not an engineer, you&#39;re a liability. You&#39;re a walking feedback loop waiting to happen. This world chews up and spits out rookies who think power is about being the loudest one in the room.</p>
-<p data-cid="hhd7Bo">This little book is your first and last chance. I&#39;ve written down what I&#39;ve learned from a lifetime of fights, the kind that don&#39;t make it into the history books. This isn&#39;t about fancy Melody-weaving or esoteric Harmony theory. This is about Rhythm. The beat. The pulse of the street, the thrum of a punch, the cadence of a fight. It&#39;s about staying on your feet when the world is trying to knock you off the beat. Read it. Memorize it. Or don&#39;t, and become another piece of static on the airwaves. Your choice.</p>
-</section>
-<section data-cid="FMzuzq">
-<h3 id="section-4-2" data-cid="6PGw61">Chapter 1: Your First Ten Mistakes (And How Not to Make Them)</h3>
-<ol data-cid="CM1HXk">
-<li data-cid="IXIhTO"><strong data-cid="4sQuLi">Tuning Too Loud.</strong> You&#39;re excited. You want to show off your Amplitude. So you crank it to eleven. Big mistake. A high Amplitude with low Coherence is just a bright target. You&#39;re screaming &#34;I&#39;m powerful but have no control!&#34; to every shark in the water. Power is clarity under pressure. Keep it tight. Keep it focused. A quiet, coherent note is harder to break than a loud, sloppy one.</li>
-<li data-cid="xojXrh"><strong data-cid="mEVwuV">Ignoring the Beat.</strong> Every place has a rhythm. The city, the crowd, the room you&#39;re in. If you try to force your own rhythm on top of it, you&#39;ll stick out and waste energy fighting the current. Listen first. Feel the pulse. Sync with it, then bend it to your will. Fighting against the local rhythm is like trying to swim upstream in a hurricane.</li>
-<li data-cid="3DfdhY"><strong data-cid="MUqmvj">Forgetting Your Counter-Melody.</strong> You&#39;ve got your one big punch, your one killer frequency. You lead with it every time. A real pro will read that in two seconds, create a nullifying counter-frequency, and take you apart while you&#39;re wondering why your best trick didn&#39;t work. Always have a plan B, C, and D. Think in phrases, not single notes.</li>
-<li data-cid="Y1aehk"><strong data-cid="SHkkGS">Mistaking Noise for Chaos.</strong> You run into a Noise-wielder and think they&#39;re just flailing. Wrong. Real Noise artists are masters of controlled chaos. They&#39;re not just making static; they&#39;re using entropic frequencies to specifically target and unravel *your* patterns. Don&#39;t try to overpower it. Find the sliver of a pattern in their &#34;chaos&#34;—there&#39;s always one—and ground yourself in it.</li>
-<li data-cid="b61bUx"><strong data-cid="V3VWgp">Holding a Note Too Long.</strong> You&#39;ve landed a hit, you&#39;ve got them on the defensive. So you keep pushing, pouring all your energy into that one attack. Bad idea. You&#39;re leaving yourself wide open and draining your reserves. In a real fight, it&#39;s all about pulse and interval. Strike, release. Push, pull. Give them a beat, then hit them on the off-beat.</li>
-</ol>
-</section>
-<section data-cid="EhftCz">
-<h3 id="section-4-3" data-cid="TBTvCs">Chapter 2: Street-Level Sonics (Tricks of the Trade)</h3>
-<div class="tip" data-cid="HawDUB">
-<strong data-cid="SWf7CF">Tip #1: Use the Echo.</strong> In any urban environment, sound bounces. Use it. Throw a low-power resonant pulse to your left, and when your opponent turns to look, hit them from the right. An echo can tell you the shape of a room, where people are hiding, and what the walls are made of. An echo is a free sensor array if you know how to listen.
-                </div>
-<div class="tip" data-cid="5IzrUk">
-<strong data-cid="rzuc6H">Tip #2: Find the Weak Note.</strong> Everything has a resonant frequency. That reinforced door? That support pillar? That armored vehicle? They all have a frequency at which they&#39;ll vibrate uncontrollably. It&#39;s not about hitting it hard; it&#39;s about hitting it with the *right note*. A tiny, coherent pulse at the right frequency can do more damage than a blast of raw Amplitude. Carry a small, tunable resonator. Tap, listen, and find the structural weak spot.
-                </div>
-<div class="tip" data-cid="kZXOo4">
-<strong data-cid="zFt7KB">Tip #3: Grounding.</strong> Getting hit with a Harmony or Melody attack can scramble your brain, make you feel emotions that aren&#39;t yours, or see things that aren&#39;t there. You need an anchor. Before a fight, pick a simple, low-frequency Rhythm. A basic 4/4 beat. The memory of your own heartbeat. A simple drumming pattern. When you feel your Coherence start to fray, fall back to that internal rhythm. Let it be the one thing that&#39;s real. It can be the difference between shaking off a psychic attack and drooling on the floor.
-                </div>
-</section>
-<section data-cid="wVpESt">
-<h3 id="section-4-4" data-cid="cINCMq">Chapter 3: Knowing When to Fold &#39;Em (The Art of the Tactical Retreat)</h3>
-<p data-cid="qifkm3">Listen, kid. There&#39;s no shame in running. The shame is in dying for a fight you couldn&#39;t win. A good fighter knows how to pick their battles. A great fighter knows how to escape the ones they can&#39;t win, so they can fight again tomorrow.</p>
-<ul data-cid="hI5eM9">
-<li data-cid="lC7147"><strong data-cid="HTwMcM">If the air goes dead, RUN.</strong> I&#39;m talking about Weaponized Silence. You&#39;ll feel it before you hear it (or don&#39;t hear it). A sudden pressure, a feeling like the world just got muted, a cold dread in your gut. Don&#39;t try to fight it. You can&#39;t. Your power, your very self, is useless there. Turn and run. Don&#39;t look back.</li>
-<li data-cid="rv0ERI"><strong data-cid="lGfSbU">If they start glowing and talking about God, RUN.</strong> You&#39;re looking at someone about to trigger a Burnout Cascade. They&#39;re about to go supernova. Do you want to be at ground zero when they pop? No. The fight is already over. Theirs, and yours if you stick around. Get out of the blast radius.</li>
-<li data-cid="T1KXML"><strong data-cid="uAzhLe">If you can&#39;t find their note, RUN.</strong> You&#39;re fighting someone, and you can&#39;t get a read on them. No clear frequency, no rhythm, no discernible school. They&#39;re either a master of a discipline you&#39;ve never seen, or they&#39;re not what they appear to be. You&#39;re fighting blind, and that&#39;s how you get killed. Disengage, observe from a distance, and live to figure it out later.</li>
-</ul>
-<blockquote data-cid="keglKg">Remember this, rookie: The goal isn&#39;t to be the strongest. The goal is to be the one left standing at the end of the song. Hold your note. Keep the beat. And stay alive.</blockquote>
-</section>
-</article>
-</main>
-</body></html>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #2c2c2c; color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)" onclick="sessionStorage.setItem('scrollPos', window.scrollY || 0)">← BACK_TO_BASE</a>
+            <span>/</span>
+            <a href="field_notes_on_rhythm.html" style="color: var(--theme-journal)">PT1</a>
+            <span>/</span>
+            <span>FIELD_NOTES_02</span>
+        </div>
+        <div>
+            SCAN_STATUS: <span class="sync-indicator">CHAPTER_RECONSTRUCTION_COMPLETE</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="journal-paper">
+            <h1>FIELD_NOTES: RHYTHM_PT2</h1>
+            <p style="text-align: center; font-style: italic; opacity: 0.7;">"Your power is nothing without control. Focus on the tip of the spear, not the size of the explosion."</p>
+
+            <h3>Chapter 1: Your First Ten Mistakes</h3>
+            <p>So you just jacked in. You can feel the hum of the world in your bones and you think you're hot stuff. You're not. You're a liability.</p>
+
+            <div class="note-box">
+                <ol style="padding-left: 0;">
+                    <li><strong>Tuning Too Loud:</strong> A high Amplitude with low Coherence is a bright target. Keep it tight. Keep it focused. <span class="handwritten">(Taro: Noise isn't loudness, it's complexity.)</span></li>
+                    <li><strong>Ignoring the Beat:</strong> Every place has a rhythm. Sync with it, then bend it. Fighting the local rhythm is suicide.</li>
+                    <li><strong>Forgetting Your Counter-Melody:</strong> Always have a plan B. Pros will read your lead frequency in seconds. Think in phrases.</li>
+                    <li><strong>Mistaking Noise for Chaos:</strong> Real Noise artists are masters of controlled chaos. Find the sliver of pattern in their static.</li>
+                    <li><strong>Holding a Note Too Long:</strong> You're leaving yourself wide open. Strike, release. Push, pull.</li>
+                </ol>
+            </div>
+
+            <h3>Chapter 2: Street-Level Sonics</h3>
+            <div class="tip-sketch">
+                <strong>TIP: USE THE ECHO</strong><br>
+                In any urban environment, sound bounces. Use it. Throw a pulse left, hit right. An echo is a free sensor array if you know how to listen.
+            </div>
+
+            <div class="tip-sketch" style="transform: rotate(-1deg); background: #f0fff0;">
+                <strong>TIP: FIND THE WEAK NOTE</strong><br>
+                Everything has a resonant frequency. Tap, listen, find the structural weak spot. A clean note cuts deeper than a muddy one.
+            </div>
+
+            <p>Grounding? Carrying a small, tunable resonator is better than guessing. Select a simple 4/4 beat as your internal anchor. When your Coherence frays, fall back to that beat.</p>
+
+            <div style="margin-top: 60px; text-align: right;">
+                <span class="handwritten" style="font-size: 1.4rem;">— Recovered from "Old Man" Kaito's stash.</span>
+            </div>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; color: #fff;">
+            [ FILE_RECOVERY: SUCCESSFUL ]<br>
+            [ SOURCE: SECTOR_7_OUTPOST ]
+        </footer>
+    </div>
+</body>
+</html>

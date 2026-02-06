@@ -1,318 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="cDRpIl"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="m6mEjY"/>
-<title data-cid="IpBUBO">Collected Lore of the Soundscape</title>
-<style data-cid="XXrNtR">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Special+Elite&family=Roboto+Mono:wght@400;700&family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
-
-        body {
-            background-color: #1a1a1a;
-            color: #ccc;
-            font-family: 'Lato', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 2rem;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE_STUDY: SILENT_PLAINS_STALEMATE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #ffffff;
+            --archival-bg: #f8f8fa;
+            --archival-border: #8e8e93;
+            --silence-black: #000000;
+            --hazard-cyan: #00f3ff;
         }
 
-        /* General Book Styling */
-        .lore-book {
-            border: 1px solid #444;
-            margin-bottom: 4rem;
-            padding: 2rem;
-            background-color: #222;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
+        body { background: #000; }
+        .archive-bg { opacity: 0.05; }
 
-        /* --- BOOK 1: HISTORICAL CASE STUDIES --- */
-        #book1-history {
-            background-color: #f4f1e9;
-            color: #3d352a;
-            font-family: 'Cormorant Garamond', serif;
-            border: 2px solid #c9bba7;
-        }
-        #book1-history h1, #book1-history h2, #book1-history h3 {
-            font-family: 'Merriweather', serif;
-            color: #5a4d3c;
-            border-bottom: 1px solid #d3c9b8;
-            padding-bottom: 0.5rem;
-            font-weight: 700;
-        }
-        #book1-history h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-        }
-        #book1-history .subtitle {
-            text-align: center;
-            font-style: italic;
-            font-size: 1.2em;
-            margin-bottom: 2em;
-            color: #6b5f4f;
-        }
-        #book1-history .publication-info {
-            font-size: 0.8em;
-            text-align: center;
-            margin-bottom: 3em;
-            color: #777;
-        }
-        #book1-history article {
-            margin-bottom: 3rem;
-            text-align: justify;
-        }
-        #book1-history blockquote {
-            border-left: 3px solid #b0a28f;
-            padding-left: 1rem;
-            margin: 1.5rem 2rem;
-            font-style: italic;
-            color: #555;
-        }
-        #book1-history .analysis {
-            background-color: #e9e5dc;
-            padding: 1.5rem;
-            border: 1px dashed #c9bba7;
-            margin-top: 2rem;
-        }
-
-        /* --- BOOK 2: REDACTED MANUAL --- */
-        #book2-redacted {
-            background-color: #0a0c0a;
-            color: #00ff41;
-            font-family: 'Roboto Mono', monospace;
-            border: 1px solid #00ff41;
+        .document-folder {
+            background: var(--archival-bg);
+            color: #1c1c1e;
+            padding: 80px 60px;
+            box-shadow: 0 40px 100px rgba(0,0,0,1);
             position: relative;
-            padding: 2rem 4rem;
+            border-radius: 4px;
+            font-family: 'Crimson Pro', serif;
+            border: 1px solid var(--archival-border);
         }
-        #book2-redacted h1, #book2-redacted h2 {
-            color: #00ff41;
-            text-transform: uppercase;
-            text-shadow: 0 0 5px #00ff41;
-        }
-        #book2-redacted h1 {
-            text-align: center;
+
+        .silence-stamp {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: var(--silence-black);
+            color: #fff;
+            padding: 10px 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 800;
+            font-size: 1rem;
             letter-spacing: 4px;
-        }
-        #book2-redacted .warning-banner {
-            background-color: #ffff00;
-            color: #000;
-            text-align: center;
-            padding: 0.5rem;
-            font-weight: 700;
-            margin: 2rem -4rem;
-            font-family: 'Special Elite', cursive;
-        }
-        #book2-redacted .redacted {
-            background-color: #000;
-            color: #000;
-            user-select: none;
-            padding: 0 0.2em;
-            display: inline-block;
-        }
-        #book2-redacted .marginalia {
-            position: absolute;
-            font-family: 'Special Elite', cursive;
-            color: #ff4141;
-            font-size: 0.9em;
-            transform: rotate(-5deg);
-            border: 1px solid #ff4141;
-            padding: 5px;
-            background: rgba(255, 65, 65, 0.1);
-        }
-        #book2-redacted .m-right { right: -20px; }
-        #book2-redacted .m-left { left: -20px; }
-        #book2-redacted .m-top { top: 100px; }
-        #book2-redacted .m-mid { top: 50%; }
-        #book2-redacted .m-bottom { bottom: 100px; }
-        #book2-redacted p {
-            position: relative;
+            transform: rotate(-3deg);
         }
 
-        /* --- BOOK 3: PRACTICAL HANDBOOK --- */
-        #book3-handbook {
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #dfd8c8;
-            color: #2c2c2c;
-            font-family: 'Special Elite', cursive;
-            border: 1px solid #5a5245;
-            padding: 1.5rem;
-            box-shadow: inset 0 0 15px rgba(0,0,0,0.4);
-            position: relative;
-        }
-        #book3-handbook::before {
-            content: '';
-            position: absolute;
-            top: 10%;
-            left: 60%;
-            width: 150px;
-            height: 150px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 50,0 A 50,50 0 0 0 50,100 A 50,50 0 0 0 50,0 Z M 50,10 A 40,40 0 0 1 50,90 A 40,40 0 0 1 50,10 Z" fill="%23000" opacity="0.08"/></svg>');
-            background-repeat: no-repeat;
-            background-size: contain;
-            transform: rotate(15deg);
-        }
-        #book3-handbook h1, #book3-handbook h2 {
-            font-family: 'Roboto Mono', monospace;
-            text-transform: uppercase;
-            color: #4a4235;
-            border-bottom: 2px solid #9a8f7f;
-        }
-        #book3-handbook h1 { font-size: 1.8em; text-align: center; }
-        #book3-handbook ul {
-            list-style-type: '» ';
-            padding-left: 1.5rem;
-        }
-        #book3-handbook strong {
-            font-weight: bold;
-            color: #000;
-        }
-        #book3-handbook .scrawl {
-            font-style: italic;
-            color: #555;
-            border-top: 1px dashed #999;
-            padding-top: 1rem;
-            margin-top: 1rem;
-        }
-
-        /* --- BOOK 4: TECHNICAL COMPENDIUM --- */
-        #book4-compendium {
-            background-color: #eef2f5;
-            color: #1c2a38;
-            font-family: 'Lato', sans-serif;
-            border-top: 5px solid #4a6d8c;
-        }
-        #book4-compendium .header-bar {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 1rem 2rem;
-            margin: -2rem -2rem 2rem -2rem;
-        }
-        #book4-compendium h1 {
-            font-size: 2.2em;
-            margin: 0;
-        }
-        #book4-compendium .doc-id {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.9em;
-            opacity: 0.7;
-        }
-        #book4-compendium .entry {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #c8d6e5;
-        }
-        #book4-compendium .entry-meta {
-            grid-column: 1 / 2;
-        }
-        #book4-compendium .entry-analysis {
-            grid-column: 2 / 3;
-        }
-        #book4-compendium h2 {
-            font-size: 1.5em;
-            color: #2c3e50;
-            margin-top: 0;
-        }
-        #book4-compendium .illustration-placeholder {
-            width: 100%;
-            height: 250px;
-            background-color: #dce4e9;
-            border: 2px dashed #8a9eaf;
+        .metadata-section {
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            margin: 40px 0;
+            padding: 20px 0;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Roboto Mono', monospace;
-            color: #576a7c;
-            margin-bottom: 1rem;
+            justify-content: space-between;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
         }
-        #book4-compendium dl {
-            font-size: 0.9em;
-        }
-        #book4-compendium dt {
-            font-weight: 700;
-            color: #34495e;
-            margin-top: 0.5rem;
-        }
-        #book4-compendium dd {
-            margin-left: 0;
-            font-family: 'Roboto Mono', monospace;
-        }
-        #book4-compendium .status-active { color: #27ae60; }
-        #book4-compendium .status-failed { color: #c0392b; }
-        #book4-compendium .status-decommissioned { color: #f39c12; }
 
-        /* --- BOOK 5: POLITICAL ESSAYS --- */
-        #book5-essays {
-            background-color: #fff;
-            color: #222;
-            font-family: 'Merriweather', serif;
-            max-width: 900px;
-            margin: 4rem auto;
-            padding: 3rem;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        .metadata-column { display: flex; flex-direction: column; gap: 10px; }
+        .metadata-label { color: #86868b; font-weight: bold; }
+
+        h1 { font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 2.6rem; margin: 0; }
+        h2 { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1.4rem; margin-top: 50px; text-transform: uppercase; letter-spacing: 2px; }
+
+        p { font-size: 1.25rem; line-height: 1.8; margin-bottom: 25px; }
+
+        .vacuum-box {
+            background: #000;
+            color: var(--hazard-cyan);
+            padding: 40px;
+            margin-top: 60px;
+            border-left: 10px solid var(--hazard-cyan);
+            position: relative;
         }
-        #book5-essays h1 {
-            text-align: center;
-            font-size: 2.8em;
-            font-weight: 700;
-            margin-bottom: 0.2em;
-        }
-        #book5-essays .collection-title {
-            text-align: center;
-            font-style: italic;
-            color: #666;
-            margin-bottom: 3rem;
-        }
-        #book5-essays .essay {
-            margin-bottom: 4rem;
-        }
-        #book5-essays h2 {
-            font-size: 1.8em;
-            font-weight: 700;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        #book5-essays .author-byline {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-        #book5-essays .analysis-box {
-            background-color: #f8f9fa;
-            border: 1px solid #e9ecef;
-            padding: 1.5rem;
-            margin-top: 2rem;
-            border-left: 4px solid #6c757d;
-        }
-        #book5-essays .analysis-box h3 {
-            margin-top: 0;
-            font-size: 1.1em;
-            color: #343a40;
+
+        .vacuum-box h3 { color: #fff; font-family: 'Outfit', sans-serif; margin-top: 0; font-size: 1.5rem; }
+
+        .vacuum-box::after {
+            content: 'ANTI_RESONANCE_FIELD_DETECTED';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 0.6rem;
+            font-family: 'JetBrains Mono', monospace;
+            opacity: 0.5;
         }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article data-cid="5w5EaW">
-<h2 id="section-2" data-cid="EwqVEe">Case Study 02: The Stalemate of the Silent Plains</h2>
-<p data-cid="3pkiLn">
-                Before the practice was universally forbidden, the weaponization of &#34;Silence&#34; was seen as the ultimate expression of control. Two nascent empires, the Aethelian Technocracy and the Umbral Covenant, both developed this technology in secret. The Technocracy viewed Silence as a surgical tool to disable enemy Engineers without collateral damage. The Covenant, a death-cult that worshipped the concept of the &#34;Black Sun,&#34; saw it as a holy act of returning noisy consciousness to the perfect void. When they went to war on the fertile plains of Olen, both deployed their ultimate weapons.
-            </p>
-<p data-cid="TYbyx5">
-                They did not anticipate the outcome. The competing anti-resonance fields did not simply negate each other. They merged and amplified, creating a resonance vacuum of unimaginable scale and permanence. It was not a quiet place; it was a place where resonance *cannot exist*. The very fabric of the universal toroidal chamber was torn in that location. Engineers on both sides experienced immediate, total Burnout, their Bio-Plasma fields extinguished in an instant. Their bodies remained, but their &#34;note&#34; was gone, not even leaving a frequency ghost.
-            </p>
-<div class="analysis" data-cid="dPAU5G">
-<h3 id="section-2-1" data-cid="FdZWO4">Resonant Hazard Analysis</h3>
-<p data-cid="3QcvHL">
-                    The Silent Plains are arguably the most dangerous region known. Unlike a Desync field, which attacks a user&#39;s frequency, the Plains attack their Amplitude. The vacuum actively leeches the energy of any Bio-Plasma field that enters it, causing a rapid and irreversible drain. An Engineer&#39;s Amplitude drops to zero within minutes, resulting in a state of terminal Burnout from which there is no recovery. The consciousness is not reallocated to the Black Sun; it is simply erased. The area is a scar on reality, a testament to the hubris of those who would wield nothingness as a weapon, and a chilling example of failure without villainy, as both sides were annihilated by their own ambition.
-                </p>
-</div>
-</article>
-</main>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #000; color: #fff; border-bottom: 1px solid #333;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)">← BACK_TO_MENU</a>
+            <span>/</span>
+            <span>CASE_REPORT_VOID</span>
+        </div>
+        <div style="color: var(--hazard-cyan);">
+            STATUS: <span class="sync-indicator">NULL_RESONANCE_ZONE_DETECTED</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="document-folder">
+            <div class="silence-stamp">VOID_CLEARANCE</div>
+            
+            <header>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #86868b; margin-bottom: 5px;">ARCHIVE_ID: KT_ARCH_03_SILENT_PLAINS</div>
+                <h1>CASE_003: THE_SILENT_PLAINS</h1>
+            </header>
+
+            <div class="metadata-section">
+                <div class="metadata-column">
+                    <div><span class="metadata-label">FIELD:</span> Weapons Research</div>
+                    <div><span class="metadata-label">DATE:</span> Unknown (Inter-Empire War)</div>
+                </div>
+                <div class="metadata-column" style="text-align: right;">
+                    <div><span class="metadata-label">RESULT:</span> <span style="color: #000; font-weight:bold;">WEAPONIZED_SILENCE_STALEMATE</span></div>
+                    <div><span class="metadata-label">LOCATION:</span> Plains of Olen</div>
+                </div>
+            </div>
+
+            <main>
+                <h2>HISTORICAL_CONTEXT</h2>
+                <p>Before the practice was universally forbidden, the weaponization of <strong>"Silence"</strong> was seen as the ultimate expression of control. Two nascent empires, the Aethelian Technocracy and the Umbral Covenant, both developed this technology in secret.</p>
+                <p>The Technocracy viewed Silence as a surgical tool to disable enemy Engineers. The Covenant, a death-cult, saw it as a holy act of returning noisy consciousness to the perfect void. When they deployed their ultimate weapons on the plains of Olen, they did not anticipate the outcome.</p>
+                <p>The competing anti-resonance fields merged and amplified, creating a <strong>resonance vacuum</strong> of unimaginable scale. It was not a quiet place; it was a place where resonance <span style="text-decoration: underline;">cannot exist</span>. The fabric of the universal toroidal chamber was torn. Engineers on both sides experienced immediate, total <strong>Burnout</strong>.</p>
+
+                <div class="vacuum-box">
+                    <h3>VACUUM_HAZARD_ANALYSIS</h3>
+                    <p>The Silent Plains are arguably the most dangerous region known. Unlike a Desync field, the Plains attack <strong>Amplitude.</strong> The vacuum actively leeches the energy of any Bio-Plasma field that enters it, causing a rapid and irreversible drain. An Engineer's Amplitude drops to zero within minutes, resulting in terminal Burnout.</p>
+                    <p>The consciousness is not reallocated; it is simply <strong>erased.</strong> The area is a scar on reality, a testament to the hubris of those who would wield nothingness as a weapon.</p>
+                </div>
+            </main>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; color: #fff;">
+            [ FILE_PERMISSION: SUPPRESSED ]<br>
+            [ DO_NOT_TUNE_TO_WHITE_NOISE_NEAR_PLAINS ]
+        </footer>
+    </div>
 </body>
 </html>

@@ -7,7 +7,7 @@
 
 The gates of Malkuth Academy didn't look golden anymore.
 
-Before the crash, Taro would have seen the monolithic archway as a masterpiece of architectural harmony—a perfect C-Major chord solidified into matter. The AR overlay would have painted it with shimmering accolades, history widgets, and a warm, welcoming glow that vibrated at a friendly 440Hz.
+Before the crash, Taro would have seen the monolithic archway as a masterpiece of architectural harmony—a perfect C-Major chord solidified into matter. The AR overlay would have painted it with shimmering accolades, history widgets, and a warm, welcoming glow that vibrated at a friendly Standard Pitch.
 
 Now, he just saw the stress fractures.
 
@@ -24,6 +24,8 @@ The world wasn't smooth. It was a jagged mess of conflicting frequencies.
 Across the courtyard, a group of First Years were laughing. To Taro's old eyes, they would have been a harmonious cluster of pleasant notes. Now, he saw the jagged waveforms of their anxiety spiking through their laughter. He saw the dissonance in their forced smiles. The girl on the left was vibrating with a sharp, sawtooth insecurity that clashed violently with the boy next to her, whose heavy, dull square-wave arrogance was drowning out everyone else.
 
 It wasn't just unsightly. It was loud.
+
+It wasn't just unsightly. It was loud. It was [[Social Harmony::An NAI algorithm that auto-tunes social interactions, smoothing out awkward pauses and damping conflict spikes to create a pleasant but fake society.]] .
 
 He tapped his temple, a phantom itch where the old collar used to be. The new limiter was internal, buried deep in his NAI's kernel. It didn't block the dissonance; it just stopped him from reacting to it. It was a mute button for his output, not his input.
 
@@ -83,6 +85,10 @@ He saw the interference.
 
 The air around the cadet in the video wasn't empty. It was thick with... something. A localized distortion field. Like static cling, but aggressive. It was pulling at the sonic pulse, dragging it out of alignment.
 
+The air around the cadet in the video wasn't empty. It was thick with... something. A localized distortion field. Like static cling, but aggressive. It was pulling at the sonic pulse, dragging it out of alignment.
+
+It was a [[Damping Field::An illegal modification of local atmospheric pressure used to create 'Dead Zones' where resonance cannot propagate.]] .
+
 *It wasn't his fault,* Taro realized. *The environment was hostile.*
 
 He leaned forward, squinting. The "data" Voss had given him—the ability to see the raw code of the world—was overlaying the hologram. He saw faint, purple vectors swirling around the cadet's feet.
@@ -132,7 +138,7 @@ Hana slid into the seat next to Ven. She didn't look at Taro. She was staring at
 
 "Hello to you too, Hana," Taro said.
 
-"Your resting frequency," she continued, finally glancing at him. Her eyes were sharp, blue pixels of the grid reflected in her pupils. "It's oscillating. You used to hum at a solid 440. Now you're... you're dropping frames. You're phasing in and out of the spectrum."
+"Your resting resonance," she continued, finally glancing at him. Her eyes were sharp, blue pixels of the grid reflected in her pupils. "It's oscillating. You used to hum at a solid Standard Pitch. Now you're... you're dropping frames. You're phasing in and out of the spectrum."
 
 "It's the patch," Taro said. "New driver. I'm still... zzt... calibrating."
 

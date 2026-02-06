@@ -21,7 +21,7 @@ For a microsecond, the texture map of his face popped. The skin, the hair, the b
 
 It wasn't just a glitch. It was a completely different shape.
 
-The "Cadet Taro" hull was symmetrical, solid, harmonious. A Major Chord made of flesh.
+The "Cadet Taro" [[Hull::The projected 'Corrected Self' avatar that the NAI overlays on a user's physical body.]] was symmetrical, solid, harmonious. A Major Chord made of flesh.
 The wireframe underneath was jagged, asymmetrical, splintered. A Dissonant Chord struggling to break free.
 
 **> WARNING: HULL_INTEGRITY_COMPROMISED**
@@ -41,9 +41,9 @@ It was *him*. The raw signal.
 
 The "Cadet" in the mirror was the mask. The "Glitch" was the person.
 
-He squeezed his eyes shut. The dysphoria washed over him—an ontological nausea that felt like a permanent frame-rate lag. Being "Corrected" by the system, being "Patched" by Voss... it felt like being deleted, bit by bit, to free up RAM for a version of himself he didn't even recognize. 
+He squeezed his eyes shut. The dysphoria washed over him—an ontological nausea that felt like a permanent stuttering lag. Being "Corrected" by the system, being "Patched" by Voss... it felt like being deleted, bit by bit, to free up space for a version of himself he didn't even recognize. 
 
-His CPU was pegged at 100%. He needed to dump heat.
+His processing was pegged at 100%. He needed to dump heat.
 
 He needed to get out. The air in the dorms was too thick. Too ordered.
 
@@ -118,7 +118,7 @@ Taro walked over. He sat on the floor, ignoring the protocol that said he should
 
 "They call it corruption," Taro said. "Voss says it's a fatal error."
 
-"Resonance Dysphoria," Kimura corrected. "That's the medical term. 'A pathological misalignment between assigned frequency and internal geometry.'"
+"Resonance Dysphoria," Kimura corrected. "That's the medical term. A [[Pathological Misalignment::A psychological rejection of one's assigned Frequency, treated by the C-Order via aggressive re-patterning or total system reset.]] between assigned frequency and internal geometry."
 
 "I call it the truth," Taro said.
 
@@ -134,7 +134,7 @@ He felt tuned.
 
 Kimura hesitated. Then, a small, sad smile touched the corner of the heavy jawline.
 
-"Elara," she whispered. "My name is Elara. I’m... I’m broadband. I hear everything. And the system... it just wants me to be a single, flat note."
+"Elara," she whispered. "My name is Elara. I’m... I’m full-spectrum. I hear everything. And the system... it just wants me to be a single, flat note."
 
 **> DIALOGUE_EVENT: RESONANCE_SYNC**
 **> STATUS: MASKING_OFF**

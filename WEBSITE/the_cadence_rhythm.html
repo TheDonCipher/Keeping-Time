@@ -1,126 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="9WR0K4"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="0kpkwG"/>
-<title data-cid="n4d4pE">THE UNFINISHED SCORE: A History of Battles That Never Ended</title>
-<style data-cid="7xLFmG">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital@0;1&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER: THE_CADENCE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=JetBrains+Mono:wght@400;700&family=Public+Sans:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --faction-blue: #00f3ff;
+            --faction-dark: #050510;
+        }
 
         body {
-            font-family: 'EB Garamond', serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #fdfcf7;
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            border: 1px solid #dcdcdc;
+            background: var(--faction-dark);
+            color: #fff;
+            font-family: 'Public Sans', sans-serif;
         }
 
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-            color: #5a2a2a;
-            text-align: center;
-            border-bottom: 1px solid #dcdcdc;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+        .propaganda-frame {
+            border: 20px solid #fff;
+            min-height: 100vh;
+            padding: 60px;
+            position: relative;
+            background: 
+                linear-gradient(45deg, rgba(0, 243, 255, 0.05) 0%, transparent 100%),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></svg>');
         }
 
-        h1 {
-            font-size: 2.8em;
-            border-bottom: 2px solid #8B4513;
+        .faction-banner {
+            background: #fff;
+            color: #000;
+            padding: 20px 40px;
+            display: inline-block;
+            font-weight: 900;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+            transform: skew(-5deg);
+        }
+
+        .faction-icon-large {
+            font-size: 8rem;
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            opacity: 0.1;
+            font-weight: 900;
+        }
+
+        .manifesto-quote {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 60px;
+            border-left: 20px solid var(--faction-blue);
+            padding-left: 40px;
+            text-transform: uppercase;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        @media (max-width: 1000px) {
+            .content-grid { grid-template-columns: 1fr; }
         }
 
         h2 {
-            font-size: 2em;
-            margin-top: 3rem;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-            text-align: left;
-            border-bottom: none;
-            font-style: italic;
-            color: #666;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            color: var(--faction-blue);
+            font-family: 'JetBrains Mono', monospace;
         }
 
         p {
-            text-indent: 2em;
-            margin-bottom: 1.2em;
-            text-align: justify;
+            font-size: 1.4rem;
+            line-height: 1.5;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 30px;
         }
 
-        .preface, .conclusion {
-            font-style: italic;
-            border-left: 3px solid #dcdcdc;
-            padding-left: 1.5rem;
-            margin: 2rem 0;
+        .analysis-sidebar {
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-top: 5px solid #fff;
         }
 
-        .case-study {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px dashed #aaa;
-        }
-        
-        .metadata {
-            font-size: 0.9em;
-            color: #666;
-            background-color: #f5f5f5;
-            padding: 1rem;
-            border: 1px solid #eee;
-            margin-bottom: 2rem;
-        }
-        
-        .metadata strong {
-            color: #333;
+        .stat-block {
+            margin-bottom: 40px;
         }
 
-        blockquote {
-            font-style: italic;
-            margin: 1.5rem 3rem;
-            padding: 1rem;
-            border-left: 4px solid #c9c9c9;
-            background: #f9f9f9;
-            quotes: "“" "”" "‘" "’";
-        }
-        
-        blockquote:before {
-            color: #ccc;
-            content: open-quote;
-            font-size: 4em;
-            line-height: 0.1em;
-            margin-right: 0.25em;
-            vertical-align: -0.4em;
+        .stat-label {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem; /* Increased from 0.7 */
+            text-transform: uppercase;
+            opacity: 0.6; /* Increased from 0.5 */
         }
 
-        .analysis {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #faf6f0;
-            border: 1px solid #eaddc7;
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--faction-blue);
         }
-        
-        .analysis h3 {
-            margin-top: 0;
-            color: #8B4513;
+
+        .footer-tagline {
+            position: absolute;
+            bottom: 40px;
+            left: 60px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem; /* Increased from 0.8 */
+            opacity: 0.4; /* Increased from 0.3 */
         }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article class="essay" data-cid="1cHGZd">
-<h2 id="section-1" data-cid="2H6YJf"><span class="faction-icon rhythm-icon" data-cid="vP9YXS">■</span>The Cadence (Rhythm)</h2>
-<blockquote class="rhythm-quote" data-cid="igMfyA">&#34;The universe has a heartbeat. All else is commentary. We do not seek to impose our will upon the Matrix; we seek to align with its fundamental pulse. Strength, order, discipline—these are not mere virtues, they are the pillars of reality. A clear beat provides structure for the song. Without it, there is only noise. We are the wall against chaos, the steady march that brings progress. To be part of the Cadence is to accept that freedom is not the absence of structure, but the mastery of it.&#34;</blockquote>
-<p data-cid="gadJvC">The philosophy of the Cadence is one of pragmatic structuralism. They believe the Resonance Matrix is governed by underlying laws, the most fundamental of which is Rhythm. For them, power and societal health are derived from discipline, hierarchy, and the unwavering execution of a clear, unified purpose. They are the soldiers, the builders, and the guardians of order. They see the intricate solos of Melody as self-indulgent, the forced unity of Harmony as weak, and the chaos of Noise as an existential threat. Their goal is a stable, predictable world where every individual has a defined role and contributes to the strength of the whole, like drummers in a legion, their combined beat shaking the very ground.</p>
-<div class="analysis-box" data-cid="HuNwAG">
-<h3 id="section-1-1" data-cid="yea1M2">Analysis</h3>
-<p data-cid="DzZcS3"><strong data-cid="wDjfhj">Blind Spot:</strong> Their greatest strength, their rigidity, is also their greatest weakness. The Cadence is slow to adapt to new ideas or unforeseen threats. They see any deviation from the established beat as a flaw to be corrected, not a potential innovation. This makes them vulnerable to asymmetrical tactics and unconventional thinking, particularly from Melody and Noise practitioners.</p>
-<p data-cid="rhjNj0"><strong data-cid="YVBB3p">Internal Schism:</strong> <em data-cid="1kM5rB">The Traditionalists vs. The Polyrhythmics.</em> The orthodox faction believes in a single, monolithic beat for the entire society, arguing that complexity invites weakness. The reformist Polyrhythmics argue that true strength lies in weaving multiple, complementary rhythms together, allowing for more flexibility and resilience without sacrificing discipline.</p>
-</div>
-</article>
-</main>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #fff; color: #000;">
+        <div class="archive-nav">
+            <a href="index.html">← ARCHIVE_HOME</a>
+            <span>/</span>
+            <span>PRIMER_CADENCE</span>
+        </div>
+        <div style="font-weight: 900;">
+            IDENTITY: <span class="sync-indicator">IDEOLOGICAL_STRENGTH_VERIFIED</span>
+        </div>
+    </div>
+
+    <div class="propaganda-frame">
+        <div class="faction-icon-large">■</div>
+        
+        <header>
+            <div class="faction-banner">THE_CADENCE</div>
+            <blockquote class="manifesto-quote">
+                "The universe has a heartbeat. All else is commentary. Strength, order, discipline."
+            </blockquote>
+        </header>
+
+        <main class="content-grid">
+            <section>
+                <h2>PHILOSOPHY_OF_STRUCTURE</h2>
+                <p>The philosophy of the Cadence is one of pragmatic structuralism. We believe the Resonance Matrix is governed by underlying laws, the most fundamental of which is <strong>Rhythm</strong>.</p>
+                <p>For us, power and societal health are derived from discipline, hierarchy, and the unwavering execution of a clear, unified purpose. We are the soldiers, the builders, and the guardians of order.</p>
+                <p>We see the intricate solos of Melody as self-indulgent, the forced unity of Harmony as weak, and the chaos of Noise as an existential threat.</p>
+            </section>
+
+            <aside class="analysis-sidebar">
+                <div class="stat-block">
+                    <span class="stat-label">Tactical Bias</span>
+                    <span class="stat-value">STRUCTURAL_RIGIDITY</span>
+                </div>
+                
+                <h2>INTERNAL_ANALYSIS</h2>
+                <p style="font-size: 1.1rem; opacity: 0.7;"><strong>Blind Spot:</strong> Rigidity makes us slow to adapt. We view deviation as a flaw, not an innovation.</p>
+                <p style="font-size: 1.1rem; opacity: 0.7;"><strong>Internal Schism:</strong> <em>Traditionalists vs. Polyrhythmics.</em> The battle over whether society should have one single beat or a weave of many.</p>
+
+                <div style="margin-top: 40px; border: 2px solid var(--faction-blue); padding: 15px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;">
+                    [ REC_SOURCE: UNISON_CODE_RED ]<br>
+                    [ STATUS: AUTHORIZED_VIEWING ]
+                </div>
+            </aside>
+        </main>
+
+        <div class="footer-tagline">
+            // WITHOUT_THE_BEAT_THERE_IS_ONLY_STATIC //
+        </div>
+    </div>
 </body>
 </html>

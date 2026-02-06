@@ -26,8 +26,7 @@ She was standing next to him, but she looked... unstable. Without the Network to
 
 "This way," she said, her voice dropping into a grainier, lower resolution.
 
-They walked down a rusted maintenance tunnel. The walls were lined with copper mesh—a makeshift Faraday cage built to block out the world.
-
+They walked down a rusted maintenance tunnel. The walls were lined with copper mesh—a makeshift [[Faraday Cage::A copper mesh enclosure that blocks electromagnetic fields and C-Order Network signals, creating a 'Dead Zone'.]] .
 At the end of the tunnel was a heavy blast door. No digital lock. No retinal scanner. Just a wheel valve.
 
 Elara spun it. The door creaked open.
@@ -39,7 +38,7 @@ The sound hit them like a physical wave.
 
 It wasn't the polite, quantized music of the Upper City. It was a riot of genres, a clash of time signatures, a polyphonic storm of individuality.
 
-Taro stepped inside. The club, simply called "The Null," was a cavernous space carved out of an old geothermal vent.
+Taro stepped inside. The club, simply called "The Null," was a cavernous space carved out of an old geothermal vent. It was the [[Underground::A sanctuary for Dissonant users in the Sub-Bass levels where High-Fidelity is rejected and raw noise is worshiped.]] .
 
 The visual data was overwhelming.
 
@@ -131,7 +130,7 @@ Taro panicked. *Silence.* The enemy. The monsters that ate the city.
 
 "No," he gasped, trying to pull the mask back on. "No, I'm not... I'm not one of them!"
 
-"Not them," Elara said firmly. She reached out and took his hand. Her light didn't disappear into his darkness; it swirled around it, creating a beautiful, high-contrast event horizon. "You're a Broadband-Killer, Taro. The Silence destroys. You... you absorb. You're a living Damping-Field."
+"Not them," Elara said firmly. She reached out and took his hand. Her light didn't disappear into his darkness; it swirled around it, creating a beautiful, high-contrast event horizon. "You're a Full-Spectrum-Killer, Taro. The Silence destroys. You... you absorb. You're a living Damping-Field."
 
 She smiled, her glass face glowing in the dark.
 

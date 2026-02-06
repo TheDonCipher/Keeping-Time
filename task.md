@@ -82,6 +82,12 @@ Building the foundational structure before continuing chapter writing.
 - [x] UI Focus: System Crash / Glitch Text
 - [x] Action: The Ambush
 - [x] Theme: Dependence on Data vs. Analog Reality
+- [x] Pillar 2: The Ouroboros Archives (Digital Gallery)
+    - [x] Create Master Index of Lore/Case Studies
+    - [x] Design landing page prototype
+- [x] Pillar 3: The Soundscape Sourcebook
+    - [x] Formalize Combat Mechanics
+    - [x] Draft "The Grid" reference sheet
 
 ### [x] Chapter 10: The Breach (Act II Climax)
 - [x] Setting: Crumbling Alley (Physics Failure)
@@ -158,3 +164,46 @@ Building the foundational structure before continuing chapter writing.
 - [x] Chapter 1: The Wrong Note (prose draft - still valid)
 - [x] Basic plot outline (superseded by musical composition approach)
 - [x] Character concepts (revised to resonance profiles)
+
+---
+
+## PHASE 6: REFINEMENTS & FINAL POLISH
+**Goal**: Comprehensive update to narrative, interactivity, and consistency.
+
+### [x] 1. Story & World Development
+- [x] Weave worldbuilding organically (show don't tell)
+- [x] **Narrative Development**
+    - [x] Refine Chapter 1: The Zap (Tone, Tooltips)
+    - [x] Refine Chapter 2: The Assessment (Tone, Tooltips)
+    - [x] Refine Chapter 3: Modulation (Tone, Tooltips)
+    - [x] Refine Chapter 4: The Medium (Tone, Tooltips)
+    - [x] Refine Chapter 5: The Sync Check (Tone, Tooltips)
+    - [x] Refine Chapter 6: The Ground State (Tone, Tooltips)
+    - [x] Refine Chapters 7-17 (Completed)
+- [x] **Interactive Features**
+    - [x] Implement Collapsible Sidebar (HTML/CSS/JS)
+    - [x] Implement Contextual Tooltips (Build Script Parsing)
+    - [x] Populate Sidebar Content (from SIDEBAR_LIBRARY.md)
+- [x] **Accessibility & Verification**
+    - [x] Verify Screen Reader Compatibility
+    - [x] Final Proofread for Spoilers/Consistency
+- [x] **Genre & Tone**
+    - [x] Sci-fi thriller/horror atmosphere
+    - [x] Tension, suspense, dread
+    - [x] Body horror related to sound
+    - [x] Logical world mechanics
+
+### [x] 5. Power System Presentation
+- [x] Indirect explanation (consequences/effects first)
+- [x] Reader inference focus
+- [x] Connect to real acoustic principles
+
+### [x] 6. Implementation & Consistency
+- [x] Update Manuscript (Chapters 1-17)
+- [x] Update Website (Interactive features)
+- [x] Revise Source Docs (Mechanics, Registry, etc.)
+- [x] Cross-check for consistency
+
+### [x] 7. Documentation
+- [x] Change Log creation
+- [x] Verify canon alignment

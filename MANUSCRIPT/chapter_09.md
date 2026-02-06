@@ -35,6 +35,13 @@ It wasn't broadcasting noise. It was a sinkhole in the data. It was sucking the 
 **> SIGNAL_FLOOR: -200dB [ABSENCE]**
 **> PHYSICS_ENGINE: SUSPENDED**
 
+It wasn't broadcasting noise. It was a sinkhole in the data. It was suckling the broadband out of the air like oxygen out of a depressurized cabin. It was an absolute-zero signal.
+
+**> SIGNAL_FLOOR: -200dB [ABSENCE]**
+**> PHYSICS_ENGINE: SUSPENDED**
+
+It was [[The Silence::A rumored black-ops unit that doesn't use Resonance but consumes it, erasing targets from the server entirely.]] .
+
 Taro reached for his neck.
 He pulled the **Analog Headphones** up over his ears.
 *Click.*
@@ -76,13 +83,17 @@ Just an absence of impact. The acoustic energy of their landing was swallowed in
 "No!"
 
 Hana fired.
-A beam of pure 440 Hz Blue Light shot from her palm. A Standard Calibration Pulse.
+A beam of pure Blue Light shot from her palm. A Standard Calibration Pulse.
 It illuminated the alley for a microsecond.
 The lead Silence agent stepped forward. He raised a black knife.
 He didn't block the beam.
 He *split* it.
 
 The knife cut the frequency. The blue light hit the blade and vanished—eaten by the void. The air tasted like cold ash and missing packets.
+
+The knife cut the frequency. The blue light hit the blade and vanished—eaten by the void. The air tasted like cold ash and missing packets.
+
+It was a [[Null-Blade::Weapons coated in Void-Glass that absorb 100% of incident energy, capable of 'eating' Bio-Plasma shields.]] .
 
 **> ATTACK: NULLIFIED**
 **> ENERGY_DRAIN: DETECTED [EXTERNAL_SINK]**
@@ -107,7 +118,7 @@ He grabbed a loose brick from the crumbling wall.
 **> OBJECT: MASONRY_UNIT [SOLID]**
 **> TECH_LEVEL: PRIMITIVE**
 
-Taro generated an 880 Hz pulse.
+Taro generated a High Register pulse.
 But he didn't project it. He held it. He internalized it.
 **> MODE: VIBRATION_ONLY**
 

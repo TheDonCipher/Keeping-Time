@@ -33,7 +33,7 @@ Personal status indicators fixed to the user's peripheral vision.
 ### SIGNAL TAGS (AR Labels)
 Every resonant object/person is "tagged" with a floating data window.
 -   **ID**: Name / Class / Faction.
--   **Frequency**: Current Hz output (e.g., `440 Hz [A4]`).
+-   **Pitch**: Current output (e.g., `Standard Pitch [A4]` or `High Register`).
 -   **Waveform Icon**: Visual representation of their signal (Square, Sine, Sawtooth).
 -   **Intention Monitor**: Real-time analysis of their carrier wave stability.
 
@@ -116,12 +116,12 @@ The visual style of The Score depends on the user's NAI firmware and Faction.
 > Voss smiled warmly. "I only want to help you, Taro."
 > My HUD flickered.
 > **> ANALYSIS: DECEPTION**
-> **> CARRIER_WAVE: JITTER [15Hz]**
+> **> CARRIER_WAVE: JITTER [CRITICAL]**
 > He was lying. The math didn't add up.
 
 **Scene: Sensory Overload**
 > The market was too loud.
-> **> INPUT: 90dB [WARNING]**
+> **> INPUT: PRESSURE [WARNING]**
 > **> SIGNAL_SOURCES: 500+**
 > **> CPU_LOAD: 99%**
 > The text frames started stacking on top of each other. The tags overlapped until they were just a wall of white noise. I squeezed my eyes shut, but the AR didn't turn off. It just kept scrolling error codes against the backs of my eyelids.

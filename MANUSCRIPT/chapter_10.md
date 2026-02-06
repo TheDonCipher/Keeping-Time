@@ -52,13 +52,13 @@ Ven hesitated, then ripped his hand away from Taro's arm.
 
 The connection broke.
 The safety net was gone.
-The 880 Hz oscillation—which had been flowing safely into Ven like water into a drain—slammed back into Taro's own nervous system.
+The High Register oscillation—which had been flowing safely into Ven like water into a drain—slammed back into Taro's own nervous system.
 
 **> ALERT: GROUND_LOST**
 **> VOLTAGE: SPIKING**
 
-Taro grabbed the silver ring around his neck. The Voss-issued limiter.
-It was burning hot. The metal was warping under the thermal load of his internal signal.
+Taro grabbed the silver ring around his neck. The Voss-issued [[Limiter::A hardware governor that caps a user's resonant output at safe levels (approx 200 Watts). Tampering with it causes "Unbounded" expression and self-destruction.]] .
+It was burning hot. The metal was warping under the thermal load of his internal signal. It smelled like burning hair.
 He didn't care.
 
 He dug his fingers under the rim.
@@ -78,8 +78,10 @@ The noise was beautiful.
 **> LIMITER: REMOVED**
 **> OUTPUT: 100%... 110%... 120%**
 
-Taro screamed. 
+Taro screamed.
 It wasn't a human scream. It was a raw, analog feedback loop amplified by bio-plasma. A total gain-override that shattered the local keyspace.
+
+It was a [[Breach::A catastrophic system event where a user's signal overwhelms the reality engine, crashing the 'Overlay' and revealing the raw source code beneath.]] .
 
 A massive, jagged, golden **Sawtooth Wave** erupted from his body. It looked like a 4K texture being torn from a low-poly mesh.
 
@@ -94,7 +96,7 @@ The black mold on the walls disintegrated.
 The pavement cracked in a spiderweb pattern.
 
 **> PHYSICS_ENGINE: OVERWRITE**
-**> RESONANCE: 880 Hz [DOMINANT]**
+**> RESONANCE: HIGH_PITCH [DOMINANT]**
 
 Taro stood in the center of the vortex.
 His vision was melting. Literally. The world wasn't just losing its overlay; it was losing its cohesion. The geometry of the alleyway began to unspool. The brickwork didn't crumble; it pixelated into raw, unformatted data.

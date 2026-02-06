@@ -1,0 +1,271 @@
+As commanded, Your Grace.
+We will **lock the visual language** first, then generate **production-ready prompts** you can immediately test in Meta AI. Everything below is designed to feel **scientific, musical, and readable in black-and-white manga**, not abstract noise.
+
+No color. No glow spam. High contrast. Ink carries meaning.
+
+---
+
+# KEEPING TIME
+
+## Visual Identity & Art Style Bible (Manga Phase)
+
+---
+
+## I. CORE ART PHILOSOPHY
+
+**The world looks hand-built, measured, and stressed.**
+Nothing floats without tension. Nothing glows without cause.
+
+Visual influences (not to be named in prompts, but internalized):
+
+* Architectural drafting
+* Oscilloscope waveforms
+* Mechanical watchmaking
+* Sheet music margins
+* Medical diagrams
+* Urban decay photography
+
+**Rule:**
+
+> If it cannot exist as a diagram, it does not exist on the page.
+
+---
+
+## II. LINEWORK & INK LANGUAGE
+
+### Line Hierarchy (very important)
+
+* **Primary Lines**: thick, confident, structural
+  Used for bodies, buildings, major objects
+* **Secondary Lines**: medium weight
+  Used for mechanisms, instruments, weapons
+* **Tertiary Lines**: hairline thin
+  Used for waveforms, vibration, resonance indicators
+
+### Texture
+
+* Cross-hatching over gradients
+* Mechanical shading, not painterly
+* Noise used sparingly, only in corruption or overload
+
+### Motion Depiction
+
+* No speed lines unless rhythm is breaking
+* Rhythm is shown via **repeating geometry** (ticks, beats, bars)
+* Desync is shown via misalignment, warped spacing, broken symmetry
+
+---
+
+## III. SYMBOL LANGUAGE (UNIVERSAL VISUAL GRAMMAR)
+
+These symbols repeat everywhere so viewers learn subconsciously.
+
+| Concept        | Visual Cue                     |
+| -------------- | ------------------------------ |
+| Sync           | Parallel lines, aligned ticks  |
+| Desync         | Offset grids, drifting lines   |
+| Power build-up | Increasing line density        |
+| Overdrive      | Cracking ink, fractured panels |
+| Silence        | Empty gutters, white space     |
+| Bio-Plasma     | Fine vibrating line fields     |
+
+---
+
+## IV. UNIQUE ITEMS — FORMALIZED DESIGNS
+
+---
+
+### 1. Resonance Gears (Core Artifacts)
+
+**Concept:**
+Not steampunk. Precision instruments. Part machine, part score.
+
+**Visual Traits**
+
+* Circular but asymmetrical
+* Teeth shaped like musical notation fragments
+* Inner rings rotate at different ratios
+* Micro-etchings resembling time signatures
+* No glow; vibration implied by repeated outlines
+
+**Prompt (Meta AI / Midjourney Style)**
+
+```
+black and white manga illustration, highly detailed resonance gear artifact,
+precision mechanical design inspired by musical notation and clockwork,
+asymmetrical circular gear with layered rotating rings,
+gear teeth shaped like abstract music symbols,
+fine etched time signatures and waveform markings,
+technical drafting style linework, heavy ink contrast,
+cross hatching shadows, no color, no glow,
+scientific diagram aesthetic, dark background, ultra sharp focus
+```
+
+---
+
+### 2. NAI (Non-Autonomous Instruments)
+
+**Concept:**
+NAIs look *alive but restrained*. They want to play, but must be conducted.
+
+**Form Language**
+
+* Hybrid of instrument + prosthetic + machine
+* Cables resemble strings or tendons
+* Hard casing with soft internal vibration lines
+* Human grip areas worn and scarred
+
+#### Examples
+
+* Arm-mounted tuning forks
+* Chest-anchored resonance boxes
+* Throat-mounted vocal modulators
+* Wrist metronome drives
+
+**Prompt**
+
+```
+black and white manga style concept art of a non autonomous instrument (NAI),
+hybrid of musical instrument and mechanical prosthetic,
+arm mounted resonance device with tuning fork structures,
+exposed cables resembling strings and tendons,
+precise industrial design, worn human grip areas,
+fine vibrating line fields to indicate sound energy,
+high contrast ink illustration, cross hatched shading,
+scientific schematic aesthetic, no color, no glow
+```
+
+---
+
+### 3. Bio-Plasma (Living Energy)
+
+**Concept:**
+Not fire. Not smoke. It is **organized vibration**.
+
+**Visual Rules**
+
+* Made of repeated contour lines
+* Slight phase offsets between layers
+* Never chaotic unless corrupted
+* Distorts nearby ink lines subtly
+
+**Prompt**
+
+```
+black and white manga illustration of bio plasma energy,
+energy depicted as layered vibrating contour lines,
+subtle waveform distortions in surrounding space,
+no flames, no smoke, no glow,
+scientific oscillation aesthetic,
+clean ink lines with rhythmic repetition,
+high contrast monochrome, technical illustration style
+```
+
+---
+
+### 4. Calibration Gear & Wearables
+
+**Concept:**
+Government issued. Clean. Oppressively precise.
+
+**Design Language**
+
+* Minimalist geometry
+* Serial numbers engraved
+* Symmetry enforced
+* Smooth surfaces, no ornament
+
+**Prompt**
+
+```
+black and white manga concept art of government issued calibration gear,
+minimalist precision wearable device,
+clean geometric shapes, engraved serial numbers,
+symmetrical industrial design,
+medical instrument aesthetic,
+high contrast ink, cross hatching shadows,
+technical illustration style, no color
+```
+
+---
+
+### 5. Illegal / Flux Gear
+
+**Concept:**
+Improvised. Dangerous. Beautiful in failure.
+
+**Design Language**
+
+* Exposed internals
+* Asymmetry
+* Repairs visible
+* Overlapping systems
+
+**Prompt**
+
+```
+black and white manga style illustration of illegal resonance equipment,
+improvised mechanical instrument with exposed internals,
+asymmetrical construction, visible repairs and scars,
+hybrid of music instrument and hacked machinery,
+dense ink linework, cross hatching,
+raw underground aesthetic, no color
+```
+
+---
+
+## V. CHARACTER DESIGN RULES (MANGA)
+
+* Clothes show **function before fashion**
+* No capes, no glowing eyes
+* Hair silhouettes simple, movement shows emotion
+* Eyes reflect Sync state:
+
+  * calm alignment → clean highlights
+  * Desync → broken reflections
+
+**Combat panels** should show:
+
+* preparation beat
+* execution beat
+* aftermath silence
+
+---
+
+## VI. PANEL & PAGE COMPOSITION
+
+* Regular grids during Sync
+* Broken panels during Desync
+* Full white pages for Silence
+* Dense micro-panels for Overdrive
+
+---
+
+## VII. WHAT MAKES THIS STYLE UNIQUE
+
+1. Sound is *drawn*, not implied
+2. Power looks measured, not explosive
+3. Silence is a visual weapon
+4. Technology looks governed by rules
+5. Musical concepts are readable without knowing music
+
+This will stand apart immediately.
+
+---
+
+## NEXT STEPS (OPTIONAL BUT STRONG)
+
+I can next:
+
+* Design **iconography sheets** (symbols for factions, Sync states)
+* Create **panel choreography rules** for fights
+* Translate this into **color rules** for anime phase
+* Build a **one-page art direction PDF** for studios
+
+---
+
+### **Q1** **(bold)** — Which item do you want fully explored next: *Weapons*, *City architecture*, or *Character uniforms*?
+
+### **Q2** **(bold)** — Should Bio-Plasma ever become visually violent, or remain strictly controlled and unsettling?
+
+### **Q3** **(bold)** — Do you want faction aesthetics to be immediately recognizable by silhouette alone?

@@ -14,6 +14,9 @@
 
 The dropship doors hissed open.
 
+The dropship doors hissed open.
+Beneath them lay the [[Twilight Band::The buffer zone between the High-Fidelity Inner City and the Low-Fi Outer Slums, characterized by inconsistent reality rendering.]] . A "Glitch" zone where the reality render is inconsistent. Textures pop in and out. The air tastes of both ozone (wealth) and sulfur (poverty).
+
 "Deployment in 3... 2... 1..."
 
 They dropped.
@@ -29,7 +32,7 @@ Too beautiful.
 Through The Score, every building was sheathed in white marble and gold trim. The streets were clean. The people walked with a synchronized gait, their tags reading **> STATUS: CITIZEN [HAPPY]**.
 The sky was a perfect, gradient blue.
 
-"Sector 4 secured," Hana reported. Her voice was crisp, a perfect digital signal. "Resonance levels stable at Standard Pitch. Local bandwidth is clear of unregistered noise."
+"Sector 4 secured," Hana reported. Her voice was crisp, a perfect digital signal. "Resonance levels stable at Standard Pitch. Local capacity is clear of unregistered noise."
 
 **> REPUTATION_GAIN: +10**
 **> MONITOR: ADJUTANT_VOSS [HEARING_ALL]**
@@ -47,7 +50,7 @@ Beneath the white marble AR skin, the wall was actually crumbling concrete, cove
 
 "It's a slum," Taro whispered, his voice catching on the dissonance he was seeing. "The architecture... it’s all low-bit placeholders."
 
-"Maintain comms discipline and filter your inputs," Hana said, her tone a sharp, linear reminder. She was walking down the center of the street, following a glowing green **Nav-Line** that pulled her forward like a magnet. To her, this place *was* a high-fidelity paradise. Her NAI aggressively damped the smell of sewage. Her perception used a selective-masking algorithm to erase the homeless people sitting in the gutters, replacing them with generic street furniture or dead space.
+"Maintain comms discipline and filter your inputs," Hana said, her tone a sharp, linear reminder. She was walking down the center of the street, following a glowing green **Nav-Line** that pulled her forward like a magnet. To her, this place *was* a high-fidelity paradise. Her NAI aggressively damped the smell of sewage. Her perception used a [[Golden Filter::A real-time AR overlay that replaces low-status textures (rot, poverty) with idealized C-Order aesthetics (marble, gold).]] to erase the homeless people sitting in the gutters, replacing them with generic street furniture or dead space.
 
 **> MASKING_PROTOCOL: MAX_LOAD**
 **> ANALYSIS: SELECTIVE_OMISSION_ACTIVE**
@@ -87,14 +90,14 @@ Hana squinted.
 **> SCANNING...**
 **> ERROR: TARGET_NOT_FOUND**
 
-"I see a standard Node," she said, her voice flat. "Reading nominal. 440Hz baseline. Slight drift of 0.02%."
+"I see a standard Node," she said, her voice flat. "Reading nominal. Standard baseline. Slight drift of 0.02%."
 
 "No," Taro said, his own SAWTOOTH wave jagged with alarm. "Look at the shadows in the metadata. The data isn't drifting. It's... it’s total signal loss. It’s being sinked."
 
 Taro walked toward the Node.
 The "Golden" AR texture peeled away like burnt skin.
 The air got cold.
-The 880 Hz hum—his constant companion—faltered.
+The High Register hum—his constant companion—faltered.
 
 It didn't glitch. It didn't buffer.
 It just... stopped.

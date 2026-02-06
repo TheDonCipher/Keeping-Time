@@ -57,7 +57,7 @@ It was a screaming abyss. A hole in the universe where the data stream simply *s
 
 *Coherence is Safety.* 
 
-Voss's voice echoed in his memory, a high-fidelity ghost. *The System protects you from the Raw. It manages your bandwidth so you don't peak and shatter.*
+Voss's voice echoed in his memory, a high-fidelity ghost. *The System protects you from the Raw. It manages your capacity so you don't peak and shatter.*
 
 "Help," Taro whispered.
 The word had no shape.
@@ -68,7 +68,7 @@ Ven's hands were hot, burning through Taro's jacket. But they were solid. They w
 
 "Taro! Breathe! Handshake with me!"
 
-Ven's voice was distorted, like audio playing through a blown-out speaker. It was clipping, full of digital artifacts and packet loss.
+Ven's voice was distorted, like audio playing through a blown-out speaker. It was clipping, full of digital artifacts and stuttering lag.
 
 Taro gasped, sucking in the wet, metallic air.
 His chest heaved.
@@ -109,6 +109,7 @@ The cold, sterile blue of the BIOS.
 **> LOADING: GRAVITY_CONSTANTS... [OK]**
 **> LOADING: AUDIO_FILTERS... [PARTIAL]**
 
+It was [[Safe Mode::An emergency NAI protocol that renders the world in basic wireframe polygons to save processing power, stripping high-fidelity textures.]] .
 Taro opened his eyes again.
 The world had stopped melting.
 It looked terrible—like a low-resolution wireframe render from a century-old simulation—but it was *stable*.
@@ -119,12 +120,13 @@ And the sky...
 The sky was a wall of blue static.
 **[TEXTURE_MISSING]**
 
+It was [[Texture Loss::A phenomenon where surface reality fails to render, potentially causing 'Logic Drift' and hallucinations in unadjusted users.]] .
 "Taro?"
 Ven's face resolved out of the heat-haze. He looked like a low-poly model, his features angular and sharp. He was terrified.
 
 "I'm... online," Taro rasped. 
 
-"You're in Safe Mode," Ven said, checking a display that Taro couldn't see. "Your output is capped at 5%. Your resolution is garbage. You're dropping frames just by blinking."
+"You're in Safe Mode," Ven said, checking a display that Taro couldn't see. "Your output is capped at 5%. Your resolution is garbage. You're hitching just by blinking."
 
 "I can see," Taro said. He looked at his hands. They were wireframe meshes. "Everything looks like a diagram. The textures aren't loading, but the physics is... it's holding."
 

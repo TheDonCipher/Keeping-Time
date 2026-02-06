@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary | KEEPING TIME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #00f3ff;
+            --accent-glow: rgba(0, 243, 255, 0.3);
+            --gold: #ffcc33;
+            --text: #1a1a1a;
+            --bg: #ffffff;
+            --card-bg: #f8f9fa;
+            --border: #ddd;
+            --font-display: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --font-main: 'Crimson Pro', serif;
+        }
+
+        [data-theme="dark"] {
+            --text: #e0e0e0;
+            --bg: #0a0a0c;
+            --card-bg: #151518;
+            --border: #333;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-main);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            padding: 80px 24px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            text-align: center;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--text), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-family: var(--font-mono);
+            color: var(--accent);
+            margin-bottom: 48px;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 16px;
+            font-family: var(--font-mono);
+            font-size: 1rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            margin-bottom: 48px;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .category-section {
+            margin-bottom: 64px;
+        }
+
+        .category-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .term-entry {
+            margin-bottom: 32px;
+            padding: 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .term-entry:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 16px var(--accent-glow);
+        }
+
+        .term-name {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .term-description {
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--text);
+            z-index: 100;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+    
+    <div class="container">
+        <h1>Glossary</h1>
+        <div class="subtitle">World-Building Reference</div>
+
+        <input type="text" class="search-box" id="search" placeholder="Search terms..." onkeyup="filterTerms()">
+
+        <!-- CORE PHYSICS -->
+        <div class="category-section">
+            <div class="category-title">Core Physics</div>
+            
+            <div class="term-entry" data-term="bio-plasma resonance">
+                <div class="term-name">Bio-Plasma</div>
+                <div class="term-description">
+                    A bio-electric field generated by the nervous system that fuels all resonant manipulation. Unique to each user, acting as a cryptographic key for the World OS.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="coherence coh health">
+                <div class="term-name">Coherence (COH)</div>
+                <div class="term-description">
+                    A percentage value representing the stability of a user's Bio-Plasma field relative to the Local Reality Server. At 0%, the user crashes (coma or death).
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="the score interface ar hud">
+                <div class="term-name">The Score (AR Interface)</div>
+                <div class="term-description">
+                    A visual overlay generated by the NAI that translates invisible acoustic physics into readable graphic data (waveforms, heat maps, text tags). The Score is a <em>representation</em>, not reality itself.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="nai neural acoustic interface">
+                <div class="term-name">Neural-Acoustic Interface (NAI)</div>
+                <div class="term-description">
+                    The hardware/software hybrid implanted in all citizens that allows them to perceive and manipulate resonance. It renders "The Score" and mediates interaction with reality.
+                </div>
+            </div>
+        </div>
+
+        <!-- SYSTEM STATES -->
+        <div class="category-section">
+            <div class="category-title">System States</div>
+            
+            <div class="term-entry" data-term="safe mode bios wireframe">
+                <div class="term-name">Safe Mode (BIOS Level)</div>
+                <div class="term-description">
+                    An emergency protocol where the NAI strips all high-fidelity textures, rendering the world in basic wireframe polygons (blue lines on black) to save processing power. Cold, sterile, and described as "living inside a blueprint."
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="high-fidelity hi-fi unfiltered admin">
+                <div class="term-name">High-Fidelity (Hi-Fi)</div>
+                <div class="term-description">
+                    Unfiltered reality rendering. Shows structural stress, micro-expressions, and biological imperfections. Extremely high CPU load—"too loud" for most users. Typically reserved for Admin-class users.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="the void source code crash null">
+                <div class="term-name">The Void (Source Code)</div>
+                <div class="term-description">
+                    A total render failure. Raw, unformatted data. Non-Euclidean static, "texture missing" purple/black checkerboards, and absolute chaos. Causes nausea, vertigo, and primal fear.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="standard c-order golden filter">
+                <div class="term-name">Standard (C-Order Default)</div>
+                <div class="term-description">
+                    The default "smoothed" reality. Social lubricants active. Decay hidden. Clean, golden, idealized textures (marble and gold aesthetic).
+                </div>
+            </div>
+        </div>
+
+        <!-- FAILURE MODES -->
+        <div class="category-section">
+            <div class="category-title">Failure Modes</div>
+            
+            <div class="term-entry" data-term="desync phase drift lag">
+                <div class="term-name">Desync (Phase Failure)</div>
+                <div class="term-description">
+                    Occurs when a user's internal frequency drifts too far from the local environmental baseline. Symptoms include nausea, motor control "lag," sensory artifacting (double vision, pixels), and inability to execute techniques.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="burnout neural scarring hollowing">
+                <div class="term-name">Burnout (Neural Scarring)</div>
+                <div class="term-description">
+                    Permanent reduction in Bio-Plasma capacity caused by channeling Amplitude beyond safe limits. Irreversible. Cumulative burnout results in "Hollowing"—total loss of ability to interface with the Medium.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="feedback loop runaway amplification">
+                <div class="term-name">Feedback (Amplitude Failure)</div>
+                <div class="term-description">
+                    Runaway amplification. Each action amplifies the next uncontrollably until collapse. Power feeds on itself, often resulting in environmental damage or user burnout.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="resonance dysphoria the wrong note corruption">
+                <div class="term-name">Resonance Dysphoria</div>
+                <div class="term-description">
+                    A psychological rejection of one's assigned Class or Frequency. The "Hull" (avatar) feels heavy or tight. The C-Order treats it as "Corruption." The Underground sees it as a sign of a hidden "True Frequency" that needs to be modulated.
+                </div>
+            </div>
+        </div>
+
+        <!-- TECHNOLOGY -->
+        <div class="category-section">
+            <div class="category-title">Technology & Gear</div>
+            
+            <div class="term-entry" data-term="limiter governor">
+                <div class="term-name">Limiter</div>
+                <div class="term-description">
+                    A hardware governor that caps a user's resonant output at safe levels (approx 200 Watts). Tampering with it causes "Unbounded" expression and rapid self-destruction.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="hull avatar corrected self mask">
+                <div class="term-name">Hull (The Mask)</div>
+                <div class="term-description">
+                    The projected "Corrected Self" avatar that the NAI overlays on a user's physical body. When internal stress exceeds hull capacity, the avatar tears, revealing unformatted biological data underneath.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="faraday cage dead zone copper mesh">
+                <div class="term-name">Faraday Cage (Dead Zone)</div>
+                <div class="term-description">
+                    A copper mesh enclosure that blocks electromagnetic fields and C-Order Network signals, creating a "Dead Zone" where the NAI cannot function. Illegal. Building one is considered "Treason against the Hive Mind."
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="modulation frequency shift illegal tuning">
+                <div class="term-name">Modulation (Illegal)</div>
+                <div class="term-description">
+                    Unauthorized code injection that modifies a user's resonant frequency, bypassing Hull locks. Penalty: Immediate expulsion and "Reformatting" (Memory Wipe).
+                </div>
+            </div>
+        </div>
+
+        <!-- FACTIONS & ZONES -->
+        <div class="category-section">
+            <div class="category-title">Factions & Zones</div>
+            
+            <div class="term-entry" data-term="c-order concord unison stability">
+                <div class="term-name">The C-Order (Unison)</div>
+                <div class="term-description">
+                    The governing faction. Philosophy: Stability equals Survival. Uses "Damping" and "Anchoring" to prevent change. Their aesthetic is medical/sterile (white and gold). They view Dissonance as a disease to be cured.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="twilight band sector 4 glitch zone buffer">
+                <div class="term-name">Twilight Band (Sector 4)</div>
+                <div class="term-description">
+                    The buffer zone between the High-Fidelity Inner City and the Low-Fi Outer Slums, characterized by inconsistent reality rendering. Textures pop in and out. The air tastes of both ozone (wealth) and sulfur (poverty).
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="the silence black ops null blade agents">
+                <div class="term-name">The Silence (The Agents)</div>
+                <div class="term-description">
+                    A black-ops unit that doesn't use Resonance but <em>consumes</em> it. Their "Null-Blades" absorb 100% of incident energy. If you are "Silenced," you don't die—you are erased from the server entirely.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="the underground the null sub-bass club dissonant">
+                <div class="term-name">The Underground (The Null)</div>
+                <div class="term-description">
+                    A sanctuary for Dissonant users in the Sub-Bass levels (Level 4). A Faraday-caged club where High-Fidelity is rejected and raw noise is worshiped. Here, "Factory Settings" are suggestions.
+                </div>
+            </div>
+
+            <div class="term-entry" data-term="admin class architect editor">
+                <div class="term-name">Admin Class (The Architects)</div>
+                <div class="term-description">
+                    High-level system overseers. They don't "Resonate"—they "Edit." An Admin can delete a user's ID tag with a gesture, effectively erasing them from society. They see the code behind the curtain.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
+        function filterTerms() {
+            const searchValue = document.getElementById('search').value.toLowerCase();
+            const entries = document.querySelectorAll('.term-entry');
+            
+            entries.forEach(entry => {
+                const searchTerms = entry.getAttribute('data-term').toLowerCase();
+                const termName = entry.querySelector('.term-name').textContent.toLowerCase();
+                const termDesc = entry.querySelector('.term-description').textContent.toLowerCase();
+                
+                if (searchTerms.includes(searchValue) || termName.includes(searchValue) || termDesc.includes(searchValue)) {
+                    entry.classList.remove('hidden');
+                } else {
+                    entry.classList.add('hidden');
+                }
+            });
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+</body>
+</html>

@@ -1,135 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="9WR0K4"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="0kpkwG"/>
-<title data-cid="n4d4pE">THE UNFINISHED SCORE: A History of Battles That Never Ended</title>
-<style data-cid="7xLFmG">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=EB+Garamond:ital@0;1&display=swap');
-
-        body {
-            font-family: 'EB Garamond', serif;
-            line-height: 1.8;
-            color: #333;
-            background-color: #fdfcf7;
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            border: 1px solid #dcdcdc;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE_STUDY: GLASS_PLAINS_KORELIA | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #ffffff;
+            --archival-bg: #f2f2f5;
+            --archival-border: #c7c7cc;
+            --classified-red: #b71c1c;
         }
 
-        h1, h2, h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 700;
-            color: #5a2a2a;
-            text-align: center;
-            border-bottom: 1px solid #dcdcdc;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
+        body { background: #000; }
+        .archive-bg { opacity: 0.05; }
+
+        .document-folder {
+            background: var(--archival-bg);
+            color: #1c1c1e;
+            padding: 80px 60px;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.9);
+            position: relative;
+            border-radius: 2px;
+            font-family: 'Crimson Pro', serif;
+            border: 1px solid var(--archival-border);
+        }
+
+        .classified-stamp {
+            position: absolute;
+            top: 50px;
+            right: 60px;
+            border: 3px solid var(--classified-red);
+            color: var(--classified-red);
+            padding: 8px 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 800;
+            font-size: 1.2rem;
+            transform: rotate(-12deg);
+            opacity: 0.7;
+        }
+
+        .metadata-block {
+            background: rgba(0,0,0,0.03);
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            padding: 20px 0;
+            margin: 40px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .metadata-item {
+            border-left: 3px solid var(--archival-border);
+            padding-left: 15px;
+        }
+
+        .metadata-label {
+            display: block;
+            font-weight: bold;
+            color: #8e8e93;
+            font-size: 0.7rem;
+            text-transform: uppercase;
         }
 
         h1 {
-            font-size: 2.8em;
-            border-bottom: 2px solid #8B4513;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 2.8rem;
+            margin: 0;
+            line-height: 1;
         }
 
         h2 {
-            font-size: 2em;
-            margin-top: 3rem;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-            text-align: left;
-            border-bottom: none;
-            font-style: italic;
-            color: #666;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            margin: 50px 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
         }
 
         p {
-            text-indent: 2em;
-            margin-bottom: 1.2em;
-            text-align: justify;
+            font-size: 1.25rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
         }
 
-        .preface, .conclusion {
-            font-style: italic;
-            border-left: 3px solid #dcdcdc;
-            padding-left: 1.5rem;
-            margin: 2rem 0;
+        .analysis-tab {
+            background: #ffffff;
+            border: 1px solid var(--archival-border);
+            padding: 35px;
+            margin-top: 60px;
+            position: relative;
         }
 
-        .case-study {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px dashed #aaa;
-        }
-        
-        .metadata {
-            font-size: 0.9em;
-            color: #666;
-            background-color: #f5f5f5;
-            padding: 1rem;
-            border: 1px solid #eee;
-            margin-bottom: 2rem;
-        }
-        
-        .metadata strong {
-            color: #333;
+        .analysis-tab::before {
+            content: 'RESONANT_PHYSICS_DEPT_EYES_ONLY';
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #000;
+            color: #fff;
+            padding: 2px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
         }
 
-        blockquote {
-            font-style: italic;
-            margin: 1.5rem 3rem;
-            padding: 1rem;
-            border-left: 4px solid #c9c9c9;
-            background: #f9f9f9;
-            quotes: "“" "”" "‘" "’";
-        }
-        
-        blockquote:before {
-            color: #ccc;
-            content: open-quote;
-            font-size: 4em;
-            line-height: 0.1em;
-            margin-right: 0.25em;
-            vertical-align: -0.4em;
-        }
-
-        .analysis {
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background-color: #faf6f0;
-            border: 1px solid #eaddc7;
-        }
-        
-        .analysis h3 {
-            margin-top: 0;
-            color: #8B4513;
+        .danger-text {
+            color: var(--classified-red);
+            font-weight: bold;
         }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article class="case-study" data-cid="zAzCaD">
-<h2 id="section-2" data-cid="rfh7WQ">Case Study 01: The Glass Plains of Korelia</h2>
-<div class="metadata" data-cid="eG8AFD">
-<strong data-cid="G5LGOT">Location:</strong> Former Korelian Steppe, now designated The Glass Plains.<br data-cid="wZLb8l"/>
-<strong data-cid="fRH5Ek">Date of Incident:</strong> Circa 450 years pre-Codex.<br data-cid="Z7NW5k"/>
-<strong data-cid="gE44AD">Primary Combatants:</strong> Lord Valerius (Frequency: Melody), Chieftain Bor (Frequency: Rhythm).<br data-cid="4QTCkC"/>
-<strong data-cid="xeLHDX">Resultant State:</strong> Perpetual Resonant Stasis; localized temporal shearing.
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #1c1c1e; color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)">← BACK_TO_ARCHIVE</a>
+            <span>/</span>
+            <span>CASE_REPORT_450</span>
+        </div>
+        <div>
+            FILE_STATUS: <span class="sync-indicator">HISTORICAL_RECONSTRUCTION_VERIFIED</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="document-folder">
+            <div class="classified-stamp">SECURED_INTEL</div>
+            
+            <header>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #8e8e93; margin-bottom: 10px;">REF_CODE: KT_ARCH_01_KORELIA</div>
+                <h1>CASE_001: THE_GLASS_PLAINS</h1>
+            </header>
+
+            <div class="metadata-block">
+                <div class="metadata-item">
+                    <span class="metadata-label">Location</span>
+                    <span>Former Korelian Steppe</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Combatants</span>
+                    <span>Lord Valerius vs. Chieftain Bor</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">System State</span>
+                    <span class="danger-text">PERPETUAL_RESONANT_STASIS</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Incident Type</span>
+                    <span>Melody/Rhythm Collision</span>
+                </div>
             </div>
-<h3 id="section-2-1" data-cid="MAjSQE">Historical Context</h3>
-<p data-cid="BmA12p">The Korelian Steppe was once a vibrant grassland, home to nomadic tribes who practiced a form of communal Rhythm resonance. Their culture was built on the &#34;Heartbeat of the Land,&#34; a slow, powerful cadence that informed their traditions and societal structure. The expansion of the Silver Empire, led by Lord Valerius—a Melody virtuoso of legendary repute—brought them into conflict. Valerius saw the nomads&#39; collective resonance as a primitive, unrefined drone, an empty canvas upon which he could compose his masterpiece: a new, perfectly ordered provincial capital. Chieftain Bor, the nomads&#39; most powerful Engineer, rose to defend their way of life, viewing Valerius&#39;s intricate, individualistic Melody as a chaotic and selfish screech that threatened to shatter their world.</p>
-<h3 id="section-2-2" data-cid="Ue6KUO">The Engagement</h3>
-<p data-cid="APx4pM">The final confrontation took place on the central steppe. Accounts gathered from resonant echoes and fragmented records describe a battle of fundamental opposition. Chieftain Bor, channeling the collective will of his people, established a monolithic wall of Rhythm—a beat so powerful and unyielding it could supposedly shatter mountains. His Coherence was absolute, his Amplitude drawn from the very land itself. Against this, Lord Valerius unleashed a storm of Melody. He did not attempt to break the wall, but to unmake it. He wove intricate, razor-sharp melodic phrases designed to find the micro-fractures in Bor&#39;s cadence, to introduce a counter-song so complex and invasive that it would force the Rhythm to Desync from its source.</p>
-<p data-cid="scw1tv">For three days and nights, the two forces were locked. Bor&#39;s Rhythm was the ultimate defense; Valerius&#39;s Melody was the ultimate attack. Neither could gain purchase. Valerius could not find a flaw in the perfect, unified beat. Bor could not land a single blow against the constantly shifting, evasive patterns of the melody. They were the immovable object and the unstoppable force, made manifest in the Resonance Matrix.</p>
-<div class="analysis" data-cid="RrNPXk">
-<h3 id="section-2-3" data-cid="07NE6J">Resonant Analysis</h3>
-<p data-cid="X6rzqP">The catastrophe occurred when both Engineers, in a final, desperate act, pushed their Bio-Plasma fields beyond the point of sustainable output. They attempted to achieve a state akin to Ketheric overwrite, but without the necessary internal integration or external witnesses. Bor sought to solidify his Rhythm into a concept as permanent as time itself. Valerius tried to elevate his Melody into a law of physics. The result was not victory, but a mutual and catastrophic Feedback loop.</p>
-<p data-cid="nRvuK3">Their two frequencies, perfectly opposed and amplified to an impossible degree, did not cancel each other out. Instead, they locked into a state of permanent, oscillating stasis. The energy had nowhere to go. The landscape became the resonance chamber for this eternal battle. The immense energy release vitrified the plains, turning miles of grassland into smooth, black glass. The locked frequencies now manifest as a constant, low hum interspersed with shards of a beautiful, terrifying melody. The most dangerous effect is the temporal shearing. Time within the Glass Plains does not flow linearly. The final moments of the battle are stretched across the landscape, and travelers can experience seconds that last for hours, or days that pass in a blink. To stand on the plains is to hear the argument of Rhythm and Melody, forever unresolved.</p>
-</div>
-</article>
-</main>
+
+            <main>
+                <h2>HISTORICAL_CONTEXT</h2>
+                <p>The Korelian Steppe was once a vibrant grassland, home to nomadic tribes who practiced a form of communal Rhythm resonance. Their culture was built on the <strong>"Heartbeat of the Land,"</strong> a slow, powerful cadence that informed their traditions and societal structure.</p>
+                <p>The collision began with the expansion of the Silver Empire, led by Lord Valerius—a Melody virtuoso. He saw the nomads' collective resonance as a primitive drone, an empty canvas. Chieftain Bor, the nomads' most powerful Engineer, rose to defend their way of life, viewing Valerius's intricate Melody as a "chaotic screech" that threatened to shatter their world.</p>
+
+                <h2>THE_ENGAGEMENT</h2>
+                <p>Chieftain Bor established a monolithic wall of Rhythm—a beat so powerful and unyielding it could supposedly shatter mountains. Bor's Coherence was absolute. Against this, Lord Valerius unleashed a storm of Melody. He wove intricate, razor-sharp melodic phrases designed to find micro-fractures in Bor's cadence.</p>
+                <p>For three days and nights, the forces were locked. Bor's Rhythm was the ultimate defense; Valerius's Melody was the ultimate attack. Neither could gain purchase. They were the <strong>immovable object</strong> and the <strong>unstoppable force</strong> made manifest.</p>
+
+                <div class="analysis-tab">
+                    <h3 style="font-family: 'Outfit'; margin-top:0;">RESONANT_STASIS_ANALYSIS</h3>
+                    <p>The catastrophe occurred when both Engineers pushed their Bio-Plasma fields beyond the point of sustainable output. Bor sought to solidify his Rhythm into a concept as permanent as time. Valerius tried to elevate his Melody into a law of physics. The result was a <strong>catastrophic Feedback loop.</strong></p>
+                    <p>Their frequencies locked into a state of permanent oscillation. The landscape vitrified, turning miles of grassland into smooth, black glass. The most dangerous artifact of this event is <span class="danger-text">localized temporal shearing.</span> Time within the Glass Plains does not flow linearly. Travelers can experience seconds that last for hours, or days that pass in a blink. To stand on the plains is to hear the argument of Rhythm and Melody, forever unresolved.</p>
+                </div>
+            </main>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; color: #fff;">
+            [ RECORD_ID: 450-PX-STEEL ]<br>
+            [ CAUTION: DO_NOT_APPROACH_VITRIFIED_ZONES ]
+        </footer>
+    </div>
 </body>
 </html>

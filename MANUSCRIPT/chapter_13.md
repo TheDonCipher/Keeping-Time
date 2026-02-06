@@ -17,6 +17,10 @@ Then, the progress bar hit **100%**.
 **> UPDATE_COMPLETE**
 **> EXECUTING: HIGH_FIDELITY_RENDERER**
 
+**> UPDATE_COMPLETE**
+**> EXECUTING: HIGH_FIDELITY_RENDERER**
+
+It was [[High-Fidelity Rendering::A restricted visualization mode that removes 'Smoothing Filters', revealing structural stress, micro-expressions, and biological imperfections.]] .
 The world snapped.
 The blue wireframe mesh of the medical ward didn't just fade; it was aggressively paved over by textures. The flat grey polygons of the walls erupted into brushed steel and sterilized plastic. The low-poly light sources bloomed into complex volumetric glows, casting soft, ray-traced shadows across the floor. 
 
@@ -24,7 +28,7 @@ It was violent. Like being slapped in the face with reality. 8K resolution hit h
 
 Taro gasped, his hands gripping the sheets. 
 
-They were sheets again. Cotton. Thread count 200. He could feel the friction data. His haptics were coming back online, flooding his brain with high-bandwidth sensation.
+They were sheets again. Cotton. Thread count 200. He could feel the friction data. His haptics were coming back online, flooding his brain with high-capacity sensation.
 
 **> SENSORY_DRIVERS: ONLINE**
 **> HAPTICS: CALIBRATED [HI-FI]**
@@ -41,7 +45,7 @@ A blue line tracing his nervous system.
 **> TARGET: EREN VOSS**
 **> BPM: 72 [STEADY]**
 **> STRESS: 0%**
-**> RESONANCE_POTENTIAL: 660 Hz [MODERATE]**
+**> RESONANCE_POTENTIAL: MID_REGISTER [MODERATE]**
 
 "What did you do?" Taro whispered.
 
@@ -49,6 +53,11 @@ A blue line tracing his nervous system.
 
 Voss tapped his own temple.
 "Project Dissonance disables those filters. You don't just see the UI anymore, Taro. You see the source code."
+
+Voss tapped his own temple.
+"Project Dissonance disables those filters. You don't just see the UI anymore, Taro. You see the source code."
+
+It was [[Project Dissonance::A classified initiative to create a weapon capable of perceiving and editing the 'Raw Data' of reality by surgically bypassing NAI safety kernels.]] .
 
 Taro looked around the room. 
 
@@ -105,7 +114,7 @@ He could see the worry lines rendered in wireframe under her skin. He could see 
 "It was a glitch," Taro lied. The word tasted synthetic. 
 
 **> SOCIAL_PROTOCOL: DECEPTION [ACTIVE]**
-**> CARRIER_WAVE: JITTER [12Hz]**
+**> CARRIER_WAVE: JITTER [CRITICAL]**
 
 "Voss fixed it," Taro added. "He gave me a patch. Reset the whole kernel."
 

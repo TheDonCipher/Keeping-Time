@@ -15,7 +15,7 @@ It hits you like a nail gun to the base of the skull.
 
 White light. Static. The taste of copper and burning hair. 
 
-For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to handshake with a network that is infinitely larger than you. Your nervous system shrieks as the Neural-Acoustic Interface (NAI) overrides your optic nerve, forcing a new operating system onto your wetware. The local server is rejecting your presence; your heartbeat is lagging, and your pulses are dropping frames before they even hit your nerves.
+For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. Your nervous system shrieks as the [[Neural-Acoustic Interface::The hardware implant connecting the human brain to the global resonance network.]] overrides your optic nerve, forcing a new operating system onto your wetware. The local server is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
 
 Then, the crash.
 
@@ -30,20 +30,20 @@ I blinked, but the data wasn't floating in front of me. It was burned into the w
 
 My heartbeat thumped against my ribs, but I didn't just feel it. I saw it—a jagged yellow line pulsing in the corner of my eye.
 
-I stood in the staff locker room of Sector 7-C Calibration Hall. To a Normal—someone without a chip—it was just a room with gray lockers and a flickering fluorescent light.
+I stood in the staff locker room of Sector 7-C Calibration Hall. To a [[Normal::A citizen without an NAI implant (Unconnected).]]—someone without a chip—it was just a room with gray lockers and a flickering fluorescent light.
 
 To me? It was a data stream.
 
-The light fixture wasn't just flickering; it tasted like sour milk—a dirty **60 Hz Hum** bleeding into the air. The lockers hummed with the **Resonance: Steel**, vibrating against my teeth even though I wasn't touching them.
+The light fixture wasn't just flickering; it tasted like sour milk—a dirty **Hum** bleeding into the air. The lockers hummed with the **Resonance: Steel**, vibrating against my teeth even though I wasn't touching them.
 
 And the door...
 
 The door was a wall of red static.
 
 **> INTUITION: LOCKED**
-**> KEY: 261.63 HZ**
+**> KEY: THE BASELINE**
 
-I swiped my wristband—three heavy damping cuffs locked over the pulse point—across the sensor.
+I swiped my [[damping bands::Wrist-mounted suppressors that limit a user's Bio-Plasma output to safe levels.]]—three heavy cuffs locked over the pulse point—across the sensor.
 
 *Beep.*
 
@@ -59,18 +59,18 @@ The main calibration floor was a cathedral of data.
 
 It opened up into a massive, circular chamber. The air here smelled scrubbed, filtered to a perfect, sterile transparency. But my head... my head was screaming.
 
-**> AMBIENT: 261.63 HZ [MIDDLE C]**
+**> AMBIENT: THE GROUND NOTE [MIDDLE C]**
 **> SENSATION: GOLDEN_SYRUP**
 
 The room didn't just sound like Middle C; it *felt* like it.
 
-A massive, golden sine wave floated through the center of the room—not a projection, but a shared hallucination enforced by The Score. It was beautiful. Perfect. Boring.
+A massive, golden sine wave floated through the center of the room—not a projection, but a shared hallucination enforced by [[The Score::The AR visual language that translates resonance physics into graphic data.]] itself. It was beautiful. Perfect. Boring.
 
 It rolled through the air, touching everything. When it passed through the technicians working at their stations, I felt their calmness as a soft, green warmth. **SYNCED**.
 
 I kept my head down. My own signal felt like a scratch in my throat—a nervous, jagged **ORANGE WARNING**.
 
-**> USER_FREQ: 880 Hz [SUPPRESSED]**
+**> USER_PITCH: THE HIGH REGISTER [SUPPRESSED]**
 **> PRESSURE: CRITICAL**
 
 "Hey, Glitch."
@@ -79,6 +79,7 @@ I didn't need to look up. The air suddenly smelled like bubblegum and ozone.
 
 **> ID: REMI_SATO [APP_CALIBRATOR]**
 **> KEY: D MAJOR [PLAYFUL]**
+**> INTENT: CASUAL [94%]**
 
 Remi hopped over the railing. To my synesthetic eyes, she was surrounded by a faint, bubbly blue distortion. D Major. Happy. Bright.
 
@@ -86,7 +87,7 @@ Remi hopped over the railing. To my synesthetic eyes, she was surrounded by a fa
 
 I touched my temple. No blood.
 
-"You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your bandwidth is too wide for these standard damping bands. They're already hitting thermal limit."
+"You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your capacity is too wide for these standard damping bands. They're already hitting thermal limit."
 
 I glanced at my wrist. The three bands weren't just warm; they were glowing faint red in my thermal vision. 
 
@@ -95,9 +96,9 @@ I glanced at my wrist. The three bands weren't just warm; they were glowing fain
 
 "Bad night," I muttered. "My... my hardware feels like it's grinding. Too much jitter in the sector."
 
-"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling an 880 signal. It’s like trying to hold a live wire with wet hands. You're gonna peak and take the whole floor with you."
+"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling a High-Octave signal. It’s like trying to hold a live wire with wet hands. You're gonna peak and take the whole floor with you."
 
-"It's not a grenade," I said. "It's just hardware noise. High-latency artifacts."
+"It's not a grenade," I said. "It's just hardware noise. Drift artifacts."
 
 "It's incredible," she corrected. "If you'd just let the system index it—"
 
@@ -119,10 +120,13 @@ A G Vanguard soldier. Stumbling. Screaming.
 
 But through The Score, he was a catastrophe.
 
-His avatar was pixelating, tearing apart in real-time. Where a normal person had a smooth bio-plasma aura, this guy was a storm of black and purple static. It smelled like burning plastic.
+His avatar was pixelating, tearing apart in real-time. Where a normal person had a smooth [[bio-plasma::The bio-electric field generated by the nervous system; the fuel for resonance mechanics.]] aura, this guy was a storm of black and purple static. It smelled like burning plastic and ozone.
+
+His flesh—actual flesh—seemed to be lagging behind his movement, smearing like a bad video buffer.
 
 **> ERROR: SIGNAL_FRAG**
 **> SENSATION: NAUSEA**
+**> DIAGNOSTIC: BIOLOGICAL_DESYNC**
 
 The golden sine wave of the room’s Middle C hit him—and shattered.
 
@@ -135,7 +139,7 @@ I froze.
 My brain was trying to process the data, but it was too fast.
 
 **> INTUITION: CHAOS**
-**> TARGET_FREQ: OSCILLATING [196Hz - 330Hz]**
+**> TARGET: UNSTABLE_OSCILLATION**
 
 The soldier collapsed in the center of the room. He was convulsing. His NAI port on his neck was sparking—real sparks, not AR—and the data pouring out of him was raw code. I could taste the metal of his agony.
 
@@ -160,7 +164,7 @@ My damping bands got hot. Really hot.
 **> HEAT_SINK: 95%**
 **> WARNING: CONTAINMENT_BREACH**
 
-I felt the 880 Hz inside me waking up. It didn't care about the soldier. It didn't care about Remi.
+I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi.
 
 It saw the chaos. It saw the broken code. And it wanted to *fix* it.
 
@@ -182,7 +186,7 @@ The three damping bands on my wrist didn't just fail; they slagged. In The Score
 **> LIMITER: REMOVED**
 **> SENSATION: FREE_FALL**
 
-The world slowed down. Frame-rate drop.
+The world slowed down. Motion stutter.
 
 I saw the soldier’s waveform coming at me—a jagged, ugly mess of jagged peaks.
 
@@ -194,11 +198,11 @@ I gave it to him.
 
 I didn't scream. I didn't shout. I pulsed.
 
-**> EXECUTE: OCTAVE_JUMP**
-**> SOURCE: 440 Hz**
-**> TARGET: 880 Hz [DOUBLE]**
+**> EXECUTE: PITCH_SHIFT**
+**> SOURCE: THE GROUND NOTE**
+**> TARGET: THE UPPER OCTAVE [DOUBLE]**
 
-A massive, vertical pillar of Gold light erupted from my hand. It looked like a god-ray striking the earth. Solid. Infinite. Absolute. A pure sine-wave strike that overrode the local key signature.
+A massive, vertical pillar of Gold light erupted from my hand. It looked like a god-ray striking the earth. Solid. Infinite. Absolute. A pure sine-wave strike that overrode the local [[Key Signature::The dominant frequency protocol of a specific sector or zone.]]
 
 **> INTERFERENCE: CONSTRUCTIVE**
 **> AMPLITUDE: MAX [OVERFLOW]**
@@ -225,7 +229,7 @@ Silence.
 
 Real silence. No hum. No Middle C. No data.
 
-I stood there, my hand still outstretched. Smoke was rising from my wrist where the bands used to be. My bandwidth was still pegged, the raw signal screaming in the dead air.
+I stood there, my hand still outstretched. Smoke was rising from my wrist where the bands used to be. My capacity was still pegged, the raw signal screaming in the dead air.
 
 My vision was flickering. Glitching.
 
@@ -234,7 +238,7 @@ My vision was flickering. Glitching.
 
 I looked at my hand. In The Score, it wasn't a hand anymore.
 
-It was a burning torch of 880 Hz code, rewriting the air around it.
+It was a burning torch of pure code, rewriting the air around it.
 
 Remi was staring at me. Or rather, staring at the space *above* me.
 

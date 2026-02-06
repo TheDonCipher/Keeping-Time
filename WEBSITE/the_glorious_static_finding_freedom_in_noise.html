@@ -1,319 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" data-cid="cDRpIl"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport" data-cid="m6mEjY"/>
-<title data-cid="IpBUBO">Collected Lore of the Soundscape</title>
-<style data-cid="XXrNtR">
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Special+Elite&family=Roboto+Mono:wght@400;700&family=Lato:wght@300;400;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELDER_SCORE: GLORIOUS_STATIC | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;900&family=JetBrains+Mono:wght@400;700&family=Prata&family=Cormorant+Garamond:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --elder-gold: #d4af37;
+            --elder-black: #000000;
+        }
 
         body {
-            background-color: #1a1a1a;
-            color: #ccc;
-            font-family: 'Lato', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 2rem;
-        }
-
-        /* General Book Styling */
-        .lore-book {
-            border: 1px solid #444;
-            margin-bottom: 4rem;
-            padding: 2rem;
-            background-color: #222;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        }
-
-        /* --- BOOK 1: HISTORICAL CASE STUDIES --- */
-        #book1-history {
-            background-color: #f4f1e9;
-            color: #3d352a;
+            background: #050505;
+            color: #eee;
             font-family: 'Cormorant Garamond', serif;
-            border: 2px solid #c9bba7;
         }
-        #book1-history h1, #book1-history h2, #book1-history h3 {
-            font-family: 'Merriweather', serif;
-            color: #5a4d3c;
-            border-bottom: 1px solid #d3c9b8;
-            padding-bottom: 0.5rem;
-            font-weight: 700;
+
+        .scroll-wrapper {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 120px 100px;
+            background: var(--elder-black);
+            border: 2px solid var(--elder-gold);
+            position: relative;
+            box-shadow: 0 0 100px rgba(212, 175, 55, 0.1);
         }
-        #book1-history h1 {
+
+        /* Glitchy Sacred Grid */
+        .grid-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+        }
+
+        header {
             text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
+            margin-bottom: 100px;
         }
-        #book1-history .subtitle {
-            text-align: center;
-            font-style: italic;
-            font-size: 1.2em;
-            margin-bottom: 2em;
-            color: #6b5f4f;
+
+        .score-type {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem; /* Increased from 0.6 */
+            color: var(--elder-gold);
+            letter-spacing: 12px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            opacity: 0.8;
         }
-        #book1-history .publication-info {
-            font-size: 0.8em;
-            text-align: center;
-            margin-bottom: 3em;
-            color: #777;
+
+        h1 {
+            font-family: 'Prata', serif;
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--elder-gold);
+            text-transform: uppercase;
         }
-        #book1-history article {
-            margin-bottom: 3rem;
+
+        .subtitle {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 200;
+            letter-spacing: 5px;
+            font-size: 0.9rem;
+            opacity: 0.5;
+        }
+
+        .fancy-p {
+            font-size: 1.5rem;
+            line-height: 1.9;
+            margin-bottom: 40px;
             text-align: justify;
+            font-weight: 300;
         }
-        #book1-history blockquote {
-            border-left: 3px solid #b0a28f;
-            padding-left: 1rem;
-            margin: 1.5rem 2rem;
+
+        .fancy-p::first-line {
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            color: var(--elder-gold);
+        }
+
+        .analysis-inset {
+            margin: 80px -50px 0;
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 2px solid var(--elder-gold);
+            border-right: 2px solid var(--elder-gold);
+        }
+
+        .analysis-inset h3 {
+            font-family: 'Prata', serif;
+            font-size: 1.2rem;
+            color: var(--elder-gold);
+            margin-bottom: 20px;
+        }
+
+        .analysis-inset p {
+            font-size: 1.15rem;
             font-style: italic;
-            color: #555;
-        }
-        #book1-history .analysis {
-            background-color: #e9e5dc;
-            padding: 1.5rem;
-            border: 1px dashed #c9bba7;
-            margin-top: 2rem;
+            opacity: 0.6;
+            line-height: 1.7;
         }
 
-        /* --- BOOK 2: REDACTED MANUAL --- */
-        #book2-redacted {
-            background-color: #0a0c0a;
-            color: #00ff41;
-            font-family: 'Roboto Mono', monospace;
-            border: 1px solid #00ff41;
-            position: relative;
-            padding: 2rem 4rem;
-        }
-        #book2-redacted h1, #book2-redacted h2 {
-            color: #00ff41;
-            text-transform: uppercase;
-            text-shadow: 0 0 5px #00ff41;
-        }
-        #book2-redacted h1 {
-            text-align: center;
-            letter-spacing: 4px;
-        }
-        #book2-redacted .warning-banner {
-            background-color: #ffff00;
-            color: #000;
-            text-align: center;
-            padding: 0.5rem;
-            font-weight: 700;
-            margin: 2rem -4rem;
-            font-family: 'Special Elite', cursive;
-        }
-        #book2-redacted .redacted {
-            background-color: #000;
-            color: #000;
-            user-select: none;
-            padding: 0 0.2em;
-            display: inline-block;
-        }
-        #book2-redacted .marginalia {
+        .artificer-stamp {
             position: absolute;
-            font-family: 'Special Elite', cursive;
-            color: #ff4141;
-            font-size: 0.9em;
-            transform: rotate(-5deg);
-            border: 1px solid #ff4141;
-            padding: 5px;
-            background: rgba(255, 65, 65, 0.1);
-        }
-        #book2-redacted .m-right { right: -20px; }
-        #book2-redacted .m-left { left: -20px; }
-        #book2-redacted .m-top { top: 100px; }
-        #book2-redacted .m-mid { top: 50%; }
-        #book2-redacted .m-bottom { bottom: 100px; }
-        #book2-redacted p {
-            position: relative;
-        }
-
-        /* --- BOOK 3: PRACTICAL HANDBOOK --- */
-        #book3-handbook {
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #dfd8c8;
-            color: #2c2c2c;
-            font-family: 'Special Elite', cursive;
-            border: 1px solid #5a5245;
-            padding: 1.5rem;
-            box-shadow: inset 0 0 15px rgba(0,0,0,0.4);
-            position: relative;
-        }
-        #book3-handbook::before {
-            content: '';
-            position: absolute;
-            top: 10%;
-            left: 60%;
-            width: 150px;
-            height: 150px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M 50,0 A 50,50 0 0 0 50,100 A 50,50 0 0 0 50,0 Z M 50,10 A 40,40 0 0 1 50,90 A 40,40 0 0 1 50,10 Z" fill="%23000" opacity="0.08"/></svg>');
-            background-repeat: no-repeat;
-            background-size: contain;
-            transform: rotate(15deg);
-        }
-        #book3-handbook h1, #book3-handbook h2 {
-            font-family: 'Roboto Mono', monospace;
-            text-transform: uppercase;
-            color: #4a4235;
-            border-bottom: 2px solid #9a8f7f;
-        }
-        #book3-handbook h1 { font-size: 1.8em; text-align: center; }
-        #book3-handbook ul {
-            list-style-type: '» ';
-            padding-left: 1.5rem;
-        }
-        #book3-handbook strong {
-            font-weight: bold;
-            color: #000;
-        }
-        #book3-handbook .scrawl {
-            font-style: italic;
-            color: #555;
-            border-top: 1px dashed #999;
-            padding-top: 1rem;
-            margin-top: 1rem;
-        }
-
-        /* --- BOOK 4: TECHNICAL COMPENDIUM --- */
-        #book4-compendium {
-            background-color: #eef2f5;
-            color: #1c2a38;
-            font-family: 'Lato', sans-serif;
-            border-top: 5px solid #4a6d8c;
-        }
-        #book4-compendium .header-bar {
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 1rem 2rem;
-            margin: -2rem -2rem 2rem -2rem;
-        }
-        #book4-compendium h1 {
-            font-size: 2.2em;
-            margin: 0;
-        }
-        #book4-compendium .doc-id {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.9em;
-            opacity: 0.7;
-        }
-        #book4-compendium .entry {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 2rem;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #c8d6e5;
-        }
-        #book4-compendium .entry-meta {
-            grid-column: 1 / 2;
-        }
-        #book4-compendium .entry-analysis {
-            grid-column: 2 / 3;
-        }
-        #book4-compendium h2 {
-            font-size: 1.5em;
-            color: #2c3e50;
-            margin-top: 0;
-        }
-        #book4-compendium .illustration-placeholder {
-            width: 100%;
-            height: 250px;
-            background-color: #dce4e9;
-            border: 2px dashed #8a9eaf;
+            bottom: 40px;
+            right: 40px;
+            width: 80px;
+            height: 80px;
+            border: 1px solid var(--elder-gold);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Roboto Mono', monospace;
-            color: #576a7c;
-            margin-bottom: 1rem;
-        }
-        #book4-compendium dl {
-            font-size: 0.9em;
-        }
-        #book4-compendium dt {
-            font-weight: 700;
-            color: #34495e;
-            margin-top: 0.5rem;
-        }
-        #book4-compendium dd {
-            margin-left: 0;
-            font-family: 'Roboto Mono', monospace;
-        }
-        #book4-compendium .status-active { color: #27ae60; }
-        #book4-compendium .status-failed { color: #c0392b; }
-        #book4-compendium .status-decommissioned { color: #f39c12; }
-
-        /* --- BOOK 5: POLITICAL ESSAYS --- */
-        #book5-essays {
-            background-color: #fff;
-            color: #222;
-            font-family: 'Merriweather', serif;
-            max-width: 900px;
-            margin: 4rem auto;
-            padding: 3rem;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
-        }
-        #book5-essays h1 {
-            text-align: center;
-            font-size: 2.8em;
-            font-weight: 700;
-            margin-bottom: 0.2em;
-        }
-        #book5-essays .collection-title {
-            text-align: center;
-            font-style: italic;
-            color: #666;
-            margin-bottom: 3rem;
-        }
-        #book5-essays .essay {
-            margin-bottom: 4rem;
-        }
-        #book5-essays h2 {
-            font-size: 1.8em;
-            font-weight: 700;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        #book5-essays .author-byline {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-        #book5-essays .analysis-box {
-            background-color: #f8f9fa;
-            border: 1px solid #e9ecef;
-            padding: 1.5rem;
-            margin-top: 2rem;
-            border-left: 4px solid #6c757d;
-        }
-        #book5-essays .analysis-box h3 {
-            margin-top: 0;
-            font-size: 1.1em;
-            color: #343a40;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem; /* Increased from 0.5 */
+            color: var(--elder-gold);
+            opacity: 0.6; /* Increased from 0.4 */
+            transform: rotate(45deg);
         }
     </style>
 </head>
-<body>
-<main class="collection-container">
-<article class="essay" data-cid="nk8MCB">
-<h2 id="section-3" data-cid="qRjZB2">The Glorious Static: Finding Freedom in Noise</h2>
-<p class="author-byline" data-cid="x0998R">An Anonymous Pamphlet, Attributed to the Artificer Axis</p>
-<p data-cid="EgHmuL">
-                They will tell you that Noise is chaos. They are wrong. Noise is potential. Noise is freedom. Every possible frequency, every possible rhythm, every possible melody exists within the glorious, beautiful static of the unfiltered universe. To choose one &#34;note&#34; is to deny all others. The Unison Court wants to trap you in their chord. The Vanguard Spiral wants to force you into their march. The Melodists want to write your story for you. We, the Artificers, offer the only true freedom: the tools to be whatever you want to be.
+<body class="archive-page">
+    <div class="archive-bg" style="opacity: 0.05;"></div>
+
+    <div class="nai-status" style="background: transparent; border-bottom: 1px solid rgba(212, 175, 55, 0.2);">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--elder-gold)">← THE_WORKSHOP</a>
+            <span>/</span>
+            <span>ELDER_SCORE_02</span>
+        </div>
+        <div style="color: var(--elder-gold); font-family: 'Prata', serif;">
+            STATUS: <span class="sync-indicator">INFINITE_POTENTIAL_DETECTED</span>
+        </div>
+    </div>
+
+    <div class="scroll-wrapper">
+        <div class="grid-overlay"></div>
+        <div class="artificer-stamp">AXIS_SEAL</div>
+        
+        <header>
+            <div class="score-type">Forbidden Philosophy // Extract 332</div>
+            <h1>THE_GLORIOUS_STATIC</h1>
+            <div class="subtitle">Finding Freedom in Noise // Artificer Axis</div>
+        </header>
+
+        <main>
+            <p class="fancy-p">
+                They will tell you that Noise is chaos. They are wrong. Noise is potential. Noise is freedom. Every possible frequency, every possible rhythm, every possible melody exists within the glorious, beautiful static of the unfiltered universe. To choose one "note" is to deny all others.
             </p>
-<p data-cid="BKr5Yz">
-                Our philosophy is one of radical individualism and empowerment. We do not dictate a path. We provide the means. Our Decks, our Jacks, our techniques—they are designed to expand your Frequency Range, to allow you to tap into the infinite potential of Noise. Why be a single note when you can be the entire spectrum? Noise is not the absence of order; it is the presence of all orders at once. It is the raw material of creation. We believe the ultimate purpose of consciousness is to explore its own infinite possibilities, to constantly redefine itself. To embrace a single, static identity is to become a prisoner of your own making. Embrace the static. Embrace freedom.
+            
+            <p class="fancy-p">
+                Our philosophy is one of radical individualism and empowerment. We do not dictate a path. We provide the means. Our Decks, our Jacks, our techniques—they are designed to allow you to tap into the infinite potential of Noise. Why be a single note when you can be the entire spectrum?
             </p>
-<div class="analysis-box" data-cid="zsnQ5j">
-<h3 id="section-3-1" data-cid="hpPUxs">Critical Analysis: The Blind Spot of the Static</h3>
-<p data-cid="DYUNrB">
-                    The Artificer Axis champions absolute freedom, but fails to acknowledge that absolute freedom is indistinguishable from true chaos. Their blind spot is their refusal to accept that structure, limits, and community have value. By providing tools without an ethical framework, they are just as likely to arm a tyrant as a liberator. Their ideology offers no defense against the very real dangers of Desync and Burnout that come from dabbling in unfiltered Noise. Their internal schisms are constant and fierce, as their philosophy inherently rejects the organized leadership needed to maintain a cohesive faction. They are a collection of brilliant but isolated individuals, often working at cross-purposes, mistaking possibility for progress.
+
+            <p class="fancy-p">
+                Noise is not the absence of order; it is the presence of all orders at once. It is the raw material of creation. We believe the ultimate purpose of consciousness is to explore its own infinite possibilities. To embrace a single, static identity is to become a prisoner of your own making.
+            </p>
+
+            <section class="analysis-inset">
+                <h3>ARCHIVAL_ANALYSIS // THE_BLIND_SPOT</h3>
+                <p>
+                    The Artificer Axis champions absolute freedom but fails to acknowledge that structure and limits have value. By providing tools without an ethical framework, they are just as likely to arm a tyrant as a liberator. Their ideology offers no defense against the dangers of terminal Desync. They mistake possibility for progress.
                 </p>
-</div>
-</article>
-</main>
+            </section>
+        </main>
+    </div>
+
+    <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; letter-spacing: 2px;">
+        [ RECOVERED_PIECE: 88Q-H1-Z ]<br>
+        [ SOURCE: THE_EDGE_OF_REASON ]
+    </footer>
 </body>
 </html>
