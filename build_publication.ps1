@@ -28,8 +28,12 @@ $chapterHTML = ""
         $md = Get-Content $chFile -Raw -Encoding UTF8
         
         # 0. Tooltip Processing [[Term::Description]]
-        # Regex: \[\[(.*?)::(.*?)\]\] -> <span class="tooltip" data-tip="$2">$1</span>
-        $md = [Regex]::Replace($md, '\[\[(.*?)::(.*?)\]\]', '<span class="tooltip" data-tip="$2">$1</span>')
+        $md = [Regex]::Replace($md, '\[\[(.*?)::(.*?)\]\]', {
+            param($m)
+            $term = $m.Groups[1].Value
+            $tip = $m.Groups[2].Value -replace '&', '&amp;' -replace '"', '&quot;' -replace '<', '&lt;' -replace '>', '&gt;'
+            return "<span class=`"tooltip`" data-tip=`"$tip`">$term</span>"
+        })
 
         # 1. Headers
         $html = $md -replace '# KEEPING TIME', ''

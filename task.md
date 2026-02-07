@@ -207,3 +207,11 @@ Building the foundational structure before continuing chapter writing.
 ### [x] 7. Documentation
 - [x] Change Log creation
 - [x] Verify canon alignment
+
+---
+
+## MAINTENANCE & BUG FIXES
+- [x] Fix Sidebar Dark Mode visibility (CSS color inheritance)
+- [x] Fix Incomplete Tooltips (Escaping quotes in build script)
+- [x] Check for other unescaped characters in tooltips (&, <, >)
+- [x] Verify all 42 tooltips are complete in PUBLICATION_COMPLETE.html
