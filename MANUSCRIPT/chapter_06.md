@@ -29,7 +29,7 @@ Taro checked the telemetry.
 "You okay?" Taro asked.
 
 Ven exhaled. A visible ripple of heat distortion left his mouth, blurring the air in front of him.
-"I'm full," Ven rumbled. Even his whisper utilized sub-bass frequencies that shook dust from the ceiling types. "That input spike... it was pure."
+"I'm full," Ven rumbled. Even his whisper utilized sub-bass frequencies that shook dust from the ceiling pipes. "That input spike... it was pure."
 
 He tapped his heavy metal gauntlets against the copper wall-plate.
 *CLANG.*
@@ -50,7 +50,7 @@ He groaned as another wave of excess heat vented from his suit's exhaust ports, 
 
 "But your Variable Oscillation," Ven murmured. "It's clean. It's full-spectrum. No filters. Just 'I am here.' High-resolution existence."
 
-"It breaks things," Taro said. "I'm... I'm a walks-around overload."
+"It breaks things," Taro said. "I'm... I'm a walking overload."
 
 "You only break things because you have no hardline. You're a generator with no cable."
 
@@ -92,12 +92,76 @@ Ven took a deep breath. His thermal vents glowed a soft, steady orange. "Ah. Cle
 
 "We need Hana," Ven said, not letting go. "She aims. You shoot. I hold the gun."
 
-Reforged.
-Taro looked at the data. Square Wave, Sawtooth, and Sine Sink.
-It wasn't a standard C-Major triad. It was a new circuit design. Something dangerous.
+---
 
-But for the first time since the Zap...
-**> SYSTEM_STATUS: STABLE.**
+### [22:00:00] THE COMMODITY OF SILENCE
+
+The dorms were loud.
+
+Not acoustically loud—the soundproofing was technically "Standard Grade"—but *digitally* deafening. The air was thick with the idle pings, status updates, and emotional leakage of four hundred students trying to wind down.
+
+Taro lay on his bunk in Room 404.
+
+**> AMBIENT_NOISE: 65dB [DATA_HUM]**
+**> SOCIAL_PRESSURE: MODERATE**
+
+Every wall in the room was broadcasting. Not ads, but *presence*.
+The guy in the bunk above him—a nervous kid from the Choral division—was leaking a constant, low-level anxiety hum that tasted like sour milk.
+Through the thin partition, Taro could feel the aggressive, jagged heat of a Vanguard drill instructor pacing the hall.
+
+Silence was the most expensive commodity in Malkuth.
+**Quiet Rooms** were reserved for the elite. Prefects like Hana probably slept in zero-latency isolation tanks.
+
+But Taro? He was in General Population.
+The noise was a physical itch under his skin. His NAI was trying to parse four hundred different heartbeats at once.
+
+*Thump-thump. Thump-thump. Thump-thump.*
+
+It was maddening. A cacophony of biology and code.
+
+Taro reached under his pillow.
+His fingers brushed the cold, braided copper of the cable.
+The user manual said unauthorized peripherals were forbidden. Voss had threatened him with a reboot.
+But Voss wasn't here.
+
+Taro pulled out the Analog Headphones.
+They looked ancient in the sleek, high-poly room. Heavy foam. Scratched plastic. Real metal screws.
+They were "dumb" technology. No OS. No Bluetooth. No Sync.
+
+He plugged the jack into his NAI's aux port.
+
+*Click.*
+
+**> AUDIO_PROTOCOL: BYPASS**
+**> INPUT_SOURCE: ANALOG_DIRECT**
+
+The world vanished.
+The anxiety hum of the Choral student? Gone.
+The aggressive heat of the Vanguard? Gone.
+The constant, nagging pull of the Academy network? Severed.
+
+Silence.
+Or rather, *Warmth*.
+The slight hiss of the copper wires. The sound of his own blood pumping in his ears. The physical pressure of the foam cups against his skull.
+
+It wasn't the white, sterile void of the Recovery Room.
+It was a blanket. Useable darkness.
+
+Taro closed his eyes.
+For the first time since he arrived, his biometrics stabilized.
+
+**> HEART_RATE: 60 BPM [RESTING]**
+**> SIGNAL_LOAD: 0%**
+
+He wasn't a Siege Breaker here. He wasn't an anomaly. He wasn't a glitch.
+He was just a boy listening to the quiet.
+
+"Goodnight, Dad," he whispered into the foam.
+
+The analog silence didn't answer back.
+And that was perfect.
+
+**> STATUS: ASLEEP.**
 
 ---
 

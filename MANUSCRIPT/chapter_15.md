@@ -1,8 +1,15 @@
-# Chapter 15: The Phantom Mesh
+# KEEPING TIME
+## Chapter 15: The Phantom Mesh
 
-**> SYSTEM_TIME: 03:42:00 (NIGHT_CYCLE)**
-**> LOCATION: SECTOR 2 (DORMITORIES - BATHROOM)**
-**> FILTER_STATUS: UNSTABLE**
+---
+
+**ZONE: MALKUTH_ACADEMY [PRACTICE_ANNEX]**
+**SYSTEM_TIME: 03:42:00 (NIGHT_CYCLE)**
+**FILTER_STATUS: UNSTABLE**
+
+---
+
+### [03:42:00] THE MIRROR
 
 The mirror was lying. Or maybe it was the only thing telling the truth.
 
@@ -47,7 +54,9 @@ His processing was pegged at 100%. He needed to dump heat.
 
 He needed to get out. The air in the dorms was too thick. Too ordered.
 
-***
+---
+
+### [04:15:00] THE PRACTICE ROOM
 
 He wandered the academy grounds, aiming for the practice wing. It was the only place where the acoustics were dampened enough to drown out the constant, judging hum of the city.
 
@@ -112,7 +121,7 @@ Kimura's eyes widened. The anger drained away, replaced by a terrified recogniti
 
 Kimura lowered the cello. The heavy "Tank" posture slumped. For a moment, the cadet didn't look like a soldier. Just a scared kid trapped in a suit of armor that didn't belong to them.
 
-"No," Kimura said, the voice cracking—the deep "Command Voice" slipping into something truer, higher. "The... the hull... it’s high-latency. It’s always been lagging behind who I actually--zzt--am."
+"No," Kimura said, the voice cracking—the deep "Command Voice" slipping into something truer, higher. "The... the hull... it's high-latency. It's always been lagging behind who I actually--zzt--am."
 
 Taro walked over. He sat on the floor, ignoring the protocol that said he should stand at attention.
 
@@ -134,10 +143,14 @@ He felt tuned.
 
 Kimura hesitated. Then, a small, sad smile touched the corner of the heavy jawline.
 
-"Elara," she whispered. "My name is Elara. I’m... I’m full-spectrum. I hear everything. And the system... it just wants me to be a single, flat note."
+"Elara," she whispered. "My name is Elara. I'm... I'm full-spectrum. I hear everything. And the system... it just wants me to be a single, flat note."
 
 **> DIALOGUE_EVENT: RESONANCE_SYNC**
 **> STATUS: MASKING_OFF**
 **> SIGNAL: UNFILTERED**
 
 For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore. They were two glitches in a perfect machine, and for a brief, flickering moment, they were in phase.
+
+---
+
+**END CHAPTER 15**

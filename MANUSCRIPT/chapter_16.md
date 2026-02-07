@@ -1,8 +1,15 @@
-# Chapter 16: Illegal Modulations
+# KEEPING TIME
+## Chapter 16: Illegal Modulations
 
-**> SYSTEM_TIME: 04:15:00**
-**> LOCATION: PRACTICE ROOM 404 (LOCKED)**
-**> AUDIO_STATUS: SOUNDPROOFING_MAX (120dB)**
+---
+
+**ZONE: PRACTICE_ROOM_404 [LOCKED]**
+**SYSTEM_TIME: 05:00:00**
+**AUDIO_STATUS: SOUNDPROOFING_MAX (120dB)**
+
+---
+
+### [05:00:00] THE CONVERSATION
 
 "It's called 'Retuning'," Elara said. Her voice had a slight echo, a shimmering texture that indicated her NAI filters were partially disengaged.
 
@@ -16,7 +23,7 @@ The cello lay forgotten on the floor. She was sitting cross-legged, the holograp
 
 She tapped another key. A second waveform appeared overlaid on top—smooth, sine-wave perfection.
 
-"And this," she said, her voice dropping into a grainier, bit-crushed tone, "is the mask. The 'Stabilizer' algorithm. It forces my chaotic signal into a clean sine wave. It's an active noise-cancellation filter running 24/7 in my NAI. It’s Hi-Fi lies."
+"And this," she said, her voice dropping into a grainier, bit-crushed tone, "is the mask. The 'Stabilizer' algorithm. It forces my chaotic signal into a clean sine wave. It's an active noise-cancellation filter running 24/7 in my NAI. It's Hi-Fi lies."
 
 Taro stared at the graph. "That's why it hurts. You're constantly fighting your own output. Your hardware is redlining."
 
@@ -36,7 +43,7 @@ It was illegal [[Modulation::Unauthorized code injection that modifies a user's 
 
 "The System locks our resonance," Elara explained. "It says your pitch is fixed. Immutable. Biological destiny." She scoffed. "But the NAI is software. And software can be cracked."
 
-"You hacked your own NAI?" Taro asked, stunned.Tampering with a Neural Audio Interface was a one-way ticket to a lobotomy ward.
+"You hacked your own NAI?" Taro asked, stunned. Tampering with a Neural Audio Interface was a one-way ticket to a lobotomy ward.
 
 "I didn't hack it," Elara said. "I bypassed the C-Order kernel. I wrote a custom driver that sits between my raw signal and the Hull output. It takes my jagged waveform and... translates it. Instead of forcing it down into a low-end sink, it lets it flow up. Into the treble range. High-fidelity self-determination."
 
@@ -76,7 +83,7 @@ Taro hesitated. He looked at his own hands. He thought about the crash. The Void
 
 "But then I broke," Taro said. "And now... now I don't fit the key at all. My capacity is too wide. I'm dissonant. I'm noise."
 
-"Noise is just data the system doesn't understand yet," Elara said. It sounded like a mantra. Something she had repeated to herself a thousand times in the dark. "It’s unindexed beauty."
+"Noise is just data the system doesn't understand yet," Elara said. It sounded like a mantra. Something she had repeated to herself a thousand times in the dark. "It's unindexed beauty."
 
 She leaned forward.
 
@@ -106,3 +113,7 @@ Taro took the chip. It felt warm.
 Taro looked at the chip, then back at Elara. The "Tank" cadet was gone. He saw her now—really saw her. The wireframe shining through the cracks in the armor.
 
 "I'll be there," Taro said.
+
+---
+
+**END CHAPTER 16**

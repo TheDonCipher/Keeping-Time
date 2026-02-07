@@ -74,33 +74,41 @@ She tapped her datapad. A red targeting reticle—simple, unadorned, lethal—pr
 
 **> TAG: DISGUST [8.5%]**
 
-"I'm trying to clamp it," Taro said, tapping his thigh. *Tap-tap-tap.* 
-His internal clock was struggling to handshake with the local server time, slipping by milliseconds.
+Then, her scan hit his ID tag.
 
-**> CLOCK_DRIFT: 40ms...**
+She froze.
 
-"Stop fidgeting," Hana ordered. "It introduces mechanical variance."
+Her rigid Square Wave aura stuttered. A single frame of blue static.
 
-"It's not fidgeting. It's manual calibration."
+ Floating above Taro's head, distinct and heavy, was the symbol Voss had burned into his file. It wasn't a Shield. It wasn't a Tuning Fork.
 
-Hana paused. 
-The "Disgust" tag flickered.
+It was a Crown.
 
-**> ANALYSIS: RE-EVALUATING**
+**> CLASS: VANGUARD [ASSAULT]**
+**> DESIGNATION: SIEGE_BREAKER**
+**> AUTHORITY: LETHAL_FORCE_AUTHORIZED**
 
-"Manual somatic calibration?" she asked.
+Hana stared at the symbol, then back at Taro's nervous fidgeting.
 
-"Yeah. Polyrhythm tap. 3 over 4. It compensates for the latency in my internal clock."
+**> ERROR: LOGIC_LOOP**
+**> CONTRADICTION_DETECTED**
 
-For the first time, Hana paused. The "Disgust" tag vanished, replaced by a streaming metric of interest.
+"Start Query," she said, her voice oscillating slightly. "You are designated Vanguard? A Siege Breaker?"
 
-**> TAG: CURIOSITY [TECHNICAL]**
+"Uh. I guess?" Taro rubbed the back of his neck. "Adjutant Voss said something about 'High Amplitude Potential'."
 
-"Inefficient," she ruled. "But... structurally sound. You are running a legacy driver with a manual override. It is an aesthetic choice, presumably."
+"Impossible," Hana ruled. "Siege Breakers are High-Fidelity weapons. You are... static. You are walking packet loss."
+
+She tapped her temple. The "Disgust" tag flickered, replaced by a frantic stream of calculations.
+
+**> TAG: DATA_MISMATCH [CRITICAL]**
+**> CURIOSITY: TECHNICAL [RISING]**
+
+"Inefficient," she finally ruled, shaking her head. "But... the Authorization Key is authentic. Root Level access."
 
 She stepped aside. The gate behind her dissolved into a cloud of green data particles.
 
-"Proceed to Orientation. Lecture Hall B. Do not touch the walls. They are tuned to C-Sharp minor and your dissonance will smudge the finish. If you make physical contact, I will have to recalibrate the entire hallway."
+"Proceed to Orientation. Lecture Hall B. Do not touch the walls. They are tuned to C-Sharp minor and your dissonance—whatever *kind* of dissonance it is—will smudge the finish. If you make physical contact, I will have to recalibrate the entire hallway."
 
 ---
 
@@ -118,11 +126,21 @@ Taro's CPU spiked.
 **> THERMAL_WARNING: ACTIVE**
 
 It wasn't just noise. It was specific.
-The heavy **Bass Waves** of the structural engineering students shook the floorplates, a deep *thrum-thrum-thrum* that rattled Taro's teeth.
-The sharp **Sawtooth** spikes of the Vanguard cadets cut through the air like jagged wire.
-The flighty **Sine Waves** of the Choral students floated near the ceiling, a sickeningly sweet harmony that made Taro dizzy.
 
-It was too much flow. Taro stumbled. His vision started to artifact—green squares pixelating the edges of reality. The faces of the students smeared into data streams.
+The heavy **Bass Waves** of the structural engineering students shook the floorplates, a deep *thrum-thrum-thrum* that rattled Taro's teeth. They moved like tanks, displacing air with their sheer mass.
+
+The sharp **Sawtooth** spikes of the Vanguard cadets cut through the crowd like sharks. Their AR tags flashed with kill counts and combat metrics, aggressive red text scrolling across their peripheral vision.
+
+The flighty **Sine Waves** of the Choral students floated near the ceiling, a sickeningly sweet harmony that made Taro dizzy. They were linked in a local network, sharing thoughts and emotions in real-time, moving as a single, terrifyingly synchronized organism.
+
+**> DETECTED: 400+ ACTIVE CONNECTIONS**
+**> DATA_RATE: 50 TB/s**
+
+It was too much flow. Taro stumbled. His vision started to artifact—green squares pixelating the edges of reality. The faces of the students smeared into data streams. Social pings hit him like hail.
+
+**> PING: REQ_LINK [REJECTED]**
+**> PING: STATUS_UPDATE [IGNORED]**
+**> PING: THREAT_ASSESS [HIGH]**
 
 "Close your inputs," a voice ordered.
 
@@ -187,17 +205,20 @@ The text appeared in Taro's mind before the sound hit his ears. Zero latency.
 
 "You have entered the Medium," the Headmaster said. "Out there, in the Twilight Band, you are 'Users'. You consume signal."
 
-He looked up. For a second, the gold light of his eyes seemed to lock onto Taro. The weight of it was crushing.
+He looked up. For a second, the gold light of his eyes seemed to lock onto Taro. The weight of it was crushing—familiar, like his father's presence, but colder. Sharper.
 
 "Here... you are [[Architects::Users capable of manipulating the medium of reality through resonant frequency control.]] . You do not consume signal."
 
 He raised a hand.
+
 The entire physics engine of the room shifted.
+
 The room rotated 90 degrees. Gravity followed.
-The students gasped as the floor became the wall, and the wall became the floor.
+
+The students gasped as the floor became the wall, and the wall became the floor. They slid in their seats, held in place only by the sudden shift in the local "Down" vector.
 
 **> PHYSICS_ENGINE: LOCAL_OVERRIDE**
-**> VECTOR: ROTATED**
+**> VECTOR: ROTATED [90_DEG]**
 
 "You write it."
 

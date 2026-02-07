@@ -1,9 +1,16 @@
-# Chapter 14: The Return
+# KEEPING TIME
+## Chapter 14: The Return
 
-**> SYSTEM_BOOT: SUCCESS**
-**> DRIVER_VERSION: 2.0 (PATCHED)**
-**> AUDIO_PROFILE: DISSONANCE_FILTER_OFF**
-**> LOCATION: MALKUTH_ACADEMY_GATE**
+---
+
+**ZONE: MALKUTH_ACADEMY**
+**SYSTEM_STATUS: ONLINE**
+**FIRMWARE: V2.0 [PATCHED]**
+**USER: NISHIMURA_TARO**
+
+---
+
+### [08:00:00] THE UNCANNY VALLEY
 
 The gates of Malkuth Academy didn't look golden anymore.
 
@@ -24,8 +31,7 @@ The world wasn't smooth. It was a jagged mess of conflicting frequencies.
 Across the courtyard, a group of First Years were laughing. To Taro's old eyes, they would have been a harmonious cluster of pleasant notes. Now, he saw the jagged waveforms of their anxiety spiking through their laughter. He saw the dissonance in their forced smiles. The girl on the left was vibrating with a sharp, sawtooth insecurity that clashed violently with the boy next to her, whose heavy, dull square-wave arrogance was drowning out everyone else.
 
 It wasn't just unsightly. It was loud.
-
-It wasn't just unsightly. It was loud. It was [[Social Harmony::An NAI algorithm that auto-tunes social interactions, smoothing out awkward pauses and damping conflict spikes to create a pleasant but fake society.]] .
+It was [[Social Harmony::An NAI algorithm that auto-tunes social interactions, smoothing out awkward pauses and damping conflict spikes to create a pleasant but fake society.]] .
 
 He tapped his temple, a phantom itch where the old collar used to be. The new limiter was internal, buried deep in his NAI's kernel. It didn't block the dissonance; it just stopped him from reacting to it. It was a mute button for his output, not his input.
 
@@ -51,7 +57,9 @@ He walked past the droid. As he passed, he felt the heat radiating from its cool
 
 *Everything is broken,* he thought. *And nobody else can see it.*
 
-***
+---
+
+### [08:15:00] THE AMPHITHEATER
 
 The Amphitheater was a bowl of sound. Five hundred cadets sat in concentric rings, their personal resonance fields humming in a low, collective drone.
 
@@ -82,8 +90,6 @@ The cadets shifted uncomfortably. The collective drone of the room wavered, dipp
 Taro watched the hologram. To everyone else, it looked like a standard error. But with his new eyes, Taro saw something else.
 
 He saw the interference.
-
-The air around the cadet in the video wasn't empty. It was thick with... something. A localized distortion field. Like static cling, but aggressive. It was pulling at the sonic pulse, dragging it out of alignment.
 
 The air around the cadet in the video wasn't empty. It was thick with... something. A localized distortion field. Like static cling, but aggressive. It was pulling at the sonic pulse, dragging it out of alignment.
 
@@ -118,7 +124,9 @@ Taro watched the purple vectors in the hologram again. They weren't atmospheric 
 
 *He doesn't see it,* Taro thought. *Even Staccato. He's looking at the notes, but he's not hearing the room.*
 
-***
+---
+
+### [12:00:00] THE MESS HALL
 
 "You look like you've been defragged."
 
@@ -166,7 +174,7 @@ Ven stopped chewing. "Who would jam a cadet in a live-fire zone?"
 
 And underneath it all, the hissing, popping, grinding noise of a system that was eating itself alive.
 
-"I think," Taro whispered, leaning in so close his Static Aura crackled against the table. "I think... zzt... that the Silence isn't just outside the walls anymore. It’s broadband now. It’s inside the house."
+"I think," Taro whispered, leaning in so close his Static Aura crackled against the table. "I think... zzt... that the Silence isn't just outside the walls anymore. It's broadband now. It's inside the house."
 
 **> ALERT: PATTERN_MATCH**
 **> ANOMALY_DETECTED: INTERNAL**
@@ -190,3 +198,7 @@ Taro blinked, clearing the vision. "I'm fine," he lied. "Just... calibrating."
 He looked back at the girl. She was laughing now, a perfect, melodic sound. But Taro had seen the wireframe. He had seen the empty space underneath the texture map.
 
 *The glitch is inside the house.*
+
+---
+
+**END CHAPTER 14**

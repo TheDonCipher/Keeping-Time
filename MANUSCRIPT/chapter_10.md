@@ -21,7 +21,6 @@ The Silence Agents had pinned them against a dead-end wall. The air was dead. Ta
 **> HANA_STATUS: UNCONSCIOUS**
 
 Hana was down. Her perfect, Hi-Fi square wave had flatlined. 
-
 "She can't breathe in the silence," Taro whispered, his stutter returning as his NAI struggled to render his own vocal chords. "Analysis: She’s... zzt... dependent on the Grid. If/Then: If the master clock is gone, then her heart-rate is unindexed. She’s dropping packets."
 
 "Taro," Ven grunted. "I can't... hold them."

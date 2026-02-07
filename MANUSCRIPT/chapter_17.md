@@ -1,9 +1,15 @@
-# Chapter 17: The Underground
+# KEEPING TIME
+## Chapter 17: The Underground
 
-**> SYSTEM_TIME: 23:45:00**
-**> LOCATION: SECTOR 4 (SUB-BASS LEVELS)**
-**> SIGNAL_STRENGTH: DROPPING...**
-**> WARNING: LEAVING_NETWORK_COVERAGE**
+---
+
+**ZONE: SECTOR_4 [SUB-BASS_LEVELS]**
+**SYSTEM_TIME: 23:45:00**
+**WARNING: LEAVING_NETWORK_COVERAGE**
+
+---
+
+### [23:45:00] THE DESCENT
 
 The elevator descended past the city's roots.
 
@@ -27,6 +33,7 @@ She was standing next to him, but she looked... unstable. Without the Network to
 "This way," she said, her voice dropping into a grainier, lower resolution.
 
 They walked down a rusted maintenance tunnel. The walls were lined with copper mesh—a makeshift [[Faraday Cage::A copper mesh enclosure that blocks electromagnetic fields and C-Order Network signals, creating a 'Dead Zone'.]] .
+
 At the end of the tunnel was a heavy blast door. No digital lock. No retinal scanner. Just a wheel valve.
 
 Elara spun it. The door creaked open.
@@ -37,6 +44,10 @@ Elara spun it. The door creaked open.
 The sound hit them like a physical wave.
 
 It wasn't the polite, quantized music of the Upper City. It was a riot of genres, a clash of time signatures, a polyphonic storm of individuality.
+
+---
+
+### [00:00:00] THE NULL
 
 Taro stepped inside. The club, simply called "The Null," was a cavernous space carved out of an old geothermal vent. It was the [[Underground::A sanctuary for Dissonant users in the Sub-Bass levels where High-Fidelity is rejected and raw noise is worshiped.]] .
 
@@ -136,7 +147,7 @@ She smiled, her glass face glowing in the dark.
 
 "You're not a wrong note, Taro. You're the rest between the measures. The perfect gap in the signal that gives the music meaning."
 
-Taro stared at his black capabilities. The "Void" wasn't chaos. It was peace. It was the only quiet thing in a world of noise.
+Taro stared at his black hands. The "Void" wasn't chaos. It was peace. It was the only quiet thing in a world of noise.
 
 For the first time in his life, he didn't feel broken.
 
@@ -144,3 +155,8 @@ He felt necessary.
 
 **> SYSTEM_STATUS: RESONANCE_ACCEPTED**
 **> HULL_TYPE: NULL_VOID [UNIQUE]**
+
+---
+
+**END CHAPTER 17**
+**END PHASE V**

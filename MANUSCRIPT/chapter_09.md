@@ -27,15 +27,9 @@ Taro looked at his own HUD. It was a mess of tearing pixels and scrolling error 
 "It's not jamming," Taro said, his voice fragmenting. "Analysis: It's *absorbing*. It’s a total-sink."
 
 Taro pointed to the scratch-etched circle on the wall. 
-
 The Silence. 
 
 It wasn't broadcasting noise. It was a sinkhole in the data. It was sucking the broadband out of the air like oxygen out of a depressurized cabin. It was an absolute-zero signal.
-
-**> SIGNAL_FLOOR: -200dB [ABSENCE]**
-**> PHYSICS_ENGINE: SUSPENDED**
-
-It wasn't broadcasting noise. It was a sinkhole in the data. It was suckling the broadband out of the air like oxygen out of a depressurized cabin. It was an absolute-zero signal.
 
 **> SIGNAL_FLOOR: -200dB [ABSENCE]**
 **> PHYSICS_ENGINE: SUSPENDED**
@@ -88,8 +82,6 @@ It illuminated the alley for a microsecond.
 The lead Silence agent stepped forward. He raised a black knife.
 He didn't block the beam.
 He *split* it.
-
-The knife cut the frequency. The blue light hit the blade and vanished—eaten by the void. The air tasted like cold ash and missing packets.
 
 The knife cut the frequency. The blue light hit the blade and vanished—eaten by the void. The air tasted like cold ash and missing packets.
 

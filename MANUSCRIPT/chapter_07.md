@@ -1,63 +1,71 @@
 # KEEPING TIME
-## Chapter 7: The Rival
+## Chapter 7: The First Lesson
 
 ---
 
-**ZONE: COMBAT_SIM_ALPHA**
-**RENDERING: LOW_POLY [TACTICAL]**
-**MODE: LIVE_FIRE [NON-LETHAL]**
-**OPPONENT: VANGUARD_ELITE**
+**ZONE: LECTURE_HALL_01**
+**ACOUSTICS: DEADENED [ABSORPTIVE]**
+**INSTRUCTOR: ARCHITECT_VALE**
+**TOPIC: RESONANCE_THEORY_101**
 
 ---
 
-### [14:30:00] MIL-SPEC
+### [14:00:00] THE ARCHITECTURE OF SOUND
 
-The Combat Sim didn't look like the rest of the Academy.
-To save processing power for physics calculations, the server stripped the textures. The walls were untextured gray polygons. The lighting was flat white.
+The Lecture Hall was a marvel of acoustic engineering. No echoes. No reverberation. Every word spoken here died the moment it left the speaker's mouth, ensuring zero signal overlap.
 
-**> GRAPHICS_SETTING: PERFORMANCE**
-**> FRAMERATE: MAX**
+"Reality," Instructor Dorian Vale said, "is a standing wave."
 
-"Simulation Alpha," the announcer's voice boomed. "Nishimura vs. Staccato."
+He stood at the bottom of the amphitheater. He didn't pace. He didn't gesture. As a [[Structural Architect::A class of resonator that builds static, enduring constructs out of sound. They prioritize stability, geometry, and long-term signal integrity over raw power.]] , his movements were precise, engineered to minimize waste energy.
 
-Taro stood in the center of the arena. His danger sense was already redlining.
+He raised a hand. A complex, rotating 3D model of a building appeared in the air above him. It wasn't made of light; it was made of blue wireframe sound.
 
-**> OPPONENT_SCAN:**
-**> ID: MARCUS_STACCATO [YEAR 2]**
+"Most of you think of resonance as 'Power'," Vale continued, his voice crisp and dry. "You think of amplitude. Volume. The ability to shout reality into submission. This is a vulgar misconception common among Low-Fidelity users."
+
+He glanced at the back row, where Taro sat with Ven and Hana. Taro felt the weight of the gaze—it felt like a calipers measuring his skull.
+
+"Resonance is not volume," Vale corrected. "It is **Alignment**. A bridge does not collapse because the wind is loud. It collapses because the wind finds its *natural frequency* and enters a feedback loop. A whisper, applied at the right interval, can shatter a diamond."
+
+He snapped his fingers.
+*Click.*
+The wireframe building shattered into a million blue polygons.
+
+"Control," Vale said. "Not force. That is the lesson. To be an Architect is to understand the structure of the world so perfectly that you do not need to break it. you simply... untie it."
+
+Hana was transcribing every word into her HUD at a speed that blurred the text.
+Ven was asleep. Or meditating.
+Taro was tapping his foot. *One-two-three. One-two-three.*
+
+"New Student," Vale said.
+
+The room went deadly silent.
+Taro looked up. "Me?"
+
+"Yes. The rhythmic anomaly. You are broadcasting a polyrhythm in a 4/4 environment. It is structurally unsound."
+
+Dorian Vale pointed to the center of the room.
+"Demonstrate your 'Style'. Enter the Circle."
+
+---
+
+### [14:30:00] MIL-SPEC SIMULATION
+
+Taro stood in the center of the demonstration ring. The floor lit up with a tactical grid.
+
+"Opponent Designated," Vale announced. "Cadet Staccato. Front and center."
+
+A student stood up from the front row.
+Marcus Staccato. A Vanguard elite.
+He didn't walk; he *ticked* forward. Every step landed on a perfect beat.
+He wore matte-black training armor that absorbed light. His aura was encrypted—a jagged, aggressive static that Taro couldn't read.
+
+**> OPPONENT: MARCUS_STACCATO**
 **> CLASS: RHYTHM_OPERATOR**
-**> FACTION: G_VANGUARD**
-**> THREAT_LEVEL: SEVERE**
+**> THREAT: SEVERE**
 
-Marcus didn't look like a student. He looked like hardware. He was a [[Rhythm Operator::An anti-personnel specialist who uses high-speed percussive strikes to disrupt an opponent's internal clock and force a combat 'Reset'.]] .
-He wore the standard Vanguard carapace armor, but his was customized. Matte black. No reflections.
-And his aura?
-Taro's high-capacity eyes couldn't read it.
+"The lesson is 'Pattern Recognition'," Vale announced from the podium. "Staccato is a Rhythm Operator. He controls the Time Signature of the fight. Nishimura is... untrained noise. Observe the difference between 'Design' and 'Chaos'."
 
-**> SCAN_RESULT: ERROR**
-**> ENCRYPTION: MIL-SPEC [CLASS 4]**
-
-He was running a jammer. To the System, he was a black hole in the data stream. A void where information should be.
-
-"You're the Variable," Marcus said. His voice was choppy, percussive, every syllable landing on a perfect 16th-note sub-beat. "The Glitch. The Low-Fi sediment from Sector 7."
-
-He didn't walk. He *ticked* forward, his movement locked to the simulation's master clock.
-
-*Step. Step. Step.*
-
-Every footfall was perfectly timed to a 140 BPM clock.
-Taro's HUD tried to draw a predictive path for him, but the line kept snapping.
-
-**> PREDICTION_ALGORITHM: FAILED**
-
-"Voss says you have potential," Marcus said, his eyes scanning Taro with a zero-latency gaze. "Analysis: You have slop. You’re dropping frames in your footwork. You’re a jittery mess."
-
-*CLICK.*
-
-The baton extended. A glowing red tuning fork at the tip.
-**> WEAPON_ID: TEMPO_ROD**
-**> PITCH: SUSTAINED_MID**
-
-"Begin," the announcer said.
+"Begin."
 
 Marcus vanished.
 
@@ -65,12 +73,11 @@ Marcus vanished.
 
 One second he was ten meters away. The next frame, he was in Taro's face.
 The proximity alarm shrieked.
-
 **> ALERT: COLLISION_IMMINENT**
 
 *CRACK.*
 
-The baton hit Taro's ribs.
+A baton hit Taro's ribs.
 It wasn't just a kinetic impact. It was a **Downbeat**.
 The resonance of the rod forced Taro's entire nervous system to reset its cycle. His lungs froze. His vision greyscaled.
 
@@ -79,22 +86,21 @@ The resonance of the rod forced Taro's entire nervous system to reset its cycle.
 
 Taro stumbled back, gasping. "How..."
 
-"You operate on analog time," Marcus said, circling him with a high-capacity fluidity that made Taro’s head ache. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Glitch. I’m already in the next pulse."
+"You operate on analog time," Marcus said, circling him. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Glitch. I’m already in the next pulse."
 
 He was right. 
+To Taro's eyes, Marcus was vibrating. His movements were synced to a 140 BPM master clock that Taro couldn't hear.
 
-To Taro's eyes, Marcus was glitching—not because Marcus was broken, but because Taro’s brain couldn't keep up with the frame-rate. Marcus appeared in flashes. Strobe-effect movement. He was exploiting the latency of Taro's own NAI-wetware handshake.
-
-"Fight back," he ordered.
+"Fight back," Dorian Vale ordered. "Chaos has no structure. Prove me right."
 
 Taro gritted his teeth.
 *Ignore the visuals. Focus on the hum.*
-He pulled on the Variable Oscillation. He didn't try to clamp it this time. He let it scream.
+He pulled on the Variable Oscillation. He didn't clamp it. He let it scream.
 
 **> OUTPUT: 80%**
 **> TOPOLOGY: SAWTOOTH_BURST**
 
-Taro threw a wave of jagged noise at him. A wide cone of distortion. You couldn't dodge it.
+Taro threw a wave of jagged noise at Marcus. A wide cone of distortion.
 
 Marcus didn't dodge.
 He *parried* the sound.
@@ -105,15 +111,12 @@ He swung his baton in a perfect vertical arc. The red tip cut through Taro's yel
 **> ATTACK: NULLIFIED**
 
 The wave dissolved into harmless static. It was [[Destructive Interference::The phenomenon where two waves of equal frequency and opposite phase collide, resulting in instant silence. A perfect parry.]] .
-Marcus stepped through the dissipating sparks.
 
-"Sloppy," he said, his voice a flat, percussive disappointment. "High amplitude. Zero structure. You're just shouting into a dead air. You’re all gain, no resolution."
+"Sloppy," Marcus sneered. "High amplitude. Zero structure. You're just shouting at the wall. You found the right note, but you played it with zero envelope."
 
-He raised the baton, the red tip humming at a perfect, lethal Mid-Pitch. 
+He raised the baton. The tip hummed red.
+"This is high-fidelity."
 
-"This is how you speak. This is high-fidelity combat."
-
-He tapped the air.
 *Click-click-click.*
 Three rapid strikes. A triplet pattern.
 
@@ -122,13 +125,12 @@ The air solidified. The sound waves he created didn't dissipate; they hung in th
 **> TRAP_DETECTED: RHYTHM_CAGE**
 **> STATUS: CONTAINED**
 
-"End of simulation," Marcus said.
+"End of simulation," Dorian Vale announced.
 
-He tapped the cage.
+Marcus tapped the cage.
 *PING.*
 
-The resonance collapsed inward.
-It hit Taro from all sides.
+The resonance collapsed inward. It hit Taro from all sides.
 His vision turned static.
 His sound output flatlined.
 
@@ -137,28 +139,26 @@ His sound output flatlined.
 
 Taro was on the floor. Groaning.
 Marcus stood over him. He deactivated his jammer for one second.
-Taro saw his true stats.
 
 **> SYNC: 99.9%**
 **> EFFICIENCY: 100%**
-**> RECOVERY_RATE: OPTIMAL**
-**> MOOD: BOREDOM [HI-FI]**
+**> MOOD: BOREDOM**
 
-"Get a metronome, Glitch," he said, holstering his rod with a click that sounded like a hardware update. "Or don't come back. You're just noise in my signal path."
+"Get a metronome, Glitch," Marcus said. "You're just noise in my signal path."
 
-He walked away.
-*Step. Step. Step.*
-Perfect 140 BPM.
+Marcus walked away. *Step. Step. Step.* Perfect 140 BPM.
 
-Taro lay there, watching the red "DEFEAT" banner burn into his retinas.
-Ven and Hana were running toward him from the sidelines.
-But Taro wasn't looking at them.
-He was reviewing the replay buffer in his mind.
+Dorian Vale looked down at Taro.
+"Chaos is energy," Vale said, "but without Structure, it is just heat. You have potential, Nishimura. But until you learn to build a frame for your power... you are just a bomb waiting to go off."
 
-He didn't lose because he was weak.
-He lost because he tried to drown a fish. Marcus didn't fight the wave; he swam through it.
+Taro looked up.
+High above, in the observation booth, a golden light flickered.
+The Headmaster was watching.
+And unlike Vale, he wasn't looking at Taro with disdain.
+He was checking his watch.
+Timing the explosion.
 
-**> NEW_OBJECTIVE: LEARN_TEMPO**
+**> LESSON_COMPLETE**
 
 ---
 

@@ -14,7 +14,6 @@
 
 The dropship doors hissed open.
 
-The dropship doors hissed open.
 Beneath them lay the [[Twilight Band::The buffer zone between the High-Fidelity Inner City and the Low-Fi Outer Slums, characterized by inconsistent reality rendering.]] . A "Glitch" zone where the reality render is inconsistent. Textures pop in and out. The air tastes of both ozone (wealth) and sulfur (poverty).
 
 "Deployment in 3... 2... 1..."
@@ -29,7 +28,7 @@ The city of Sector 4 stretched out before them.
 It was beautiful.
 Too beautiful.
 
-Through The Score, every building was sheathed in white marble and gold trim. The streets were clean. The people walked with a synchronized gait, their tags reading **> STATUS: CITIZEN [HAPPY]**.
+Through The Score, every building was sheathed in white marble and gold trim. The streets were clean, paved with glowing luminescent tiles. The people walked with a synchronized gait, their tags reading **> STATUS: CITIZEN [HAPPY]**.
 The sky was a perfect, gradient blue.
 
 "Sector 4 secured," Hana reported. Her voice was crisp, a perfect digital signal. "Resonance levels stable at Standard Pitch. Local capacity is clear of unregistered noise."
@@ -50,7 +49,9 @@ Beneath the white marble AR skin, the wall was actually crumbling concrete, cove
 
 "It's a slum," Taro whispered, his voice catching on the dissonance he was seeing. "The architecture... it’s all low-bit placeholders."
 
-"Maintain comms discipline and filter your inputs," Hana said, her tone a sharp, linear reminder. She was walking down the center of the street, following a glowing green **Nav-Line** that pulled her forward like a magnet. To her, this place *was* a high-fidelity paradise. Her NAI aggressively damped the smell of sewage. Her perception used a [[Golden Filter::A real-time AR overlay that replaces low-status textures (rot, poverty) with idealized C-Order aesthetics (marble, gold).]] to erase the homeless people sitting in the gutters, replacing them with generic street furniture or dead space.
+"Maintain comms discipline and filter your inputs," Hana said, her tone a sharp, linear reminder. She was walking down the center of the street, following a glowing green **Nav-Line** that pulled her forward like a magnet. 
+
+To her, this place *was* a high-fidelity paradise. Her NAI aggressively damped the smell of sewage. Her perception used a [[Golden Filter::A real-time AR overlay that replaces low-status textures (rot, poverty) with idealized C-Order aesthetics (marble, gold).]] to erase the homeless people sitting in the gutters, replacing them with generic street furniture or dead space.
 
 **> MASKING_PROTOCOL: MAX_LOAD**
 **> ANALYSIS: SELECTIVE_OMISSION_ACTIVE**
@@ -114,7 +115,6 @@ It was an empty circle.
 "Hana," Taro said, his voice dropping to a whisper that even his HUD tagged as **> CAUTION**. "We're not patrolling. The system is lagging. We're being hunted by something the Score can't render."
 
 The shadows stretched. 
-
 And for the first time, The Score gave him no data at all. Zero packets. 
 
 **> ENEMY: [REDACTED_ANOMALY]**

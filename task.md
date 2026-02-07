@@ -210,8 +210,97 @@ Building the foundational structure before continuing chapter writing.
 
 ---
 
+## PHASE 7: NARRATIVE IMMERSION & EXPANSION
+**Goal**: Deepen narrative immersion, remove expository blocks, and ensure "The Score" is a lived phenomenon.
+
+### [x] Chapter 1: The Zap (Expansion)
+- [x] Expand the sensation of "The Zap" (Boot Sequence).
+- [x] Show, don't tell, the "Social Prosthetic" nature of the Score.
+- [x] Deepen the "Crash" scene with visceral sensory details.
+
+### [x] Chapter 2: The Assessment (Expansion)
+- [x] Enhance the "White Room" sensory deprivation experience.
+- [x] Show Voss's "Stability" through environmental effects.
+- [x] Remove/Integrate explicit definitions of classes/tech.
+
+### [x] Chapter 3: Modulation (Expansion)
+- [x] Contrast the "High-Fi" C-Order world with the "Lo-Fi" chaos of Sector 7.
+- [x] Depict Kael's "Fundamental" nature through gravitational/acoustic pressure.
+- [x] Symbolize the "Analog Headphones" as a physical anchor.
+
+### [x] Chapter 4: The Medium (Expansion)
+- [x] Introduce "High-Fidelity" vs "Low-Fidelity" contrast.
+- [x] Show Hana's reaction to the "Vanguard Crown".
+- [x] Establish the Headmaster's "Architect" class power (Gravity Shift).
+
+### [x] Chapter 5: The Aptitude Test (Expansion)
+- [x] Show the "Combat Mode" UI/UX (Targeting, Stress Lines, Heat Sinks).
+- [x] Contrast Standard "Harmonic" combat with Taro's "Overload/Brute Force" style.
+- [x] Depict the physical toll of "High Gain" output.
+
+### [x] Chapter 6: The Dorms (Expansion)
+- [x] Establish the social dynamics of the Academy (Silos vs. Mixed).
+- [x] Introduce the "Quiet Room" or "Soundproofing" as a commodity.
+- [x] Show the "Analog Headphones" as a secret comfort.
+
+### [x] Chapter 7: The First Lesson (Expansion)
+- [x] Show the "Theory of Resonance" through practical application, not lecture.
+- [x] Contrast Kael's (Headmaster) "Fundamental" stability with the students' volatility.
+- [x] Hint at the "Dissonance" underlying the perfect chord.
+
+### [x] Chapter 8: The Sortie (Expansion)
+- [x] Depict the "Uncanny Valley" of the Twilight Band (Glitching Reality).
+- [x] Establish Fireteam Echo's dynamic: Hana (Nav), Ven (Shield), Taro (Sensor).
+- [x] Show the "Golden Filter" failing to mask the rot.
+
+### [x] Chapter 9: The Silence (Expansion)
+- [x] Introduce the "Null-Agents" as voids in the data.
+- [x] Emphasize the horror of "Absolute Silence" in a sound-based world.
+- [x] Execute the "Analog Strike" (Brick/Pipe) as a desperate, non-magical solution.
+
+### [x] Chapter 10: The Breach (Expansion)
+- [x] Make the "Limiter Break" visceral and painful (Bio-Plasma feedback).
+- [x] Describe the "Void" not just as darkness, but as raw, unrendered data.
+- [x] End with the catastrophic "System Crash" cliffhanger.
+
+### [x] Chapter 11: The Blue Screen (Expansion)
+- [x] Depict the "Safe Mode" survival experience (Wireframe/Low-Poly).
+- [x] Show the sensory deprivation/distortion of "The Void".
+- [x] Establish Ven as the anchor and Hana as compromised.
+
+### [x] Chapter 12: The Audit (Expansion)
+- [x] Setting: The "Debug Suite" (Medical Bay).
+- [x] Antagonist: Headmaster Voss (Kael Unison) conducting a forensic analysis.
+- [x] Theme: Dehumanization ("You are a fatal error").
+
+### [x] Chapter 13: The Patch (Expansion)
+- [x] Procedure: The "Re-sharding" / Driver Update.
+- [x] Outcome: The uncanny "Wrongness" of the fixed world.
+- [x] Cliffhanger: Realizing the "Patch" is a mask.
+
+### [ ] Chapter 14: The Return (Expansion)
+- [ ] Depict the uncanny "Perfect" world post-Patch.
+- [ ] Show Taro's internal dissonance vs. external compliance.
+- [ ] Establish the new social dynamics (Taro is now "Popular").
+
+### [ ] Chapter 15: The Phantom Mesh (Expansion)
+- [ ] Introduce Elara and the "Wireframe Ghost" phenomenon.
+- [ ] Visuals: "Texture Popping" / Avatar-Reality Mismatch.
+- [ ] Theme: "Resonance Dysphoria" as body dysphoria allegory.
+
+### [ ] Chapter 16: Illegal Modulations (Expansion)
+- [ ] The confrontation/conversation in the sound-proofed room.
+- [ ] Elara explains "Modulating" vs "Masking".
+- [ ] Theme: "Factory Settings are a suggestion."
+
+### [ ] Chapter 17: The Underground (Expansion)
+- [ ] Setting: The "Dead Zone Club" (The Null).
+- [ ] Atmosphere: Punk, DIY, Open Source aesthetics.
+- [ ] Ending: Finding the tribe. No Patch needed.
+
 ## MAINTENANCE & BUG FIXES
 - [x] Fix Sidebar Dark Mode visibility (CSS color inheritance)
 - [x] Fix Incomplete Tooltips (Escaping quotes in build script)
 - [x] Check for other unescaped characters in tooltips (&, <, >)
 - [x] Verify all 42 tooltips are complete in PUBLICATION_COMPLETE.html
+- [x] Fix Inline Tooltip Z-Index (CSS Update)

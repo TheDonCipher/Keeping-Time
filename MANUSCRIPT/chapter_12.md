@@ -3,107 +3,119 @@
 
 ---
 
-**ZONE: C-ORDER_MEDICAL_WARD [SECTOR 1]**
-**RENDER_MODE: SAFE [BIOS_LEVEL]**
-**OBJECT_COUNT: 2**
-**MEMORY_USAGE: 4%**
+**ZONE: MALKUTH_MEDICAL [DEBUG_SUITE]**
+**STATUS: QUARANTINE**
+**SUBJECT: NISHIMURA_TARO**
+**CASE_ID: FATAL_EXCEPTION_099**
 
 ---
 
-### [09:00:00] THE DEBUGGER
+### [TIME: 08:00:00] THE DEBUGGING SUITE
 
-The world was blue.
-Not the color of the sky, or the ocean, or any organic thing. It was the blue of a command line terminal. ` #0000FF`. Pure, mathematical, and cold.
+Taro woke up strapped to a table.
 
-Taro lay on a flat plane. It was labeled `[BED_MEDICAL_STD]`.
-It had no texture. Just a white wireframe mesh defining its boundaries. He couldn't feel the sheets, only a variable called `PRESSURE` applied to his back.
+It wasn't a bed. A bed implies comfort. This was a **Diagnostic Slab**. A cold, white, composite surface designed to facilitate maximum data throughput from the subject's nervous system.
 
-"Input lag," a voice said. "Zero point four seconds. Your sync is failing, Taro. Your wetware is rejecting the local host."
+The room was aggressively High-Fidelity.
+The walls were a perfect, seamless white. The lighting was shadowless, emanating from everywhere at once. It smelled of absolutely nothing—a sterile void of olfactory data.
 
-Taro turned his head. The motion blurred, skip-framing across his vision.
+**> RESTRAINTS: CLASS_5 [BIOMETRIC_LOCK]**
+**> MASKING_FIELD: ACTIVE**
 
-A figure stood next to the bed. It was a low-poly approximation of a human being. Sharp triangular polygons formed the coat. The face was a blank geometric mask with two dark squares for eyes. A floating tag hovered above the head, flickering with a high-fidelity refresh rate:
+Taro tried to move his hands. The restraints didn't bulge. They weren't just physical; they were haptic dampeners. They canceled out any kinetic energy he tried to generate.
 
-**> ID: ADJUTANT_VOSS**
-**> CLASS: ADMIN**
-**> THREAT: NULL**
+"Subject is online," a voice said.
 
-**> ID: ADJUTANT_VOSS**
-**> CLASS: ADMIN**
-**> THREAT: NULL**
+It was a voice devoid of jitter. A pure Sine Wave.
+Taro turned his head.
 
-He was an [[Admin::A high-level system overseer capable of editing ID tags and seeing the raw code behind the reality rendering.]] .
-"V-Voss?" Taro asked. His audio filters cracked, the name trailing off into a stuttering delay. `V-oss_ss_ss_zzt`.
+Standing over him was Headmaster Kael Voss.
+He wasn't wearing his usual administrative robes. He was wearing a white, clinical "Debugger" suit. His face was obscured by a holographic visor streaming rapid-fire data.
 
-"Stabilize your vocal drivers," the polygon-figure said. The voice was crisp, a perfect digital signal lacking any room reverb. In Safe Mode, the reality engine didn't simulate acoustics. "You are running on emergency power, Taro. Don't try to render emotions. Your capacity is too narrow for sentiment."
+"Head-Headmaster," Taro stammered. His voice felt thin. Weak. "Where... where am I?"
 
-Voss tapped the air. A floating menu appeared—a simple list of white text on a black background.
+"You are in the Kernel," Voss said, not looking at him. He was manipulating a floating holographic display that showed a complex, jagged waveform. "Or rather, your data is. Your physical shell is in Medical Wing 4."
 
-**> OPEN_LOG: ACCIDENT_REPORT_440**
-**> PLAYBACK SQUEEZED**
+Voss swiped a hand through the hologram.
+It was Taro's soul.
+Or at least, the digital representation of it. A screaming, chaotic mess of red and yellow spikes.
 
-"I've been reviewing your crash dump," Voss said. He walked around the bed. His movement was jerky, snapping from one keyframe to the next without interpolation. "It is... impressive."
+"Look at this," Voss said, his tone one of professional disappointment. "This is your log from the Twilight Band. Do you know what this looks like to a system administrator?"
 
-"I saw the sky," Taro rasped. "The real sky."
+Taro stared at the jagged line. "It looks... loud."
 
-The polygon-Voss stopped.
-"You saw nothing. You experienced a rendering failure. A graphic card crash. Your brain filled in the gaps with noise."
+"It looks like a virus," Voss corrected. "It looks like code injection. You didn't just break your limiter, Nishimura. You overwrote the local physics engine for three city blocks. We had to roll back the server state to a backup from 12 hours ago just to fix the pavement."
 
-"It was white noise," Taro said. "It was... everything."
+Voss tapped a key.
+*PING.*
 
-"It was chaos," Voss corrected. "And chaos is lethal."
+Pain shot through Taro's head. A sharp, digital spike.
+**> ALERT: ADMIN_ACCESS [FORCED]**
 
-Voss swiped a wireframe hand. A hologram appeared in the center of the room. It was a playback of the alleyway in Sector 4. Blocky, recorded data.
-Taro watched himself—a glowing wireframe avatar—rip the limiter off his neck.
-He watched the explosion of gold light.
+"Stop!" Taro gasped.
 
-**> ERROR: INTEGER_OVERFLOW**
-**> OUTPUT: 3,000,000+ [INVALID]**
+"I am auditing your drivers," Voss said calmly. "I need to see where the corruption is rooted. Is it hardware? Or is it user error?"
 
-"Look at that number," Voss said, pointing a sharp, wireframe finger at the floating text. "Three million output. That shouldn't be possible. The human nervous system peaks and melts at ten thousand. You didn't just break the limiter, Taro. You broke the math. You’re a walks-around overload."
+He tapped again.
+*PING.*
 
-Taro stared at the recording. "I... I didn't mean to peak. I was just trying to... to align."
+Memories flashed in Taro's mind. The alleyway. The Silence. The scream.
+But viewed through Voss's filter, they looked different.
+The scream wasn't heroic. It was ugly. A tear in the beautiful tapestry of the world.
 
-"Intent is irrelevant. The compiler doesn't care if you 'meant' to cause an overload. It only cares that the system crashed and the local server went analog for three seconds."
+"You are dangerous," Voss stated. "Not because you are strong. But because you are incompatible. You are a fatal error waiting to happen."
 
-Voss closed the window. The room returned to sterile blue silence.
+"They were going to kill us," Taro argued, his voice gaining a little gain. "The Silence... they were erasing us! I saved Hana! I saved Ven!"
 
-"The Council wants you deleted," Voss said calmly. "They see a bug. A critical vulnerability that could destabilize the entire grid. They think you are a walking system collapse."
+"You damaged a Prefect's resonance core," Voss countered. "Hana Chord is currently in defragmentation therapy. She may never recall the color blue correctly again. And Ven? Ven is currently overheating in a cooling tank because you used him as a grounding wire for illegal voltage."
 
-Taro felt a spike of `FEAR`. A simple red warning light in his peripheral vision.
-"Are you going to kill me?"
+Taro froze.
+"Are they...?"
 
-The low-poly mask tilted.
-"Kill? No. That is a waste of data."
-Voss leaned in. His wireframe face was inches from Taro's.
-"I don't delete bugs, Taro. I patch them."
+"They are damaged. Because of you."
 
-Voss reached out and touched Taro's forehead.
-A window popped up.
+Voss stepped closer. The holographic visor vanished, revealing his eyes.
+They were perfect. Golden. Terrifyingly calm.
 
-**> SYSTEM_UPDATE: PENDING...**
-**> PATCH_NAME: PROJECT_DISSONANCE**
-**> INSTALL? [Y/N]**
+"We cannot allow a Variable like you to run unchecked, Nishimura. You are a threat to the stability of the Concord. Standard protocol would be deletion."
 
-**> SYSTEM_UPDATE: PENDING...**
-**> PATCH_NAME: PROJECT_DISSONANCE**
-**> INSTALL? [Y/N]**
+Taro's heart hammered.
+**> THREAT: TERMINATION**
 
-It was an experimental [[Patch::Code injected directly into the NAI-wetware bridge. Incompatible patches cause fatal 'Driver Rejection'.]] .
+"But," Voss continued, "Standard Protocol failed to predict you. Which means the System has a blind spot. And I do not like blind spots."
 
-"You aren't a student anymore," Voss said. "And you aren't a civilian. You are a weapon. And weapons need to be tested."
+He reached into his pocket and pulled out a small, black chip.
+It didn't glow. It looked like matte-black void glass.
 
-"I don't want to be a weapon," Taro said.
+"What is that?"
 
-"Then you should have died in that alley," Voss replied. "You survived the Void. That implies you are compatible with it. And that makes you very, very useful."
+"A Patch," Voss said. "A limiter update. Custom-written for your... unique architecture. It will not just cap your output. It will regulate your waveform. It will force you into phase-alignment with the C-Order."
 
-He pressed **[Y]**.
+"You're going to lobotomize me," Taro whispered.
 
-**> INSTALLING...**
-**> WARNING: WARRANTY_VOID**
-**> WARNING: PAIN_LIMITER_DISABLED**
+"I am going to fix you," Voss said. "I am going to make you compatible. You will still be Taro Nishimura. You will just be... quieter. Safer. Happier."
 
-The blue world turned red.
-And then, for the first time since the crash, Taro felt something sharp.
+He held the chip over Taro's NAI port—the socket at the base of his skull.
+
+"This is not a request," Voss said. "This is a mandatory update."
+
+"No!" Taro struggled against the restraints. "I don't want it! I don't want to be quiet!"
+
+"Chaos never does," Voss said softly.
+
+He pressed the chip into the port.
+*CLICK.*
+
+Taro screamed.
+This time, there was no sound.
+The world went white.
+Golden white.
+Perfect.
+Silent.
+
+**> SYSTEM_UPDATE: INSTALLING... [1%]**
+**> PROGRESS: IRREVERSIBLE.**
 
 ---
+
+**END CHAPTER 12**

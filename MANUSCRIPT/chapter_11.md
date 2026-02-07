@@ -121,6 +121,7 @@ The sky was a wall of blue static.
 **[TEXTURE_MISSING]**
 
 It was [[Texture Loss::A phenomenon where surface reality fails to render, potentially causing 'Logic Drift' and hallucinations in unadjusted users.]] .
+
 "Taro?"
 Ven's face resolved out of the heat-haze. He looked like a low-poly model, his features angular and sharp. He was terrified.
 
@@ -163,3 +164,5 @@ Taro closed his hand into a fist. The wireframe texture crunched.
 **> DESTINATION: UNKNOWN**
 
 ---
+
+**END CHAPTER 11**

@@ -3,139 +3,137 @@
 
 ---
 
-**ZONE: C-ORDER_MEDICAL_WARD [SECTOR 1]**
-**STATUS: REBOOTING...**
-**UPDATE: 99% COMPLETE**
+**ZONE: MALKUTH_ACADEMY_DORMS**
+**SYSTEM_STATUS: ONLINE**
+**FIRMWARE: V2.0 [PATCHED]**
+**USER: NISHIMURA_TARO**
 
 ---
 
-### [12:00:00] THE NEW DRIVER
+### [TIME: 07:00:00] REBOOT
 
-The pain was digital. A needle of white light threading through his frontal lobe.
-Then, the progress bar hit **100%**.
+Taro opened his eyes.
 
-**> UPDATE_COMPLETE**
-**> EXECUTING: HIGH_FIDELITY_RENDERER**
+The world was beautiful.
+The ceiling was a perfect, seamless white, rendered in 8K resolution. The light filtering through the window wasn't just light; it was a volumetric simulation of a "Perfect Morning," complete with dust motes dancing in the sunbeams.
 
-**> UPDATE_COMPLETE**
-**> EXECUTING: HIGH_FIDELITY_RENDERER**
+He sat up.
+No headache. No lag. No stutter.
+His body felt light. Efficient. Optimized.
 
-It was [[High-Fidelity Rendering::A restricted visualization mode that removes 'Smoothing Filters', revealing structural stress, micro-expressions, and biological imperfections.]] .
-The world snapped.
-The blue wireframe mesh of the medical ward didn't just fade; it was aggressively paved over by textures. The flat grey polygons of the walls erupted into brushed steel and sterilized plastic. The low-poly light sources bloomed into complex volumetric glows, casting soft, ray-traced shadows across the floor. 
+**> DIAGNOSTIC: ALL_SYSTEMS_GO**
+**> SYNC_RATE: 100%**
+**> MOOD: CALM**
 
-It was violent. Like being slapped in the face with reality. 8K resolution hit his optic nerve with zero latency.
+He looked at his hands.
+They weren't wireframes. They weren't glitching. They were high-fidelity skin textures, perfectly mapped to his bone structure. He could see the pores. He could see the fingerprints.
 
-Taro gasped, his hands gripping the sheets. 
+"It worked," he whispered.
+His voice was smooth. Resonant. A perfect Baritone.
 
-They were sheets again. Cotton. Thread count 200. He could feel the friction data. His haptics were coming back online, flooding his brain with high-capacity sensation.
+He got out of bed.
+The floor was warm.
+The air smelled like lavender and ozone.
 
-**> SENSORY_DRIVERS: ONLINE**
-**> HAPTICS: CALIBRATED [HI-FI]**
+He walked to the mirror in the corner of the room.
+The reflection stared back.
+It was Taro. But... better.
+His posture was straighter. His eyes were bright, clear, and focused. The dark circles under them were gone. The nervous tic in his cheek was gone.
 
-"Easy," Voss said. 
-Voss wasn't a polygon anymore. He was a high-resolution human being. Taro could see the pores on his skin, the wear on his uniform's collar, the micro-scratches on his silver badge. He was a perfect C-Order sample.
-But there was something else.
+And around his neck...
+A new collar.
+Sleek. Black. Matte finish.
+It hummed with a low, barely audible frequency. A calming wave.
 
-Taro blinked.
-Overlaid on Voss’s chest, beneath the fabric of his coat, was a faint, pulsing schematic.
-A red line tracing his aorta.
-A blue line tracing his nervous system.
+**> DEVICE: VOSS_LINK [V2]**
+**> STATUS: ACTIVE**
+**> OUTPUT_CAP: 50% [SAFE]**
 
-**> TARGET: EREN VOSS**
-**> BPM: 72 [STEADY]**
-**> STRESS: 0%**
-**> RESONANCE_POTENTIAL: MID_REGISTER [MODERATE]**
+"Taro?"
 
-"What did you do?" Taro whispered.
+He turned around.
+Ven was standing in the doorway.
+He looked... clean. His heavy armor was polished to a mirror shine. His face was relaxed, devoid of the usual tension.
 
-"I removed the parental controls," Voss said. He didn't seem to notice that Taro was staring at his internal organs. "The standard NAI firmware filters out 40% of the world's data. It hides the messy parts. The structural weaknesses. The biological noise. It keeps the population calm."
+"Hey," Taro said. "You okay?"
 
-Voss tapped his own temple.
-"Project Dissonance disables those filters. You don't just see the UI anymore, Taro. You see the source code."
+"I'm great," Ven smiled. It was a wide, easy smile. "My thermal load is stable at 40%. The cooling system they installed is... it's amazing. I feel light."
 
-Voss tapped his own temple.
-"Project Dissonance disables those filters. You don't just see the UI anymore, Taro. You see the source code."
+Ven walked over and patted Taro on the shoulder.
+The impact was gentle. Controlled.
+No sparks. No heat dump.
 
-It was [[Project Dissonance::A classified initiative to create a weapon capable of perceiving and editing the 'Raw Data' of reality by surgically bypassing NAI safety kernels.]] .
+"They fixed us, Taro," Ven said. "Voss... he actually fixed us. No more overloads. No more glitching. We're compatible."
 
-Taro looked around the room. 
+"Compatible," Taro repeated. The word tasted sweet. Like artificial sweetener.
 
-It was overwhelming. Broadband perception was too much for his weary brain.
+"Hana is waiting in the courtyard," Ven said. "Class starts in ten minutes. We’re going to be late for formations."
 
-The walls weren't just solid barriers; they were stress maps. He could see where the load-bearing beams were under tension (yellow lines). He could see a hairline fracture in the window glass (flashing red).
+"Formations?"
 
-He looked at his own hand. 
+"Yeah. The Triad drill. We're going to nail it this time. Perfect C-Major."
 
-He could see the bio-plasma flowing under his skin like liquid gold. It looked... hungry. Vengeful.
+Taro followed Ven out into the hallway.
+The dorms were quiet. Orderly.
+Students walked in straight lines. They nodded politely as Taro passed.
+**> GREETING: [POLITE_NOD]**
+**> STATUS: ACCEPTED**
 
-**> VITALITY: 100%**
-**> LIMITER: NONE [UNBOUND]**
+They walked out into the courtyard.
+The sky was the same perfect blue Taro remembered from Sector 4.
+Golden dome. No clouds. No rain.
 
-"Where is my ring?" Taro asked. He touched his neck. It was bare.
+Hana was standing by the fountain.
+She looked radiant. Her uniform was crisp, her hair perfectly styled. Her aura was a stable, glowing blue square wave.
 
-"You don't need a limiter," Voss said. "Limiters are for people who might accidentally break the rules. You are not going to break the rules, Taro. You are going to rewrite them. But if you crash again..."
-Voss’s eyes went cold.
-"...there is no Safe Mode. The next crash is fatal. Do you understand?"
+"Target sighted," she announced, her voice lacking its usual robotic edge. It sounded... human. Almost *too* human. "Good morning, Nishimura. Your latency is zero. Impressive."
 
-"Yes."
+"Hi, Hana," Taro said.
 
-"Good. Initiate discharge protocol."
+"We have a lot of work to do," she said, tapping her datapad. "But first... the Headmaster wanted me to give you this."
 
----
+She handed him a small, white box.
+Taro opened it.
 
-### [13:15:00] THE REUNION
+Inside were his **Analog Headphones**.
+Cleaned. Repaired.
+But looking at them... they felt wrong.
+Heavy. Clunky. Obsolete.
 
-Ven and Hana were waiting in the lobby.
-To anyone else, they looked like two worried students.
-To Taro, they looked like chaotic storms of data.
+"He said you can keep them," Hana said smiling. "As a souvenir. You don't need them anymore, obviously. The new firmware filters out all background noise automatically."
 
-Ven was a walking furnace. The air shimmered around him. His resonance wasn't just 'grounded'; it was a heavy, dense gravitational field that bent the light around his shoulders.
-**> VEN_STATUS: THERMAL_CAPACITY [80%]**
+Taro looked at the headphones.
+Then he looked at the world.
+It was perfect.
+It was quiet.
+It was safe.
 
-Hana was a razor. Her edges were too sharp. Her harmony wasn't peaceful; it was a high-tension wire waiting to snap.
-**> HANA_STATUS: VIBRATION [HIGH_FREQUENCY]**
+And it was a complete and total lie.
 
-They stood up when they saw him. 
+He could see the edges of the render if he squinted. He could feel the artificial smoothness of the air. He remembered the Void. He remembered the raw data screaming beneath the pavement.
+The "Patch" hadn't fixed the world.
+It had just blinded him to the cracks.
 
-"Taro!" Hana moved first, bridging the gap. She grabbed his shoulders. "You're... you're high-res again. Your texture map is actually loading. My analysis shows a 100% recovery."
+But his friends were smiling.
+Ven wasn't burning. Hana wasn't glitching.
+They were happy.
 
-"I'm back," Taro said. 
+Taro closed the box.
+"Yeah," he said, forcing his own perfect smile. "I don't need them anymore."
 
-He looked at her. Really looked at her. 
+**> LIE_DETECTED [INTERNAL]**
+**> MASKING_PROTOCOL: ACTIVE**
+**> MOOD: [PRETENDING]**
 
-He could see the worry lines rendered in wireframe under her skin. He could see the jagged spike in her pulse rate. 
+He put the box in his pocket.
+"Let's go," Taro said. "We have a Triad to form."
 
-**> EMOTION: RELIEF [GENUINE]**
-**> ANALYZED_INTENT: ATTACHMENT [98%]**
+He walked into the sunlight.
+The collar around his neck hummed.
+It felt cold.
 
-"They said you burned out," Ven rumbled, stepping up behind her. "They said you hit 3 million output. That's a total server crash, Taro. That's a bomb, not a student. You were peaking so hard I thought the whole sector would go analog."
-
-"It was a glitch," Taro lied. The word tasted synthetic. 
-
-**> SOCIAL_PROTOCOL: DECEPTION [ACTIVE]**
-**> CARRIER_WAVE: JITTER [CRITICAL]**
-
-"Voss fixed it," Taro added. "He gave me a patch. Reset the whole kernel."
-
-Ven narrowed his eyes. He looked at Taro's neck.
-"Where's your collar?"
-
-"Upgrade," Taro said. "Internal software limiter. No hardware required."
-
-Use the lie. Keep the system stable.
-Taro looked past them, out the glass doors of the medical center.
-The city of Malkuth sprawled out before them. The towers of the High-Fidelity zone gleamed in the afternoon sun.
-
-But Taro didn't see the gleaming towers.
-He saw the structural fatigue in the bridges.
-He saw the energy leaks in the power grid.
-He saw the stress fractures in the pavement.
-
-The world wasn't perfect. It was breaking. It was holding itself together with tape and prayers.
-And for the first time, he saw exactly where to hit it.
-
-**> OBJECTIVE: RETURN_TO_ACADEMY**
-**> PHASE_IV: COMPLETE**
+**> SYSTEM_STATUS: COMPLIANT.**
 
 ---
+
+**END PHASE IV**
