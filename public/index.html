@@ -308,29 +308,23 @@
         }
 
         /* 1. The Signal Line (Sidebar Base) */
+        /* REFACTOR: Always visible, non-collapsible */
         #residual-archive {
             position: fixed;
             top: 0;
-            left: 0; /* CHANGED: Left Aligned */
-            width: var(--archive-width);
+            left: 0;
+            width: 320px; /* Always expanded */
             height: 100vh;
-            background: rgba(var(--accent-rgb), 0.1);
-            border-right: 1px solid rgba(var(--accent-rgb), 0.15); /* CHANGED: Border Right */
+            background: rgba(var(--bg-rgb), 0.95);
+            border-right: 1px solid var(--accent);
             z-index: 1500;
-            transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            backdrop-filter: blur(2px);
-        }
-
-        /* Interaction States */
-        #residual-archive:hover, #residual-archive.active {
-            width: var(--archive-expanded);
-            background: rgba(var(--bg-rgb), 0.95);
-            border-right: 1px solid var(--accent); /* CHANGED: Border Right */
-            box-shadow: 10px 0 40px rgba(0,0,0,0.1); /* CHANGED: Shadow direction */
+            backdrop-filter: blur(8px);
+            box-shadow: 4px 0 20px rgba(0,0,0,0.05);
         }
 
         /* 2. The Heartbeat (Resonance Monitor) */
@@ -360,20 +354,16 @@
         /* 3. The Breathing Text (Fragments) */
         .residual-layer {
             padding: 40px 24px;
-            opacity: 0; /* Hidden by default */
+            opacity: 1; /* CHANGED: Visible by default */
             transition: opacity 0.5s ease;
-            pointer-events: none; /* Let clicks pass through unless active */
+            pointer-events: all; /* CHANGED: Always interactive */
             display: flex;
             flex-direction: column;
             gap: 2rem;
             margin-left: 10px; /* Spacer from the signal line */
         }
 
-        #residual-archive:hover .residual-layer,
-        #residual-archive.active .residual-layer {
-            opacity: 1;
-            pointer-events: all;
-        }
+        /* Removed hover states - layer is always visible */
 
         .archive-fragment {
             font-family: var(--font-mono);
@@ -419,6 +409,59 @@
             padding-left: 16px;
             background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.05), transparent);
         }
+        
+        /* --- PHASE 3: Fragment Lifecycle States --- */
+        
+        /* DORMANT: Not in activation band */
+        .archive-fragment.state-dormant {
+            display: none;
+        }
+        
+        /* EMERGING: In band, waiting for stillness */
+        .archive-fragment.state-emerging {
+            opacity: 0.2;
+            filter: blur(6px);
+            transform: translateY(4px) scale(0.98);
+            transition: all 1.5s ease-out;
+        }
+        
+        /* UNSTABLE: Visible but jittery (medium energy) */
+        .archive-fragment.state-unstable {
+            opacity: 0.5;
+            filter: blur(3px);
+            animation: fragmentJitter 0.3s infinite;
+        }
+        
+        @keyframes fragmentJitter {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(-1px, 0.5px); }
+            50% { transform: translate(1px, -0.5px); }
+            75% { transform: translate(-0.5px, 1px); }
+        }
+        
+        /* COHERENT: Stable, readable (low energy + dwell time) */
+        .archive-fragment.state-coherent {
+            opacity: 0.9;
+            filter: blur(0);
+            transform: translateY(0);
+            transition: all 0.8s ease;
+        }
+        
+        /* DECAYING: Leaving band or high energy */
+        .archive-fragment.state-decaying {
+            opacity: 0.1;
+            filter: blur(4px);
+            transform: translateY(-4px) scale(0.96);
+            transition: all 1s ease-in;
+        }
+        
+        /* SILENT: Suppressed by silence window */
+        .archive-fragment.state-silent {
+            opacity: 0;
+            filter: blur(8px);
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
 
         /* 4. Stress/Velocity Reactions */
         #residual-archive.stress-high {
@@ -432,63 +475,54 @@
             background: #ff3333;
         }
 
-        /* 5. Mobile Optimization */
-        /* 5. Mobile Optimization */
+        /* 5. Mobile Optimization - Bottom Bar */
         @media screen and (max-width: 768px) {
             #residual-archive {
+                /* Bottom bar layout */
                 top: auto;
-                bottom: env(safe-area-inset-bottom, 20px);
-                left: 20px;
-                right: auto; 
-                height: 48px;
-                width: 48px; /* Button-like trigger */
-                border-radius: 50%;
-                border: 1px solid var(--accent);
-                background: rgba(var(--bg-rgb), 0.8);
-                backdrop-filter: blur(8px);
-                overflow: hidden; /* Changed from visible to hidden to clip pulsing line */
-                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-                box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-            }
-            
-            #residual-archive.active {
-                width: calc(100% - 40px); /* Full width minus margin */
-                max-width: 320px;
-                height: 50vh;
-                max-height: 500px;
-                bottom: calc(env(safe-area-inset-bottom, 20px) + 60px); /* Pop up above the trigger zone */
-                border-radius: 12px;
-                flex-direction: column;
-                justify-content: flex-end;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 80px;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                border-right: none;
+                border-top: 1px solid var(--accent);
                 background: rgba(var(--bg-rgb), 0.95);
-                border: 1px solid var(--accent);
-                box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+                backdrop-filter: blur(12px);
+                overflow-x: auto;
+                overflow-y: hidden;
+                padding-bottom: env(safe-area-inset-bottom, 0);
             }
 
             .resonance-monitor {
+                /* Horizontal pulse line at top of bar */
                 width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                opacity: 0.2;
-                background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
-                transition: all 0.4s ease;
-            }
-             
-            #residual-archive.active .resonance-monitor {
-                height: 4px; /* Thicker active line */
-                width: 100%;
+                height: 2px;
                 top: 0;
+                left: 0;
                 border-radius: 0;
                 background: var(--accent);
-                opacity: 0.8;
-                box-shadow: 0 2px 10px var(--accent-glow);
+                opacity: 0.3;
             }
             
             .residual-layer {
-                font-size: 0.85rem; /* Slightly larger text for touch */
-                padding: 20px;
+                /* Horizontal fragment scroll */
+                flex-direction: row;
                 gap: 1.5rem;
+                padding: 16px 20px;
                 margin-left: 0;
+                white-space: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            .archive-fragment {
+                display: inline-block;
+                max-width: none;
+                min-width: 120px;
             }
         }
     </style>
@@ -510,7 +544,8 @@
     </nav>
     
     <!-- RESIDUAL ARCHIVE (Second Nervous System) -->
-    <aside id="residual-archive" onclick="toggleArchive()">
+    <!-- WETWARE_MONITOR_v1.3 :: observer_eyes: open -->
+    <aside id="residual-archive">
         <div class="resonance-monitor"></div>
         <div class="residual-layer" id="residual-layer">
             <!-- Fragments inhale here -->
@@ -612,6 +647,12 @@
         document.head.appendChild(style);
 
         const RESIDUAL_DATA = {
+            // --- PHASE 7: Silence Regions (Narrative Intensity) ---
+            silenceRegions: [
+                { start: 0.45, end: 0.55 },  // Chapter 9-10 (The Silence, The Breach)
+                { start: 0.70, end: 0.75 }   // Chapter 12 (The Audit)
+            ],
+            
             // Global Patterns (Layer 2)
             patterns: {
                 factory: ["factory settings: default", "factory settings: enforced", "factory settings: archived", "factory settings: rejected"],
@@ -619,13 +660,14 @@
                 signal: ["signal: searching...", "signal: noise_floor_limit", "signal: pure_black"]
             },
             
-            // Narrative Triggers (Layer 1 & Alignment)
+            // --- PHASE 6: Spatial Fragments (Position-Based) ---
+            // Each fragment has: y_anchor (% of document), activationBand (±range)
             fragments: {
-                // Chapter 1
+                // Chapter 1 (~0-5% of document)
                 'ch1_start': [
-                    { text: "copper taste. / wetware negotiating", layer: 1 },
-                    { text: "optic nerve: / hijacked.", layer: 1 },
-                    { text: "system_boot.log: / forced", layer: 3 }
+                    { text: "copper taste. / wetware negotiating", layer: 1, y_anchor: 0.02, activationBand: 0.03 },
+                    { text: "optic nerve: / hijacked.", layer: 1, y_anchor: 0.03, activationBand: 0.02 },
+                    { text: "system_boot.log: / forced", layer: 3, y_anchor: 0.04, activationBand: 0.02 }
                 ],
                 'nai_intro': [
                     { text: "hardware overwrite", layer: 1 },
@@ -649,10 +691,10 @@
                     { text: "monitor_status: / blinded", layer: 1 }
                 ],
                 
-                // Chapter 2
+                // Chapter 2 (~10% of document)
                 'ch2_start': [
-                    { text: "white / is just / maximum noise", layer: 1 },
-                    { text: "silence / is not / empty", layer: 2 }
+                    { text: "white / is just / maximum noise", layer: 1, y_anchor: 0.10, activationBand: 0.03 },
+                    { text: "silence / is not / empty", layer: 2, y_anchor: 0.11, activationBand: 0.02 }
                 ],
                 'adjutant_voss': [
                     { text: "frictionless / skin", layer: 1 },
@@ -688,16 +730,16 @@
                      { text: "the raw signal / is a scream", layer: 2 }
                 ],
                 
-                 // Chapter 17
+                 // Chapter 17 (~95% of document)
                 'ch17_start': [
-                    { text: "system-free / and / dangerous", layer: 1 }
+                    { text: "system-free / and / dangerous", layer: 1, y_anchor: 0.95, activationBand: 0.03 }
                 ],
                 'void_reveal': [
-                    { text: "I am / the noise.", layer: 2, intensity: 'high' }
+                    { text: "I am / the noise.", layer: 2, intensity: 'high', y_anchor: 0.97, activationBand: 0.02 }
                 ],
                 'hardline_backup': [
-                    { text: "> INITIATE_HARDLINE_BACKUP", layer: 3, interactive: true, action: 'backup' },
-                    { text: "[DOWNLOAD_CACHE]", layer: 3, interactive: true, action: 'backup' }
+                    { text: "> INITIATE_HARDLINE_BACKUP", layer: 3, interactive: true, action: 'backup', y_anchor: 0.98, activationBand: 0.10 },
+                    { text: "[DOWNLOAD_CACHE]", layer: 3, interactive: true, action: 'backup', y_anchor: 0.98, activationBand: 0.10 }
                 ],
                 
                 // Missing Keys
@@ -724,12 +766,43 @@
         /* --- RESONANCE SYSTEM CONTROLLER --- */
         class ResonanceSystem {
             constructor() {
-                this.stress = 0; // 0.0 to 1.0
-                this.basePulse = 2000; // ms
+                // --- PHASE 1: Reader State Model ---
                 this.lastScrollY = window.scrollY;
                 this.scrollVelocity = 0;
+                this.scrollDirection = 0; // -1 up, 1 down, 0 still
+                this.velocityHistory = []; // Rolling 3s window
+                this.velocityWindowSize = 30; // ~3s at 60fps scroll events
+                this.scrollVariance = 0; // σ_scroll
+                this.scrollEnergy = 0; // |v| × σ
+                this.stillnessTimer = 0; // ms since last scroll
+                this.lastScrollTime = Date.now();
+                
+                // --- PHASE 6: Spatial Tracking ---
+                this.scrollPercent = 0; // Current position in document (0.0 to 1.0)
+                this.documentHeight = 0;
+                this.viewportHeight = 0;
+                
+                // --- PHASE 7: Agitation Detection ---
+                this.directionChanges = []; // Track direction flip timestamps
+                this.agitationThreshold = 3; // Direction flips in 2s = agitated
+                
+                // --- PHASE 2: Energy Thresholds ---
+                this.ENERGY_HIGH = 150;  // Silence mode
+                this.ENERGY_MEDIUM = 50; // Unstable fragments
+                this.ENERGY_LOW = 10;    // Stable fragments
+                this.silenceMode = false;
+                this.narrativeSilence = false; // Silence window active
+                this.agitationSilence = false; // Reader agitated
+                
+                // Legacy (will phase out)
+                this.stress = 0;
+                this.basePulse = 1000; // Changed to ~60 BPM (spec)
                 this.isResting = true;
                 this.restTimer = null;
+                
+                // --- PHASE 6: Active Fragments ---
+                this.activeFragments = new Set(); // Track which are in range
+                this.fragmentElements = new Map(); // element -> fragment data
                 
                 // DOM Elements
                 this.archive = document.getElementById('residual-archive');
@@ -742,9 +815,7 @@
             init() {
                 this.startHeartbeat();
                 this.monitorScroll();
-                this.setupTriggers();
-                
-                // Initial Baseline removed to let ch1_start take over
+                this.setupSpatialTriggers(); // PHASE 6: Position-based
             }
             
             initiateHardlineBackup() {
@@ -790,38 +861,95 @@
                 tick();
             }
 
-            /* --- 2. Scroll Monitoring --- */
+            /* --- 2. Scroll Monitoring (PHASE 1 REFACTOR) --- */
             monitorScroll() {
                 window.addEventListener('scroll', () => {
+                    const now = Date.now();
                     const currentY = window.scrollY;
-                    const delta = Math.abs(currentY - this.lastScrollY);
+                    const delta = currentY - this.lastScrollY;
                     
-                    // Calculate Velocity (pixels per frame approx)
-                    this.scrollVelocity = delta;
+                    // --- PHASE 6: Calculate Scroll Position % ---
+                    this.documentHeight = document.documentElement.scrollHeight;
+                    this.viewportHeight = document.documentElement.clientHeight;
+                    const scrollableHeight = this.documentHeight - this.viewportHeight;
+                    this.scrollPercent = scrollableHeight > 0 ? currentY / scrollableHeight : 0;
                     
-                    // Add Stress based on velocity
-                    if (this.scrollVelocity > 50) {
-                        this.stress = Math.min(1.0, this.stress + 0.05);
-                        this.isResting = false;
-                        if (this.layer) this.layer.style.opacity = '0'; // Hide text during chaos
-                    } else {
-                        if (this.layer) this.layer.style.opacity = '1';
+                    // --- Scroll Direction ---
+                    const oldDirection = this.scrollDirection;
+                    this.scrollDirection = delta > 0 ? 1 : (delta < 0 ? -1 : 0);
+                    
+                    // --- PHASE 7: Detect Direction Changes (Agitation) ---
+                    if (oldDirection !== 0 && this.scrollDirection !== 0 && oldDirection !== this.scrollDirection) {
+                        this.directionChanges.push(now);
+                        // Keep only last 2s of changes
+                        this.directionChanges = this.directionChanges.filter(t => now - t < 2000);
                     }
-
-                    // Detect Rest
+                    
+                    // Agitation = rapid direction flips
+                    this.agitationSilence = this.directionChanges.length >= this.agitationThreshold;
+                    
+                    // --- Velocity (pixels/ms normalized) ---
+                    const timeDelta = now - this.lastScrollTime;
+                    this.scrollVelocity = timeDelta > 0 ? Math.abs(delta) / timeDelta * 16 : 0; // Normalize to ~60fps
+                    
+                    // --- Velocity History (Rolling Window) ---
+                    this.velocityHistory.push(this.scrollVelocity);
+                    if (this.velocityHistory.length > this.velocityWindowSize) {
+                        this.velocityHistory.shift();
+                    }
+                    
+                    // --- Scroll Variance (σ_scroll) ---
+                    const mean = this.velocityHistory.reduce((a, b) => a + b, 0) / this.velocityHistory.length;
+                    const squaredDiffs = this.velocityHistory.map(v => Math.pow(v - mean, 2));
+                    this.scrollVariance = Math.sqrt(squaredDiffs.reduce((a, b) => a + b, 0) / this.velocityHistory.length);
+                    
+                    // --- Scroll Energy (|v| × σ) ---
+                    this.scrollEnergy = this.scrollVelocity * this.scrollVariance;
+                    
+                    // --- PHASE 7: Narrative Silence Windows ---
+                    this.narrativeSilence = RESIDUAL_DATA.silenceRegions.some(
+                        region => this.scrollPercent >= region.start && this.scrollPercent <= region.end
+                    );
+                    
+                    // --- Silence Mode Detection (PHASE 2 + 7) ---
+                    this.silenceMode = this.scrollEnergy > this.ENERGY_HIGH || this.narrativeSilence || this.agitationSilence;
+                    
+                    // --- Layer Visibility (Silence Gating) ---
+                    if (this.layer) {
+                        if (this.silenceMode) {
+                            this.layer.style.opacity = '0';
+                            this.layer.style.pointerEvents = 'none';
+                        } else {
+                            this.layer.style.opacity = '1';
+                            this.layer.style.pointerEvents = 'all';
+                        }
+                    }
+                    
+                    // --- PHASE 6: Check Spatial Activation ---
+                    this.checkSpatialActivation();
+                    
+                    // --- Stillness Timer Reset ---
+                    this.stillnessTimer = 0;
                     clearTimeout(this.restTimer);
                     this.restTimer = setTimeout(() => {
                         this.isResting = true;
-                        this.stress = Math.max(0, this.stress - 0.2); // Quick recovery on rest
                         if (this.monitor) {
                             this.monitor.classList.remove('active');
-                            void this.monitor.offsetWidth; // Trigger reflow
-                            this.monitor.classList.add('active'); // Sync heartbeat to rest
+                            void this.monitor.offsetWidth;
+                            this.monitor.classList.add('active');
                         }
                     }, 200);
 
                     this.lastScrollY = currentY;
+                    this.lastScrollTime = now;
                 }, { passive: true });
+                
+                // --- Stillness Accumulator ---
+                setInterval(() => {
+                    if (this.isResting) {
+                        this.stillnessTimer += 100;
+                    }
+                }, 100);
             }
 
             /* --- 3. Fragment Logic --- */
@@ -873,43 +1001,115 @@
                 this.lastFragmentText = data.text;
             }
 
+            /* --- PHASE 3-5: Fragment State Machine + Lock Events --- */
             inhaleFragment(text, layer = 1, metadata = {}) {
                 if (!this.layer) return;
 
-                // GHOSTING (Palimpsest): Fade out old fragments, don't delete immediately
+                // Check silence mode
+                if (this.silenceMode) {
+                    return; // Suppress fragment entirely during high energy
+                }
+
+                // GHOSTING (Palimpsest): Mark old fragments as ghosts
                 const oldFragments = Array.from(this.layer.children);
                 oldFragments.forEach(child => {
                     child.classList.add('ghost');
-                    // Remove very old ghosts to keep DOM clean
-                    if (oldFragments.length > 3) {
-                       this.layer.removeChild(oldFragments[0]);
-                    }
+                    child.classList.remove('state-coherent',  'state-unstable', 'state-emerging');
+                    child.classList.add('state-decaying');
                 });
+                
+                // Remove very old ghosts (keep max 3)
+                if (oldFragments.length > 3) {
+                   this.layer.removeChild(oldFragments[0]);
+                }
                 
                 const el = document.createElement('div');
                 el.className = 'archive-fragment';
                 el.dataset.layer = layer;
                 el.textContent = text;
                 
+                // --- PHASE 3: Initial State (EMERGING) ---
+                el.classList.add('state-emerging');
+                el.dataset.state = 'emerging';
+                el.dataset.dwellTime = '0';
+                
+                // --- PHASE 4: Dwell Time Tracking ---
+                const updateCoherence = () => {
+                    const dwell = parseInt(el.dataset.dwellTime || '0');
+                    const newDwell = this.isResting ? dwell + 100 : 0; // Reset on scroll
+                    el.dataset.dwellTime = newDwell;
+                    
+                    // State transitions based on energy + dwell
+                    if (this.silenceMode) {
+                        el.dataset.state = 'silent';
+                    } else if (newDwell > 2000 && this.scrollEnergy < this.ENERGY_LOW) {
+                        // COHERENT: Low energy + 2s stillness
+                        el.dataset.state = 'coherent';
+                    } else if (this.scrollEnergy > this.ENERGY_MEDIUM) {
+                        // UNSTABLE: Medium/high energy
+                        el.dataset.state = 'unstable';
+                    } else if (newDwell > 500) {
+                        // EMERGING → UNSTABLE transition
+                        el.dataset.state = 'unstable';
+                    }
+                    
+                    // Apply CSS state class
+                    el.className = 'archive-fragment';
+                    el.classList.add(`state-${el.dataset.state}`);
+                };
+                
+                // Update coherence every 100ms
+                const coherenceInterval = setInterval(updateCoherence, 100);
+                el.dataset.coherenceInterval = coherenceInterval;
+                
+                // --- PHASE 5: Lock Events (Click Handler) ---
                 if (metadata.interactive) {
                     el.style.cursor = 'pointer';
                     el.style.textDecoration = 'underline';
                     el.style.color = 'var(--accent)';
+                    
                     if (metadata.action === 'backup') {
                         el.onclick = (e) => {
                             e.stopPropagation();
                             this.initiateHardlineBackup();
                         };
+                    } else {
+                        // Default: Lock Event
+                        el.onclick = (e) => {
+                            e.stopPropagation();
+                            this.lockFragment(el);
+                        };
                     }
+                } else {
+                    // Non-interactive fragments can still be locked
+                    el.onclick = (e) => {
+                        e.stopPropagation();
+                        this.lockFragment(el);
+                    };
                 }
                 
                 this.layer.appendChild(el);
+            }
+            
+            /* --- PHASE 5: Lock Event Handler --- */
+            lockFragment(el) {
+                // <!-- pulse_sync: ATTEMPTING -->
                 
-                // Trigger Reflow
-                void el.offsetWidth;
+                // Snap to full coherence
+                el.classList.remove('state-emerging', 'state-unstable', 'state-decaying', 'state-silent');
+                el.classList.add('state-coherent', 'locked');
+                el.dataset.state = 'coherent';
                 
-                // Inhale
-                el.classList.add('inhale');
+                // Sync pulse rate (heartbeat aligns)
+                const originalPulse = document.documentElement.style.getPropertyValue('--pulse-rate');
+                document.documentElement.style.setProperty('--pulse-rate', '800ms'); // Speed up
+                
+                // Hold for 2 seconds
+                setTimeout(() => {
+                    el.classList.remove('locked');
+                    document.documentElement.style.setProperty('--pulse-rate', originalPulse || '1000ms');
+                    // <!-- pulse_sync: RELEASED -->
+                }, 2000);
             }
         }
         
@@ -946,7 +1146,19 @@
 <header class="title-page">
     <h1>KEEPING TIME</h1>
     <div class="subtitle">VOLUME 1: THE IMPULSE</div>
-    <p>By the Architect</p>
+    <p style="font-family: var(--font-mono); font-size: 0.9rem; letter-spacing: 0.3em; margin-top: 32px;">
+        <span style="opacity: 0.4; text-decoration: line-through;">By the Architect</span>
+        <br>
+        <span style="color: var(--accent); font-weight: bold; animation: glitch 3s infinite;">> OVERRIDE: TheDonCipher</span>
+    </p>
+    <style>
+        @keyframes glitch {
+            0%, 90%, 100% { transform: translate(0); opacity: 1; }
+            92% { transform: translate(-2px, 1px); opacity: 0.8; }
+            94% { transform: translate(2px, -1px); opacity: 0.9; }
+            96% { transform: translate(-1px, 2px); opacity: 0.85; }
+        }
+    </style>
     </header>
     <!-- TABLE OF CONTENTS (Legacy Hidden) -->
     <div style="display:none;">
