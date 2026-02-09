@@ -102,10 +102,33 @@ He closed his eyes. He focused on the itch in his brain. The pressure behind his
 
 He gritted his teeth and pushed.
 
-**> DRIVER_OVERRIDE: INITIATED**
-**> SAFETY_LIMITERS: DISENGAGED**
+Immediately, the collar around his neck woke up.
 
-He felt a tear. A rip in the fabric of his self-perception.
+**> WARNING: UNAUTHORIZED_OSCILLATION**
+**> PROTOCOL: SHOCK_THERAPY [MAX]**
+
+*ZAP.*
+
+A bolt of white-hot agony shot into his spine. Taro fell to his knees, gasping. The Voss-Link was doing its job—punishing deviation with electricity.
+
+"Don't fight it!" the Amplifier-Guy shouted. "If the collar triggers, it'll fry your cortex!"
+
+Taro smelled burning skin. The pain was blinding. The System was telling him to stop. To be quiet.
+
+But the "Wrongness" inside him... it didn't shrink from the pain.
+
+It hissed.
+
+It was hungry.
+
+Taro felt the Void in his chest turn toward the collar. It drank the electricity. It swallowed the shock.
+
+**> ERROR: ENERGY_DRAIN_DETECTED**
+**> SOURCE: INTERNAL_SINK**
+
+The collar whined, then died with a sharp *click*.
+
+Taro stood up. The pain was gone. The only thing left was the silence.
 
 The "Cadet Taro" hull peeled away like wet paper.
 
@@ -155,6 +178,24 @@ He felt necessary.
 
 **> SYSTEM_STATUS: RESONANCE_ACCEPTED**
 **> HULL_TYPE: NULL_VOID [UNIQUE]**
+
+---
+
+
+
+Taro reached up and touched the dead collar around his neck. It was cold. Lifeless. Just a piece of plastic now.
+
+He thought of the apartment in Sector 7. The red text on his HUD. *Threat Level: Elevated.*
+
+"Mom," he whispered to the dark.
+
+He clenched his fist. The Void rippled around his fingers, eager. Waiting.
+
+"I'm coming for you."
+
+He looked at Elara. He looked at the crowd of glitches.
+
+"And I'm bringing the noise."
 
 ---
 

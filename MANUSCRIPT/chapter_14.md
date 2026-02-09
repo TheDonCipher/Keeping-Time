@@ -176,6 +176,72 @@ And underneath it all, the hissing, popping, grinding noise of a system that was
 
 "I think," Taro whispered, leaning in so close his Static Aura crackled against the table. "I think... zzt... that the Silence isn't just outside the walls anymore. It's broadband now. It's inside the house."
 
+
+
+He pushed his tray away. The grey nutrient block was untouched.
+
+He needed to hear a human voice. A real one. Not these high-fidelity simulations of students.
+
+He pulled up his comms menu. His fingers hesitated over the contact list.
+
+**> CONTACT: NISHIMURA_YUMI [MOTHER]**
+**> STATUS: OFFLINE [LAST_SEEN: 3_WEEKS_AGO]**
+
+He pressed call.
+
+The line rang. Once. Twice.
+
+Then, a click.
+
+But it wasn't his mother.
+
+**> ALERT: COMMS_INTERCEPT [ACTIVE]**
+**> MONITOR: ADJUTANT_KRELL**
+
+A text window scrolled across his vision, overriding the call interface. The font was heavy, blocky red.
+
+**"Compliance Check: Passed. Subject is attempting authorized contact. Note: Any deviation from Standard Pitch during this call will result in immediate audit of the recipient."**
+
+Taro froze.
+
+*Audit of the recipient.*
+
+If he stuttered... they would hurt her.
+
+If he sounded "glitchy"... Krell would pay her a visit.
+
+The ringing stopped. The line connected.
+
+"Taro?" Her voice was tinny, compressed. She was calling from the Low-Fi sector. "Is that you? I haven't heard from you in..."
+
+Taro's throat tightened. He wanted to scream. He wanted to tell her about the Void. About the Patch. About Voss.
+
+But the red text was still scrolling.
+
+**> THREAT_LEVEL: ELEVATED**
+**> TARGETING: SECTOR_7_APARTMENT_4B**
+
+They had her location locked.
+
+"I'm fine, Mom," Taro said. His voice was perfect. Smooth. Dead. "Just studying hard. The new curriculum is... it's great. Everything is great."
+
+"Oh," she sounded relieved, but also confused. "You sound... different, honey. You sound so... grown up."
+
+"Yeah," Taro said. A single, perfect tear rolled down his cheek. The system didn't flag it. Tears were silent. "I finally found my rhythm. I have to go. Class is starting."
+
+"Okay. Be safe. I love—"
+
+He cut the line.
+
+He couldn't listen to her say it. Not while Krell was listening.
+
+He stared at the black screen.
+
+The collar around his neck hummed.
+
+It wasn't just a leash. It was a noose. And it was around her neck too.
+
+
 **> ALERT: PATTERN_MATCH**
 **> ANOMALY_DETECTED: INTERNAL**
 

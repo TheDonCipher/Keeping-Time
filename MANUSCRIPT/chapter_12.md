@@ -12,12 +12,16 @@
 
 ### [TIME: 08:00:00] THE DEBUGGING SUITE
 
-Taro woke up strapped to a table.
+Taro woke up screaming.
 
-It wasn't a bed. A bed implies comfort. This was a **Diagnostic Slab**. A cold, white, composite surface designed to facilitate maximum data throughput from the subject's nervous system.
+But the scream didn't leave his throat. It hit a hard limit, censored by the software running in his neck.
 
-The room was aggressively High-Fidelity.
-The walls were a perfect, seamless white. The lighting was shadowless, emanating from everywhere at once. It smelled of absolutely nothing—a sterile void of olfactory data.
+**> OUTPUT: FLAGGED [EXCESSIVE_VOLUME]**
+**> ACTION: MUTE**
+
+He was strapped to a table.
+
+It wasn't a bed. A bed implies comfort. This was a **Diagnostic Slab**. A cold, white, composite surface designed to facilitate maximum data throughput from the subject's nervous system. The room was aggressively High-Fidelity. The walls were a perfect, seamless white. The lighting was shadowless, emanating from everywhere at once. It smelled of absolutely nothing—a sterile void of olfactory data.
 
 **> RESTRAINTS: CLASS_5 [BIOMETRIC_LOCK]**
 **> MASKING_FIELD: ACTIVE**
@@ -26,95 +30,179 @@ Taro tried to move his hands. The restraints didn't bulge. They weren't just phy
 
 "Subject is online," a voice said.
 
-It was a voice devoid of jitter. A pure Sine Wave.
+It wasn't the smooth, polished voice of a Calibrator. It was the flat, grinding tone of a heavy-duty server fan.
+
 Taro turned his head.
 
-Standing over him was Headmaster Kael Voss.
-He wasn't wearing his usual administrative robes. He was wearing a white, clinical "Debugger" suit. His face was obscured by a holographic visor streaming rapid-fire data.
+A man stood over him. He was massive—a wall of black tactical armor that seemed to absorb the light of the room. He wore the full-face helmet of the C-Order Vanguard, but customized. The visor wasn't the standard blue. It was a deep, angry red.
 
-"Head-Headmaster," Taro stammered. His voice felt thin. Weak. "Where... where am I?"
+**> ID: ADJUTANT_KRELL [THE_ENFORCER]**
+**> THREAT: LETHAL**
+**> AUTHORITY: UNCHECKED**
 
-"You are in the Kernel," Voss said, not looking at him. He was manipulating a floating holographic display that showed a complex, jagged waveform. "Or rather, your data is. Your physical shell is in Medical Wing 4."
+Krell didn't look at Taro. He looked at a floating holographic display that showed a diagram of Taro's nervous system. Parts of it were flashing red.
 
-Voss swiped a hand through the hologram.
-It was Taro's soul.
-Or at least, the digital representation of it. A screaming, chaotic mess of red and yellow spikes.
+"Neural pathways are scorched," Krell noted, tapping the air. "He ran at 300% capacity for seven minutes. His myelin sheaths are stripped. He should be dead."
 
-"Look at this," Voss said, his tone one of professional disappointment. "This is your log from the Twilight Band. Do you know what this looks like to a system administrator?"
+"I'm... I'm not dead," Taro rasped.
 
-Taro stared at the jagged line. "It looks... loud."
+Krell looked down. The red visor stared blankly.
 
-"It looks like a virus," Voss corrected. "It looks like code injection. You didn't just break your limiter, Nishimura. You overwrote the local physics engine for three city blocks. We had to roll back the server state to a backup from 12 hours ago just to fix the pavement."
+"Correction: You are not *deleted*. Yet. Death is a biological failure. Deletion is an administrative one. We are determining which category you fall into."
 
-Voss tapped a key.
-*PING.*
+Krell reached out. His gauntleted hand grabbed Taro's jaw, forcing his head back. A small, needle-thin probe extended from the fingertip.
 
-Pain shot through Taro's head. A sharp, digital spike.
-**> ALERT: ADMIN_ACCESS [FORCED]**
+"Open."
 
-"Stop!" Taro gasped.
+"What—?"
 
-"I am auditing your drivers," Voss said calmly. "I need to see where the corruption is rooted. Is it hardware? Or is it user error?"
+Krell didn't wait. He shoved the probe into Taro's mouth, piercing the gum line. It hit the bone.
 
-He tapped again.
-*PING.*
+*CRACK.*
 
-Memories flashed in Taro's mind. The alleyway. The Silence. The scream.
-But viewed through Voss's filter, they looked different.
-The scream wasn't heroic. It was ugly. A tear in the beautiful tapestry of the world.
+Taro convulsed against the straps. A jolt of pure white electricity shot through his jaw and into his skull.
 
-"You are dangerous," Voss stated. "Not because you are strong. But because you are incompatible. You are a fatal error waiting to happen."
+**> ALERT: PAIN_THRESHOLD_EXCEEDED**
+**> DIAGNOSTIC: BONE_CONDUCTION_TEST**
 
-"They were going to kill us," Taro argued, his voice gaining a little gain. "The Silence... they were erasing us! I saved Hana! I saved Ven!"
+"Resonance test," Krell muttered, watching the display. "He conducted that scream through his own skeleton. The bone density is altered. High-frequency calcification. He's been doing this for years."
 
-"You damaged a Prefect's resonance core," Voss countered. "Hana Chord is currently in defragmentation therapy. She may never recall the color blue correctly again. And Ven? Ven is currently overheating in a cooling tank because you used him as a grounding wire for illegal voltage."
+He pulled the probe out. Taro gasped, tasting blood. Metallic. Real.
 
-Taro froze.
-"Are they...?"
+"Please," Taro choked out. "I saved them. The Silence... they were going to erase us."
 
-"They are damaged. Because of you."
+"Irrelevant," Krell said. "You introduced unauthorized noise into a secure sector. You shattered the local coherence. Do you know the energy cost of re-rendering three city blocks?"
 
-Voss stepped closer. The holographic visor vanished, revealing his eyes.
-They were perfect. Golden. Terrifyingly calm.
+Krell leaned in. The red light of his visor bathed Taro's face.
 
-"We cannot allow a Variable like you to run unchecked, Nishimura. You are a threat to the stability of the Concord. Standard protocol would be deletion."
+"Heroes follow the script, Nishimura. You improvised. That makes you a villain."
 
-Taro's heart hammered.
-**> THREAT: TERMINATION**
+He raised his hand again. The gauntlet hummed with a low, menacing frequency. A **Bass Driver**. It was designed to shatter kidney stones—or kidneys.
 
-"But," Voss continued, "Standard Protocol failed to predict you. Which means the System has a blind spot. And I do not like blind spots."
+"Let's see percussive tolerance," Krell said.
 
-He reached into his pocket and pulled out a small, black chip.
-It didn't glow. It looked like matte-black void glass.
+"That's enough, Adjutant."
+
+The voice stopped Krell mid-swing.
+
+It was soft. Cultured. Perfect.
+
+The door slid open. Headmaster Kael Voss walked in. He wasn't wearing armor. He wore his pristine white robes, unblemished by the chaos of the world.
+
+Krell straightened up. "Sir. Primary audit is incomplete. The subject is resilient."
+
+"The subject is fragile," Voss corrected, walking to the table. "And valuable. Broken toys are useless to me, Krell. Step outside."
+
+Krell hesitated, then saluted. He marched out, the heavy thud of his boots shaking the floor.
+
+The door hissed shut.
+
+Silence returned. But it wasn't the heavy silence of Krell's threat. It was a suffocating, sterile silence.
+
+"Taro," Voss said gently. He looked like a disappointed father.
+
+"Headmaster," Taro whispered. "I didn't mean to."
+
+"I know," Voss said. He pulled up a chair and sat down. "That is the problem. Intent is irrelevant to the System. The System processes *output*."
+
+Voss swiped his hand through the air. A hologram appeared—a replay of the alleyway fight. Taro saw himself throwing the brick. He saw the chaotic wave. He saw the Silence agents recoil.
+
+"You see this?" Voss pointed to the jagged red waveform Taro had created. "This is not music. This is a virus."
+
+"It worked," Taro argued weakly. "It stopped them."
+
+"It stopped them by breaking the rules of physics," Voss said. "You bypassed the render engine. You forced the server to process raw, analog reality. Do you know what happens when a program runs unauthorized code?"
+
+Taro shook his head.
+
+"It crashes," Voss said. "And when the Server crashes, everyone dies. Not just you. Hana. Ven. Every citizen in Unison who relies on the NAI to pump their hearts and regulate their breathing. You risked millions to save three."
+
+Taro felt cold. He hadn't thought about the grid. He just wanted to survive.
+
+"You are dangerous," Voss continued. "Not because you are malicious. But because you are *incompatible*. You vibrate at a frequency that tears the world apart."
+
+Voss leaned forward. His golden eyes locked onto Taro's.
+
+"We cannot allow a Variable like you to run unchecked. Standard protocol is deletion."
+
+Taro flinched.
+
+"But," Voss said, "I am a merciful administrator. And I hate wasting potential."
+
+He reached into his robe and pulled out a small, black chip. It didn't reflect light. It looked like a piece of the Void itself.
 
 "What is that?"
 
-"A Patch," Voss said. "A limiter update. Custom-written for your... unique architecture. It will not just cap your output. It will regulate your waveform. It will force you into phase-alignment with the C-Order."
+"The Patch," Voss said. "Version 2.0. Custom-written for your... unique architecture."
+
+"A limiter?"
+
+"An optimizer. It will filter out the noise. It will harmonise your signal with the C-Order. You won't feel the need to scream anymore. You won't feel the itch of the High Register. You will just be... content."
 
 "You're going to lobotomize me," Taro whispered.
 
-"I am going to fix you," Voss said. "I am going to make you compatible. You will still be Taro Nishimura. You will just be... quieter. Safer. Happier."
+"I am going to save you," Voss corrected. "And your friends."
 
-He held the chip over Taro's NAI port—the socket at the base of his skull.
+He tapped the table. A video feed appeared.
 
-"This is not a request," Voss said. "This is a mandatory update."
+Hana was in a medical tank, floating in blue fluid. Her skin was pale. Her eyes were vacant.
 
-"No!" Taro struggled against the restraints. "I don't want it! I don't want to be quiet!"
+"Hana Chord is currently in critical condition," Voss said. "Her resonance core was shattered by your little stunt. She requires a high-level system restore. Expensive. Complex."
 
-"Chaos never does," Voss said softly.
+The feed switched. Ven was in a containment cell, shivering. Frost covered his armor.
 
-He pressed the chip into the port.
-*CLICK.*
+"And Ven? He's awaiting trial for unauthorized use of force. The penalty is Reformatting. Memory wipe. Personality reset. He will be a drone."
 
-Taro screamed.
-This time, there was no sound.
-The world went white.
-Golden white.
-Perfect.
-Silent.
+Taro struggled against the straps. "No! It was my fault!"
 
-**> SYSTEM_UPDATE: INSTALLING... [1%]**
-**> PROGRESS: IRREVERSIBLE.**
+"Exactly," Voss said. He held up the chip.
+
+"Accept the Patch, Taro. Voluntarily. Integrate with the System. If you do, I will authorize Hana's treatment. I will pardon Ven. They will return to class tomorrow as if nothing happened."
+
+"And if I refuse?"
+
+"Then I delete you," Voss said simply. "And I let nature take its course with them."
+
+The room was silent.
+
+The threat wasn't angry. It was just math. An If/Then statement.
+
+Taro looked at the chip. It was small. Dark. Permanent.
+
+He looked at Hana floating in the tank.
+
+He looked at Ven shivering in the cold.
+
+He closed his eyes.
+
+"Do it," he whispered.
+
+"I need a verbal confirmation," Voss said. "State your intent."
+
+"I accept the update," Taro said, his voice breaking. "Just... save them."
+
+"Good choice," Voss said.
+
+He pressed the chip into the port at the base of Taro's neck.
+
+It didn't hurt.
+
+It felt like ice water pouring into his brain.
+
+The screaming in his head—the constant, jagged noise of his own thoughts—suddenly stopped. It was cut off, like a wire being snipped.
+
+The fear vanished.  
+The anger vanished.  
+The guilt vanished.
+
+**> SYSTEM_UPDATE: INSTALLING... [100%]**
+**> OPTIMIZATION: COMPLETE**
+**> WELCOME_BACK_USER**
+
+Taro opened his eyes.
+
+The world was white.  
+And for the first time in his life, it was quiet.
 
 ---
 

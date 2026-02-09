@@ -1,5 +1,5 @@
 # KEEPING TIME
-## Chapter 11: The Blue Screen
+## Chapter 11: Safe Mode
 
 ---
 
@@ -10,158 +10,141 @@
 
 ---
 
-### [TIME: UNKNOWN] THE VOID
+### [TIME: UNKNOWN] THE WIRE
 
 There was no up. There was no down.
 There was only Noise.
 
 Taro tried to scream, but "screaming" was a concept that required a medium, and the medium was gone. The air wasn't air anymore; it was a pressurized static that tasted like aluminum and dead batteries.
 
-He was falling through the architecture of the world. 
-Or maybe the world was falling through him.
+The world was ending. Or loading. Or both.
+
+**> ERROR: GEOMETRY_ENGINE [OFFLINE]**
+**> ERROR: NO_SIGNAL**
+
+He was falling through the architecture of reality.  
+Or maybe reality was falling through him.
 
 Without the NAI to render the geometry of the alleyway, the brick walls were just meaningless data points. They didn't look like walls. They looked like jagged tears in the fabric of his perception. The ground wasn't solid; it was a vibrating field of unorganized molecular probability—an analog nightmare of raw, unindexed matter.
 
-He hit it.
+He hit it.  
 *CRASH.*
 
-Pain.
-Pain was real. Pain didn't need a driver.
+Pain.  
+Pain was real. Pain didn't need a driver.  
 It exploded up his spine, a raw, analog signal that bypassed every filter he had.
 
 **> ERROR: PAIN_RECEPTORS [OVERLOAD]**
-**> ERROR: NO_SIGNAL**
+**> ACTION: EMERGENCY_PROTOCOL**
 
-He scrambled backward, his hands clawing at... something. It felt wet. It felt gritty.
-Mud?
-Or just un-rendered texture data?
+And then—
 
-"Ven!" he choked out. 
+Silence.
 
-His own voice sounded wrong. Without the auto-tune of the NAI, without the real-time acoustic processing, it was thin and wet and pathetic. It didn't resonate. It was all noise, no signal. It just fell out of his mouth and died in the heavy, dampened air.
+Not the screaming void-silence of the alley.  
+A different silence. Heavy. Compressed.  
+The silence of a system powering down to bare minimum.
 
-He opened his eyes.
-He wished he hadn't.
+Taro opened his eyes.
 
-The world was a nightmare of abstract shapes.
-There were no colors, only intensities of radiation.
-To his left, a towering pillar of violent, swirling heat—Ven.
-To his right, a fading smear of biological movement—Hana.
+The world had stopped melting. But it was wrong. Fundamentally wrong.
 
-And above them...
-The Sky.
+He was lying on a flat, grey plane. The texture was pure wireframe. No color. No material properties. Just geometry. The walls around him were rendered in blue outline, like the schematics of a building that didn't exist yet. The sky was a flat, cyan grid stretching to infinity.
 
-It wasn't the golden dome of Sector 4.
-It wasn't a grey rainy day, either.
-It was a screaming abyss. A hole in the universe where the data stream simply *stopped*. It was the color of a television tuned to a dead channel. It was the color of madness.
-
-*Coherence is Safety.* 
-
-Voss's voice echoed in his memory, a high-fidelity ghost. *The System protects you from the Raw. It manages your capacity so you don't peak and shatter.*
-
-"Help," Taro whispered.
-The word had no shape.
-
-He felt something grab him.
-The heat-pillar. Ven.
-Ven's hands were hot, burning through Taro's jacket. But they were solid. They were an anchor in the static. A low-frequency carrier wave for his failing mind.
-
-"Taro! Breathe! Handshake with me!"
-
-Ven's voice was distorted, like audio playing through a blown-out speaker. It was clipping, full of digital artifacts and stuttering lag.
-
-Taro gasped, sucking in the wet, metallic air.
-His chest heaved.
-Everything was spinning. The non-Euclidean angles of the un-rendered buildings were making him nauseous. His brain couldn't process the lack of edges. It kept trying to draw lines where there were none, resulting in blinding headaches.
-
-**> SYSTEM_RESET: ATTEMPTING...**
-**> BOOT_SEQUENCE: FAILED**
-**> RETRY? [Y/N]**
-
-"Come on," Ven roared. "Don't you crash on me! Reboot, damn you!"
-
-Taro squeezed his eyes shut.
-The visual noise was too much.
-He focused on the feeling of Ven's grip. The heat. The pressure.
-A constant.
-A frequency.
-
-*Ven is a low E-flat,* Taro thought. *Steady. Heavy. Grounded.*
-
-He latched onto that thought. He visualized the note.
-He couldn't see the grid, so he had to build one.
-Internal clock. Inner ear.
-*One, two, three, four.*
-
-His heart hammered against his ribs.
-*BPM: 160.*
-*Drop it.*
-*BPM: 150.*
-
-**> BIOS: DETECTED**
 **> SAFE_MODE: ENGAGED**
+**> RESOLUTION: 180p**
+**> TEXTURES: DISABLED**
+**> PHYSICS: BASIC**
 
-A flicker of blue light ignited in the darkness behind his eyelids.
-Not the gold of the C-Order.
-The cold, sterile blue of the BIOS.
+It was [[Safe Mode::An emergency NAI protocol that renders the world in basic wireframe polygons to save processing power, stripping high-fidelity textures.]]
 
-**> LOADING: BASIC_GEOMETRY... [OK]**
-**> LOADING: GRAVITY_CONSTANTS... [OK]**
-**> LOADING: AUDIO_FILTERS... [PARTIAL]**
+And it was terrifying.
 
-It was [[Safe Mode::An emergency NAI protocol that renders the world in basic wireframe polygons to save processing power, stripping high-fidelity textures.]] .
-Taro opened his eyes again.
-The world had stopped melting.
-It looked terrible—like a low-resolution wireframe render from a century-old simulation—but it was *stable*.
-The buildings had edges again (sharp, jagged, pixelated edges).
-The ground was a flat grey plane with a grid texture.
-And the sky...
+Because Taro could *feel* the wrongness. Time moved differently here. Every breath took an eternity. The lag between intent and action was measured in stuttering microseconds that felt like hours. When he blinked, the world froze. When he breathed, the framerate dipped.
 
-The sky was a wall of blue static.
-**[TEXTURE_MISSING]**
+He tried to sit up.
 
-It was [[Texture Loss::A phenomenon where surface reality fails to render, potentially causing 'Logic Drift' and hallucinations in unadjusted users.]] .
+His body was wireframe too. Just a skeletal mesh of glowing blue edges. His hands—his hands were just vertex points and edge loops. He looked like a blueprint. A diagram. A thing that existed only as a theoretical possibility.
 
-"Taro?"
-Ven's face resolved out of the heat-haze. He looked like a low-poly model, his features angular and sharp. He was terrified.
+"Ven?" he whispered.
 
-"I'm... online," Taro rasped. 
+His voice had no echo. It fell flat against the wireframe walls and died.
 
-"You're in Safe Mode," Ven said, checking a display that Taro couldn't see. "Your output is capped at 5%. Your resolution is garbage. You're hitching just by blinking."
+No. Wait.
 
-"I can see," Taro said. He looked at his hands. They were wireframe meshes. "Everything looks like a diagram. The textures aren't loading, but the physics is... it's holding."
+There was a sound.
 
-"Better than the Void," Ven muttered. He looked over his shoulder at the analog chaos behind them. The Silence Agents were gone. Blasted away by the chaotic wave Taro had unleashed. Or maybe they had just retreated from the sheer wrongness of it.
+Beneath the silence, behind it, cutting through it like a dental drill through enamel—
 
-Hana was sitting against the wireframe wall, clutching her head. Her avatar was flickering, phasing in and out of high-fidelity. 
+**EEEEEEEEEEEEEE—**
 
-"My head," she moaned. "The silence... it's still echoing. There's a 15-decibel ringing in my left buffer."
+A carrier wave. The raw, unprocessed signal of the NAI's background hum. Without the audio filters to mask it, it was piercing. Maddening. A tinnitus built by God.
 
-Taro tried to stand. His legs felt like they belonged to someone else. Input lag was a bitch.
+Taro clapped his hands over his ears. It didn't help. The sound was internal. Neuro-acoustic feedback.
 
-"We need to move," he said. "Before they come back. My ping is too high to fight."
+"Make it stop," he gasped. "Make it—"
 
-"Move where?" Hana snapped. "Look at the sky, Taro! The grid is broken. We're in analog territory now."
+A flicker. Movement in the wireframe void.
 
-Taro looked up at the blue static wall. 
+Another mesh. Orange vertices. Blocky. Heavy.
 
-"No," he said. "We're not in a Dead Zone." 
+Ven.
 
-He reached out, his wireframe fingers brushing the air. He could feel the hum of the city beneath the noise. Faint. Distorted. But there. 
+"Taro!" Ven's voice sounded compressed.  Low bitrate. "Don't move! You're redlining! Your clock speed is—"
 
-"I can still hear the server beat. It's just... completely out of phase."
+But Taro couldn't hear the rest. The carrier wave drowned everything out.
 
-He looked at Ven.
-"My limiter is gone."
+How long had he been in this void? Seconds? Hours? His internal sense of time was gone. Without the Grid to pace him, without the city's heartbeat to sync to, he was just… drifting. A signal without a frequency.
 
-Ven looked at Taro's neck. The Voss-issued ring was just a twisted scrap of virtual scrap-metal now.
-"Yeah," Ven said grimly. "And you just screamed loud enough to wake up every monitoring node in Sector 4. The C-Order is coming. The Vanguard is coming. Everyone is coming."
+He looked at his hands again. The wireframe was flickering. Dropping frames. Parts of his fingers were clipping through each other, vertices merging and separating in nauseating loops.
 
-Taro closed his hand into a fist. The wireframe texture crunched.
-"Let them come."
+"How do I get out?!" Taro shouted into the silence.
+
+"You don't!" Ven's mesh moved closer. "This isn't a place, Taro! This is containment! The System locked you down to stop you from crashing the server!"
+
+Taro stared at him. "What?"
+
+"You're too loud!" Ven roared. "Your signal is pegged at 300%! The NAI put you in Safe Mode to protect the rest of the city from *you*!"
+
+It wasn't a life-support system.  
+It was a **Containment Protocol**.
+
+The System didn't care if Taro survived.  
+It cared that he didn't break anything else on the way out.
+
+He tried to stand. His legs buckled. Vertices collapsed. The mesh of his left knee inverted, creating a nauseating tangle of wireframe that made no geometric sense.
+
+**> WARNING: POLYGON_COLLAPSE**
+**> RECOMMENDATION: REMAIN_STILL**
+
+"I can't stay here," Taro whispered.
+
+"You don't have a choice!" Ven said. "Your firmware is fried! Voss will come for you. They'll debug you. Just… hold on."
+
+But "holding on" in Safe Mode wasn't like waiting in the real world.
+
+Time stretched.
+
+Every second felt like a minute. Every minute felt like an hour.
+
+The carrier wave drilled deeper into his skull.
+
+The wireframe world began to feel more real than flesh. More permanent than memory.
+
+Taro closed his eyes. Or tried to. His eyelids were just edge loops now. They didn't close. They clipped.
+
+He was trapped.
+
+Stripped of texture. Stripped of sound. Stripped of self.
+
+Reduced to geometry.
+
+He felt cold. He felt flat. He felt like a sketch of a person, waiting to be erased.
+
+And somewhere in the distance, he heard the heavy, rhythmic thrum of high-fidelity engines approaching.
 
 **> OBJECTIVE: SURVIVE**
-**> DESTINATION: UNKNOWN**
+**> THREAT: TOTAL_DELETION**
 
 ---
 
