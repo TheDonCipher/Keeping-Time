@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE_STUDY_01: GLASS_LABYRINTH | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #ffffff;
+            --archival-bg: #f5f5f7;
+            --archival-border: #d1d1d6;
+            --classified-red: #d32f2f;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .archive-bg {
+            opacity: 0.05;
+        }
+
+        .document-folder {
+            background: var(--archival-bg);
+            color: #1d1d1f;
+            padding: 80px 60px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+            position: relative;
+            border-radius: 4px;
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .classified-stamp {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            border: 4px solid var(--classified-red);
+            color: var(--classified-red);
+            padding: 10px 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 900;
+            font-size: 1.5rem;
+            transform: rotate(5deg);
+            opacity: 0.8;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .metadata-block {
+            background: #e5e5ea;
+            border: 1px solid var(--archival-border);
+            padding: 20px;
+            margin: 40px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        .metadata-row {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 5px;
+        }
+
+        .metadata-label {
+            font-weight: bold;
+            color: #86868b;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-top: 40px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .redacted {
+            background: #000;
+            color: #000;
+            padding: 0 4px;
+            transition: color 0.3s;
+            cursor: help;
+        }
+
+        .redacted:hover {
+            color: #fff;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid var(--classified-red);
+            padding-left: 30px;
+            margin: 40px 0;
+            font-size: 1.4rem;
+            color: #3a3a3c;
+        }
+
+        .hazard-analysis {
+            background: #1c1c1e;
+            color: #fff;
+            padding: 30px;
+            margin-top: 60px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .hazard-analysis h3 {
+            color: #ff3b30;
+            font-family: 'JetBrains Mono', monospace;
+            margin-top: 0;
+        }
+
+        .hazard-analysis::before {
+            content: '⚠ WARNING: RESONANT_HAZARD';
+            display: block;
+            background: #ff3b30;
+            color: #fff;
+            padding: 2px 10px;
+            font-size: 0.9rem; /* Increased from 0.7 */
+            font-weight: bold;
+            font-family: 'JetBrains Mono', monospace;
+            margin-bottom: 15px;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #1d1d1f; color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)">← BACK_TO_INDEX</a>
+            <span>/</span>
+            <span>INTERNAL_CASE_01</span>
+        </div>
+        <div>
+            SECURITY_LEVEL: <span class="sync-indicator">OMNIBUS_CLEARANCE_REQUIRED</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="document-folder">
+            <div class="classified-stamp">CONFIDENTIAL</div>
+            
+            <header>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: #86868b; opacity: 0.9;">DOC_TYPE: MISSION_AFTER_ACTION_REPORT</div>
+                <h1>CASE_STUDY: GLASS_LABYRINTH</h1>
+            </header>
+
+            <div class="metadata-block">
+                <div class="metadata-row">
+                    <span class="metadata-label">DESIGNATION:</span>
+                    <span>The Glass Labyrinth of Echoes</span>
+                </div>
+                <div class="metadata-row">
+                    <span class="metadata-label">FIELD:</span>
+                    <span>Resonant Geometry / Desync Zones</span>
+                </div>
+                <div class="metadata-row">
+                    <span class="metadata-label">INCIDENT:</span>
+                    <span>Cacophony of the Chimes</span>
+                </div>
+                <div class="metadata-row">
+                    <span class="metadata-label">STATUS:</span>
+                    <span style="color: var(--classified-red);">PERPETUAL_STASIS_ZONE</span>
+                </div>
+            </div>
+
+            <main>
+                <p>The conflict now known as the Cacophony of the Chimes occurred in the crystalline canyons of the Shardlands. The belligerents were the <strong>Chorus of Concord</strong>, a Harmony-focused sect believing in the forced unification of all consciousness, and the <strong>Shatter-Tribe</strong>, a nomadic group who practiced a radical form of Noise as a means of individual liberation.</p>
+                
+                <p>The Chorus sought to impose a single, perfect harmonic onto the region, transforming it into a resonant amplifier for their philosophy. The Shatter-Tribe resisted, not by countering with a coherent frequency, but by introducing chaotic, disruptive Noise patterns designed to break any emergent harmony.</p>
+
+                <blockquote>
+                    "They sought to make us all sing one note. We chose to scream every note at once, so that none could be heard above the glorious din of freedom." <br>
+                    <small>— Grol, Shatter-Tribe chieftain (EXTRACTED_LOG)</small>
+                </blockquote>
+
+                <p>The result was a catastrophic failure for both. The Chorus's powerful, structured Harmony wave did not collapse; instead, it fractured. The Shatter-Tribe's Noise did not dissipate; it was captured within these harmonic fragments. The two frequencies became locked in an unstable, repeating loop. <span class="redacted" title="REDACTED_DATA_098">The exact coordinates of the fractal epicentre are currently suppressed.</span></p>
+
+                <p>The canyons now form a labyrinth of invisible walls, where moving from one zone to another means crossing a boundary into a violently different resonant state. The air itself seems to chime with dissonant, crystalline tones—the "unfinished score" of their battle.</p>
+
+                <section class="hazard-analysis">
+                    <h3>RESONANT_HAZARD_ANALYSIS</h3>
+                    <p style="color: #d1d1d6; font-size: 1.1rem;">The Glass Labyrinth is a textbook example of a perpetual, high-amplitude Desync field. Any Consciousness Engineer entering the area finds their Bio-Plasma field violently pulled in multiple directions. The stable standing wave of their consciousness is battered by the warring frequencies. Prolonged exposure guarantees <strong>catastrophic Desynchronization</strong>, as the individual's core frequency is literally torn apart.</p>
+                    <p style="color: #d1d1d6; font-size: 1.1rem;">The only way to traverse the Labyrinth is to achieve a state of near-perfect internal Coherence, a feat few can manage, making the region effectively impassable.</p>
+                </section>
+            </main>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.6; font-family: 'JetBrains Mono', monospace; color: #fff; font-size: 0.95rem;">
+            [ ARCHIVAL_CONTROL: UNISON_COURT_INTERNAL ]<br>
+            [ LOG_ID: 992-DELTA-SIX ]
+        </footer>
+    </div>
+</body>
+</html>

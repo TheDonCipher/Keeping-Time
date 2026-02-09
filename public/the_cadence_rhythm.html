@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER: THE_CADENCE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=JetBrains+Mono:wght@400;700&family=Public+Sans:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --faction-blue: #00f3ff;
+            --faction-dark: #050510;
+        }
+
+        body {
+            background: var(--faction-dark);
+            color: #fff;
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .propaganda-frame {
+            border: 20px solid #fff;
+            min-height: 100vh;
+            padding: 60px;
+            position: relative;
+            background: 
+                linear-gradient(45deg, rgba(0, 243, 255, 0.05) 0%, transparent 100%),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></svg>');
+        }
+
+        .faction-banner {
+            background: #fff;
+            color: #000;
+            padding: 20px 40px;
+            display: inline-block;
+            font-weight: 900;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin-bottom: 40px;
+            transform: skew(-5deg);
+        }
+
+        .faction-icon-large {
+            font-size: 8rem;
+            position: absolute;
+            top: 40px;
+            right: 60px;
+            opacity: 0.1;
+            font-weight: 900;
+        }
+
+        .manifesto-quote {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 60px;
+            border-left: 20px solid var(--faction-blue);
+            padding-left: 40px;
+            text-transform: uppercase;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        @media (max-width: 1000px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            color: var(--faction-blue);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .analysis-sidebar {
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-top: 5px solid #fff;
+        }
+
+        .stat-block {
+            margin-bottom: 40px;
+        }
+
+        .stat-label {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem; /* Increased from 0.7 */
+            text-transform: uppercase;
+            opacity: 0.6; /* Increased from 0.5 */
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--faction-blue);
+        }
+
+        .footer-tagline {
+            position: absolute;
+            bottom: 40px;
+            left: 60px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem; /* Increased from 0.8 */
+            opacity: 0.4; /* Increased from 0.3 */
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #fff; color: #000;">
+        <div class="archive-nav">
+            <a href="index.html">← ARCHIVE_HOME</a>
+            <span>/</span>
+            <span>PRIMER_CADENCE</span>
+        </div>
+        <div style="font-weight: 900;">
+            IDENTITY: <span class="sync-indicator">IDEOLOGICAL_STRENGTH_VERIFIED</span>
+        </div>
+    </div>
+
+    <div class="propaganda-frame">
+        <div class="faction-icon-large">■</div>
+        
+        <header>
+            <div class="faction-banner">THE_CADENCE</div>
+            <blockquote class="manifesto-quote">
+                "The universe has a heartbeat. All else is commentary. Strength, order, discipline."
+            </blockquote>
+        </header>
+
+        <main class="content-grid">
+            <section>
+                <h2>PHILOSOPHY_OF_STRUCTURE</h2>
+                <p>The philosophy of the Cadence is one of pragmatic structuralism. We believe the Resonance Matrix is governed by underlying laws, the most fundamental of which is <strong>Rhythm</strong>.</p>
+                <p>For us, power and societal health are derived from discipline, hierarchy, and the unwavering execution of a clear, unified purpose. We are the soldiers, the builders, and the guardians of order.</p>
+                <p>We see the intricate solos of Melody as self-indulgent, the forced unity of Harmony as weak, and the chaos of Noise as an existential threat.</p>
+            </section>
+
+            <aside class="analysis-sidebar">
+                <div class="stat-block">
+                    <span class="stat-label">Tactical Bias</span>
+                    <span class="stat-value">STRUCTURAL_RIGIDITY</span>
+                </div>
+                
+                <h2>INTERNAL_ANALYSIS</h2>
+                <p style="font-size: 1.1rem; opacity: 0.7;"><strong>Blind Spot:</strong> Rigidity makes us slow to adapt. We view deviation as a flaw, not an innovation.</p>
+                <p style="font-size: 1.1rem; opacity: 0.7;"><strong>Internal Schism:</strong> <em>Traditionalists vs. Polyrhythmics.</em> The battle over whether society should have one single beat or a weave of many.</p>
+
+                <div style="margin-top: 40px; border: 2px solid var(--faction-blue); padding: 15px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;">
+                    [ REC_SOURCE: UNISON_CODE_RED ]<br>
+                    [ STATUS: AUTHORIZED_VIEWING ]
+                </div>
+            </aside>
+        </main>
+
+        <div class="footer-tagline">
+            // WITHOUT_THE_BEAT_THERE_IS_ONLY_STATIC //
+        </div>
+    </div>
+</body>
+</html>

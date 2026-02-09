@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIELD_NOTES: RHYTHM_RUNNING | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Architects+Daughter&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #d8c8b8;
+            --ink-color: #2a2a2a; /* Dark gray for excellent contrast on paper */
+            --accent-red: #8b1a1a; /* Darker red for legibility */
+        }
+
+        body {
+            background: #1a1a1c;
+            color: var(--ink-color);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Journal Paper Effect */
+        .journal-paper {
+            background: #f4e4d4;
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+            background-size: 100% 30px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 100px rgba(0,0,0,0.1);
+            position: relative;
+            min-height: 1000px;
+            border-radius: 2px;
+            transform: rotate(-0.5deg);
+        }
+
+        .journal-paper::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 40px;
+            width: 2px;
+            height: 100%;
+            background: rgba(160, 48, 48, 0.2);
+            border-left: 1px solid rgba(160, 48, 48, 0.1);
+        }
+
+        .handwritten {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem; /* Increased size */
+            font-weight: 700; /* Bolder */
+            line-height: 1.2;
+            color: var(--accent-red);
+            transform: rotate(-2deg);
+            display: inline-block;
+        }
+
+        .stamp {
+            border: 3px double var(--accent-red);
+            color: var(--accent-red);
+            padding: 5px 15px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: inline-block;
+            transform: rotate(15deg);
+            opacity: 0.9; /* Increased opacity */
+            margin: 20px;
+        }
+
+        h1 {
+            font-family: 'Architects Daughter', cursive;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--ink-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Architects Daughter', cursive;
+            font-size: 2rem;
+            margin-top: 50px;
+            color: var(--accent-red);
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 400; /* Increased from 300 */
+        }
+
+        .note-box {
+            border: 2px dashed rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.3);
+            position: relative;
+        }
+
+        .note-box::before {
+            content: 'CLIP';
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #888;
+            color: white;
+            padding: 2px 10px;
+            font-size: 0.9rem; /* Increased from 0.7 */
+            border-radius: 3px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-red);
+        }
+
+        .margin-scribe {
+            position: absolute;
+            right: -120px;
+            top: 200px;
+            width: 200px;
+            font-family: 'Caveat', cursive;
+            font-size: 1.6rem; /* Increased size */
+            color: var(--accent-red);
+            opacity: 0.95; /* Increased opacity */
+            transform: rotate(5deg);
+        }
+
+        @media (max-width: 1200px) {
+            .margin-scribe { display: none; }
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #2c2c2c; color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)" onclick="sessionStorage.setItem('scrollPos', window.scrollY || 0)">← BACK_TO_BASE</a>
+            <span>/</span>
+            <span>FIELD_NOTES_01</span>
+        </div>
+        <div>
+            SCAN_STATUS: <span class="sync-indicator">PAPER_RECONSTRUCTION_COMPLETE</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="journal-paper">
+            <div class="stamp">RECONSTRUCTED_DATA</div>
+            
+            <h1>FIELD_NOTES: ON_RHYTHM</h1>
+            <p style="text-align: center; font-style: italic; opacity: 0.7;">
+                "Everyone's got a plan until they get Pushed in the face. Listen up, rookie. This might keep you from ghosting on your first run."<br>
+                — Old Man Cadence
+            </p>
+
+            <div class="margin-scribe">
+                Watch the amplitude in sector 4. The dampening is failing.
+            </div>
+
+            <h2>So, You're a Rhythm Runner?</h2>
+            <p>Good. Melody is for show-offs, Harmony is for statues, and Noise is for psychos. Rhythm is the street. It's the beat of the fight, the pulse of the city. It's about timing, momentum, and hitting hard when it counts.</p>
+            <p>But don't get cocky. Rhythm can run away from you just as fast as it can carry you. Here's the dirt you won't learn at some fancy Vanguard Spiral academy.</p>
+
+            <div class="note-box">
+                <h3 style="font-family: 'Architects Daughter'; margin-bottom: 15px;">THE_THREE-COUNT</h3>
+                <ul>
+                    <li><strong>SYNC:</strong> Don't just act. Listen. Feel the opponent's beat. Fast? Staccato. Heavy? Four-four time. Syncing is predictable. Don't try to Sync and Push at the same time.</li>
+                    <li><strong>PUSH:</strong> The percussive strike. The shockwave. Time it for the off-beat. It's not about raw Amplitude; it's about the precision of the impact.</li>
+                    <li><strong>CONTROL:</strong> Your stamina. Keep your own beat steady under pressure. A good Rhythm fighter can go for hours. A bad one is just a firework.</li>
+                </ul>
+            </div>
+
+            <h2>Common Ways to End Up as Static</h2>
+            <p>Seen it a hundred times. Don't be the next one.</p>
+            <ul>
+                <li><strong>Ignoring Your NAI:</strong> That voice isn't nagging. It's monitoring your Bio-Plasma. When it hits red-line, back off. <span class="handwritten">(Taro: Learn to mute the warnings once you've found the flow.)</span></li>
+                <li><strong>Feedback Fixation:</strong> Don't get caught in your own rush. Land a Push, then reset. Find the beat again.</li>
+                <li><strong>The Harmony Trap:</strong> Unison enforcers will try to smooth you out into 'molasses'. Don't fight the field—find a new rhythm <em>inside</em> it. Be the drummer in the library.</li>
+                <li><strong>Forgetting to Run:</strong> You're a Consciousness Engineer, not a martyr. If you're outmatched, get out. A retreat is just a strategic pause.</li>
+            </ul>
+
+            <div style="margin-top: 60px; text-align: center;">
+                <span class="handwritten" style="font-size: 2rem;">Stay sharp. Keep the beat. Don't die.</span>
+            </div>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.6; font-family: 'JetBrains Mono', monospace; color: #fff; font-size: 0.95rem;">
+            [ FILE_RECOVERY: SUCCESSFUL ]<br>
+            [ SOURCE: CADENCE_DECK_09 ]
+        </footer>
+    </div>
+</body>
+</html>

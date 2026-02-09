@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER: THE_DISSONANCE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=JetBrains+Mono:wght@400;700&family=Bungee&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --faction-red: #ff4141;
+            --noise-bg: #0a0a0a;
+        }
+
+        body {
+            background: var(--noise-bg);
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .noise-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            position: relative;
+        }
+
+        /* Glitchy Static Overlay */
+        .noise-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23n)" opacity="0.05"/></svg>');
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        header {
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size: 6rem;
+            color: #fff;
+            text-transform: uppercase;
+            line-height: 0.8;
+            margin: 0;
+            transform: skewX(-5deg) scaleY(1.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        h1::after {
+            content: 'THE_DISSONANCE';
+            position: absolute;
+            top: 5px; left: 5px;
+            color: var(--faction-red);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        .faction-symbol-large {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            font-family: 'Bungee', cursive;
+            font-size: 15rem;
+            color: var(--faction-red);
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .manifesto-shout {
+            background: var(--faction-red);
+            color: #000;
+            padding: 40px;
+            font-family: 'Bungee', cursive;
+            font-size: 2.2rem;
+            line-height: 1;
+            margin-top: 40px;
+            transform: rotate(-2deg);
+            box-shadow: 15px 15px 0 #fff;
+        }
+
+        .content-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 100px;
+            text-align: justify;
+        }
+
+        @media (max-width: 900px) {
+            .content-columns { grid-template-columns: 1fr; }
+            h1 { font-size: 3rem; }
+        }
+
+        h2 {
+            font-family: 'Bungee', cursive;
+            font-size: 1.5rem;
+            color: var(--faction-red);
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--faction-red);
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.4;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+
+        .glitch-card {
+            border: 4px solid #fff;
+            padding: 40px;
+            background: rgba(255, 65, 65, 0.05);
+            position: relative;
+            transform: rotate(1deg);
+        }
+
+        .glitch-card::before {
+            content: '';
+            position: absolute;
+            top: -10px; left: -10px; width: 100%; height: 100%;
+            border: 2px solid var(--faction-red);
+            z-index: -1;
+        }
+
+        .desync-status {
+            font-family: 'JetBrains Mono', monospace;
+            background: #fff;
+            color: #000;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 0.95rem; /* Increased from 0.8 */
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="noise-overlay"></div>
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: var(--faction-red); color: #000; border: none;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: #000; font-weight: 900;">← TEAR_IT_DOWN</a>
+            <span>/</span>
+            <span>PRIMER_DISSONANCE</span>
+        </div>
+        <div>
+            SECURITY: <span class="sync-indicator">BREACH_IN_PROGRESS</span>
+        </div>
+    </div>
+
+    <div class="noise-container">
+        <div class="faction-symbol-large">⚡</div>
+        
+        <header>
+            <h1>THE_DISSONANCE</h1>
+            <div class="manifesto-shout">
+                "WE ARE THE FEEDBACK. THE STATIC. THE SCREECH THAT SHATTERS THE GLASS."
+            </div>
+        </header>
+
+        <main class="content-columns">
+            <section>
+                <div class="desync-status">SIGNAL: NOISE_CASCADE</div>
+                <h2>THE_TRUTH_OF_CHAOS</h2>
+                <p>The Dissonance is a faction of revolutionaries. We believe the current systems of power—be they Rhythm, Melody, or Harmony—are fundamentally corrupt cages.</p>
+                <p>We wield <strong>Noise</strong> not just as a weapon, but as a tool of liberation. By introducing chaos and desynchronization, we break the resonant chains that hold people captive.</p>
+                <p>The false songs must be shattered. Only then can we confront the raw, unfiltered reality of the Matrix.</p>
+            </section>
+
+            <aside class="glitch-card">
+                <h2>RADICAL_ANALYSIS</h2>
+                <p><strong>Blind Spot:</strong> No alternative. We are masters of destruction, but have no unified vision for what comes after the crash.</p>
+                <p><strong>Schism:</strong> <em>Breakers vs. Shapers.</em> Those who want only static versus those who see Noise as a creative force for a new world.</p>
+                
+                <div style="font-family: 'JetBrains Mono', monospace; opacity: 0.8; font-size: 0.85rem; margin-top: 40px;">
+                    >> SYSTEM_OVERRIDE_ACTIVE<br>
+                    >> NO_MORE_MASTERS<br>
+                    >> NO_MORE_SONGS
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>

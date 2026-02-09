@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIELD_NOTES: TACTICAL_RETREAT | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Gochi+Hand&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --journal-ink: #0c0c0d;
+            --paper-cream: #f9f4e8;
+            --note-red: #8b1a1a;
+        }
+
+        body {
+            background: #111;
+            padding: 40px;
+        }
+
+        .journal-page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--paper-cream);
+            padding: 80px 60px;
+            color: var(--journal-ink);
+            font-family: 'Patrick Hand', cursive;
+            position: relative;
+            transform: rotate(-1deg);
+            box-shadow: 10px 10px 0 rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            font-family: 'Gochi Hand', cursive;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--note-red);
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin-bottom: 25px;
+        }
+
+        .tactical-box {
+            border: 2px solid var(--journal-ink);
+            padding: 25px;
+            margin: 40px 0;
+            position: relative;
+            background: rgba(0,0,0,0.02);
+        }
+
+        .tactical-box::before {
+            content: '!';
+            position: absolute;
+            top: -20px; left: -20px;
+            background: var(--note-red);
+            color: #fff;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center; justify-content: center;
+            font-weight: 900;
+            font-family: sans-serif;
+        }
+
+        .marginalia {
+            position: absolute;
+            right: -100px;
+            top: 200px;
+            width: 150px;
+            color: var(--note-red);
+            font-family: 'Gochi Hand', cursive;
+            font-size: 1.4rem; /* Increased */
+            font-weight: 700; /* Bolder */
+            opacity: 0.95; /* Increased */
+            transform: rotate(15deg);
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg" style="opacity: 0.1;"></div>
+
+    <div class="nai-status" style="background: var(--journal-ink); color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--gold)">← BACK_TO_STREETS</a>
+            <span>/</span>
+            <span>LOG_ID: RETREAT_V4</span>
+        </div>
+        <div>
+            INTEL: <span class="sync-indicator">VERIFIED_IN_FIELD</span>
+        </div>
+    </div>
+
+    <div class="journal-page">
+        <div class="marginalia">Never retreat in a straight line. Desync is radial.</div>
+        
+        <h1>TACTICAL_RETREAT_GUIDE</h1>
+        <p>Listen, kid. Being a hero is a great way to end up as a frequency ghost at 880Hz. Knowing when to cut and run is the most important skill you'll ever learn.</p>
+        
+        <div class="tactical-box">
+            <h2 style="font-family: 'Gochi Hand';">WHEN_TO_DUMP_CHARGE</h2>
+            <ul>
+                <li><strong>Phase Drift &gt; 15%:</strong> If your vision starts doubling, your Field is already failing. Get out.</li>
+                <li><strong>Multiple Harmony Locks:</strong> If the Chorus pins you, don't fight the chord. Noise-ping the floor and run.</li>
+                <li><strong>Nose Bleeds:</strong> That's not just stress. That's your NAI melting your temporal lobe.</li>
+            </ul>
+        </div>
+
+        <p>The best retreat is a "Phase Shift". You aren't running; you're just moving into a frequency they can't track. If you can't shift, drop a smoke-ping and keep your beat low. Don't pulse. Don't echo. Just be the silence between the beats.</p>
+
+        <p style="text-align: right; opacity: 0.5; margin-top: 60px;">— J. "Static" Miller</p>
+    </div>
+</body>
+</html>

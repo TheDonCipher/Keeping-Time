@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIELD_NOTES: RHYTHM_PT2 | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Architects+Daughter&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #d8c8b8;
+            --ink-color: #2a2a2a; /* Dark gray for excellent contrast on paper */
+            --accent-red: #8b1a1a;
+        }
+
+        body {
+            background: #1a1a1c;
+            color: var(--ink-color);
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Journal Paper Effect */
+        .journal-paper {
+            background: #f4e4d4;
+            background-image: 
+                linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+            background-size: 100% 30px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 100px rgba(0,0,0,0.1);
+            position: relative;
+            min-height: 1000px;
+            border-radius: 2px;
+            transform: rotate(0.3deg);
+        }
+
+        .journal-paper::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 40px;
+            width: 2px;
+            height: 100%;
+            background: rgba(160, 48, 48, 0.2);
+            border-left: 1px solid rgba(160, 48, 48, 0.1);
+        }
+
+        .handwritten {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--accent-red);
+            transform: rotate(-1deg);
+            display: inline-block;
+        }
+
+        h1 {
+            font-family: 'Architects Daughter', cursive;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--ink-color);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-family: 'Architects Daughter', cursive;
+            font-size: 2rem;
+            margin-top: 50px;
+            color: var(--accent-red);
+        }
+
+        h3 {
+            font-family: 'Architects Daughter', cursive;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            border-bottom: 1px dashed var(--ink-color);
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-weight: 400; /* Increased */
+        }
+
+        .note-box {
+            border: 2px dashed rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.3);
+            position: relative;
+        }
+
+        li {
+            margin-bottom: 15px;
+            list-style: none;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        li::before {
+            content: '●';
+            position: absolute;
+            left: 0;
+            color: var(--accent-red);
+            font-size: 0.8rem;
+            top: 5px;
+        }
+
+        .tip-sketch {
+            border: 1px solid var(--ink-color);
+            padding: 15px;
+            margin: 20px 0;
+            background: #fffdf0;
+            font-family: 'Caveat', cursive;
+            font-size: 1.6rem; /* Increased */
+            font-weight: 600;
+            transform: rotate(1deg);
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #2c2c2c; color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)" onclick="sessionStorage.setItem('scrollPos', window.scrollY || 0)">← BACK_TO_BASE</a>
+            <span>/</span>
+            <a href="field_notes_on_rhythm.html" style="color: var(--theme-journal)">PT1</a>
+            <span>/</span>
+            <span>FIELD_NOTES_02</span>
+        </div>
+        <div>
+            SCAN_STATUS: <span class="sync-indicator">CHAPTER_RECONSTRUCTION_COMPLETE</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="journal-paper">
+            <h1>FIELD_NOTES: RHYTHM_PT2</h1>
+            <p style="text-align: center; font-style: italic; opacity: 0.7;">"Your power is nothing without control. Focus on the tip of the spear, not the size of the explosion."</p>
+
+            <h3>Chapter 1: Your First Ten Mistakes</h3>
+            <p>So you just jacked in. You can feel the hum of the world in your bones and you think you're hot stuff. You're not. You're a liability.</p>
+
+            <div class="note-box">
+                <ol style="padding-left: 0;">
+                    <li><strong>Tuning Too Loud:</strong> A high Amplitude with low Coherence is a bright target. Keep it tight. Keep it focused. <span class="handwritten">(Taro: Noise isn't loudness, it's complexity.)</span></li>
+                    <li><strong>Ignoring the Beat:</strong> Every place has a rhythm. Sync with it, then bend it. Fighting the local rhythm is suicide.</li>
+                    <li><strong>Forgetting Your Counter-Melody:</strong> Always have a plan B. Pros will read your lead frequency in seconds. Think in phrases.</li>
+                    <li><strong>Mistaking Noise for Chaos:</strong> Real Noise artists are masters of controlled chaos. Find the sliver of pattern in their static.</li>
+                    <li><strong>Holding a Note Too Long:</strong> You're leaving yourself wide open. Strike, release. Push, pull.</li>
+                </ol>
+            </div>
+
+            <h3>Chapter 2: Street-Level Sonics</h3>
+            <div class="tip-sketch">
+                <strong>TIP: USE THE ECHO</strong><br>
+                In any urban environment, sound bounces. Use it. Throw a pulse left, hit right. An echo is a free sensor array if you know how to listen.
+            </div>
+
+            <div class="tip-sketch" style="transform: rotate(-1deg); background: #f0fff0;">
+                <strong>TIP: FIND THE WEAK NOTE</strong><br>
+                Everything has a resonant frequency. Tap, listen, find the structural weak spot. A clean note cuts deeper than a muddy one.
+            </div>
+
+            <p>Grounding? Carrying a small, tunable resonator is better than guessing. Select a simple 4/4 beat as your internal anchor. When your Coherence frays, fall back to that beat.</p>
+
+            <div style="margin-top: 60px; text-align: right;">
+                <span class="handwritten" style="font-size: 1.4rem;">— Recovered from "Old Man" Kaito's stash.</span>
+            </div>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; color: #fff;">
+            [ FILE_RECOVERY: SUCCESSFUL ]<br>
+            [ SOURCE: SECTOR_7_OUTPOST ]
+        </footer>
+    </div>
+</body>
+</html>

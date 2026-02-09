@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE_STUDY: GLASS_PLAINS_KORELIA | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #ffffff;
+            --archival-bg: #f2f2f5;
+            --archival-border: #c7c7cc;
+            --classified-red: #b71c1c;
+        }
+
+        body { background: #000; }
+        .archive-bg { opacity: 0.05; }
+
+        .document-folder {
+            background: var(--archival-bg);
+            color: #1c1c1e;
+            padding: 80px 60px;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.9);
+            position: relative;
+            border-radius: 2px;
+            font-family: 'Crimson Pro', serif;
+            border: 1px solid var(--archival-border);
+        }
+
+        .classified-stamp {
+            position: absolute;
+            top: 50px;
+            right: 60px;
+            border: 3px solid var(--classified-red);
+            color: var(--classified-red);
+            padding: 8px 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 800;
+            font-size: 1.2rem;
+            transform: rotate(-12deg);
+            opacity: 0.7;
+        }
+
+        .metadata-block {
+            background: rgba(0,0,0,0.03);
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            padding: 20px 0;
+            margin: 40px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .metadata-item {
+            border-left: 3px solid var(--archival-border);
+            padding-left: 15px;
+        }
+
+        .metadata-label {
+            display: block;
+            font-weight: bold;
+            color: #8e8e93;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 2.8rem;
+            margin: 0;
+            line-height: 1;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.6rem;
+            margin: 50px 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .analysis-tab {
+            background: #ffffff;
+            border: 1px solid var(--archival-border);
+            padding: 35px;
+            margin-top: 60px;
+            position: relative;
+        }
+
+        .analysis-tab::before {
+            content: 'RESONANT_PHYSICS_DEPT_EYES_ONLY';
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #000;
+            color: #fff;
+            padding: 2px 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+        }
+
+        .danger-text {
+            color: var(--classified-red);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #1c1c1e; color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)">← BACK_TO_ARCHIVE</a>
+            <span>/</span>
+            <span>CASE_REPORT_450</span>
+        </div>
+        <div>
+            FILE_STATUS: <span class="sync-indicator">HISTORICAL_RECONSTRUCTION_VERIFIED</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="document-folder">
+            <div class="classified-stamp">SECURED_INTEL</div>
+            
+            <header>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #8e8e93; margin-bottom: 10px;">REF_CODE: KT_ARCH_01_KORELIA</div>
+                <h1>CASE_001: THE_GLASS_PLAINS</h1>
+            </header>
+
+            <div class="metadata-block">
+                <div class="metadata-item">
+                    <span class="metadata-label">Location</span>
+                    <span>Former Korelian Steppe</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Combatants</span>
+                    <span>Lord Valerius vs. Chieftain Bor</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">System State</span>
+                    <span class="danger-text">PERPETUAL_RESONANT_STASIS</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Incident Type</span>
+                    <span>Melody/Rhythm Collision</span>
+                </div>
+            </div>
+
+            <main>
+                <h2>HISTORICAL_CONTEXT</h2>
+                <p>The Korelian Steppe was once a vibrant grassland, home to nomadic tribes who practiced a form of communal Rhythm resonance. Their culture was built on the <strong>"Heartbeat of the Land,"</strong> a slow, powerful cadence that informed their traditions and societal structure.</p>
+                <p>The collision began with the expansion of the Silver Empire, led by Lord Valerius—a Melody virtuoso. He saw the nomads' collective resonance as a primitive drone, an empty canvas. Chieftain Bor, the nomads' most powerful Engineer, rose to defend their way of life, viewing Valerius's intricate Melody as a "chaotic screech" that threatened to shatter their world.</p>
+
+                <h2>THE_ENGAGEMENT</h2>
+                <p>Chieftain Bor established a monolithic wall of Rhythm—a beat so powerful and unyielding it could supposedly shatter mountains. Bor's Coherence was absolute. Against this, Lord Valerius unleashed a storm of Melody. He wove intricate, razor-sharp melodic phrases designed to find micro-fractures in Bor's cadence.</p>
+                <p>For three days and nights, the forces were locked. Bor's Rhythm was the ultimate defense; Valerius's Melody was the ultimate attack. Neither could gain purchase. They were the <strong>immovable object</strong> and the <strong>unstoppable force</strong> made manifest.</p>
+
+                <div class="analysis-tab">
+                    <h3 style="font-family: 'Outfit'; margin-top:0;">RESONANT_STASIS_ANALYSIS</h3>
+                    <p>The catastrophe occurred when both Engineers pushed their Bio-Plasma fields beyond the point of sustainable output. Bor sought to solidify his Rhythm into a concept as permanent as time. Valerius tried to elevate his Melody into a law of physics. The result was a <strong>catastrophic Feedback loop.</strong></p>
+                    <p>Their frequencies locked into a state of permanent oscillation. The landscape vitrified, turning miles of grassland into smooth, black glass. The most dangerous artifact of this event is <span class="danger-text">localized temporal shearing.</span> Time within the Glass Plains does not flow linearly. Travelers can experience seconds that last for hours, or days that pass in a blink. To stand on the plains is to hear the argument of Rhythm and Melody, forever unresolved.</p>
+                </div>
+            </main>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; color: #fff;">
+            [ RECORD_ID: 450-PX-STEEL ]<br>
+            [ CAUTION: DO_NOT_APPROACH_VITRIFIED_ZONES ]
+        </footer>
+    </div>
+</body>
+</html>

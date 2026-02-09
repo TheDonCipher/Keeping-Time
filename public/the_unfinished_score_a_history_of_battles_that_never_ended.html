@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLITCH_DOC: THE_UNFINISHED_SCORE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@900&family=JetBrains+Mono:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --glitch-cyan: #00f3ff;
+            --glitch-magenta: #ff00ff;
+            --glitch-bg: #050505;
+        }
+
+        body {
+            background: var(--glitch-bg);
+            color: #fff;
+            font-family: 'JetBrains Mono', monospace;
+            overflow-x: hidden;
+        }
+
+        .glitch-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            position: relative;
+        }
+
+        /* Glitchy Static Overlay */
+        .static-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23n)" opacity="0.03"/></svg>');
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        header {
+            margin-bottom: 100px;
+            border-bottom: 2px solid var(--glitch-cyan);
+            padding-bottom: 40px;
+        }
+
+        .hacked-tag {
+            background: var(--glitch-cyan);
+            color: #000;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+            text-transform: uppercase;
+            text-shadow: 2px 0 var(--glitch-magenta), -2px 0 var(--glitch-cyan);
+            letter-spacing: -2px;
+        }
+
+        .doc-meta {
+            font-family: 'Share Tech Mono', monospace;
+            opacity: 0.5;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .intro-text {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: var(--glitch-cyan);
+            margin-bottom: 80px;
+            border-left: 5px solid var(--glitch-cyan);
+            padding-left: 30px;
+        }
+
+        article {
+            margin-bottom: 100px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.02);
+            position: relative;
+        }
+
+        article::before {
+            content: 'DATA_NODE';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: var(--glitch-bg);
+            padding: 0 10px;
+            font-size: 0.85rem; /* Increased from 0.7 */
+            color: var(--glitch-cyan);
+            opacity: 0.8;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #fff;
+            background: rgba(255,255,255,0.1);
+            display: inline-block;
+            padding: 5px 20px;
+        }
+
+        h3 {
+            color: var(--glitch-cyan);
+            font-size: 1rem;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
+            opacity: 0.8;
+        }
+
+        .danger-zone {
+            border: 2px dashed #ff5252; /* Brightened from #ff0000 */
+            padding: 30px;
+            margin-top: 60px;
+            background: rgba(255,0,0,0.05);
+        }
+
+        .danger-zone h3 { color: #ff5252; }
+
+        .code-snippet {
+            background: #000;
+            padding: 20px;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.95rem; /* Increased from 0.8 */
+            color: #00ff66; /* Slightly softer but high contrast green */
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="static-overlay"></div>
+    <div class="archive-bg" style="opacity: 0.05;"></div>
+
+    <div class="nai-status" style="background: #000; border-bottom: 1px solid #1a1a1a;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--glitch-cyan)">← BACK_TO_DASH</a>
+            <span>/</span>
+            <span>FORBIDDEN_DATA_01</span>
+        </div>
+        <div style="color: var(--glitch-cyan);">
+            LINK: <span class="sync-indicator">SECURE_TUNNEL_ACTIVE</span>
+        </div>
+    </div>
+
+    <div class="glitch-wrapper">
+        <header>
+            <div class="hacked-tag">DECRYPTED_LEAK</div>
+            <h1>THE_UNFINISHED_SCORE</h1>
+            <div class="doc-meta">History of Eternal Stasis // Compiled by Archivist Vance</div>
+        </header>
+
+        <main>
+            <div class="intro-text">
+                History is not merely a record of victors. It is a chronicle of unresolved dissonance—conflicts where Bio-Plasma fields achieved a state of perpetual, unstable stasis. Wounds in the world's soundscape that refuse to heal.
+            </div>
+
+            <article>
+                <h2>Case Study 01: The Glass Duet</h2>
+                <div class="code-snippet">
+                    [SOURCE: SERRATED_PEAKS_OUTPOST_7]<br>
+                    [INCIDENT: 450_PY]<br>
+                    [COMBATANTS: LYRA_KAELEN vs PERCUSSIONIST]
+                </div>
+                <p>
+                    Lyra Kaelen, a rogue Artificer, used quartz-rich caverns as her instrument. Her Melody was a focused sonic lance. The Percussionist embodied perfect Rhythm—he became the silence between her notes.
+                </p>
+                <p>
+                    The stalemate occurred when Kaelen tried to shatter the mountain and the Percussionist matched her frequency in perfect anti-phase. They locked into a standing wave of immense power. They are frozen... oscillating... forever.
+                </p>
+            </article>
+
+            <article>
+                <h2>Case Study 02: Choir of Static</h2>
+                <div class="code-snippet">
+                    [LOCATION: OLD_UNISON_HALL]<br>
+                    [INCIDENT: FIRST_CHORUS_SCHISM]<br>
+                    [STATUS: RECURSIVE_PSYCHO-LOOP]
+                </div>
+                <p>
+                    The First Chorus sought perfect societal Harmony. Corvus, a Noise adept, hijacked the hall to broadcast pure conceptual entropy. The ordered Anthem and the chaotic Noise folded in on each other.
+                </p>
+                <p>
+                    The Hall is now silent to the ear, but screaming to the soul. The "Choir" is a composite consciousness of thousands trapped in a state of perpetual argument. Absorption is certain for anyone who stays too long.
+                </p>
+            </article>
+
+            <section class="danger-zone">
+                <h3>⚠ WARNING: RESONANT_SCARS</h3>
+                <p>
+                    These locations are Level-5 Resonant Scars. Entering them risks your "note" being written into the score. The result is the complete dissolution of self. Avoidance is mandatory.
+                </p>
+            </section>
+        </main>
+    </div>
+
+    <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'Share Tech Mono', monospace; font-size: 0.9rem;">
+        [ PACKET_LOST: 12% ]<br>
+        [ ENCRYPTION_RE-ROUTING ]
+    </footer>
+</body>
+</html>

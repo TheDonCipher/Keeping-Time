@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE_STUDY: ARGENT_SPIRE_CACOPHONY | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --theme-color: #ffffff;
+            --archival-bg: #ececf0;
+            --archival-border: #8e8e93;
+            --plague-purple: #5e35b1;
+            --hazard-red: #d32f2f;
+        }
+
+        body { background: #000; }
+        .archive-bg { opacity: 0.1; }
+
+        .document-folder {
+            background: var(--archival-bg);
+            color: #1d1d1f;
+            padding: 80px 60px;
+            box-shadow: 0 40px 100px rgba(0,0,0,1);
+            position: relative;
+            border-radius: 4px;
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .plague-warning {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            border: 2px solid var(--plague-purple);
+            color: var(--plague-purple);
+            padding: 10px 15px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            background: rgba(94, 53, 177, 0.05);
+            transform: rotate(2deg);
+        }
+
+        .archive-seal {
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+            width: 100px;
+            height: 100px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .metadata-grid {
+            border: 1px solid var(--archival-border);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 40px 0;
+            background: #fff;
+        }
+
+        .metadata-cell {
+            padding: 15px 20px;
+            border: 1px solid rgba(0,0,0,0.05);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+        }
+
+        .metadata-key { color: #86868b; font-weight: bold; margin-right: 10px; }
+
+        h1 { font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 2.5rem; letter-spacing: -1px; }
+        h2 { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 1.5rem; margin-top: 50px; text-transform: uppercase; border-left: 5px solid #000; padding-left: 20px; }
+
+        p { font-size: 1.2rem; line-height: 1.8; margin-bottom: 25px; }
+
+        .hazard-box {
+            background: #1c1c1e;
+            color: #fff;
+            padding: 40px;
+            margin-top: 60px;
+            border-radius: 2px;
+            border-top: 10px solid var(--hazard-red);
+        }
+
+        .hazard-box h3 { color: var(--hazard-red); font-family: 'JetBrains Mono', monospace; margin-top: 0; }
+
+        .glitch-hint {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            opacity: 0.4;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: #1d1d1f; color: #fff;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)">← BACK_TO_ROOT</a>
+            <span>/</span>
+            <span>CASE_REPORT_210</span>
+        </div>
+        <div style="color: #ff3b30;">
+            SECURITY: <span class="sync-indicator">MEMETIC_QUARANTINE_LEVEL_5</span>
+        </div>
+    </div>
+
+    <div class="archive-container">
+        <div class="document-folder">
+            <div class="plague-warning">MEMETIC_CONTAINMENT: ACTIVE</div>
+            
+            <header>
+                <div style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #86868b; margin-bottom: 5px;">ARCHIVE_REF: KT_ARCH_02_ARGENT_SPIRE</div>
+                <h1>CASE_002: ARGENT_SPIRE_CACOPHONY</h1>
+            </header>
+
+            <div class="metadata-grid">
+                <div class="metadata-cell"><span class="metadata-key">LOCATION:</span> Argent Spire</div>
+                <div class="metadata-cell"><span class="metadata-key">COMBATANTS:</span> Collective vs. Shatter Chorus</div>
+                <div class="metadata-cell"><span class="metadata-key">FREQUENCY:</span> Harmony vs. Noise</div>
+                <div class="metadata-cell"><span class="metadata-key">STATE:</span> <span style="color: var(--hazard-red)">SENTIENT_SOUND_PLAGUE</span></div>
+            </div>
+
+            <main>
+                <h2>HISTORICAL_CONTEXT</h2>
+                <p>The Argent Spire was the crowning achievement of the Aethelburg Technocracy, a society built on the principles of <strong>Harmony</strong>. The entire spire was a resonant amplifier, designed to unify the consciousness of its citizens into a single whole. Dissent was not just illegal; it was musically impossible, smoothed over by the overwhelming power of the collective Harmony.</p>
+                <p>This utopian ideal was seen as a tyrannical abomination by the <strong>Shatter Chorus</strong>, a radical faction of Noise Engineers who believed that true consciousness could only be found in chaos and deconstruction.</p>
+
+                <h2>THE_ENGAGEMENT</h2>
+                <p>The Shatter Chorus unleashed a <strong>"cacophony bomb"</strong>—a viral Noise frequency designed to aggressively Desync individuals from the collective. It was the sonic equivalent of a plague spreading through the Spire's own resonant architecture, turning its greatest strength into its greatest vulnerability.</p>
+                <p>The Aethelburg Collective attempted to "drown out" the Noise by increasing Amplitude. This was a fatal error. The Noise frequency fed on this power. The serene chords of unity were warped into screaming, distorted parodies. The battle became a struggle for the very soul of the city's resonance.</p>
+
+                <div class="hazard-box">
+                    <h3>RESONANT_HAZARD_REPORT</h3>
+                    <p>The conflict merged the two frequencies into a new entity: a <strong>sentient sound-plague.</strong> The Argent Spire stands uninhabitable. To enter is to expose one's Bio-Plasma field to the Cacophony, which actively seeks to infect intruders, rewriting their personal "note" with a fusion of broken melodies and industrial static.</p>
+                    <p>Survivors speak of <strong>"Echo-Gheists"</strong>—the resonant ghosts of inhabitants trapped in an eternal loop of being torn between Harmony and Noise. The structure groans and shifts as the frequencies continue their eternal battle.</p>
+                    <span class="glitch-hint">> ERROR: DATA_CORRUPTION_IN_SECTOR_7 >> QUARANTINE_RE-CALIBRATING...</span>
+                </div>
+            </main>
+        </div>
+
+        <footer style="margin-top: 40px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; color: #fff;">
+            [ CASE_ID: 210-AS-PLAGUE ]<br>
+            [ DO_NOT_TUNE_TO_21.4KHZ_IN_THIS_RADIUS ]
+        </footer>
+    </div>
+</body>
+</html>

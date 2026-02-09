@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIMER: THE_VIRTUOSO | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;900&family=JetBrains+Mono:wght@400;700&family=Cinzel:wght@400;900&family=Cormorant+Garamond:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --virtuoso-gold: #d4af37;
+            --virtuoso-cream: #fdfaf0;
+        }
+
+        body {
+            background: #050505;
+            color: var(--virtuoso-cream);
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .art-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            position: relative;
+        }
+
+        .gold-border {
+            position: fixed;
+            top: 20px; left: 20px; right: 20px; bottom: 20px;
+            border: 1px solid var(--virtuoso-gold);
+            pointer-events: none;
+            z-index: 100;
+            opacity: 0.3;
+        }
+
+        header {
+            text-align: left;
+            margin-bottom: 100px;
+            border-bottom: 1px solid var(--virtuoso-gold);
+            padding-bottom: 40px;
+        }
+
+        .faction-title {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            font-weight: 900;
+            color: var(--virtuoso-gold);
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+
+        .soloist-tagline {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 200;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            font-size: 1rem; /* Increased from 0.9 */
+            opacity: 0.8; /* Increased from 0.6 */
+        }
+
+        .manifesto-fancy {
+            font-size: 2.2rem;
+            line-height: 1.3;
+            margin-bottom: 80px;
+            font-style: italic;
+            border-right: 5px solid var(--virtuoso-gold);
+            padding-right: 40px;
+            text-align: right;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 60px;
+        }
+
+        @media (max-width: 900px) {
+            .layout-grid { grid-template-columns: 1fr; }
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--virtuoso-gold);
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .analysis-elegant {
+            background: rgba(212, 175, 55, 0.05);
+            padding: 40px;
+            border: 1px solid var(--virtuoso-gold);
+        }
+
+        .motif-box {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem; /* Increased from 0.7 */
+            color: var(--virtuoso-gold);
+            margin-top: 40px;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            padding-top: 20px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="archive-page">
+    <div class="gold-border"></div>
+    <div class="archive-bg"></div>
+
+    <div class="nai-status" style="background: var(--virtuoso-gold); color: #000;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: #000">← GALLERIA_INDEX</a>
+            <span>/</span>
+            <span>PRIMER_VIRTUOSO</span>
+        </div>
+        <div style="font-weight: 900;">
+            MAESTRO: <span class="sync-indicator">SOLO_RESONANCE_OPTIMIZED</span>
+        </div>
+    </div>
+
+    <div class="art-wrapper">
+        <header>
+            <div class="faction-title">THE_VIRTUOSO</div>
+            <div class="soloist-tagline">Radical Individualism in the Key of Power</div>
+        </header>
+
+        <main>
+            <div class="manifesto-fancy">
+                "The world is a stage, and most are merely providing the ambient drone. We are the soloists. We are the ones who define the frequency."
+            </div>
+
+            <div class="layout-grid">
+                <section>
+                    <h2>THE_PATH_OF_MELODY</h2>
+                    <p>The Virtuoso believes that power is an art form. They reject the collective "mush" of Harmony and the mindless drone of Rhythm. For them, the <strong>Melody</strong> is everything.</p>
+                    <p>Each Virtuoso is their own empire. They strive to carve their specific frequency into the reality of the Matrix, viewing themselves as the only true architects of the new world.</p>
+                    <p>They see other factions as either tools to be used or obstacles to be overcome. A world of Virtuosos is a world of constant, beautiful competition.</p>
+                </section>
+
+                <aside class="analysis-elegant">
+                    <h2>SOLO_ANALYSIS</h2>
+                    <p style="font-size: 1.1rem;"><strong>Blind Spot:</strong> Arrogance. Their refusal to cooperate often leads to their isolation and eventual downfall at the hands of organized factions.</p>
+                    <p style="font-size: 1.1rem;"><strong>Internal Schism:</strong> <em>Purists vs. Synthesizers.</em> Those who believe in a single, perfect note versus those who steal from other frequencies to enrich their own.</p>
+                    
+                    <div class="motif-box">
+                        [ RECURRING_MOTIF: SELF_RESONANCE ]<br>
+                        [ QUALITY: MASTERWORK ]
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

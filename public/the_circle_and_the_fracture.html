@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANALYSIS: THE_CIRCLE_AND_THE_FRACTURE | Ouroboros Archives</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;900&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="archive_core.css">
+    <style>
+        :root {
+            --court-blue: #4682B4;
+            --spiral-orange: #FF8C00;
+            --axis-purple: #9932CC;
+            --custodian-green: #3CB371;
+            --mirror-bg: #0c0c0e;
+        }
+
+        body {
+            background: var(--mirror-bg);
+            color: #fff;
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .analysis-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+        }
+
+        .tag-line {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem; /* Increased from 0.9 */
+            color: var(--cyan);
+            margin-top: 10px;
+            opacity: 0.8; /* Increased from 0.6 */
+        }
+
+        .faction-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 1000px) {
+            .faction-grid { grid-template-columns: 1fr; }
+        }
+
+        .faction-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .faction-box:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .faction-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 5px; height: 100%;
+            background: var(--active-color);
+        }
+
+        .faction-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--active-color);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 2px solid var(--active-color);
+            padding-left: 20px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .blind-spot {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            margin-top: 30px;
+            border: 1px dashed var(--active-color);
+        }
+
+        .blind-spot h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem; /* Increased from 0.7 */
+            color: var(--active-color);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body class="archive-page">
+    <div class="archive-bg" style="opacity: 0.05;"></div>
+
+    <div class="nai-status" style="background: #111; border-bottom: 1px solid #333;">
+        <div class="archive-nav">
+            <a href="index.html" style="color: var(--cyan)">← BACK_TO_DASH</a>
+            <span>/</span>
+            <span>INTEL_REPORT_09</span>
+        </div>
+        <div>
+            ANALYSIS: <span class="sync-indicator">MULTI-FACTION_OVERVIEW</span>
+        </div>
+    </div>
+
+    <div class="analysis-wrapper">
+        <header>
+            <h1>THE_CIRCLE_AND_THE_FRACTURE</h1>
+            <div class="tag-line">Comparative Examination of Modern Factional Ideologies</div>
+        </header>
+
+        <main class="faction-grid">
+            <!-- UNISON COURT -->
+            <div class="faction-box" style="--active-color: var(--court-blue)">
+                <div class="faction-name">The Unison Court</div>
+                <p>The Court pursues universal Harmony—a single, unchanging note to elevate existence. They view individuality as "dissonance" that must be tuned for the sake of peace.</p>
+                <blockquote>"Individuality is the friction that sparks war. We offer a song you no longer need to sing alone."</blockquote>
+                <div class="blind-spot">
+                    <h3>BLIND_SPOT: STILLNESS_OF_DEATH</h3>
+                    <p>Failure to distinguish between peace and stagnation. Their Harmony is the resonant equivalent of absolute zero.</p>
+                </div>
+            </div>
+
+            <!-- VANGUARD SPIRAL -->
+            <div class="faction-box" style="--active-color: var(--spiral-orange)">
+                <div class="faction-name">The Vanguard Spiral</div>
+                <p>The engine of progress. They worship motion, struggle, and growth, driven by a cosmic drumbeat that shatters old orders to make way for new evolution.</p>
+                <blockquote>"The song must never end. Every beat is a new beginning. We don't seek a destination; we are the journey."</blockquote>
+                <div class="blind-spot">
+                    <h3>BLIND_SPOT: STORM_WITHOUT_HARBOR</h3>
+                    <p>Obsession with progress results in broken systems and mass Burnout. They cannot build a house that survives their own storm.</p>
+                </div>
+            </div>
+
+            <!-- ARTIFICER AXIS -->
+            <div class="faction-box" style="--active-color: var(--axis-purple)">
+                <div class="faction-name">The Artificer Axis</div>
+                <p>Pragmatic tech-fetishists who believe consciousness is a raw force and technology is the lever. Power is through the NAI, the Deck, and the Jack.</p>
+                <blockquote>"Why trust the flawed meat of the brain when a crystal-core processor can do it a million times better?"</blockquote>
+                <div class="blind-spot">
+                    <h3>BLIND_SPOT: SIGNAL_LOSS</h3>
+                    <p>Growing contempt for the "consciousness" part of engineering. They risk becoming slaves to their own black-box machines.</p>
+                </div>
+            </div>
+
+            <!-- CUSTODIANS -->
+            <div class="faction-box" style="--active-color: var(--custodian-green)">
+                <div class="faction-name">The F-Custodians</div>
+                <p>Silent arbiters and librarians of the apocalypse. They preserve balance by suppressing dangerous techniques and preventing any single faction from winning.</p>
+                <blockquote>"We preserve the cacophony because the alternative is nothing. We stay in the shadows so reality remains stable."</blockquote>
+                <div class="blind-spot">
+                    <h3>BLIND_SPOT: PARALYSIS_OF_FEAR</h3>
+                    <p>By stifling power to prevent catastrophe, they stifle true progress. They are the enemy of both tyranny and salvation.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer style="margin-top: 100px; text-align: center; opacity: 0.4; font-family: 'JetBrains Mono', monospace; font-size: 0.95rem;">
+        [ AUDIT_COMPLETED: 2026-01-25 ]<br>
+        [ SOURCE: INDEPENDENT_INTEL_NETWORK ]
+    </footer>
+</body>
+</html>

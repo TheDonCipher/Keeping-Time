@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE OUROBOROS ARCHIVES | Keeping Time Master Repository</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&family=JetBrains+Mono:wght@400;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyan: #00f3ff;
+            --gold: #ffcc33;
+            --bg: #0a0a0c;
+            --glass: rgba(255, 255, 255, 0.05);
+            --border: rgba(255, 255, 255, 0.1);
+            --text: #ffffff;
+            
+            /* Category Colors */
+            --cat-tech: #00f3ff;
+            --cat-journal: #d8c8b8;
+            --cat-archive: #ffffff;
+            --cat-prop: #ff4141;
+            --cat-sacred: #c5a059;
+            --cat-forbidden: #ff3b30;
+            
+            --tier1: #00f3ff;
+            --tier2: #c0c0c0;
+            --tier3: #ffcc33;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0a0a0c 100%);
+            color: var(--text);
+            font-family: 'Outfit', sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Scanline Effect */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 9999;
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
+            opacity: 0.15;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        header {
+            padding: 80px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 80px;
+        }
+
+        .system-status {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem; /* Increased from 0.7 */
+            color: var(--cyan);
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .logo h1 {
+            font-size: clamp(2.5rem, 8vw, 6rem);
+            font-weight: 900;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 20px;
+            background: linear-gradient(180deg, #fff, var(--cyan));
+            -webkit-background-clip: text;
+            background-clip: text; /* Added for compatibility */
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-family: 'Crimson Pro', serif;
+            font-size: 1.5rem;
+            opacity: 0.6;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Navigation Grid */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-bottom: 100px;
+        }
+
+        @media (max-width: 900px) {
+            .archive-grid { grid-template-columns: 1fr; }
+        }
+
+        .category-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            padding: 50px;
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--active-color);
+            background: rgba(255,255,255,0.08);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+
+        .card-decoration {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 10rem;
+            font-weight: 900;
+            opacity: 0.03;
+            pointer-events: none;
+            color: var(--active-color);
+        }
+
+        .category-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem; /* Increased from 0.8 */
+            color: var(--active-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.15rem; /* Increased from 1.1 */
+            line-height: 1.8; /* Increased from 1.6 */
+            margin-bottom: 30px;
+            opacity: 0.9; /* Increased from 0.7 */
+            font-weight: 300;
+        }
+
+        .file-list {
+            list-style: none;
+            margin-top: auto;
+        }
+
+        .file-list li {
+            margin-bottom: 12px;
+        }
+
+        .file-list a {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+            padding: 8px 15px;
+            background: rgba(255,255,255,0.03);
+            border-left: 3px solid transparent;
+        }
+
+        .file-list a:hover {
+            background: rgba(255,255,255,0.1);
+            border-left-color: var(--active-color);
+            padding-left: 20px;
+            color: var(--active-color);
+        }
+
+        .file-list a::before {
+            content: 'FILE_';
+            opacity: 0.3;
+            font-size: 0.7rem;
+        }
+
+        /* Novel Section */
+        .novel-panel {
+            background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(255, 204, 51, 0.1));
+            border: 2px solid var(--gold);
+            padding: 80px;
+            text-align: center;
+            margin-bottom: 100px;
+            border-radius: 4px;
+        }
+
+        .btn-read {
+            display: inline-block;
+            padding: 20px 60px;
+            background: var(--gold);
+            color: #000;
+            text-decoration: none;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-top: 40px;
+            transition: all 0.3s;
+        }
+
+        .btn-read:hover {
+            background: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 40px var(--gold);
+        }
+
+        footer {
+            padding: 100px 0;
+            text-align: center;
+            opacity: 0.3;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="system-status">
+                > SESSION: 2026_PRIMARY // DATA_LOAD: OPTIMAL // ENCRYPTION: KETHERIC
+            </div>
+            <div class="logo">
+                <h1>OUROBOROS ARCHIVES</h1>
+                <p class="tagline">The complete repository of resonant history, forbidden lore, and consciousness engineering specifications.</p>
+            </div>
+        </header>
+
+        <section class="novel-panel">
+            <div class="system-status" style="color:var(--gold)">* FEATURED_CONTENT *</div>
+            <h2 style="font-size: 4rem;">KEEPING TIME</h2>
+            <p style="font-size: 1.4rem; max-width: 900px; margin: 20px auto;">"In a world where sound is physics, one boy's interface glitches—revealing the code behind reality."</p>
+            <a href="./index.html" class="btn-read">Initialize Neural Link</a>
+        </section>
+
+        <!-- TIER 1: LISTENER (Public Access) -->
+        <div class="tier-header" style="color: var(--tier1); border-bottom: 2px solid var(--tier1); margin-bottom: 40px; padding-bottom: 10px; font-weight: 900; letter-spacing: 5px;">TIER_01 // LISTENER [PUBLIC_ACCESS]</div>
+        <main class="archive-grid">
+            <!-- SPECIFICATIONS -->
+            <div class="category-card" style="--active-color: var(--cat-tech);">
+                <div class="card-decoration">NAI</div>
+                <div class="category-label">Technical Specs</div>
+                <h2>ENGINEERING_CORE</h2>
+                <p>Detailed schematics for Neural-Acoustic Interfaces and Vibe-Gear basics.</p>
+                <ul class="file-list">
+                    <li><a href="specifications.html">NAI_Standard_v4.2</a></li>
+                    <li><a href="specifications_1.html">Interface_Diagnostics</a></li>
+                    <li><a href="specifications_2.html">Resonant_Governor_Specs</a></li>
+                </ul>
+            </div>
+
+            <!-- FIELD NOTES -->
+            <div class="category-card" style="--active-color: var(--cat-journal);">
+                <div class="card-decoration">REC</div>
+                <div class="category-label">Recovered Logs</div>
+                <h2>RUNNER_JOURNALS</h2>
+                <p>Introductory street-level intelligence and combat tips.</p>
+                <ul class="file-list">
+                    <li><a href="field_notes_on_rhythm.html">Rhythm_Combat_01</a></li>
+                    <li><a href="field_notes_on_rhythm2.html">Ten_Mistakes_Manual</a></li>
+                    <li><a href="field_notes_on_rhythm3.html">Tactical_Retreat_Guide</a></li>
+                </ul>
+            </div>
+
+            <!-- READER RESOURCES -->
+            <div class="category-card" style="--active-color: var(--cyan);">
+                <div class="card-decoration">REF</div>
+                <div class="category-label">Quick Reference</div>
+                <h2>READER_RESOURCES</h2>
+                <p>Essential guides for navigating the world of Keeping Time.</p>
+                <ul class="file-list">
+                    <li><a href="character_guide.html">Character_Guide</a></li>
+                    <li><a href="glossary.html">Glossary_Interactive</a></li>
+                </ul>
+            </div>
+
+            <!-- FACTION PRIMERS -->
+            <div class="category-card" style="--active-color: var(--cat-prop);">
+                <div class="card-decoration">IDE</div>
+                <div class="category-label">Ideological Intel</div>
+                <h2>FACTION_PRIMERS</h2>
+                <p>The manifestos and core philosophies of the major resonant powers.</p>
+                <ul class="file-list">
+                    <li><a href="the_cadence_rhythm.html">The_Cadence_Rhythm</a></li>
+                    <li><a href="the_chorus_harmony.html">The_Chorus_Harmony</a></li>
+                    <li><a href="the_dissonance_noise.html">The_Dissonance_Noise</a></li>
+                    <li><a href="the_virtuosos_melody.html">The_Virtuoso_Melody</a></li>
+                    <li><a href="the_silent_order_silence.html">The_Silent_Order</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- TIER 2: CERTIFIED (Premium Access) -->
+        <div class="tier-header" style="color: var(--tier2); border-bottom: 2px solid var(--tier2); margin: 80px 0 40px; padding-bottom: 10px; font-weight: 900; letter-spacing: 5px; display: flex; justify-content: space-between; align-items: center;">
+            <span>TIER_02 // CERTIFIED [PREMIUM_ACCESS]</span>
+            <a href="../PAYMENT_CHANNELS.md" style="font-size: 0.9rem; color: #000; background: var(--tier2); padding: 5px 15px; text-decoration: none;">UPGRADE via CRYPTO/PAYPAL</a>
+        </div>
+        <main class="archive-grid">
+            <!-- CASE STUDIES -->
+            <div class="category-card" style="--active-color: var(--cat-archive);">
+                <div class="card-decoration">HST</div>
+                <div class="category-label">Archival Records</div>
+                <h2>HISTORICAL_ANALYSIS</h2>
+                <p>Formal reports on resonant catastrophes and major conflict zones.</p>
+                <ul class="file-list">
+                    <li><a href="case_study_01_the_glass_labyrinth_of_echoes.html">The_Glass_Labyrinth</a></li>
+                    <li><a href="case_study_01_the_glass_plains_of_korelia.html">The_Glass_Plains</a></li>
+                    <li><a href="case_study_02_the_cacophony_at_argent_spire.html">Argent_Spire_Incident</a></li>
+                    <li><a href="case_study_02_the_stalemate_of_the_silent_plains.html">The_Silent_Plains</a></li>
+                </ul>
+            </div>
+
+            <!-- PHILOSOPHY -->
+            <div class="category-card" style="--active-color: var(--cat-sacred);">
+                <div class="card-decoration">SCR</div>
+                <div class="category-label">Elder Scores</div>
+                <h2>PHILOSOPHICAL_TREATISES</h2>
+                <p>Deep foundational texts exploring the nature of existence through sound.</p>
+                <ul class="file-list">
+                    <li><a href="the_unbroken_chord_a_case_for_universal_harmony.html">The_Unbroken_Chord</a></li>
+                    <li><a href="the_glorious_static_finding_freedom_in_noise.html">The_Glorious_Static</a></li>
+                    <li><a href="the_ascent_power_through_the_spiral_of_rhythm.html">The_Spiral_Ascent</a></li>
+                </ul>
+            </div>
+
+            <!-- ADVANCED LORE -->
+            <div class="category-card" style="--active-color: var(--cat-journal);">
+                <div class="card-decoration">EXE</div>
+                <div class="category-label">Deep Data</div>
+                <h2>ADVANCED_LORE</h2>
+                <p>Comprehensive lore compendium with historical records and factional analysis.</p>
+                <ul class="file-list">
+                    <li><a href="keeping_time_lore.html">Lore_Compendium</a></li>
+                    <li><a href="keeping_time_lore.html#book-unfinished-score">Historical_Records</a></li>
+                    <li><a href="keeping_time_lore.html#book-architects-index">Architectural_Analysis</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <div class="tier-header" style="color: var(--tier3); border-bottom: 2px solid var(--tier3); margin: 80px 0 40px; padding-bottom: 10px; font-weight: 900; letter-spacing: 5px; display: flex; justify-content: space-between; align-items: center;">
+            <span>TIER_03 // VANGUARD [FORBIDDEN_ACCESS]</span>
+            <a href="../PAYMENT_CHANNELS.md" style="font-size: 0.9rem; color: #000; background: var(--tier3); padding: 5px 15px; text-decoration: none;">ACCESS FORBIDDEN DATA</a>
+        </div>
+        <main class="archive-grid">
+            <!-- FORBIDDEN -->
+            <div class="category-card" style="--active-color: var(--cat-forbidden);">
+                <div class="card-decoration">!!!</div>
+                <div class="category-label" style="color:var(--cat-forbidden)">Classified Omega</div>
+                <h2 style="color:var(--cat-forbidden)">FORBIDDEN_LORE</h2>
+                <p>Restricted data on unsanctioned techniques and history-erasing events.</p>
+                <ul class="file-list">
+                    <li><a href="keeping_time_lore.html#book-unfinished-score">The_Unfinished_Score</a></li>
+                    <li><a href="keeping_time_lore.html#book-silent-intervals">Silent_Intervals</a></li>
+                    <li><a href="keeping_time_lore.html#book-faction-essays">Circle_&_Fracture</a></li>
+                    <li><a href="keeping_time_lore.html#book-architects-index">Architects_Index</a></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="system-status">
+                > ALL_FREQUENCIES_RESERVED // 2026_ARCHIVE_CONTROL<br>
+                > SIGNAL_LOCK: 100% // END_OF_TRANSMISSION
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Restore scroll position when returning to homepage
+        window.addEventListener('load', function() {
+            const scrollPos = sessionStorage.getItem('scrollPos');
+            if (scrollPos) {
+                window.scrollTo(0, parseInt(scrollPos));
+                sessionStorage.removeItem('scrollPos');
+            }
+        });
+
+        // Save scroll position when clicking article links
+        document.querySelectorAll('.file-list a').forEach(link => {
+            link.addEventListener('click', function() {
+                sessionStorage.setItem('scrollPos', window.scrollY || 0);
+            });
+        });
+    </script>
+</body>
+</html>

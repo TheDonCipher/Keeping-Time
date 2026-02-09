@@ -695,6 +695,10 @@
                 'void_reveal': [
                     { text: "I am / the noise.", layer: 2, intensity: 'high' }
                 ],
+                'hardline_backup': [
+                    { text: "> INITIATE_HARDLINE_BACKUP", layer: 3, interactive: true, action: 'backup' },
+                    { text: "[DOWNLOAD_CACHE]", layer: 3, interactive: true, action: 'backup' }
+                ],
                 
                 // Missing Keys
                  'marcus_staccato': [
@@ -741,6 +745,25 @@
                 this.setupTriggers();
                 
                 // Initial Baseline removed to let ch1_start take over
+            }
+            
+            initiateHardlineBackup() {
+                // Visual Glitch
+                this.inhaleFragment("Creating local cache...", 3);
+                this.archive.classList.add('stress-high');
+                setTimeout(() => this.archive.classList.remove('stress-high'), 500);
+
+                // Download Logic
+                const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'KEEPING_TIME_VOLUME_1_ARCHIVE.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                setTimeout(() => this.inhaleFragment("Backup secure.", 1), 1000);
             }
 
             /* --- 1. The Resonance Loop (Heartbeat) --- */
@@ -828,6 +851,11 @@
                 setTimeout(() => {
                     this.inhaleFragment("baseline_established", 1);
                 }, 2000);
+                
+                // 3. Inject Hidden Backup Option (Rare chance or fixed delay)
+                setTimeout(() => {
+                    this.triggerFragment('hardline_backup');
+                }, 5000);
             }
 
             triggerFragment(key) {
@@ -840,11 +868,12 @@
                 // Basic Dedup: Don't show exact same text twice in a row
                 if (this.lastFragmentText === data.text) return;
                 
-                this.inhaleFragment(data.text, data.layer);
+                // Pass the whole data object to handle interactivity
+                this.inhaleFragment(data.text, data.layer, data);
                 this.lastFragmentText = data.text;
             }
 
-            inhaleFragment(text, layer = 1) {
+            inhaleFragment(text, layer = 1, metadata = {}) {
                 if (!this.layer) return;
 
                 // GHOSTING (Palimpsest): Fade out old fragments, don't delete immediately
@@ -861,6 +890,18 @@
                 el.className = 'archive-fragment';
                 el.dataset.layer = layer;
                 el.textContent = text;
+                
+                if (metadata.interactive) {
+                    el.style.cursor = 'pointer';
+                    el.style.textDecoration = 'underline';
+                    el.style.color = 'var(--accent)';
+                    if (metadata.action === 'backup') {
+                        el.onclick = (e) => {
+                            e.stopPropagation();
+                            this.initiateHardlineBackup();
+                        };
+                    }
+                }
                 
                 this.layer.appendChild(el);
                 

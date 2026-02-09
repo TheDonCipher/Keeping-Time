@@ -7,9 +7,16 @@
 ## 📁 Repository Structure
 
 *   **`MANUSCRIPT/`**: The source markdown files for the novel's chapters. This is the single source of truth for the narrative.
-*   **`PUBLICATION_COMPLETE.html`**: The build artifact. A single-page, responsive web application containing the entire novel and the **Residual Archive**.
-*   **`WEBSITE/`**: Assets and supporting files for the web deployment.
+## 📁 Repository Structure
+
+*   **`public/`**: The deployment-ready website directory.
+    *   **`index.html`**: The complete novel (formerly `PUBLICATION_COMPLETE.html`).
+    *   **`portal.html`**: The legacy portal/landing page.
+    *   **Assets**: All supplementary lore files and styles.
+*   **`MANUSCRIPT/`**: The source markdown files for the novel's chapters. This is the single source of truth for the narrative.
+*   **`WEBSITE/`**: Source assets for the web deployment.
 *   **`build_publication.ps1`**: PowerShell script to compile `MANUSCRIPT` files into the final HTML output.
+*   **`vercel.json`**: Configuration for Vercel deployment.
 
 ## 🫀 The Residual Archive (System v2.0)
 
