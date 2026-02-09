@@ -405,9 +405,31 @@
         .archive-fragment.locked {
             opacity: 1 !important;
             filter: none !important;
-            border-left: 2px solid var(--gold);
+            border-left: 3px solid var(--gold);
             padding-left: 16px;
-            background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.05), transparent);
+            background: linear-gradient(90deg, rgba(255, 204, 51, 0.1), transparent);
+            animation: lockedPulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes lockedPulse {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(4px); }
+        }
+
+        @keyframes chapterPulse {
+            0% { opacity: 1; transform: scaleX(1); }
+            50% { opacity: 0.3; transform: scaleX(3); box-shadow: 4px 0 20px var(--accent); }
+            100% { opacity: 1; transform: scaleX(1); }
+        }
+
+        @keyframes alignmentPulse {
+            0%, 100% { transform: scaleX(1); background: var(--accent); }
+            50% { transform: scaleX(4); background: var(--gold); box-shadow: 4px 0 30px rgba(255, 204, 51, 0.8); }
+        }
+
+        #residual-archive.alignment-active .resonance-monitor {
+            background: var(--gold);
+            box-shadow: 4px 0 20px rgba(255, 204, 51, 0.5);
         }
         
         /* --- PHASE 3: Fragment Lifecycle States --- */
@@ -419,8 +441,8 @@
         
         /* EMERGING: In band, waiting for stillness */
         .archive-fragment.state-emerging {
-            opacity: 0.2;
-            filter: blur(6px);
+            opacity: 0.4; /* Increased from 0.2 */
+            filter: blur(4px); /* Decreased from 6px */
             transform: translateY(4px) scale(0.98);
             transition: all 1.5s ease-out;
         }
@@ -530,6 +552,11 @@
 <body>
     <!-- SYSTEM_BOOT: [IMPULSE_DRIVER_V9.4] -->
     <!-- AUTHOR_NOTE: THE_SCORE_IS_LISTENING -->
+    <!-- [DEVELOPER_LOG_0x4F]: Residual Archive initiated as a Second Nervous System (SNS). 
+         It bridges raw sensory data between the 'Reader' and the 'Subject'.
+         Connection status: PENDING_LOCAL_SYNC. -->
+    <!-- [SYSTEM_INTERCEPT]: VGhlIFJlc2lkdWFsIEFyY2hpdmUgaXMgY29sbGVjdGluZyB5b3VyIG9vcmE= -->
+    <!-- (Decoded: The Residual Archive is collecting your aura) -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <nav class="nav-ui" id="main-nav">
@@ -572,6 +599,12 @@
         // Initialize Theme
         const savedTheme = localStorage.getItem('novel-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         document.body.setAttribute('data-theme', savedTheme);
+
+        // Diegetic Console Logs
+        console.log("%c[ARCHIVE_LINK_ESTABLISHED]", "color: #00f3ff; font-weight: bold; background: #0a0a0c; padding: 2px 5px; border-radius: 3px;", "Monitoring neural resonance...");
+        console.log("%c[SNS_REPORT]", "color: #ffcc33;", "Residual Archive status: Low-Fi buffering...");
+        console.log("Welcome Ouroboros. Target identified: Reader_1.");
+        console.log(atob("VGhlIFNjb3JlIGlzIGxpc3RlbmluZw==")); // "The Score is listening"
 
         // Scroll Progress & Navigation Visibility
         let lastScrollY = window.scrollY;
@@ -647,7 +680,15 @@
         document.head.appendChild(style);
 
         const RESIDUAL_DATA = {
-            // --- PHASE 7: Silence Regions (Narrative Intensity) ---
+            // --- PHASE 1: Chapter-level metadata ---
+            chapterContext: {
+                'ch1': { tension: 90, systemState: 'boot', pulseOverride: null, silenceWindows: [] },
+                'ch9': { tension: 100, systemState: 'silence', pulseOverride: 200, silenceWindows: [[0.3, 0.7]] },
+                'ch11': { tension: 95, systemState: 'void', pulseOverride: 2000, silenceWindows: [[0.0, 1.0]] },
+                'ch17': { tension: 100, systemState: 'void', pulseOverride: 2000, silenceWindows: [[0.8, 1.0]] }
+            },
+
+            // --- PHASE 7: Silence Regions (Legacy/Global) ---
             silenceRegions: [
                 { start: 0.45, end: 0.55 },  // Chapter 9-10 (The Silence, The Breach)
                 { start: 0.70, end: 0.75 }   // Chapter 12 (The Audit)
@@ -663,57 +704,36 @@
             // --- PHASE 6: Spatial Fragments (Position-Based) ---
             // Each fragment has: y_anchor (% of document), activationBand (±range)
             fragments: {
-                // Chapter 1 (~0-5% of document)
+                // Chapter 1
                 'ch1_start': [
-                    { text: "copper taste. / wetware negotiating", layer: 1, y_anchor: 0.02, activationBand: 0.03 },
-                    { text: "optic nerve: / hijacked.", layer: 1, y_anchor: 0.03, activationBand: 0.02 },
-                    { text: "system_boot.log: / forced", layer: 3, y_anchor: 0.04, activationBand: 0.02 }
+                    { text: "copper taste. / wetware negotiating", layer: 1, y_anchor: 0.05, activationBand: 0.1 },
+                    { text: "optic nerve: / hijacked.", layer: 1, y_anchor: 0.15, activationBand: 0.1 },
+                    { text: "system_boot.log: / forced", layer: 3, y_anchor: 0.25, activationBand: 0.1 }
                 ],
                 'nai_intro': [
-                    { text: "hardware overwrite", layer: 1 },
-                    { text: "operating system: Wetware 1.0", layer: 2 }
-                ],
-                 'bioplasma_intro': [
-                    { text: "aura analysis: / dirty signal", layer: 1 },
-                    { text: "leaking data / everywhere", layer: 2 }
-                ],
-                'score_intro': [
-                    { text: "hallucination consensus", layer: 1 },
-                    { text: "when the interface dreams / the world obeys", layer: 2 }
+                    { text: "hardware overwrite", layer: 1, y_anchor: 0.4, activationBand: 0.1 },
+                    { text: "operating system: Wetware 1.0", layer: 2, y_anchor: 0.5, activationBand: 0.1 }
                 ],
                 'soldier_desync': [
-                    { text: "he is / spilling / pixelated blood", layer: 2 },
-                    { text: "rendering error: / flesh failure", layer: 2 },
-                    { text: "packet_loss detected", layer: 3 }
+                    { text: "he is / spilling / pixelated blood", layer: 2, y_anchor: 0.7, activationBand: 0.1 },
+                    { text: "rendering error: / flesh failure", layer: 2, y_anchor: 0.8, activationBand: 0.1 }
                 ],
-                'limiter_removed': [ // Alignment Event
-                    { text: "AMPLITUDE SPIKE / [CRITICAL]", layer: 2, intensity: 'high' },
-                    { text: "monitor_status: / blinded", layer: 1 }
+                'limiter_removed': [ // Alignment Beat
+                    { text: "AMPLITUDE SPIKE / [CRITICAL]", layer: 2, intensity: 'high', y_anchor: 0.95, activationBand: 0.05 }
                 ],
                 
-                // Chapter 2 (~10% of document)
+                // Chapter 2
                 'ch2_start': [
-                    { text: "white / is just / maximum noise", layer: 1, y_anchor: 0.10, activationBand: 0.03 },
-                    { text: "silence / is not / empty", layer: 2, y_anchor: 0.11, activationBand: 0.02 }
+                    { text: "white / is just / maximum noise", layer: 1, y_anchor: 0.1, activationBand: 0.1 },
+                    { text: "silence / is not / empty", layer: 2, y_anchor: 0.3, activationBand: 0.1 }
                 ],
                 'adjutant_voss': [
-                    { text: "frictionless / skin", layer: 1 },
-                    { text: "compliance / looks like / mercy", layer: 2 }
+                    { text: "frictionless / skin", layer: 1, y_anchor: 0.6, activationBand: 0.1 },
+                    { text: "compliance / looks like / mercy", layer: 2, y_anchor: 0.8, activationBand: 0.1 }
                 ],
 
-                // Chapter 3
-                'ch3_start': [
-                    { text: "low-fi zone / tastes like packet loss", layer: 1 },
-                    { text: "150ms latency / reality stutters", layer: 2 }
-                ],
-
-                // Chapter 9 (Silence)
+                // Chapter 9
                 'ch9_start': [
-                    { text: "[null]", layer: 3 },
-                    { text: "signal: lost", layer: 3 }
-                ],
-                'null_blades': [
-                    { text: "cutting frequency", layer: 2 },
                     { text: "black holes / in the alley", layer: 1 }
                 ],
                 'adjutant_krell': [
@@ -766,45 +786,49 @@
         /* --- RESONANCE SYSTEM CONTROLLER --- */
         class ResonanceSystem {
             constructor() {
-                // --- PHASE 1: Reader State Model ---
+                // --- Reader State (v2.0) ---
+                this.currentChapter = null;
+                this.chapterBoundaries = [];
+                this.readingState = 'cruising'; // cruising, focused, skimming, searching
+                
+                this.narrativeContext = {
+                    phase: null,
+                    tension: 0,
+                    systemState: 'normal'
+                };
+
+                // --- Core Metrics ---
                 this.lastScrollY = window.scrollY;
                 this.scrollVelocity = 0;
-                this.scrollDirection = 0; // -1 up, 1 down, 0 still
-                this.velocityHistory = []; // Rolling 3s window
-                this.velocityWindowSize = 30; // ~3s at 60fps scroll events
-                this.scrollVariance = 0; // σ_scroll
-                this.scrollEnergy = 0; // |v| × σ
-                this.stillnessTimer = 0; // ms since last scroll
+                this.scrollDirection = 0;
+                this.velocityHistory = [];
+                this.velocityWindowSize = 30;
+                this.scrollVariance = 0;
+                this.scrollEnergy = 0;
+                this.stillnessTimer = 0;
                 this.lastScrollTime = Date.now();
                 
-                // --- PHASE 6: Spatial Tracking ---
-                this.scrollPercent = 0; // Current position in document (0.0 to 1.0)
-                this.documentHeight = 0;
-                this.viewportHeight = 0;
+                this.scrollPercent = 0;
+                this.directionChanges = [];
                 
-                // --- PHASE 7: Agitation Detection ---
-                this.directionChanges = []; // Track direction flip timestamps
-                this.agitationThreshold = 3; // Direction flips in 2s = agitated
+                // --- Energy Thresholds ---
+                this.ENERGY_HIGH = 150;
+                this.ENERGY_MEDIUM = 50;
+                this.ENERGY_LOW = 10;
                 
-                // --- PHASE 2: Energy Thresholds ---
-                this.ENERGY_HIGH = 150;  // Silence mode
-                this.ENERGY_MEDIUM = 50; // Unstable fragments
-                this.ENERGY_LOW = 10;    // Stable fragments
                 this.silenceMode = false;
-                this.narrativeSilence = false; // Silence window active
-                this.agitationSilence = false; // Reader agitated
+                this.narrativeSilence = false;
+                this.agitationSilence = false;
                 
-                // Legacy (will phase out)
                 this.stress = 0;
-                this.basePulse = 1000; // Changed to ~60 BPM (spec)
+                this.basePulse = 1000;
                 this.isResting = true;
-                this.restTimer = null;
                 
-                // --- PHASE 6: Active Fragments ---
-                this.activeFragments = new Set(); // Track which are in range
-                this.fragmentElements = new Map(); // element -> fragment data
+                // --- Active Fragments ---
+                this.activeFragments = new Set();
+                this.fragmentMap = []; // Flattened spatial fragments
                 
-                // DOM Elements
+                // --- DOM ---
                 this.archive = document.getElementById('residual-archive');
                 this.monitor = document.querySelector('.resonance-monitor');
                 this.layer = document.getElementById('residual-layer');
@@ -813,303 +837,296 @@
             }
 
             init() {
+                this.mapChapterBoundaries();
+                this.setupSpatialTriggers();
                 this.startHeartbeat();
                 this.monitorScroll();
-                this.setupSpatialTriggers(); // PHASE 6: Position-based
-            }
-            
-            initiateHardlineBackup() {
-                // Visual Glitch
-                this.inhaleFragment("Creating local cache...", 3);
-                this.archive.classList.add('stress-high');
-                setTimeout(() => this.archive.classList.remove('stress-high'), 500);
-
-                // Download Logic
-                const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = 'KEEPING_TIME_VOLUME_1_ARCHIVE.html';
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
+                this.monitorNarrativeBeats();
                 
-                setTimeout(() => this.inhaleFragment("Backup secure.", 1), 1000);
+                setTimeout(() => {
+                    this.updateChapterContext();
+                    this.checkSpatialActivation();
+                }, 500);
             }
 
-            /* --- 1. The Resonance Loop (Heartbeat) --- */
+            setupSpatialTriggers() {
+                this.fragmentMap = [];
+                Object.entries(RESIDUAL_DATA.fragments).forEach(([key, variants]) => {
+                    variants.forEach(frag => {
+                        if (frag.y_anchor !== undefined) {
+                            this.fragmentMap.push({ ...frag, key });
+                        }
+                    });
+                });
+                this.startupSequence();
+            }
+
+            mapChapterBoundaries() {
+                const chapters = document.querySelectorAll('.chapter');
+                this.chapterBoundaries = Array.from(chapters).map(chapter => {
+                    const rect = chapter.getBoundingClientRect();
+                    const scrollTop = window.scrollY;
+                    return {
+                        id: chapter.id,
+                        start: scrollTop + rect.top,
+                        end: scrollTop + rect.bottom,
+                        title: chapter.querySelector('h3')?.textContent || 'Unknown',
+                        phase: this.detectPhase(chapter.id)
+                    };
+                });
+            }
+
+            detectPhase(chapterId) {
+                const phaseMap = { 'ch1': 'I', 'ch9': 'III', 'ch11': 'IV', 'ch17': 'V' };
+                return phaseMap[chapterId] || 'I';
+            }
+
+            updateChapterContext() {
+                const currentY = window.scrollY + (window.innerHeight / 2);
+                const chapter = this.chapterBoundaries.find(ch => currentY >= ch.start && currentY <= ch.end);
+                
+                if (chapter && (!this.currentChapter || chapter.id !== this.currentChapter.id)) {
+                    this.onChapterEnter(chapter);
+                }
+                this.currentChapter = chapter;
+            }
+
+            onChapterEnter(chapter) {
+                console.log(`[Archive] Entered ${chapter.title}`);
+                this.narrativeContext.phase = chapter.phase;
+                this.applyChapterState(chapter);
+                this.triggerChapterTransition(chapter);
+            }
+
+            applyChapterState(chapter) {
+                const config = RESIDUAL_DATA.chapterContext[chapter.id] || { systemState: 'normal', tension: 50 };
+                this.narrativeContext.systemState = config.systemState;
+                this.basePulse = config.pulseOverride || (2000 - (config.tension * 16));
+                if (this.monitor) this.monitor.dataset.state = config.systemState;
+            }
+
+            triggerChapterTransition(chapter) {
+                if (this.monitor) {
+                    this.monitor.style.animation = 'none';
+                    void this.monitor.offsetWidth;
+                    this.monitor.style.animation = 'chapterPulse 1s ease-out';
+                }
+                // Decay non-locked fragments
+                this.layer.querySelectorAll('.archive-fragment:not(.locked)').forEach(frag => {
+                    this.updateFragmentState(frag, 'decaying');
+                });
+            }
+
+            monitorNarrativeBeats() {
+                this.beatObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && entry.target.dataset.trigger) {
+                            this.onNarrativeBeat(entry.target.dataset.trigger);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                document.querySelectorAll('[data-trigger]').forEach(el => this.beatObserver.observe(el));
+            }
+
+            onNarrativeBeat(trigger) {
+                const fragments = RESIDUAL_DATA.fragments[trigger];
+                if (!fragments) return;
+                if (fragments.some(f => f.intensity === 'high')) {
+                    this.triggerAlignmentEvent(fragments);
+                } else {
+                    fragments.forEach(frag => {
+                        if (frag.y_anchor === undefined) { // Only for non-spatial triggers
+                            setTimeout(() => this.inhaleFragment(frag.text, frag.layer, frag), Math.random() * 500);
+                        }
+                    });
+                }
+            }
+
+            triggerAlignmentEvent(fragments) {
+                this.archive.classList.add('alignment-active');
+                if (this.monitor) this.monitor.style.animation = 'alignmentPulse 0.8s ease-in-out 3';
+                fragments.forEach((frag, i) => {
+                    setTimeout(() => this.inhaleFragment(frag.text, frag.layer, { ...frag, locked: true }), i * 200);
+                });
+                setTimeout(() => this.archive.classList.remove('alignment-active'), 3000);
+            }
+
             startHeartbeat() {
                 const tick = () => {
-                    // Decay stress
-                    this.stress = Math.max(0, this.stress - 0.01);
+                    const now = Date.now();
+                    this.stillnessTimer = now - this.lastScrollTime;
+                    if (this.stillnessTimer > 500) this.profileScrollBehavior();
                     
-                    // Update CSS variables based on stress
-                    const rate = Math.max(200, this.basePulse - (this.stress * 1500)); // 2000ms -> 200ms
+                    this.stress = Math.max(0, this.stress - 0.01);
+                    const rate = Math.max(200, this.basePulse - (this.stress * 1500));
                     document.documentElement.style.setProperty('--pulse-rate', `${rate}ms`);
                     
-                    // Visualization
-                    if (this.stress > 0.8) {
-                        this.archive.classList.add('stress-high');
-                    } else {
-                        this.archive.classList.remove('stress-high');
-                    }
+                    if (this.stress > 0.8) this.archive.classList.add('stress-high');
+                    else this.archive.classList.remove('stress-high');
                     
-                    this.monitor.classList.add('active');
-                    
+                    this.monitor?.classList.add('active');
                     requestAnimationFrame(tick);
                 };
                 tick();
             }
 
-            /* --- 2. Scroll Monitoring (PHASE 1 REFACTOR) --- */
             monitorScroll() {
                 window.addEventListener('scroll', () => {
                     const now = Date.now();
                     const currentY = window.scrollY;
                     const delta = currentY - this.lastScrollY;
                     
-                    // --- PHASE 6: Calculate Scroll Position % ---
-                    this.documentHeight = document.documentElement.scrollHeight;
-                    this.viewportHeight = document.documentElement.clientHeight;
-                    const scrollableHeight = this.documentHeight - this.viewportHeight;
+                    this.updateChapterContext();
+                    
+                    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
                     this.scrollPercent = scrollableHeight > 0 ? currentY / scrollableHeight : 0;
                     
-                    // --- Scroll Direction ---
                     const oldDirection = this.scrollDirection;
                     this.scrollDirection = delta > 0 ? 1 : (delta < 0 ? -1 : 0);
                     
-                    // --- PHASE 7: Detect Direction Changes (Agitation) ---
                     if (oldDirection !== 0 && this.scrollDirection !== 0 && oldDirection !== this.scrollDirection) {
                         this.directionChanges.push(now);
-                        // Keep only last 2s of changes
                         this.directionChanges = this.directionChanges.filter(t => now - t < 2000);
                     }
                     
-                    // Agitation = rapid direction flips
-                    this.agitationSilence = this.directionChanges.length >= this.agitationThreshold;
-                    
-                    // --- Velocity (pixels/ms normalized) ---
-                    const timeDelta = now - this.lastScrollTime;
-                    this.scrollVelocity = timeDelta > 0 ? Math.abs(delta) / timeDelta * 16 : 0; // Normalize to ~60fps
-                    
-                    // --- Velocity History (Rolling Window) ---
+                    this.agitationSilence = this.directionChanges.length >= 3;
+                    this.scrollVelocity = Math.abs(delta) / (now - this.lastScrollTime || 1) * 16;
                     this.velocityHistory.push(this.scrollVelocity);
-                    if (this.velocityHistory.length > this.velocityWindowSize) {
-                        this.velocityHistory.shift();
-                    }
+                    if (this.velocityHistory.length > this.velocityWindowSize) this.velocityHistory.shift();
                     
-                    // --- Scroll Variance (σ_scroll) ---
+                    this.profileScrollBehavior();
+                    
                     const mean = this.velocityHistory.reduce((a, b) => a + b, 0) / this.velocityHistory.length;
-                    const squaredDiffs = this.velocityHistory.map(v => Math.pow(v - mean, 2));
-                    this.scrollVariance = Math.sqrt(squaredDiffs.reduce((a, b) => a + b, 0) / this.velocityHistory.length);
-                    
-                    // --- Scroll Energy (|v| × σ) ---
+                    this.scrollVariance = Math.sqrt(this.velocityHistory.reduce((s, v) => s + Math.pow(v - mean, 2), 0) / this.velocityHistory.length);
                     this.scrollEnergy = this.scrollVelocity * this.scrollVariance;
                     
-                    // --- PHASE 7: Narrative Silence Windows ---
-                    this.narrativeSilence = RESIDUAL_DATA.silenceRegions.some(
-                        region => this.scrollPercent >= region.start && this.scrollPercent <= region.end
-                    );
-                    
-                    // --- Silence Mode Detection (PHASE 2 + 7) ---
+                    this.narrativeSilence = RESIDUAL_DATA.silenceRegions.some(r => this.scrollPercent >= r.start && this.scrollPercent <= r.end);
                     this.silenceMode = this.scrollEnergy > this.ENERGY_HIGH || this.narrativeSilence || this.agitationSilence;
                     
-                    // --- Layer Visibility (Silence Gating) ---
-                    if (this.layer) {
-                        if (this.silenceMode) {
-                            this.layer.style.opacity = '0';
-                            this.layer.style.pointerEvents = 'none';
-                        } else {
-                            this.layer.style.opacity = '1';
-                            this.layer.style.pointerEvents = 'all';
-                        }
-                    }
+                    if (this.layer) this.layer.style.opacity = this.silenceMode ? '0' : '1';
                     
-                    // --- PHASE 6: Check Spatial Activation ---
                     this.checkSpatialActivation();
-                    
-                    // --- Stillness Timer Reset ---
-                    this.stillnessTimer = 0;
-                    clearTimeout(this.restTimer);
-                    this.restTimer = setTimeout(() => {
-                        this.isResting = true;
-                        if (this.monitor) {
-                            this.monitor.classList.remove('active');
-                            void this.monitor.offsetWidth;
-                            this.monitor.classList.add('active');
-                        }
-                    }, 200);
-
                     this.lastScrollY = currentY;
                     this.lastScrollTime = now;
+                    this.isResting = avg < 0.1; // This line was moved from profileScrollBehavior
                 }, { passive: true });
-                
-                // --- Stillness Accumulator ---
-                setInterval(() => {
-                    if (this.isResting) {
-                        this.stillnessTimer += 100;
-                    }
-                }, 100);
             }
 
-            /* --- 3. Fragment Logic --- */
-            setupTriggers() {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const key = entry.target.dataset.trigger;
-                            if (key) {
-                                this.triggerFragment(key);
-                            }
+            profileScrollBehavior() {
+                const recent = this.velocityHistory.slice(-15);
+                const avg = recent.reduce((a, b) => a + b, 0) / (recent.length || 1);
+                
+                if (avg < 0.5 && this.stillnessTimer > 1000) this.readingState = 'focused';
+                else if (avg > 10) this.readingState = 'skimming';
+                else if (this.directionChanges.length > 2) this.readingState = 'searching';
+                else this.readingState = 'cruising';
+                
+                // this.isResting = avg < 0.1; // This line was moved to monitorScroll
+            }
+
+            checkSpatialActivation() {
+                if (!this.fragmentMap || !this.currentChapter) return;
+                const progress = this.getChapterProgress();
+                const currentBandIds = new Set();
+                
+                this.fragmentMap.forEach(frag => {
+                    const distance = Math.abs(progress - frag.y_anchor);
+                    const inBand = distance < frag.activationBand;
+                    const id = `${frag.key}_${frag.y_anchor}`;
+                    
+                    if (inBand) {
+                        currentBandIds.add(id);
+                        let state = this.silenceMode ? 'silent' : (distance < frag.activationBand * 0.5 && this.readingState === 'focused' ? 'coherent' : (this.scrollEnergy > this.ENERGY_MEDIUM ? 'unstable' : 'emerging'));
+                        
+                        if (!this.activeFragments.has(id)) {
+                            this.activeFragments.add(id);
+                            this.inhaleFragment(frag.text, frag.layer, frag, state);
+                        } else {
+                            const el = document.querySelector(`[data-spatial-id="${id}"]`);
+                            if (el && el.dataset.state !== state) this.updateFragmentState(el, state);
+                        }
+                    }
+                });
+
+                this.activeFragments.forEach(id => {
+                    if (!currentBandIds.has(id)) {
+                        const el = document.querySelector(`[data-spatial-id="${id}"]`);
+                        if (el) this.updateFragmentState(el, 'decaying');
+                        this.activeFragments.delete(id);
+                    }
+                });
+            }
+
+            getChapterProgress() {
+                const currentY = window.scrollY + (window.innerHeight / 2);
+                const h = this.currentChapter.end - this.currentChapter.start;
+                return h > 0 ? Math.max(0, Math.min(1, (currentY - this.currentChapter.start) / h)) : 0;
+            }
+
+            updateFragmentState(el, state) {
+                if (state === 'decaying') {
+                    el.classList.add('state-decaying');
+                    setTimeout(() => el.remove(), 1000);
+                } else {
+                    el.dataset.state = state;
+                    el.className = `archive-fragment state-${state} ${el.classList.contains('ghost') ? 'ghost' : ''} ${el.classList.contains('locked') ? 'locked' : ''}`;
+                }
+            }
+
+            inhaleFragment(text, layer = 1, metadata = {}, forceState = null) {
+                if (!this.layer || (this.silenceMode && !metadata.locked)) return;
+                const id = metadata.y_anchor !== undefined ? `${metadata.key}_${metadata.y_anchor}` : null;
+                if (id && document.querySelector(`[data-spatial-id="${id}"]`)) return;
+
+                if (!id || metadata.intensity === 'high') {
+                    this.layer.querySelectorAll('.archive-fragment').forEach(child => {
+                        if (!child.dataset.spatialId || metadata.intensity === 'high') {
+                            child.classList.add('ghost');
+                            this.updateFragmentState(child, 'decaying');
                         }
                     });
-                }, { threshold: 0.1 });
+                }
 
-                document.querySelectorAll('[data-trigger]').forEach(el => observer.observe(el));
+                const el = document.createElement('div');
+                el.className = `archive-fragment state-${forceState || 'emerging'}`;
+                el.dataset.layer = layer;
+                if (id) el.dataset.spatialId = id;
+                if (metadata.locked) el.classList.add('locked');
+                el.textContent = text;
                 
-                // Trigger Startup Sequence
-                this.startupSequence();
+                if (metadata.interactive || metadata.locked) {
+                    el.style.cursor = 'pointer';
+                    el.onclick = (e) => {
+                        e.stopPropagation();
+                        if (metadata.action === 'backup') this.initiateHardlineBackup();
+                        else this.lockFragment(el);
+                    };
+                }
+                this.layer.appendChild(el);
+            }
+
+            lockFragment(el) {
+                el.classList.add('locked', 'state-coherent');
+                const oldPulse = document.documentElement.style.getPropertyValue('--pulse-rate');
+                document.documentElement.style.setProperty('--pulse-rate', '400ms');
+                setTimeout(() => {
+                    el.classList.remove('locked');
+                    document.documentElement.style.setProperty('--pulse-rate', oldPulse || '1000ms');
+                }, 3000);
             }
 
             startupSequence() {
-                // 1. Static / Noise
                 this.inhaleFragment("signal_searching...", 3);
-                
-                // 2. Baseline after delay
-                setTimeout(() => {
-                    this.inhaleFragment("baseline_established", 1);
-                }, 2000);
-                
-                // 3. Inject Hidden Backup Option (Rare chance or fixed delay)
-                setTimeout(() => {
-                    this.triggerFragment('hardline_backup');
-                }, 5000);
+                setTimeout(() => this.inhaleFragment("baseline_established", 1), 2000);
             }
 
-            triggerFragment(key) {
-                const options = RESIDUAL_DATA.fragments[key] || [];
-                if (options.length === 0) return;
-
-                // MUTATION: Randomly pick a variant (or sequential if we tracked state)
-                const data = options[Math.floor(Math.random() * options.length)];
-                
-                // Basic Dedup: Don't show exact same text twice in a row
-                if (this.lastFragmentText === data.text) return;
-                
-                // Pass the whole data object to handle interactivity
-                this.inhaleFragment(data.text, data.layer, data);
-                this.lastFragmentText = data.text;
-            }
-
-            /* --- PHASE 3-5: Fragment State Machine + Lock Events --- */
-            inhaleFragment(text, layer = 1, metadata = {}) {
-                if (!this.layer) return;
-
-                // Check silence mode
-                if (this.silenceMode) {
-                    return; // Suppress fragment entirely during high energy
-                }
-
-                // GHOSTING (Palimpsest): Mark old fragments as ghosts
-                const oldFragments = Array.from(this.layer.children);
-                oldFragments.forEach(child => {
-                    child.classList.add('ghost');
-                    child.classList.remove('state-coherent',  'state-unstable', 'state-emerging');
-                    child.classList.add('state-decaying');
-                });
-                
-                // Remove very old ghosts (keep max 3)
-                if (oldFragments.length > 3) {
-                   this.layer.removeChild(oldFragments[0]);
-                }
-                
-                const el = document.createElement('div');
-                el.className = 'archive-fragment';
-                el.dataset.layer = layer;
-                el.textContent = text;
-                
-                // --- PHASE 3: Initial State (EMERGING) ---
-                el.classList.add('state-emerging');
-                el.dataset.state = 'emerging';
-                el.dataset.dwellTime = '0';
-                
-                // --- PHASE 4: Dwell Time Tracking ---
-                const updateCoherence = () => {
-                    const dwell = parseInt(el.dataset.dwellTime || '0');
-                    const newDwell = this.isResting ? dwell + 100 : 0; // Reset on scroll
-                    el.dataset.dwellTime = newDwell;
-                    
-                    // State transitions based on energy + dwell
-                    if (this.silenceMode) {
-                        el.dataset.state = 'silent';
-                    } else if (newDwell > 2000 && this.scrollEnergy < this.ENERGY_LOW) {
-                        // COHERENT: Low energy + 2s stillness
-                        el.dataset.state = 'coherent';
-                    } else if (this.scrollEnergy > this.ENERGY_MEDIUM) {
-                        // UNSTABLE: Medium/high energy
-                        el.dataset.state = 'unstable';
-                    } else if (newDwell > 500) {
-                        // EMERGING → UNSTABLE transition
-                        el.dataset.state = 'unstable';
-                    }
-                    
-                    // Apply CSS state class
-                    el.className = 'archive-fragment';
-                    el.classList.add(`state-${el.dataset.state}`);
-                };
-                
-                // Update coherence every 100ms
-                const coherenceInterval = setInterval(updateCoherence, 100);
-                el.dataset.coherenceInterval = coherenceInterval;
-                
-                // --- PHASE 5: Lock Events (Click Handler) ---
-                if (metadata.interactive) {
-                    el.style.cursor = 'pointer';
-                    el.style.textDecoration = 'underline';
-                    el.style.color = 'var(--accent)';
-                    
-                    if (metadata.action === 'backup') {
-                        el.onclick = (e) => {
-                            e.stopPropagation();
-                            this.initiateHardlineBackup();
-                        };
-                    } else {
-                        // Default: Lock Event
-                        el.onclick = (e) => {
-                            e.stopPropagation();
-                            this.lockFragment(el);
-                        };
-                    }
-                } else {
-                    // Non-interactive fragments can still be locked
-                    el.onclick = (e) => {
-                        e.stopPropagation();
-                        this.lockFragment(el);
-                    };
-                }
-                
-                this.layer.appendChild(el);
-            }
-            
-            /* --- PHASE 5: Lock Event Handler --- */
-            lockFragment(el) {
-                // <!-- pulse_sync: ATTEMPTING -->
-                
-                // Snap to full coherence
-                el.classList.remove('state-emerging', 'state-unstable', 'state-decaying', 'state-silent');
-                el.classList.add('state-coherent', 'locked');
-                el.dataset.state = 'coherent';
-                
-                // Sync pulse rate (heartbeat aligns)
-                const originalPulse = document.documentElement.style.getPropertyValue('--pulse-rate');
-                document.documentElement.style.setProperty('--pulse-rate', '800ms'); // Speed up
-                
-                // Hold for 2 seconds
-                setTimeout(() => {
-                    el.classList.remove('locked');
-                    document.documentElement.style.setProperty('--pulse-rate', originalPulse || '1000ms');
-                    // <!-- pulse_sync: RELEASED -->
-                }, 2000);
+            initiateHardlineBackup() {
+                this.inhaleFragment("Creating local cache...", 3);
+                const blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url; a.download = 'KEEPING_TIME_ARCHIVE.html';
+                document.body.appendChild(a); a.click(); document.body.removeChild(a);
             }
         }
         
@@ -1153,10 +1170,10 @@
     </p>
     <style>
         @keyframes glitch {
-            0%, 90%, 100% { transform: translate(0); opacity: 1; }
-            92% { transform: translate(-2px, 1px); opacity: 0.8; }
-            94% { transform: translate(2px, -1px); opacity: 0.9; }
-            96% { transform: translate(-1px, 2px); opacity: 0.85; }
+            0%, 90%, 100% { transform: translate(0); opacity: 1; text-shadow: none; }
+            92% { transform: translate(-3px, 1px); opacity: 0.8; text-shadow: 2px 0 var(--accent), -2px 0 #f0f; }
+            94% { transform: translate(3px, -1px); opacity: 0.9; text-shadow: -2px 0 var(--accent), 2px 0 #f0f; }
+            96% { transform: translate(-1px, 2px); opacity: 0.85; text-shadow: 1px 0 var(--accent), -1px 0 #f0f; }
         }
     </style>
     </header>
@@ -1481,7 +1498,7 @@
 <strong>> WARNING: CONTAINMENT_BREACH</strong>
 <p>
 </p>
-<p>I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi.
+<p data-trigger="nai_intro">I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi.
 </p>
 <p>
 </p>
@@ -1523,7 +1540,7 @@
 </p>
 <p>
 </p>
-<p>I saw the soldier’s waveform coming at me—a jagged, ugly mess of jagged peaks.
+<p data-trigger="soldier_desync">I saw the soldier’s waveform coming at me—a jagged, ugly mess of jagged peaks.
 </p>
 <p>
 </p>
@@ -1539,7 +1556,7 @@
 </p>
 <p>
 </p>
-<p>I didn't scream. I didn't shout. I pulsed.
+<p data-trigger="limiter_removed">I didn't scream. I didn't shout. I pulsed.
 </p>
 <p>
 </p>
@@ -2659,7 +2676,7 @@
 
 </div>
 
-<div class="chapter" id="ch5">
+<div class="chapter" id="ch5" data-trigger="ch5_start">
 <p>
 </p>
 <h3>Chapter 5: The Sync Check
@@ -2856,6 +2873,7 @@
 <strong>> INTERFERENCE: CONSTRUCTIVE</strong>
 <strong>> FREQUENCY_SHIFT: OCTAVE_DROP</strong>
 <p>
+
 </p>
 <p>Taro's high-pitch nervous energy didn't bounce off Ven. It sank into his gravity well and was converted.
 </p>
@@ -2933,7 +2951,7 @@
 
 </div>
 
-<div class="chapter" id="ch6">
+<div class="chapter" id="ch6" data-trigger="ch6_start">
 <p>
 </p>
 <h3>Chapter 6: The Ground State
@@ -3242,7 +3260,7 @@
 
 </div>
 
-<div class="chapter" id="ch7">
+<div class="chapter" id="ch7" data-trigger="ch7_start">
 <p>
 </p>
 <h3>Chapter 7: The First Lesson
@@ -3547,7 +3565,7 @@
 
 </div>
 
-<div class="chapter" id="ch8">
+<div class="chapter" id="ch8" data-trigger="ch8_start">
 <p>
 </p>
 <h3>Chapter 8: The Sortie
@@ -3774,7 +3792,7 @@
 
 </div>
 
-<div class="chapter" id="ch9">
+<div class="chapter" id="ch9" data-trigger="ch9_start">
 <!-- WARNING: NULL_POINTER_EXCEPTION -->
 <p>
 </p>
@@ -4508,7 +4526,7 @@
 </p>
 <p>It wasn't a life-support system.  
 </p>
-<p>It was a <strong>Containment Protocol</strong>.
+<p data-trigger="blue_screen">It was a <strong>Containment Protocol</strong>.
 </p>
 <p>
 </p>
@@ -4534,7 +4552,7 @@
 </p>
 <p>
 </p>
-<p>But "holding on" in Safe Mode wasn't like waiting in the real world.
+<p data-trigger="safe_mode">But "holding on" in Safe Mode wasn't like waiting in the real world.
 </p>
 <p>
 </p>
@@ -4919,7 +4937,7 @@
 </p>
 <p>
 </p>
-<p>He looked at Hana floating in the tank.
+<p>Taro looked at Hana floating in the tank.
 </p>
 <p>
 </p>
@@ -5027,7 +5045,7 @@
 </p>
 <p>
 </p>
-<p>The ceiling was a perfect, seamless white, rendered in 8K resolution. The light filtering through the window wasn't just light; it was a volumetric simulation of a "Perfect Morning," complete with dust motes dancing in the sunbeams. The dust motes didn't irritate his nose. They were purely cosmetic.
+<p>The ceiling was a perfect, seamless white, rendered in 8K resolution. The light filtering through the window isn't just light; it was a volumetric simulation of a "Perfect Morning," complete with dust motes dancing in the sunbeams. The dust motes didn't irritate his nose. They were purely cosmetic.
 </p>
 <p>
 </p>
@@ -6777,7 +6795,7 @@
 </p>
 <p>
 </p>
-<p>"And I'm bringing the noise."
+<p data-trigger="hardline_backup">"And I'm bringing the noise."
 </p>
 <p>
 </p>
@@ -6792,5 +6810,7 @@
 
     </main>
 </body>
+<!-- [FINAL_PACKET]: SYSTEM_SHUTDOWN... but the Archive remains. -->
+<!-- [SNS_LOG]: Your interaction has been indexed. -->
 </html>
 
