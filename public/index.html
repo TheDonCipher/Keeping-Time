@@ -326,15 +326,20 @@
         }
 
         @media (max-width: 768px) {
-            main { padding: 80px 20px; }
+            main { padding: 80px 20px 180px; } /* Added bottom padding for Archive bar */
             .intermission { margin: 80px -20px; padding: 60px 32px; }
-            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .back-to-top { bottom: 100px; right: 20px; width: 40px; height: 40px; } /* Move up to avoid Archive */
             
             /* Hide environmental indicators on mobile - reduce UI clutter */
             .emotional-load-indicator,
             .surveillance-indicator {
                 display: none;
             }
+
+            .nav-ui { padding: 10px 16px; }
+            .nav-brand { font-size: 0.9rem; }
+            .nav-controls { gap: 8px; }
+            .ui-btn { padding: 4px 8px; font-size: 0.7rem; }
         }
 
         /* --- RESIDUAL ARCHIVE SYSTEM (The Second Nervous System) --- */
@@ -584,7 +589,8 @@
             .archive-fragment {
                 display: inline-block;
                 max-width: none;
-                min-width: 120px;
+                min-width: 140px;
+                flex-shrink: 0;
             }
         }
     </style>
@@ -850,6 +856,7 @@
                 this.velocityWindowSize = 30;
                 this.scrollVariance = 0;
                 this.scrollEnergy = 0;
+                this.avgVelocity = 0;
                 this.stillnessTimer = 0;
                 this.lastScrollTime = Date.now();
                 
@@ -1053,16 +1060,16 @@
                     this.checkSpatialActivation();
                     this.lastScrollY = currentY;
                     this.lastScrollTime = now;
-                    this.isResting = avg < 0.1; // This line was moved from profileScrollBehavior
+                    this.isResting = this.avgVelocity < 0.1;
                 }, { passive: true });
             }
 
             profileScrollBehavior() {
                 const recent = this.velocityHistory.slice(-15);
-                const avg = recent.reduce((a, b) => a + b, 0) / (recent.length || 1);
+                this.avgVelocity = recent.reduce((a, b) => a + b, 0) / (recent.length || 1);
                 
-                if (avg < 0.5 && this.stillnessTimer > 1000) this.readingState = 'focused';
-                else if (avg > 10) this.readingState = 'skimming';
+                if (this.avgVelocity < 0.5 && this.stillnessTimer > 1000) this.readingState = 'focused';
+                else if (this.avgVelocity > 10) this.readingState = 'skimming';
                 else if (this.directionChanges.length > 2) this.readingState = 'searching';
                 else this.readingState = 'cruising';
                 
@@ -7321,11 +7328,11 @@ const FRAGMENT_DATA = {
 // Tracks reader behavior and narrative position
 // ============================================================================
 
-let scrollPercent = 0;           // Current scroll position (0.0-1.0)
-let scrollVelocity = 0;          // Pixels per second
-let scrollEnergy = 0;            // Normalized energy (0-200)
-let lastScrollY = 0;
-let lastScrollTime = Date.now();
+let envScrollPercent = 0;           // Current scroll position (0.0-1.0)
+let envScrollVelocity = 0;          // Pixels per second
+let envScrollEnergy = 0;            // Normalized energy (0-200)
+let envLastScrollY = 0;
+let envLastScrollTime = Date.now();
 let isResting = false;           // True when reader is still
 let restTimer = null;
 let directionFlips = 0;          // Rapid direction changes = agitation
@@ -7385,22 +7392,22 @@ function isInSilenceRegion(percent) {
  */
 function updateScrollMetrics() {
   const now = Date.now();
-  const dt = now - lastScrollTime;
+  const dt = now - envLastScrollTime;
   const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   
   // Calculate normalized scroll position (0.0-1.0)
-  scrollPercent = maxScroll > 0 ? currentScrollY / maxScroll : 0;
+  envScrollPercent = maxScroll > 0 ? currentScrollY / maxScroll : 0;
   
   // Track maximum scroll reached (for conditional fragments)
-  if (scrollPercent > maxScrollReached) {
-    maxScrollReached = scrollPercent;
+  if (envScrollPercent > maxScrollReached) {
+    maxScrollReached = envScrollPercent;
   }
   
   // Calculate velocity and energy
-  const deltaY = currentScrollY - lastScrollY;
-  scrollVelocity = dt > 0 ? Math.abs(deltaY / dt) * 1000 : 0;
-  scrollEnergy = Math.min(scrollVelocity * 0.5, 200);
+  const deltaY = currentScrollY - envLastScrollY;
+  envScrollVelocity = dt > 0 ? Math.abs(deltaY / dt) * 1000 : 0;
+  envScrollEnergy = Math.min(envScrollVelocity * 0.5, 200);
   
   // Track direction changes (agitation detection)
   const currentDirection = deltaY > 0 ? 1 : deltaY < 0 ? -1 : 0;
@@ -7413,14 +7420,14 @@ function updateScrollMetrics() {
   
   // Determine resting state (low energy for 1.2 seconds)
   clearTimeout(restTimer);
-  if (scrollEnergy < 10) {
+  if (envScrollEnergy < 10) {
     restTimer = setTimeout(() => { isResting = true; }, 1200);
   } else {
     isResting = false;
   }
   
-  lastScrollY = currentScrollY;
-  lastScrollTime = now;
+  envLastScrollY = currentScrollY;
+  envLastScrollTime = now;
 }
 
 // ============================================================================
@@ -7433,7 +7440,7 @@ function updateScrollMetrics() {
  * Effects are barely perceptible - most readers won't notice consciously
  */
 function updateNarrativeState() {
-  const section = getCurrentSection(scrollPercent);
+  const section = getCurrentSection(envScrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   if (!signal) return;
   
@@ -7478,7 +7485,7 @@ function updateNarrativeState() {
  * BPM ranges from 20 (near-death) to 180 (panic)
  */
 function updateHeartbeat() {
-  const section = getCurrentSection(scrollPercent);
+  const section = getCurrentSection(envScrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   if (!signal) return;
   
@@ -7490,7 +7497,7 @@ function updateHeartbeat() {
   // Change color during high stress or silence
   const monitor = document.querySelector('.resonance-monitor');
   if (monitor) {
-    if (bpm > 120 || isInSilenceRegion(scrollPercent)) {
+    if (bpm > 120 || isInSilenceRegion(envScrollPercent)) {
       monitor.style.background = '#ff3333';  // Red during stress/silence
     } else {
       monitor.style.background = 'var(--accent)';
@@ -7504,7 +7511,7 @@ function updateHeartbeat() {
  * - Surveillance: vertical line from center (left edge)
  */
 function updateEnvironmentalIndicators() {
-  const section = getCurrentSection(scrollPercent);
+  const section = getCurrentSection(envScrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   if (!signal) return;
   
@@ -7544,7 +7551,7 @@ function updateEnvironmentalIndicators() {
  * Suppresses all fragments and changes visual state
  */
 function enforceSilence() {
-  const inSilence = isInSilenceRegion(scrollPercent);
+  const inSilence = isInSilenceRegion(envScrollPercent);
   const layer = document.getElementById('residual-layer');
   const archive = document.getElementById('residual-archive');
   
@@ -7608,8 +7615,8 @@ function initializeFragments() {
  */
 function updateFragments() {
   const now = Date.now();
-  const inSilence = isInSilenceRegion(scrollPercent);
-  const section = getCurrentSection(scrollPercent);
+  const inSilence = isInSilenceRegion(envScrollPercent);
+  const section = getCurrentSection(envScrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   const allowedFragments = signal ? signal.fragments_allowed : [];
   const agitated = directionFlips > 3;  // Rapid scrolling back/forth
@@ -7665,11 +7672,11 @@ function updateFragments() {
     }
     
     // In band: determine state based on scroll energy
-    if (agitated || scrollEnergy > 50) {
+    if (agitated || envScrollEnergy > 50) {
       // High energy: fragment is unstable/decaying
       setState(fState, 'DECAYING');
       fState.dwellTime = 0;
-    } else if (scrollEnergy > 25) {
+    } else if (envScrollEnergy > 25) {
       // Medium energy: fragment is flickering
       setState(fState, 'UNSTABLE');
       fState.dwellTime = 0;
