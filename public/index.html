@@ -441,16 +441,16 @@
         
         /* EMERGING: In band, waiting for stillness */
         .archive-fragment.state-emerging {
-            opacity: 0.4; /* Increased from 0.2 */
-            filter: blur(4px); /* Decreased from 6px */
+            opacity: 0.6; 
+            filter: blur(1.5px); 
             transform: translateY(4px) scale(0.98);
-            transition: all 1.5s ease-out;
+            transition: all 1.2s ease-out;
         }
         
         /* UNSTABLE: Visible but jittery (medium energy) */
         .archive-fragment.state-unstable {
             opacity: 0.5;
-            filter: blur(3px);
+            filter: blur(2.5px);
             animation: fragmentJitter 0.3s infinite;
         }
         
@@ -1036,7 +1036,8 @@
                     
                     if (inBand) {
                         currentBandIds.add(id);
-                        let state = this.silenceMode ? 'silent' : (distance < frag.activationBand * 0.5 && this.readingState === 'focused' ? 'coherent' : (this.scrollEnergy > this.ENERGY_MEDIUM ? 'unstable' : 'emerging'));
+                        const canBeCoherent = (distance < frag.activationBand * 0.4) && (this.readingState === 'focused' || this.readingState === 'cruising');
+                    let state = this.silenceMode ? 'silent' : (canBeCoherent ? 'coherent' : (this.scrollEnergy > this.ENERGY_MEDIUM ? 'unstable' : 'emerging'));
                         
                         if (!this.activeFragments.has(id)) {
                             this.activeFragments.add(id);
