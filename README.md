@@ -2,44 +2,48 @@
 
 **"The score is listening."**
 
-*Keeping Time* is a web-native science fiction novel about resonance, sound, and authoritarian control. It explores a world where reality is enforced by a global frequency known as "The Score," and silence is an act of rebellion.
+*Keeping Time* is a web-native science fiction novel about resonance, sound, and authoritarian control. It is designed as a **Full Web Experience**, where the interface itself is a diegetic artifact of the world.
 
 ## 📁 Repository Structure
 
-*   **`MANUSCRIPT/`**: The source markdown files for the novel's chapters. This is the single source of truth for the narrative.
-## 📁 Repository Structure
+*   **`public/`**: The deployment-ready website.
+    *   **`index.html`**: The complete novel experience (The Impulse - Complete Edition).
+    *   **`assets/`**: Supplementary lore files, styles, and media.
+*   **`MANUSCRIPT/`**: Source markdown files for each chapter (The single source of truth).
+*   **`build_publication.ps1`**: PowerShell script to compile `MANUSCRIPT` into the final HTML output.
+*   **`PUBLICATION_STRATEGY.md`**: Guide for hosting and marketing the web novel.
 
-*   **`public/`**: The deployment-ready website directory.
-    *   **`index.html`**: The complete novel (formerly `PUBLICATION_COMPLETE.html`).
-    *   **`portal.html`**: The legacy portal/landing page.
-    *   **Assets**: All supplementary lore files and styles.
-*   **`MANUSCRIPT/`**: The source markdown files for the novel's chapters. This is the single source of truth for the narrative.
-*   **`WEBSITE/`**: Source assets for the web deployment.
-*   **`build_publication.ps1`**: PowerShell script to compile `MANUSCRIPT` files into the final HTML output.
-*   **`vercel.json`**: Configuration for Vercel deployment.
+## 🫀 The Second Nervous System (SNS)
+### Formerly: The Residual Archive (v2.0)
 
-## 🫀 The Residual Archive (System v2.0)
-
-This project features a diegetic "Second Nervous System" running parallel to the text. It is not just a sidebar; it is a bio-reactive interface that responds to the reader's behavior.
+This project features a diegetic "Second Nervous System" running parallel to the text. It is a bio-reactive interface that responds to the reader's behavior, simulating a connection between the 'Reader' and the 'Subject'.
 
 ### Key Features
-1.  **Resonance Loop (Heartbeat):**
-    *   A vertical monitor line pulses at 60 BPM (Resting) or 300 BPM (Stress).
-    *   Stress levels increase with scroll velocity. High-speed scrolling "panics" the system.
-2.  **Organic Text Emergence:**
-    *   Lore fragments do not fade in; they **inhale** (opacity + blur + scale).
-    *   Text appears only when the reader **stops scrolling**, rewarding stillness.
-3.  **Vertical Palimpsest (Ghosting):**
-    *   Old fragments linger as faint "ghosts" behind new text, creating a history of reading.
-4.  **Mutation:**
-    *   Fragments vary on re-reads. The system randomly selects variant texts for specific triggers.
+1.  **Resonance Monitor (Heartbeat):**
+    *   A vertical monitor line pulses at a dynamic rate based on narrative tension and scroll velocity.
+    *   High-speed scrolling "panics" the system (Stress: HIGH), causing visual instability.
+2.  **Environmental Intelligence UI:**
+    *   **Emotional Load:** A top-right indicator reflecting the psychological weight of the current segment.
+    *   **Surveillance Intensity:** A left-edge indicator that reacts when the "Score" is observing.
+3.  **Fragment Lifecycle:**
+    *   Lore fragments do not simply appear; they **inhale** (opacity + blur + scale).
+    *   **States:** *Dormant* (hidden) → *Emerging* (inhaling) → *Coherent* (readable) → *Decay* (fading into the palimpsest).
+4.  **Palimpsest Ghosting:**
+    *   Old fragments linger as faint "ghosts" behind new text, creating a visual history of your reading path.
 5.  **Alignment Events:**
-    *   Specific narrative moments (e.g., "The Zap", "The Drop") trigger locked, high-intensity visual events in the sidebar.
+    *   Specific narrative beats trigger "locked" states where the sidebar glows gold and pulses in sync with the story's climax.
 
 ### How to Experience
-*   **Passive:** Read the main text. Let the sidebar pulse in your periphery.
-*   **Active:** When the sidebar reacts or "inhales," **hover or click** the line to lock it open and read the hidden data.
-*   **Deep Dive:** Inspect the HTML source for hidden comments (`<!-- SYSTEM_BOOT -->`) left by the Author.
+*   **Passive:** Read the main text. Let the SNS pulse in your periphery.
+*   **Active:** When the sidebar "inhales," still your scrolling to let the text become *Coherent*.
+*   **Deep Dive:** Inspect the HTML source or browser console for hidden `<!-- SYSTEM_BOOT -->` logs and encrypted intercepts.
+
+## 🚀 Publication Strategy
+
+*Keeping Time* uses a **Hybrid 3-Tier Strategy** to preserve the code-driven experience:
+1.  **Canonical Home**: Hosted on **Vercel** or **Neocities** for full fidelity (100% JS/CSS support).
+2.  **Discovery Hubs**: Distributed on **Itch.io** as a "Web Game" to reach an interactive fiction audience.
+3.  **Marketing Funnels**: "Lite" text-only versions on **Royal Road** and **Substack** to drive traffic back to the full experience.
 
 ## 🛠️ Build Instructions
 
@@ -49,17 +53,8 @@ To rebuild the novel from the source markdown:
 ./build_publication.ps1
 ```
 
-This script will:
-1.  Parse all chapters in `MANUSCRIPT/`.
-2.  Inject them into the `PUBLICATION_COMPLETE.html` template.
-3.  Apply the latest CSS/JS for the Residual Archive.
-
-## 📱 Mobile Support
-
-The system is fully responsive.
-*   **Desktop:** Left-aligned, variable-width sidebar.
-*   **Mobile:** Collapses into a glassmorphism "Trigger" in the bottom-left. Tap to access the Archive.
+This script parses all chapters in `MANUSCRIPT/` and injects them into the `index.html` template, applying the latest SNS logic and styling.
 
 ---
 *System Status: ONLINE*
-*Observer Count: 1*
+*Environmental Intelligence: SYNCED*
