@@ -576,8 +576,8 @@
         /* Chapter 12: The Audit - Patch Installation Horror */
         /* Typography that feels cold and smoothed */
         .patch-install {
-            font-smoothing: antialiased;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
             letter-spacing: 0.01em;
             opacity: 0.92;
@@ -616,8 +616,8 @@
         /* Chapter 13: The Patch - Uncanny Perfection */
         /* Everything is too smooth, too clean - unsettling */
         #ch13.patched-state .waking {
-            font-smoothing: antialiased;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             letter-spacing: 0.005em;
         }
 
@@ -8078,7 +8078,7 @@ const FRAGMENT_DATA = {
 let scrollPercent = 0;           // Current scroll position (0.0-1.0)
 let scrollVelocity = 0;          // Pixels per second
 let scrollEnergy = 0;            // Normalized energy (0-200)
-let lastScrollY = 0;
+lastScrollY = 0;
 let lastScrollTime = Date.now();
 let isResting = false;           // True when reader is still
 let restTimer = null;
