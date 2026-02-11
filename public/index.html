@@ -296,18 +296,218 @@
            Subtle visual feedback for narrative state - non-intrusive
            ======================================================================== */
 
-        /* Emotional Load Indicator - Top Right Corner */
-        .emotional-load-indicator {
+        /* ================================================================ */
+        /* NARRATIVE FRACTURE SYSTEM - Ledger of Accumulated Tension */
+        /* A structural fault line that only grows, never shrinks */
+        /* Heals only at story's conclusion */
+        /* ================================================================ */
+        
+        .ui-fracture {
             position: fixed;
             top: 80px;
             right: 24px;
-            width: 3px;
-            height: 60px;
-            background: linear-gradient(to bottom, transparent, var(--accent));
-            opacity: 0.15;
-            border-radius: 2px;
+            width: 2px;
+            height: 80px;
             z-index: 900;
-            transition: opacity 0.8s ease, height 0.6s ease;
+            pointer-events: none;
+        }
+        
+        /* Main vertical crack - always present */
+        .main-crack {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, 
+                transparent 0%, 
+                rgba(var(--accent-rgb), 0.12) 15%,
+                rgba(var(--accent-rgb), 0.12) 85%,
+                transparent 100%
+            );
+            box-shadow: 0 0 1px rgba(var(--accent-rgb), 0.08);
+            transition: opacity 1.2s ease, box-shadow 1.2s ease, height 0.8s ease;
+        }
+        
+        /* Branch elements - hidden by default */
+        .branch {
+            position: absolute;
+            width: 1px;
+            height: 0;
+            background: rgba(var(--accent-rgb), 0);
+            transform-origin: top center;
+            opacity: 0;
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 0 2px rgba(var(--accent-rgb), 0);
+        }
+        
+        /* ============================================================ */
+        /* INTENSITY 0 - DORMANT FAULT */
+        /* Single thin seam, barely visible */
+        /* ============================================================ */
+        
+        .ui-fracture[data-intensity="0"] .main-crack {
+            opacity: 1;
+            /* Very faint, just a trace */
+        }
+        
+        .ui-fracture[data-intensity="0"] .branch {
+            opacity: 0;
+            height: 0;
+        }
+        
+        /* ============================================================ */
+        /* INTENSITY 1 - FIRST FRACTURE */
+        /* First angled branch emerges, subtle diagonal split */
+        /* ============================================================ */
+        
+        .ui-fracture[data-intensity="1"] .main-crack {
+            opacity: 1;
+            background: linear-gradient(to bottom, 
+                transparent 0%, 
+                rgba(var(--accent-rgb), 0.18) 15%,
+                rgba(var(--accent-rgb), 0.18) 85%,
+                transparent 100%
+            );
+            box-shadow: 0 0 2px rgba(var(--accent-rgb), 0.1);
+        }
+        
+        .ui-fracture[data-intensity="1"] .branch-1 {
+            opacity: 1;
+            height: 22px;
+            background: rgba(var(--accent-rgb), 0.15);
+            transform: rotate(-27deg);
+            top: 38%;
+            left: 0;
+            box-shadow: 0 0 3px rgba(var(--accent-rgb), 0.08);
+        }
+        
+        /* ============================================================ */
+        /* INTENSITY 2 - STRUCTURAL STRAIN */
+        /* Second branch forms, internal glow strengthens */
+        /* ============================================================ */
+        
+        .ui-fracture[data-intensity="2"] .main-crack {
+            opacity: 1;
+            background: linear-gradient(to bottom, 
+                transparent 0%, 
+                rgba(var(--accent-rgb), 0.24) 15%,
+                rgba(var(--accent-rgb), 0.24) 85%,
+                transparent 100%
+            );
+            box-shadow: 0 0 4px rgba(var(--accent-rgb), 0.15);
+        }
+        
+        .ui-fracture[data-intensity="2"] .branch-1 {
+            opacity: 1;
+            height: 22px;
+            background: rgba(var(--accent-rgb), 0.2);
+            transform: rotate(-27deg);
+            top: 38%;
+            left: 0;
+            box-shadow: 0 0 3px rgba(var(--accent-rgb), 0.12);
+        }
+        
+        .ui-fracture[data-intensity="2"] .branch-2 {
+            opacity: 1;
+            height: 18px;
+            background: rgba(var(--accent-rgb), 0.18);
+            transform: rotate(33deg);
+            top: 62%;
+            left: 0;
+            box-shadow: 0 0 2px rgba(var(--accent-rgb), 0.1);
+        }
+        
+        /* ============================================================ */
+        /* INTENSITY 3 - CRITICAL LOAD */
+        /* Third branch, all cracks pulse slowly, height extends */
+        /* ============================================================ */
+        
+        .ui-fracture[data-intensity="3"] .main-crack {
+            opacity: 1;
+            height: 85px; /* Slight extension */
+            background: linear-gradient(to bottom, 
+                transparent 0%, 
+                rgba(var(--accent-rgb), 0.3) 12%,
+                rgba(var(--accent-rgb), 0.3) 88%,
+                transparent 100%
+            );
+            box-shadow: 0 0 6px rgba(var(--accent-rgb), 0.2);
+            animation: fracturePulse 4s ease-in-out infinite;
+        }
+        
+        .ui-fracture[data-intensity="3"] .branch-1 {
+            opacity: 1;
+            height: 24px;
+            background: rgba(var(--accent-rgb), 0.25);
+            transform: rotate(-27deg);
+            top: 38%;
+            left: 0;
+            box-shadow: 0 0 4px rgba(var(--accent-rgb), 0.15);
+            animation: fracturePulse 4s ease-in-out infinite 0.3s;
+        }
+        
+        .ui-fracture[data-intensity="3"] .branch-2 {
+            opacity: 1;
+            height: 20px;
+            background: rgba(var(--accent-rgb), 0.22);
+            transform: rotate(33deg);
+            top: 62%;
+            left: 0;
+            box-shadow: 0 0 3px rgba(var(--accent-rgb), 0.12);
+            animation: fracturePulse 4s ease-in-out infinite 0.6s;
+        }
+        
+        .ui-fracture[data-intensity="3"] .branch-3 {
+            opacity: 1;
+            height: 16px;
+            background: rgba(var(--accent-rgb), 0.2);
+            transform: rotate(-19deg);
+            top: 18%;
+            left: 0;
+            box-shadow: 0 0 2px rgba(var(--accent-rgb), 0.1);
+            animation: fracturePulse 4s ease-in-out infinite 0.9s;
+        }
+        
+        /* Slow, quiet pulse - no flashing, just subtle breath */
+        @keyframes fracturePulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* ============================================================ */
+        /* HEALING STATE - Narrative Conclusion Only */
+        /* All glow fades, branches retract, crack barely visible */
+        /* ============================================================ */
+        
+        .ui-fracture[data-intensity="healed"] .main-crack {
+            opacity: 0.02;
+            box-shadow: none;
+            background: linear-gradient(to bottom, 
+                transparent 0%, 
+                rgba(var(--accent-rgb), 0.02) 40%,
+                rgba(var(--accent-rgb), 0.02) 60%,
+                transparent 100%
+            );
+            transition: all 3s ease;
+        }
+        
+        .ui-fracture[data-intensity="healed"] .branch {
+            opacity: 0;
+            height: 0;
+            transform: scale(0.95);
+            transition: all 2.5s ease;
+        }
+        
+        /* Optional: Very faint shimmer effect on healing (plays once) */
+        .ui-fracture.healing {
+            animation: glassReseal 2s ease-out forwards;
+        }
+        
+        @keyframes glassReseal {
+            0% { filter: brightness(1); }
+            30% { filter: brightness(1.3); }
+            100% { filter: brightness(1); }
         }
 
         /* Surveillance Intensity Indicator - Left Edge */
@@ -330,10 +530,17 @@
             .intermission { margin: 80px -20px; padding: 60px 32px; }
             .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
             
-            /* Hide environmental indicators on mobile - reduce UI clutter */
-            .emotional-load-indicator,
+            /* Hide surveillance indicator on mobile - reduce UI clutter */
+            /* Fracture system stays visible - it's a permanent narrative ledger */
             .surveillance-indicator {
                 display: none;
+            }
+            
+            /* Scale fracture slightly smaller on mobile */
+            .ui-fracture {
+                top: 60px;
+                right: 16px;
+                height: 60px;
             }
         }
 
@@ -736,7 +943,14 @@
     <!-- WETWARE_MONITOR_v1.3 :: observer_eyes: open -->
     
     <!-- Environmental Intelligence UI Indicators -->
-    <div class="emotional-load-indicator" id="emotional-load"></div>
+    <!-- NARRATIVE FRACTURE SYSTEM: Permanent record of accumulated tension -->
+    <!-- Branches progressively, never shrinks, heals only at conclusion -->
+    <div class="ui-fracture" id="ui-fracture" data-intensity="0">
+        <span class="main-crack"></span>
+        <span class="branch branch-1"></span>
+        <span class="branch branch-2"></span>
+        <span class="branch branch-3"></span>
+    </div>
     <div class="surveillance-indicator" id="surveillance"></div>
     
     <aside id="residual-archive">
@@ -7835,7 +8049,7 @@
 // ============================================================================
 
 const RELEASE_CONFIG = {
-  version: "1.0.0-complete",
+  version: "1.0.0-fracture",
   release_date: "2026-02-11",
   
   features: {
@@ -7848,6 +8062,7 @@ const RELEASE_CONFIG = {
     reading_contract: true,           // NEW: First fragment teaches rules
     volume_end_signal: true,          // NEW: Archive shutdown at completion
     krell_recurrence: true,           // NEW: Rhythmic threat pattern
+    fracture_system: true,            // NEW: Progressive tension ledger (replaces emotional indicator)
     
     // DORMANT (Code present but inactive - activate post-launch)
     fragment_contradictions: false,   // Activate in v1.1
@@ -8674,27 +8889,99 @@ function updateHeartbeat() {
 }
 
 /**
- * Update environmental intelligence UI indicators
- * - Emotional load: vertical gradient bar (top right)
- * - Surveillance: vertical line from center (left edge)
+ * Update narrative fracture indicator (replaces emotional load system)
+ * 
+ * DESIGN PHILOSOPHY:
+ * This is NOT reactive UI. It is a LEDGER of accumulated narrative tension.
+ * 
+ * BEHAVIOR:
+ * - Fracture grows progressively as story intensifies
+ * - NEVER shrinks mid-story (irreversible progression)
+ * - Branches appear based on peak emotional_load encountered
+ * - Heals ONLY at narrative conclusion (98% scroll)
+ * 
+ * INTENSITY MAPPING:
+ * 0 (Dormant)   → emotional_load < 0.50 (early chapters, calm moments)
+ * 1 (First)     → emotional_load >= 0.70 (first crisis)
+ * 2 (Structural)→ emotional_load >= 0.85 (major stress)
+ * 3 (Critical)  → emotional_load >= 0.95 (peak catastrophe)
+ * healed        → scrollPercent >= 0.98 (Volume I complete)
+ * 
+ * THEMATIC IMPLICATION:
+ * Once readers see branching, they subconsciously measure proximity to catastrophe.
+ * This transforms peripheral UI into symbolic narrative tracker.
+ * The fracture becomes memory. It remembers what the story has endured.
  */
-function updateEnvironmentalIndicators() {
+
+// Track maximum fracture intensity (permanent growth ledger)
+let maxFractureIntensity = 0;
+let hasHealed = false;
+
+function updateFractureSystem() {
+  const fracture = document.getElementById('ui-fracture');
+  if (!fracture) return;
+  
   const section = getCurrentSection(scrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   if (!signal) return;
   
-  // Emotional Load Indicator (top right)
-  // Height grows with emotional intensity (40-95% of max)
-  const emotionalLoad = document.getElementById('emotional-load');
-  if (emotionalLoad) {
-    const baseHeight = 60;  // pixels
-    const maxHeight = 120;  // pixels
-    const height = lerp(baseHeight, maxHeight, signal.emotional_load);
-    const opacity = lerp(0.15, 0.35, signal.emotional_load);
-    
-    emotionalLoad.style.height = `${height}px`;
-    emotionalLoad.style.opacity = opacity.toFixed(2);
+  // Map emotional_load to intensity state (0-3)
+  let currentIntensity = 0;
+  if (signal.emotional_load >= 0.95) {
+    currentIntensity = 3;  // Critical load (Ch10 Breach, Ch9 Silence)
+  } else if (signal.emotional_load >= 0.85) {
+    currentIntensity = 2;  // Structural strain (Ch1 Zap, Ch11 Safe Mode)
+  } else if (signal.emotional_load >= 0.70) {
+    currentIntensity = 1;  // First fracture (Ch2, Ch7, Ch12+)
+  } else {
+    currentIntensity = 0;  // Dormant fault (Ch6, Ch13-16 patched)
   }
+  
+  // PERMANENT GROWTH: Only increase, never decrease
+  // This makes the fracture a record of what the story has survived
+  if (currentIntensity > maxFractureIntensity) {
+    maxFractureIntensity = currentIntensity;
+    
+    // Apply new intensity state
+    fracture.setAttribute('data-intensity', maxFractureIntensity.toString());
+    
+    // Log branching events (readers who inspect console will see the ledger)
+    if (maxFractureIntensity === 1) {
+      console.log('[FRACTURE]: First branch forming...');
+    } else if (maxFractureIntensity === 2) {
+      console.log('[FRACTURE]: Structural strain detected. Second branch emerging.');
+    } else if (maxFractureIntensity === 3) {
+      console.log('[FRACTURE]: Critical load. All branches active. System under maximum stress.');
+    }
+  }
+  
+  // HEALING: Only at narrative conclusion (Volume I complete)
+  // Triggers at 98% scroll (end-of-volume signal zone)
+  if (scrollPercent >= 0.98 && !hasHealed) {
+    hasHealed = true;
+    
+    // Apply healing state
+    fracture.setAttribute('data-intensity', 'healed');
+    fracture.classList.add('healing');
+    
+    // Glass reseal shimmer plays once, then element fades almost to nothing
+    console.log('[FRACTURE]: Healing initiated. Glass resealing. This phase is complete.');
+    
+    // Remove shimmer class after animation
+    setTimeout(() => {
+      fracture.classList.remove('healing');
+    }, 2000);
+  }
+}
+
+/**
+ * LEGACY: Surveillance Intensity Indicator (left edge)
+ * Maintained for systemic oppression visualization
+ */
+function updateSurveillanceIndicator() {
+  const section = getCurrentSection(scrollPercent);
+  const signal = NARRATIVE_SIGNALS[section];
+  if (!signal) return;
   
   // Surveillance Intensity Indicator (left edge)
   // Grows vertically from center when surveillance is active
@@ -8982,7 +9269,8 @@ function onScroll() {
     updateScrollMetrics();
     updateNarrativeState();
     updateHeartbeat();
-    updateEnvironmentalIndicators();
+    updateFractureSystem();
+    updateSurveillanceIndicator();
     enforceSilence();
     updateFragments();
     rafId = null;
