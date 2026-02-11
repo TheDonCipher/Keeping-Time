@@ -326,20 +326,15 @@
         }
 
         @media (max-width: 768px) {
-            main { padding: 80px 20px 180px; } /* Added bottom padding for Archive bar */
+            main { padding: 80px 20px; }
             .intermission { margin: 80px -20px; padding: 60px 32px; }
-            .back-to-top { bottom: 100px; right: 20px; width: 40px; height: 40px; } /* Move up to avoid Archive */
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
             
             /* Hide environmental indicators on mobile - reduce UI clutter */
             .emotional-load-indicator,
             .surveillance-indicator {
                 display: none;
             }
-
-            .nav-ui { padding: 10px 16px; }
-            .nav-brand { font-size: 0.9rem; }
-            .nav-controls { gap: 8px; }
-            .ui-btn { padding: 4px 8px; font-size: 0.7rem; }
         }
 
         /* --- RESIDUAL ARCHIVE SYSTEM (The Second Nervous System) --- */
@@ -530,6 +525,128 @@
             transition: all 0.3s ease;
         }
 
+        /* ================================================================ */
+        /* CHAPTER-SPECIFIC TEXT EFFECTS (Volume I Publishing Enhancement) */
+        /* Implementing subtle environmental augmentation per technical spec */
+        /* ================================================================ */
+        
+        /* Chapter 10: The Breach - Stress Point Compression */
+        /* Applied during high-tension moments to create visual pressure */
+        .stress-point {
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            transition: all 0.3s ease;
+        }
+        
+        /* Chapter 10: The Breach - Void Reveal Effects */
+        /* Reality breakdown: slight overlap and distortion */
+        .void-reveal {
+            text-shadow: 0.5px 0 currentColor, -0.5px 0 currentColor;
+            transform: rotate(0.05deg);
+            transform-origin: left center;
+            transition: all 0.2s ease;
+        }
+        
+        /* Chapter 11: Safe Mode - Wireframe Aesthetic */
+        /* Creates low-poly, digital feeling during Safe Mode sequence */
+        .wireframe-text {
+            color: #4a9eff;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            text-shadow: 0 0 2px #4a9eff;
+            filter: brightness(1.1);
+        }
+        
+        /* Chapter 12: The Audit - Isolation Typography */
+        /* Subtle spacing to create psychological distance */
+        .isolation {
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+            opacity: 0.95;
+        }
+        
+        /* Chapter 12: The Audit - Voss's Coercive Speech */
+        /* Golden glow to mark manipulative language as "perfect" */
+        .voss-speak {
+            color: rgba(255, 215, 0, 0.85);
+            text-shadow: 0 0 4px rgba(255,215,0,0.2);
+            font-weight: 500;
+        }
+        
+        /* Chapter 12: The Audit - Patch Installation Horror */
+        /* Typography that feels cold and smoothed */
+        .patch-install {
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            letter-spacing: 0.01em;
+            opacity: 0.92;
+        }
+        
+        /* Chapter 12: The Audit - Redacted/Censored Text */
+        /* System surveillance visualization */
+        .redacted {
+            background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+            color: transparent;
+            text-shadow: none;
+            user-select: none;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+        
+        /* Chapter 10-13: Crash Effects for Critical Moments */
+        /* Slight rotation applied programmatically during system failures */
+        .crash {
+            transform: rotate(0.1deg);
+            transform-origin: left center;
+            transition: transform 0.1s ease-out;
+        }
+        
+        /* Chapter 11: Safe Mode - Entire Chapter Blue Tint */
+        /* Applied to chapter container for atmospheric consistency */
+        #ch11.safe-mode-active {
+            background: rgba(10, 26, 44, 0.02);
+            transition: background 2s ease;
+        }
+        
+        #ch11.safe-mode-active p {
+            color: rgba(74, 158, 255, 0.9);
+        }
+        
+        /* Chapter 13: The Patch - Uncanny Perfection */
+        /* Everything is too smooth, too clean - unsettling */
+        #ch13.patched-state .waking {
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            letter-spacing: 0.005em;
+        }
+
+        /* Chapter 17: Underground - Transformation Bold */
+        /* Slightly heavier weight during void acceptance */
+        .transformation {
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+        
+        /* System Coherence States - Background Shifts */
+        /* Subtle color temperature changes per narrative phase */
+        main[data-coherence="unstable"] {
+            filter: hue-rotate(15deg) saturate(92%);
+            transition: filter 2s ease;
+        }
+        
+        main[data-coherence="critical"] {
+            filter: hue-rotate(20deg) saturate(85%);
+        }
+        
+        main[data-coherence="offline"] {
+            filter: hue-rotate(-30deg) saturate(70%);
+        }
+        
+        main[data-coherence="enforced"] {
+            filter: hue-rotate(25deg) saturate(88%);
+        }
+
         /* 4. Stress/Velocity Reactions */
         #residual-archive.stress-high {
             opacity: 0.2; /* Fade out during chaos */
@@ -589,8 +706,7 @@
             .archive-fragment {
                 display: inline-block;
                 max-width: none;
-                min-width: 140px;
-                flex-shrink: 0;
+                min-width: 120px;
             }
         }
     </style>
@@ -856,7 +972,6 @@
                 this.velocityWindowSize = 30;
                 this.scrollVariance = 0;
                 this.scrollEnergy = 0;
-                this.avgVelocity = 0;
                 this.stillnessTimer = 0;
                 this.lastScrollTime = Date.now();
                 
@@ -1060,16 +1175,16 @@
                     this.checkSpatialActivation();
                     this.lastScrollY = currentY;
                     this.lastScrollTime = now;
-                    this.isResting = this.avgVelocity < 0.1;
+                    this.isResting = avg < 0.1; // This line was moved from profileScrollBehavior
                 }, { passive: true });
             }
 
             profileScrollBehavior() {
                 const recent = this.velocityHistory.slice(-15);
-                this.avgVelocity = recent.reduce((a, b) => a + b, 0) / (recent.length || 1);
+                const avg = recent.reduce((a, b) => a + b, 0) / (recent.length || 1);
                 
-                if (this.avgVelocity < 0.5 && this.stillnessTimer > 1000) this.readingState = 'focused';
-                else if (this.avgVelocity > 10) this.readingState = 'skimming';
+                if (avg < 0.5 && this.stillnessTimer > 1000) this.readingState = 'focused';
+                else if (avg > 10) this.readingState = 'skimming';
                 else if (this.directionChanges.length > 2) this.readingState = 'searching';
                 else this.readingState = 'cruising';
                 
@@ -1347,6 +1462,14 @@
 <p>
 </p>
 <p>The red static shattered into green particles, and the door slid open.
+</p>
+<p>
+</p>
+<!-- READING CONTRACT: The first fragment teaches without explaining -->
+<p style="margin: 2em 0; opacity: 0; font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent); text-align: center; transition: opacity 3s ease;" id="contract-fragment">
+[you are being observed]
+</p>
+<p>
 </p>
 <p>
 </p>
@@ -4240,49 +4363,190 @@
 </p>
 <p>It was burning hot. The metal was warping under the thermal load of his internal signal. It smelled like burning hair.
 </p>
-<p>He didn't care.
+<p>
+</p>
+<p class="stress-point">His hands trembled. Every survival instinct he had was screaming at him to stop.
+</p>
+<p>
+</p>
+<p class="stress-point"><em>Don't,</em> a voice inside him whispered. <em>You'll burn. You'll die. The system is there for a reason. The limiter keeps you safe.</em>
+</p>
+<p>
+</p>
+<p class="stress-point">But Hana was dying. Ven was collapsing. And those knives were coming.
 </p>
 <p>
 </p>
 <p>He dug his fingers under the rim.
 </p>
+<p>The metal was searing. He could feel it burning through his fingertips, cauterizing skin. His nervous system was rejecting the action, trying to force his hands open, trying to preserve the carefully calibrated equilibrium that kept him functional.
+</p>
 <p>
 </p>
 <strong>> WARNING: TAMPER_DETECTED</strong>
+<strong>> WARNING: SYSTEM_STABILITY_COMPROMISED</strong>
+<strong>> RECOMMENDATION: ABORT</strong>
+<p>
+</p>
+<p class="stress-point">The limiter hummed. He could feel it trying to lock tighter, its fail-safes engaging. It was designed to resist removal. It was designed to keep him caged.
+</p>
+<p>
+</p>
+<p class="stress-point">His body fought him. His muscles spasmed. His NAI was throwing error messages, flooding his vision with warnings. Red text cascaded across his retinas: <strong>FATAL ERROR. CONTAINMENT BREACH IMMINENT. NEURAL DAMAGE PROBABLE.</strong>
+</p>
+<p>
+</p>
+<p>But he didn't let go.
+</p>
+<p>
+</p>
+<p>He thought of his mother. He thought of her smile in the photograph—the one before the C-Order took her. He thought of the analog headphones sitting on his shelf, still humming with her residual frequency.
+</p>
+<p>
+</p>
+<p class="stress-point"><em>The system tried to damp her,</em> his father had said. <em>She chose silence instead.</em>
+</p>
+<p>
+</p>
+<p>Taro chose noise.
+</p>
+<p>
+</p>
 <strong>> WARNING: WARRANTY_VOID</strong>
+<strong>> WARNING: POINT_OF_NO_RETURN</strong>
 <p>
 </p>
 <p>He pulled.
+</p>
+<p>
+</p>
+<p>For a single, frozen instant, the limiter held. The metal groaned. His fingernails cracked. Blood welled up around the rim.
+</p>
+<p>
+</p>
+<p>Then—
+</p>
+<p>
 </p>
 <em>CRACK.</em>
 <p>
 </p>
 <p>The ring snapped.
 </p>
+<p>
+</p>
 <p>The white light of the C-Order vanished.
 </p>
 <p>
 </p>
-<p>And the noise...
+<p>And for one perfect microsecond, there was nothing.
 </p>
-<p>The noise was beautiful.
+<p>
+</p>
+<p>Then the dam broke.
 </p>
 <p>
 </p>
 <strong>> LIMITER: REMOVED</strong>
-<strong>> OUTPUT: 100%... 110%... 120%</strong>
+<strong>> OUTPUT: UNLOCKED</strong>
+<strong>> CONTAINMENT: FAILED</strong>
+<p>
+</p>
+<p class="stress-point">The High Register signal that had been compressed, throttled, and capped for his entire life suddenly had nowhere to go but <em>out</em>.
+</p>
+<p>
+</p>
+<p>It surged through his nervous system like voltage through a circuit that was never meant to handle it.
+</p>
+<p>
+</p>
+<strong>> OUTPUT: 100%... 110%... 120%...</strong>
+<p>
+</p>
+<p class="stress-point">His body tried to resist. His cells tried to clamp down, to self-regulate, to find a new equilibrium. But there was no equilibrium. There was only exponential growth.
+</p>
+<p>
+</p>
+<p class="stress-point">The signal didn't stop at 120%. It didn't plateau. It kept climbing.
+</p>
+<p>
+</p>
+<strong>> OUTPUT: 140%... 170%... 200%...</strong>
+<p>
+</p>
+<p>His skin began to glow. Not metaphorically. Literally. His bio-plasma output was so intense that it was ionizing the air around him, creating a corona of golden light.
+</p>
+<p>
+</p>
+<p>His NAI—the implant that had been translating reality for him since he was seven years old—tried to compensate.
+</p>
+<p>
+</p>
+<strong>> ATTEMPTING: DYNAMIC_DAMPING</strong>
+<strong>> ATTEMPTING: FREQUENCY_SHIFT</strong>
+<strong>> ATTEMPTING: EMERGENCY_GROUNDING</strong>
+<p>
+</p>
+<p class="stress-point">But every compensation attempt just fed more data into the loop. More signal. More noise. More <em>everything</em>.
+</p>
+<p>
+</p>
+<p class="stress-point">The feedback loop was self-reinforcing. His output was creating interference. The interference was being amplified. The amplification was creating more output.
+</p>
+<p>
+</p>
+<strong>> OUTPUT: 250%... 300%... ERROR...</strong>
 <p>
 </p>
 <p>Taro screamed.
 </p>
-<p>It wasn't a human scream. It was a raw, analog feedback loop amplified by bio-plasma. A total gain-override that shattered the local keyspace.
+<p>
 </p>
+<p class="stress-point">It wasn't a human scream. It couldn't be. His vocal cords were vibrating at frequencies that should have shredded them. The sound that came out was analog, raw, unfiltered—a pure waveform unmediated by any system.
+</p>
+<p>
+</p>
+<p>It was a feedback loop amplified by bio-plasma. A total gain-override that shattered the local keyspace.
+</p>
+<p>
+</p>
+<p>His nervous system was on fire. Every nerve ending was transmitting maximum signal. Pain. Heat. Light. Sound. All of it bleeding together into one overwhelming sensory collapse.
+</p>
+<p>
+</p>
+<p>And his NAI—
+</p>
+<p>
+</p>
+<p>His NAI couldn't handle it.
+</p>
+<p>
+</p>
+<strong>> CRITICAL: RENDER_ENGINE_EXCEPTION</strong>
+<strong>> CRITICAL: TEXTURE_BUFFER_OVERFLOW</strong>
+<strong>> CRITICAL: GEOMETRY_PIPELINE_FAILURE</strong>
+<p>
+</p>
+<p class="stress-point">The implant tried one last desperate measure. It tried to reboot. It tried to flush its buffers and start over with a clean slate.
+</p>
+<p>
+</p>
+<p class="stress-point">But rebooting requires time. And time requires a stable reference frame.
+</p>
+<p>
+</p>
+<p class="stress-point">And Taro's reference frame was dissolving.
+</p>
+<p>
+</p>
+<strong>> SYSTEM_HALT: IMMINENT</strong>
+<strong>> KERNEL_PANIC: IN_PROGRESS</strong>
 <p>
 </p>
 <p data-trigger="the_breach">It was a <span class="tooltip" data-tip="A catastrophic system event where a user's signal overwhelms the reality engine, crashing the 'Overlay' and revealing the raw source code beneath.">Breach</span> .</p>
 <p>
 </p>
-<p>A massive, jagged, golden <strong>Sawtooth Wave</strong> erupted from his body. It looked like a 4K texture being torn from a low-poly mesh.
+<p>A massive, jagged, golden <strong>Sawtooth Wave</strong> erupted from his body. It didn't flow outward—it <em>tore</em> outward, ripping through the air like a 4K texture being forcibly extracted from a low-poly mesh.
 </p>
 <p>
 </p>
@@ -4295,7 +4559,7 @@
 </p>
 <p>The "Dead Zone" broke.
 </p>
-<p>The Silence Agents didn't just flinch. They were <em>thrown</em>. The physical force of the sound wave lifted them off the ground and slammed them into the brickwork.
+<p>The Silence Agents didn't just flinch. They were <em>thrown</em>. The physical force of the sound wave lifted them off the ground and slammed them into the brickwork. Their bodies crumpled. Their null-blades clattered uselessly to the pavement.
 </p>
 <p>
 </p>
@@ -4303,40 +4567,98 @@
 </p>
 <p>The pavement cracked in a spiderweb pattern.
 </p>
+<p>The air itself shattered, fragmenting into impossible angles.
+</p>
 <p>
 </p>
 <strong>> PHYSICS_ENGINE: OVERWRITE</strong>
 <strong>> RESONANCE: HIGH_PITCH [DOMINANT]</strong>
+<strong>> REALITY_COHERENCE: COLLAPSING</strong>
 <p>
 </p>
 <p>Taro stood in the center of the vortex.
 </p>
-<p>His vision was melting. Literally. The world wasn't just losing its overlay; it was losing its cohesion. The geometry of the alleyway began to unspool. The brickwork didn't crumble; it pixelated into raw, unformatted data.
+<p>
+</p>
+<p class="void-reveal">His vision was melting.
+</p>
+<p>
+</p>
+<p class="void-reveal">Not blurring. Not fading. <em>Melting</em>. The world wasn't just losing its overlay—it was losing its cohesion, its very definition of what it meant to <em>be</em>.
+</p>
+<p>
+</p>
+<p class="void-reveal">The geometry of the alleyway began to unspool. The brickwork didn't crumble; it <em>pixelated</em>—breaking down into raw, unformatted data. He could see individual vertices floating in space, disconnected from their polygons. Textures peeled away like wet paper, revealing the wireframe beneath. And beneath the wireframe? Nothing. A void. An absence so complete it hurt to perceive.
 </p>
 <p>
 </p>
 <strong>> CRITICAL_FAILURE: RENDER_THREAD_EXCEPTION</strong>
 <strong>> GRAPHICS_DRIVER: NOT_FOUND</strong>
+<strong>> SPATIAL_ORIENTATION: UNDEFINED</strong>
 <p>
 </p>
-<p>He looked at Hana. She wasn't a girl anymore. She was a cloud of biological probabilities, a terrifying smear of motion without definition.
-</p>
-<p>He looked at Ven. Ven was a towering pillar of thermal gradients, devoid of human shape.
-</p>
-<p>
-</p>
-<p>He looked at his hands. 
-</p>
-<p>They weren't hands anymore. They were just... uninitialized input. Raw, undefined interaction points flickering with missing texture flags. 
+<p class="void-reveal">Sound folded inside-out.
 </p>
 <p>
 </p>
-<p>His NAI hadn't just crashed. It had stopped interpreting the universe. The operating system was dead.
+<p class="void-reveal">He heard echoes <em>before</em> the sounds that created them. He heard silence as a positive force—not the absence of noise, but the <em>presence</em> of un-noise, anti-noise, noise running backwards through time.
+</p>
+<p>
+</p>
+<p class="void-reveal">His hands—
+</p>
+<p>
+</p>
+<p>He looked at his hands.
+</p>
+<p>
+</p>
+<p class="void-reveal">They weren't hands anymore.
+</p>
+<p>
+</p>
+<p class="void-reveal">They were probability clouds. Quantum smears of <em>might-be-hand</em> and <em>could-be-hand</em> and <em>used-to-be-hand</em>. He could see all possible positions his fingers might occupy simultaneously. He could see the skeleton inside the flesh, the atoms inside the skeleton, the quarks inside the atoms. He could see too much. He could see the math.
+</p>
+<p>
+</p>
+<p class="void-reveal">He was looking at his own source code.
+</p>
+<p>
+</p>
+<p>He looked at Hana. She wasn't a girl anymore. She was a cloud of biological probabilities, a terrifying smear of motion without definition. Her square wave—so perfect, so precise—was decomposing into raw sine components, each frequency visible as a separate layer of her existence.
+</p>
+<p>
+</p>
+<p>He looked at Ven. Ven was a towering pillar of thermal gradients, devoid of human shape. He was temperature incarnate—a walking entropy field with no solid form, only the exchange of heat between systems.
+</p>
+<p>
+</p>
+<strong>> OBJECT_RECOGNITION: FAILED</strong>
+<strong>> FRIEND_OR_FOE: UNKNOWN</strong>
+<strong>> SELF_MODEL: CORRUPTED</strong>
+<p>
+</p>
+<p class="void-reveal">Taro tried to close his eyes, but his eyelids were just suggestions. Unrendered. The concept of "closed" required a spatial model, and his spatial model was gone.
+</p>
+<p>
+</p>
+<p class="void-reveal">He tried to think, but thinking required language, and language required symbolic processing, and his symbol table had been wiped.
+</p>
+<p>
+</p>
+<p>His NAI hadn't just crashed.
+</p>
+<p>It had stopped interpreting the universe.
+</p>
+<p>The operating system was dead.
+</p>
+<p>And without it, reality was just... data. Meaningless. Unformatted. Raw.
 </p>
 <p>
 </p>
 <strong>> SHUTDOWN_SEQUENCE: IRREVERSIBLE</strong>
 <strong>> SYSTEM_STATE: NULL_POINTER_EXCEPTION</strong>
+<strong>> EXISTENCE: UNDEFINED</strong>
 <p>
 </p>
 <p>The world dissolved.
@@ -4613,15 +4935,127 @@
 </p>
 <p>
 </p>
-<p>Every second felt like a minute. Every minute felt like an hour.
+<p>Every second felt like a minute. Every minute felt like an hour. Every hour felt like drowning.
 </p>
 <p>
 </p>
-<p>The carrier wave drilled deeper into his skull.
+<p class="wireframe-text">The carrier wave drilled deeper into his skull.
 </p>
 <p>
 </p>
-<p>The wireframe world began to feel more real than flesh. More permanent than memory.
+<p class="wireframe-text"><strong>EEEEEEEEEEEEEE—</strong>
+</p>
+<p>
+</p>
+<p class="wireframe-text">It never stopped. It never varied. A single, pure tone at exactly 440 Hz, unfiltered, unmasked, boring directly into the base of his brain. The sound his NAI made just to <em>exist</em>. The hum of the hardware itself.
+</p>
+<p>
+</p>
+<p class="wireframe-text">Without the normal overlay, without the audio processing layer to suppress it, it was all he could hear. All he could <em>be</em>.
+</p>
+<p>
+</p>
+<p class="wireframe-text">He tried to think about something else. Anything else.
+</p>
+<p>
+</p>
+<p class="wireframe-text">But his thoughts didn't flow anymore. They stuttered. Buffered. Loaded one frame at a time like a corrupted video file.
+</p>
+<p>
+</p>
+<p class="wireframe-text"><em>I... need... to...</em>
+</p>
+<p>
+</p>
+<p class="wireframe-text">[LOADING]
+</p>
+<p>
+</p>
+<p class="wireframe-text"><em>...get... out...</em>
+</p>
+<p>
+</p>
+<p class="wireframe-text">[LOADING]
+</p>
+<p>
+</p>
+<p class="wireframe-text"><em>...of... here.</em>
+</p>
+<p>
+</p>
+<p class="wireframe-text">Every thought took forever. His internal monologue was rendering at maybe 10 frames per second. He could feel the gaps between each mental word—dead zones of cognition where his brain was just... waiting. Buffering.
+</p>
+<p>
+</p>
+<p class="wireframe-text">The wireframe world began to feel more real than flesh. More permanent than memory.
+</p>
+<p>
+</p>
+<p class="wireframe-text">He tried to remember the color red.
+</p>
+<p>
+</p>
+<p class="wireframe-text">He couldn't.
+</p>
+<p>
+</p>
+<p class="wireframe-text">Not because he'd forgotten what it looked like—he could remember the <em>word</em> "red"—but because he couldn't remember what it <em>felt</em> like. The warmth. The urgency. The way it pushed against your eyes. In Safe Mode, there was no red. There was only blue wireframe and cyan void. And his brain, deprived of sensory input, was beginning to accept that those were the only colors that had ever existed.
+</p>
+<p>
+</p>
+<p class="wireframe-text">Sounds had no texture here. No harmonics. No timbre. They were just ON or OFF. Binary. Ven's voice wasn't <em>Ven's voice</em>—it was just a square wave modulated with language data. Flat. Digital. Wrong.
+</p>
+<p>
+</p>
+<p class="wireframe-text">He tried to remember his mother's laugh.
+</p>
+<p>
+</p>
+<p class="wireframe-text">He couldn't.
+</p>
+<p>
+</p>
+<p class="wireframe-text">The memory was there—he knew she'd laughed, knew it had made him feel safe—but the <em>sound</em> of it was gone. Overwritten by the carrier wave. Erased by the absence of high-fidelity processing.
+</p>
+<p>
+</p>
+<p class="wireframe-text">How long had he been here?
+</p>
+<p>
+</p>
+<p class="wireframe-text">He tried to count.
+</p>
+<p>
+</p>
+<p class="wireframe-text"><em>One.</em>
+</p>
+<p>
+</p>
+<p class="wireframe-text"><em>Two.</em>
+</p>
+<p>
+</p>
+<p class="wireframe-text"><em>Three.</em>
+</p>
+<p>
+</p>
+<p class="wireframe-text">But the numbers didn't mean anything. A second in Safe Mode didn't match a second in the real world. His internal clock was desynchronized. Drifting.
+</p>
+<p>
+</p>
+<p class="wireframe-text"><em>Four? Or forty? Or four hundred?</em>
+</p>
+<p>
+</p>
+<p class="wireframe-text">The carrier wave screamed.
+</p>
+<p>
+</p>
+<p class="wireframe-text"><strong>EEEEEEEEEEEEEE—</strong>
+</p>
+<p>
+</p>
+<p class="wireframe-text">He wanted to rip his implant out. He wanted to claw through his skull and tear the hardware free. But his hands—his wireframe hands—couldn't grip anything. His fingers passed through his own head like he was made of light.
 </p>
 <p>
 </p>
@@ -4633,24 +5067,63 @@
 </p>
 <p>
 </p>
-<p>Stripped of texture. Stripped of sound. Stripped of self.
+<p class="wireframe-text">Stripped of texture. Stripped of sound. Stripped of self.
 </p>
 <p>
 </p>
-<p>Reduced to geometry.
+<p class="wireframe-text">Reduced to geometry.
 </p>
 <p>
 </p>
-<p>He felt cold. He felt flat. He felt like a sketch of a person, waiting to be erased.
+<p class="wireframe-text">He felt cold. Not temperature-cold—there was no temperature here. He felt <em>absent</em>-cold. Void-cold. The cold of data that had been written to disk but never loaded into RAM. The cold of existing without being perceived.
 </p>
 <p>
 </p>
-<p>And somewhere in the distance, he heard the heavy, rhythmic thrum of high-fidelity engines approaching.
+<p>He felt flat. Two-dimensional. Like a sketch of a person, waiting to be erased.
 </p>
 <p>
+</p>
+<p>Ven's orange mesh hovered nearby, flickering. Unstable. Taro could see the stress in his wireframe—vertices shaking, edges fraying. Ven was using his own signal to hold this space stable, to keep Taro from completely dissolving.
+</p>
+<p>
+</p>
+<p class="wireframe-text">But even Ven couldn't hold forever.
+</p>
+<p>
+</p>
+<p>And somewhere in the distance, beyond the wireframe walls, Taro heard it—
+</p>
+<p>
+</p>
+<p>The heavy, rhythmic thrum of high-fidelity engines approaching.
+</p>
+<p>
+</p>
+<p>Not rescue.
+</p>
+<p>
+</p>
+<p>Collection.
+</p>
+<p>
+</p>
+<p class="wireframe-text" style="margin: 2em 0; text-align: center;">
+</p>
+<p class="wireframe-text" style="font-style: italic; opacity: 0.7;"><em>Am I the noise that breaks things?</em>
+</p>
+<p class="wireframe-text" style="font-style: italic; opacity: 0.7;"><em>Or the silence that lets them break?</em>
+</p>
+<p class="wireframe-text" style="margin: 2em 0; text-align: center;">
+</p>
+<p class="wireframe-text">The question hangs in the wireframe void.
+</p>
+<p class="wireframe-text">No answer comes.
+</p>
+<p class="wireframe-text" style="margin: 2em 0; text-align: center;">
 </p>
 <strong>> OBJECTIVE: SURVIVE</strong>
 <strong>> THREAT: TOTAL_DELETION</strong>
+<strong>> TIME_ELAPSED: UNDEFINED</strong>
 <p>
 </p>
 <p>---
@@ -4846,7 +5319,103 @@
 </p>
 <p>
 </p>
-<p>Silence returned. But it wasn't the heavy silence of Krell's threat. It was a suffocating, sterile silence.
+<p>Silence returned.
+</p>
+<p>
+</p>
+<p class="isolation">But Krell wasn't gone.
+</p>
+<p>
+</p>
+<p class="isolation">Taro could still hear him. Not his footsteps. His <em>presence</em>. A low-frequency hum just below hearing, like a bass note that vibrates your chest cavity.
+</p>
+<p>
+</p>
+<p class="isolation">Krell was standing outside the door.
+</p>
+<p class="isolation">Waiting.
+</p>
+<p class="isolation">Listening.
+</p>
+<p>
+</p>
+<p class="isolation">Taro was alone.
+</p>
+<p>
+</p>
+<p class="isolation">The white room pressed in on him. Not physically—the restraints handled that—but psychologically. The perfect, seamless white of the walls. The shadowless lighting. The absolute sterility.
+</p>
+<p>
+</p>
+<p class="isolation">His jaw throbbed where Krell had pierced it. He could still taste blood. Still feel the ghost of that bone-conduction probe drilling into his skull.
+</p>
+<p>
+</p>
+<p class="isolation">How long had he been here?
+</p>
+<p>
+</p>
+<p class="isolation">Time moved strangely in this room. Without windows. Without ambient sound. Just the faint hum of the ventilation system and his own ragged breathing.
+</p>
+<p>
+</p>
+<p class="isolation">He tried to think. Tried to make a plan. But his thoughts kept sliding away, unable to gain purchase on anything solid.
+</p>
+<p>
+</p>
+<p class="isolation"><em>Hana is dying,</em> one part of his mind whispered.
+</p>
+<p>
+</p>
+<p class="isolation"><em>Ven is going to be erased,</em> another part answered.
+</p>
+<p>
+</p>
+<p class="isolation"><em>And you did this. You broke reality. You're the variable that crashed the system.</em>
+</p>
+<p>
+</p>
+<p class="isolation">He closed his eyes, but that made it worse. In the darkness behind his eyelids, he could see the void again. The un-rendered reality. The source code of existence, raw and screaming.
+</p>
+<p>
+</p>
+<p class="isolation">He opened them. The white ceiling stared back. Infinite. Blank.
+</p>
+<p>
+</p>
+<p class="isolation">Minutes passed. Or hours. He couldn't tell.
+</p>
+<p>
+</p>
+<p class="isolation">The isolation was its own kind of torture. Krell's violence was at least <em>something</em>—pain was data, sensation, proof of existence. But this? This nothingness? This was erasure by absence.
+</p>
+<p>
+</p>
+<p class="isolation">He was being softened. Prepared. Made ready to accept whatever came next.
+</p>
+<p>
+</p>
+<p>And then—
+</p>
+<p>
+</p>
+<p>The door slid open.
+</p>
+<p>
+</p>
+<p>But it wasn't the heavy silence of Krell's threat. It was a suffocating, sterile silence.
+</p>
+<p>
+</p>
+<p>Headmaster Kael Voss walked in. He wasn't wearing armor. He wore his pristine white robes, unblemished by the chaos of the world.
+</p>
+<p>
+</p>
+<p>After the isolation, after Krell's brutality, Voss looked like salvation.
+</p>
+<p>
+</p>
+<p>And that was the trap.
 </p>
 <p>
 </p>
@@ -4938,23 +5507,113 @@
 </p>
 <p>
 </p>
-<p>He tapped the table. A video feed appeared.
+<p>He tapped the table. A holographic display materialized above Taro's chest.
 </p>
 <p>
 </p>
-<p>Hana was in a medical tank, floating in blue fluid. Her skin was pale. Her eyes were vacant.
+<p>Two panels. Two feeds.
 </p>
 <p>
 </p>
-<p>"Hana Chord is currently in critical condition," Voss said. "Her resonance core was shattered by your little stunt. She requires a high-level system restore. Expensive. Complex."
+<p class="voss-speak">On the left: Hana.
 </p>
 <p>
 </p>
-<p>The feed switched. Ven was in a containment cell, shivering. Frost covered his armor.
+<p>She was suspended in a medical tank, floating in blue preservation fluid. Her skin was translucent, pale, like someone had turned down the opacity on her texture. Her eyes were open but vacant—just rendering placeholders, hollow and unseeing.
 </p>
 <p>
 </p>
-<p>"And Ven? He's awaiting trial for unauthorized use of force. The penalty is Reformatting. Memory wipe. Personality reset. He will be a drone."
+<p>But it wasn't the visual that made Taro's stomach turn.
+</p>
+<p>
+</p>
+<p>It was the readout.
+</p>
+<p>
+</p>
+<p class="voss-speak">Her frequency signature—that perfect, crystalline square wave she was so proud of—was displayed in realtime beneath her image.
+</p>
+<p>
+</p>
+<p>And it was <em>degrading</em>.
+</p>
+<p>
+</p>
+<p>The sharp, clean edges of her waveform were fraying. Bits of her signal were dropping out. What should have been a stable 890 nHz was flickering: 890... 887... 881... 875...
+</p>
+<p>
+</p>
+<strong class="redacted">> HANA_CHORD: RESONANCE_INTEGRITY: 73%... 71%... 68%...</strong>
+<strong class="redacted">> CORE_STABILITY: DEGRADING</strong>
+<strong class="redacted">> ESTIMATED_TIME_TO_CRITICAL_FAILURE: 6h 42m</strong>
+<p>
+</p>
+<p>"Hana Chord is currently in critical condition," Voss said, his voice soft, almost sympathetic. "Her resonance core was shattered by your little stunt. Every minute, she loses coherence. The high-fidelity processing that keeps her conscious, that keeps her <em>her</em>, is unraveling thread by thread."
+</p>
+<p>
+</p>
+<p>Taro watched the numbers tick down. 67%. 65%. Each percentage point was a piece of Hana dissolving into static.
+</p>
+<p>
+</p>
+<p>"She requires a high-level system restore," Voss continued. "Expensive. Complex. The kind of intervention that requires... administrative approval."
+</p>
+<p>
+</p>
+<p>The feed switched. The right panel lit up.
+</p>
+<p>
+</p>
+<p class="voss-speak">Ven.
+</p>
+<p>
+</p>
+<p>He was in a containment cell—a perfect white cube identical to the one Taro was in. But unlike Taro's sterile warmth, Ven's cell was <em>cold</em>. Frost covered the walls. Ice crystals clung to Ven's armor plating.
+</p>
+<p>
+</p>
+<p>Ven was sitting against the wall, shivering. His massive frame was curled in on itself, arms wrapped around his torso. His breath came out in visible clouds.
+</p>
+<p>
+</p>
+<p>The thermal readout beneath his image told the story:
+</p>
+<p>
+</p>
+<strong class="redacted">> VEN_TAIGA: CORE_TEMPERATURE: 96.2°F... 96.0°F... 95.7°F...</strong>
+<strong class="redacted">> HEAT_RETENTION: FAILING</strong>
+<strong class="redacted">> HYPOTHERMIA_RISK: CRITICAL</strong>
+<p>
+</p>
+<p>"Ven's unique biology makes him a difficult case," Voss explained, watching the numbers with clinical detachment. "His resonance generates heat. It's not a side effect—it's his <em>function</em>. When you force him to suppress output, when you dampen his signal to containment levels, his body temperature drops. Dangerously."
+</p>
+<p>
+</p>
+<p>95.4°F. 95.1°F.
+</p>
+<p>
+</p>
+<p>"He's not built for the cold, Taro. And the C-Order cell he's in? It's refrigerated. Standard procedure for heat-generating Variables. He could last... oh, maybe eighteen hours before his core functions shut down entirely."
+</p>
+<p>
+</p>
+<p>94.8°F.
+</p>
+<p>
+</p>
+<p>Taro watched Ven's shivering intensify. Watched the frost spread.
+</p>
+<p>
+</p>
+<p>"And that's assuming he survives the trial," Voss added. "He's awaiting judgment for unauthorized use of force. The penalty is Reformatting. Memory wipe. Personality reset. The warm, protective friend you know? Gone. Replaced with a compliant drone who follows orders and nothing else."
+</p>
+<p>
+</p>
+<p>The displays hovered there. Side by side. Hana's signal decaying. Ven's temperature dropping.
+</p>
+<p>
+</p>
+<p>Real-time. Inescapable. Quantified suffering.
 </p>
 <p>
 </p>
@@ -5002,6 +5661,17 @@
 </p>
 <p>
 </p>
+<p class="isolation" style="font-style: italic; text-align: center; margin: 1.5em 0; opacity: 0.8;">
+<em>Noise breaks things.</em>
+</p>
+<p class="isolation" style="font-style: italic; text-align: center; margin: 1.5em 0; opacity: 0.8;">
+<em>Silence lets them die.</em>
+</p>
+<p class="isolation" style="font-style: italic; text-align: center; margin: 1.5em 0; opacity: 0.8;">
+<em>I can't be both.</em>
+</p>
+<p>
+</p>
 <p>"Do it," he whispered.
 </p>
 <p>
@@ -5022,29 +5692,155 @@
 </p>
 <p>
 </p>
+<em>Click.</em>
+<p>
+</p>
+<p>The connection registered.
+</p>
+<p>
+</p>
 <p>It didn't hurt.
 </p>
 <p>
 </p>
-<p>It felt like ice water pouring into his brain.
+<p>Not at first.
 </p>
 <p>
 </p>
-<p>The screaming in his head—the constant, jagged noise of his own thoughts—suddenly stopped. It was cut off, like a wire being snipped.
+<p>It felt like ice water pouring into his brain. Starting at the base of his skull, spreading upward, forward, outward through his neural pathways.
 </p>
 <p>
 </p>
-<p>The fear vanished.  
+<strong>> SYSTEM_UPDATE: INSTALLING... [0%]</strong>
+<p>
 </p>
-<p>The anger vanished.  
-</p>
-<p>The guilt vanished.
+<p>Cold. So cold.
 </p>
 <p>
 </p>
-<strong>> SYSTEM_UPDATE: INSTALLING... [100%]</strong>
+<p>The patch wasn't fire or electricity. It was <em>absence</em>. A creeping numbness that moved through his neurons like frost across a window.
+</p>
+<p>
+</p>
+<strong>> PROGRESS: [15%]</strong>
+<strong>> REWRITING: EMOTIONAL_RESPONSE_PATTERNS</strong>
+<p>
+</p>
+<p>The screaming in his head—the constant, jagged noise of his own anxious thoughts—began to quiet.
+</p>
+<p>
+</p>
+<p>Not because he was calming down.
+</p>
+<p>
+</p>
+<p>Because the anxiety was being <em>deleted</em>.
+</p>
+<p>
+</p>
+<p>He felt it happen. Felt the neural pathways that carried fear being pruned, smoothed, optimized away. The part of him that had been terrified just seconds ago was still there—but the <em>feeling</em> of terror was fading, like someone was turning down a dial.
+</p>
+<p>
+</p>
+<strong>> PROGRESS: [32%]</strong>
+<strong>> OPTIMIZING: STRESS_RESPONSE_THRESHOLD</strong>
+<p>
+</p>
+<p>The anger vanished next.
+</p>
+<p>
+</p>
+<p>That raw, burning frustration at the System, at Voss, at the unfairness of being forced to choose—it didn't explode or release. It just... stopped. Cut off mid-thought like a sentence ending without punctuation
+</p>
+<p>
+</p>
+<p>He tried to hold onto it. Tried to remember what it felt like to be angry. But the memory was already smoothing out, losing its edges, becoming something distant and theoretical.
+</p>
+<p>
+</p>
+<strong>> PROGRESS: [48%]</strong>
+<strong>> CORRECTING: IMPULSE_CONTROL_DEFICIENCIES</strong>
+<p>
+</p>
+<p class="patch-install">The guilt was next.
+</p>
+<p>
+</p>
+<p class="patch-install">That crushing weight of responsibility—<em>Hana is dying because of you, Ven is freezing because of you</em>—it lifted. Not because he'd been forgiven. Because the neural pathways that generated self-blame were being rewritten.
+</p>
+<p>
+</p>
+<p class="patch-install">The patch decided guilt was inefficient. So it removed it.
+</p>
+<p>
+</p>
+<strong>> PROGRESS: [64%]</strong>
+<strong>> SMOOTHING: PERSONALITY_ANOMALIES</strong>
+<p>
+</p>
+<p class="patch-install">His thoughts were slowing down.
+</p>
+<p>
+</p>
+<p class="patch-install">Not in a tired way. In a <em>refined</em> way. The chaotic, branching, stuttering mess of his internal monologue was being linearized. Made sequential. Efficient.
+</p>
+<p>
+</p>
+<p class="patch-install">Before, his mind had been a storm of cross-talk—five thoughts happening simultaneously, interrupting each other, creating feedback and noise. Now? One thought at a time. Clean. Orderly. Empty.
+</p>
+<p>
+</p>
+<strong>> PROGRESS: [77%]</strong>
+<strong>> INSTALLING: COMPLIANCE_PROTOCOLS</strong>
+<p>
+</p>
+<p class="patch-install">The desire to resist faded.
+</p>
+<p>
+</p>
+<p class="patch-install">He'd been fighting since the moment Krell walked in. Fighting the restraints. Fighting the System. Fighting Voss's logic. But now that fight felt... unnecessary. Pointless. Why resist when cooperation was so much simpler?
+</p>
+<p>
+</p>
+<p class="patch-install">The patch whispered: <em>This is better. This is safer. This is how you were supposed to be all along.</em>
+</p>
+<p>
+</p>
+<strong>> PROGRESS: [91%]</strong>
+<strong>> FINALIZING: NEURAL_HARMONIZATION</strong>
+<p>
+</p>
+<p class="patch-install">The High Register—that screaming, awful frequency he'd carried his whole life—stopped screaming.
+</p>
+<p>
+</p>
+<p class="patch-install">It was still there. He could feel it, deep in his chest, like a sleeping giant. But the patch had wrapped it in layers of dampening, filtering, control. It couldn't burst out anymore. It couldn't hurt anyone.
+</p>
+<p>
+</p>
+<p class="patch-install">It couldn't hurt <em>him</em>.
+</p>
+<p>
+</p>
+<p class="patch-install">And for just a moment—one terrible, traitorous moment—Taro felt <em>relief</em>.
+</p>
+<p>
+</p>
+<strong>> PROGRESS: [100%]</strong>
 <strong>> OPTIMIZATION: COMPLETE</strong>
+<strong>> REBOOT: REQUIRED</strong>
+<p>
+</p>
+<p>The cold reached his frontal cortex.
+</p>
+<p>
+</p>
+<p>Everything went white.
+</p>
+<p>
+</p>
 <strong>> WELCOME_BACK_USER</strong>
+<strong>> YOU_ARE_WELL_NOW</strong>
 <p>
 </p>
 <p>Taro opened his eyes.
@@ -5531,6 +6327,88 @@
 <p>
 </p>
 <em>Everything is broken,</em> he thought. <em>And nobody else can see it.</em>
+<p>
+</p>
+<p>---
+</p>
+<p>
+</p>
+<h4>[08:12:00] THE HALLWAY</h4>
+<p>
+</p>
+<p>The corridor to the Amphitheater was long, white, and empty.
+</p>
+<p>
+</p>
+<p>Or it should have been.
+</p>
+<p>
+</p>
+<p>At the far end, backlit by the sterile overhead lights, stood a figure in black tactical armor.
+</p>
+<p>
+</p>
+<p>Krell.
+</p>
+<p>
+</p>
+<p>He wasn't moving. Just standing there, the red visor of his helmet tracking Taro's approach with mechanical precision.
+</p>
+<p>
+</p>
+<p>Before the patch, Taro would have felt fear. His heart rate would have spiked. His damping bands would have heated up from the surge of stress-induced bio-plasma.
+</p>
+<p>
+</p>
+<p>Now?
+</p>
+<p>
+</p>
+<p>Nothing.
+</p>
+<p>
+</p>
+<strong>> THREAT_ASSESSMENT: ADJUTANT_KRELL</strong>
+<strong>> HOSTILITY: 0.02 (NEUTRAL)</strong>
+<strong>> RECOMMENDED_ACTION: PROCEED</strong>
+<p>
+</p>
+<p>The patch had decided Krell wasn't a threat. Just data. Just another object in the environment to route around, like a piece of furniture or a locked door.
+</p>
+<p>
+</p>
+<p>Taro walked forward. His footsteps echoed. Krell didn't move.
+</p>
+<p>
+</p>
+<p>As Taro passed, he felt it—
+</p>
+<p>
+</p>
+<p>That low-frequency hum. The sub-bass presence that vibrated his ribcage. It wasn't coming from Krell's armor. It was Krell himself. His resonance. The man was a walking bass drop, a fundamental frequency so deep it bypassed hearing and went straight to bone conduction.
+</p>
+<p>
+</p>
+<p>Taro didn't look back. The patch wouldn't let him.
+</p>
+<p>
+</p>
+<p>But as he turned the corner, he heard—quiet, patient, inevitable—
+</p>
+<p>
+</p>
+<p>The sound of armored footsteps.
+</p>
+<p>
+</p>
+<p>Following.
+</p>
+<p>
+</p>
+<strong>> SURVEILLANCE: ACTIVE</strong>
+<strong>> OBSERVER: ADJUTANT_KRELL</strong>
+<strong>> DISTANCE: 47 METERS</strong>
+<strong>> STATUS: MONITORING</strong>
 <p>
 </p>
 <p>---
@@ -6852,6 +7730,28 @@
 </p>
 <p>
 </p>
+<p>Not as a weapon.
+</p>
+<p>Not as chaos.
+</p>
+<p>
+</p>
+<p>As the gap between the notes.
+</p>
+<p>The rest.
+</p>
+<p>The necessary silence that lets music exist.
+</p>
+<p>
+</p>
+<p style="font-style: italic; text-align: center; margin: 2em 0; font-weight: 600;">
+<em>I am both.</em>
+</p>
+<p style="font-style: italic; text-align: center; margin: 0; font-weight: 600; opacity: 0.9;">
+<em>That was always the answer.</em>
+</p>
+<p>
+</p>
 <p>---
 </p>
 <p>
@@ -6859,10 +7759,243 @@
 <strong>END CHAPTER 17</strong>
 <strong>END PHASE V</strong>
 
+<!-- ======================================================================== -->
+<!-- VOLUME I END SIGNAL: Archive Shutdown Sequence -->
+<!-- The system acknowledges completion through silence, not celebration -->
+<!-- ======================================================================== -->
+
+<div class="volume-end-signal" style="margin: 6em 0; padding: 4em 2em; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: center;">
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 1s;">
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 2s;">
+[The Archive goes quiet.]
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 4s;">
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 5s;">
+[The sidebar holds its breath.]
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 7s;">
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 8s;">
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 9s;">
+[This phase is complete.]
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 11s;">
+</p>
+
+<p style="margin: 3em 0; opacity: 0.3; font-family: var(--font-mono); font-size: 0.75rem; animation: endFade 25s ease-in forwards; animation-delay: 12s;">
+</p>
+
+<p style="margin: 4em 0; font-family: var(--font-mono); font-size: 0.85rem; font-weight: bold; animation: endFade 30s ease-in forwards; animation-delay: 14s; opacity: 0.4;">
+<strong>> END TRANSMISSION</strong>
+</p>
+
+<p style="margin: 2em 0; font-family: var(--font-mono); font-size: 0.85rem; font-weight: bold; animation: endFade 30s ease-in forwards; animation-delay: 16s; opacity: 0.4;">
+<strong>> VOLUME_II: [PENDING]</strong>
+</p>
+
+<p style="margin: 6em 0; opacity: 0.15; font-family: var(--font-mono); font-size: 0.65rem; animation: endFade 40s ease-in forwards; animation-delay: 20s;">
+[signal: lost]
+</p>
+
+</div>
+
+<style>
+/* Volume end fade animation */
+@keyframes endFade {
+  0% { opacity: 0.3; }
+  50% { opacity: 0.2; }
+  100% { opacity: 0.05; }
+}
+
+.volume-end-signal {
+  pointer-events: none;
+  user-select: none;
+}
+</style>
+
 </div>
 
     </main>
     <script>
+// ============================================================================
+// VOLUME I RELEASE CONFIGURATION (ADDITION 6/7)
+// Locked feature set for initial publication
+// This defines what's active vs dormant vs future-compatible
+// ============================================================================
+
+const RELEASE_CONFIG = {
+  version: "1.0.0-complete",
+  release_date: "2026-02-11",
+  
+  features: {
+    // ACTIVE (Present in Volume I release)
+    fragment_lifecycle: true,
+    heartbeat_sync: true,
+    silence_enforcement: true,
+    chapter_effects: true,
+    scroll_tracking: true,
+    reading_contract: true,           // NEW: First fragment teaches rules
+    volume_end_signal: true,          // NEW: Archive shutdown at completion
+    krell_recurrence: true,           // NEW: Rhythmic threat pattern
+    
+    // DORMANT (Code present but inactive - activate post-launch)
+    fragment_contradictions: false,   // Activate in v1.1
+    time_lag_fragments: false,        // Activate in v1.1
+    permanent_consequences: false,    // Activate in v1.1
+    marginal_glyphs: false,           // Activate in v1.2
+    system_coherence_indicator: false,// Activate in v1.2
+    reread_variations: false,         // Activate in v1.2
+    
+    // FUTURE-COMPATIBLE (Not yet implemented)
+    reader_memory_persistence: false, // Volume II
+    community_unlocks: false,         // Volume II
+    dynamic_text_variations: false,   // Volume II
+    cross_session_state: false        // Volume II
+  },
+  
+  limits: {
+    max_fragments_visible: 5,
+    fragment_dwell_requirement: 2000,  // ms
+    silence_window_opacity: 0.0,
+    heartbeat_variance: 30,            // ±30 BPM
+    contract_fragment_stillness: 3000, // ms for reading contract to appear
+    end_signal_trigger: 0.98           // 98% scroll triggers shutdown
+  },
+  
+  structural_additions: {
+    taro_emotional_throughline: true,  // "Am I noise or silence?" x3
+    krell_as_vector: true,             // Recurring pressure pattern
+    reading_contract_moment: true,     // Early Ch1 teaches rules
+    volume_closure: true               // End-of-volume silence
+  }
+};
+
+// Feature gate utility
+function isFeatureEnabled(featureName) {
+  return RELEASE_CONFIG.features[featureName] === true;
+}
+
+// ============================================================================
+// READING CONTRACT INITIALIZATION (ADDITION 1/7)
+// First fragment that appears only if reader pauses - teaches without explaining
+// ============================================================================
+
+(function initReadingContract() {
+  if (!isFeatureEnabled('reading_contract')) return;
+  
+  const contractEl = document.getElementById('contract-fragment');
+  if (!contractEl) return;
+  
+  let stillTimer = null;
+  let hasActivated = false;
+  let scrollCount = 0;
+  
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top >= 0 && rect.top < window.innerHeight;
+  }
+  
+  function checkContract() {
+    if (hasActivated) return;
+    
+    // Clear any existing timer
+    clearTimeout(stillTimer);
+    
+    // Increment scroll count to detect rushing
+    scrollCount++;
+    
+    // If reader is rushing (scrolling rapidly), never show
+    if (scrollCount > 10) {
+      contractEl.style.display = 'none';
+      return;
+    }
+    
+    // If in viewport and still, show after configured delay
+    if (isInViewport(contractEl)) {
+      stillTimer = setTimeout(() => {
+        if (!hasActivated) {
+          // Fade in
+          contractEl.style.opacity = '0.9';
+          contractEl.style.transition = 'opacity 3s ease';
+          hasActivated = true;
+          
+          // Fade out after 5 seconds
+          setTimeout(() => {
+            contractEl.style.opacity = '0';
+            setTimeout(() => {
+              contractEl.style.display = 'none';
+            }, 3000);
+          }, 5000);
+        }
+      }, RELEASE_CONFIG.limits.contract_fragment_stillness);
+    }
+  }
+  
+  // Listen for scroll
+  window.addEventListener('scroll', checkContract, { passive: true });
+  
+  // Initial check
+  setTimeout(checkContract, 1000);
+})();
+
+// ============================================================================
+// VOLUME END SIGNAL HANDLER (ADDITION 7/7)
+// Archive shutdown sequence when reader reaches 98% scroll
+// ============================================================================
+
+(function initVolumeEndSignal() {
+  if (!isFeatureEnabled('volume_end_signal')) return;
+  
+  let endSignalTriggered = false;
+  
+  function checkVolumeEnd() {
+    if (endSignalTriggered) return;
+    
+    const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+    
+    // Trigger at configured threshold (default 98%)
+    if (scrollPercent >= RELEASE_CONFIG.limits.end_signal_trigger) {
+      endSignalTriggered = true;
+      
+      const archive = document.getElementById('residual-archive');
+      if (archive) {
+        // Fade out archive
+        archive.style.transition = 'opacity 4s ease';
+        archive.style.opacity = '0.1';
+        
+        // Slow heartbeat to near-death
+        const heartbeat = archive.querySelector('.resonance-monitor');
+        if (heartbeat) {
+          heartbeat.style.animationDuration = '5s';
+          heartbeat.style.opacity = '0.05';
+        }
+        
+        // All fragments go SILENT
+        const fragments = archive.querySelectorAll('.archive-fragment');
+        fragments.forEach(f => {
+          f.classList.remove('state-coherent', 'state-emerging', 'state-unstable');
+          f.classList.add('state-silent');
+        });
+      }
+      
+      console.log('[VOLUME I]: Transmission complete. Archive entering dormant state.');
+    }
+  }
+  
+  window.addEventListener('scroll', checkVolumeEnd, { passive: true });
+})();
+
 // ============================================================================
 // ENVIRONMENTAL INTELLIGENCE SYSTEM
 // Novel-Space Augmentation | Residual Archive Control
@@ -7320,6 +8453,41 @@ const FRAGMENT_DATA = {
       requires_time_total: 300000, // 5 minutes total reading time
       probability: 0.15            // 15% chance when eligible
     }
+  },
+  
+  // ========================================================================
+  // STRUCTURAL ADDITIONS - Volume I Complete
+  // ========================================================================
+  
+  // ADDITION 3/7: PERMANENT CONSEQUENCE
+  // This fragment locks forever if reader rushes past Chapter 10
+  // Teaches: "Time matters. Attention has consequence."
+  "mother_memory": {
+    text: "Ayane Nishimura / last seen: [REDACTED] / status: [UNKNOWN]",
+    y_anchor: 0.53,  // Just after Breach (Ch10 ends ~0.52)
+    x: "25%",
+    activationBand: 0.05,  // Narrow window
+    special: {
+      requires_dwell: 8000,           // Must pause for 8 seconds
+      locks_if_missed: true,          // ONE CHANCE ONLY
+      lock_threshold: 0.55,           // Locks if scroll passes this
+      locked_text: "access denied / data corrupted / you moved too fast"
+    }
+  },
+  
+  // ADDITION 5/7: REREAD ECHO
+  // Shows different text on first vs second read
+  // Invites rereading as necessity, not option
+  "voss_true_nature": {
+    text: "Voss :: C-Order administrator / specialty: calibration oversight",
+    text_reread: "Voss :: [CLASSIFIED] / Project Dissonance / WARNING: ideological extremist",
+    y_anchor: 0.09,  // Chapter 2
+    x: "25%",
+    activationBand: 0.08,
+    special: {
+      changes_on_reread: true,
+      reread_detection: 'session_count'
+    }
   }
 };
 
@@ -7328,11 +8496,11 @@ const FRAGMENT_DATA = {
 // Tracks reader behavior and narrative position
 // ============================================================================
 
-let envScrollPercent = 0;           // Current scroll position (0.0-1.0)
-let envScrollVelocity = 0;          // Pixels per second
-let envScrollEnergy = 0;            // Normalized energy (0-200)
-let envLastScrollY = 0;
-let envLastScrollTime = Date.now();
+let scrollPercent = 0;           // Current scroll position (0.0-1.0)
+let scrollVelocity = 0;          // Pixels per second
+let scrollEnergy = 0;            // Normalized energy (0-200)
+let lastScrollY = 0;
+let lastScrollTime = Date.now();
 let isResting = false;           // True when reader is still
 let restTimer = null;
 let directionFlips = 0;          // Rapid direction changes = agitation
@@ -7392,22 +8560,22 @@ function isInSilenceRegion(percent) {
  */
 function updateScrollMetrics() {
   const now = Date.now();
-  const dt = now - envLastScrollTime;
+  const dt = now - lastScrollTime;
   const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
   
   // Calculate normalized scroll position (0.0-1.0)
-  envScrollPercent = maxScroll > 0 ? currentScrollY / maxScroll : 0;
+  scrollPercent = maxScroll > 0 ? currentScrollY / maxScroll : 0;
   
   // Track maximum scroll reached (for conditional fragments)
-  if (envScrollPercent > maxScrollReached) {
-    maxScrollReached = envScrollPercent;
+  if (scrollPercent > maxScrollReached) {
+    maxScrollReached = scrollPercent;
   }
   
   // Calculate velocity and energy
-  const deltaY = currentScrollY - envLastScrollY;
-  envScrollVelocity = dt > 0 ? Math.abs(deltaY / dt) * 1000 : 0;
-  envScrollEnergy = Math.min(envScrollVelocity * 0.5, 200);
+  const deltaY = currentScrollY - lastScrollY;
+  scrollVelocity = dt > 0 ? Math.abs(deltaY / dt) * 1000 : 0;
+  scrollEnergy = Math.min(scrollVelocity * 0.5, 200);
   
   // Track direction changes (agitation detection)
   const currentDirection = deltaY > 0 ? 1 : deltaY < 0 ? -1 : 0;
@@ -7420,14 +8588,14 @@ function updateScrollMetrics() {
   
   // Determine resting state (low energy for 1.2 seconds)
   clearTimeout(restTimer);
-  if (envScrollEnergy < 10) {
+  if (scrollEnergy < 10) {
     restTimer = setTimeout(() => { isResting = true; }, 1200);
   } else {
     isResting = false;
   }
   
-  envLastScrollY = currentScrollY;
-  envLastScrollTime = now;
+  lastScrollY = currentScrollY;
+  lastScrollTime = now;
 }
 
 // ============================================================================
@@ -7440,7 +8608,7 @@ function updateScrollMetrics() {
  * Effects are barely perceptible - most readers won't notice consciously
  */
 function updateNarrativeState() {
-  const section = getCurrentSection(envScrollPercent);
+  const section = getCurrentSection(scrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   if (!signal) return;
   
@@ -7485,7 +8653,7 @@ function updateNarrativeState() {
  * BPM ranges from 20 (near-death) to 180 (panic)
  */
 function updateHeartbeat() {
-  const section = getCurrentSection(envScrollPercent);
+  const section = getCurrentSection(scrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   if (!signal) return;
   
@@ -7497,7 +8665,7 @@ function updateHeartbeat() {
   // Change color during high stress or silence
   const monitor = document.querySelector('.resonance-monitor');
   if (monitor) {
-    if (bpm > 120 || isInSilenceRegion(envScrollPercent)) {
+    if (bpm > 120 || isInSilenceRegion(scrollPercent)) {
       monitor.style.background = '#ff3333';  // Red during stress/silence
     } else {
       monitor.style.background = 'var(--accent)';
@@ -7511,7 +8679,7 @@ function updateHeartbeat() {
  * - Surveillance: vertical line from center (left edge)
  */
 function updateEnvironmentalIndicators() {
-  const section = getCurrentSection(envScrollPercent);
+  const section = getCurrentSection(scrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   if (!signal) return;
   
@@ -7551,7 +8719,7 @@ function updateEnvironmentalIndicators() {
  * Suppresses all fragments and changes visual state
  */
 function enforceSilence() {
-  const inSilence = isInSilenceRegion(envScrollPercent);
+  const inSilence = isInSilenceRegion(scrollPercent);
   const layer = document.getElementById('residual-layer');
   const archive = document.getElementById('residual-archive');
   
@@ -7615,11 +8783,57 @@ function initializeFragments() {
  */
 function updateFragments() {
   const now = Date.now();
-  const inSilence = isInSilenceRegion(envScrollPercent);
-  const section = getCurrentSection(envScrollPercent);
+  const inSilence = isInSilenceRegion(scrollPercent);
+  const section = getCurrentSection(scrollPercent);
   const signal = NARRATIVE_SIGNALS[section];
   const allowedFragments = signal ? signal.fragments_allowed : [];
   const agitated = directionFlips > 3;  // Rapid scrolling back/forth
+  
+  // ========================================================================
+  // SPECIAL FRAGMENT BEHAVIORS (Additions 3/7 & 5/7)
+  // ========================================================================
+  
+  // PERMANENT CONSEQUENCE: mother_memory locks if missed
+  if (isFeatureEnabled('permanent_consequences')) {
+    const motherFrag = fragmentStates['mother_memory'];
+    if (motherFrag && !motherFrag.permanentlyLocked) {
+      const data = FRAGMENT_DATA['mother_memory'];
+      
+      // Check if reader has passed the lock threshold without dwelling long enough
+      if (scrollPercent > data.special.lock_threshold && !motherFrag.everActivated) {
+        // Window closed forever
+        motherFrag.permanentlyLocked = true;
+        motherFrag.element.textContent = data.special.locked_text;
+        motherFrag.element.classList.add('locked-forever');
+        motherFrag.element.style.textDecoration = 'line-through';
+        motherFrag.element.style.opacity = '0.3';
+        console.log('[CONSEQUENCE]: mother_memory locked - reader moved too fast');
+      }
+      
+      // Track if fragment has ever been activated
+      if (motherFrag.state === 'COHERENT') {
+        motherFrag.everActivated = true;
+      }
+    }
+  }
+  
+  // REREAD ECHO: voss_true_nature changes on reread
+  if (isFeatureEnabled('reread_variations')) {
+    const vossFrag = fragmentStates['voss_true_nature'];
+    if (vossFrag) {
+      const data = FRAGMENT_DATA['voss_true_nature'];
+      const readCount = parseInt(sessionStorage.getItem('novel_read_count') || '1');
+      
+      // Show different text on reread
+      if (readCount > 1 && data.text_reread) {
+        vossFrag.element.textContent = data.text_reread;
+      } else {
+        vossFrag.element.textContent = data.text;
+      }
+    }
+  }
+  
+  // ========================================================================
   
   for (const [id, fState] of Object.entries(fragmentStates)) {
     const data = FRAGMENT_DATA[id];
@@ -7672,11 +8886,11 @@ function updateFragments() {
     }
     
     // In band: determine state based on scroll energy
-    if (agitated || envScrollEnergy > 50) {
+    if (agitated || scrollEnergy > 50) {
       // High energy: fragment is unstable/decaying
       setState(fState, 'DECAYING');
       fState.dwellTime = 0;
-    } else if (envScrollEnergy > 25) {
+    } else if (scrollEnergy > 25) {
       // Medium energy: fragment is flickering
       setState(fState, 'UNSTABLE');
       fState.dwellTime = 0;
@@ -7795,11 +9009,19 @@ function init() {
   scrollCount = parseInt(sessionStorage.getItem('scrollCount') || '0') + 1;
   sessionStorage.setItem('scrollCount', scrollCount.toString());
   
+  // Track read count for reread variations (Addition 5/7)
+  const readCount = parseInt(sessionStorage.getItem('novel_read_count') || '0') + 1;
+  sessionStorage.setItem('novel_read_count', readCount.toString());
+  if (readCount > 1) {
+    console.log('[REREAD]: Welcome back. Read count:', readCount);
+  }
+  
   // Initial update
   onScroll();
   
   console.log('Environmental intelligence initialized.');
   console.log('Scroll count:', scrollCount);
+  console.log('RELEASE VERSION:', RELEASE_CONFIG.version);
 }
 
 // Start when DOM is ready
