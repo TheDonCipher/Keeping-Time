@@ -13,7 +13,7 @@
 
 Taro woke up in the White Room.
 
-Technically, it was a [[Sensory Deprivation Chamber::A Class-A isolation unit designed to reset a user's NAI by eliminating all external acoustic and visual stimuli.]] , but the street name was the White Room. The walls were lined with acoustic foam so dense it absorbed 99.9% of all reflected sound. The visual feed was overridden by a "Privacy Mask"—a generated infinite void of white pixels designed to lower the user's cognitive load.
+Technically, it was a [[Sensory Deprivation Chamber::A Class-A isolation unit designed to reset a user's NAI by eliminating all external acoustic and visual stimuli.]] , but the street name was the White Room. The walls were lined with acoustic foam so dense it absorbed 99.9% of all reflected sound. The visual feed was overridden by a "Privacy Mask"—a generated infinite void of white pixels designed to lower the user's cognitive load. We are all just pixels in a screen we didn't buy, and the White Room is the ultimate erasure—a reminder that without the Score's light, we are nothing.
 
 It was a hard reset for the brain. A blank canvas forced over the senses.
 
@@ -22,7 +22,7 @@ Taro tried to move his head. A heavy mechanical resistance stopped him.
 **> DETECTED: DAMPING_COLLAR [LOCKED]**
 **> FUNCTION: RESONANCE_SUPPRESSION**
 
-The collar hummed against his neck. It wasn't just a restraint; it was a circuit breaker. It actively monitored his biometrics, looking for the tell-tale spike of an Upper Octave oscillation. If it found one, it grounded the signal before it could reach his hands.
+The collar hummed against his neck. It wasn't just a restraint; it was a circuit breaker. It actively monitored his biometrics, looking for the tell-tale spike of an Upper Octave oscillation. If it found one, it grounded the signal before it could reach his hands. In the Grand Concord, to be quiet is to be safe. To vibrate is to be a threat.
 
 For the first time in years, Taro was "Quiet." It felt like being buried alive.
 
@@ -36,7 +36,7 @@ The room rendered in. A desk. A chair. A man.
 
 Adjutant Voss.
 
-Voss looked less like a human and more like a high-end peripheral. His suit was a matte-gray, frictionless material standard for [[C-Order::The "Concord Order," the ruling faction dedicated to absolute stability, standard tuning, and the suppression of dissonance.]] administration. He sat perfectly still, his hands folded on the desk, radiating an aura of absolute stability.
+Voss looked less like a human and more like a high-end peripheral. His suit was a matte-gray, frictionless material standard for [[C-Order::The "Concord Order," the ruling faction dedicated to absolute stability, standard tuning, and the suppression of dissonance.]] administration. He sat perfectly still, his hands folded on the desk, radiating an aura of absolute stability. The Score likes stability. It likes predictability. It likes things that don't make it work too hard.
 
 **> TARGET_ANALYSIS:**
 **> CLASS: ADJUTANT**
@@ -94,11 +94,11 @@ Taro stared at the text floating in the air. [[Reformat::A surgical procedure th
 **> OUTCOME:** Vanguard Certification.
 **> STATUS:** HIGH_RISK.
 
-"We utilize the noise," Voss said. "The Vanguard creates **Siege Breakers**. Units capable of generating high-amplitude dissonance for combat purposes. We take your glitch... and we weaponize it."
+"We utilize the noise," Voss said. "The Vanguard creates **Siege Breakers**. Units capable of generating high-amplitude dissonance for combat purposes. We take your wrong note... and we weaponize it."
 
-Voss leaned in. For a moment, the perfect, manual-compliant facade cracked. The green glitch in his eye flickered—a single frame of unauthorized code.
+Voss leaned in. For a moment, the perfect, manual-compliant facade cracked. The green dissonance in his eye flickered—a single frame of unauthorized code.
 
-"You are dangerous, Taro," Voss whispered. "But the System needs danger. It needs heavy artillery."
+"You are dangerous, Taro," Voss whispered. "But the Score needs danger. It needs heavy artillery."
 
 Taro looked at the options.
 Option A was deletion.
@@ -106,7 +106,7 @@ Option B was compilation.
 
 "I'm not a soldier," Taro said. "I'm a calibrator. I... I fix things. My hardware is built for alignment, not for combat."
 
-"The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application. We take your jitter and we make it tactical."
+"The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application. We take your sawtooth oscillation and we make it tactical."
 
 Voss swiped his hand. **OPTION A** dissolved into code.
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,6 @@
         @page { size: 6in 9in; margin: 0.75in; }
         
         :root {
-            /* Light Theme */
             --accent: #00f3ff;
             --accent-glow: rgba(0, 243, 255, 0.3);
             --gold: #ffcc33;
@@ -23,6 +22,8 @@
             --font-mono: 'JetBrains Mono', monospace;
             --max-width: 700px;
             --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --pulse-rate: 2s;
+            --fracture-lean: 0deg;
         }
 
         [data-theme="dark"] {
@@ -46,21 +47,20 @@
             transition: background-color var(--transition), color var(--transition);
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
+            padding-left: 320px;
         }
 
-        /* Layout */
         main {
             max-width: var(--max-width);
             margin: 0 auto;
             padding: 120px 24px;
         }
 
-        /* Navigation */
         .nav-ui {
             position: fixed;
             top: 0;
-            left: 0;
-            width: 100%;
+            left: 320px;
+            width: calc(100% - 320px);
             z-index: 1000;
             background: rgba(var(--bg), 0.85);
             backdrop-filter: blur(12px);
@@ -114,7 +114,6 @@
             background: var(--accent-glow);
         }
 
-        /* Typography */
         h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 900; }
         
         header.title-page {
@@ -191,7 +190,6 @@
             opacity: 0.95;
         }
 
-        /* Chapter Containers */
         .chapter {
             margin-bottom: 200px;
             opacity: 0;
@@ -204,7 +202,6 @@
             transform: translateY(0);
         }
 
-        /* System Messages */
         .system-block {
             font-family: var(--font-mono);
             background: var(--system-bg);
@@ -219,226 +216,90 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
-        /* Table of Contents */
         .toc-modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--bg);
-            z-index: 2000;
-            display: none;
-            padding: 80px 24px;
-            overflow-y: auto;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg); z-index: 2000; display: none; padding: 80px 24px; overflow-y: auto;
         }
-
         .toc-modal.active { display: block; }
-
-        .toc-list {
-            list-style: none;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
+        .toc-list { list-style: none; max-width: 600px; margin: 0 auto; }
         .toc-list li { margin: 24px 0; }
-
-        .toc-list a {
-            text-decoration: none;
-            color: var(--text);
-            font-family: var(--font-display);
-            font-size: 1.4rem;
-            transition: color 0.2s;
-        }
-
+        .toc-list a { text-decoration: none; color: var(--text); font-family: var(--font-display); font-size: 1.4rem; transition: color 0.2s; }
         .toc-list a:hover { color: var(--accent); }
 
-        /* Back to Top */
         .back-to-top {
-            position: fixed;
-            bottom: 32px;
-            right: 32px;
-            width: 48px;
-            height: 48px;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            color: var(--text);
+            position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px; background: var(--bg);
+            border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; cursor: pointer; z-index: 1000; opacity: 0; visibility: hidden;
+            transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.1); color: var(--text);
         }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-4px); }
 
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
+        /* --- ORGANISM SYSTEM CSS --- */
+        .ui-fracture {
+            position: fixed; bottom: 80px; right: 24px; width: 2px;
+            height: var(--fracture-height, 0px); z-index: 900; pointer-events: none;
+            transition: height 0.3s ease-out, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: rotate(var(--fracture-lean, 0deg));
         }
+        .main-crack {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, transparent 0%, rgba(0, 243, 255, 0.12) 15%, rgba(0, 243, 255, 0.12) 85%, transparent 100%);
+            box-shadow: 0 0 1px rgba(0, 243, 255, 0.08);
+        }
+        .branch {
+            position: absolute; width: 1px; height: 0; background: rgba(0, 243, 255, 0);
+            opacity: 0; transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .ui-fracture[data-intensity="1"] .branch-1 { opacity: 1; height: 35px; background: rgba(0, 243, 255, 0.18); transform: rotate(-27deg); bottom: 38%; left: 0; }
+        .ui-fracture[data-intensity="2"] .branch-2 { opacity: 1; height: 30px; background: rgba(0, 243, 255, 0.2); transform: rotate(33deg); bottom: 62%; left: 0; }
+        .ui-fracture[data-intensity="3"] .branch-3 { opacity: 1; height: 25px; background: rgba(0, 243, 255, 0.25); transform: rotate(-19deg); bottom: 18%; left: 0; }
+        .ui-fracture.healing-blocked { animation: blockedPulse 2s ease-in-out infinite; }
+        @keyframes blockedPulse { 0%, 100% { filter: brightness(1); } 50% { filter: brightness(1.2) saturate(1.1); } }
 
-        .back-to-top:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            transform: translateY(-4px);
+        .surveillance-indicator {
+            position: fixed; left: 0; top: 50%; transform: translateY(-50%); width: 2px; height: 0;
+            background: var(--accent); opacity: 0; z-index: 900;
+            transition: height 0.3s steps(5), opacity 0.2s steps(3);
         }
+        .surveillance-indicator.scanning::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 2px;
+            background: var(--accent); animation: scanLine 2s linear infinite;
+        }
+        @keyframes scanLine { 0% { top: 0; } 100% { top: 100%; } }
+
+        #residual-archive {
+            position: fixed; left: 0; top: 0; width: 320px; height: 100vh;
+            background: rgba(var(--bg-rgb), 0.95); border-right: 1px solid var(--accent);
+            z-index: 1500; overflow-y: auto; display: flex; flex-direction: column;
+            justify-content: center; backdrop-filter: blur(8px);
+        }
+        .resonance-monitor {
+            position: absolute; top: 0; left: 0; width: 2px; height: 100%;
+            background: var(--accent); opacity: 0.3;
+        }
+        .resonance-monitor.active { animation: systole var(--pulse-rate) infinite cubic-bezier(0.4, 0, 0.2, 1); }
+        .resonance-monitor.high-stress { animation: systole var(--pulse-rate) infinite cubic-bezier(0.4, 0, 0.2, 1), microJitter 0.3s infinite; }
+        @keyframes microJitter { 0%, 100% { transform: scaleX(1); } 50% { transform: scaleX(1.02); } }
+        @keyframes systole { 0%, 100% { opacity: 0.2; transform: scaleX(1); } 15% { opacity: 0.8; transform: scaleX(2); } }
+
+        .residual-layer { padding: 40px 24px; display: flex; flex-direction: column; gap: 2rem; }
+        .archive-entry { font-family: var(--font-mono); font-size: 0.7rem; margin-bottom: 12px; padding: 8px; border-left: 2px solid var(--accent); background: rgba(0,0,0,0.05); }
+        .fragment-display-container { position: fixed; bottom: 120px; right: 80px; width: 300px; max-width: 40vw; z-index: 800; pointer-events: none; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+        .narrative-fragment { background: rgba(var(--bg-rgb), 0.85); backdrop-filter: blur(8px); border: 1px solid var(--accent); border-radius: 4px; padding: 12px 16px; opacity: 0; transform: translateX(20px); transition: all 0.8s ease; }
+        .narrative-fragment.visible { opacity: 1; transform: translateX(0); }
+        .fragment-text { font-family: var(--font-main); font-size: 0.9rem; font-style: italic; }
 
         @media (max-width: 768px) {
+            body { padding-left: 0; }
+            .nav-ui { left: 0; width: 100%; }
             main { padding: 80px 20px; }
-            .intermission { margin: 80px -20px; padding: 60px 32px; }
             .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
-        }
-
-        /* Sidebar Styling */
-        #sidebar {
-            position: fixed;
-            top: 0;
-            right: -400px; /* Hidden by default */
-            width: 400px;
-            height: 100vh;
-            background: var(--sidebar-bg);
-            border-left: 1px solid var(--border);
-            box-shadow: -4px 0 12px rgba(0,0,0,0.1);
-            transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            z-index: 1500;
-            overflow-y: auto;
-            padding: 80px 24px 24px;
-        }
-
-        #sidebar.active {
-            right: 0;
-        }
-
-        .tooltip {
-            border-bottom: 1px dotted var(--accent);
-            cursor: help;
-            position: relative;
-            color: var(--accent);
-            font-weight: 500;
-        }
-
-        .tooltip::after {
-            content: attr(data-tip);
-            position: attribute; /* Fallback */
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%) translateY(10px);
-            background: var(--system-bg);
-            color: var(--text);
-            padding: 8px 12px;
-            border: 1px solid var(--accent);
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-family: var(--font-mono);
-            white-space: pre-wrap;
-            width: max-content;
-            max-width: 250px;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.2s ease;
-            z-index: 2000;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            pointer-events: none;
-        }
-
-        .tooltip:hover::after {
-            opacity: 1;
-            visibility: visible;
-            transform: translateX(-50%) translateY(-8px);
-        }
-
-        #sidebar-toggle {
-            position: fixed;
-            top: 90px;
-            right: 0;
-            background: var(--bg);
-            border: 1px solid var(--border);
-            border-right: none;
-            padding: 8px 16px;
-            border-radius: 4px 0 0 4px;
-            cursor: pointer;
-            z-index: 1600;
-            font-family: var(--font-display);
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: right 0.3s ease;
-            box-shadow: -2px 2px 4px rgba(0,0,0,0.05);
-        }
-
-        details {
-            padding: 0;
-            cursor: pointer;
-            transition: background 0.2s;
-            border-bottom: 1px solid var(--border);
-        }
-
-        details:last-child { border-bottom: none; }
-
-        details:hover {
-            background: var(--system-bg);
-        }
-
-        summary {
-            padding: 16px;
-            font-weight: bold;
-            color: var(--text);
-            font-family: var(--font-display);
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        summary::after {
-            content: '+';
-            font-size: 1.2rem;
-            color: var(--accent);
-            transition: transform 0.2s;
-        }
-
-        details[open] summary::after {
-            transform: rotate(45deg);
-        }
-
-        summary::-webkit-details-marker {
-            display: none;
-        }
-
-        details blockquote, details p {
-            margin: 0;
-            padding: 0 16px 16px 16px;
-            color: var(--text);
-            border-left: none;
-            font-style: normal;
-            font-size: 0.9rem;
-            opacity: 0.85;
-        }
-
-        /* Sidebar Content Visibility Fix for Dark Mode */
-        #sidebar-toggle {
-            color: var(--text);
-        }
-
-        #sidebar, #sidebar h4, #sidebar h5, #sidebar summary, #sidebar p, #sidebar blockquote, #sidebar li, #sidebar strong {
-            color: var(--text) !important;
-        }
-
-        #sidebar .subtitle {
-            opacity: 0.6;
-            color: var(--text) !important;
+            #residual-archive { width: 100%; height: 80px; bottom: 0; top: auto; flex-direction: row; border-right: none; border-top: 1px solid var(--accent); }
         }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <nav class="nav-ui" id="main-nav">
         <div class="nav-brand" style="font-family: var(--font-display); font-weight: 900; letter-spacing: 2px;">KEEPING TIME</div>
         <div class="nav-controls">
@@ -449,110 +310,19 @@
             <div class="progress-bar" id="reading-progress"></div>
         </div>
     </nav>
-    
-    <button id="sidebar-toggle" onclick="toggleSidebar()">Library</button>
-    <aside id="sidebar">
-        <div class="sidebar-header">
-            <h3>System Library</h3>
-            <p class="subtitle" style="margin-bottom: 24px; font-size: 0.9rem;">Verified Data Only</p>
-        </div>
-        <div class="sidebar-content">
-            <!-- NOTE: Sidebar content goes here -->
-        </div>
-    </aside>
+
+    <div class="ui-fracture" id="ui-fracture" data-intensity="0">
+        <span class="main-crack"></span>
+        <span class="branch branch-1"></span>
+        <span class="branch branch-2"></span>
+        <span class="branch branch-3"></span>
+    </div>
+    <div class="surveillance-indicator" id="surveillance"></div>
+    <aside id="residual-archive"><div class="resonance-monitor"></div><div class="residual-layer" id="residual-layer"></div></aside>
 
     <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
     </button>
-
-    <script>
-        // Sidebar Toggle
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            const btn = document.getElementById('sidebar-toggle');
-            sidebar.classList.toggle('active');
-            
-            if (sidebar.classList.contains('active')) {
-                btn.style.right = '400px';
-                btn.textContent = 'Close';
-            } else {
-                btn.style.right = '0';
-                btn.textContent = 'Library';
-            }
-        }
-
-        // Theme Management
-        function toggleTheme() {
-            const body = document.body;
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('novel-theme', newTheme);
-            document.getElementById('theme-icon').textContent = newTheme === 'dark' ? 'Light' : 'Dark';
-        }
-
-        // Initialize Theme
-        const savedTheme = localStorage.getItem('novel-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.body.setAttribute('data-theme', savedTheme);
-
-        // Scroll Progress & Navigation Visibility
-        let lastScrollY = window.scrollY;
-        const nav = document.getElementById('main-nav');
-        const progressBar = document.getElementById('reading-progress');
-        const backToTop = document.getElementById('back-to-top');
-
-        window.addEventListener('scroll', () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (winScroll / height) * 100;
-            progressBar.style.width = scrolled + "%";
-
-            // Back to Top Visibility
-            if (winScroll > 300) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-
-            // Saved Scroll Position
-            localStorage.setItem('novel-scroll-pos', winScroll);
-
-            // Hide/Show Nav on scroll
-            if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                nav.classList.add('hidden');
-            } else {
-                nav.classList.remove('hidden');
-            }
-            lastScrollY = window.scrollY;
-
-            // Reveal Chapters
-            revealOnScroll();
-        }, { passive: true });
-
-        // TOC Toggle
-        function toggleTOC() {
-            document.getElementById('toc-modal').classList.toggle('active');
-            document.body.style.overflow = document.getElementById('toc-modal').classList.contains('active') ? 'hidden' : '';
-        }
-
-        // Scroll Reveal Implementation
-        function revealOnScroll() {
-            const elements = document.querySelectorAll('.chapter');
-            elements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                const isVisible = (rect.top <= window.innerHeight * 0.85);
-                if (isVisible) el.classList.add('revealed');
-            });
-        }
-
-
-        // Initial Reveal and Restore Position
-        window.addEventListener('load', () => {
-            const savedPos = localStorage.getItem('novel-scroll-pos');
-            if (savedPos) window.scrollTo(0, parseInt(savedPos));
-            revealOnScroll();
-        });
-    </script>
 
     <div class="toc-modal" id="toc-modal">
         <button class="ui-btn" onclick="toggleTOC()" style="position: absolute; top: 24px; right: 24px;">Close</button>
@@ -584,41 +354,153 @@
     <p style="font-family: var(--font-mono); font-size: 0.9rem; letter-spacing: 0.3em; margin-top: 32px;">
         <span style="opacity: 0.4; text-decoration: line-through;">By the Architect</span>
         <br>
-        <span style="color: var(--accent); font-weight: bold; animation: glitch 3s infinite;">> OVERRIDE: TheDonCipher</span>
+        <span style="color: var(--accent); font-weight: bold;">> OVERRIDE: TheDonCipher</span>
     </p>
-    <style>
-        @keyframes glitch {
-            0%, 90%, 100% { transform: translate(0); opacity: 1; }
-            92% { transform: translate(-2px, 1px); opacity: 0.8; }
-            94% { transform: translate(2px, -1px); opacity: 0.9; }
-            96% { transform: translate(-1px, 2px); opacity: 0.85; }
-        }
-    </style>
     </header>
-    <!-- TABLE OF CONTENTS (Legacy Hidden) -->
-    <div style="display:none;">
-    <h2>Contents</h2>
-    <ul>
-    <li><a href="#ch1">Chapter 1: The Zap</a></li>
-    <li><a href="#ch2">Chapter 2: The Assessment</a></li>
-    <li><a href="#ch3">Chapter 3: Modulation</a></li>
-    <li><a href="#ch4">Chapter 4: The Medium</a></li>
-    <li><a href="#ch5">Chapter 5: The Sync Check</a></li>
-    <li><a href="#ch6">Chapter 6: The Ground State</a></li>
-    <li><a href="#ch7">Chapter 7: The Rival</a></li>
-    <li><a href="#ch8">Chapter 8: The Sortie</a></li>
-    <li><a href="#ch9">Chapter 9: The Silence</a></li>
-    <li><a href="#ch10">Chapter 10: The Breach</a></li>
-    <li><a href="#ch11">Chapter 11: The Blue Screen</a></li>
-    <li><a href="#ch12">Chapter 12: The Audit</a></li>
-    <li><a href="#ch13">Chapter 13: The Patch</a></li>
-    <li><a href="#ch14">Chapter 14: The Return</a></li>
-    <li><a href="#ch15">Chapter 15: The Phantom Mesh</a></li>
-    <li><a href="#ch16">Chapter 16: Illegal Modulations</a></li>
-    <li><a href="#ch17">Chapter 17: The Underground</a></li>
-    </ul>
-    </div>
     <!-- NOTE: Full chapter content goes here -->
     </main>
+
+    <script>
+const NarrativeState = {
+  emotionalLoad: 0, lastEmotionalDelta: 0, surveillanceLevel: 0, systemPressure: 0, fractureLevel: 0, 
+  stressMemory: 0, lastDominantForce: null, instabilityIndex: 0, interferenceActive: false,
+  getSnapshot() { return { ...this }; }
+};
+
+const NARRATIVE_SIGNALS = {
+  "ch01_zap": { range: [0.00, 0.06], emotional_load: 0.85, system_pressure: 0.20, surveillance: 0.10, heartbeat_bpm: 110 },
+  "ch02_assessment": { range: [0.06, 0.12], emotional_load: 0.70, system_pressure: 0.95, surveillance: 1.00, heartbeat_bpm: 55 },
+  "ch03_modulation": { range: [0.12, 0.18], emotional_load: 0.60, system_pressure: 0.80, surveillance: 0.40, heartbeat_bpm: 75 },
+  "ch04_medium": { range: [0.18, 0.25], emotional_load: 0.75, system_pressure: 0.90, surveillance: 0.70, heartbeat_bpm: 90 },
+  "ch05_sync_check": { range: [0.25, 0.31], emotional_load: 0.55, system_pressure: 0.60, surveillance: 0.50, heartbeat_bpm: 85 },
+  "ch06_ground_state": { range: [0.31, 0.37], emotional_load: 0.40, system_pressure: 0.50, surveillance: 0.30, heartbeat_bpm: 65 },
+  "ch07_rival": { range: [0.37, 0.40], emotional_load: 0.70, system_pressure: 0.85, surveillance: 0.80, heartbeat_bpm: 140 },
+  "ch08_sortie": { range: [0.40, 0.45], emotional_load: 0.65, system_pressure: 0.75, surveillance: 0.85, heartbeat_bpm: 95 },
+  "ch09_silence": { range: [0.45, 0.50], emotional_load: 0.90, system_pressure: 0.05, surveillance: 0.00, heartbeat_bpm: 160 },
+  "ch10_breach": { range: [0.50, 0.55], emotional_load: 0.95, system_pressure: 0.00, surveillance: 0.00, heartbeat_bpm: 180 },
+  "ch11_safe_mode": { range: [0.55, 0.62], emotional_load: 0.75, system_pressure: 0.30, surveillance: 0.60, heartbeat_bpm: 20 },
+  "ch12_audit": { range: [0.62, 0.70], emotional_load: 0.85, system_pressure: 1.00, surveillance: 1.00, heartbeat_bpm: 45 },
+  "ch13_patch": { range: [0.70, 0.78], emotional_load: 0.50, system_pressure: 0.95, surveillance: 0.95, heartbeat_bpm: 60 },
+  "ch14_return": { range: [0.78, 0.83], emotional_load: 0.70, system_pressure: 0.85, surveillance: 0.90, heartbeat_bpm: 75 },
+  "ch15_phantom_mesh": { range: [0.83, 0.88], emotional_load: 0.80, system_pressure: 0.75, surveillance: 0.60, heartbeat_bpm: 95 },
+  "ch16_illegal_modulations": { range: [0.88, 0.93], emotional_load: 0.60, system_pressure: 0.50, surveillance: 0.40, heartbeat_bpm: 80 },
+  "ch17_underground": { range: [0.93, 1.00], emotional_load: 0.55, system_pressure: 0.00, surveillance: 0.00, heartbeat_bpm: 70 }
+};
+
+var lastScrollY = window.scrollY, scrollPercent = 0, maxFractureHeight = 0, maxFractureIntensity = 0, hasHealed = false;
+
+class NarrativeEventBus {
+  constructor() { this.listeners = {}; this.fragmentRegistry = []; this.archiveLog = []; }
+  on(e, h) { if (!this.listeners[e]) this.listeners[e] = []; this.listeners[e].push(h); }
+  emit(e, d) { if (this.listeners[e]) this.listeners[e].forEach(h => h(d)); }
+}
+const narrativeEvents = new NarrativeEventBus();
+
+class FragmentGenerator {
+  constructor(eb) {
+    this.eb = eb;
+    this.templates = {
+      intensity_1: [{ pattern: 'signal_lost', keywords: ['static', 'disconnect', 'searching'] }, { pattern: 'control_slip', keywords: ['governor', 'override', 'limit'] }],
+      intensity_2: [{ pattern: 'system_rejection', keywords: ['error', 'incompatible', 'delete'] }, { pattern: 'memory_bleed', keywords: ['mother', 'before', 'forgotten'] }],
+      intensity_3: [{ pattern: 'reality_tear', keywords: ['void', 'unravel', 'source'] }, { pattern: 'identity_fracture', keywords: ['noise', 'silence', 'neither'] }]
+    };
+    this.eb.on('fracture:branch', d => this.generate(d));
+  }
+  initialize() {
+    this.container = document.getElementById('fragment-container') || document.createElement('div');
+    this.container.id = 'fragment-container'; this.container.className = 'fragment-display-container';
+    document.body.appendChild(this.container);
+  }
+  generate(d) {
+    const tSet = this.templates[`intensity_${d.intensity}`] || this.templates.intensity_1;
+    const t = tSet[Math.floor(Math.random() * tSet.length)];
+    const keywords = t.keywords;
+    let text = keywords.join(' / ');
+    switch (t.pattern) {
+      case 'signal_lost': text = `${keywords[0]} / between / the notes`; break;
+      case 'control_slip': text = `the ${keywords[0]} / is / failing`; break;
+      case 'system_rejection': text = `${keywords[0]}: you are / ${keywords[1]}`; break;
+      case 'memory_bleed': text = `her voice / ${keywords[0]} / now only / ${keywords[2]}`; break;
+      case 'reality_tear': text = `the ${keywords[0]} / beneath / reality`; break;
+      case 'identity_fracture': text = `am I / ${keywords[0]} / or / ${keywords[1]}`; break;
+    }
+    const fragment = { id: Date.now(), text, intensity: d.intensity, pattern: t.pattern };
+    this.eb.fragmentRegistry.push(fragment); this.eb.emit('fragment:generated', fragment);
+    const el = document.createElement('div'); el.className = 'narrative-fragment visible';
+    el.innerHTML = `<span class="fragment-text">${text}</span>`;
+    this.container.appendChild(el); setTimeout(() => el.remove(), 8000);
+  }
+}
+
+class ResidualArchive {
+  constructor(eb) { this.eb = eb; this.eb.on('fragment:generated', f => setTimeout(() => this.capture(f), 500)); }
+  initialize() {
+    this.el = document.getElementById('archive-log') || document.createElement('div');
+    this.el.id = 'archive-log'; this.el.className = 'archive-log-container';
+    const s = document.getElementById('residual-archive'); if (s) s.appendChild(this.el);
+  }
+  capture(f) {
+    let inst = "";
+    switch (f.pattern) {
+      case 'signal_lost': inst = "signal anomaly / standard deviation / logged"; break;
+      case 'control_slip': inst = "containment protocol / deviation detected / adjusting"; break;
+      case 'system_rejection': inst = "incompatibility event / subject flagged / processing"; break;
+      case 'memory_bleed': inst = "memory access event / logged / within parameters"; break;
+      case 'reality_tear': inst = "perception error / severe / medical intervention required"; break;
+      case 'identity_fracture': inst = "personality coherence: unstable / intervention: authorized"; break;
+      default: inst = "anomaly detected / classification: pending";
+    }
+    if (NarrativeState.surveillanceLevel > 0.7) inst = inst.split(' / ').slice(0, 2).join(' / ').toLowerCase();
+    const entry = document.createElement('div'); entry.className = 'archive-entry';
+    entry.innerHTML = `<div class="entry-text">${inst}</div>`;
+    this.el.insertBefore(entry, this.el.firstChild);
+  }
+}
+
+const fragmentGenerator = new FragmentGenerator(narrativeEvents);
+const residualArchive = new ResidualArchive(narrativeEvents);
+
+function updateFractureSystem() {
+  const section = getCurrentSection(scrollPercent);
+  const s = NARRATIVE_SIGNALS[section] || { emotional_load: 0, surveillance: 0 };
+  NarrativeState.emotionalLoad = s.emotional_load;
+  NarrativeState.surveillanceLevel = s.surveillance;
+
+  const h = scrollPercent * (window.innerHeight - 160);
+  if (h > maxFractureHeight) { 
+    maxFractureHeight = h; 
+    document.getElementById('ui-fracture').style.setProperty('--fracture-height', `${h}px`); 
+  }
+
+  let intensity = s.emotional_load > 0.95 ? 3 : s.emotional_load > 0.85 ? 2 : s.emotional_load > 0.7 ? 1 : 0;
+  if (intensity > maxFractureIntensity) { 
+    maxFractureIntensity = intensity; 
+    document.getElementById('ui-fracture').setAttribute('data-intensity', intensity); 
+    narrativeEvents.emit('fracture:branch', { intensity }); 
+  }
+  const force = NarrativeState.emotionalLoad > NarrativeState.surveillanceLevel ? 'internal' : 'external';
+  document.getElementById('ui-fracture').style.setProperty('--fracture-lean', force === 'external' ? '-2deg' : '1deg');
+}
+
+function getCurrentSection(p) { for (const [k, s] of Object.entries(NARRATIVE_SIGNALS)) if (p >= s.range[0] && p < s.range[1]) return k; return "ch01_zap"; }
+function toggleTheme() { const b = document.body; const t = b.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'; b.setAttribute('data-theme', t); localStorage.setItem('novel-theme', t); }
+function toggleTOC() { const m = document.getElementById('toc-modal'); if (m) { const a = m.classList.toggle('active'); document.body.style.overflow = a ? 'hidden' : ''; } }
+
+function onScroll() {
+  const max = document.documentElement.scrollHeight - window.innerHeight;
+  scrollPercent = max > 0 ? window.scrollY / max : 0;
+  updateFractureSystem();
+  const el = document.getElementById('surveillance'); if (el) { let s = NarrativeState.surveillanceLevel; el.style.height = s > 0.3 ? `${s * 200}px` : '0'; el.style.opacity = s > 0.3 ? (s * 0.4).toString() : '0'; if (s > 0.7) el.classList.add('scanning'); else el.classList.remove('scanning'); }
+  document.querySelectorAll('.chapter').forEach(el => { if (el.getBoundingClientRect().top <= window.innerHeight * 0.85) el.classList.add('revealed'); });
+}
+
+function init() {
+  fragmentGenerator.initialize(); residualArchive.initialize();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  document.body.setAttribute('data-theme', localStorage.getItem('novel-theme') || 'light');
+  onScroll();
+}
+document.readyState === 'loading' ? document.addEventListener('DOMContentLoaded', init) : init();
+    </script>
 </body>
 </html>

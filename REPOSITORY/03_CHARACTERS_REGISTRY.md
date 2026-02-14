@@ -124,19 +124,19 @@ This registry catalogs the types of resonance users in The Soundscape and provid
 -   *Superpower*: **Nullification**. He doesn't just read noise; he *is* the quiet. He can absorb infinite resonance, acting as a living damping field.
 
 **System Interaction Style (The Score)**: 
-- **The Glitch-Map**: His HUD is unstable, filled with "raw" data others don't see—heat maps of resonance, sub-harmonics, and discarded packets. 
+- **The Wrong Note-Map**: His HUD is unstable, filled with "raw" data others don't see—heat maps of resonance, sub-harmonics, and discarded packets. 
 - **Visuals**: Pixelated, high-contrast. When "Unmasked," his avatar becomes a black void that consumes light.
 
 **Voice Guide**: 
 - **The Stutter-Step**: Often pauses to "catch the beat" of a conversation.
-- **Glitch-Speak**: Uses hardware metaphors for his own brain state (`"My buffer is full"`, `"I'm dropping frames here"`).
+- **Wrong Note-Speak**: Uses hardware metaphors for his own brain state (`"My buffer is full"`, `"I'm dropping frames here"`).
 - **Rhythm-Driven**: His speech pattern speeds up/slows down based on the local BPM.
 - *Sample*: *"I’m not... I'm not ignoring you. I'm just filtering. There's 14 different signals in this room and your voice is currently out of phase with the air conditioning."*
 
 **Arc Trajectory**
-- **Starting State (The Receiver)**: Taro is overwhelmed, passive, and reactive. He sees his sensitivity as a glitch to be patched.
+- **Starting State (The Receiver)**: Taro is overwhelmed, passive, and reactive. He sees his sensitivity as a wrong note to be patched.
 - **Pressure (Systemic)**: The Academy demands he standardize. He tries to be a "Soldier" but fails. The System crashes around him.
-- **Transformation (The Silence)**: He realizes his "Glitch" isn't noise—it's Peace. He stops trying to sing the C-Order's song and becomes the "Rest" between the notes. The only thing that can silence the chaos.
+- **Transformation (The Silence)**: He realizes his "Wrong Note" isn't noise—it's Peace. He stops trying to sing the C-Order's song and becomes the "Rest" between the notes. The only thing that can silence the chaos.
 
 
 ---
@@ -378,10 +378,10 @@ CONTROL: =============------- 65
 
 **System Interaction Style (The Score)**:
 - **The Signal-Void**: Her HUD is a mess of static and "ghost" images. She sees multiple versions of the same room at once.
-- **Visuals**: Glitchy, flickering, inverted colors. She sees the "negative space" where resonance *isn't*.
+- **Visuals**: Wrong Note-ish, flickering, inverted colors. She sees the "negative space" where resonance *isn't*.
 
 **Voice Guide**:
-- **The Static-Fragment**: Her speech is interrupted by long pauses or vocal "glitches" (represented by dashes or `zzt`).
+- **The Static-Fragment**: Her speech is interrupted by long pauses or vocal "wrong notes" (represented by dashes or `zzt`).
 - **Nihilistic / Phasing**: Speaks as if she is already gone or never existed.
 - *Sample*: *"I’m... not really--zzt--here, you know? Just an echo of a bad frequency. Why bother trying to--static--sync? You're just a wave that hasn't crashed yet."*
 
@@ -424,7 +424,7 @@ CONTROL: ====---------------- 20 (chaos is her nature)
 | Class | Structural Architect (Modulated) |
 | Affiliation | The Underground (The Null) |
 | Primary Ability | High-Fidelity Treble Construct |
-| Coherence Mode | Volatile (Glitching) |
+| Coherence Mode | Volatile (Wrong Noting) |
 
 **System Interaction Style (The Score)**:
 - **The Dual-Overlay**: She sees the world in two layers: the "Heavy" C-Order render and the "Wireframe" truth underneath.
@@ -439,8 +439,8 @@ Assigned the "Tank" class (Kimura) at birth due to high-mass resonance. She suff
 
 **Arc Trajectory**
 - **Starting State (The Mask)**: Trapped in the "Kimura" tank hull. Angry, rigid, unhappy.
-- **Pressure (The Glitch)**: Her hull starts failing. She catches Taro seeing her true form.
-- **Transformation (The Prism)**: She becomes Taro's guide to the Underground. She teaches him that "Glitching" is just "Modulating" without permission.
+- **Pressure (The Wrong Note)**: Her hull starts failing. She catches Taro seeing her true form.
+- **Transformation (The Prism)**: She becomes Taro's guide to the Underground. She teaches him that "Wrong Noting" is just "Modulating" without permission.
 
 ---
 

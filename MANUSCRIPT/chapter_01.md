@@ -15,11 +15,11 @@ It hits you like a nail gun to the base of the skull.
 
 White light. Static. The taste of copper and burning hair. 
 
-For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. Your nervous system shrieks as the [[Neural-Acoustic Interface::The hardware implant connecting the human brain to the global resonance network.]] overrides your optic nerve, forcing a new operating system onto your wetware. The local server is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
+For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. The Score doesn't just ask for your participation; it demands your total alignment. We like to think of our lives as melodies we write ourselves, but in this world, we are just strings being plucked by a hand we can't see. Your nervous system shrieks as the [[Neural-Acoustic Interface::The hardware implant connecting the human brain to the global resonance network.]] overrides your optic nerve, forcing a new operating system onto your wetware. The local server is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
 
 Then, the crash.
 
-Your vision reboots. The world snaps back, but it hasn't just returned. It has been *rewritten*.
+Your vision reboots. The world snaps back, but it hasn't just returned. It has been *rewritten*. Reality, it turns out, is just a shared hallucination with a very strict conductor.
 
 **> PERCEPTION: ONLINE**
 **> SENSATION: PRESSURE [110 BPM]**
@@ -62,7 +62,7 @@ It opened up into a massive, circular chamber. The air here smelled scrubbed, fi
 **> AMBIENT: THE GROUND NOTE [MIDDLE C]**
 **> SENSATION: GOLDEN_SYRUP**
 
-The room didn't just sound like Middle C; it *felt* like it.
+The room didn't just sound like Middle C; it *felt* like it. In the Score's eyes, there is no such thing as silence—only varying degrees of organized noise. We are all just frequencies looking for a resolution that never quite comes.
 
 A massive, golden sine wave floated through the center of the room—not a projection, but a shared hallucination enforced by [[The Score::The AR visual language that translates resonance physics into graphic data.]] itself. It was beautiful. Perfect. Boring.
 
@@ -73,7 +73,7 @@ I kept my head down. My own signal felt like a scratch in my throat—a nervous,
 **> USER_PITCH: THE HIGH REGISTER [SUPPRESSED]**
 **> PRESSURE: CRITICAL**
 
-"Hey, Glitch."
+"Hey, Wrong Note."
 
 I didn't need to look up. The air suddenly smelled like bubblegum and ozone.
 
@@ -94,9 +94,9 @@ I glanced at my wrist. The three bands weren't just warm; they were glowing fain
 **> HEAT_SINK: 60% CAPACITY**
 **> LOAD_WARNING: PEAKING**
 
-"Bad night," I muttered. "My... my hardware feels like it's grinding. Too much jitter in the sector."
+"Bad night," I muttered. "My hardware feels like it's grinding. Too much sawtooth oscillation in the sector."
 
-"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling a High-Octave signal. It’s like trying to hold a live wire with wet hands. You're gonna peak and take the whole floor with you."
+"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling a High-Octave signal. It’s like trying to hold a live wire with wet hands. You're gonna peak and take the whole floor with you. Seriously, the vibe is getting way too loud."
 
 "It's not a grenade," I said. "It's just hardware noise. Drift artifacts."
 
@@ -114,7 +114,7 @@ The emergency doors at the far end of the hall blasted open.
 
 ### [00:14:45] THE CRASH
 
-He came in like a corrupted file.
+He came in like a corrupted file. Or maybe he was just a man who had lost his rhythm. We are all just one bad beat away from falling apart, from becoming a sequence of errors that the world would rather delete than fix.
 
 A G Vanguard soldier. Stumbling. Screaming.
 
@@ -132,7 +132,7 @@ The golden sine wave of the room’s Middle C hit him—and shattered.
 
 Visually, it looked like glass breaking. The soldier’s chaotic field smashed into the perfection of the hall, sending shards of virtual gold flying everywhere. The technicians nearest him fell to their knees, clutching their heads as the interference hit them like a physical blow.
 
-"Get the dampeners!" Remi shouted, her blue D Major aura spiking into a sharp, fearful indigo.
+"Get the stabilizers!" Remi shouted, her blue D Major aura spiking into a sharp, fearful indigo. "The vibe is totally blown!"
 
 I froze.
 
@@ -164,7 +164,7 @@ My damping bands got hot. Really hot.
 **> HEAT_SINK: 95%**
 **> WARNING: CONTAINMENT_BREACH**
 
-I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi.
+I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi. It was the part of me that understood the Score better than the Score understood itself. It was the wrong note that made the whole piece interesting.
 
 It saw the chaos. It saw the broken code. And it wanted to *fix* it.
 
@@ -214,7 +214,7 @@ Then, the math broke.
 
 **> SENSATION: INTEGER_OVERFLOW**
 
-The numbers got too big. My brain couldn't render the magnitude.
+The numbers got too big. My brain couldn't render the magnitude. In the end, we are all just numbers, and sometimes the numbers decide they've had enough.
 
 *CRACK.*
 
@@ -231,7 +231,7 @@ Real silence. No hum. No Middle C. No data.
 
 I stood there, my hand still outstretched. Smoke was rising from my wrist where the bands used to be. My capacity was still pegged, the raw signal screaming in the dead air.
 
-My vision was flickering. Glitching.
+My vision was flickering. Wrong noting.
 
 **> DIAGNOSTIC: BASELINE_ALTERED**
 **> NEW_USER_ID: DETECTED [AUTHORITY_NULL]**

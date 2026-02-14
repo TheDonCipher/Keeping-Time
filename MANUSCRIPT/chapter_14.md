@@ -208,7 +208,7 @@ Taro froze.
 
 If he stuttered... they would hurt her.
 
-If he sounded "glitchy"... Krell would pay her a visit.
+If he sounded "wrong note-ish"... Krell would pay her a visit.
 
 The ringing stopped. The line connected.
 
@@ -257,13 +257,13 @@ She wasn't just out of tune.
 
 She wasn't real.
 
-"Taro?" Ven asked. "You okay? You're glitching."
+"Taro?" Ven asked. "You okay? You're wrong noting."
 
 Taro blinked, clearing the vision. "I'm fine," he lied. "Just... calibrating."
 
 He looked back at the girl. She was laughing now, a perfect, melodic sound. But Taro had seen the wireframe. He had seen the empty space underneath the texture map.
 
-*The glitch is inside the house.*
+*The wrong note is inside the house.*
 
 ---
 

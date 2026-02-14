@@ -26,7 +26,7 @@ Silence. Real, heavy, analog silence.
 
 The elevator doors groaned open. The air here was thick, smelling of ozone and old coolant.
 
-"Welcome to the Dead Zone," Elara said. Her voice was already starting to glitch without the C-Order to smooth her formants. "No network cover--zzt--age down here. Total analog territory."
+"Welcome to the Dead Zone," Elara said. Her voice was already starting to wrong note without the C-Order to smooth her formants. "No network cover--zzt--age down here. Total analog territory."
 
 She was standing next to him, but she looked... unstable. Without the Network to enforce her Hull ID, her "Tank" avatar was flickering violently. The heavy shoulders were phasing in and out of existence, revealing the wireframe light beneath.
 
@@ -68,7 +68,7 @@ She grabbed his arm and pulled him toward the center of the room.
 
 She closed her eyes. She took a deep breath. And then, she let go.
 
-The "Tank" hull didn't just glitch—it shattered.
+The "Tank" hull didn't just wrong note—it shattered.
 
 The heavy white uniform, the broad shoulders, the square jaw—it all exploded into pixels and dissolved.
 
@@ -193,7 +193,7 @@ He clenched his fist. The Void rippled around his fingers, eager. Waiting.
 
 "I'm coming for you."
 
-He looked at Elara. He looked at the crowd of glitches.
+He looked at Elara. He looked at the crowd of wrong notes.
 
 "And I'm bringing the noise."
 

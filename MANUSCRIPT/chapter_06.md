@@ -113,7 +113,7 @@ Silence was the most expensive commodity in Malkuth.
 **Quiet Rooms** were reserved for the elite. Prefects like Hana probably slept in zero-latency isolation tanks.
 
 But Taro? He was in General Population.
-The noise was a physical itch under his skin. His NAI was trying to parse four hundred different heartbeats at once.
+The noise was a physical itch under his skin. His Score port was trying to parse four hundred different heartbeats at once.
 
 *Thump-thump. Thump-thump. Thump-thump.*
 
@@ -126,9 +126,9 @@ But Voss wasn't here.
 
 Taro pulled out the Analog Headphones.
 They looked ancient in the sleek, high-poly room. Heavy foam. Scratched plastic. Real metal screws.
-They were "dumb" technology. No OS. No Bluetooth. No Sync.
+They were "dumb" technology. No Score. No Bluetooth. No Sync.
 
-He plugged the jack into his NAI's aux port.
+He plugged the jack into his Score auxiliary port.
 
 *Click.*
 
@@ -145,7 +145,7 @@ Or rather, *Warmth*.
 The slight hiss of the copper wires. The sound of his own blood pumping in his ears. The physical pressure of the foam cups against his skull.
 
 It wasn't the white, sterile void of the Recovery Room.
-It was a blanket. Useable darkness.
+It was a blanket. Useable darkness. We spend so much energy trying to be heard, that we forget how to just listen. We forget that sometimes, the most powerful thing you can do is refuse to resonate at all.
 
 Taro closed his eyes.
 For the first time since he arrived, his biometrics stabilized.
@@ -153,8 +153,7 @@ For the first time since he arrived, his biometrics stabilized.
 **> HEART_RATE: 60 BPM [RESTING]**
 **> SIGNAL_LOAD: 0%**
 
-He wasn't a Siege Breaker here. He wasn't an anomaly. He wasn't a glitch.
-He was just a boy listening to the quiet.
+He wasn't a Siege Breaker here. He wasn't an anomaly. He wasn't a wrong note. We are all searching for a place where our noise doesn't matter, where we can just *be* without the pressure of having to resonate with anyone else. In the dark, under the foam, Taro found a version of himself that the Score didn't recognize. And for now, that was enough.
 
 "Goodnight, Dad," he whispered into the foam.
 

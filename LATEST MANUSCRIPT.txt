@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1095,9 +1095,6 @@
                     { text: "hardware overwrite", layer: 1, y_anchor: 0.4, activationBand: 0.1 },
                     { text: "operating system: Wetware 1.0", layer: 2, y_anchor: 0.5, activationBand: 0.1 }
                 ],
-                'ch4_rotation': [
-                    { text: "sns_audit :: score_physics_rotation_detected", layer: 2, intensity: 'high' }
-                ],
                 'soldier_desync': [
                     { text: "he is / spilling / pixelated blood", layer: 2, y_anchor: 0.7, activationBand: 0.1 },
                     { text: "rendering error: / flesh failure", layer: 2, y_anchor: 0.8, activationBand: 0.1 }
@@ -1313,18 +1310,6 @@
             }
 
             onNarrativeBeat(trigger) {
-                if (trigger === 'ch4_rotation') {
-                    if (this.archive) {
-                        this.archive.style.transition = 'transform 2s ease-in-out, filter 2s ease-in-out';
-                        this.archive.style.transform = 'rotate(90deg)';
-                        this.archive.style.filter = 'hue-rotate(90deg) blur(2px)';
-                        setTimeout(() => {
-                            this.archive.style.transform = 'rotate(0deg)';
-                            this.archive.style.filter = 'none';
-                        }, 5000);
-                    }
-                }
-
                 const fragments = RESIDUAL_DATA.fragments[trigger];
                 if (!fragments) return;
                 if (fragments.some(f => f.intensity === 'high')) {
@@ -1608,9 +1593,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Initializing neural-acoustic synchronization.">> SENSATION: BOOT_SEQUENCE</strong>
-<strong class="tooltip" data-tip="The physical flavor of raw electrical discharge.">> TASTE: COPPER [BURNING]</strong>
-<strong class="tooltip" data-tip="Attempting handshake with the global resonance network.">> CONNECTING TO THE SCORE...</strong>
+<strong>> SENSATION: BOOT_SEQUENCE</strong>
+<strong>> TASTE: COPPER [BURNING]</strong>
+<strong>> CONNECTING TO THE SCORE...</strong>
 <p>
 </p>
 <p>---
@@ -1629,7 +1614,7 @@
 </p>
 <p>
 </p>
-<p>For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. The Score doesn't just ask for your participation; it demands your total alignment. We like to think of our lives as melodies we write ourselves, but in this world, we are just strings being plucked by a hand we can't see. Your nervous system shrieks as the <span class="tooltip" data-tip="The hardware implant connecting the human brain to the global resonance network." data-trigger="nai_intro">Neural-Acoustic Interface</span> overrides your optic nerve, forcing a new operating system onto your wetware. The local server is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
+<p>For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. Your nervous system shrieks as the <span class="tooltip" data-tip="The hardware implant connecting the human brain to the global resonance network." data-trigger="nai_intro">Neural-Acoustic Interface</span> overrides your optic nerve, forcing a new operating system onto your wetware. The local server is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
 </p>
 <p>
 </p>
@@ -1637,10 +1622,12 @@
 </p>
 <p>
 </p>
-<p>Your vision reboots. The world snaps back, but it hasn't just returned. It has been <em>rewritten</em>. Reality, it turns out, is just a shared hallucination with a very strict conductor.</p>
-<p></p>
-<strong class="tooltip" data-tip="Acoustic sensory input restored.">> PERCEPTION: ONLINE</strong>
-<strong class="tooltip" data-tip="Internal rhythm detected.">> SENSATION: PRESSURE [110 BPM]</strong>
+<p>Your vision reboots. The world snaps back, but it hasn't just returned. It has been <em>rewritten</em>.
+</p>
+<p>
+</p>
+<strong>> PERCEPTION: ONLINE</strong>
+<strong>> SENSATION: PRESSURE [110 BPM]</strong>
 <p>
 </p>
 <p>I blinked, but the data wasn't floating in front of me. It was burned into the world itself. The text wasn't a screen overlay; it was a hallucination carved into the walls.
@@ -1740,7 +1727,8 @@
 <strong>> PRESSURE: CRITICAL</strong>
 <p>
 </p>
-<p>"Hey, Wrong Note."</p>
+<p>"Hey, Glitch."
+</p>
 <p>
 </p>
 <p>I didn't need to look up. The air suddenly smelled like bubblegum and ozone.
@@ -1776,21 +1764,32 @@
 <strong>> LOAD_WARNING: PEAKING</strong>
 <p>
 </p>
-<p>"Bad night," I muttered. "My hardware feels like it's grinding. Too much sawtooth oscillation in the sector."</p>
-<p></p>
-<p>"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling a High-Octave signal. It’s like trying to hold a live wire with wet hands. You're gonna peak and take the whole floor with you. Seriously, the vibe is getting way too loud."</p>
-<p></p>
-<p>"It's not a grenade," I said. "It's just resonant noise. Drift artifacts."</p>
-<p></p>
-<p>"It's incredible," she corrected. "If you'd just let the Score index it—"</p>
-<p></p>
+<p>"Bad night," I muttered. "My... my hardware feels like it's grinding. Too much jitter in the sector."
+</p>
+<p>
+</p>
+<p>"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep bottling a High-Octave signal. It’s like trying to hold a live wire with wet hands. You're gonna peak and take the whole floor with you."
+</p>
+<p>
+</p>
+<p>"It's not a grenade," I said. "It's just hardware noise. Drift artifacts."
+</p>
+<p>
+</p>
+<p>"It's incredible," she corrected. "If you'd just let the system index it—"
+</p>
+<p>
+</p>
 <strong>[PAIN] [PAIN] [PAIN]</strong>
-<p></p>
-<p>My vision flared red. It wasn't a popup window. It was a migraine that slammed into my frontal lobe. Pain in the Score is just a particularly sharp dissonance, a note that shouldn't exist tearing through the fabric of your consciousness.</p>
-<p></p>
-<strong class="tooltip" data-tip="Emergency acoustic event detected.">> PRIORITY_OVERRIDE</strong>
-<strong class="tooltip" data-tip="The sensory texture of catastrophic decay.">> SENSATION: ROTTING_MEAT</strong>
-<strong class="tooltip" data-tip="Local emergency protocols activated.">> EVENT: CASUALTY_INCOMING</strong>
+<p>
+</p>
+<p>My vision flared red. It wasn't a popup window. It was a migraine that slammed into my frontal lobe.
+</p>
+<p>
+</p>
+<strong>> PRIORITY_OVERRIDE</strong>
+<strong>> SENSATION: ROTTING_MEAT</strong>
+<strong>> EVENT: CASUALTY_INCOMING</strong>
 <p>
 </p>
 <p>The emergency doors at the far end of the hall blasted open.
@@ -1800,7 +1799,8 @@
 <h4 data-trigger="soldier_desync">[00:14:45] THE CRASH</h4>
 <p>
 </p>
-<p>He came in like a corrupted file. Or maybe he was just a man who had lost his rhythm. We are all just one bad beat away from falling apart, from becoming a sequence of errors that the world would rather delete than fix.</p>
+<p>He came in like a corrupted file.
+</p>
 <p>
 </p>
 <p>A G Vanguard soldier. Stumbling. Screaming.
@@ -1819,9 +1819,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Carrier wave fragmentation detected.">> ERROR: SIGNAL_FRAG</strong>
-<strong class="tooltip" data-tip="Vestibular system rejecting chaotic input.">> SENSATION: NAUSEA</strong>
-<strong class="tooltip" data-tip="The subject's biology is no longer in sync with the Score.">> DIAGNOSTIC: BIOLOGICAL_DESYNC</strong>
+<strong>> ERROR: SIGNAL_FRAG</strong>
+<strong>> SENSATION: NAUSEA</strong>
+<strong>> DIAGNOSTIC: BIOLOGICAL_DESYNC</strong>
 <p>
 </p>
 <p>The golden sine wave of the room’s Middle C hit him—and shattered.
@@ -1832,14 +1832,20 @@
 </p>
 <p>
 </p>
-<p>"Get the stabilizers!" Remi shouted, her blue D Major aura spiking into a sharp, fearful indigo. "The vibe is totally blown!"</p>
-<p></p>
-<p>I froze.</p>
-<p></p>
-<p>My brain was trying to process the data, but it was too fast.</p>
-<p></p>
-<strong class="tooltip" data-tip="Logic engine failing to resolve incoming signal.">> INTUITION: CHAOS</strong>
-<strong class="tooltip" data-tip="Target frequency is irregular and destructive.">> TARGET: UNSTABLE_OSCILLATION</strong>
+<p>"Get the dampeners!" Remi shouted, her blue D Major aura spiking into a sharp, fearful indigo.
+</p>
+<p>
+</p>
+<p>I froze.
+</p>
+<p>
+</p>
+<p>My brain was trying to process the data, but it was too fast.
+</p>
+<p>
+</p>
+<strong>> INTUITION: CHAOS</strong>
+<strong>> TARGET: UNSTABLE_OSCILLATION</strong>
 <p>
 </p>
 <p>The soldier collapsed in the center of the room. He was convulsing. His NAI port on his neck was sparking—real sparks, not AR—and the data pouring out of him was raw code. I could taste the metal of his agony.
@@ -1882,7 +1888,7 @@
 <strong>> WARNING: CONTAINMENT_BREACH</strong>
 <p>
 </p>
-<p data-trigger="nai_intro">I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi. It was the part of me that understood the Score better than the Score understood itself. It was the wrong note that made the whole piece interesting.
+<p data-trigger="nai_intro">I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi.
 </p>
 <p>
 </p>
@@ -1966,16 +1972,11 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Value exceeds maximum register limit.">> SENSATION: INTEGER_OVERFLOW</strong>
+<strong>> SENSATION: INTEGER_OVERFLOW</strong>
 <p>
 </p>
-<p>The numbers got too big. My brain couldn't render the magnitude. In the end, we are all just numbers, and sometimes the numbers decide they've had enough.</p>
-<p>
+<p>The soldier’s bio-plasma field didn't stabilize. It didn't dampen. It <em>popped</em>. 
 </p>
-<p><em>CRACK.</em></p>
-<p>
-</p>
-<p>The soldier’s bio-plasma field didn't stabilize. It didn't dampen. It <em>popped</em>. </p>
 <p>
 </p>
 <p>Like a balloon. One second, he was a storm of data. The next, he was just... a guy. A bricked unit. Lying on the floor. His NAI dark. His aura gone.
@@ -1998,11 +1999,12 @@
 </p>
 <p>
 </p>
-<p>My vision was flickering. Wrong noting.</p>
+<p>My vision was flickering. Glitching.
+</p>
 <p>
 </p>
-<strong class="tooltip" data-tip="User's resonant identity is permanently changed.">> DIAGNOSTIC: BASELINE_ALTERED</strong>
-<strong class="tooltip" data-tip="New frequency signature detected. Admin access required.">> NEW_USER_ID: DETECTED [AUTHORITY_NULL]</strong>
+<strong>> DIAGNOSTIC: BASELINE_ALTERED</strong>
+<strong>> NEW_USER_ID: DETECTED [AUTHORITY_NULL]</strong>
 <p>
 </p>
 <p>I looked at my hand. In The Score, it wasn't a hand anymore.
@@ -2029,8 +2031,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Elite combat class detected.">> WARNING: VANGUARD_CLASS_DETECTED</strong>
-<strong class="tooltip" data-tip="Subject is a high-level harmonic threat.">> STATUS: HIGH_FIDELITY_THREAT</strong>
+<strong>> WARNING: VANGUARD_CLASS_DETECTED</strong>
+<strong>> STATUS: HIGH_FIDELITY_THREAT</strong>
 <p>
 </p>
 <p>The text burned into my retina. Once. Twice.
@@ -2041,7 +2043,7 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Fatal system error. Reboot failed.">> SYSTEM_CRASH [UNRECOVERABLE]</strong>
+<strong>> SYSTEM_CRASH [UNRECOVERABLE]</strong>
 <p>
 </p>
 <p>---
@@ -2062,9 +2064,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject located in a secure recovery environment.">> LOCATION: UNISON HALL – RECOVERY WARD</strong>
-<strong class="tooltip" data-tip="Minimal operational protocols active.">> SYSTEM STATUS: SAFE_MODE</strong>
-<strong class="tooltip" data-tip="Maximum signal suppression active to prevent accidental discharge.">> DAMPING FIELD: ACTIVE [LEVEL 5]</strong>
+<strong>LOCATION: UNISON HALL – RECOVERY WARD</strong>
+<strong>SYSTEM STATUS: SAFE_MODE</strong>
+<strong>DAMPING FIELD: ACTIVE [LEVEL 5]</strong>
 <p>
 </p>
 <p>---
@@ -2079,7 +2081,7 @@
 </p>
 <p>
 </p>
-<p>Technically, it was a <span class="tooltip" data-tip="A Class-A isolation unit designed to reset a user's NAI by eliminating all external acoustic and visual stimuli.">Sensory Deprivation Chamber</span> , but the street name was the White Room. The walls were lined with acoustic foam so dense it absorbed 99.9% of all reflected sound. The visual feed was overridden by a "Privacy Mask"—a generated infinite void of white pixels designed to lower the user's cognitive load. We are all just pixels in a screen we didn't buy, and the White Room is the ultimate erasure—a reminder that without the Score's light, we are nothing.
+<p>Technically, it was a <span class="tooltip" data-tip="A Class-A isolation unit designed to reset a user's NAI by eliminating all external acoustic and visual stimuli.">Sensory Deprivation Chamber</span> , but the street name was the White Room. The walls were lined with acoustic foam so dense it absorbed 99.9% of all reflected sound. The visual feed was overridden by a "Privacy Mask"—a generated infinite void of white pixels designed to lower the user's cognitive load.
 </p>
 <p>
 </p>
@@ -2091,8 +2093,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Hardware lock engaged on the cervical port.">> DETECTED: DAMPING_COLLAR [LOCKED]</strong>
-<strong class="tooltip" data-tip="Internal frequency suppression protocol active.">> FUNCTION: RESONANCE_SUPPRESSION</strong>
+<strong>> DETECTED: DAMPING_COLLAR [LOCKED]</strong>
+<strong>> FUNCTION: RESONANCE_SUPPRESSION</strong>
 <p>
 </p>
 <p>The collar hummed against his neck. It wasn't just a restraint; it was a circuit breaker. It actively monitored his biometrics, looking for the tell-tale spike of an Upper Octave oscillation. If it found one, it grounded the signal before it could reach his hands.
@@ -2121,7 +2123,7 @@
 <p data-trigger="adjutant_voss">Adjutant Voss.</p>
 <p>
 </p>
-<p>Voss looked less like a human and more like a high-end peripheral. His suit was a matte-gray, frictionless material standard for <span class="tooltip" data-tip="The &quot;Concord Order,&quot; the ruling faction dedicated to absolute stability, standard tuning, and the suppression of dissonance.">C-Order</span> administration. He sat perfectly still, his hands folded on the desk, radiating an aura of absolute stability. The Score likes stability. It likes predictability. It likes things that don't make it work too hard.
+<p>Voss looked less like a human and more like a high-end peripheral. His suit was a matte-gray, frictionless material standard for <span class="tooltip" data-tip="The &quot;Concord Order,&quot; the ruling faction dedicated to absolute stability, standard tuning, and the suppression of dissonance.">C-Order</span> administration. He sat perfectly still, his hands folded on the desk, radiating an aura of absolute stability.
 </p>
 <p>
 </p>
@@ -2223,15 +2225,15 @@
 <strong>> STATUS:</strong> HIGH_RISK.
 <p>
 </p>
-<p>"We utilize the noise," Voss said. "The Vanguard creates <strong>Siege Breakers</strong>. Units capable of generating high-amplitude dissonance for combat purposes. We take your wrong note... and we weaponize it."
+<p>"We utilize the noise," Voss said. "The Vanguard creates <strong>Siege Breakers</strong>. Units capable of generating high-amplitude dissonance for combat purposes. We take your glitch... and we weaponize it."
 </p>
 <p>
 </p>
-<p>Voss leaned in. For a moment, the perfect, manual-compliant facade cracked. The green dissonance in his eye flickered—a single frame of unauthorized code.
+<p>Voss leaned in. For a moment, the perfect, manual-compliant facade cracked. The green glitch in his eye flickered—a single frame of unauthorized code.
 </p>
 <p>
 </p>
-<p>"You are dangerous, Taro," Voss whispered. "But the Score needs danger. It needs heavy artillery."
+<p>"You are dangerous, Taro," Voss whispered. "But the System needs danger. It needs heavy artillery."
 </p>
 <p>
 </p>
@@ -2247,7 +2249,7 @@
 </p>
 <p>
 </p>
-<p>"The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application. We take your sawtooth oscillation and we make it tactical."
+<p>"The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application. We take your jitter and we make it tactical."
 </p>
 <p>
 </p>
@@ -2330,7 +2332,7 @@
 </p>
 <p>
 </p>
-<p>"Just get the bag," he whispered, his voice catching on the sawtooth oscillation. "Get... get out. Switch to low-power mode."
+<p>"Just get the bag," he whispered, his voice catching on the jitter. "Get... get out. Switch to low-power mode."
 </p>
 <p>
 </p>
@@ -2342,7 +2344,7 @@
 </p>
 <p>It was silent.
 </p>
-<p>But not the "White Room" silence of high-end damping. This was <strong>Suppressed Silence</strong>. We build walls of sound to keep out the noise of our own thoughts, but eventually, the silence finds a way in.
+<p>But not the "White Room" silence of high-end damping. This was <strong>Suppressed Silence</strong>.
 </p>
 <p>
 </p>
@@ -2367,7 +2369,7 @@
 </p>
 <p>Zero variance.
 </p>
-<p>Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a <span class="tooltip" data-tip="A rare class of resonator capable of becoming a 'Living Anchor', forcing order upon chaos through absolute stability.">Fundamental</span> in a world of variables. We all search for a center, a point of absolute stillness, but Kael <em>was</em> the center. And being the center is its own kind of prison.
+<p>Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a <span class="tooltip" data-tip="A rare class of resonator capable of becoming a 'Living Anchor', forcing order upon chaos through absolute stability.">Fundamental</span> in a world of variables.
 </p>
 <p>
 </p>
@@ -2383,7 +2385,7 @@
 </p>
 <p>
 </p>
-<p>The air between them shimmered. A visual artifact caused by two incompatible Score signatures trying to occupy THE same space. THE Score flickered, unable to reconcile THE two signals.
+<p>The air between them shimmered. A visual artifact caused by two incompatible physics engines trying to occupy the same space. The Score flickered, unable to reconcile the two signals.
 </p>
 <p>
 </p>
@@ -2454,7 +2456,7 @@
 </p>
 <p>
 </p>
-<p>"I'm not her," Taro said, his voice fragmenting. "I'm... I'm just me. I'm just a wrong note."
+<p>"I'm not her," Taro said, his voice fragmenting. "I'm... I'm just me. I'm just a glitch."
 </p>
 <p>
 </p>
@@ -2491,7 +2493,7 @@
 </p>
 <p>
 </p>
-<p>"Pure Analog," Kael said. "No sync. No Score. Just... physics."
+<p>"Pure Analog," Kael said. "No sync. No System. Just... physics."
 </p>
 <p>
 </p>
@@ -2514,8 +2516,8 @@
 <em>Click.</em>
 <p>
 </p>
-<strong class="tooltip" data-tip="Digital signal path disconnected. Direct acoustic link active.">> AUDIO_PROTOCOL: BYPASS</strong>
-<strong class="tooltip" data-tip="Input source: Legacy Analog.">> INPUT_SOURCE: ANALOG_DIRECT</strong>
+<strong>> AUDIO_PROTOCOL: BYPASS</strong>
+<strong>> INPUT_SOURCE: ANALOG_DIRECT</strong>
 <p>
 </p>
 <p>Silence.
@@ -2530,7 +2532,7 @@
 </p>
 <p>
 </p>
-<p>"She wanted you to hear yourself," Kael said. Taro heard the voice through bone conduction, muffled but distinct. "Without the Score. Without the Code. Without the C-Order's compression algorithms."
+<p>"She wanted you to hear yourself," Kael said. Taro heard the voice through bone conduction, muffled but distinct. "Without the System. Without the Code. Without the C-Order's compression algorithms."
 </p>
 <p>
 </p>
@@ -2538,7 +2540,7 @@
 </p>
 <p>
 </p>
-<p>For the first time all day, the signal stream cut out. Total signal loss. 
+<p>For the first time all day, the data stream cut out. Total signal loss. 
 </p>
 <p>
 </p>
@@ -2554,7 +2556,7 @@
 </p>
 <p>
 </p>
-<p>It wasn't a wrong note. It wasn't a buffer overflow. 
+<p>It wasn't a glitch. It wasn't a buffer overflow. 
 </p>
 <p>
 </p>
@@ -2651,10 +2653,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is isolated for diagnostic review.">> ZONE: MALKUTH_ACADEMY_INTAKE</strong>
-<strong class="tooltip" data-tip="Total restriction of all incoming and outgoing signals.">> SYSTEM_LOAD: OPTIMAL</strong>
-<strong class="tooltip" data-tip="Direct neural-acoustic processing mode.">> RESOLUTION: 8K [LOSSLESS]</strong>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> STATUS: CONNECTED</strong>
+<strong>ZONE: MALKUTH_ACADEMY_INTAKE</strong>
+<strong>SYSTEM_LOAD: OPTIMAL</strong>
+<strong>RESOLUTION: 8K [LOSSLESS]</strong>
+<strong>STATUS: CONNECTED</strong>
 <p>
 </p>
 <p>---
@@ -2669,15 +2671,15 @@
 </p>
 <p>
 </p>
-<p>Taro stepped off the transport skiff, and the transition hit him like a physical blow to the base of his skull. His Score port seized, hard-locking heavily as it tried to handshake with the local protocol.
+<p>Taro stepped off the transport skiff, and the transition hit him like a physical blow to the base of his skull. His Neural-Acoustic Interface seized, hard-locking heavily as it tried to handshake with the local protocol.
 </p>
 <p>
 </p>
 <em>Skk-thrummm.</em>
 <p>
 </p>
-<strong class="tooltip" data-tip="Optical data stream suspended.">> PROTCOL_HANDSHAKE: ACCEPTED</strong>
-<strong class="tooltip" data-tip="Zero-filtering raw signal feed.">> LOCAL_RESOLUTION: ULTRA_HIGH</strong>
+<strong>> PROTCOL_HANDSHAKE: ACCEPTED</strong>
+<strong>> LOCAL_RESOLUTION: ULTRA_HIGH</strong>
 <p>
 </p>
 <p>The grainy, analog hum of Sector 7-C—the comfortable, low-fi fuzz he’d lived in his whole life—was ripped away. 
@@ -2696,9 +2698,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Ambient frequency detected. Standard tuning enforced.">> AMBIENT_PITCH: THE GROUND NOTE [STANDARD]</strong>
-<strong class="tooltip" data-tip="Resonant amplitude exceeding standard registers.">> JITTER: 0.000%</strong>
-<strong class="tooltip" data-tip="Total resonant energy release.">> PACKET_LOSS: 0.000%</strong>
+<strong>> AMBIENT_PITCH: THE GROUND NOTE [STANDARD]</strong>
+<strong>> JITTER: 0.000%</strong>
+<strong>> PACKET_LOSS: 0.000%</strong>
 <p>
 </p>
 <p>Taro shivered. He adjusted the collar of his new uniform. The fabric was stiff, laced with passive damping threads that felt like they were trying to mute his own heartbeat. His old analog headphones hung around his neck, unconnected. In this High-Fidelity zone, they felt like a fossil. A stone tool brought to a semiconductor plant.
@@ -2845,7 +2847,7 @@
 </p>
 <p>
 </p>
-<h4 data-trigger="packet_storm">[08:15:00] THE HARMONIC STORM</h4>
+<h4 data-trigger="packet_storm">[08:15:00] THE PACKET STORM</h4>
 <p>
 </p>
 <p>The hallway wasn't empty. It was a wind tunnel.
@@ -2856,7 +2858,7 @@
 </p>
 <p>
 </p>
-<p>Here? It was a [[Harmonic Storm::A phenomenon in high-density areas where the aggregate signal load of high-fidelity users exceeds standard processing buffers, causing a chaotic flood of sensory information.]] .
+<p>Here? It was a <span class="tooltip" data-tip="A phenomenon in high-density areas where the aggregate data load of high-fidelity users exceeds standard processing buffers, causing a chaotic flood of sensory information.">Packet Storm</span> .
 </p>
 <p>
 </p>
@@ -2864,11 +2866,11 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Optical data stream suspended.">> SYSTEM_LOAD: 98%</strong>
-<strong class="tooltip" data-tip="Device protection agreement is now null and void.">> THERMAL_WARNING: ACTIVE</strong>
+<strong>> SYSTEM_LOAD: 98%</strong>
+<strong>> THERMAL_WARNING: ACTIVE</strong>
 <p>
 </p>
-<p>It wasn't just noise. It was specific. We like to think of a crowd as a single entity, but the Score sees every individual thread, every conflicting desire, every unresolvable chord. It's not a crowd; it's a structural failure waiting to happen.
+<p>It wasn't just noise. It was specific.
 </p>
 <p>
 </p>
@@ -2876,7 +2878,7 @@
 </p>
 <p>
 </p>
-<p>The sharp <strong>Sawtooth</strong> spikes of the Vanguard cadets cut through the crowd like sharks. Their Score tags flashed with kill counts and combat metrics, aggressive red text scrolling across their peripheral vision.
+<p>The sharp <strong>Sawtooth</strong> spikes of the Vanguard cadets cut through the crowd like sharks. Their AR tags flashed with kill counts and combat metrics, aggressive red text scrolling across their peripheral vision.
 </p>
 <p>
 </p>
@@ -2884,11 +2886,11 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="The aggregate signal load of high-fidelity users.">> DETECTED: 400+ ACTIVE LINKS</strong>
-<strong class="tooltip" data-tip="Resonant density per second.">> RESONANT_DENSITY: 50 TB/s</strong>
+<strong>> DETECTED: 400+ ACTIVE CONNECTIONS</strong>
+<strong>> DATA_RATE: 50 TB/s</strong>
 <p>
 </p>
-<p>The resonant music was loud. I stumbled, my vision starting to artifact—green squares pixelating the edges of reality. THE faces of the students smeared into signal streams. Social pings hit him like hail. I couldn't breathe; the vibe was too loud.
+<p>It was too much flow. Taro stumbled. His vision started to artifact—green squares pixelating the edges of reality. The faces of the students smeared into data streams. Social pings hit him like hail.
 </p>
 <p>
 </p>
@@ -2917,14 +2919,14 @@
 </p>
 <p>
 </p>
-<p>Taro squeezed his eyes shut. He focused on the Score port at the base of his skull—the hot, pulsing knot of nerves where the world plugged into him.
+<p>Taro squeezed his eyes shut. He focused on the NAI port at the base of his skull—the hot, pulsing knot of nerves where the world plugged into him.
 </p>
 <em>Throttle down. Cut the video feed.</em>
 <p>
 </p>
-<strong class="tooltip" data-tip="Optical data stream suspended.">> COMMAND: DISABLE_VIDEO_LAYER</strong>
-<strong class="tooltip" data-tip="Direct neural-acoustic processing mode.">> AUDIO_PROCESSING: ENHANCED</strong>
-<strong class="tooltip" data-tip="Zero-filtering raw signal feed.">> SIGNAL: RAW_ACOUSTIC</strong>
+<strong>> COMMAND: DISABLE_VIDEO_LAYER</strong>
+<strong>> AUDIO_PROCESSING: ENHANCED</strong>
+<strong>> SIGNAL: RAW_ACOUSTIC</strong>
 <p>
 </p>
 <p>The world went black.
@@ -2994,7 +2996,7 @@
 </p>
 <p>An old man stood on the dais.
 </p>
-<p>His aura was immense. It didn't just surround him; it filled the volume of the room. They were sitting <em>inside</em> his resonant field. We are all just notes in a larger composition, and some notes have more mass than others.
+<p>His aura was immense. It didn't just surround him; it filled the volume of the room. They were sitting <em>inside</em> his resonant field.
 </p>
 <p>
 </p>
@@ -3035,8 +3037,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Root-level modification of the environmental parameters.">> SCORE_PHYSICS: LOCAL_OVERRIDE</strong>
-<strong class="tooltip" data-tip="Reorientation of the gravitational downbeat." data-trigger="ch4_rotation">> VECTOR: ROTATED [90_DEG]</strong>
+<strong>> PHYSICS_ENGINE: LOCAL_OVERRIDE</strong>
+<strong>> VECTOR: ROTATED [90_DEG]</strong>
 <p>
 </p>
 <p>"You write it."
@@ -3047,7 +3049,7 @@
 </p>
 <p>The High Register spark was there. Waiting.
 </p>
-<p>It wasn't a wrong note anymore.
+<p>It wasn't a glitch anymore.
 </p>
 <p>It was a cursor. Blinking.
 </p>
@@ -3085,7 +3087,8 @@
 </p>
 <p>
 </p>
-<h4>[09:15:00] THE HANDSHAKE</h4>
+<h4>[09:15:00] THE HANDSHAKE
+</h4>
 <p>
 </p>
 <p>"Initialize," Hana commanded.
@@ -3100,17 +3103,17 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Attempting to sync three disparate signals.">> TEAM_LINK: PENDING</strong>
-<strong class="tooltip" data-tip="The primary frequency provider.">> NODE 1: HANA [ROOT]</strong>
-<strong class="tooltip" data-tip="The heavy-frequency absorber.">> NODE 2: VEN [SINK]</strong>
-<strong class="tooltip" data-tip="The high-frequency variable.">> NODE 3: TARO [VARIABLE]</strong>
+<strong>> TEAM_LINK: PENDING</strong>
+<strong>> NODE 1: HANA [ROOT]</strong>
+<strong>> NODE 2: VEN [SINK]</strong>
+<strong>> NODE 3: TARO [VARIABLE]</strong>
 <p>
 </p>
-<p>"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional sawtooth oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the <span class="tooltip" data-tip="A standard tactical unit composed of three resonant frequencies: Root (Command), Third (Support), and Fifth (Offense).">Triad</span> will stabilize." In the Sandbox, everything is a variable, and variables are the enemy of the state. We are taught that to be human is to be unpredictable, but here, to be unpredictable is to be deleted.
+<p>"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional jitter. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the <span class="tooltip" data-tip="A standard tactical unit composed of three resonant frequencies: Root (Command), Third (Support), and Fifth (Offense).">Triad</span> will stabilize."
 </p>
 <p>
 </p>
-<p>"The Fifth?" Taro asked, his heartbeat spiking. "My... uh... my frequency isn't fixed. I sawtooth oscillation."
+<p>"The Fifth?" Taro asked, his heartbeat spiking. "My... uh... my frequency isn't fixed. I jitter."
 </p>
 <p>
 </p>
@@ -3323,9 +3326,11 @@
 </p>
 <p>
 </p>
-<p>"Initializing Drop," Taro whispered.</p>
-<p></p>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> SYNC: LOCKED.</strong>
+<p>"Initializing Drop," Taro whispered.
+</p>
+<p>
+</p>
+<strong>> SYNC: LOCKED.</strong>
 <p>
 </p>
 <p>---
@@ -3369,9 +3374,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="The heavy-frequency absorber.">> UNIT_STATUS: VEN_CALIBRATOR</strong>
-<strong class="tooltip" data-tip="Device protection agreement is now null and void.">> THERMAL_LOAD: 98% [CRITICAL]</strong>
-<strong class="tooltip" data-tip="Maximum signal suppression active to prevent accidental discharge.">> CAPACITY: MAX_LOAD</strong>
+<strong>> UNIT_STATUS: VEN_CALIBRATOR</strong>
+<strong>> THERMAL_LOAD: 98% [CRITICAL]</strong>
+<strong>> CAPACITY: MAX_LOAD</strong>
 <p>
 </p>
 <p>Ven sat on a concrete bench. He didn't look in pain, but his biometrics were screaming. He looked deeply, heavily asleep, his internal focus struggling to process the massive surge Taro had dumped into his system. His eyes were half-lidded, his breathing a slow, tectonic 40 BPM.
@@ -3380,8 +3385,8 @@
 </p>
 <p>Taro checked the telemetry.
 </p>
-<strong class="tooltip" data-tip="Biological functions entering rest cycle.">> INTERNAL_CORE_TEMP: 104°F</strong>
-<strong class="tooltip" data-tip="Internal frequency suppression protocol active.">> COOLANT_LOOP: ACTIVE</strong>
+<strong>> INTERNAL_CORE_TEMP: 104°F</strong>
+<strong>> COOLANT_LOOP: ACTIVE</strong>
 <p>
 </p>
 <p>"You okay?" Taro asked.
@@ -3399,8 +3404,8 @@
 <em>CLANG.</em>
 <p>
 </p>
-<strong class="tooltip" data-tip="Grounding circuit disconnected.">> PROTOCOL: GROUNDING_DISCHARGE</strong>
-<strong class="tooltip" data-tip="Degree of signal consistency.">> RATE: 500 WATTS</strong>
+<strong>> PROTOCOL: GROUNDING_DISCHARGE</strong>
+<strong>> RATE: 500 WATTS</strong>
 <p>
 </p>
 <p>White sparks flew from his knuckles. Ven was literally dumping the resonant energy Taro had pumped into him back into the building's electrical grid. The lights in the hallway flickered brighter as the surge hit the mains.
@@ -3443,8 +3448,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Attempting to sync three disparate signals." data-trigger="hardline_link">> INTERACTION_PROMPT: HARDLINE_LINK</strong>
-<strong class="tooltip" data-tip="Classification of the system crash.">> TYPE: GROUND_CIRCUIT</strong>
+<strong data-trigger="hardline_link">> INTERACTION_PROMPT: HARDLINE_LINK</strong>
+<strong>> TYPE: GROUND_CIRCUIT</strong>
 <p>
 </p>
 <p>"I have mass," Ven said. "I have capacity. You have output."
@@ -3480,9 +3485,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Grounding circuit disconnected.">> CIRCUIT: CLOSED</strong>
-<strong class="tooltip" data-tip="Classification of the system crash.">> FLOW_DIRECTION: TARO -> VEN</strong>
-<strong class="tooltip" data-tip="Degree of signal consistency.">> STABILITY: 99%</strong>
+<strong>> CIRCUIT: CLOSED</strong>
+<strong>> FLOW_DIRECTION: TARO -> VEN</strong>
+<strong>> STABILITY: 99%</strong>
 <p>
 </p>
 <p>The pressure in Taro's head—the constant buzzing of the variable oscillation—drained away instantly. It was like switching from a jittery pulse to a clean flow. It flowed out of his arm and into Ven's infinite, low-impedance capacity. 
@@ -3497,8 +3502,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Attempting to sync three disparate signals.">> NEW_TOPOLOGY: THE_GROUND_WIRE</strong>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> SYNERGY_BONUS: STABILITY_INCREASE [HI-FI]</strong>
+<strong>> NEW_TOPOLOGY: THE_GROUND_WIRE</strong>
+<strong>> SYNERGY_BONUS: STABILITY_INCREASE [HI-FI]</strong>
 <p>
 </p>
 <p>"We need Hana," Ven said, not letting go. "She aims. You shoot. I hold the gun."
@@ -3525,8 +3530,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Ambient frequency detected. Standard tuning enforced.">> AMBIENT_NOISE: 65dB [DATA_HUM]</strong>
-<strong class="tooltip" data-tip="Acoustic strain on local capacity.">> SOCIAL_PRESSURE: MODERATE</strong>
+<strong>> AMBIENT_NOISE: 65dB [DATA_HUM]</strong>
+<strong>> SOCIAL_PRESSURE: MODERATE</strong>
 <p>
 </p>
 <p>Every wall in the room was broadcasting. Not ads, but <em>presence</em>.
@@ -3580,8 +3585,8 @@
 <em>Click.</em>
 <p>
 </p>
-<strong class="tooltip" data-tip="Digital signal path disconnected. Direct acoustic link active.">> AUDIO_PROTOCOL: BYPASS</strong>
-<strong class="tooltip" data-tip="Input source: Legacy Analog.">> INPUT_SOURCE: ANALOG_DIRECT</strong>
+<strong>> AUDIO_PROTOCOL: BYPASS</strong>
+<strong>> INPUT_SOURCE: ANALOG_DIRECT</strong>
 <p>
 </p>
 <p>The world vanished.
@@ -3614,11 +3619,11 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Biological functions entering rest cycle.">> HEART_RATE: 60 BPM [RESTING]</strong>
-<strong class="tooltip" data-tip="Total restriction of all incoming and outgoing signals.">> SIGNAL_LOAD: 0%</strong>
+<strong>> HEART_RATE: 60 BPM [RESTING]</strong>
+<strong>> SIGNAL_LOAD: 0%</strong>
 <p>
 </p>
-<p>He wasn't a Siege Breaker here. He wasn't an anomaly. He wasn't a wrong note.
+<p>He wasn't a Siege Breaker here. He wasn't an anomaly. He wasn't a glitch.
 </p>
 <p>He was just a boy listening to the quiet.
 </p>
@@ -3634,7 +3639,7 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Biological functions entering rest cycle.">> STATUS: ASLEEP.</strong>
+<strong>> STATUS: ASLEEP.</strong>
 <p>
 </p>
 <p>---
@@ -3763,9 +3768,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Acoustic analysis of the target." data-trigger="marcus_staccato">> OPPONENT: MARCUS_STACCATO</strong>
-<strong class="tooltip" data-tip="Subject is a trained rhythmic combatant.">> CLASS: RHYTHM_OPERATOR</strong>
-<strong class="tooltip" data-tip="Predicted risk level.">> THREAT: SEVERE</strong>
+<strong data-trigger="marcus_staccato">> OPPONENT: MARCUS_STACCATO</strong>
+<strong>> CLASS: RHYTHM_OPERATOR</strong>
+<strong>> THREAT: SEVERE</strong>
 <p>
 </p>
 <p>"The lesson is 'Pattern Recognition'," Vale announced from the podium. "Staccato is a Rhythm Operator. He controls the Time Signature of the fight. Nishimura is... untrained noise. Observe the difference between 'Design' and 'Chaos'."
@@ -3780,14 +3785,14 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Visual data stream falling behind physical movement.">> VISUAL_ARTIFACT: FRAME_SKIP</strong>
+<strong>> VISUAL_ARTIFACT: FRAME_SKIP</strong>
 <p>
 </p>
 <p>One second he was ten meters away. The next frame, he was in Taro's face.
 </p>
 <p>The proximity alarm shrieked.
 </p>
-<strong class="tooltip" data-tip="Physical impact detected.">> ALERT: COLLISION_IMMINENT</strong>
+<strong>> ALERT: COLLISION_IMMINENT</strong>
 <p>
 </p>
 <em>CRACK.</em>
@@ -3801,19 +3806,19 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is temporarily incapacitated by harmonic shock.">> STATUS: STUNNED</strong>
-<strong class="tooltip" data-tip="System forced to reset the current cycle.">> CAUSE: FORCED_RESET</strong>
+<strong>> STATUS: STUNNED</strong>
+<strong>> CAUSE: FORCED_RESET</strong>
 <p>
 </p>
 <p>Taro stumbled back, gasping. "How..."
 </p>
 <p>
 </p>
-<p>"You operate on analog time," Marcus said, circling him. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Wrong Note. I’m already in the next pulse."
+<p>"You operate on analog time," Marcus said, circling him. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Glitch. I’m already in the next pulse."
 </p>
 <p>
 </p>
-<p>He was right. In the eyes of the Vanguard, being human is a latency issue. We are too slow, too messy, too biological. They want to turn us into math, to shave off our edges until we are just a series of perfect, lethal pulses.
+<p>He was right. 
 </p>
 <p>To Taro's eyes, Marcus was vibrating. His movements were synced to a 140 BPM master clock that Taro couldn't hear.
 </p>
@@ -3848,8 +3853,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Waves aligning to cancel each other out.">> INTERFERENCE: DESTRUCTIVE</strong>
-<strong class="tooltip" data-tip="Target's offensive signal neutralized.">> ATTACK: NULLIFIED</strong>
+<strong>> INTERFERENCE: DESTRUCTIVE</strong>
+<strong>> ATTACK: NULLIFIED</strong>
 <p>
 </p>
 <p>The wave dissolved into harmless static. It was <span class="tooltip" data-tip="The phenomenon where two waves of equal frequency and opposite phase collide, resulting in instant silence. A perfect parry.">Destructive Interference</span> .
@@ -3875,8 +3880,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Environmental sound construct identified." data-trigger="rhythm_cage">> TRAP_DETECTED: RHYTHM_CAGE</strong>
-<strong class="tooltip" data-tip="Subject movements restricted by sound pressure.">> STATUS: CONTAINED</strong>
+<strong data-trigger="rhythm_cage">> TRAP_DETECTED: RHYTHM_CAGE</strong>
+<strong>> STATUS: CONTAINED</strong>
 <p>
 </p>
 <p>"End of simulation," Dorian Vale announced.
@@ -3896,8 +3901,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Signal integrity at 0%. System failure.">> CRITICAL_FAILURE</strong>
-<strong class="tooltip" data-tip="Initiating emergency hardware reset.">> SYSTEM_REBOOTING...</strong>
+<strong>> CRITICAL_FAILURE</strong>
+<strong>> SYSTEM_REBOOTING...</strong>
 <p>
 </p>
 <p>Taro was on the floor. Groaning.
@@ -3906,12 +3911,13 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Total phase alignment with the master clock.">> SYNC: 99.9%</strong>
-<strong class="tooltip" data-tip="Zero energy waste.">> EFFICIENCY: 100%</strong>
-<strong class="tooltip" data-tip="Primary emotional state.">> MOOD: BOREDOM</strong>
+<strong>> SYNC: 99.9%</strong>
+<strong>> EFFICIENCY: 100%</strong>
+<strong>> MOOD: BOREDOM</strong>
 <p>
 </p>
-<p>"Get a metronome, Wrong Note," Marcus said. "You're just noise in my signal path."</p>
+<p>"Get a metronome, Glitch," Marcus said. "You're just noise in my signal path."
+</p>
 <p>
 </p>
 <p>Marcus walked away. <em>Step. Step. Step.</em> Perfect 140 BPM.
@@ -3960,10 +3966,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject located in a secure recovery environment.">> ZONE: SECTOR_4 [TWILIGHT_BAND]</strong>
-<strong class="tooltip" data-tip="A real-time AR overlay that replaces low-status textures (rot, poverty) with idealized C-Order aesthetics (marble, gold).">> FILTER: GOLDEN_AGE_V2 [MAX]</strong>
-<strong class="tooltip" data-tip="Current mission parameters.">> MISSION: PATROL_SWEEP</strong>
-<strong class="tooltip" data-tip="Assigned tactical unit.">> SQUAD: FIRETEAM_ECHO</strong>
+<strong>ZONE: SECTOR_4 [TWILIGHT_BAND]</strong>
+<strong>FILTER: GOLDEN_AGE_V2 [MAX]</strong>
+<strong>MISSION: PATROL_SWEEP</strong>
+<strong>SQUAD: FIRETEAM_ECHO</strong>
 <p>
 </p>
 <p>---
@@ -3978,7 +3984,7 @@
 </p>
 <p>
 </p>
-<p>Beneath them lay the <span class="tooltip" data-tip="The buffer zone between the High-Fidelity Inner City and the Low-Fi Outer Slums, characterized by inconsistent reality rendering.">Twilight Band</span> . A "Wrong Note" zone where the reality render is inconsistent. Textures pop in and out. The air tastes of both ozone (wealth) and sulfur (poverty).
+<p>Beneath them lay the <span class="tooltip" data-tip="The buffer zone between the High-Fidelity Inner City and the Low-Fi Outer Slums, characterized by inconsistent reality rendering.">Twilight Band</span> . A "Glitch" zone where the reality render is inconsistent. Textures pop in and out. The air tastes of both ozone (wealth) and sulfur (poverty).
 </p>
 <p>
 </p>
@@ -3988,9 +3994,9 @@
 </p>
 <p>They dropped.
 </p>
-<p>Taro's Score altimeter scrolled rapidly, his internal gyroscope compensating for the G-force.
+<p>Taro's HUD altimeter scrolled rapidly, his internal gyroscope compensating for the G-force.
 </p>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> ALTITUDE: 50m... 20m... TOUCHDOWN.</strong>
+<strong>> ALTITUDE: 50m... 20m... TOUCHDOWN.</strong>
 <p>
 </p>
 <p>They hit the pavement in formation. Hana took point. Ven took rear. Taro took the center.
@@ -4005,7 +4011,7 @@
 </p>
 <p>
 </p>
-<p>Through The Score, every building was sheathed in white marble and gold trim. The streets were clean, paved with glowing luminescent tiles. The people walked with a synchronized gait, their Score tags reading <strong class="tooltip" data-tip="Subject is ignoring non-indexed data.">> STATUS: CITIZEN [HAPPY]</strong>.
+<p>Through The Score, every building was sheathed in white marble and gold trim. The streets were clean, paved with glowing luminescent tiles. The people walked with a synchronized gait, their tags reading <strong>> STATUS: CITIZEN [HAPPY]</strong>.
 </p>
 <p>The sky was a perfect, gradient blue.
 </p>
@@ -4015,8 +4021,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Classification of the system crash.">> REPUTATION_GAIN: +10</strong>
-<strong class="tooltip" data-tip="Elite combat class detected.">> MONITOR: ADJUTANT_VOSS [HEARING_ALL]</strong>
+<strong>> REPUTATION_GAIN: +10</strong>
+<strong>> MONITOR: ADJUTANT_VOSS [HEARING_ALL]</strong>
 <p>
 </p>
 <p>Taro looked closer at the wall next to him.
@@ -4031,12 +4037,12 @@
 </p>
 <p>For one frame (1/60th of a second), the texture failed to load.
 </p>
-<p>Beneath the white marble AR skin, the wall was actually crumbling concrete, covered in black mold. It smelled like wet rot. We build our institutions on the promise of perfection, forgetting that the foundation is always made of noise.
+<p>Beneath the white marble AR skin, the wall was actually crumbling concrete, covered in black mold. It smelled like wet rot.
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Unstable frequency identified.">> WRONG_NOTE_DETECTED</strong>
-<strong class="tooltip" data-tip="Visual data stream falling behind physical movement.">> TEXTURE_FAILURE: 5%</strong>
+<strong>> GLITCH_DETECTED</strong>
+<strong>> TEXTURE_FAILURE: 5%</strong>
 <p>
 </p>
 <p data-trigger="hidden_slum">"It's a slum," Taro whispered, his voice catching on the dissonance he was seeing. "The architecture... it’s all low-bit placeholders."</p>
@@ -4046,12 +4052,12 @@
 </p>
 <p>
 </p>
-<p>To her, this place <em>was</em> a high-fidelity paradise. Her Score port aggressively damped the smell of sewage. Her perception used a <span class="tooltip" data-tip="A real-time AR overlay that replaces low-status textures (rot, poverty) with idealized C-Order aesthetics (marble, gold).">Golden Filter</span> to erase the homeless people sitting in the gutters, replacing them with generic street furniture or dead space.
+<p>To her, this place <em>was</em> a high-fidelity paradise. Her NAI aggressively damped the smell of sewage. Her perception used a <span class="tooltip" data-tip="A real-time AR overlay that replaces low-status textures (rot, poverty) with idealized C-Order aesthetics (marble, gold).">Golden Filter</span> to erase the homeless people sitting in the gutters, replacing them with generic street furniture or dead space.
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Acoustic strain on local capacity.">> MASKING_PROTOCOL: MAX_LOAD</strong>
-<strong class="tooltip" data-tip="Subject is ignoring non-indexed data.">> ANALYSIS: SELECTIVE_OMISSION_ACTIVE</strong>
+<strong>> MASKING_PROTOCOL: MAX_LOAD</strong>
+<strong>> ANALYSIS: SELECTIVE_OMISSION_ACTIVE</strong>
 <p>
 </p>
 <p>Taro looked at a man sitting against a dumpster.
@@ -4100,9 +4106,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Acoustic signature is unknown.">> ANOMALY_DETECTED</strong>
-<strong class="tooltip" data-tip="Zero packet return.">> SIGNAL_RETURN: NULL</strong>
-<strong class="tooltip" data-tip="Target class unidentified.">> TYPE: UNKNOWN</strong>
+<strong>> ANOMALY_DETECTED</strong>
+<strong>> SIGNAL_RETURN: NULL</strong>
+<strong>> TYPE: UNKNOWN</strong>
 <p>
 </p>
 <p>"You see that?" Taro asked.
@@ -4111,8 +4117,8 @@
 </p>
 <p>Hana squinted.
 </p>
-<strong class="tooltip" data-tip="Attempting to identify target.">> SCANNING...</strong>
-<strong class="tooltip" data-tip="Index lookup failed.">> ERROR: TARGET_NOT_FOUND</strong>
+<strong>> SCANNING...</strong>
+<strong>> ERROR: TARGET_NOT_FOUND</strong>
 <p>
 </p>
 <p>"I see a standard Node," she said, her voice flat. "Reading nominal. Standard baseline. Slight drift of 0.02%."
@@ -4133,14 +4139,14 @@
 </p>
 <p>
 </p>
-<p>It didn't wrong note. It didn't buffer.
+<p>It didn't glitch. It didn't buffer.
 </p>
 <p>It just... stopped.
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="External signal suppression detected.">> WARNING: SIGNAL_VOID</strong>
-<strong class="tooltip" data-tip="Forceful damping of local frequencies.">> DAMPING: EXTERNAL_SOURCE</strong>
+<strong>> WARNING: SIGNAL_VOID</strong>
+<strong>> DAMPING: EXTERNAL_SOURCE</strong>
 <p>
 </p>
 <p>Taro reached out to touch the Node.
@@ -4151,21 +4157,21 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Unauthorized insignia.">> SYMBOL_ID: THE_SILENCE</strong>
+<strong>> SYMBOL_ID: THE_SILENCE</strong>
 <p>
 </p>
-<p>"Hana," Taro said, his voice dropping to a whisper that even his Score tagged as <strong class="tooltip" data-tip="Acoustic state: Quiet and measured.">CAUTION</strong>. "We're not patrolling. THE system is lagging. We're being hunted by something the Score can't render."
+<p>"Hana," Taro said, his voice dropping to a whisper that even his HUD tagged as <strong>> CAUTION</strong>. "We're not patrolling. The system is lagging. We're being hunted by something the Score can't render."
 </p>
 <p>
 </p>
 <p>The shadows stretched. 
 </p>
-<p>And for the first time, THE Score gave him no data at all. Zero packets. 
+<p>And for the first time, The Score gave him no data at all. Zero packets. 
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Target cannot be analyzed.">> ENEMY: [REDACTED_ANOMALY]</strong>
-<strong class="tooltip" data-tip="Absence of any resonant frequency.">> SIGNAL: ABSOLUTE_SILENCE</strong>
+<strong>> ENEMY: [REDACTED_ANOMALY]</strong>
+<strong>> SIGNAL: ABSOLUTE_SILENCE</strong>
 <p>
 </p>
 <p>---
@@ -4356,7 +4362,7 @@
 </p>
 <p>The agents stepped closer.
 </p>
-<p>They moved like wrong notes. Jerky. Missing frames. Unnatural.
+<p>They moved like glitches. Jerky. Missing frames. Unnatural.
 </p>
 <p>
 </p>
@@ -4473,10 +4479,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is entering a zone of total signal absence.">> ZONE: [REDACTED]</strong>
-<strong class="tooltip" data-tip="Acoustic strain on local capacity.">> SYSTEM_INTEGRITY: CRITICAL</strong>
-<strong class="tooltip" data-tip="Total restriction of all incoming and outgoing signals.">> STATUS: UNSHIELDED</strong>
-<strong class="tooltip" data-tip="Direct neural-acoustic processing mode.">> WARNING: NERVOUS_SYSTEM_MELTDOWN</strong>
+<strong>ZONE: [REDACTED]</strong>
+<strong>SYSTEM_INTEGRITY: CRITICAL</strong>
+<strong>STATUS: UNSHIELDED</strong>
+<strong>WARNING: NERVOUS_SYSTEM_MELTDOWN</strong>
 <p>
 </p>
 <p>---
@@ -4495,14 +4501,14 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is isolated for diagnostic review.">> ENVIRONMENT: HEAVY</strong>
-<strong class="tooltip" data-tip="Acoustic analysis of the target.">> VEN_STATUS: IMMOBILE</strong>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> HANA_STATUS: UNCONSCIOUS</strong>
+<strong>> ENVIRONMENT: HEAVY</strong>
+<strong>> VEN_STATUS: IMMOBILE</strong>
+<strong>> HANA_STATUS: UNCONSCIOUS</strong>
 <p>
 </p>
 <p>Hana was down. Her perfect, Hi-Fi square wave had flatlined. 
 </p>
-<p>"She can't breathe in the silence," Taro whispered, his stutter returning as his Score port struggled to render his own vocal chords. "Analysis: She’s... zzt... dependent on the Grid. If/Then: If the master clock is gone, then her heart-rate is unindexed. She’s dropping packets." We are all tethered to the Score, and when the connection is severed, we drift into the void.
+<p>"She can't breathe in the silence," Taro whispered, his stutter returning as his NAI struggled to render his own vocal chords. "Analysis: She’s... zzt... dependent on the Grid. If/Then: If the master clock is gone, then her heart-rate is unindexed. She’s dropping packets."
 </p>
 <p>
 </p>
@@ -4516,10 +4522,10 @@
 </p>
 <p>
 </p>
-<p>Taro's Score was flickering.
+<p>Taro's HUD was flickering.
 </p>
-<strong class="tooltip" data-tip="Subject considering yielding to the targets.">> OPTION: SURRENDER [PROBABILITY: DEATH]</strong>
-<strong class="tooltip" data-tip="Attempting to broadcast for assistance.">> OPTION: DISTRESS_SIGNAL [NO_CONNECTION]</strong>
+<strong>> OPTION: SURRENDER [PROBABILITY: DEATH]</strong>
+<strong>> OPTION: DISTRESS_SIGNAL [NO_CONNECTION]</strong>
 <p>
 </p>
 <p>No options.
@@ -4563,8 +4569,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Grounding circuit disconnected.">> ALERT: GROUND_LOST</strong>
-<strong class="tooltip" data-tip="Internal resonant voltage increasing rapidly.">> VOLTAGE: SPIKING</strong>
+<strong>> ALERT: GROUND_LOST</strong>
+<strong>> VOLTAGE: SPIKING</strong>
 <p>
 </p>
 <p>Taro grabbed the silver ring around his neck. The Voss-issued <span class="tooltip" data-tip="A hardware governor that caps a user's resonant output at safe levels (approx 200 Watts). Tampering with it causes &quot;Unbounded&quot; expression and self-destruction.">Limiter</span> .
@@ -4915,10 +4921,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is entering a zone of total signal absence.">> ZONE: NULL</strong>
-<strong class="tooltip" data-tip="Signal integrity at 0%. System failure.">> SYSTEM_INTEGRITY: 0%</strong>
-<strong class="tooltip" data-tip="Total restriction of all incoming and outgoing signals.">> STATUS: OFFLINE</strong>
-<strong class="tooltip" data-tip="Acoustic sensory input restored.">> WARNING: ANALOG SENSORY INPUT DETECTED</strong>
+<strong>ZONE: NULL</strong>
+<strong>SYSTEM_INTEGRITY: 0%</strong>
+<strong>STATUS: OFFLINE</strong>
+<strong>WARNING: ANALOG SENSORY INPUT DETECTED</strong>
 <p>
 </p>
 <p>---
@@ -4943,8 +4949,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Root-level modification of the environmental parameters.">> ERROR: GEOMETRY_ENGINE [OFFLINE]</strong>
-<strong class="tooltip" data-tip="Acoustic sensory input restored.">> ERROR: NO_SIGNAL</strong>
+<strong>> ERROR: GEOMETRY_ENGINE [OFFLINE]</strong>
+<strong>> ERROR: NO_SIGNAL</strong>
 <p>
 </p>
 <p>He was falling through the architecture of reality.  
@@ -4953,7 +4959,7 @@
 </p>
 <p>
 </p>
-<p>Without the Score port to render the geometry of the alleyway, the brick walls were just meaningless data points. They didn't look like walls. They looked like jagged tears in the fabric of his perception. THE ground wasn't solid; it was a vibrating field of unorganized molecular probability—an analog nightmare of raw, unindexed matter.
+<p>Without the NAI to render the geometry of the alleyway, the brick walls were just meaningless data points. They didn't look like walls. They looked like jagged tears in the fabric of his perception. The ground wasn't solid; it was a vibrating field of unorganized molecular probability—an analog nightmare of raw, unindexed matter.
 </p>
 <p>
 </p>
@@ -4970,8 +4976,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Standard behavioral protocols overridden.">> ERROR: PAIN_RECEPTORS [OVERLOAD]</strong>
-<strong class="tooltip" data-tip="Local emergency protocols activated.">> ACTION: EMERGENCY_PROTOCOL</strong>
+<strong>> ERROR: PAIN_RECEPTORS [OVERLOAD]</strong>
+<strong>> ACTION: EMERGENCY_PROTOCOL</strong>
 <p>
 </p>
 <p>And then—
@@ -5002,7 +5008,7 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Minimal operational protocols active.">> SAFE_MODE: ENGAGED</strong>
+<strong>> SAFE_MODE: ENGAGED</strong>
 <strong>> RESOLUTION: 180p</strong>
 <strong>> TEXTURES: DISABLED</strong>
 <strong>> PHYSICS: BASIC</strong>
@@ -5353,10 +5359,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject located in a secure recovery environment.">> ZONE: MALKUTH_MEDICAL [DEBUG_SUITE]</strong>
-<strong class="tooltip" data-tip="Minimal operational protocols active.">> STATUS: QUARANTINE</strong>
-<strong class="tooltip" data-tip="Individual identification code.">> SUBJECT: NISHIMURA_TARO</strong>
-<strong class="tooltip" data-tip="Classification of the system crash.">> CASE_ID: FATAL_EXCEPTION_099</strong>
+<strong>ZONE: MALKUTH_MEDICAL [DEBUG_SUITE]</strong>
+<strong>STATUS: QUARANTINE</strong>
+<strong>SUBJECT: NISHIMURA_TARO</strong>
+<strong>CASE_ID: FATAL_EXCEPTION_099</strong>
 <p>
 </p>
 <p>---
@@ -5375,8 +5381,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Optical data stream suspended.">> OUTPUT: FLAGGED [EXCESSIVE_VOLUME]</strong>
-<strong class="tooltip" data-tip="Direct neural-acoustic processing mode.">> ACTION: MUTE</strong>
+<strong>> OUTPUT: FLAGGED [EXCESSIVE_VOLUME]</strong>
+<strong>> ACTION: MUTE</strong>
 <p>
 </p>
 <p>He was strapped to a table.
@@ -5387,8 +5393,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Classification of the system crash.">> RESTRAINTS: CLASS_5 [BIOMETRIC_LOCK]</strong>
-<strong class="tooltip" data-tip="Acoustic strain on local capacity.">> MASKING_FIELD: ACTIVE</strong>
+<strong>> RESTRAINTS: CLASS_5 [BIOMETRIC_LOCK]</strong>
+<strong>> MASKING_FIELD: ACTIVE</strong>
 <p>
 </p>
 <p>Taro tried to move his hands. The restraints didn't bulge. They weren't just physical; they were haptic dampeners. They canceled out any kinetic energy he tried to generate.
@@ -5411,9 +5417,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Acoustic analysis of the target." data-trigger="adjutant_krell">> ID: ADJUTANT_KRELL [THE_ENFORCER]</strong>
-<strong class="tooltip" data-tip="Predicted risk level.">> THREAT: LETHAL</strong>
-<strong class="tooltip" data-tip="Authority level over the current sector.">> AUTHORITY: UNCHECKED</strong>
+<strong data-trigger="adjutant_krell">> ID: ADJUTANT_KRELL [THE_ENFORCER]</strong>
+<strong>> THREAT: LETHAL</strong>
+<strong>> AUTHORITY: UNCHECKED</strong>
 <p>
 </p>
 <p>Krell didn't look at Taro. He looked at a floating holographic display that showed a diagram of Taro's nervous system. Parts of it were flashing red.
@@ -5459,8 +5465,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Standard behavioral protocols overridden.">> ALERT: PAIN_THRESHOLD_EXCEEDED</strong>
-<strong class="tooltip" data-tip="Subject is isolated for diagnostic review.">> DIAGNOSTIC: BONE_CONDUCTION_TEST</strong>
+<strong>> ALERT: PAIN_THRESHOLD_EXCEEDED</strong>
+<strong>> DIAGNOSTIC: BONE_CONDUCTION_TEST</strong>
 <p>
 </p>
 <p>"Resonance test," Krell muttered, watching the display. "He conducted that scream through his own skeleton. The bone density is altered. High-frequency calcification. He's been doing this for years."
@@ -6080,10 +6086,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is isolated for diagnostic review.">> ZONE: MALKUTH_ACADEMY_DORMS</strong>
-<strong class="tooltip" data-tip="Minimal operational protocols active.">> SYSTEM_STATUS: ONLINE</strong>
-<strong class="tooltip" data-tip="Individual identification code.">> FIRMWARE: V2.0 [PATCHED]</strong>
-<strong class="tooltip" data-tip="Acoustic analysis of the target.">> USER: NISHIMURA_TARO</strong>
+<strong>ZONE: MALKUTH_ACADEMY_DORMS</strong>
+<strong>SYSTEM_STATUS: ONLINE</strong>
+<strong>FIRMWARE: V2.0 [PATCHED]</strong>
+<strong>USER: NISHIMURA_TARO</strong>
 <p>
 </p>
 <p>---
@@ -6102,7 +6108,7 @@
 </p>
 <p>
 </p>
-<p>The ceiling was a perfect, seamless white, rendered in 8K resolution. The light filtering through the window wasn't just light; it was a volumetric simulation of a "Perfect Morning," complete with dust motes dancing in the sunbeams. The dust motes didn't irritate his nose. They were purely cosmetic. We think of perfection as an achievement, but in the Score, it's just a setting.
+<p>The ceiling was a perfect, seamless white, rendered in 8K resolution. The light filtering through the window isn't just light; it was a volumetric simulation of a "Perfect Morning," complete with dust motes dancing in the sunbeams. The dust motes didn't irritate his nose. They were purely cosmetic.
 </p>
 <p>
 </p>
@@ -6122,16 +6128,16 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Direct neural-acoustic processing mode.">> DIAGNOSTIC: ALL_SYSTEMS_GO</strong>
-<strong class="tooltip" data-tip="Total phase alignment with the master clock.">> SYNC_RATE: 100%</strong>
-<strong class="tooltip" data-tip="Primary emotional state.">> MOOD: CALM</strong>
+<strong>> DIAGNOSTIC: ALL_SYSTEMS_GO</strong>
+<strong>> SYNC_RATE: 100%</strong>
+<strong>> MOOD: CALM</strong>
 <p>
 </p>
 <p>He looked at his hands.
 </p>
 <p>
 </p>
-<p>They weren't wireframes. They weren't wrong noting. They were high-fidelity skin textures, perfectly mapped to his bone structure. He could see the pores. He could see the fingerprints. But when he rubbed them together, he couldn't feel the drag. THE friction coefficient had been smoothed out.
+<p>They weren't wireframes. They weren't glitching. They were high-fidelity skin textures, perfectly mapped to his bone structure. He could see the pores. He could see the fingerprints. But when he rubbed them together, he couldn't feel the drag. The friction coefficient had been smoothed out.
 </p>
 <p>
 </p>
@@ -6191,10 +6197,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Internal frequency exceeding standard tolerances." data-trigger="voss_link">> DEVICE: VOSS_LINK [V2]</strong>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> STATUS: ACTIVE</strong>
-<strong class="tooltip" data-tip="Total restriction of all incoming and outgoing signals.">> OUTPUT_CAP: 50% [SAFE]</strong>
-<strong class="tooltip" data-tip="Individual identification code.">> EMOTIONAL_DAMPING: 30%</strong>
+<strong data-trigger="voss_link">> DEVICE: VOSS_LINK [V2]</strong>
+<strong>> STATUS: ACTIVE</strong>
+<strong>> OUTPUT_CAP: 50% [SAFE]</strong>
+<strong>> EMOTIONAL_DAMPING: 30%</strong>
 <p>
 </p>
 <p>Taro touched the collar. It felt like it was fused to his skin.
@@ -6248,7 +6254,7 @@
 </p>
 <p>
 </p>
-<p data-trigger="optimized_friends">"They fixed us, Taro," Ven said. "Voss... he actually fixed us. No more overloads. No more wrong noting. We're compatible."</p>
+<p data-trigger="optimized_friends">"They fixed us, Taro," Ven said. "Voss... he actually fixed us. No more overloads. No more glitching. We're compatible."</p>
 <p>
 </p>
 <p>"Compatible," Taro repeated. The word tasted sweet. Like artificial sweetener.
@@ -6271,8 +6277,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Standard behavioral protocols overridden.">> GREETING: [POLITE_NOD]</strong>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> STATUS: ACCEPTED</strong>
+<strong>> GREETING: [POLITE_NOD]</strong>
+<strong>> STATUS: ACCEPTED</strong>
 <p>
 </p>
 <p>Taro nodded back. His neck moved smoothly. No resistance.
@@ -6355,7 +6361,7 @@
 </p>
 <p>
 </p>
-<p>But his friends were smiling. Ven wasn't burning. Hana wasn't wrong noting. They were happy.
+<p>But his friends were smiling. Ven wasn't burning. Hana wasn't glitching. They were happy.
 </p>
 <p>
 </p>
@@ -6414,8 +6420,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Minimal operational protocols active.">> SYSTEM_STATUS: COMPLIANT.</strong>
-<strong class="tooltip" data-tip="Acoustic strain on local capacity.">> USER_SOUL: [BUFFERING]</strong>
+<strong>> SYSTEM_STATUS: COMPLIANT.</strong>
+<strong>> USER_SOUL: [BUFFERING]</strong>
 <p>
 </p>
 <p>---
@@ -6437,10 +6443,10 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is isolated for diagnostic review.">> ZONE: MALKUTH_ACADEMY</strong>
-<strong class="tooltip" data-tip="Minimal operational protocols active.">> SYSTEM_STATUS: ONLINE</strong>
-<strong class="tooltip" data-tip="Individual identification code.">> FIRMWARE: V2.0 [PATCHED]</strong>
-<strong class="tooltip" data-tip="Acoustic analysis of the target.">> USER: NISHIMURA_TARO</strong>
+<strong>ZONE: MALKUTH_ACADEMY</strong>
+<strong>SYSTEM_STATUS: ONLINE</strong>
+<strong>FIRMWARE: V2.0 [PATCHED]</strong>
+<strong>USER: NISHIMURA_TARO</strong>
 <p>
 </p>
 <p>---
@@ -6486,11 +6492,11 @@
 </p>
 <p>It wasn't just unsightly. It was loud.
 </p>
-<p>It was <span class="tooltip" data-tip="An algorithm that auto-tunes social interactions, smoothing out awkward pauses and damping conflict spikes to create a pleasant but fake society.">Social Harmony</span> .
+<p>It was <span class="tooltip" data-tip="An NAI algorithm that auto-tunes social interactions, smoothing out awkward pauses and damping conflict spikes to create a pleasant but fake society.">Social Harmony</span> .
 </p>
 <p>
 </p>
-<p>He tapped his temple, a phantom itch where the old collar used to be. THE new limiter was internal, buried deep in his Score port's kernel. It didn't block the dissonance; it just stopped him from reacting to it. It was a mute button for his output, not his input. We spend our lives in the shadow of the Score, never realizing that the shadow is the only thing that's real.
+<p>He tapped his temple, a phantom itch where the old collar used to be. The new limiter was internal, buried deep in his NAI's kernel. It didn't block the dissonance; it just stopped him from reacting to it. It was a mute button for his output, not his input.
 </p>
 <p>
 </p>
@@ -6719,7 +6725,7 @@
 </p>
 <p>
 </p>
-<p>"The atmospheric density in that sector," Hana said. Her voice was clear, but Taro could hear the strain in it. She was vibrating with suppressed anger, but her Score port was working overtime to keep her damped. "Analysis: THE replay does not account for the local key signature. If the environment was anti-phase Low-Fi, then the propagation delay is within standard error margins."
+<p>"The atmospheric density in that sector," Hana said. Her voice was clear, but Taro could hear the strain in it. She was vibrating with suppressed anger, but her NAI was working overtime to keep her damped. "Analysis: The replay does not account for the local key signature. If the environment was anti-phase Low-Fi, then the propagation delay is within standard error margins."
 </p>
 <p>
 </p>
@@ -6908,7 +6914,7 @@
 </p>
 <p>
 </p>
-<p>If he sounded "wrong note-ish"... Krell would pay her a visit.
+<p>If he sounded "glitchy"... Krell would pay her a visit.
 </p>
 <p>
 </p>
@@ -7002,7 +7008,7 @@
 </p>
 <p>
 </p>
-<p>"Taro?" Ven asked. "You okay? You're wrong noting."
+<p>"Taro?" Ven asked. "You okay? You're glitching."
 </p>
 <p>
 </p>
@@ -7014,7 +7020,7 @@
 </p>
 <p>
 </p>
-<em>The wrong note is inside the house.</em>
+<em>The glitch is inside the house.</em>
 <p>
 </p>
 <p>---
@@ -7078,11 +7084,11 @@
 </p>
 <p>
 </p>
-<p>It wasn't just a wrong note. It was a completely different shape.
+<p>It wasn't just a glitch. It was a completely different shape.
 </p>
 <p>
 </p>
-<p data-trigger="hull_vs_wrong_note">The "Cadet Taro" <span class="tooltip" data-tip="The projected 'Corrected Self' avatar that the Score port overlays on a user's physical body.">Hull</span> was symmetrical, solid, harmonious. A Major Chord made of flesh.</p>
+<p data-trigger="hull_vs_glitch">The "Cadet Taro" <span class="tooltip" data-tip="The projected 'Corrected Self' avatar that the NAI overlays on a user's physical body.">Hull</span> was symmetrical, solid, harmonious. A Major Chord made of flesh.</p>
 <p>The wireframe underneath was jagged, asymmetrical, splintered. A Dissonant Chord struggling to break free.
 </p>
 <p>
@@ -7115,7 +7121,7 @@
 </p>
 <p>
 </p>
-<p>The "Cadet" in the mirror was the mask. THE "Wrong Note" was the person.
+<p>The "Cadet" in the mirror was the mask. The "Glitch" was the person.
 </p>
 <p>
 </p>
@@ -7173,7 +7179,7 @@
 </p>
 <p>
 </p>
-<p>Kimura was wrong noting.
+<p>Kimura was glitching.
 </p>
 <p>
 </p>
@@ -7201,7 +7207,7 @@
 </p>
 <p>
 </p>
-<p>Because looking at Kimura wrong noting... looking at that radiant wireframe fighting against THE heavy, suffocating hull... it was like looking in a mirror.
+<p>Because looking at Kimura glitching... looking at that radiant wireframe fighting against the heavy, suffocating hull... it was like looking in a mirror.
 </p>
 <p>
 </p>
@@ -7307,12 +7313,12 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Optical data stream suspended.">> DIALOGUE_EVENT: RESONANCE_SYNC</strong>
-<strong class="tooltip" data-tip="Direct neural-acoustic processing mode.">> STATUS: MASKING_OFF</strong>
-<strong class="tooltip" data-tip="Zero-filtering raw signal feed.">> SIGNAL: UNFILTERED</strong>
+<strong>> DIALOGUE_EVENT: RESONANCE_SYNC</strong>
+<strong>> STATUS: MASKING_OFF</strong>
+<strong>> SIGNAL: UNFILTERED</strong>
 <p>
 </p>
-<p>For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore. They were two wrong notes in a perfect machine, and for a brief, flickering moment, they were in phase.
+<p>For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore. They were two glitches in a perfect machine, and for a brief, flickering moment, they were in phase.
 </p>
 <p>
 </p>
@@ -7335,9 +7341,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is isolated for diagnostic review.">> ZONE: PRACTICE_ROOM_404 [LOCKED]</strong>
-<strong class="tooltip" data-tip="Minimal operational protocols active.">> SYSTEM_TIME: 05:00:00</strong>
-<strong class="tooltip" data-tip="Maximum signal suppression active to prevent accidental discharge.">> AUDIO_STATUS: SOUNDPROOFING_MAX (120dB)</strong>
+<strong>ZONE: PRACTICE_ROOM_404 [LOCKED]</strong>
+<strong>SYSTEM_TIME: 05:00:00</strong>
+<strong>AUDIO_STATUS: SOUNDPROOFING_MAX (120dB)</strong>
 <p>
 </p>
 <p>---
@@ -7348,11 +7354,11 @@
 </h4>
 <p>
 </p>
-<p>"It's called 'Retuning'," Elara said. Her voice had a slight echo, a shimmering texture that indicated her Score port filters were partially disengaged.
+<p>"It's called 'Retuning'," Elara said. Her voice had a slight echo, a shimmering texture that indicated her NAI filters were partially disengaged.
 </p>
 <p>
 </p>
-<p>The cello lay forgotten on the floor. She was sitting cross-legged, the holographic interface floating between them. It was a hacking deck—a custom, jailbroken UI that glowed with an illegal, warm amber light. It looked like vintage analog gear shoved into a digital world. We are all Architects of our own silence, building little boxes of quiet where the Score can't find us.
+<p>The cello lay forgotten on the floor. She was sitting cross-legged, the holographic interface floating between them. It was a hacking deck—a custom, jailbroken UI that glowed with an illegal, warm amber light. It looked like vintage analog gear shoved into a digital world.
 </p>
 <p>
 </p>
@@ -7364,7 +7370,7 @@
 </p>
 <p>
 </p>
-<p>"This is me," she said, pointing to the chaos. "This is my raw resonance. My <span class="tooltip" data-tip="A derogatory slang for a user's biological 'destiny' or birth resonance, which the C-Order considers immutable and 'Right'.">Factory Setting</span> . THE system scans this at birth, says 'High Mass, Low-End Pitch,' and locks THE Hull class. It ignores THE sub-harmonics."
+<p>"This is me," she said, pointing to the chaos. "This is my raw resonance. My <span class="tooltip" data-tip="A derogatory slang for a user's biological 'destiny' or birth resonance, which the C-Order considers immutable and 'Right'.">Factory Setting</span> . The system scans this at birth, says 'High Mass, Low-End Pitch,' and locks the Hull class. It ignores the sub-harmonics."
 </p>
 <p>
 </p>
@@ -7372,7 +7378,7 @@
 </p>
 <p>
 </p>
-<p>"And this," she said, her voice dropping into a grainier, bit-crushed tone, "is the mask. THE 'Stabilizer' algorithm. It forces my chaotic signal into a clean sine wave. It's an active noise-cancellation filter running 24/7 in my Score port. It's Hi-Fi lies."
+<p>"And this," she said, her voice dropping into a grainier, bit-crushed tone, "is the mask. The 'Stabilizer' algorithm. It forces my chaotic signal into a clean sine wave. It's an active noise-cancellation filter running 24/7 in my NAI. It's Hi-Fi lies."
 </p>
 <p>
 </p>
@@ -7396,20 +7402,20 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Initiating unauthorized frequency adjustment." data-trigger="illegal_modulations">> EXECUTE: MODULATION_PROTOCOL</strong>
-<strong class="tooltip" data-tip="Shifting target frequency up by two octaves.">> TARGET: PITCH_SHIFT +2 OCTAVES</strong>
-<strong class="tooltip" data-tip="Device protection agreement is now null and void.">> WARNING: WARRANTY_VOID</strong>
+<strong data-trigger="illegal_modulations">> EXECUTE: MODULATION_PROTOCOL</strong>
+<strong>> TARGET: PITCH_SHIFT +2 OCTAVES</strong>
+<strong>> WARNING: WARRANTY_VOID</strong>
 <p>
 </p>
 <p>It was illegal <span class="tooltip" data-tip="Unauthorized code injection that modifies a user's resonant frequency, bypassing the Hull locks.">Modulation</span> .
 </p>
 <p>
 </p>
-<p>"The System locks our resonance," Elara explained. "It says your pitch is fixed. Immutable. Biological destiny." She scoffed. "But the Score port is software. And software can be cracked."
+<p>"The System locks our resonance," Elara explained. "It says your pitch is fixed. Immutable. Biological destiny." She scoffed. "But the NAI is software. And software can be cracked."
 </p>
 <p>
 </p>
-<p>"You hacked your own Score port?" Taro asked, stunned. Tampering with a Neural Audio Interface was a one-way ticket to a lobotomy ward.
+<p>"You hacked your own NAI?" Taro asked, stunned. Tampering with a Neural Audio Interface was a one-way ticket to a lobotomy ward.
 </p>
 <p>
 </p>
@@ -7421,7 +7427,7 @@
 </p>
 <p>
 </p>
-<em>Wrong Note.</em>
+<em>Glitch.</em>
 <p>
 </p>
 <p>For a second, the heavy, gloved hand of "Cadet Kimura" vanished. In its place was the slender, radiant wireframe hand Taro had seen before. No textures. No hulls. Just the raw mesh.
@@ -7440,7 +7446,7 @@
 </p>
 <p>
 </p>
-<p>"Because THE C-Order has scanners," she said. "If THE Gatekeepers detect a signal that doesn't match THE Hull ID, they flag it as 'Corruption.' They assume you're a virus. A wrong note. They drag you to THE White Room and they... 'Reformat' you."
+<p>"Because the C-Order has scanners," she said. "If the Gatekeepers detect a signal that doesn't match the Hull ID, they flag it as 'Corruption.' They assume you're a virus. A glitch. They drag you to the White Room and they... 'Reformat' you."
 </p>
 <p>
 </p>
@@ -7452,7 +7458,7 @@
 </p>
 <p>
 </p>
-<p>"We hide," Elara corrected. "There are others, Taro. Not many. But enough to make a chorus." We spend our lives in the shadow of the Score, never realizing that the shadow is the only thing that's real.
+<p>"We hide," Elara corrected. "There are others, Taro. Not many. But enough to make a chorus."
 </p>
 <p>
 </p>
@@ -7536,8 +7542,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="New coordinate data added to the navigation map.">> ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]</strong>
-<strong class="tooltip" data-tip="Subject is choosing between two diverging paths.">> STATUS: CROSSROADS_REACHED</strong>
+<strong>> ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]</strong>
+<strong>> STATUS: CROSSROADS_REACHED</strong>
 <p>
 </p>
 <p>Taro looked at the chip, then back at Elara. The "Tank" cadet was gone. He saw her now—really saw her. The wireframe shining through the cracks in the armor.
@@ -7567,9 +7573,9 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Subject is entering a zone of total signal absence.">> ZONE: SECTOR_4 [SUB-BASS_LEVELS]</strong>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> SYSTEM_TIME: 23:45:00</strong>
-<strong class="tooltip" data-tip="Fatal system error. Reboot failed.">> WARNING: LEAVING_NETWORK_COVERAGE</strong>
+<strong>ZONE: SECTOR_4 [SUB-BASS_LEVELS]</strong>
+<strong>SYSTEM_TIME: 23:45:00</strong>
+<strong>WARNING: LEAVING_NETWORK_COVERAGE</strong>
 <p>
 </p>
 <p>---
@@ -7597,7 +7603,7 @@
 <strong>[|||||]</strong> ... <strong>[|||..]</strong> ... <strong>[|....]</strong>
 <p>
 </p>
-<p>When the last bar vanished, a strange sensation washed over him. THE constant, high-pitched hum of THE C-Order Network—the "Carrier Wave" that connected every Score port in THE city—cut out.
+<p>When the last bar vanished, a strange sensation washed over him. The constant, high-pitched hum of the C-Order Network—the "Carrier Wave" that connected every NAI in the city—cut out.
 </p>
 <p>
 </p>
@@ -7605,15 +7611,15 @@
 </p>
 <p>
 </p>
-<p>The elevator doors groaned open. THE air here was thick, smelling of ozone and old coolant.
+<p>The elevator doors groaned open. The air here was thick, smelling of ozone and old coolant.
 </p>
 <p>
 </p>
-<p>"Welcome to the Dead Zone," Elara said. Her voice was already starting to wrong note without THE C-Order to smooth her formants. "No network cover--zzt--age down here. Total analog territory."
+<p>"Welcome to the Dead Zone," Elara said. Her voice was already starting to glitch without the C-Order to smooth her formants. "No network cover--zzt--age down here. Total analog territory."
 </p>
 <p>
 </p>
-<p>She was standing next to him, but she looked... unstable. Without the Network to enforce her Hull ID, her "Tank" avatar was flickering violently. THE heavy shoulders were phasing in and out of existence, revealing THE wireframe light beneath. We spend our lives pretending to be THE shapes THE world expects, but in the dark, THE truth always flickers through.
+<p>She was standing next to him, but she looked... unstable. Without the Network to enforce her Hull ID, her "Tank" avatar was flickering violently. The heavy shoulders were phasing in and out of existence, revealing the wireframe light beneath.
 </p>
 <p>
 </p>
@@ -7633,8 +7639,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Multiple non-standard frequencies identified.">> DETECTED: UNREGISTERED_FREQUENCY_CLUSTER</strong>
-<strong class="tooltip" data-tip="Acoustic strain on local capacity.">> SOURCE: 120dB [CHAOS]</strong>
+<strong>> DETECTED: UNREGISTERED_FREQUENCY_CLUSTER</strong>
+<strong>> SOURCE: 120dB [CHAOS]</strong>
 <p>
 </p>
 <p>The sound hit them like a physical wave.
@@ -7690,7 +7696,7 @@
 </p>
 <p>
 </p>
-<p>The "Tank" hull didn't just wrong note—it shattered.
+<p>The "Tank" hull didn't just glitch—it shattered.
 </p>
 <p>
 </p>
@@ -7761,8 +7767,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Internal frequency exceeding standard tolerances.">> WARNING: UNAUTHORIZED_OSCILLATION</strong>
-<strong class="tooltip" data-tip="Standard behavioral protocols overridden.">> PROTOCOL: SHOCK_THERAPY [MAX]</strong>
+<strong>> WARNING: UNAUTHORIZED_OSCILLATION</strong>
+<strong>> PROTOCOL: SHOCK_THERAPY [MAX]</strong>
 <p>
 </p>
 <em>ZAP.</em>
@@ -7796,8 +7802,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="External signal suppression detected.">> ERROR: ENERGY_DRAIN_DETECTED</strong>
-<strong class="tooltip" data-tip="Acoustic sensory input restored.">> SOURCE: INTERNAL_SINK</strong>
+<strong>> ERROR: ENERGY_DRAIN_DETECTED</strong>
+<strong>> SOURCE: INTERNAL_SINK</strong>
 <p>
 </p>
 <p>The collar whined, then died with a sharp <em>click</em>.
@@ -7898,8 +7904,8 @@
 </p>
 <p>
 </p>
-<strong class="tooltip" data-tip="Session resumed. Global alignment restored.">> SYSTEM_STATUS: RESONANCE_ACCEPTED</strong>
-<strong class="tooltip" data-tip="Subject is entering a zone of total signal absence.">> HULL_TYPE: NULL_VOID [UNIQUE]</strong>
+<strong>> SYSTEM_STATUS: RESONANCE_ACCEPTED</strong>
+<strong>> HULL_TYPE: NULL_VOID [UNIQUE]</strong>
 <p>
 </p>
 <p>---
@@ -7930,7 +7936,7 @@
 </p>
 <p>
 </p>
-<p>He looked at Elara. He looked at THE crowd of wrong notes.
+<p>He looked at Elara. He looked at the crowd of glitches.
 </p>
 <p>
 </p>
@@ -8408,7 +8414,7 @@ const NARRATIVE_SIGNALS = {
     human_agency: 0.45,        // Recognition
     instability: 0.75,         // Hull failure
     surveillance: 0.60,
-    fragments_allowed: ["hull_vs_wrong_note", "kimura_practice"],
+    fragments_allowed: ["hull_vs_glitch", "kimura_practice"],
     scroll_resistance: 1.10,
     heartbeat_bpm: 95,
     silence_suppression: false
@@ -8612,8 +8618,8 @@ const FRAGMENT_DATA = {
     x: "78%",
     activationBand: 0.08
   },
-  "hull_vs_wrong_note": {
-    text: "hull: pretty lie / wrong note: ugly truth / which one is real?",
+  "hull_vs_glitch": {
+    text: "hull: pretty lie / glitch: ugly truth / which one is real?",
     y_anchor: 0.86,
     x: "20%",
     activationBand: 0.08

@@ -8,7 +8,7 @@
 
 ## PHASE I: THE IMPULSE (Chapters 1-3)
 **Physics**: A high-energy spike enters a stable system.
-**UI Theme**: "The Glitch" vs "The System."
+**UI Theme**: "The Wrong Note" vs "The System."
 
 ### Chapter 1: The Zap
 - **Event**: Taro's NAI boots up. He sees the "Wrong Note" as a code injection.
@@ -18,7 +18,7 @@
 ### Chapter 2: The Assessment
 - **Event**: Interrogation by Adjutant Voss in the "White Room."
 - **AR Focus**: Social Tagging. Voss's deceptive "Safe" tags vs. Taro's "Threat" perception.
-- **Manga Beat**: The extreme close-up of Voss's eye glitching green for one frame.
+- **Manga Beat**: The extreme close-up of Voss's eye wrong noting green for one frame.
 
 ### Chapter 3: Modulation
 - **Event**: Taro says goodbye to Kael (Father).
@@ -49,7 +49,7 @@
 ### Chapter 7: The Rival (Planned)
 - **Event**: Introduction of Marcus Staccato (Vanguard Elite).
 - **AR Focus**: "Combat UI." Threat assessment, path prediction.
-- **Manga Beat**: Marcus moving faster than the frame rate (Glitch movement).
+- **Manga Beat**: Marcus moving faster than the frame rate (Wrong Note movement).
 
 ### Chapter 8: The Sortie (Planned)
 - **Event**: First field mission. Into the "Twilight Band."

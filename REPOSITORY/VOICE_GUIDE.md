@@ -21,7 +21,7 @@ The population of Unison and the surrounding territories speaks a dialect influe
 
 ### Social Categories
 - **High-Fidelity (Hi-Fi)**: Someone who is "perfectly" neurotypical, calm, and socially predictable. Often used as an insult by Flux types.
-- **Low-Fi**: Someone quirky, unpredictable, or "glitchy."
+- **Low-Fi**: Someone quirky, unpredictable, or "wrong note-ish."
 - **Analog**: A slur for the "Deaf" (those without NAI) or those who refuse to use The Score.
 - **Broadband**: Someone who processes too much information at once (Hyper-perceptive).
 - **Damped**: Someone who is masking or suppressing their emotions/signal.
@@ -59,7 +59,7 @@ The population of Unison and the surrounding territories speaks a dialect influe
 - **Vibe**: Tactical and urgent.
 - *Example*: *"Target locked at 440Hz. Shift phase on the fourth beat. Go!"*
 
-### Flux Syndicate (Glitch/Pirate)
+### Flux Syndicate (Wrong Note/Pirate)
 - **Style**: Fragmented, slang-heavy, informal.
 - **Key Terms**: Static, Noise, Feedback, Raw, Unfiltered.
 - **Vibe**: Counter-culture, messy, "analog-cool."

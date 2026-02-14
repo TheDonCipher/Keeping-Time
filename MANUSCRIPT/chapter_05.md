@@ -23,9 +23,9 @@ The Sandbox was a void. A "Null State" environment where the Academy server susp
 **> NODE 2: VEN [SINK]**
 **> NODE 3: TARO [VARIABLE]**
 
-"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional jitter. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the [[Triad::A standard tactical unit composed of three resonant frequencies: Root (Command), Third (Support), and Fifth (Offense).]] will stabilize."
+"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional sawtooth oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the [[Triad::A standard tactical unit composed of three resonant frequencies: Root (Command), Third (Support), and Fifth (Offense).]] will stabilize." In the Sandbox, everything is a variable, and variables are the enemy of the state. We are taught that to be human is to be unpredictable, but here, to be unpredictable is to be deleted.
 
-"The Fifth?" Taro asked, his heartbeat spiking. "My... uh... my frequency isn't fixed. I jitter."
+"The Fifth?" Taro asked, his heartbeat spiking. "My... uh... my frequency isn't fixed. I sawtooth oscillation."
 
 "Do not speak," Hana corrected. "Output. Manual speech introduces too much mechanical noise."
 
@@ -132,13 +132,13 @@ Hana stared at the telemetry stream.
 
 Hana looked at the data. She looked at Taro. Then at Ven.
 The "Disgust" tag didn't appear.
-Instead, the system calculated a new probability.
+Instead, the Score calculated a new probability.
 
 **> ANALYSIS: NEW_TOPOLOGY**
 **> POTENTIAL: SIEGE_BREAKER**
 **> EFFICIENCY: HIGH**
 
-"Fine," Hana said. "Forget the Triad. Let's see how much bass we can generate before the server crashes."
+"Fine," Hana said. "Forget the Triad. Let's see how much bass we can generate before the Score crashes."
 
 Taro grinned. The heat in his wrist faded as Ven pulled the excess load.
 His system status finally flashed green.

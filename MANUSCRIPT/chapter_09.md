@@ -95,7 +95,7 @@ Hana gasped and fell to her knees, clutching her chest. "My... my core... it’s
 "They drain Resonance," Taro screamed. "Ven! Don't ground them! You'll drain the whole grid!"
 
 The agents stepped closer.
-They moved like glitches. Jerky. Missing frames. Unnatural.
+They moved like wrong notes. Jerky. Missing frames. Unnatural.
 
 One raised a knife toward Hana.
 

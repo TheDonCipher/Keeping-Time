@@ -26,7 +26,7 @@ But then, he blinked.
 
 For a microsecond, the texture map of his face popped. The skin, the hair, the bone structure—it all vanished, replaced by a jagged, screaming wireframe of raw blue light.
 
-It wasn't just a glitch. It was a completely different shape.
+It wasn't just a wrong note. It was a completely different shape.
 
 The "Cadet Taro" [[Hull::The projected 'Corrected Self' avatar that the NAI overlays on a user's physical body.]] was symmetrical, solid, harmonious. A Major Chord made of flesh.
 The wireframe underneath was jagged, asymmetrical, splintered. A Dissonant Chord struggling to break free.
@@ -46,7 +46,7 @@ But looking at the wireframe—that sharp, electric, terrifying shape—Taro rea
 
 It was *him*. The raw signal.
 
-The "Cadet" in the mirror was the mask. The "Glitch" was the person.
+The "Cadet" in the mirror was the mask. The "Wrong Note" was the person.
 
 He squeezed his eyes shut. The dysphoria washed over him—an ontological nausea that felt like a permanent stuttering lag. Being "Corrected" by the system, being "Patched" by Voss... it felt like being deleted, bit by bit, to free up space for a version of himself he didn't even recognize. 
 
@@ -76,7 +76,7 @@ It was a senior cadet. Taro recognized the uniform. Kimura. "The Tank." A heavy-
 
 But Kimura wasn't stabilizing anything right now.
 
-Kimura was glitching.
+Kimura was wrong noting.
 
 Taro watched, breath held, as the cadet played a melody so fragile and high-pitched it made Taro's teeth ache. And with every note, the "Tank" hull flickered.
 
@@ -91,7 +91,7 @@ Taro didn't move. He should leave. This was private. This was the most intimate,
 
 But he couldn't look away.
 
-Because looking at Kimura glitching... looking at that radiant wireframe fighting against the heavy, suffocating hull... it was like looking in a mirror.
+Because looking at Kimura wrong noting... looking at that radiant wireframe fighting against the heavy, suffocating hull... it was like looking in a mirror.
 
 *He feels it too,* Taro realized. The shock hit him harder than a sonic blast. *I'm not the only one.*
 
@@ -149,7 +149,7 @@ Kimura hesitated. Then, a small, sad smile touched the corner of the heavy jawli
 **> STATUS: MASKING_OFF**
 **> SIGNAL: UNFILTERED**
 
-For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore. They were two glitches in a perfect machine, and for a brief, flickering moment, they were in phase.
+For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore. They were two wrong notes in a perfect machine, and for a brief, flickering moment, they were in phase.
 
 ---
 

@@ -14,7 +14,7 @@
 
 The dropship doors hissed open.
 
-Beneath them lay the [[Twilight Band::The buffer zone between the High-Fidelity Inner City and the Low-Fi Outer Slums, characterized by inconsistent reality rendering.]] . A "Glitch" zone where the reality render is inconsistent. Textures pop in and out. The air tastes of both ozone (wealth) and sulfur (poverty).
+Beneath them lay the [[Twilight Band::The buffer zone between the High-Fidelity Inner City and the Low-Fi Outer Slums, characterized by inconsistent reality rendering.]] . A "Wrong Note" zone where the reality render is inconsistent. Textures pop in and out. The air tastes of both ozone (wealth) and sulfur (poverty).
 
 "Deployment in 3... 2... 1..."
 
@@ -44,7 +44,7 @@ His filter-agnostic eyes caught the flicker.
 For one frame (1/60th of a second), the texture failed to load.
 Beneath the white marble AR skin, the wall was actually crumbling concrete, covered in black mold. It smelled like wet rot.
 
-**> GLITCH_DETECTED**
+**> WRONG_NOTE_DETECTED**
 **> TEXTURE_FAILURE: 5%**
 
 "It's a slum," Taro whispered, his voice catching on the dissonance he was seeing. "The architecture... it’s all low-bit placeholders."
@@ -100,7 +100,7 @@ The "Golden" AR texture peeled away like burnt skin.
 The air got cold.
 The High Register hum—his constant companion—faltered.
 
-It didn't glitch. It didn't buffer.
+It didn't wrong note. It didn't buffer.
 It just... stopped.
 
 **> WARNING: SIGNAL_VOID**

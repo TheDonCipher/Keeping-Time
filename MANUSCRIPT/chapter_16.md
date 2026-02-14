@@ -49,7 +49,7 @@ It was illegal [[Modulation::Unauthorized code injection that modifies a user's 
 
 She reached out and touched the holographic waveform. As her finger made contact, her hand flickered violently—phasing between the heavy glove and the light beneath.
 
-*Glitch.*
+*Wrong Note.*
 
 For a second, the heavy, gloved hand of "Cadet Kimura" vanished. In its place was the slender, radiant wireframe hand Taro had seen before. No textures. No hulls. Just the raw mesh.
 
@@ -59,7 +59,7 @@ For a second, the heavy, gloved hand of "Cadet Kimura" vanished. In its place wa
 
 Elara laughed, a dark, humorless sound. She let go of the interface. The wireframe hand snapped back into the heavy glove.
 
-"Because the C-Order has scanners," she said. "If the Gatekeepers detect a signal that doesn't match the Hull ID, they flag it as 'Corruption.' They assume you're a virus. A glitch. They drag you to the White Room and they... 'Reformat' you."
+"Because the C-Order has scanners," she said. "If the Gatekeepers detect a signal that doesn't match the Hull ID, they flag it as 'Corruption.' They assume you're a virus. A wrong note. They drag you to the White Room and they... 'Reformat' you."
 
 Taro shuddered. He knew what Reformatting meant. It was what Voss had tried to do to him. Erasing the person to save the code.
 

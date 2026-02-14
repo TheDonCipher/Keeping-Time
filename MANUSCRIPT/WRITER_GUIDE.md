@@ -53,7 +53,7 @@ The user requested "Reduced Frequency Talk."
 
 ## 4. FORMATTING RULES
 1.  **System Headers**: Use them to define the scene's "Operating Parameters."
-2.  **Visual Metaphors**: Use UI/UX metaphors. Glitches, Frame Drops, Rendering Errors, Blue Screens.
+2.  **Visual Metaphors**: Use UI/UX metaphors. Wrong Notes, Frame Drops, Rendering Errors, Blue Screens.
 4.  **The Manual**: Occasionally, the narrative should sound like it is quoting the *Keepers' Handbook*.
 5.  **Resonant Dialect**: Consult `VOICE_GUIDE.md` for slang (e.g., *Broadband*, *Damping*, *Hi-Fi*) and `03_CHARACTERS_REGISTRY.md` for character-specific system overlays.
 
@@ -109,8 +109,8 @@ Use HTML `<details>` tags for all sidebars.
 
 ## 7.1 LORE EXPANSION: RESONANCE DYSPHORIA (THE WIREFRAME)
 **Concept**: Some individuals have an "Inner Resonance" (True Self) that conflicts with their "Assigned Resonance" (System-enforced Hull/Appearance).
--   **The Glitch**: The System tries to "Error Correct" them into their assigned shape.
--   **The Wireframe**: When "Masking" fails (or when viewed by Dissonance Vision), the texture map glitches, revealing the raw wireframe of the "True Self" pushing against the mesh.
+-   **The Wrong Note**: The System tries to "Error Correct" them into their assigned shape.
+-   **The Wireframe**: When "Masking" fails (or when viewed by Dissonance Vision), the texture map wrong notes, revealing the raw wireframe of the "True Self" pushing against the mesh.
 -   **The Illegal Mod**: "Retuning" or "Modulation" is the act of changing one's base frequency to match the inner self. The C-Order views this as "Hacktivism" or "Data Corruption."
 
 

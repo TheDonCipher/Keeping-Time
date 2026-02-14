@@ -32,7 +32,7 @@ Silence. Not the void-silence of the alley. A curated, harmonious silence.
 
 He looked at his hands.
 
-They weren't wireframes. They weren't glitching. They were high-fidelity skin textures, perfectly mapped to his bone structure. He could see the pores. He could see the fingerprints. But when he rubbed them together, he couldn't feel the drag. The friction coefficient had been smoothed out.
+They weren't wireframes. They weren't wrong noting. They were high-fidelity skin textures, perfectly mapped to his bone structure. He could see the pores. He could see the fingerprints. But when he rubbed them together, he couldn't feel the drag. The friction coefficient had been smoothed out.
 
 "It worked," he whispered.
 
@@ -93,7 +93,7 @@ He looked... clean. His heavy armor was polished to a mirror shine. His face was
 
 Ven walked over and patted Taro on the shoulder. The impact was gentle. Controlled. No sparks. No heat dump.
 
-"They fixed us, Taro," Ven said. "Voss... he actually fixed us. No more overloads. No more glitching. We're compatible."
+"They fixed us, Taro," Ven said. "Voss... he actually fixed us. No more overloads. No more wrong noting. We're compatible."
 
 "Compatible," Taro repeated. The word tasted sweet. Like artificial sweetener.
 
@@ -148,7 +148,7 @@ He could see the edges of the render if he squinted. He could feel the artificia
 
 The "Patch" hadn't fixed the world. It had just blinded him to the cracks. It had laid a layer of digital concrete over his soul.
 
-But his friends were smiling. Ven wasn't burning. Hana wasn't glitching. They were happy.
+But his friends were smiling. Ven wasn't burning. Hana wasn't wrong noting. They were happy.
 
 Because they forgot.
 

@@ -112,31 +112,31 @@ She stepped aside. The gate behind her dissolved into a cloud of green data part
 
 ---
 
-### [08:15:00] THE PACKET STORM
+### [08:15:00] THE HARMONIC STORM
 
 The hallway wasn't empty. It was a wind tunnel.
 
 Hundreds of students were moving toward the lecture halls. In the Low-Fi zones, a crowd was just background noise—a warm, muddy hum.
 
-Here? It was a [[Packet Storm::A phenomenon in high-density areas where the aggregate data load of high-fidelity users exceeds standard processing buffers, causing a chaotic flood of sensory information.]] .
+Here? It was a [[Harmonic Storm::A phenomenon in high-density areas where the aggregate signal load of high-fidelity users exceeds standard processing buffers, causing a chaotic flood of sensory information.]] .
 
 Taro's CPU spiked.
 
 **> SYSTEM_LOAD: 98%**
 **> THERMAL_WARNING: ACTIVE**
 
-It wasn't just noise. It was specific.
+It wasn't just noise. It was specific. We like to think of a crowd as a single entity, but the Score sees every individual thread, every conflicting desire, every unresolvable chord. It's not a crowd; it's a structural failure waiting to happen.
 
 The heavy **Bass Waves** of the structural engineering students shook the floorplates, a deep *thrum-thrum-thrum* that rattled Taro's teeth. They moved like tanks, displacing air with their sheer mass.
 
-The sharp **Sawtooth** spikes of the Vanguard cadets cut through the crowd like sharks. Their AR tags flashed with kill counts and combat metrics, aggressive red text scrolling across their peripheral vision.
+The sharp **Sawtooth** spikes of the Vanguard cadets cut through the crowd like sharks. Their Score tags flashed with kill counts and combat metrics, aggressive red text scrolling across their peripheral vision.
 
 The flighty **Sine Waves** of the Choral students floated near the ceiling, a sickeningly sweet harmony that made Taro dizzy. They were linked in a local network, sharing thoughts and emotions in real-time, moving as a single, terrifyingly synchronized organism.
 
-**> DETECTED: 400+ ACTIVE CONNECTIONS**
-**> DATA_RATE: 50 TB/s**
+**> DETECTED: 400+ ACTIVE LINKS**
+**> RESONANT_DENSITY: 50 TB/s**
 
-It was too much flow. Taro stumbled. His vision started to artifact—green squares pixelating the edges of reality. The faces of the students smeared into data streams. Social pings hit him like hail.
+The resonant music was loud. I stumbled, my vision starting to artifact—green squares pixelating the edges of reality. The faces of the students smeared into signal streams. Social pings hit him like hail. I couldn't breathe; the vibe was too loud.
 
 **> PING: REQ_LINK [REJECTED]**
 **> PING: STATUS_UPDATE [IGNORED]**
@@ -195,7 +195,7 @@ It wasn't loud. But it had infinite mass.
 Taro forced his visual layer open.
 
 An old man stood on the dais.
-His aura was immense. It didn't just surround him; it filled the volume of the room. They were sitting *inside* his resonant field.
+His aura was immense. It didn't just surround him; it filled the volume of the room. They were sitting *inside* his resonant field. We are all just notes in a larger composition, and some notes have more mass than others.
 
 **> WAVEFORM: FUNDAMENTAL [1 Hz]**
 **> STATUS: ANCHOR**
@@ -211,20 +211,20 @@ He looked up. For a second, the gold light of his eyes seemed to lock onto Taro.
 
 He raised a hand.
 
-The entire physics engine of the room shifted.
+The entire Score of the room shifted.
 
 The room rotated 90 degrees. Gravity followed.
 
 The students gasped as the floor became the wall, and the wall became the floor. They slid in their seats, held in place only by the sudden shift in the local "Down" vector.
 
-**> PHYSICS_ENGINE: LOCAL_OVERRIDE**
+**> SCORE_PHYSICS: LOCAL_OVERRIDE**
 **> VECTOR: ROTATED [90_DEG]**
 
 "You write it."
 
 Taro looked at his hand.
 The High Register spark was there. Waiting.
-It wasn't a glitch anymore.
+It wasn't a wrong note anymore.
 It was a cursor. Blinking.
 
 **> SYSTEM: READY.**

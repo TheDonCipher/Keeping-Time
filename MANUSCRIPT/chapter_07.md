@@ -86,7 +86,7 @@ The resonance of the rod forced Taro's entire nervous system to reset its cycle.
 
 Taro stumbled back, gasping. "How..."
 
-"You operate on analog time," Marcus said, circling him. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Glitch. I’m already in the next pulse."
+"You operate on analog time," Marcus said, circling him. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Wrong Note. I’m already in the next pulse."
 
 He was right. 
 To Taro's eyes, Marcus was vibrating. His movements were synced to a 140 BPM master clock that Taro couldn't hear.
@@ -144,7 +144,7 @@ Marcus stood over him. He deactivated his jammer for one second.
 **> EFFICIENCY: 100%**
 **> MOOD: BOREDOM**
 
-"Get a metronome, Glitch," Marcus said. "You're just noise in my signal path."
+"Get a metronome, Wrong Note," Marcus said. "You're just noise in my signal path."
 
 Marcus walked away. *Step. Step. Step.* Perfect 140 BPM.
 
