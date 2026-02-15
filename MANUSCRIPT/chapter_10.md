@@ -96,6 +96,8 @@ The pavement cracked in a spiderweb pattern.
 Taro stood in THE center of THE vortex.
 His vision was melting. Literally. The world wasn't just losing its overlay; it was losing its cohesion. The geometry of THE alleyway began to unspool. The brickwork didn't crumble; it pixelated into raw, unformatted data.
 
+In a flickering window three stories up, an old woman stood calmly, her silhouette a stable shadow in the chaos. She wasn't screaming. She was reaching out with a steady hand to adjust a crooked picture frame on her wall, her fingers instinctively correcting for the 15-degree tilt of her apartment. She had normalized the collapse so thoroughly that her only concern was the horizontal line.
+
 **[[> CRITICAL_FAILURE: RENDER_THREAD_EXCEPTION::Graphics memory exhausted. Reality rendering halted.]]**
 **[[> GRAPHICS_DRIVER: NOT_FOUND::Optical processing failing.]]**
 

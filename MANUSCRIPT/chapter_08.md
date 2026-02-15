@@ -32,6 +32,8 @@ The sky was a perfect, gradient blue. In Unison, we don't see THE rot; we only s
 **[[> REPUTATION_GAIN: +10::Social alignment score increasing.]]**
 **[[> MONITOR: ADJUTANT_VOSS [HEARING_ALL]::Root-level surveillance active. Active links: 3.]]**
 
+A transit pod glided past them, hovering on a mag-lev cushion that hummed a perfect, soothing C-Major chord. Inside, commuters sat with glazed expressions, their heads bobbing in unison to the vehicle's calming rhythm. On the corner, a vendor was selling "Harmonic Noodles"—the steam rising from his cart smelled artificially sweet, tagged with **[[> SCENT: COMFORT_V3::Chemical dopamine trigger.]]**. He adjusted the dial on his burner, not to change the heat, but to tune the bubbling broth to the street's key signature.
+
 Taro looked closer at THE wall next to him.
 His HUD tagged it: **[[> MATERIAL: POLISHED_MARBLE::AR texture confirmed. Status: Locked.]]**.
 But he heard a hiss.

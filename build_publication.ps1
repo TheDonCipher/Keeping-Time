@@ -59,6 +59,6 @@ $chapterHTML = ""
 $output = $template -replace '<!-- NOTE: Full chapter content.*?-->', $chapterHTML
 $output = $output -replace '<!-- NOTE: Sidebar content goes here -->', $sidebarHTML
 
-$output | Out-File "PUBLICATION_COMPLETE.html" -Encoding UTF8
+$output | Out-File "public/index.html" -Encoding UTF8
 
-Write-Host "Complete publication HTML created: PUBLICATION_COMPLETE.html"
+Write-Host "Complete publication HTML created: public/index.html"

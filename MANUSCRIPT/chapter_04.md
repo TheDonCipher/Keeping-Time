@@ -28,7 +28,9 @@ The Academy courtyard was a marvel of aggressive perfection. It was a [[High-Fid
 **[[> JITTER: 0.000%::Phase variance detected: NULL.]]**
 **[[> PACKET_LOSS: 0.000%::Signal integrity: ABSOLUTE.]]**
 
-Taro shivered. He adjusted the collar of his new uniform. THE fabric was stiff, laced with passive damping threads that felt like they were trying to mute his own heartbeat. His old analog headphones hung around his neck, unconnected. In this High-Fidelity zone, they felt like a fossil. A stone tool brought to a semiconductor plant.
+Taro shivered. He adjusted the collar of his new uniform. THE fabric was stiff, laced with passive damping threads that felt like they were trying to mute his own heartbeat. In the center of the courtyard, a group of senior students had gathered in a perfect circle for the Morning Synchronization. They weren't praying; they were chanting a single, sustained 440Hz tone, their voices merging into a physical pillar of sound that calibrated the local air for the day’s work. It was a ritual of civic hygiene—beautiful, clinical, and mandatory.
+
+His old analog headphones hung around his neck, unconnected. In this High-Fidelity zone, they felt like a fossil. A stone tool brought to a semiconductor plant.
 
 "Name?"
 

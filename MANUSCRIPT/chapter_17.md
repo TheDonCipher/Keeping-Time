@@ -52,6 +52,8 @@ It wasn't the polite, quantized music of the Upper City. It was a riot of genres
 
 Taro stepped inside. The club, simply called "The Null," was a cavernous space carved out of an old geothermal vent. It was the [[Underground::A sanctuary for dissonant users.]] .
 
+In the center of the dance floor, a small circle of light had formed around two people. They weren't dancing; they were holding hands, their eyes locked as they recited wedding vows in a perfect, rapid-fire tempo that matched the 170 BPM drum-and-bass track pounding through the floor. A "Frequency Priest" stood over them, his hands moving in a rhythmic blessing that synced their two heartbeats into a single, unshakeable signature. In the Null, love wasn't a feeling; it was a shared cadence.
+
 The visual data was overwhelming.
 
 In the Upper City, everyone looked like a variation of a standard template: The Worker, The Soldier, The Leader. Everyone was compatible. Everyone was flat.

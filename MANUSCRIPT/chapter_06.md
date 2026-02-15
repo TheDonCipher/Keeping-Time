@@ -14,7 +14,7 @@
 
 Steam hissed from the cervical vents in Ven's armor.
 
-They were deep underground, in the Academy's [[Grounding Vault::Underground chambers lined with copper 'Sinks' designed to absorb and convert resonant energy into waste heat.]] . The walls here were thick concrete, lined with heavy copper bus-bars designed to absorb excess resonant energy. The air was heavy, tasting of wet iron and ozone—the specific flavor of high-voltage waste.
+They were deep underground, in the Academy's [[Grounding Vault::Underground chambers lined with copper 'Sinks' designed to absorb and convert resonant energy into waste heat.]] . The walls here were thick concrete, lined with heavy copper bus-bars designed to absorb excess resonant energy. In the alcoves, a group of apprentices—children no older than ten—were huddled around a senior Rhythm Engineer. They weren't using tablets; they were pressing their bare palms to the copper, their eyes closed, learning to "listen" to the texture of the waste heat before the system could label it for them. The air was heavy, tasting of wet iron and ozone—the specific flavor of high-voltage waste.
 
 **[[> UNIT_STATUS: VEN_CALIBRATOR::Subject identity verified. Class: Sink.]]**
 **[[> THERMAL_LOAD: 98% [CRITICAL]::Core temperature: 104°F | Cooling requested.]]**

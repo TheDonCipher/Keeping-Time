@@ -134,7 +134,7 @@ Taro watched the purple vectors in the hologram again. They weren't atmospheric 
 
 Ven's voice was a deep, rumbling bass that vibrated in Taro's chest.
 
-They were in the mess hall after the assembly. The noise of the cafeteria was overwhelming for Taro—a cacophony of clattering trays and overlapping conversations that sounded like a thousand radios tuned to different static stations.
+They were in the mess hall after the assembly. The noise of the cafeteria was overwhelming for Taro—but it wasn't chaotic. It was terrifyingly organized. Three hundred spoons hit three hundred bowls in a near-perfect polyrhythm. The chewing was synchronized. Even the kitchen staff back in the service bay weren't just cooking; they were *tuning* the soup, a "Frequency Baker" waving a conductive wand over the steam table to ensure the nutrient mash vibrated at a compliant 440Hz.
 
 "I feel defragged," Taro muttered, poking at his nutrient block. It was grey. It tasted like grey.
 

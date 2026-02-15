@@ -28,6 +28,9 @@ It was a somatic calibration loop. A way to force his internal clock to sync whe
 He palmed the lock. It was a Generation-1 contact plate, corroded and slow. It buzzed against his skin—a dirty vibration that indicated worn-out condensers—and slid open.
 
 The apartment was worse than the hallway.
+
+The elevator had hesitated on the way up—a nervous shudder in the cables that felt less like mechanical friction and more like the building was afraid to let anyone off at this floor. Down the hall, Mrs. Gable was humming a lullaby to her newborn, but the melody was drift-locked to the 60Hz hum of the unshielded power conduit in the wall. The baby wasn't crying; it was just vibrating in time with the building.
+
 It was silent.
 But not the "White Room" silence of high-end damping. This was suppressed silence. We build walls of sound to keep out the noise of our own thoughts, but eventually, the silence finds a way in.
 

@@ -29,6 +29,8 @@ I stood in the staff locker room of Sector 7-C Calibration Hall. To a [[Normal::
 
 To me? It was a data stream.
 
+The ventilation system didn't just blow air; it sang a constant, sterile F-sharp that grated against the base of my skull. The air tasted of ionized ozone and the stale, burnt-coffee smell of a breakroom that hadn't seen a real bean in a decade. In the corner, a junior tech was banging on his locker—not out of anger, but in a rhythmic *thump-thump-click* to force the rusted tumblers to sync with the room’s dominant frequency.
+
 The light fixture wasn't just flickering; it tasted like sour milk—a dirty **Hum** bleeding into the air. The lockers hummed with the **Resonance: Steel**, vibrating against my teeth even though I wasn't touching them.
 
 And the door...

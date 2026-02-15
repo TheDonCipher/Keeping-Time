@@ -290,6 +290,54 @@
         .narrative-fragment.visible { opacity: 1; transform: translateX(0); }
         .fragment-text { font-family: var(--font-main); font-size: 0.9rem; font-style: italic; }
 
+        /* Tooltips */
+        .tooltip {
+            position: relative;
+            border-bottom: 1px dashed var(--accent);
+            cursor: help;
+            color: var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .tooltip::after {
+            content: attr(data-tip);
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--text);
+            padding: 8px 12px;
+            border: 1px solid var(--accent);
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-family: var(--font-mono);
+            white-space: normal;
+            width: max-content;
+            max-width: 250px;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            box-shadow: 0 4px 15px var(--accent-glow);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            backdrop-filter: blur(4px);
+        }
+
+        [data-theme="dark"] .tooltip::after {
+            background: rgba(10, 10, 12, 0.95);
+        }
+
+        .tooltip:hover {
+            background: var(--accent-glow);
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
         @media (max-width: 768px) {
             body { padding-left: 0; }
             .nav-ui { left: 0; width: 100%; }
