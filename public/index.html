@@ -259,43 +259,68 @@
             z-index: 1500; display: flex; flex-direction: column;
             padding: 40px 24px; backdrop-filter: blur(12px);
             transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            font-family: var(--font-mono);
         }
 
-        .diagnostic-spine { display: flex; flex-direction: column; gap: 32px; flex-grow: 1; }
+        .diagnostic-spine { display: flex; flex-direction: column; gap: 40px; flex-grow: 1; }
         
-        .vital-section { display: flex; flex-direction: column; gap: 12px; }
-        .vital-label { font-family: var(--font-display); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.6; cursor: help; }
+        .vital-section { display: flex; flex-direction: column; gap: 16px; position: relative; }
+        .vital-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 3px; opacity: 0.5; color: var(--text); }
         
-        /* Force Dominance Bar */
-        .force-container { height: 160px; width: 100%; background: rgba(0,0,0,0.05); border: 1px solid var(--border); position: relative; display: flex; align-items: flex-end; padding: 4px; gap: 4px; }
-        .force-channel { flex: 1; transition: height 0.3s ease; position: relative; cursor: help; }
-        .force-internal { background: #ff3366; box-shadow: 0 0 10px rgba(255, 51, 102, 0.3); }
-        .force-external { background: var(--accent); box-shadow: 0 0 10px var(--accent-glow); }
-        .force-structural { background: var(--gold); box-shadow: 0 0 10px rgba(255, 204, 51, 0.3); }
-        .force-channel.dominant { filter: brightness(1.2); }
-        .force-channel.dominant::after { content: '▲'; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-size: 8px; }
+        /* Resonance Matrix (Orbital HUD) */
+        .resonance-matrix { 
+            height: 180px; width: 100%; position: relative; 
+            display: flex; justify-content: center; align-items: center;
+            border: 1px solid rgba(var(--accent-rgb), 0.1); border-radius: 4px;
+            background: radial-gradient(circle at center, rgba(var(--accent-rgb), 0.05) 0%, transparent 70%);
+        }
+        .matrix-ring { 
+            position: absolute; border-radius: 50%; border: 1px solid transparent; 
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex; justify-content: center; align-items: center;
+        }
+        .ring-internal { width: 40px; height: 40px; border-color: #ff3366; box-shadow: 0 0 15px rgba(255, 51, 102, 0.2); }
+        .ring-external { width: 80px; height: 80px; border-color: var(--accent); box-shadow: 0 0 20px var(--accent-glow); }
+        .ring-structural { width: 120px; height: 120px; border-color: var(--gold); border-style: dashed; }
+        
+        .matrix-ring.dominant { border-width: 3px; animation: ringPulse 2s infinite; }
+        @keyframes ringPulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.7; } 100% { transform: scale(1); opacity: 1; } }
 
-        .force-labels { display: flex; justify-content: space-between; padding: 0 8px; font-size: 0.8rem; }
-        .force-labels span { flex: 1; text-align: center; }
-
-        /* Stress Reservoir */
-        .gauge-outer { height: 8px; width: 100%; background: rgba(0,0,0,0.05); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
-        .gauge-inner { height: 100%; width: 0%; background: var(--accent); transition: width 0.5s ease; }
-        
-        /* Interference Band */
-        .interference-band { height: 2px; width: 100%; background: var(--accent); opacity: 0; position: relative; overflow: hidden; }
-        .interference-band.active { opacity: 1; animation: staticPulse 0.2s infinite; }
-        @keyframes staticPulse { 
-            0% { transform: scaleX(1); opacity: 0.4; } 
-            50% { transform: scaleX(1.05); opacity: 0.8; } 
-            100% { transform: scaleX(1); opacity: 0.4; } 
+        /* Stress Column (Fluid Marrow) */
+        .stress-column { 
+            height: 120px; width: 12px; background: rgba(0,0,0,0.1); 
+            border: 1px solid var(--border); border-radius: 20px; position: relative; 
+            margin-left: 8px; overflow: hidden;
+        }
+        .stress-fill { 
+            position: absolute; bottom: 0; left: 0; width: 100%; 
+            background: linear-gradient(to top, var(--accent), #ff3366); 
+            transition: height 0.8s ease; 
+        }
+        .stress-fill::after {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+            background: white; filter: blur(2px); opacity: 0.5;
         }
 
-        .integrity-index { font-family: var(--font-mono); font-size: 1.2rem; font-weight: bold; color: var(--accent); }
-        
-        .archive-log-container { flex-grow: 1; overflow-y: auto; margin-top: 24px; border-top: 1px solid var(--border); padding-top: 24px; }
-        .archive-entry { font-family: var(--font-mono); font-size: 0.65rem; margin-bottom: 8px; padding: 6px; border-left: 2px solid var(--accent); background: rgba(0,0,0,0.02); text-transform: lowercase; opacity: 0.8; animation: entryFade 0.5s ease-out; }
-        @keyframes entryFade { from { opacity: 0; transform: translateX(-10px); } to { opacity: 0.8; transform: translateX(0); } }
+        /* Fracture Index HUD */
+        .index-display { display: flex; align-items: baseline; gap: 8px; }
+        .index-value { font-size: 1.8rem; font-weight: 900; color: var(--accent); letter-spacing: -1px; }
+        .index-unit { font-size: 0.6rem; opacity: 0.4; }
+
+        /* Status Ticker */
+        .status-line { 
+            font-size: 0.75rem; font-weight: bold; padding: 8px; 
+            background: rgba(0,0,0,0.05); border-left: 3px solid var(--accent);
+            letter-spacing: 1px; min-height: 32px;
+        }
+        .status-line.warning { border-color: #ff3366; color: #ff3366; animation: flicker 0.1s infinite; }
+        @keyframes flicker { 0% { opacity: 1; } 50% { opacity: 0.8; } 100% { opacity: 1; } }
+
+        .archive-log-container { 
+            flex-grow: 1; overflow-y: auto; font-size: 0.6rem; 
+            border-top: 1px solid var(--border); margin-top: 20px; padding-top: 20px;
+            mask-image: linear-gradient(to bottom, black 80%, transparent);
+        }
 
         .fragment-display-container { position: fixed; bottom: 40px; right: 40px; width: 300px; z-index: 1100; pointer-events: none; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
         .narrative-fragment { background: var(--bg); border: 1px solid var(--accent); border-radius: 2px; padding: 12px 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
@@ -401,55 +426,23 @@
 
         
 
-            <aside id="residual-archive">
+                <aside id="residual-archive">
 
         
 
-                <div class="diagnostic-spine">
+                    <div class="diagnostic-spine">
 
         
 
-                    <div class="vital-section">
+                        <div class="vital-section">
 
         
 
-                        <div class="vital-label">System Status</div>
+                            <div class="vital-label">Organism Status</div>
 
         
 
-                        <div class="integrity-index" id="system-status" style="font-size: 0.9rem;">INITIALIZING...</div>
-
-        
-
-                    </div>
-
-        
-
-        
-
-        
-
-                    <div class="vital-section">
-
-        
-
-                        <div class="vital-label" title="Internal (Emotion) vs External (Surveillance) vs Structural (Grid)">Force Dominance</div>
-
-        
-
-                        <div class="force-container">
-
-        
-
-                            <div class="force-channel force-internal" id="bar-internal" title="Internal: Emotional Load"></div>
-
-        
-
-                            <div class="force-channel force-external" id="bar-external" title="External: C-Order Surveillance"></div>
-
-        
-
-                            <div class="force-channel force-structural" id="bar-structural" title="Structural: System Pressure"></div>
+                            <div class="status-line" id="system-status">LINKING...</div>
 
         
 
@@ -457,19 +450,35 @@
 
         
 
-                        <div class="force-labels">
+            
 
         
 
-                            <span title="Internal (Taro)">❤️</span>
+                        <div class="vital-section">
 
         
 
-                            <span title="External (C-Order)">👁️</span>
+                            <div class="vital-label" title="Resonance Matrix: Internal (❤️), External (👁️), Structural (⬢)">Force Dominance</div>
 
         
 
-                            <span title="Structural (Grid)">⬢</span>
+                            <div class="resonance-matrix">
+
+        
+
+                                <div class="matrix-ring ring-structural" id="ring-structural"></div>
+
+        
+
+                                <div class="matrix-ring ring-external" id="ring-external"></div>
+
+        
+
+                                <div class="matrix-ring ring-internal" id="ring-internal"></div>
+
+        
+
+                            </div>
 
         
 
@@ -477,55 +486,71 @@
 
         
 
-                    </div>
+            
 
         
 
-        
+                        <div class="vital-section">
 
         
 
-                    <div class="vital-section">
+                            <div class="vital-label" title="Residual Fatigue Reservoir">Stress Memory</div>
 
         
 
-                        <div class="vital-label" title="Residual tension that persists after spikes">Stress Memory (Fatigue)</div>
+                            <div style="display: flex; align-items: center;">
 
         
 
-                        <div class="gauge-outer"><div class="gauge-inner" id="stress-gauge"></div></div>      
+                                <div class="stress-column"><div class="stress-fill" id="stress-gauge"></div></div>
 
         
 
-                    </div>
+                                <div style="margin-left: 12px; font-size: 0.6rem; opacity: 0.4;">m_load / acc</div>
 
         
 
-        
+                            </div>
 
         
 
-                    <div class="vital-section">
+                        </div>
 
         
 
-                        <div class="vital-label" title="Structural integrity of the local reality render">Fracture Index (The Void)</div>
+            
 
         
 
-                        <div class="integrity-index" id="fracture-index">0.000</div>
+                        <div class="vital-section">
 
         
 
-                    </div>
+                            <div class="vital-label">Fracture Index</div>
 
         
 
-        
+                            <div class="index-display">
 
         
 
-                    <div class="vital-section">
+                                <div class="index-value" id="fracture-index">0.000</div>
+
+        
+
+                                <div class="index-unit">VOID_POS</div>
+
+        
+
+                            </div>
+
+        
+
+                        </div>
+
+        
+
+            
 
         
 
@@ -533,23 +558,19 @@
 
         
 
+                        <div class="archive-log-container" id="archive-log"></div>
+
+        
+
                     </div>
 
         
 
-        
+                </aside>
 
         
 
-                    <div class="archive-log-container" id="archive-log"></div>
-
-        
-
-                </div>
-
-        
-
-            </aside>
+            
 
         
 
@@ -3951,27 +3972,31 @@
 
     
 
-        let statusText = "NOMINAL";
+        let statusText = "SYSTEM_NOMINAL";
 
     
 
-        if (NarrativeState.interferenceActive) statusText = "INTRUSION DETECTED";
+        let isWarning = false;
 
     
 
-        else if (NarrativeState.fractureLevel > 0.8) statusText = "STRUCTURAL FAILURE";
+        if (NarrativeState.interferenceActive) { statusText = "INTRUSION_ALERT"; isWarning = true; }
 
     
 
-        else if (NarrativeState.stressMemory > 1.0) statusText = "CRITICAL FATIGUE";
+        else if (NarrativeState.fractureLevel > 0.85) { statusText = "VOID_BREACH_CRITICAL"; isWarning = true; }
 
     
 
-        else if (NarrativeState.lastDominantForce === 'external') statusText = "ACTIVE SURVEILLANCE";
+        else if (NarrativeState.stressMemory > 1.2) { statusText = "ORGANISM_FATIGUE_MAX"; isWarning = true; }
 
     
 
-        else if (NarrativeState.lastDominantForce === 'internal') statusText = "EMOTIONAL SPIKE";
+        else if (NarrativeState.lastDominantForce === 'external') statusText = "ACTIVE_SURVEILLANCE";
+
+    
+
+        else if (NarrativeState.lastDominantForce === 'internal') statusText = "EMOTIONAL_FLUX";
 
     
 
@@ -3979,11 +4004,11 @@
 
     
 
-        statusEl.textContent = statusText;
+        statusEl.textContent = `> ${statusText}`;
 
     
 
-        statusEl.style.color = statusText === "NOMINAL" ? "var(--accent)" : "#ff3366";
+        statusEl.classList.toggle('warning', isWarning);
 
     
 
@@ -3995,23 +4020,23 @@
 
     
 
-      // Update Force Bars
+      // Update Resonance Matrix Rings
 
     
 
-      const bars = {
+      const rings = {
 
     
 
-        internal: document.getElementById('bar-internal'),
+        internal: document.getElementById('ring-internal'),
 
     
 
-        external: document.getElementById('bar-external'),
+        external: document.getElementById('ring-external'),
 
     
 
-        structural: document.getElementById('bar-structural')
+        structural: document.getElementById('ring-structural')
 
     
 
@@ -4023,7 +4048,7 @@
 
     
 
-      for (const [key, el] of Object.entries(bars)) {
+      for (const [key, el] of Object.entries(rings)) {
 
     
 
@@ -4035,7 +4060,19 @@
 
     
 
-        el.style.height = `${val * 100}%`;
+        // Scale rings based on power
+
+    
+
+        const scale = 0.5 + (val * 1.5);
+
+    
+
+        el.style.transform = `scale(${scale})`;
+
+    
+
+        el.style.opacity = 0.2 + (val * 0.8);
 
     
 
@@ -4051,7 +4088,7 @@
 
     
 
-      // Update Stress Gauge
+      // Update Stress Column
 
     
 
@@ -4059,7 +4096,7 @@
 
     
 
-      if (stressGauge) stressGauge.style.width = `${(NarrativeState.stressMemory / 1.5) * 100}%`;
+      if (stressGauge) stressGauge.style.height = `${(NarrativeState.stressMemory / 1.5) * 100}%`;
 
     
 
@@ -4087,7 +4124,7 @@
 
     
 
-          indexEl.style.transform = `translate(${(Math.random()-0.5) * 2}px, ${(Math.random()-0.5) * 2}px)`;
+          indexEl.style.transform = `translate(${(Math.random()-0.5) * 4}px, ${(Math.random()-0.5) * 4}px)`;
 
     
 
@@ -4096,6 +4133,10 @@
     
 
       }
+
+    
+
+    
 
     
 
