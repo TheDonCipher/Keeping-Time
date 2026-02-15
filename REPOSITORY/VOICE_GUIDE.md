@@ -1,85 +1,82 @@
-# RESONANT DIALOGUE: Voice & Slang Guide
+# RESONANT DIALOGUE: Voice & Slang Guide (REVISED)
 
 > **"In The Soundscape, words are just the carrier wave. The intent is the signal."**
 
-This guide provides the linguistic framework for the characters of *Keeping Time*. It codifies the fusion of musical theory, signal processing, and neurodivergent-coded social navigation into a unique dialect.
+This guide codifies the fusion of musical theory, signal processing, and social slang into a unique layered hierarchy.
 
 ---
 
-## 1. THE LINGUISTIC FOUNDATION
+## 1. THE LINGUISTIC HIERARCHY
 
-The population of Unison and the surrounding territories speaks a dialect influenced by **The Score**. Because people *see* the data of conversation, their language reflects that transparency.
-
-### Core Principles
-- **Signal over Semantics**: Characters often prioritize the *state* of the speaker (detected via NAI) over the literal words.
-- **Hardware Metaphors**: Biological functions are described in technical terms (CPU, Buffer, Latency, Bandwidth).
-- **Musical Punctuation**: Emotion/Intensity is described through musical notation (Forte, Piano, Dissonant, Harmonic).
+1. **Character Dialogue**: Social, slang-driven, lived-in.
+2. **Narration**: Philosophical, restrained, lightly technical.
+3. **Tooltips / System Logs**: Cold, clinical, precise technical data.
 
 ---
 
-## 2. COMMON SLANG & JARGON
+## 2. COMMON SLANG & JARGON (DIALOGUE LAYER)
+
+### General Slang
+- **"You’re running high."**: You're getting emotional or your power is spiking.
+- **"Off-tone"**: Suspicious, deceptive, or just "wrong."
+- **"Stay flat"**: Maintain your composure or mask your signal.
+- **"Don’t spike"**: Keep your resonance under control.
+- **"Clipping"**: Pushing too hard; losing structural integrity.
+- **"Humming"**: Nervous or vibrating with static energy.
+- **"Too sharp"**: Aggressive, mean, or cutting.
+- **"Carrying load"**: Stressed, fatigued, or burdened.
+- **"Wrong Note"**: A glitch or error (Social slang for "Glitch").
 
 ### Social Categories
-- **High-Fidelity (Hi-Fi)**: Someone who is "perfectly" neurotypical, calm, and socially predictable. Often used as an insult by Flux types.
+- **High-Fidelity (Hi-Fi)**: Someone who is "perfectly" compliant and socially predictable. Often used as an insult.
 - **Low-Fi**: Someone quirky, unpredictable, or "wrong note-ish."
 - **Analog**: A slur for the "Deaf" (those without NAI) or those who refuse to use The Score.
 - **Broadband**: Someone who processes too much information at once (Hyper-perceptive).
-- **Damped**: Someone who is masking or suppressing their emotions/signal.
-
-### Verbs & Actions
-- **Syncing**: Agreeing or getting on the same page. (`"Are we in phase?"`)
-- **Peaking**: Losing control, becoming too loud or emotional. (`"You're peaking, tone it down."`)
-- **Filtering**: Ignoring someone or something. (`"I'm filtering your nonsense right now."`)
-- **Dropping Packets**: Forgetting things, losing focus, or failing to communicate clearly.
-- **Dumping Heat**: Venting frustration or discharging built-up resonance stress.
-
-### Technical Idioms
-| Idiom | Meaning |
-|-------|---------|
-| "Check your Gain" | Control your ego/intensity. |
-| "Total Signal Loss" | I don't understand you at all / You're crazy. |
-| "Caught in a Loop" | Stuck on a thought or repetitive behavior. |
-| "Anti-phase vibe" | We are fundamentally incompatible / I don't like you. |
-| "Clean Sample" | A rare moment of honesty or clarity. |
-| "Jittery Logic" | An argument that doesn't follow a clear pattern. |
+- **Damped**: Someone who is masking or suppressing their signal.
 
 ---
 
 ## 3. FACTION DIALECTS
 
 ### C-Order (Standard Pitch)
-- **Style**: Clinical, precise, authoritative.
-- **Key Terms**: Calibration, Compliance, Harmony, Standard, Deviation.
+- **Style**: Clinical, precise, authoritative. Even their slang is used with a sense of "civic hygiene."
 - **Vibe**: "HR-Speak" but for the soul.
-- *Example*: *"Your current behavior is a 3-decibel deviation from community standards. Please recalibrate or face damping."*
+- *Example*: *"Your tone is sharp, Cadet. Recalibrate your breathing or face a damping audit."*
 
 ### G-Vanguard (Military Tempo)
-- **Style**: Terse, rhythmic, action-oriented.
-- **Key Terms**: Vector, Tempo, Impact, Deployment, Overwatch.
+- **Style**: Terse, rhythmic, action-oriented. Slang is used for tactical efficiency.
 - **Vibe**: Tactical and urgent.
-- *Example*: *"Target locked at 440Hz. Shift phase on the fourth beat. Go!"*
+- *Example*: *"Target is running high. Match phase on the fourth beat. Don't let him spike."*
 
 ### Flux Syndicate (Wrong Note/Pirate)
-- **Style**: Fragmented, slang-heavy, informal.
-- **Key Terms**: Static, Noise, Feedback, Raw, Unfiltered.
+- **Style**: Fragmented, slang-heavy, informal. They embrace the "Noise."
 - **Vibe**: Counter-culture, messy, "analog-cool."
-- *Example*: *"Forget the gold lines, man. The raw signal is where the truth is. Don't let Unison damp your fire."*
+- *Example*: *"Unison wants you flat, man. But the vibe is too loud to ignore. Let it clip."*
 
 ---
 
-## 4. DIALOGUE TAGS & SYSTEM ALERTS
+## 4. NARRATIVE VOICE (NARRATION LAYER)
 
-In the manuscript, The Score's feedback can be integrated into dialogue to show the character's internal "read" of a situation.
+The narrator speaks with controlled intelligence.
+
+- **Keywords**: *Baseline*, *Drift*, *Load*, *Resonance*, *Phase*, *Interference*, *Structural Strain*.
+- **Philosophy**: Reflections on the "Score" as a prison or a masterpiece.
+- *Example*: *"The room registered his drift. The baseline shifted, a slow-moving tectonic adjustment in the local key."*
+
+---
+
+## 5. SYSTEM TAGS (TOOLTIP LAYER)
+
+System text is the *only* place for raw technical data.
 
 **Pattern**:
-> "Dialogue," Character said.
 > `[> SYSTEM: ALERT_TYPE]`
-> *Internal Reaction*
+> `Baseline: XX Hz | Current: XX Hz | Drift: XX Hz`
 
 **Example**:
-> "I promise I'm fine," Taro said, leaning against the wall.
-> `[> ANALYSIS: DAMPING_FAILURE // STRESS: 89%]`
-> He wasn't fine. His fingers were drumming a frantic, uneven beat against his thigh.
+> "I'm fine," Taro lied.
+> `[> ANALYSIS: DAMPING_FAILURE]`
+> `Current Load: 92% | Thermal Limit Approaching`
 
 ---
 

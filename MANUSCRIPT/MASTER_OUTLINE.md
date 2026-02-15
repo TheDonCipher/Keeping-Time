@@ -11,7 +11,7 @@
 **UI Theme**: "The Wrong Note" vs "The System."
 
 ### Chapter 1: The Zap
-- **Event**: Taro's NAI boots up. He sees the "Wrong Note" as a code injection.
+- **Event**: Taro's Score port boots up. He sees THE "Wrong Note" as a code injection.
 - **AR Focus**: Establishing the HUD, "The Stave" overlay, and "Buffer Overflow" errors.
 - **Manga Beat**: The splash page of the "God Ray" (880Hz) erupting from his hand.
 
@@ -73,7 +73,7 @@
 **UI Theme**: "System Crash" & "Blue Screen."
 
 - **The Break**: Taro pushes past 100%. "Unmasking" completely.
-- **The Cost**: Physical damage. NAI burnout.
+- **The Cost**: Physical damage. Score port burnout.
 - **The Visual**: The HUD shattering/dissolving into raw code.
 
 ---

@@ -3,43 +3,44 @@
 
 ---
 
-**ZONE: SECTOR_4 [SUB-BASS_LEVELS]**
-**SYSTEM_TIME: 23:45:00**
-**WARNING: LEAVING_NETWORK_COVERAGE**
+**[[ZONE: SECTOR_4 [SUB-BASS_LEVELS]::Unauthorized tier. Signal floor: -120dB.]]**
+**[[SYSTEM_TIME: 23:45:00::Local server status: OFFLINE [Restricted Zone].]]**
+**[[WARNING: LEAVING_NETWORK_COVERAGE::Handshake failure. Global sync: 0%.]]**
 
 ---
 
 ### [23:45:00] THE DESCENT
 
-The elevator descended past the city's roots.
+The elevator descended past THE city's roots.
 
-Floor -10: *Maintenance.*
-Floor -20: *Waste Reclamation.*
-Floor -30: *Geothermal Tap.*
+Floor -10: Maintenance.
+Floor -20: Waste Reclamation.
+Floor -30: Geothermal Tap.
 
-Taro watched the signal bars on his HUD drop one by one.
-**[|||||]** ... **[|||..]** ... **[|....]**
+Taro watched THE signal bars on his HUD drop one by one.
+**[[[|||||] ... [|||..] ... [|....]::Signal strength dropping. Packets lost: 85%.]]**
 
-When the last bar vanished, a strange sensation washed over him. The constant, high-pitched hum of the C-Order Network—the "Carrier Wave" that connected every NAI in the city—cut out.
+When the last bar vanished, a strange sensation washed over him. The constant, high-pitched hum of the C-Order Network—the carrier wave that connected every Score port in the city—cut out.
 
 Silence. Real, heavy, analog silence.
 
 The elevator doors groaned open. The air here was thick, smelling of ozone and old coolant.
 
-"Welcome to the Dead Zone," Elara said. Her voice was already starting to wrong note without the C-Order to smooth her formants. "No network cover--zzt--age down here. Total analog territory."
+"Welcome to the Dead Zone," Elara said. Her voice was already starting to wrong note without the C-Order to smooth her formants. "No network coverage down here. Total analog territory. You can finally stop trying to stay flat."
 
 She was standing next to him, but she looked... unstable. Without the Network to enforce her Hull ID, her "Tank" avatar was flickering violently. The heavy shoulders were phasing in and out of existence, revealing the wireframe light beneath.
 
 "This way," she said, her voice dropping into a grainier, lower resolution.
 
-They walked down a rusted maintenance tunnel. The walls were lined with copper mesh—a makeshift [[Faraday Cage::A copper mesh enclosure that blocks electromagnetic fields and C-Order Network signals, creating a 'Dead Zone'.]] .
+They walked down a rusted maintenance tunnel. The walls were lined with copper mesh—a makeshift [[Faraday Cage::A copper mesh enclosure that blocks signals.]] .
 
 At the end of the tunnel was a heavy blast door. No digital lock. No retinal scanner. Just a wheel valve.
 
 Elara spun it. The door creaked open.
 
-**> DETECTED: UNREGISTERED_FREQUENCY_CLUSTER**
-**> SOURCE: 120dB [CHAOS]**
+**[[> DETECTED: UNREGISTERED_FREQUENCY_CLUSTER::Multipath interference identified.]]**
+**[[> SOURCE: 120dB [CHAOS]::Acoustic pressure: EXTREME. Harmonic profile: NON-STANDARD.]]**
+**SDI: 0.99 | HIQ: 0.99 | Phase Drift Coefficient: 1.00 | Score Units: 4,200 SU**
 
 The sound hit them like a physical wave.
 
@@ -49,18 +50,18 @@ It wasn't the polite, quantized music of the Upper City. It was a riot of genres
 
 ### [00:00:00] THE NULL
 
-Taro stepped inside. The club, simply called "The Null," was a cavernous space carved out of an old geothermal vent. It was the [[Underground::A sanctuary for Dissonant users in the Sub-Bass levels where High-Fidelity is rejected and raw noise is worshiped.]] .
+Taro stepped inside. The club, simply called "The Null," was a cavernous space carved out of an old geothermal vent. It was the [[Underground::A sanctuary for dissonant users.]] .
 
 The visual data was overwhelming.
 
-In the Upper City, everyone looked like a variation of a standard template: The Worker, The Soldier, The Leader.
+In the Upper City, everyone looked like a variation of a standard template: The Worker, The Soldier, The Leader. Everyone was compatible. Everyone was flat.
 Here, there were no templates.
 
 Taro saw a girl whose resonance took the shape of a storm cloud, lightning crackling around her fingers as she danced.
 He saw a guy whose avatar was a geometric abstract—a floating collection of cubes and pyramids that shifted to the beat of the drum and bass.
 He saw people with impossible colors, impossible geometries, impossible sounds.
 
-"System-Free," Elara shouted over the music, her voice now a clean, uncompressed treble that cut through the low-pass filter of the tunnel. "No Hull IDs. No Stabilizers. No Hi-Fi lies. Just raw output."
+"System-Free," Elara shouted over the music, her voice now a clean, uncompressed treble that cut through the low-pass filter of the tunnel. "No Hull IDs. No stabilizers. No Hi-Fi lies. Just raw output. No one here cares if you run sharp."
 
 She grabbed his arm and pulled him toward the center of the room.
 
@@ -82,11 +83,11 @@ She laughed—a sound like chimes in a windstorm—and spun, her cello (material
 
 It wasn't just music. It was existence.
 
-Taro stood there, the only "Normal" person in a room of monsters and gods. The Patch on his neck was cold.
+Taro stood there, the only "Normal" person in a room of monsters and gods. The patch on his neck was cold.
 
 "Your turn, new guy!"
 
-A massive figure—literally a walking amplifier with limbs—slapped Taro on the back. "Don't be shy! Drop the mask!"
+A massive figure—literally a walking amplifier with limbs—slapped Taro on the back. "Don't be shy! Drop the mask! Spike as hard as you want!"
 
 Taro hesitated.
 
@@ -96,7 +97,7 @@ He had spent his whole life terrified of his own resonance. Terrified that he wa
 
 But there was no system here. Just the Null.
 
-He closed his eyes. He focused on the itch in his brain. The pressure behind his eyes. The "Wrongness."
+He closed his eyes. He focused on the itch in his brain. The pressure behind his eyes. The wrongness.
 
 *Let it out.*
 
@@ -104,8 +105,9 @@ He gritted his teeth and pushed.
 
 Immediately, the collar around his neck woke up.
 
-**> WARNING: UNAUTHORIZED_OSCILLATION**
-**> PROTOCOL: SHOCK_THERAPY [MAX]**
+**[[> WARNING: UNAUTHORIZED_OSCILLATION::Phase variance exceeding safety register.]]**
+**[[> PROTOCOL: SHOCK_THERAPY [MAX]::Correctional discharge initiated. Voltage: 150V.]]**
+**SDI: 0.98 | HIQ: 0.95 | Phase Drift Coefficient: 0.12 | Score Units: 140 SU**
 
 *ZAP.*
 
@@ -113,7 +115,7 @@ A bolt of white-hot agony shot into his spine. Taro fell to his knees, gasping. 
 
 "Don't fight it!" the Amplifier-Guy shouted. "If the collar triggers, it'll fry your cortex!"
 
-Taro smelled burning skin. The pain was blinding. The System was telling him to stop. To be quiet.
+Taro smelled burning skin. The pain was blinding. The System was telling him to stop. To stay flat.
 
 But the "Wrongness" inside him... it didn't shrink from the pain.
 
@@ -123,10 +125,10 @@ It was hungry.
 
 Taro felt the Void in his chest turn toward the collar. It drank the electricity. It swallowed the shock.
 
-**> ERROR: ENERGY_DRAIN_DETECTED**
-**> SOURCE: INTERNAL_SINK**
+**[[> ERROR: ENERGY_DRAIN_DETECTED::External load failure. Current: 0.0A.]]**
+**[[> SOURCE: INTERNAL_SINK::Subject absorbing correctional discharge.]]**
 
-The collar whined, then died with a sharp *click*.
+The collar whined, then died with a sharp click.
 
 Taro stood up. The pain was gone. The only thing left was the silence.
 
@@ -154,7 +156,7 @@ The music around him faltered. People stopped dancing. They stared at the figure
 
 Taro looked at Elara. She had stopped playing. She was hovering in the air, her glass wings beating slowly. She looked at him with awe, not fear.
 
-"The Void," she whispered. "You're not Dissonant, Taro."
+"The Void," she whispered. "You're not dissonant, Taro."
 
 She drifted closer, her light reflecting off his darkness.
 
@@ -164,7 +166,7 @@ Taro panicked. *Silence.* The enemy. The monsters that ate the city.
 
 "No," he gasped, trying to pull the mask back on. "No, I'm not... I'm not one of them!"
 
-"Not them," Elara said firmly. She reached out and took his hand. Her light didn't disappear into his darkness; it swirled around it, creating a beautiful, high-contrast event horizon. "You're a Full-Spectrum-Killer, Taro. The Silence destroys. You... you absorb. You're a living Damping-Field."
+"Not them," Elara said firmly. She reached out and took his hand. Her light didn't disappear into his darkness; it swirled around it, creating a beautiful, high-contrast event horizon. "You're a Full-Spectrum-Killer, Taro. The Silence destroys. You... you absorb. You're a living damping field."
 
 She smiled, her glass face glowing in the dark.
 
@@ -176,8 +178,8 @@ For the first time in his life, he didn't feel broken.
 
 He felt necessary.
 
-**> SYSTEM_STATUS: RESONANCE_ACCEPTED**
-**> HULL_TYPE: NULL_VOID [UNIQUE]**
+**[[> SYSTEM_STATUS: RESONANCE_ACCEPTED::New baseline confirmed. Admin rights: PENDING.]]**
+**[[> HULL_TYPE: NULL_VOID [UNIQUE]::Subject signature: [REDACTED].]]**
 
 ---
 

@@ -1,83 +1,80 @@
-# WRITER'S GUIDE: THE SYNESTHESIA MANUSCRIPT (FINAL)
+# WRITER'S GUIDE: THE SYNESTHESIA MANUSCRIPT (REVISED)
 
-> **Narrative Voice**: **Third Person Limited (Taro)** from Chapter 2 onwards.
-> **Magic Tone**: **The User Manual**. Magic is Engineering. Use technical, precise language.
-> **Visuals**: Hallucinogenic Reality (The System rewrites the world).
-> **Character & Voice**: **[03_CHARACTERS_REGISTRY.md](file:///c:/Users/Japan/OneDrive/Documents/Books/Keeping%20Time/REPOSITORY/03_CHARACTERS_REGISTRY.md)** and **[VOICE_GUIDE.md](file:///c:/Users/Japan/OneDrive/Documents/Books/Keeping%20Time/REPOSITORY/VOICE_GUIDE.md)** are the mandatory style guides for dialogue and personality.
-
----
-
-## 1. THE PHYSICS (READS LIKE A MANUAL)
-The magic system is not "mystical." It is an operating system with strict rules. **Explain the rules ONLY when necessary for the plot.**
-
-> **CRITICAL RULE**: NO LORE DUMPS IN NARRATIVE.
-> If you need to explain a concept (e.g., "The Score", "Handshakes"), use the **Collapsible Sidebar** format.
-> **Reference**: [SIDEBAR_LIBRARY.md](file:///c:/Users/Japan/OneDrive/Documents/Books/Keeping%20Time/REPOSITORY/SIDEBAR_LIBRARY.md)
-
-
--   **System Text**: Must be TECHNICAL and PRECISE.
-    -   *Good*: **> ERROR: BUFFER_OVERFLOW [Type: Fatal]**
-    -   *Good*: **> STATUS: DAMPING_FIELD [ACTIVE]**
-    -   *Bad*: **> SENSATION: PAIN** (Too soft).
--   **Prose Descriptions**: Describe magic acts as engineering processes.
-    -   *Example*: "The air didn't just get heavy; the local gravity coefficient shifted to 1.5g."
-    -   *Example*: "Voss didn't cast a spell. He executed a root-level command that overwrote the silence."
+> **Narrative Voice**: **Third Person Limited (Taro)**. Focus on intelligence and restraint.
+> **Linguistic Hierarchy**:
+> 1. **Character Dialogue**: Natural, slang-driven, lived-in.
+> 2. **Narration**: Philosophical, restrained, lightly technical.
+> 3. **Tooltips / System Logs**: Cold, clinical, precise technical data.
 
 ---
 
-## 2. NARRATIVE VOICE (THIRD PERSON)
-We observe Taro, but we see the data he sees.
+## 1. THE DIALOGUE (SOCIAL SLANG)
+Characters do not speak like textbooks. They use musical and signal metaphors as everyday slang.
 
--   **The Approach**: Atmospheric Observer.
--   "Taro watched the display..." -> "The data scrolled across Taro's vision, a cascade of red error flags indicating catastrophic failure."
-
----
-
-## 3. SENSORY FUNCTIONALISM (DE-JARGONING)
-The user requested "Reduced Frequency Talk." 
-**Solution**: Focus on the **Sensory Effect** and **Functional Outcome**, not the raw data.
-
--   **Hz vs. Name**: Strip raw frequency numbers (440Hz, 880Hz) unless they are absolutely critical to a technical plot point.
-    -   *Old*: "He hit him with a 440Hz blast."
-    -   *New*: "He deployed a Standard Calibration Pulse, intended to force a system reset."
--   **Numbers vs. Pitch**: Use musical names or descriptive "Zones" instead of numbers.
-    -   *Gold Standard*: "A-440", "Middle C", "The Ground Note".
-    -   *Zones*: "The Low-End", "The Sub-Bass", "High-Fidelity", "The Upper Register".
--   **Networking vs. Experience**: Replace digital networking terms with mechanical or sensory metaphors.
-    -   *Instead of "Bandwidth"*: Use "Capacity", "Flow", "Breadth".
-    -   *Instead of "Handshake"*: Use "Sync", "Lock", "Contact".
-    -   *Instead of "Buffer/Latency"*: Use "Drift", "Lag", "Hitch".
-    -   *Instead of "Ping"*: Use "Pulse", "Call".
+- **Approved Slang**:
+    - "You’re running high." (Emotional or power spike)
+    - "You’re off-tone." (Suspicious, wrong, or deceptive)
+    - "Stay flat." (Calm down or mask your signal)
+    - "Don’t spike." (Don't lose control)
+    - "You’re clipping." (Pushing past limits or losing composure)
+    - "You’re humming." (Nervous energy or micro-vibration)
+    - "That’s too sharp." (Aggressive or mean-spirited)
+    - "You’re carrying load." (Stressed, burdened, or fatigued)
+- **Constraints**:
+    - No casual dialogue should mention "Hz" values, "Fourier decomposition," or "harmonic instability."
+    - No character explains physics unless they are explicitly C-Order trained or in a technical audit.
+    - Use "Wrong Note" instead of "Glitch."
 
 ---
 
-## 4. FORMATTING RULES
-1.  **System Headers**: Use them to define the scene's "Operating Parameters."
-2.  **Visual Metaphors**: Use UI/UX metaphors. Wrong Notes, Frame Drops, Rendering Errors, Blue Screens.
-4.  **The Manual**: Occasionally, the narrative should sound like it is quoting the *Keepers' Handbook*.
-5.  **Resonant Dialect**: Consult `VOICE_GUIDE.md` for slang (e.g., *Broadband*, *Damping*, *Hi-Fi*) and `03_CHARACTERS_REGISTRY.md` for character-specific system overlays.
+## 2. THE NARRATOR (PHILOSOPHICAL OBSERVER)
+The narrator speaks with controlled intelligence, bridging the gap between raw data and human experience.
+
+- **Technical Tone**: Use terms like *Baseline*, *Drift*, *Load*, *Resonance*, *Phase*, *Interference*, and *Structural Strain* to add gravity.
+- **Philosophical Tone**: Reflect on reality as a shared composition and identity as a frequency struggle.
+- **Example Transformation**:
+    - *Old*: "His emotional frequency deviated sharply above baseline."
+    - *New*: "His tone lifted. Higher than baseline. The room would register the drift."
 
 ---
 
-*"The world is code. We are the architects."*
+## 3. THE SYSTEM LAYER (TOOLTIPS)
+Tooltips are the *only* place where full technical language appears. They are cold, clinical, and precise.
+
+- **Content**: 
+    - Exact Hertz (Hz) deviations
+    - Score Unit (SU) calculations
+    - Spectral Deviation Index (SDI)
+    - Phase Drift Coefficient
+- **Example**: 
+    - `Baseline: 64 Hz | Current Frequency: 78 Hz | Sustained Drift: 14 Hz | Score Accumulation: 14 SU`
 
 ---
 
-## 5. THE SIDEBAR SYSTEM (NEW)
-**Objective**: Enable deep world-building without stalling the plot.
+## 4. CULTURAL INTEGRATION
+Resonance awareness is a social burden. 
+- **Tone Control**: Taught in schools as "civic hygiene."
+- **Social Shame**: Being "off-tone" in public is embarrassing or suspicious.
+- **Damping**: Parents tell children to "stay level."
+- **Rebellion**: Rebels intentionally "run sharp" or "spike" to signal defiance against the C-Order.
 
-### Rule:
--   **Main Text**: Sensory, emotional, descriptive, experiential.
--   **Sidebar**: Analytical, logical, speculative, technical.
+---
 
-### Implementation:
-Use HTML `<details>` tags for all sidebars.
+## 5. EMOTIONAL & SURVEILLANCE SCALING
+- **High Emotion**: Dialogue becomes shorter and slang-heavy. Narrator becomes quieter. Technical density drops.
+- **High Surveillance**: Narrator becomes more analytical. Tooltips become more frequent. Dialogue tightens into clinical precision.
+
+---
+
+## 6. THE SIDEBAR SYSTEM
+Use HTML `<details>` tags for all sidebars to provide deep world-building without stalling the plot.
+
 ```html
 <aside>
 <details>
 <summary><strong>SUBJECT: Term Name</strong></summary>
 <blockquote>
-<strong>Observation:</strong> Brief empirical definition.
+<strong>Observation:</strong> Brief technical definition.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -85,42 +82,4 @@ Use HTML `<details>` tags for all sidebars.
 </aside>
 ```
 
----
-
-## 6. WORLD-BUILDING: THE REALITY (CHAOS VS. STRUCTURE)
-
--   **The System (NAI)**: Is not a lie; it is a shield. It tunes raw energy into "Music/Order."
--   **The Real World (No System)**: Is not "ugly grey buildings"; it is **Raw Chaos / Noise**. An unintelligible abyss of un-tuned resonance.
--   **The Reveal**: When the System fails, we don't see the "truth" (a slum); we see the **Void** (terrifying, non-Euclidean static).
-
-*"Coherence is Safety. Silence is Death. Noise is Madness."*
-
----
-
-## 7. PHASE 5 UPDATE: DISSONANCE VISION (POST-PATCH)
-**The Shift**: After "Project Dissonance" is installed (Chapter 13), Taro sees the Source Code.
--   **Old Vision**: Musical, Immersive, Sensory.
--   **New Vision**: Structural, Mathematical, Predatory.
--   **Key Visuals**:
-    -   **Stress Lines**: Glowing fractures in objects/people where they are weakest.
-    -   **Raw Integers**: Seeing the potential energy values (e.g., *Potential: 50,000J*) instead of just "bright light."
-    -   **Biological overlay**: Seeing organs/nervous systems as schematic diagrams.
--   **Sensation**: Cold, Invasive, "Dirty" (seeing too much information).
-
-## 7.1 LORE EXPANSION: RESONANCE DYSPHORIA (THE WIREFRAME)
-**Concept**: Some individuals have an "Inner Resonance" (True Self) that conflicts with their "Assigned Resonance" (System-enforced Hull/Appearance).
--   **The Wrong Note**: The System tries to "Error Correct" them into their assigned shape.
--   **The Wireframe**: When "Masking" fails (or when viewed by Dissonance Vision), the texture map wrong notes, revealing the raw wireframe of the "True Self" pushing against the mesh.
--   **The Illegal Mod**: "Retuning" or "Modulation" is the act of changing one's base frequency to match the inner self. The C-Order views this as "Hacktivism" or "Data Corruption."
-
-
----
-
-## 8. VISUAL PROMPTS (ART STYLE GUIDE)
-
-### SAFE MODE / BIOS
-> **Keywords**: `Wireframe`, `Low-Poly`, `Blueprint Aesthetic`, `Cyanotype`, `Retro-Computing`, `Flat Shading`, `Grid infinity`.
-> **Description**: The world is stripped of "textures." It looks like a debug view in a game engine.
-> -   **Characters**: Faceless low-poly meshes.
-> -   **Environment**: Wireframe grids over greyboxing.
-> -   **Sky**: Replaced by static or solid error color (Blue/Black).
+*"The world is code. We are the architects."*
