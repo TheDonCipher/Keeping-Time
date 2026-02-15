@@ -4163,15 +4163,47 @@
 
     
 
+    
+
+    
+
       constructor() {
 
     
 
-        this.nodes = [{ x: window.innerWidth, y: window.innerHeight, angle: -Math.PI * 0.75 }];
+    
 
     
 
-        this.branches = [];
+        this.impactPoint = { x: window.innerWidth, y: window.innerHeight };
+
+    
+
+    
+
+    
+
+        this.primaryShards = []; 
+
+    
+
+    
+
+    
+
+        this.crossCracks = [];   
+
+    
+
+    
+
+    
+
+        this.deadPixels = [];    
+
+    
+
+    
 
     
 
@@ -4179,11 +4211,27 @@
 
     
 
+    
+
+    
+
         this.pausedUntil = 0;
 
     
 
+    
+
+    
+
       }
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -4195,7 +4243,15 @@
 
     
 
+    
+
+    
+
         if (NarrativeState.fractureLevel < 0.05) return;
+
+    
+
+    
 
     
 
@@ -4207,7 +4263,19 @@
 
     
 
+    
+
+    
+
+    
+
+    
+
         const currentLevel = NarrativeState.fractureLevel;
+
+    
+
+    
 
     
 
@@ -4215,7 +4283,7 @@
 
     
 
-        // Growth Pause Mechanic
+    
 
     
 
@@ -4223,7 +4291,15 @@
 
     
 
+    
+
+    
+
           this.pausedUntil = Date.now() + 2500;
+
+    
+
+    
 
     
 
@@ -4231,31 +4307,15 @@
 
     
 
+    
+
+    
+
           return;
 
     
 
-        }
-
     
-
-    
-
-    
-
-        // Grow spine nodes
-
-    
-
-        const nodeInterval = 0.02;
-
-    
-
-        if (currentLevel > this.nodes.length * nodeInterval) {
-
-    
-
-          this.addSpineNode();
 
     
 
@@ -4267,27 +4327,147 @@
 
     
 
-        // Generate branches
+    
 
     
 
-        const branchThreshold = 0.3;
+    
 
     
 
-        if (currentLevel > branchThreshold) {
+        // Grow primary shards
 
     
 
-          const targetBranchCount = Math.floor(Math.pow(currentLevel, 2) * 40);
+    
 
     
 
-          while (this.branches.length < targetBranchCount) {
+        const shardTarget = Math.floor(currentLevel * 8);
 
     
 
-            this.addBranch();
+    
+
+    
+
+        while (this.primaryShards.length < shardTarget) {
+
+    
+
+    
+
+    
+
+          this.addPrimaryShard(this.primaryShards.length < 1);
+
+    
+
+    
+
+    
+
+        }
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+        this.primaryShards.forEach(shard => {
+
+    
+
+    
+
+    
+
+          const maxLen = shard.isAlpha ? window.innerWidth * 2.0 : window.innerWidth * 0.6;
+
+    
+
+    
+
+    
+
+          const targetLen = currentLevel * maxLen;
+
+    
+
+    
+
+    
+
+          if (shard.length < targetLen) this.extendShard(shard);
+
+    
+
+    
+
+    
+
+        });
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+        // Intense Dead Pixel / Void clumping in corner
+
+    
+
+    
+
+    
+
+        if (currentLevel > 0.2) {
+
+    
+
+    
+
+    
+
+          const pixelTarget = Math.floor(Math.pow(currentLevel, 3) * 4000);
+
+    
+
+    
+
+    
+
+          while (this.deadPixels.length < pixelTarget) {
+
+    
+
+    
+
+    
+
+            this.addDeadPixel();
+
+    
+
+    
 
     
 
@@ -4295,7 +4475,19 @@
 
     
 
+    
+
+    
+
         }
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -4307,7 +4499,15 @@
 
     
 
+    
+
+    
+
         this.draw();
+
+    
+
+    
 
     
 
@@ -4319,43 +4519,67 @@
 
     
 
-      addSpineNode() {
+    
 
     
 
-        const last = this.nodes[this.nodes.length - 1];
+    
 
     
 
-        const len = 20 + Math.random() * 30;
+      addPrimaryShard(isAlpha = false) {
 
     
 
-        const angleDev = (Math.random() - 0.5) * 0.8; // Jaggedness
+    
 
     
 
-        const newAngle = last.angle + angleDev;
+        const baseAngle = isAlpha ? -Math.PI * 0.75 : -Math.PI * 0.5 - (Math.random() * Math.PI * 0.4);
 
     
 
-        
+    
 
     
 
-        this.nodes.push({
+        this.primaryShards.push({
 
     
 
-          x: last.x + Math.cos(newAngle) * len,
+    
 
     
 
-          y: last.y + Math.sin(newAngle) * len,
+          angle: baseAngle,
 
     
 
-          angle: newAngle
+    
+
+    
+
+          length: 0,
+
+    
+
+    
+
+    
+
+          isAlpha: isAlpha,
+
+    
+
+    
+
+    
+
+          segments: [{ x: this.impactPoint.x, y: this.impactPoint.y }]
+
+    
+
+    
 
     
 
@@ -4363,6 +4587,10 @@
 
     
 
+    
+
+    
+
       }
 
     
@@ -4371,99 +4599,223 @@
 
     
 
-      addBranch() {
+    
 
     
 
-        const parentIdx = Math.floor(Math.random() * (this.nodes.length - 1));
+    
 
     
 
-        const parentNode = this.nodes[parentIdx];
+      extendShard(shard) {
 
     
 
-        
+    
 
     
 
-        // Angular Rules: 10-60 degrees deviation
+        const last = shard.segments[shard.segments.length - 1];
 
     
 
-        const side = Math.random() > 0.5 ? 1 : -1;
+    
 
     
 
-        const dev = (10 + Math.random() * 50) * (Math.PI / 180) * side;
+        const segLen = shard.isAlpha ? 200 + Math.random() * 300 : 40 + Math.random() * 80;
 
     
 
-        const angle = parentNode.angle + dev;
+    
 
     
 
-        
+        const dev = (Math.random() - 0.5) * 0.03;
 
     
 
-        const segments = [];
+    
 
     
 
-        let cx = parentNode.x;
+        const nx = last.x + Math.cos(shard.angle + dev) * segLen;
 
     
 
-        let cy = parentNode.y;
+    
 
     
 
-        const segCount = 2 + Math.floor(Math.random() * 4);
+        const ny = last.y + Math.sin(shard.angle + dev) * segLen;
 
     
 
-        
+    
 
     
 
-        for(let i=0; i<segCount; i++) {
+        shard.segments.push({ x: nx, y: ny });
 
     
 
-          const len = 10 + Math.random() * 20;
+    
 
     
 
-          const nx = cx + Math.cos(angle + (Math.random()-0.5)*0.2) * len;
+        shard.length += segLen;
 
     
 
-          const ny = cy + Math.sin(angle + (Math.random()-0.5)*0.2) * len;
-
     
-
-          segments.push({x: nx, y: ny});
-
-    
-
-          cx = nx; cy = ny;
-
-    
-
-        }
-
-    
-
-        
-
-    
-
-        this.branches.push(segments);
 
     
 
       }
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      addDeadPixel() {
+
+    
+
+    
+
+    
+
+        // Sharp falloff: pixels are exponentially more likely to be near the exact corner
+
+    
+
+    
+
+    
+
+        const r1 = Math.random();
+
+    
+
+    
+
+    
+
+        const r2 = Math.random();
+
+    
+
+    
+
+    
+
+        const dist = Math.pow(r1, 4) * (NarrativeState.fractureLevel * 1200);
+
+    
+
+    
+
+    
+
+        const angle = r2 * Math.PI * 0.5 + Math.PI; // Bottom-right quad
+
+    
+
+    
+
+    
+
+        
+
+    
+
+    
+
+    
+
+        this.deadPixels.push({
+
+    
+
+    
+
+    
+
+          x: window.innerWidth + Math.cos(angle) * dist,
+
+    
+
+    
+
+    
+
+          y: window.innerHeight + Math.sin(angle) * dist,
+
+    
+
+    
+
+    
+
+          w: Math.random() > 0.95 ? 15 : 2 + Math.random() * 5,
+
+    
+
+    
+
+    
+
+          h: Math.random() > 0.95 ? 3 : 1 + Math.random() * 2,
+
+    
+
+    
+
+    
+
+          color: Math.random() > 0.9 ? '#ff3366' : Math.random() > 0.2 ? '#000' : 'var(--accent)',
+
+    
+
+    
+
+    
+
+          isData: Math.random() > 0.98 // Occasional "glimmer" of deeper code
+
+    
+
+    
+
+    
+
+        });
+
+    
+
+    
+
+    
+
+      }
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -4475,7 +4827,23 @@
 
     
 
+    
+
+    
+
         if (!svgLayer) return;
+
+    
+
+    
+
+    
+
+        let markup = '';
+
+    
+
+    
 
     
 
@@ -4483,19 +4851,11 @@
 
     
 
-        let spinePath = `M ${this.nodes[0].x} ${this.nodes[0].y} `;
+    
 
     
 
-        for (let i = 1; i < this.nodes.length; i++) {
-
-    
-
-          spinePath += `L ${this.nodes[i].x} ${this.nodes[i].y} `;
-
-    
-
-        }
+        this.primaryShards.forEach(shard => {
 
     
 
@@ -4503,23 +4863,27 @@
 
     
 
-        let branchMarkup = '';
+          let d = `M ${shard.segments[0].x} ${shard.segments[0].y} `;
 
     
 
-        this.branches.forEach(segs => {
+    
 
     
 
-          let bPath = `M ${segs[0].x} ${segs[0].y} `;
+          for(let i=1; i<shard.segments.length; i++) d += `L ${shard.segments[i].x} ${shard.segments[i].y} `;
 
     
 
-          for(let i=1; i<segs.length; i++) { bPath += `L ${segs[i].x} ${segs[i].y} `; }
+    
 
     
 
-          branchMarkup += `<path d="${bPath}" stroke="var(--accent)" stroke-width="1" fill="none" opacity="0.35" />`;
+          markup += `<path d="${d}" stroke="var(--accent)" stroke-width="${shard.isAlpha ? 6 : 1.5}" fill="none" opacity="${shard.isAlpha ? 1.0 : 0.4}" stroke-linejoin="miter" />`;
+
+    
+
+    
 
     
 
@@ -4531,19 +4895,7 @@
 
     
 
-        svgLayer.innerHTML = `
-
     
-
-          <path d="${spinePath}" stroke="var(--accent)" stroke-width="2" fill="none" opacity="0.6" />
-
-    
-
-          ${branchMarkup}
-
-    
-
-        `;
 
     
 
@@ -4551,11 +4903,7 @@
 
     
 
-        if (NarrativeState.fractureLevel > 0.65) this.drawMicroWeb();
-
-    
-
-      }
+        svgLayer.innerHTML = markup;
 
     
 
@@ -4563,59 +4911,259 @@
 
     
 
-      drawMicroWeb() {
+    
 
     
 
-        if (!canvas) return;
+    
 
     
 
-        canvas.width = window.innerWidth;
+        if (this.deadPixels.length > 0) {
 
     
 
-        canvas.height = window.innerHeight;
+    
 
     
 
-        ctx.strokeStyle = 'var(--accent)';
+          canvas.width = window.innerWidth;
 
     
 
-        ctx.lineWidth = 0.5;
+    
 
     
 
-        ctx.globalAlpha = 0.15;
+          canvas.height = window.innerHeight;
 
     
 
-        
+    
 
     
 
-        const points = Math.floor(NarrativeState.fractureLevel * 50);
+          
 
     
 
-        for(let i=0; i<points; i++) {
+    
 
     
 
-          ctx.beginPath();
+          // Draw the "Broken Corner" clumping
 
     
 
-          ctx.moveTo(Math.random()*innerWidth, Math.random()*innerHeight);
+    
 
     
 
-          ctx.lineTo(Math.random()*innerWidth, Math.random()*innerHeight);
+          this.deadPixels.forEach(p => {
 
     
 
-          ctx.stroke();
+    
+
+    
+
+            ctx.fillStyle = p.isData && Math.random() > 0.5 ? '#fff' : p.color;
+
+    
+
+    
+
+    
+
+            ctx.globalAlpha = p.color === '#000' ? 0.95 : 0.7;
+
+    
+
+    
+
+    
+
+            ctx.fillRect(p.x, p.y, p.w, p.h);
+
+    
+
+    
+
+    
+
+            
+
+    
+
+    
+
+    
+
+            // Add "revealed data" flicker in the densest part
+
+    
+
+    
+
+    
+
+            if (NarrativeState.fractureLevel > 0.8 && Math.random() > 0.995) {
+
+    
+
+    
+
+    
+
+              ctx.font = '8px monospace';
+
+    
+
+    
+
+    
+
+              ctx.fillStyle = 'var(--accent)';
+
+    
+
+    
+
+    
+
+              ctx.fillText(Math.random().toString(16).substring(2, 4), p.x, p.y);
+
+    
+
+    
+
+    
+
+            }
+
+    
+
+    
+
+    
+
+          });
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+          // Special effect: The Absolute Void in the extreme corner
+
+    
+
+    
+
+    
+
+          if (NarrativeState.fractureLevel > 0.6) {
+
+    
+
+    
+
+    
+
+            const voidSize = (NarrativeState.fractureLevel - 0.6) * 400;
+
+    
+
+    
+
+    
+
+            const grad = ctx.createRadialGradient(innerWidth, innerHeight, 0, innerWidth, innerHeight, voidSize);
+
+    
+
+    
+
+    
+
+            grad.addColorStop(0, 'rgba(0,0,0,1)');
+
+    
+
+    
+
+    
+
+            grad.addColorStop(0.8, 'rgba(0,0,0,0.8)');
+
+    
+
+    
+
+    
+
+            grad.addColorStop(1, 'rgba(0,0,0,0)');
+
+    
+
+    
+
+    
+
+            ctx.fillStyle = grad;
+
+    
+
+    
+
+    
+
+            ctx.beginPath();
+
+    
+
+    
+
+    
+
+            ctx.moveTo(innerWidth, innerHeight);
+
+    
+
+    
+
+    
+
+            ctx.arc(innerWidth, innerHeight, voidSize, Math.PI, -Math.PI/2);
+
+    
+
+    
+
+    
+
+            ctx.fill();
+
+    
+
+    
+
+    
+
+          }
+
+    
+
+    
 
     
 
@@ -4623,11 +5171,35 @@
 
     
 
+    
+
+    
+
       }
 
     
 
+    
+
+    
+
     }
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -4643,7 +5215,19 @@
 
     
 
+    
+
+    
+
+    
+
+    
+
     function updateVisualLayers() {
+
+    
+
+    
 
     
 
@@ -4651,7 +5235,19 @@
 
     
 
+    
+
+    
+
     }
+
+    
+
+    
+
+    
+
+    
 
     
 
@@ -4661,117 +5257,549 @@
 
     function triggerClimax() {
 
+    
+
+    
+
+    
+
       NarrativeState.climaxTriggered = true;
+
+    
+
+    
+
+    
 
       document.body.classList.add('shatter-event');
 
+    
+
+    
+
+    
+
+      // Inject guilt into the log
+
+    
+
+    
+
+    
+
+      residualArchive.capture({ pattern: 'culpability' });
+
+    
+
+    
+
+    
+
       setTimeout(() => document.body.classList.remove('shatter-event'), 300);
 
+    
+
+    
+
+    
+
     }
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
 
     /** X. EVENT SYSTEMS **/
 
+    
+
+    
+
+    
+
     class NarrativeEventBus {
+
+    
+
+    
+
+    
 
       constructor() { this.listeners = {}; this.fragmentRegistry = []; }
 
+    
+
+    
+
+    
+
       on(e, h) { if (!this.listeners[e]) this.listeners[e] = []; this.listeners[e].push(h); }
+
+    
+
+    
+
+    
 
       emit(e, d) { if (this.listeners[e]) this.listeners[e].forEach(h => h(d)); }
 
+    
+
+    
+
+    
+
     }
+
+    
+
+    
+
+    
 
     const narrativeEvents = new NarrativeEventBus();
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     class FragmentGenerator {
+
+    
+
+    
+
+    
 
       constructor(eb) {
 
+    
+
+    
+
+    
+
         this.eb = eb;
+
+    
+
+    
+
+    
 
         this.templates = {
 
+    
+
+    
+
+    
+
           intensity_1: [{ pattern: 'signal_lost', keywords: ['static', 'disconnect', 'searching'] }],
+
+    
+
+    
+
+    
 
           intensity_2: [{ pattern: 'system_rejection', keywords: ['error', 'incompatible', 'delete'] }],
 
-          intensity_3: [{ pattern: 'reality_tear', keywords: ['void', 'unravel', 'source'] }]
+    
+
+    
+
+    
+
+          intensity_3: [
+
+    
+
+    
+
+    
+
+            { pattern: 'reality_tear', keywords: ['void', 'unravel', 'source'] },
+
+    
+
+    
+
+    
+
+            { pattern: 'culpability', keywords: ['you', 'kept', 'scrolling'] },
+
+    
+
+    
+
+    
+
+            { pattern: 'culpability', keywords: ['witness', 'the', 'damage'] }
+
+    
+
+    
+
+    
+
+          ]
+
+    
+
+    
+
+    
 
         };
 
+    
+
+    
+
+    
+
         this.eb.on('fragment:request', () => this.generate());
 
+    
+
+    
+
+    
+
       }
+
+    
+
+    
+
+    
 
       initialize() {
 
+    
+
+    
+
+    
+
         this.container = document.getElementById('fragment-container') || document.createElement('div');
+
+    
+
+    
+
+    
 
         this.container.id = 'fragment-container'; this.container.className = 'fragment-display-container';
 
+    
+
+    
+
+    
+
         document.body.appendChild(this.container);
 
+    
+
+    
+
+    
+
       }
+
+    
+
+    
+
+    
 
       generate() {
 
+    
+
+    
+
+    
+
         const intensity = NarrativeState.fractureLevel > 0.8 ? 3 : NarrativeState.fractureLevel > 0.5 ? 2 : 1;
+
+    
+
+    
+
+    
 
         const tSet = this.templates[`intensity_${intensity}`];
 
+    
+
+    
+
+    
+
         const t = tSet[Math.floor(Math.random() * tSet.length)];
+
+    
+
+    
+
+    
 
         const text = t.keywords.join(' / ');
 
+    
+
+    
+
+    
+
         
+
+    
+
+    
+
+    
 
         const el = document.createElement('div'); el.className = 'narrative-fragment visible';
 
+    
+
+    
+
+    
+
         el.innerHTML = `<span class="fragment-text">${text}</span>`;
+
+    
+
+    
+
+    
 
         this.container.appendChild(el); 
 
+    
+
+    
+
+    
+
         setTimeout(() => { el.style.opacity = '0'; setTimeout(() => el.remove(), 1000); }, 5000);
+
+    
+
+    
+
+    
 
         
 
+    
+
+    
+
+    
+
         this.eb.emit('fragment:generated', { pattern: t.pattern });
 
+    
+
+    
+
+    
+
       }
+
+    
+
+    
+
+    
 
     }
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     class ResidualArchive {
+
+    
+
+    
+
+    
 
       constructor(eb) { this.eb = eb; this.eb.on('fragment:generated', f => this.capture(f)); }
 
+    
+
+    
+
+    
+
       initialize() {
+
+    
+
+    
+
+    
 
         this.el = document.getElementById('archive-log');
 
+    
+
+    
+
+    
+
       }
+
+    
+
+    
+
+    
 
       capture(f) {
 
-        const inst = `${f.pattern} / deviation detected / logged`;
+    
+
+    
+
+    
+
+        let inst = `${f.pattern} / deviation detected / logged`;
+
+    
+
+    
+
+    
+
+        if (f.pattern === 'culpability') {
+
+    
+
+    
+
+    
+
+          const msgs = ["user / scroll / intent: destructive", "witness / observed / damage: absolute", "why / did / you / continue"];
+
+    
+
+    
+
+    
+
+          inst = msgs[Math.floor(Math.random() * msgs.length)];
+
+    
+
+    
+
+    
+
+        }
+
+    
+
+    
+
+    
 
         const entry = document.createElement('div'); entry.className = 'archive-entry';
 
+    
+
+    
+
+    
+
+        if (f.pattern === 'culpability') entry.style.color = '#ff3366';
+
+    
+
+    
+
+    
+
         entry.innerHTML = `<div class="entry-text">${inst}</div>`;
+
+    
+
+    
+
+    
 
         this.el.insertBefore(entry, this.el.firstChild);
 
+    
+
+    
+
+    
+
         if (this.el.children.length > 20) this.el.lastChild.remove();
+
+    
+
+    
+
+    
 
       }
 
+    
+
+    
+
+    
+
     }
+
+    
+
+    
+
+    
+
+    
 
     
 
