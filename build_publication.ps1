@@ -35,21 +35,24 @@ $chapterHTML = ""
             return "<span class=`"tooltip`" data-tip=`"$tip`">$term</span>"
         })
 
-        # 1. Headers
-        $html = $md -replace '# KEEPING TIME', ''
-        $html = $html -replace '(?m)^## (.+)$', '<h3>$1</h3>'
-        $html = $html -replace '(?m)^### (.+)$', '<h4>$1</h4>'
+        # 1. Horizontal Rules
+        $html = $md -replace '(?m)^---[ \t\r]*$', '<hr>'
+
+        # 2. Headers
+        $html = $html -replace '# KEEPING TIME', ''
+        $html = $html -replace '(?m)^## (.+?)\r?$', '<h3>$1</h3>'
+        $html = $html -replace '(?m)^### (.+?)\r?$', '<h4>$1</h4>'
         
-        # 2. Bold/Italic
-        $html = $html -replace '\*\*([^*]+)\*\*', '<strong>$1</strong>'
-        $html = $html -replace '\*([^*]+)\*', '<em>$1</em>'
+        # 3. Bold/Italic
+        $html = $html -replace '\*\*([^*]+?)\*\*', '<strong>$1</strong>'
+        $html = $html -replace '\*([^*]+?)\*', '<em>$1</em>'
 
-        # 3. System Blocks (**> TEXT)
-        $html = $html -replace '(?m)^\*\*>\s*(.+)$', '<div class="system-block"><p>$1</p></div>'
+        # 4. System Blocks (**> TEXT)
+        $html = $html -replace '(?m)^\*\*>\s*(.+?)\r?$', '<div class="system-block"><p>$1</p></div>'
 
-        # 4. Paragraphs
-        # Wrap lines that are NOT headers, NOT HTML tags, NOT empty in <p>
-        $html = $html -replace '(?m)^(?![<])(.+)$', '<p>$1</p>'
+        # 5. Paragraphs
+        # Wrap lines that are NOT headers, NOT horizontal rules, NOT HTML tags, NOT empty in <p>
+        $html = $html -replace '(?m)^(?![ \t\r]*$|<h[34]|<hr|<div)(.+?)\r?$', '<p>$1</p>'
 
         $chapterHTML += "`n<div class=`"chapter`" id=`"ch$_`">`n$html`n</div>`n"
     }

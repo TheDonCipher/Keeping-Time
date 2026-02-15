@@ -1,3 +1,8 @@
+# KEEPING TIME
+## Chapter 1: The Zap
+
+---
+
 **[[> SENSATION: BOOT_SEQUENCE::Initializing neural-acoustic synchronization.]]**
 **[[> TASTE: COPPER [BURNING]::Electrical discharge detected in gustatory cortex. Threshold: 4.2mA.]]**
 **[[> CONNECTING TO THE SCORE...::Attempting handshake with Global Resonance Grid. Root priority requested.]]**
