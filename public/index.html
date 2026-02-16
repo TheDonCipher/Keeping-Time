@@ -3216,39 +3216,39 @@ The "Cadet" in the mirror was the mask. The "Wrong Note" was the person.</p>
 
     const NARRATIVE_SIGNALS = {
 
-      "ch01_zap": { range: [0.00, 0.06], emotional_load: 0.85, system_pressure: 0.20, surveillance: 0.10 },
+      "ch01_zap": { range: [0.00, 0.06], emotional_load: 0.40, system_pressure: 0.20, surveillance: 0.10 },
 
-      "ch02_assessment": { range: [0.06, 0.12], emotional_load: 0.70, system_pressure: 0.95, surveillance: 1.00 },
+      "ch02_assessment": { range: [0.06, 0.12], emotional_load: 0.50, system_pressure: 0.60, surveillance: 0.70 },
 
-      "ch03_modulation": { range: [0.12, 0.18], emotional_load: 0.60, system_pressure: 0.80, surveillance: 0.40 },
+      "ch03_modulation": { range: [0.12, 0.18], emotional_load: 0.40, system_pressure: 0.40, surveillance: 0.30 },
 
-      "ch04_medium": { range: [0.18, 0.25], emotional_load: 0.75, system_pressure: 0.90, surveillance: 0.70 },
+      "ch04_medium": { range: [0.18, 0.25], emotional_load: 0.50, system_pressure: 0.50, surveillance: 0.40 },
 
-      "ch05_sync_check": { range: [0.25, 0.31], emotional_load: 0.55, system_pressure: 0.60, surveillance: 0.50 },
+      "ch05_sync_check": { range: [0.25, 0.31], emotional_load: 0.45, system_pressure: 0.40, surveillance: 0.30 },
 
-      "ch06_ground_state": { range: [0.31, 0.37], emotional_load: 0.40, system_pressure: 0.50, surveillance: 0.30 },
+      "ch06_ground_state": { range: [0.31, 0.37], emotional_load: 0.30, system_pressure: 0.30, surveillance: 0.20 },
 
-      "ch07_rival": { range: [0.37, 0.40], emotional_load: 0.70, system_pressure: 0.85, surveillance: 0.80 },
+      "ch07_rival": { range: [0.37, 0.40], emotional_load: 0.60, system_pressure: 0.70, surveillance: 0.60 },
 
-      "ch08_sortie": { range: [0.40, 0.45], emotional_load: 0.65, system_pressure: 0.75, surveillance: 0.85 },
+      "ch08_sortie": { range: [0.40, 0.45], emotional_load: 0.85, system_pressure: 0.80, surveillance: 0.90 },
 
-      "ch09_silence": { range: [0.45, 0.50], emotional_load: 0.90, system_pressure: 0.05, surveillance: 0.00 },
+      "ch09_silence": { range: [0.45, 0.50], emotional_load: 0.95, system_pressure: 0.20, surveillance: 0.10 },
 
-      "ch10_breach": { range: [0.50, 0.55], emotional_load: 0.95, system_pressure: 0.00, surveillance: 0.00 },
+      "ch10_breach": { range: [0.50, 0.55], emotional_load: 1.00, system_pressure: 0.90, surveillance: 0.20 },
 
-      "ch11_safe_mode": { range: [0.55, 0.62], emotional_load: 0.75, system_pressure: 0.30, surveillance: 0.60 },
+      "ch11_safe_mode": { range: [0.55, 0.62], emotional_load: 0.75, system_pressure: 0.40, surveillance: 0.60 },
 
-      "ch12_audit": { range: [0.62, 0.70], emotional_load: 0.85, system_pressure: 1.00, surveillance: 1.00 },
+      "ch12_audit": { range: [0.62, 0.70], emotional_load: 0.90, system_pressure: 1.00, surveillance: 1.00 },
 
-      "ch13_patch": { range: [0.70, 0.78], emotional_load: 0.50, system_pressure: 0.95, surveillance: 0.95 },
+      "ch13_patch": { range: [0.70, 0.78], emotional_load: 0.30, system_pressure: 0.95, surveillance: 0.95 },
 
-      "ch14_return": { range: [0.78, 0.83], emotional_load: 0.70, system_pressure: 0.85, surveillance: 0.90 },
+      "ch14_return": { range: [0.78, 0.83], emotional_load: 0.60, system_pressure: 0.80, surveillance: 0.85 },
 
-      "ch15_phantom_mesh": { range: [0.83, 0.88], emotional_load: 0.80, system_pressure: 0.75, surveillance: 0.60 },
+      "ch15_phantom_mesh": { range: [0.83, 0.88], emotional_load: 0.85, system_pressure: 0.75, surveillance: 0.60 },
 
-      "ch16_illegal_modulations": { range: [0.88, 0.93], emotional_load: 0.60, system_pressure: 0.50, surveillance: 0.40 },
+      "ch16_illegal_modulations": { range: [0.88, 0.93], emotional_load: 0.90, system_pressure: 0.50, surveillance: 0.40 },
 
-      "ch17_underground": { range: [0.93, 1.00], emotional_load: 0.55, system_pressure: 0.00, surveillance: 0.00 }
+      "ch17_underground": { range: [0.93, 1.00], emotional_load: 0.95, system_pressure: 0.10, surveillance: 0.00 }
 
     };
 
@@ -3350,7 +3350,7 @@ The "Cadet" in the mirror was the mask. The "Wrong Note" was the person.</p>
 
     function updateFracture() {
 
-      const threshold = 0.6;
+      const threshold = 0.75;
 
       const compound = NarrativeState.forces.internal * 0.6 + NarrativeState.forces.external * 0.3 + NarrativeState.forces.structural * 0.1;
 
