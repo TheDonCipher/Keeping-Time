@@ -1,10 +1,12 @@
 # WRITER'S GUIDE: THE SYNESTHESIA MANUSCRIPT (REVISED)
 
-> **Narrative Voice**: **Third Person Limited (Taro)**. Focus on intelligence and restraint.
+> **Narrative Voice**: **Third Person Limited (Taro)**. Focus on intelligence, sensory immersion, and the blur between biology and code.
 > **Linguistic Hierarchy**:
 > 1. **Character Dialogue**: Natural, slang-driven, lived-in.
-> 2. **Narration**: Philosophical, restrained, lightly technical.
-> 3. **Tooltips / System Logs**: Cold, clinical, precise technical data.
+> 2. **Prose (Integration)**: Sensory and diagnostic data woven directly into the narrative (e.g., describing the "feeling" of a frequency or the visual texture of an AR overlay).
+> 3. **HUD Notifications**: Internal system messages rendered in *italics* within the prose.
+> 4. **Formal System Blocks**: Reserved only for high-impact critical events (crashes, reboots, major reveals). Format: `[[> HEADER: MSG]]`.
+> 5. **Tooltips**: Narrative context, hindsight, or character-driven insights rather than raw technical stats. Format: `[[Term::Description]]`.
 
 ---
 
@@ -21,33 +23,26 @@ Characters do not speak like textbooks. They use musical and signal metaphors as
     - "That’s too sharp." (Aggressive or mean-spirited)
     - "You’re carrying load." (Stressed, burdened, or fatigued)
 - **Constraints**:
-    - No casual dialogue should mention "Hz" values, "Fourier decomposition," or "harmonic instability."
-    - No character explains physics unless they are explicitly C-Order trained or in a technical audit.
+    - No casual dialogue should mention "Hz" values or specific technical indices.
     - Use "Wrong Note" instead of "Glitch."
 
 ---
 
-## 2. THE NARRATOR (PHILOSOPHICAL OBSERVER)
-The narrator speaks with controlled intelligence, bridging the gap between raw data and human experience.
+## 2. THE PROSE (SENSORY INTEGRATION)
+Instead of separate technical headers, weave diagnostic data into Taro's sensory experience.
 
-- **Technical Tone**: Use terms like *Baseline*, *Drift*, *Load*, *Resonance*, *Phase*, *Interference*, and *Structural Strain* to add gravity.
+- **Technical Immersion**: Describe the "latency" in a room's atmosphere or the "pixel pitch" of a beautiful sky.
+- **HUD Italics**: Use *italics* for quick system updates that appear in Taro's vision.
+    - *Example*: The room felt heavy, the air thick with analog interference. *SIGNAL INTEGRITY: 15% [CRITICAL].* 
 - **Philosophical Tone**: Reflect on reality as a shared composition and identity as a frequency struggle.
-- **Example Transformation**:
-    - *Old*: "His emotional frequency deviated sharply above baseline."
-    - *New*: "His tone lifted. Higher than baseline. The room would register the drift."
 
 ---
 
-## 3. THE SYSTEM LAYER (TOOLTIPS)
-Tooltips are the *only* place where full technical language appears. They are cold, clinical, and precise.
+## 3. THE TOOLTIP SYSTEM (NARRATIVE CONTEXT)
+Tooltips are no longer for cold technical data. They provide context, hindsight, and emotional depth.
 
-- **Content**: 
-    - Exact Hertz (Hz) deviations
-    - Score Unit (SU) calculations
-    - Spectral Deviation Index (SDI)
-    - Phase Drift Coefficient
-- **Example**: 
-    - `Baseline: 64 Hz | Current Frequency: 78 Hz | Sustained Drift: 14 Hz | Score Accumulation: 14 SU`
+- **Format**: `[[Term::Description]]`
+- **Example**: `[[Fundamental::A rare class of resonator who acts as a living anchor for reality, forcing a cold and absolute order upon the world's natural chaos.]]`
 
 ---
 
@@ -56,13 +51,17 @@ Resonance awareness is a social burden.
 - **Tone Control**: Taught in schools as "civic hygiene."
 - **Social Shame**: Being "off-tone" in public is embarrassing or suspicious.
 - **Damping**: Parents tell children to "stay level."
-- **Rebellion**: Rebels intentionally "run sharp" or "spike" to signal defiance against the C-Order.
+- **Rebellion**: Rebels intentionally "run sharp" or "spike" to signal defiance.
 
 ---
 
-## 5. EMOTIONAL & SURVEILLANCE SCALING
-- **High Emotion**: Dialogue becomes shorter and slang-heavy. Narrator becomes quieter. Technical density drops.
-- **High Surveillance**: Narrator becomes more analytical. Tooltips become more frequent. Dialogue tightens into clinical precision.
+## 5. FORMAL SYSTEM BLOCKS (CRITICAL ONLY)
+Reserve the formal `[[> HEADER: MSG]]` format for moments of high narrative impact.
+
+```text
+[[> KERNEL_PANIC: REALITY_NOT_FOUND]]
+[[> STATUS: UNMASKED]]
+```
 
 ---
 
@@ -74,7 +73,7 @@ Use HTML `<details>` tags for all sidebars to provide deep world-building withou
 <details>
 <summary><strong>SUBJECT: Term Name</strong></summary>
 <blockquote>
-<strong>Observation:</strong> Brief technical definition.
+<strong>Observation:</strong> Brief narrative or technical definition.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

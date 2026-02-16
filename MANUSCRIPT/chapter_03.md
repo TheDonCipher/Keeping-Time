@@ -3,21 +3,11 @@
 
 ---
 
-**[[ZONE: SECTOR 7-C RESIDENTIAL::Environmental fidelity: LOW. Interference probability: 82%.]]**
-**[[SIGNAL INTEGRITY: 15% [CRITICAL]::Packet loss: 45% | Jitter: 12ms | Sustained drift: 14Hz.]]**
-**[[INTERFERENCE: ANALOG_STATIC::Broad-spectrum noise detected. Source: Unshielded grid.]]**
-
----
-
 ### [20:01:15] THE DEAD ZONE
 
-Taro stood outside the apartment door.
+Taro stood outside the apartment door. He was back in Sector 7-C, a residential tier defined by its low environmental fidelity and a constant, crushing eighty-two percent probability of interference.
 
-The air in Sector 7-C was thick with what the manual called Analog Interference. To the naked eye, the hallway was just dim and dirty. To a user with an active Score port, it was a sandstorm. Stray radio waves, unshielded power coupling hums, and the jagged, stuttering chatter of cheap hardware cluttered the capacity. It was the kind of place where people kept their heads down and their dampers high, terrified that a single emotional spike would draw a damping audit from the passing Enforcers. Being off-tone here wasn't just a social failure; it was a target on your back.
-
-**[[> ENVIRONMENT_WARNING::Acoustic transparency restricted.]]**
-**[[> TYPE: POOR_CONNECTION::Latency: 150ms | Packet re-transmission: active.]]**
-**[[> STATUS: DEGRADED::SDI: 0.72 | HIQ: 0.65 | Phase Drift Coefficient: 0.14 | Noise Floor: -45 dB]]**
+The air in the sector was thick with what the manual called Analog Interference. To the naked eye, the hallway was just dim and dirty. To a user with an active Score port, it was a sandstorm. Stray radio waves, unshielded power coupling hums, and the jagged, stuttering chatter of cheap hardware cluttered the capacity. My HUD flickered with warnings—acoustic transparency was restricted, the connection poor and lagging with a 150ms latency. The signal integrity was critical, only fifteen percent of packets making it through the analog static bleeding from the unshielded grid.
 
 Taro tapped his fingers against his thigh. *Tap. Tap. Tap.* 
 
@@ -34,21 +24,15 @@ The elevator had hesitated on the way up—a nervous shudder in the cables that 
 It was silent.
 But not the "White Room" silence of high-end damping. This was suppressed silence. We build walls of sound to keep out the noise of our own thoughts, but eventually, the silence finds a way in.
 
-**[[> AMBIENT_SCAN::Local acoustic mapping complete.]]**
-**[[> DAMPING_FIELD: LOCAL_OVERRIDE::Authorized suppression active. Baseline: 440 Hz.]]**
-**[[> STATUS: ARTIFICIAL::Phase variance: 0.001%.]]**
+Taro stepped inside, and his ambient scan completed an instant local override. Authorized suppression was active, holding the baseline at 440 Hz with a phase variance so low it felt entirely artificial.
 
 Kael Nishimura sat at the kitchen table.
 
 To Taro's sensor suite, his father looked... rendered.
-In a zone defined by static and grit, Kael was a perfect, anti-aliased object. He didn't move. He didn't vibrate. He sat in a pool of perfect stillness, polishing his tuning fork with a microfiber cloth.
-
-**[[> TARGET: KAEL_NISHIMURA::Subject identity verified. Class: Fundamental.]]**
-**[[> CLASS: FUNDAMENTAL::Resonant Tier: 6 | Stability: ABSOLUTE.]]**
-**[[> WAVEFORM: PURE_SINE::Harmonic distortion: <0.001%.]]**
+In a zone defined by static and grit, Kael was a perfect, anti-aliased object. He didn't move. He didn't vibrate. He sat in a pool of perfect stillness, polishing his tuning fork with a microfiber cloth. My target analysis confirmed him as Kael Nishimura, a class of Fundamental with an absolute stability and a pure sine waveform that showed virtually zero harmonic distortion.
 
 Zero variance.
-Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a [[Fundamental::A rare class of resonator capable of becoming a 'Living Anchor', forcing order upon chaos through absolute stability.]] in a world of variables. We all search for a center, a point of absolute stillness, but Kael *was* the center. And being the center is its own kind of prison. It means never being allowed to drift, never being allowed to feel the texture of the world's noise.
+Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a [[Fundamental::A rare class of resonator who acts as a living anchor for reality, forcing a cold and absolute order upon the world's natural chaos.]] in a world of variables. We all search for a center, a point of absolute stillness, but Kael *was* the center. And being the center is its own kind of prison. It means never being allowed to drift, never being allowed to feel the texture of the world's noise.
 
 "You're back," Kael said. His voice was a perfect, uncompressed sine wave. No decay. No grit.
 
@@ -56,7 +40,7 @@ Taro stepped inside. Immediately, the impedance mismatch hit him.
 
 Taro's internal signal—a high-pressure oscillation—slammed into the dense, heavy atmosphere Kael was projecting. It felt like walking into a wall of solid gold.
 
-The air between them shimmered. A visual artifact caused by two incompatible Score signatures trying to occupy THE same space. The Score flickered, unable to reconcile the two signals.
+The air between them shimmered. A visual artifact caused by two incompatible Score signatures trying to occupy the same space. The Score flickered, unable to reconcile the two signals.
 
 "Voss called," Kael said. He didn't look up.
 
@@ -64,7 +48,7 @@ The air between them shimmered. A visual artifact caused by two incompatible Sco
 
 “No, he didn’t." Kael finally looked up. His eyes were tired, but his signal remained absolute. "He gave you a deployment order."
 
-Taro sat down opposite him. The table vibrated. Taro’s leg was bouncing, a nervous tic that THE Score tagged as **[[> MOTOR_LOOP: UNSTABLE::Neural-somatic sync failure. Variance: 12%.]]**.
+Taro sat down opposite him. The table vibrated. Taro’s leg was bouncing, a nervous tic that the system tagged as an unstable motor loop, a neural-somatic sync failure that was oscillating at twelve percent variance.
 
 "I have to go to Malkuth," Taro said.
 
@@ -78,21 +62,13 @@ Taro's vision flared green. The note was so mathematically perfect it hurt to pr
 
 "It's quiet because I keep the noise out! I carry the load so you can stay flat!"
 
-Kael’s amplitude spiked.
-**[[> ALERT: PRESSURE_WAVE_DETECTED::Acoustic transient: 85dB. Source: K.Nishimura.]]**
-**[[> MAGNITUDE: 85dB::Baseline: 440 Hz | Drift: 0 Hz | SDI: 0.00 | Phase Drift Coefficient: 0.00 | Score Units: 0 SU]]**
+Kael’s amplitude spiked, an acoustic transient of 85dB hitting the room like a physical blow. For a second, the apartment's [[Damping Field::An artificial floor imposed on reality, a heavy hand that crushes any sound trying to rise above the approved threshold.]] buckled. Taro saw the raw power underneath his father's skin. Kael wasn't just a Calibrator; he was a Fundamental. A living anchor. He could overwrite the reality of the room in a microsecond if he chose to unclench his will.
 
-For a second, the apartment's [[Damping Field::An artificially imposed frequency floor that suppresses all resonance above a certain threshold.]] buckled. Taro saw the raw power underneath his father's skin. Kael wasn't just a Calibrator; he was a Fundamental. A living anchor. He could overwrite the reality of the room in a microsecond if he chose to unclench his will.
-
-But he didn't. He clamped it down.
-**> STATUS: CONTAINED.**
+But he didn't. He clamped it down, the status returning to contained.
 
 "Your mother," Kael whispered. "She was running high too. She burned so bright she couldn't hold her form. She clipped until there was nothing left to render."
 
-**> QUERY: AYANE_NISHIMURA**
-**> ERROR: FILE_CORRUPTED**
-
-Taro's HUD tried to pull the file, but the Score returned only static.
+Taro's HUD tried to pull the file for Ayane Nishimura, but the Score returned only static—the file was corrupted beyond recovery.
 
 "I'm not her," Taro said, his voice fragmenting. "I'm... I'm just me. I'm just a wrong note."
 
@@ -102,8 +78,7 @@ Taro's HUD tried to pull the file, but the Score returned only static.
 
 "It's a muzzle."
 
-Kael stood up. He walked to the reinforced cabinet in the corner. He pressed his hand to the scanner.
-**[[> BIOMETRIC_MATCH: CONFIRMED::Identity: K.Nishimura. Authorization: Granted.]]**
+Kael stood up. He walked to the reinforced cabinet in the corner. He pressed his hand to the scanner, his biometric match confirmed instantly.
 
 He pulled out a heavy, lead-lined case.
 
@@ -115,9 +90,7 @@ But not standard Score-compatible gear. These were vintage analog. Heavy foam ea
 
 "Pure Analog," Kael said. "No sync. No Score. Just... physics."
 
-Taro picked them up. They felt heavy. Cold. Real.
-**> OBJECT_ANALYSIS: UNKNOWN_TECH**
-**> CONNECTIVITY: NONE**
+Taro picked them up. They felt heavy. Cold. Real. My system couldn't even analyze the technology, detecting no connectivity at all.
 
 "Put them on," Kael said.
 
@@ -126,8 +99,7 @@ He plugged the jack into his Score port’s auxiliary bypass.
 
 *Click.*
 
-**[[> AUDIO_PROTOCOL: BYPASS::Digital audio driver suspended. Direct acoustic link active.]]**
-**[[> INPUT_SOURCE: ANALOG_DIRECT::Sampling rate: INFINITE | Processing: NONE.]]**
+*AUDIO PROTOCOL: BYPASS.* The digital audio driver was suspended, a direct acoustic link snapping into place. The sampling rate was infinite, the processing zero.
 
 Silence.
 But not the "White Room" dead silence.
@@ -147,9 +119,7 @@ Just the dark. And a low, steady thrum in his chest.
 
 The Sawtooth Oscillation. 
 
-It wasn't a wrong note. It wasn't a buffer overflow. 
-
-It was a song. A raw, high-resolution sample of his own existence.
+It wasn't a wrong note. It was a song. A raw, high-resolution sample of his own existence.
 
 Taro opened eyes.
 His father was looking at him.
@@ -162,8 +132,7 @@ He just saw his dad. Looking sad.
 
 He was right. Taro could feel the pressure building in the room again. The physics of the two opposing waveforms demanding resolution. He couldn't stay. He was a volatile reaction in a stable solution.
 
-Taro stood up. He generated a route to the terminal.
-**[[> ROUTE_SET: ACADEMY_TERMINAL::Destination distance: 4.2 km. Path clear.]]**
+Taro stood up, his route set to the Academy terminal—four point two kilometers, path clear. 
 
 He walked to the door.
 
@@ -176,22 +145,16 @@ He walked to the door.
 "I know," Kael whispered. "That's the problem."
 
 Taro opened the door and stepped out into the chaotic noise of the hallway.
-The Score booted back up.
-**[[> SYSTEM: ONLINE::Neural-acoustic sync restored. Global alignment: active.]]**
-<p>
-</p>
-<p>Taro adjusted the analog headphones around his neck.
-</p>
-<p>His dad was a pure sine wave. Perfect. Unchanging.
-</p>
-<p>But the world wasn't a sine wave.
-</p>
-<p>The world was noise.
-</p>
-<p>
-</p>
-<p>And Taro was going to play it.
-</p>
-<p>
-</p>
-**[[> TRACK: 03_COMPLETE::Session recorded. Data archived.]]**
+The Score booted back up, restoring the neural-acoustic sync and global alignment.
+
+Taro adjusted the analog headphones around his neck.
+
+His dad was a pure sine wave. Perfect. Unchanging.
+
+But the world wasn't a sine wave.
+
+The world was noise.
+
+And Taro was going to play it.
+
+**[[> TRACK: 03_COMPLETE::The file is saved, the memory recorded—another piece of the puzzle waiting for its resolution.]]**

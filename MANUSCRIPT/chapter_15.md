@@ -3,13 +3,9 @@
 
 ---
 
-**[[ZONE: MALKUTH_ACADEMY [PRACTICE_ANNEX]::Authorized rehearsal tier. Environmental fidelity: HIGH.]]**
-**[[SYSTEM_TIME: 03:42:00 (NIGHT_CYCLE)::Local server status: Low-Load.]]**
-**[[FILTER_STATUS: UNSTABLE::Neural-acoustic masking layer failing. Variance: 12%.]]**
-
----
-
 ### [03:42:00] THE MIRROR
+
+The practice annex was a hollow vault of silence, an authorized rehearsal tier where the environmental fidelity was pushed to its high-resolution limit. Outside, the Academy was in its night cycle, the local server humming in a low-load state. But inside, my neural-acoustic masking layer was failing, a twelve-percent variance causing the world to stutter.
 
 The mirror was lying. Or maybe it was THE only thing telling THE truth.
 
@@ -25,11 +21,9 @@ But then, he blinked.
 
 For a microsecond, THE texture map of his face popped. THE skin, THE hair, THE bone structure—it all vanished, replaced by a jagged, screaming wireframe of raw blue light. It wasn't just a wrong note. It was a completely different shape.
 
-The Cadet Taro [[Hull::AR Social Skin v4.2. Alignment: C Major. Stability: ENFORCED.]] was symmetrical, solid, harmonious. A major chord made of flesh. THE wireframe underneath was jagged, asymmetrical, splintered. A dissonant chord struggling to break free.
+The Cadet Taro [[Hull::The AR social skin that the world sees—a polished, stable major chord of flesh designed to hide the dissonance underneath.]] was symmetrical, solid, harmonious. A major chord made of flesh. THE wireframe underneath was jagged, asymmetrical, splintered. A dissonant chord struggling to break free.
 
-**[[> WARNING: HULL_INTEGRITY_COMPROMISED::Internal signal exceeding social filter capacity.]]**
-**[[> ERROR: INTERNAL_GEOMETRY_MISMATCH::Vertex conflict identified. Rendering variance: HIGH.]]**
-**SDI: 0.14 | HIQ: 0.12 | Phase Drift Coefficient: 0.05 | Score Units: 42 SU**
+My HUD flared with warnings. <em>Hull integrity compromised.</em> The internal signal was exceeding the social filter's capacity, a vertex conflict causing the rendering variance to spike as my internal geometry failed to match the mask. <em>ERROR: INTERNAL_GEOMETRY_MISMATCH.</em> SDI: 0.14, HIQ: 0.12.
 
 Taro gasped, splashing cold water on his face. He scrubbed at his skin, as if he could wash away the blue light.
 
@@ -55,7 +49,7 @@ He needed to get out. The air in the dorms was too thick. Too ordered. Too clean
 
 He wandered the academy grounds, aiming for the practice wing. It was the only place where the acoustics were dampened enough to drown out the constant, judging hum of the city.
 
-He walked past THE perfectly manicured gardens. THE cherry blossoms were glowing. To his new vision, he saw THE code keeping them in bloom: **[[[FORCE_BLOOM: TRUE]::Environmental script confirmed. Status: ACTIVE.]]**.
+He walked past the perfectly manicured gardens. The cherry blossoms were glowing, their petals forced into a permanent, artificial bloom by an environmental script that refused to let them fade. <em>[FORCE_BLOOM: TRUE].</em>
 
 *Everything here is forced,* he thought. *Everything is performing.*
 
@@ -122,7 +116,7 @@ Taro walked over. He sat on THE floor, ignoring THE protocol that said he should
 
 "They call it corruption," Taro said. "Voss says it's a fatal error."
 
-"Resonance Dysphoria," Kimura corrected. "That's THE clinical term. A [[Pathological Misalignment::Subject frequency rejection identified. Target registry: NULL.]] between assigned frequency and internal geometry. Socially embarrassing, right?"
+"Resonance Dysphoria," Kimura corrected. "That's THE clinical term. A [[Pathological Misalignment::The clinical term for a soul that rejects its assigned frequency, leaving you a ghost in your own machine.]] between assigned frequency and internal geometry. Socially embarrassing, right?"
 
 "I call it the truth," Taro said.
 
@@ -140,11 +134,7 @@ Kimura hesitated. Then, a small, sad smile touched the corner of the heavy jawli
 
 "Elara," she whispered. "My name is Elara. I'm... I'm full-spectrum. I hear everything. And the system... it just wants me to be a single, flat note. It wants me to carry the load and never spike."
 
-**[[> DIALOGUE_EVENT: RESONANCE_SYNC::Neural alignment confirmed.]]**
-**[[> STATUS: MASKING_OFF::Subject internal signal exposed.]]**
-**[[> SIGNAL: UNFILTERED::Zero damping active. Raw acoustic data stream.]]**
-
-For the first time since the reboot, the noise in Taro's head went quiet. He wasn't alone in the static anymore. They were two wrong notes in a perfect machine, and for a brief, flickering moment, they were in phase.
+For the first time since the reboot, the noise in Taro's head went quiet. <em>Resonance sync confirmed.</em> The masking was off, our internal signals exposed in a raw, unfiltered acoustic data stream. <em>SIGNAL: UNFILTERED.</em> He wasn't alone in the static anymore. They were two wrong notes in a perfect machine, and for a brief, flickering moment, they were in phase.
 
 ---
 
