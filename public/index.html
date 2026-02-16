@@ -44,11 +44,12 @@
             line-height: 1.8;
             color: var(--text);
             background: var(--bg);
-            transition: background-color var(--transition), color var(--transition);
+            transition: background-color var(--transition), color var(--transition), padding-left 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
             padding-left: 320px;
         }
+        body.sidebar-hidden { padding-left: 0; }
 
         main {
             max-width: var(--max-width);
@@ -70,8 +71,9 @@
             justify-content: space-between;
             align-items: center;
             padding: 12px 24px;
-            transition: transform 0.3s ease, background-color var(--transition);
+            transition: transform 0.3s ease, background-color var(--transition), left 0.6s cubic-bezier(0.16, 1, 0.3, 1), width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
+        body.sidebar-hidden .nav-ui { left: 0; width: 100%; }
 
         .nav-ui.hidden { transform: translateY(-100%); }
 
@@ -260,67 +262,77 @@
             padding: 40px 24px; backdrop-filter: blur(12px);
             transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
             font-family: var(--font-mono);
+            transform: translateX(0); /* Visible by default */
         }
+        #residual-archive.hidden { transform: translateX(-100%); }
 
-        .diagnostic-spine { display: flex; flex-direction: column; gap: 40px; flex-grow: 1; }
+        .diagnostic-spine { display: flex; flex-direction: column; gap: 32px; flex-grow: 1; overflow-y: auto; padding-right: 8px; }
+        .diagnostic-spine::-webkit-scrollbar { width: 4px; }
+        .diagnostic-spine::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
         
-        .vital-section { display: flex; flex-direction: column; gap: 16px; position: relative; }
-        .vital-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 3px; opacity: 0.5; color: var(--text); }
+        .vital-section { display: flex; flex-direction: column; gap: 12px; position: relative; }
+        .vital-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.6; color: var(--text); font-weight: 900; }
         
         /* Resonance Matrix (Orbital HUD) */
         .resonance-matrix { 
             height: 180px; width: 100%; position: relative; 
             display: flex; justify-content: center; align-items: center;
-            border: 1px solid rgba(var(--accent-rgb), 0.1); border-radius: 4px;
-            background: radial-gradient(circle at center, rgba(var(--accent-rgb), 0.05) 0%, transparent 70%);
+            border: 1px solid rgba(var(--accent-rgb), 0.1); border-radius: 8px;
+            background: radial-gradient(circle at center, rgba(var(--accent-rgb), 0.03) 0%, transparent 70%);
+            overflow: hidden;
         }
         .matrix-ring { 
             position: absolute; border-radius: 50%; border: 1px solid transparent; 
-            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
             display: flex; justify-content: center; align-items: center;
         }
-        .ring-internal { width: 40px; height: 40px; border-color: #ff3366; box-shadow: 0 0 15px rgba(255, 51, 102, 0.2); }
-        .ring-external { width: 80px; height: 80px; border-color: var(--accent); box-shadow: 0 0 20px var(--accent-glow); }
-        .ring-structural { width: 120px; height: 120px; border-color: var(--gold); border-style: dashed; }
+        .ring-internal { width: 40px; height: 40px; border-color: #ff3366; opacity: 0.4; }
+        .ring-external { width: 80px; height: 80px; border-color: var(--accent); opacity: 0.4; }
+        .ring-structural { width: 120px; height: 120px; border-color: var(--gold); border-style: dashed; opacity: 0.2; }
         
-        .matrix-ring.dominant { border-width: 3px; animation: ringPulse 2s infinite; }
-        @keyframes ringPulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.05); opacity: 0.7; } 100% { transform: scale(1); opacity: 1; } }
+        .matrix-ring.dominant { border-width: 2px; opacity: 1; animation: ringPulse 3s infinite ease-in-out; }
+        @keyframes ringPulse { 0% { transform: scale(1); } 50% { transform: scale(1.08); } 100% { transform: scale(1); } }
 
         /* Stress Column (Fluid Marrow) */
         .stress-column { 
-            height: 120px; width: 12px; background: rgba(0,0,0,0.1); 
-            border: 1px solid var(--border); border-radius: 20px; position: relative; 
-            margin-left: 8px; overflow: hidden;
+            height: 80px; width: 8px; background: rgba(var(--accent-rgb), 0.05); 
+            border: 1px solid var(--border); border-radius: 4px; position: relative; 
+            overflow: hidden;
         }
         .stress-fill { 
             position: absolute; bottom: 0; left: 0; width: 100%; 
             background: linear-gradient(to top, var(--accent), #ff3366); 
-            transition: height 0.8s ease; 
+            transition: height 1s cubic-bezier(0.16, 1, 0.3, 1); 
         }
         .stress-fill::after {
-            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
-            background: white; filter: blur(2px); opacity: 0.5;
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transform: translateX(-100%); animation: gloss 2s infinite;
         }
+        @keyframes gloss { 100% { transform: translateX(100%); } }
 
         /* Fracture Index HUD */
-        .index-display { display: flex; align-items: baseline; gap: 8px; }
-        .index-value { font-size: 1.8rem; font-weight: 900; color: var(--accent); letter-spacing: -1px; }
-        .index-unit { font-size: 0.6rem; opacity: 0.4; }
+        .index-display { display: flex; align-items: baseline; gap: 8px; background: rgba(var(--accent-rgb), 0.03); padding: 12px; border-radius: 4px; border: 1px solid rgba(var(--accent-rgb), 0.05); }
+        .index-value { font-size: 1.5rem; font-weight: 900; color: var(--accent); font-family: var(--font-mono); }
+        .index-unit { font-size: 0.5rem; opacity: 0.5; letter-spacing: 1px; }
 
         /* Status Ticker */
         .status-line { 
-            font-size: 0.75rem; font-weight: bold; padding: 8px; 
-            background: rgba(0,0,0,0.05); border-left: 3px solid var(--accent);
-            letter-spacing: 1px; min-height: 32px;
+            font-size: 0.7rem; font-weight: 900; padding: 10px 12px; 
+            background: rgba(var(--accent-rgb), 0.05); border-radius: 4px;
+            letter-spacing: 1px; min-height: 36px; display: flex; align-items: center;
+            border: 1px solid rgba(var(--accent-rgb), 0.1);
         }
-        .status-line.warning { border-color: #ff3366; color: #ff3366; animation: flicker 0.1s infinite; }
-        @keyframes flicker { 0% { opacity: 1; } 50% { opacity: 0.8; } 100% { opacity: 1; } }
+        .status-line.warning { border-color: #ff3366; color: #ff3366; background: rgba(255, 51, 102, 0.05); animation: alertFlicker 0.2s infinite; }
+        @keyframes alertFlicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
 
         .archive-log-container { 
-            flex-grow: 1; overflow-y: auto; font-size: 0.6rem; 
-            border-top: 1px solid var(--border); margin-top: 20px; padding-top: 20px;
-            mask-image: linear-gradient(to bottom, black 80%, transparent);
+            display: flex; flex-direction: column; gap: 8px;
+            font-size: 0.55rem; color: var(--text); opacity: 0.8;
+            border-top: 1px solid var(--border); padding-top: 20px;
         }
+        .archive-entry { padding: 6px 0; border-bottom: 1px solid rgba(var(--accent-rgb), 0.05); line-height: 1.4; }
+        .archive-entry:last-child { border-bottom: none; }
 
         .fragment-display-container { position: fixed; bottom: 40px; right: 40px; width: 300px; z-index: 1100; pointer-events: none; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
         .narrative-fragment { background: var(--bg); border: 1px solid var(--accent); border-radius: 2px; padding: 12px 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
@@ -406,6 +418,7 @@
     <nav class="nav-ui" id="main-nav">
         <div class="nav-brand" style="font-family: var(--font-display); font-weight: 900; letter-spacing: 2px;">KEEPING TIME</div>
         <div class="nav-controls">
+            <button class="ui-btn" onclick="toggleSidebar()" aria-label="Toggle system analysis">Analysis</button>
             <button class="ui-btn" onclick="toggleTOC()" aria-label="Open chapters menu">Chapters</button>
             <button class="ui-btn" onclick="toggleTheme()" id="theme-icon" aria-label="Toggle dark mode">Theme</button>
         </div>
@@ -427,6 +440,10 @@
         
 
                 <aside id="residual-archive">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                        <div class="vital-label" style="opacity: 1; color: var(--accent);">System Analysis</div>
+                        <button class="ui-btn" onclick="toggleSidebar()" style="padding: 4px 12px; font-size: 0.6rem;">Close</button>
+                    </div>
 
         
 
@@ -458,7 +475,7 @@
 
         
 
-                            <div class="vital-label" title="Resonance Matrix: Internal (❤️), External (👁️), Structural (⬢)">Force Dominance</div>
+                            <div class="vital-label">Force Dominance</div>
 
         
 
@@ -466,15 +483,15 @@
 
         
 
-                                <div class="matrix-ring ring-structural" id="ring-structural"></div>
+                                <div class="matrix-ring ring-structural" id="ring-structural" title="Structural (Grid Integrity)"></div>
 
         
 
-                                <div class="matrix-ring ring-external" id="ring-external"></div>
+                                <div class="matrix-ring ring-external" id="ring-external" title="External (Surveillance/Environment)"></div>
 
         
 
-                                <div class="matrix-ring ring-internal" id="ring-internal"></div>
+                                <div class="matrix-ring ring-internal" id="ring-internal" title="Internal (Emotional Load)"></div>
 
         
 
@@ -492,27 +509,15 @@
 
                         <div class="vital-section">
 
-        
-
-                            <div class="vital-label" title="Residual Fatigue Reservoir">Stress Memory</div>
-
-        
+                            <div class="vital-label" title="Aggregated neural fatigue from sustained signal drift.">Stress Accumulation</div>
 
                             <div style="display: flex; align-items: center;">
 
-        
-
                                 <div class="stress-column"><div class="stress-fill" id="stress-gauge"></div></div>
 
-        
-
-                                <div style="margin-left: 12px; font-size: 0.6rem; opacity: 0.4;">m_load / acc</div>
-
-        
+                                <div style="margin-left: 12px; font-size: 0.6rem; opacity: 0.5; letter-spacing: 1px;">FATIGUE_LVL</div>
 
                             </div>
-
-        
 
                         </div>
 
@@ -524,27 +529,15 @@
 
                         <div class="vital-section">
 
-        
-
-                            <div class="vital-label">Fracture Index</div>
-
-        
+                            <div class="vital-label" title="Structural integrity of the current reality render. At 1.000, the system collapses.">Fracture Index</div>
 
                             <div class="index-display">
 
-        
-
                                 <div class="index-value" id="fracture-index">0.000</div>
 
-        
-
-                                <div class="index-unit">VOID_POS</div>
-
-        
+                                <div class="index-unit">VOID_PROXIMITY</div>
 
                             </div>
-
-        
 
                         </div>
 
@@ -3562,7 +3555,7 @@ The "Cadet" in the mirror was the mask. The "Wrong Note" was the person.</p>
 
     
 
-        const scale = 0.5 + (val * 1.5);
+        const scale = 0.4 + (val * 0.8);
 
     
 
@@ -5195,141 +5188,32 @@ The "Cadet" in the mirror was the mask. The "Wrong Note" was the person.</p>
     
 
     class ResidualArchive {
-
-    
-
-    
-
-    
-
       constructor(eb) { this.eb = eb; this.eb.on('fragment:generated', f => this.capture(f)); }
-
-    
-
-    
-
-    
-
-      initialize() {
-
-    
-
-    
-
-    
-
-        this.el = document.getElementById('archive-log');
-
-    
-
-    
-
-    
-
-      }
-
-    
-
-    
-
-    
-
+      initialize() { this.el = document.getElementById('archive-log'); }
       capture(f) {
-
-    
-
-    
-
-    
-
-        let inst = `${f.pattern} / deviation detected / logged`;
-
-    
-
-    
-
-    
-
-        if (f.pattern === 'culpability') {
-
-    
-
-    
-
-    
-
-          const msgs = ["user / scroll / intent: destructive", "witness / observed / damage: absolute", "why / did / you / continue"];
-
-    
-
-    
-
-    
-
-          inst = msgs[Math.floor(Math.random() * msgs.length)];
-
-    
-
-    
-
-    
-
+        if (!this.el) return;
+        let inst = "";
+        switch (f.pattern) {
+          case 'signal_lost': inst = "signal anomaly / standard deviation / logged"; break;
+          case 'control_slip': inst = "containment protocol / deviation detected / adjusting"; break;
+          case 'system_rejection': inst = "incompatibility event / subject flagged / processing"; break;
+          case 'memory_bleed': inst = "memory access event / logged / within parameters"; break;
+          case 'reality_tear': inst = "perception error / severe / medical intervention required"; break;
+          case 'identity_fracture': inst = "personality coherence: unstable / intervention: authorized"; break;
+          case 'culpability':
+            const msgs = ["user / scroll / intent: destructive", "witness / observed / damage: absolute", "why / did / you / continue"];
+            inst = msgs[Math.floor(Math.random() * msgs.length)];
+            break;
+          default: inst = `${f.pattern} / deviation detected / logged`;
         }
-
-    
-
-    
-
-    
-
-        const entry = document.createElement('div'); entry.className = 'archive-entry';
-
-    
-
-    
-
-    
-
+        const entry = document.createElement('div');
+        entry.className = 'archive-entry';
         if (f.pattern === 'culpability') entry.style.color = '#ff3366';
-
-    
-
-    
-
-    
-
-        entry.innerHTML = `<div class="entry-text">${inst}</div>`;
-
-    
-
-    
-
-    
-
-        this.el.insertBefore(entry, this.el.firstChild);
-
-    
-
-    
-
-    
-
-        if (this.el.children.length > 20) this.el.lastChild.remove();
-
-    
-
-    
-
-    
-
+        const timestamp = new Date().toLocaleTimeString([], { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        entry.innerHTML = `<strong>[${timestamp}]</strong> ${inst}`;
+        this.el.prepend(entry);
+        if (this.el.children.length > 30) this.el.lastChild.remove();
       }
-
-    
-
-    
-
-    
-
     }
 
     
@@ -5381,6 +5265,20 @@ The "Cadet" in the mirror was the mask. The "Wrong Note" was the person.</p>
     function toggleTheme() { const b = document.body; const t = b.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'; b.setAttribute('data-theme', t); localStorage.setItem('novel-theme', t); }
 
     function toggleTOC() { const m = document.getElementById('toc-modal'); if (m) { const a = m.classList.toggle('active'); document.body.style.overflow = a ? 'hidden' : ''; } }
+
+    function toggleSidebar() {
+      const s = document.getElementById('residual-archive');
+      const b = document.body;
+      if (s) {
+        const isHidden = s.classList.toggle('hidden');
+        b.classList.toggle('sidebar-hidden', isHidden);
+        
+        // Prevent body scroll when sidebar is open on mobile
+        if (window.innerWidth <= 768) {
+          b.style.overflow = !isHidden ? 'hidden' : '';
+        }
+      }
+    }
 
     
 
