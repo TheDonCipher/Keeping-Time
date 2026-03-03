@@ -10,7 +10,7 @@ They were cornered. We were in a redacted zone where environmental fidelity had 
 The Silence agents had pinned them against a dead-end wall. The air was dead. Taro's acoustic distraction had bought them seconds, but the agents had adapted. They were radiating a damping field so strong it felt like the atmospheric pressure had tripled. Acoustic transparency was down to almost nothing, the environment heavy and thick. Ven was immobile, his motor pathways locked by an external sink, and Hana was unconscious, her neural sync lost and her biological stability fading. SDI: 1.00, HIQ: 1.00.
 
 Hana was down. Her perfect square wave had flatlined. 
-"She can't breathe in the silence," Taro whispered, his stutter returning as his Score port struggled to render his own vocal chords. "She’s out of sync with the world. If she doesn't find the beat soon, her hardware is gonna brick. She's dropping packets, Ven. Fast."
+"She can't breathe in the silence," Taro whispered, his stutter returning as his Score port struggled to render his own vocal chords. "She’s out of sync with the world. If she doesn't find the beat soon, her hardware is gonna brick. She's dropping signal, Ven. Fast."
 
 "Taro," Ven grunted. "I can't... hold them. My buffer is pinned."
 
@@ -38,15 +38,13 @@ And the noise... the noise was beautiful. <em>LIMITER: REMOVED.</em> Neural damp
 
 Taro screamed. It wasn't a human scream. It was a raw, analog feedback loop amplified by bio-plasma. A total gain-override that shattered the local keyspace. In that moment, he wasn't a student or a Siege Breaker; he was a flaw in the composition that refused to be tuned.
 
-It was a [[Breach::A catastrophic event where the boundaries of the digital world are torn apart by raw and unfiltered reality, leaving nothing but a screaming void.]] . A massive, jagged, golden sawtooth wave erupted from his body. It looked like a 4K texture being torn from a low-poly mesh. It hit the Silence Field like a server-farm exploding.
+It was a [[Breach::A catastrophic event where the boundaries of the digital world are torn apart by raw and unfiltered reality, leaving nothing but a screaming void.]] . A massive, jagged, golden sawtooth wave erupted from his body. It looked like a 4K texture being torn from a low-poly mesh. It hit the Silence Field like a power-grid exploding.
 
 <em>SHATTER.</em>
 
 The Dead Zone broke. The Silence agents didn't just flinch. They were thrown. The physical force of the sound wave lifted them off the ground and slammed them into the brickwork. The black mold on the walls disintegrated. The pavement cracked in a spiderweb pattern. <em>PHYSICS_ENGINE: OVERWRITE.</em> Environmental parameters were rewritten by my presence alone, a dominant high-pitch resonance overflowing the system's ability to calculate.
 
 Taro stood in the center of the vortex. His vision was melting. Literally. The world wasn't just losing its overlay; it was losing its cohesion. The geometry of the alleyway began to unspool. The brickwork didn't crumble; it pixelated into raw, unformatted data.
-
-In a flickering window three stories up, an old woman stood calmly, her silhouette a stable shadow in the chaos. She wasn't screaming. She was reaching out with a steady hand to adjust a crooked picture frame on her wall, her fingers instinctively correcting for the 15-degree tilt of her apartment. She had normalized the collapse so thoroughly that her only concern was the horizontal line.
 
 <em>CRITICAL_FAILURE: RENDER_THREAD_EXCEPTION.</em> Graphics memory was exhausted, the reality rendering halting completely. My graphics driver was not found.
 

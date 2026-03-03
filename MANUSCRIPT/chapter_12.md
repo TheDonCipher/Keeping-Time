@@ -17,7 +17,7 @@ Taro tried to move his hands. The restraints didn't bulge. They weren't just phy
 
 "Subject is online," a voice said.
 
-It wasn't the smooth, polished voice of a Calibrator. It was the flat, grinding tone of a heavy-duty server fan. My target analysis confirmed him as Adjutant Krell, an Enforcer with an aggressive acoustic profile and a lethal threat rating. His authority was unchecked, his visor a deep, angry red.
+It wasn't the smooth, polished voice of a Calibrator. It was the flat, grinding tone of a heavy-duty industrial fan. My target analysis confirmed him as Adjutant Krell, an Enforcer with an aggressive acoustic profile and a lethal threat rating. His authority was unchecked, his visor a deep, angry red.
 
 Krell didn't look at Taro. He looked at a floating holographic display that showed a diagram of Taro's nervous system. Parts of it were flashing red.
 
@@ -83,11 +83,11 @@ Voss swiped his hand through the air. A hologram appeared—a replay of the alle
 
 "It worked," Taro argued weakly. "It stopped them."
 
-"It stopped them by breaking the rules of physics," Voss said. "You bypassed the render engine. You forced the server to process raw, analog reality. Do you know what happens when a program runs unauthorized code?"
+"It stopped them by breaking the rules of physics," Voss said. "You bypassed the render engine. You forced the grid to process raw, analog reality. Do you know what happens when a program runs unauthorized code?"
 
 Taro shook his head.
 
-"It crashes," Voss said. "And when the server crashes, everyone dies. Not just you. Hana. Ven. Every citizen in Unison who relies on the Score to pump their hearts and regulate their breathing. You risked millions to save three. You clipped the entire composition."
+"It crashes," Voss said. "And when the grid crashes, everyone dies. Not just you. Hana. Ven. Every citizen in Unison who relies on the Score to pump their hearts and regulate their breathing. You risked millions to save three. You clipped the entire composition."
 
 Taro felt cold. He hadn't thought about the grid. He just wanted to survive.
 

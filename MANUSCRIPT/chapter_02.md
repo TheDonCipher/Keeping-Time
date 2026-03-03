@@ -51,7 +51,7 @@ The wireframe on the screen rotated. It showed the soldier's nervous system. It 
 
 Taro looked at his hands. He felt the phantom vibration of the High Register—the urge to fix, to tune, to change.
 
-"He was going to crash the server," Taro said. "I balanced the equation."
+"He was going to crash the grid," Taro said. "I balanced the equation."
 
 "You balanced it with a sledgehammer," Voss noted. "The Grand Concord relies on precision, Taro. Not brute force. We are a high-fidelity society. Your tone was sharp. Socially embarrassing."
 
@@ -59,7 +59,10 @@ Voss stood up. He walked around the desk, his movement efficient, conserving kin
 
 "The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss pointed a manicured finger at Taro's chest. "You’re off-tone. You are broadcasting across the entire capacity of Sector 7. You need to stay flat."
 
-My HUD flared with alerts. <em>SIGNAL_INSTABILITY_DETECTED.</em> A sustained drift was identified in my own signal, the stability index dropping as the load hit 142 SU.
+My HUD flared with alerts. *SIGNAL_INSTABILITY_DETECTED.*
+> EMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]
+
+A sustained drift was identified in my own signal, the stability index dropping as the load hit 142 SU.
 
 The collar tightened. Just a millimeter. A physical reminder of the rules.
 
@@ -84,6 +87,9 @@ Taro stared at the text floating in the air. [[Reformat::The ultimate social hyg
 Voss leaned in. For a moment, the perfect, manual-compliant facade cracked. The green dissonance in his eye flickered—a single frame of unauthorized code.
 
 "You are dangerous, Taro," Voss whispered. "But the Score needs danger. It needs heavy artillery."
+
+> ANOMALY: DETECTED
+> CLASSIFICATION: [REDACTED]
 
 Taro looked at the options.
 Option A was deletion.

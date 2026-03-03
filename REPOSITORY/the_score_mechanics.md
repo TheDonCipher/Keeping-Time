@@ -33,7 +33,7 @@ Personal status indicators fixed to the user's peripheral vision.
 ### SIGNAL TAGS (AR Labels)
 Every resonant object/person is "tagged" with a floating data window.
 -   **ID**: Name / Class / Faction.
--   **Frequency**: Current Hz output (e.g., `440 Hz [A4]`).
+-   **Pitch**: Current output (e.g., `Standard Pitch [A4]` or `High Register`).
 -   **Waveform Icon**: Visual representation of their signal (Square, Sine, Sawtooth).
 -   **Intention Monitor**: Real-time analysis of their carrier wave stability.
 
@@ -110,40 +110,18 @@ The visual style of The Score depends on the user's NAI firmware and Faction.
 
 ---
 
-## 5. SYSTEM RENDER MODES (Visual Filters)
-
-### SAFE MODE (BIOS Level)
-**Status**: Emergency Protocol / Low Power.
-- **Visuals**: Blue wireframe geometry on a black void. No textures. No lighting.
-- **HUD**: Minimal text-only. Command line interface style.
-- **Sensation**: Cold, sterile, "blueprint" feeling.
-
-### HIGH-FIDELITY (Hi-Fi)
-**Status**: Admin / Unfiltered.
-- **Visuals**: 8K Hyper-realism. Shows structural stress lines (yellow), heat leaks (red), and biological imperfections.
-- **HUD**: Overloaded with data points.
-- **Sensation**: "Too Loud." Sensory overwhelm.
-
-### THE VOID (Source Code)
-**Status**: Fatal Error / Crash.
-- **Visuals**: "Texture Missing" purple/black checkerboards. Non-Euclidean geometry. Static walls.
-- **HUD**: System Crash / Kernel Panic text.
-- **Sensation**: Nausea, vertigo, primal fear.
-
----
-
 ## 5. NARRATIVE INTEGRATION EXAMPLES
 
 **Scene: A Social Lie**
 > Voss smiled warmly. "I only want to help you, Taro."
 > My HUD flickered.
 > **> ANALYSIS: DECEPTION**
-> **> CARRIER_WAVE: JITTER [15Hz]**
+> **> CARRIER_WAVE: JITTER [CRITICAL]**
 > He was lying. The math didn't add up.
 
 **Scene: Sensory Overload**
 > The market was too loud.
-> **> INPUT: 90dB [WARNING]**
+> **> INPUT: PRESSURE [WARNING]**
 > **> SIGNAL_SOURCES: 500+**
 > **> CPU_LOAD: 99%**
 > The text frames started stacking on top of each other. The tags overlapped until they were just a wall of white noise. I squeezed my eyes shut, but the AR didn't turn off. It just kept scrolling error codes against the backs of my eyelids.
@@ -155,6 +133,38 @@ The visual style of The Score depends on the user's NAI firmware and Faction.
 > The world turned wireframe. Path lines illuminated in glowing green.
 > **> PATH: OPTIMAL**
 > I moved.
+
+---
+
+
+---
+
+## 6. SYSTEM MODES (VISUAL STATES)
+
+### STANDARD MODE (High-Fidelity)
+-   **Visuals**: Photorealistic AR overlay. Textures are smooth, lighting is dynamic.
+-   **Data**: High-density information. Complex UI elements.
+
+### SAFE MODE (BIOS Level)
+-   **Trigger**: Critical System Failure / Reboot.
+-   **Art Style**: **Low-Poly / Wireframe**.
+    -   **Geometry**: World renders as un-textured meshes. Buildings are sharp blocks. People are rough polygon shapes.
+    -   **Colors**: Monochromatic **BIOS Blue** (primary), White (edges), Black void (sky).
+    -   **Lighting**: Flat shading. No dynamic shadows.
+    -   **UI**: Command Line Interface (CLI) only. No icons, no gradients. Text is blocky pixel fonts.
+-   **Sensation**: "Input Lag," "Frame Skipping," "Sterile."
+
+### THE VOID (No System)
+-   **Visuals**: Raw Noise. Non-Euclidean static.
+-   **Sensation**: Vertigo, Nausea, Unintelligibility.
+
+### DISSONANCE MODE (Project Dissonance - Post-Patch)
+-   **Trigger**: Installed by Voss in Phase 4.
+-   **Art Style**: **Augmented Reality X-Ray**.
+    -   **Geometry**: Standard High-Fidelity, but with "Ghost Layers" revealing internal structures.
+    -   **Overlays**: Structural weakness maps (cracks glowing red), biological schematics (nervous systems visible).
+    -   **Data**: Raw, unfiltered integer values floating near objects.
+-   **Sensation**: Invasive, "Too Clear," Hyper-aware.
 
 ---
 

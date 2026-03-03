@@ -3,15 +3,15 @@
 
 ---
 
-### [09:15:00] THE HANDSHAKE
+### [09:15:00] THE SYNC
 
 "Initialize," Hana commanded.
 
-They stood in a triangle. Taro, Hana, and the large student known as Ven. We were in the Sandbox, a training dojo defined as a null-state simulation where environmental physics were suspended to save processing power. Collision detection was active, but the world was rendered in a cold, glowing wireframe. Sync was required at ninety-five percent for the triad handshake, and the session status was active, monitored by the Academy’s silent servers.
+They stood in a triangle. Taro, Hana, and the large student known as Ven. We were in the Sandbox, a training dojo defined as a null-state simulation where environmental physics were suspended to save processing power. Collision detection was active, but the world was rendered in a cold, glowing wireframe. Sync was required at ninety-five percent for the triad lock, and the session status was active, monitored by the Academy’s silent grids.
 
 The Sandbox was a void. No walls. No floor. Just a glowing wireframe grid projected beneath their boots. It smelled like nothing—literally absence of scent data. Simulation is the only place where the Score is honest; it doesn't bother painting over the rot because there is no rot to hide.
 
-Hana initiated the team link, the status pending as she attempted to sync three incompatible nodes. She was the root, her baseline a perfect 440 Hz square wave at one hundred percent sync. Ven was the sink, a low-impedance node with a 2.0 kW capacity, ready to absorb whatever load we generated. And then there was me—the variable, my frequency drifting and my sync unstable. My HIQ was a pathetic 0.12, the link latency hovering at a precise 0.02ms.
+Hana initiated the team link, the status pending as she attempted to sync three incompatible nodes. She was the root, her baseline a perfect 440 Hz square wave at one hundred percent sync. Ven was the sink, a low-impedance node with a 2.0 kW capacity, ready to absorb whatever load we generated. And then there was me—the variable, my frequency drifting and my sync unstable. My HIQ was a pathetic 0.12, the link drift hovering at a precise 0.02ms.
 
 "Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the [[Triad::A tactical unit composed of three resonant frequencies that must move as one or shatter the local grid.]] will stabilize. Don't run sharp, Taro. Stay flat."
 
@@ -19,9 +19,11 @@ Hana initiated the team link, the status pending as she attempted to sync three 
 
 "Do not speak," Hana corrected. "Output. Manual speech introduces too much mechanical noise. You're carrying too much load already."
 
-A blue wireframe line shot out from Hana's chest interface. It plugged directly into Ven's aura. *CONNECTION: ESTABLISHED.* Handshake confirmed, phase lock active with zero propagation delay.
+A blue wireframe line shot out from Hana's chest interface. It plugged directly into Ven's aura.
+> SYNC: LOCKED [STATUS: STABLE]
+Sync confirmed, phase lock active with zero propagation delay.
 
-It was a perfect handshake. A solid beam of blue light connecting them. They weren't reacting to each other; they were executing a pre-compiled script. It hummed with the stability of a bridge strut.
+It was a perfect sync. A solid beam of blue light connecting them. They weren't reacting to each other; they were executing a pre-compiled script. It hummed with the stability of a bridge strut.
 
 "Nishimura," Hana said. "Connect."
 
@@ -39,7 +41,7 @@ A jagged, yellow lightning bolt arced from Taro toward Hana. It hit her blue fir
 
 "I'm trying to find the pocket! My driver is lagging!"
 
-"There is no pocket," she stated. "There is the Grid. If/Then: If you align yourself to the Grid, then the handshake succeeds. There is no 'feeling'. There is only math."
+"There is no pocket," she stated. "There is the Grid. If/Then: If you align yourself to the Grid, then the sync succeeds. There is no 'feeling'. There is only math."
 
 Taro gritted his teeth.
 He tried again. This time, he forced the signal. He pushed the amplitude. <em>OUTPUT: 60%.</em>
@@ -49,7 +51,7 @@ The yellow arc slammed into her shield again.
 
 Hana winced. A red error flag appeared over her head. <em>FEEDBACK_LOOP.</em> Signal reflection detected, neural load spiking as her shield integrity dropped to ninety-five percent.
 
-"You are clipping," she snapped, her AR aura turning a dangerous, electric blue. "Lower your gain. You’re peaking, Taro. You're screaming raw data at the server and it is rejecting your packets."
+"You are clipping," she snapped, her AR aura turning a dangerous, electric blue. "Lower your gain. You’re peaking, Taro. You're screaming raw data at the grid and it is rejecting your signal."
 
 "I can't!" Taro shouted, his fingers drumming a frantic polyrhythm against his leg. "It's all or nothing! I don't have a volume knob, Hana! My hardware is built for line-level only!"
 

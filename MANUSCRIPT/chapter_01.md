@@ -3,7 +3,7 @@
 
 ---
 
-**[[> SENSATION: BOOT_SEQUENCE::The moment the world stops being flesh and becomes code again.]]**
+**[[> PROCESS: NAI_BOOT [STAGE: 1/3]::The moment the world stops being flesh and becomes code again.]]**
 
 ---
 
@@ -13,7 +13,7 @@ It hits you like a nail gun to the base of the skull.
 
 White light. Static. The taste of copper and burning hair—*Electrical discharge detected in gustatory cortex*, the system whispered, measuring the threshold at a searing 4.2mA.
 
-For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. The Score doesn't just ask for your participation; it demands your total alignment. We like to think of our lives as melodies we write ourselves, but in this world, we are just strings being plucked by a hand we can't see. Your nervous system shrieks as the [[Neural-Acoustic Interface::A direct neural link so fast it feels like your own thoughts are lagging behind.]] overrides your optic nerve, forcing a new Score onto your wetware. The system attempts a handshake with the Global Resonance Grid, a root priority request that feels like a physical weight pressing against your brain. The local server is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
+For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. The Score doesn't just ask for your participation; it demands your total alignment. We like to think of our lives as melodies we write ourselves, but in this world, we are just strings being plucked by a hand we can't see. Your nervous system shrieks as the [[Neural-Acoustic Interface::A direct neural link so fast it feels like your own thoughts are lagging behind.]] overrides your optic nerve, forcing a new Score onto your wetware. The system attempts a sync with the Global Resonance Grid, a root priority request that feels like a physical weight pressing against your brain. The local grid is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
 
 Then, the crash.
 
@@ -43,7 +43,7 @@ I swiped my [[damping bands::These are the only things keeping my internal noise
 
 *Beep.*
 
-*SENSATION: UNLOCKED.* Phase-match successful. Gateway open.
+> PROCESS: GATEWAY_OPEN Phase-match successful. Gateway open.
 
 The red static shattered into green particles, and the door slid open.
 
@@ -75,7 +75,9 @@ Remi hopped over the railing. To my synesthetic eyes, she was surrounded by a fa
 
 I touched my temple. No blood.
 
-"You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your capacity is too wide for these standard damping bands. They're already hitting thermal limit. You’re clipping, Taro. Badly."
+"You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your capacity is too wide for these standard damping bands." She leaned in, squinting at the worn etching on the inner band. "Custom job? That maker's mark is archaic."
+
+I pulled my wrist back. "Just old gear. They're already hitting thermal limit. You’re clipping, Taro. Badly."
 
 I glanced at my wrist. The three bands weren't just warm; they were glowing faint red in my thermal vision, already at sixty percent capacity and climbing. My amplitude was peaking, the interference index spiking as the load became unbearable.
 
@@ -169,7 +171,7 @@ I didn't scream. I didn't shout. I pulsed.
 
 *EXECUTE: PITCH_SHIFT.* I took the 261.63 Hz baseline and doubled it, striking the upper octave at 523.25 Hz.
 
-A massive, vertical pillar of Gold light erupted from my hand. It looked like a god-ray striking the earth. Solid. Infinite. Absolute. A pure sine-wave strike that overrode the local [[Key Signature::The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation.]]
+A massive, vertical pillar of Gold light erupted from my hand. It looked like a god-ray striking the earth. Solid. Infinite. Absolute. A pure sawtooth strike that overrode the local [[Key Signature::The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation.]]
 
 The waves aligned in perfect constructive interference. The gain hit +60dB, the amplitude peak shattering through my internal buffer limits. Four million joules of resonant energy were released in a single, focused burst.
 

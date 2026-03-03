@@ -7,11 +7,11 @@
 
 Taro stood outside the apartment door. He was back in Sector 7-C, a residential tier defined by its low environmental fidelity and a constant, crushing eighty-two percent probability of interference.
 
-The air in the sector was thick with what the manual called Analog Interference. To the naked eye, the hallway was just dim and dirty. To a user with an active Score port, it was a sandstorm. Stray radio waves, unshielded power coupling hums, and the jagged, stuttering chatter of cheap hardware cluttered the capacity. My HUD flickered with warnings—acoustic transparency was restricted, the connection poor and lagging with a 150ms latency. The signal integrity was critical, only fifteen percent of packets making it through the analog static bleeding from the unshielded grid.
+The air in the sector was thick with what the manual called Analog Interference. To the naked eye, the hallway was just dim and dirty. To a user with an active Score port, it was a sandstorm. Stray radio waves, unshielded power coupling hums, and the jagged, stuttering chatter of cheap hardware cluttered the capacity. My HUD flickered with warnings—acoustic transparency was restricted, the connection poor and lagging with a 150ms drift. The signal integrity was critical, only fifteen percent of signal making it through the analog static bleeding from the unshielded grid.
 
 Taro tapped his fingers against his thigh. *Tap. Tap. Tap.* 
 
-It was a somatic calibration loop. A way to force his internal clock to sync when the external server was lagging. Every tap was a micro-contact with his own biology, trying to clear the buffer of the day's static.
+It was a somatic calibration loop. A way to force his internal clock to sync when the external grid was lagging. Every tap was a micro-contact with his own biology, trying to clear the buffer of the day's static.
 
 "Just get the bag," he whispered, his voice catching on the sawtooth oscillation. "Get out. Stay flat."
 

@@ -5,7 +5,7 @@
 
 ### [05:00:00] THE CONVERSATION
 
-"We call it modulating," Elara said. Her voice had a slight echo, a shimmering texture that indicated her Score port’s filters were partially disengaged. We were in Practice Room 404, a locked vault where unauthorized access had been successfully masked and monitoring was suppressed. The server was in its maintenance cycle, and the room's soundproofing was pushed to its maximum 120dB limit, ensuring an acoustic leakage of less than zero point zero zero one percent.
+"We call it modulating," Elara said. Her voice had a slight echo, a shimmering texture that indicated her Score port’s filters were partially disengaged. We were in Practice Room 404, a locked vault where unauthorized access had been successfully masked and monitoring was suppressed. The grid was in its maintenance cycle, and the room's soundproofing was pushed to its maximum 120dB limit, ensuring an acoustic leakage of less than zero point zero zero one percent.
 
 The cello lay forgotten on the floor. She was sitting cross-legged, the holographic interface floating between them. It was a hacking deck—a custom, jailbroken UI that glowed with an illegal, warm amber light. It looked like vintage analog gear shoved into a digital world. It was messy. It was Low-Fi. It was beautiful.
 
@@ -43,7 +43,7 @@ She reached out and touched the holographic waveform. As her finger made contact
 
 For a second, the heavy, gloved hand of "Cadet Kimura" vanished. In its place was the slender, radiant wireframe hand Taro had seen before. No textures. No hulls. Just the raw mesh.
 
-"When I run the mod," Elara said softly, her voice now a clean, uncompressed treble, "the pain stops. The noise stops. I don't feel like I'm wearing a spacesuit made of lead. My latency drops to zero. I’m finally in sync with myself."
+"When I run the mod," Elara said softly, her voice now a clean, uncompressed treble, "the pain stops. The noise stops. I don't feel like I'm wearing a spacesuit made of lead. My drift drops to zero. I’m finally in sync with myself."
 
 "Why don't you run it all the time?" Taro asked.
 
@@ -65,7 +65,7 @@ She looked at him, her eyes searching his face.
 
 "What about you?" she asked. "What's your factory setting? What's your raw signal?"
 
-Taro hesitated. He looked at his own hands. He thought about the crash. The Void. The way the "Corrected" world looked so broken to him now—like a low-res texture map over a dying server.
+Taro hesitated. He looked at his own hands. He thought about the crash. The Void. The way the "Corrected" world looked so broken to him now—like a low-res texture map over a dying grid.
 
 "I don't know," Taro admitted. "I was trying so hard to be hi-fi. To stay flat. To match the key signature."
 

@@ -5,7 +5,7 @@
 
 ### [18:15:00] THE BLUE SCREEN
 
-"I can't see anything," Hana whispered. Her voice was thin, losing its binary certainty. We were in a redacted zone, a place unindexed by the city's maps where signal triangulation failed completely. Zero packets were received, the environment defined by total acoustic absorption. My system status was error-coded, a kernel panic imminent as the connection was lost. The threat was unknown, the danger extreme.
+"I can't see anything," Hana whispered. Her voice was thin, losing its binary certainty. We were in a redacted zone, a place unindexed by the city's maps where signal triangulation failed completely. Zero signal was received, the environment defined by total acoustic absorption. My system status was error-coded, a kernel panic imminent as the link was lost. The threat was unknown, the danger extreme.
 
 She was tapping her temple, a frantic, jagged rhythm that didn't match the master clock. Her aura—usually a rigid Square Wave—was fraying at the edges. Tearing. The "Golden Filter" of the C-Order hadn't just faded. It had crashed. She was dropping frames, her perception lagging behind the darkness. In the city, the Score is a blanket; here, the blanket had been ripped away, leaving us naked in the cold static of the Void.
 
@@ -29,7 +29,7 @@ A footstep. Soft. Cloth on stone. No heart rate. No bio-plasma hum. Just mass in
 
 "I have no lock," Hana hissed, her HUD a wall of static. "Analysis: Targeting system is offline. If/Then: If I cannot see the signal, then I must fire blindly."
 
-"Don't fire," Taro said. "They want you to spike. They eat the amplitude. They’re broadband-leaches."
+"Don't fire," Taro said. "They want you to spike. They eat the amplitude. They’re broadband-leachers."
 
 <em>Scrape.</em> From the shadows above, three shapes dropped. They didn't glow. They didn't have ID tags. They were matte black. Their suits absorbed 100% of visible light. They looked like moving holes in the reality render. Target analysis failed, the objects unclassified. Zero Score Units.
 
@@ -43,7 +43,7 @@ They hit the ground without a sound. No "thud." Just an absence of impact. The a
 
 Hana fired. A beam of pure blue light shot from her palm. A standard calibration pulse. It illuminated the alley for a microsecond. The lead Silence agent stepped forward. He raised a black knife. He didn't block the beam. He split it.
 
-The knife cut the frequency. The blue light hit the blade and vanished—eaten by the void. The air tasted like cold ash and missing packets. It was a [[Null-Blade::A handheld resonance sink, a tool of the void that drinks the world's music and leaves only a cold and hollow silence.]] . <em>ATTACK: NULLIFIED.</em> Core voltage was dropping, energy being drained by an external source. Efficiency: <em>12%</em>.
+The knife cut the frequency. The blue light hit the blade and vanished—eaten by the void. The air tasted like cold ash and missing data. It was a [[Null-Blade::A handheld resonance sink, a tool of the void that drinks the world's music and leaves only a cold and hollow silence.]] . <em>ATTACK: NULLIFIED.</em> Core voltage was dropping, energy being drained by an external source. Efficiency: <em>12%</em>.
 
 Hana gasped and fell to her knees, clutching her chest. "My core... it’s losing voltage..."
 

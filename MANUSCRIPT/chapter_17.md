@@ -5,13 +5,13 @@
 
 ### [23:45:00] THE DESCENT
 
-The elevator descended past the city's roots. We were in an unauthorized tier, the sub-bass levels of Sector 4 where the signal floor was a crushing -120dB. The system time showed 23:45:00, the local server status offline as we entered a restricted zone. My HUD flared with warnings—we were leaving network coverage, the global sync hitting zero percent as the handshake failed.
+The elevator descended past the city's roots. We were in an unauthorized tier, the sub-bass levels of Sector 4 where the signal floor was a crushing -120dB. The system time showed 23:45:00, the local grid status offline as we entered a restricted zone. My HUD flared with warnings—we were leaving network coverage, the global sync hitting zero percent as the sync failed.
 
 Floor -10: Maintenance.
 Floor -20: Waste Reclamation.
 Floor -30: Geothermal Tap.
 
-Taro watched the signal strength drop bar by bar, eighty-five percent of his packets already lost to the depths. <em>[|||||] ... [|||..] ... [|....]</em>
+Taro watched the signal strength drop bar by bar, eighty-five percent of his signal already lost to the depths. <em>[|||||] ... [|||..] ... [|....]</em>
 
 When the last bar vanished, a strange sensation washed over him. The constant, high-pitched hum of the C-Order Network—the carrier wave that connected every Score port in the city—cut out.
 

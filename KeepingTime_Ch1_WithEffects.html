@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEEPING TIME | Chapter 1: The Zap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ============================================================
+       ROOT TOKENS — Dark-mode baseline (matches original)
+       Light theme vars also declared for INVRT toggle.
+    ============================================================ */
+    :root {
+      --bg:          #0A0A0C;
+      --text:        #EAEAEA;
+      --text-dim:    #888888;
+      --accent:      #00f3ff;    /* Score cyan */
+      --danger:      #ff3366;    /* Pain / warning red */
+      --accent-dim:  rgba(0, 243, 255, 0.12);
+      --wave-color:  rgba(255,255,255,0.03);
+      --ui-bg:       rgba(10, 10, 12, 0.92);
+      --ui-border:   rgba(255,255,255,0.1);
+      --font-body:   'Crimson Pro', serif;
+      --font-display:'Outfit', sans-serif;
+      --font-mono:   'JetBrains Mono', monospace;
+      --ambient:     transparent;
+    }
+    [data-theme="light"] {
+      --bg:         #F4F0EB;
+      --text:       #1A1A1A;
+      --text-dim:   #666666;
+      --wave-color: rgba(0,0,0,0.04);
+      --ui-bg:      rgba(244, 240, 235, 0.92);
+      --ui-border:  rgba(0,0,0,0.1);
+    }
+
+    /* ============================================================
+       GLOBAL RESET + BODY
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 1.2rem;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    /* ============================================================
+       PROGRESS BAR — top edge, scales with scroll
+       Enhanced with glow box-shadow (quick win from suggestions)
+    ============================================================ */
+    #progress-container {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 3px;
+      z-index: 9999; background: transparent;
+    }
+    #progress-bar {
+      height: 100%; width: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--danger));
+      transform-origin: left; transform: scaleX(0);
+      /* [EFFECT: QUICK WIN #2] Glow added to progress bar for aliveness */
+      box-shadow: 0 0 8px var(--accent), 0 0 20px rgba(0,243,255,0.25);
+    }
+
+    /* ============================================================
+       SCROLL MACHINE — sticky scroll engine layout
+    ============================================================ */
+    #scroll-machine { position: relative; width: 100%; }
+    #stage {
+      position: sticky; top: 0;
+      width: 100vw; height: 100vh;
+      overflow: hidden;
+      display: flex; justify-content: center; align-items: center;
+      /* Ambient glow at center — updated dynamically by tension level */
+      background: radial-gradient(circle at center, var(--ambient) 0%, transparent 75%);
+      transition: background 0.4s;
+    }
+
+    /* [EFFECT: SCANLINES] CRT scanline overlay on #stage.
+       Persistent, low-opacity texture. mix-blend-mode multiplies
+       with both light and dark backgrounds cleanly. */
+    #stage::after {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 1px,
+        rgba(0,0,0,0.045) 1px,
+        rgba(0,0,0,0.045) 2px
+      );
+      pointer-events: none;
+      z-index: 2;
+      mix-blend-mode: multiply;
+      /* Scanlines slowly drift downward for subtle aliveness */
+      animation: scanline-drift 0.12s linear infinite;
+    }
+    @keyframes scanline-drift {
+      0%   { background-position: 0 0; }
+      100% { background-position: 0 4px; }
+    }
+
+    /* ============================================================
+       WAVE CANVAS — fullscreen background canvas for waveform
+    ============================================================ */
+    #wave-bg {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+
+    /* ============================================================
+       BEAT CONTAINER — holds the active narrative sentences
+    ============================================================ */
+    #beat-container {
+      position: relative;
+      z-index: 10;
+      width: 90%;
+      max-width: 65ch;
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* [EFFECT: HEARTBEAT] scale-pulse applied here via JS transform */
+    }
+
+    /* ============================================================
+       SENTENCE STATES — active / past / future
+       Active: border accent, full opacity.
+       Past/future: blurred, dim.
+    ============================================================ */
+    .sentence {
+      margin-bottom: 3.2rem;
+      padding-left: 1.5rem;
+      border-left: 3px solid transparent;
+      will-change: transform, opacity, filter;
+      transition: border-color 0.5s ease;
+      position: relative; /* needed for pseudo-element glitch layers */
+    }
+    .sentence.active { border-left-color: var(--accent); }
+    .sentence.past, .sentence.future { border-left-color: transparent; }
+
+    /* [EFFECT: SENTENCE GLOW] Soft luminance bloom on active text in dark mode */
+    .sentence.active {
+      text-shadow: 0 0 35px rgba(0,243,255,0.07);
+    }
+
+    /* ============================================================
+       FORMAT STYLES — mirrors original doc
+    ============================================================ */
+    .format-dialogue  { font-style: italic; }
+    .format-thought   {
+      font-family: var(--font-display);
+      font-weight: 400;
+      color: var(--text-dim);
+    }
+    .format-system    {
+      font-family: var(--font-mono);
+      font-size: 0.88rem;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+    .chapter-label    {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    .chapter-title    {
+      font-family: var(--font-display);
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.5rem;
+      transition: letter-spacing 1.5s ease, color 0.8s ease;
+    }
+    /* [EFFECT: QUICK WIN #3] Chapter title flashes accent color when active */
+    .sentence.active .chapter-title { letter-spacing: -0.01em; color: var(--accent); }
+    .sentence.past .chapter-title,
+    .sentence.future .chapter-title { color: var(--text); }
+
+    .beat-chapter { text-align: center; }
+
+    /* ============================================================
+       TOOLTIP — Score-world definitions on hover
+    ============================================================ */
+    .tooltip {
+      border-bottom: 1px dashed var(--accent);
+      color: var(--accent);
+      cursor: help;
+      position: relative;
+    }
+    .tooltip::after {
+      content: attr(data-tip);
+      position: absolute; bottom: 130%; left: 50%;
+      transform: translateX(-50%);
+      background: var(--ui-bg);
+      color: var(--text);
+      padding: 8px 10px;
+      border: 1px solid var(--accent);
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      width: 240px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s;
+      z-index: 999;
+    }
+    .tooltip:hover::after { opacity: 1; }
+
+    /* ============================================================
+       [EFFECT: TYPEWRITER CURSOR]
+       Blinking block cursor on .format-system when active.
+       Uses step-end timing for authentic terminal blink (no fade).
+    ============================================================ */
+    @keyframes cursor-blink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0; }
+    }
+    .sentence.active .format-system::after {
+      content: '█';
+      font-family: var(--font-mono);
+      font-size: 0.8em;
+      color: var(--accent);
+      margin-left: 3px;
+      display: inline;
+      animation: cursor-blink 0.9s step-end infinite;
+    }
+    /* Cursor removed on non-active states to prevent ghost cursors */
+    .sentence.past .format-system::after,
+    .sentence.future .format-system::after { content: none; }
+
+    /* ============================================================
+       [EFFECT: CHROMATIC ABERRATION]
+       CSS text-shadow RGB channel split, triggered by JS adding
+       .tension-mid or .tension-high to active sentence.
+       Only applied in dark theme via :root selector behavior.
+    ============================================================ */
+    .sentence.active.tension-mid {
+      text-shadow:
+        -1px 0 rgba(0, 243, 255, 0.35),
+        1px  0 rgba(255, 51, 102, 0.35),
+        0    0 35px rgba(0,243,255,0.07);
+    }
+    .sentence.active.tension-high {
+      text-shadow:
+        -3px 0 rgba(0, 243, 255, 0.55),
+        3px  0 rgba(255, 51, 102, 0.55),
+        0    0 25px rgba(0,243,255,0.18);
+    }
+
+    /* ============================================================
+       [EFFECT: GLITCH DISTORTION]
+       CSS clip-path channel-split glitch. Triggered by JS adding
+       .glitch to .sentence.active at extreme tension (vol > 0.85).
+       ::before = cyan channel, ::after = red channel.
+       data-text attribute mirrors text content (set by JS).
+    ============================================================ */
+    @keyframes glitch-clip-a {
+      0%   { clip-path: inset(38% 0 62% 0); transform: translate(-4px, 1px); }
+      20%  { clip-path: inset(90% 0 2% 0);  transform: translate(5px, 0); }
+      40%  { clip-path: inset(44% 0 53% 0); transform: translate(-3px, 2px); }
+      60%  { clip-path: inset(22% 0 60% 0); transform: translate(4px, -1px); }
+      80%  { clip-path: inset(56% 0 8% 0);  transform: translate(-2px, 0); }
+      100% { clip-path: inset(60% 0 38% 0); transform: translate(0, 1px); }
+    }
+    @keyframes glitch-clip-b {
+      0%   { clip-path: inset(62% 0 15% 0); transform: translate(3px, -1px); }
+      20%  { clip-path: inset(5% 0 88% 0);  transform: translate(-4px, 0); }
+      40%  { clip-path: inset(50% 0 30% 0); transform: translate(2px, -2px); }
+      60%  { clip-path: inset(10% 0 72% 0); transform: translate(-3px, 1px); }
+      80%  { clip-path: inset(30% 0 60% 0); transform: translate(4px, 0); }
+      100% { clip-path: inset(75% 0 15% 0); transform: translate(-2px, -1px); }
+    }
+    .sentence.glitch { isolation: isolate; }
+    .sentence.glitch::before,
+    .sentence.glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0; left: 1.5rem; /* match padding-left of .sentence */
+      width: calc(100% - 1.5rem);
+      font: inherit;
+      pointer-events: none;
+      opacity: 0.75;
+    }
+    .sentence.glitch::before {
+      color: var(--accent);
+      left: calc(1.5rem - 3px);
+      animation: glitch-clip-a 0.28s infinite linear alternate-reverse;
+      mix-blend-mode: screen;
+    }
+    .sentence.glitch::after {
+      color: var(--danger);
+      left: calc(1.5rem + 3px);
+      animation: glitch-clip-b 0.28s 0.08s infinite linear alternate-reverse;
+      mix-blend-mode: screen;
+    }
+
+    /* ============================================================
+       UI LAYER — fixed HUD, buttons
+    ============================================================ */
+    #ui-layer {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 100;
+      display: flex; flex-direction: column;
+      justify-content: space-between;
+      padding: 1.4rem;
+    }
+    .ui-top, .ui-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      pointer-events: auto;
+    }
+    button {
+      background: none; border: none;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      cursor: pointer;
+      text-transform: uppercase;
+      padding: 0.45rem;
+      letter-spacing: 0.08em;
+      transition: color 0.2s;
+    }
+    button:hover { color: var(--accent); }
+
+    /* HUD readout in top-right */
+    #hud {
+      display: flex; flex-direction: column;
+      gap: 0.45rem; text-align: right;
+    }
+    .hud-line {
+      display: flex; align-items: center;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+    .hud-value {
+      color: var(--text); font-weight: 700;
+      width: 4ch;
+      transition: color 0.3s;
+    }
+    /* HUD value flashes red at extreme tension */
+    .hud-value.danger { color: var(--danger); }
+    .hud-bar {
+      width: 44px; height: 2px;
+      background: var(--ui-border);
+      position: relative;
+    }
+    .hud-bar-fill {
+      position: absolute; top: 0; left: 0;
+      height: 100%;
+      background: var(--accent);
+      transition: width 0.3s, background 0.3s;
+    }
+    /* [EFFECT: HEARTBEAT] tension bar pulses red at high BPM */
+    .hud-bar-fill.danger { background: var(--danger); }
+
+    /* BPM display line */
+    #hud-bpm { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-dim); }
+    #bpm-val  { color: var(--accent); font-weight: 700; }
+
+    /* ============================================================
+       SCROLL HINT — bounces at page start
+    ============================================================ */
+    #scroll-hint {
+      position: fixed; bottom: 40px; left: 50%;
+      transform: translateX(-50%);
+      color: var(--accent);
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      z-index: 50;
+      transition: opacity 0.6s;
+      text-shadow: 0 0 10px var(--accent);
+      animation: bounceHint 2.2s infinite;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    #scroll-hint.hidden { opacity: 0; pointer-events: none; }
+    @keyframes bounceHint {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(10px); }
+    }
+
+    /* ============================================================
+       [EFFECT: DYNAMIC VIGNETTE]
+       Fixed overlay div — its gradient changes as coherence drops.
+       Darkness creeps in from the edges at high tension/low coherence.
+       Updated every frame by updateVignette() in JS.
+    ============================================================ */
+    #vignette {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 5;
+      /* Initial state: fully transparent */
+      background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0) 100%);
+      transition: background 0.6s ease;
+    }
+
+    /* ============================================================
+       [EFFECT: NARRATIVE FRAGMENTS]
+       Context-aware floating messages in bottom-right corner.
+       Rise upward and fade — 4s animation lifecycle.
+    ============================================================ */
+    #fragment-container {
+      position: fixed; bottom: 36px; right: 36px;
+      width: 280px; z-index: 1100;
+      pointer-events: none;
+      display: flex; flex-direction: column;
+      align-items: flex-end; gap: 10px;
+    }
+    @keyframes fragment-rise {
+      0%   { opacity: 0;   transform: translateY(18px); }
+      15%  { opacity: 1;   transform: translateY(0); }
+      80%  { opacity: 0.9; transform: translateY(-8px); }
+      100% { opacity: 0;   transform: translateY(-28px); }
+    }
+    .narrative-fragment {
+      background: var(--ui-bg);
+      border: 1px solid var(--accent);
+      border-radius: 2px;
+      padding: 9px 13px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2), 0 0 10px rgba(0,243,255,0.08);
+      animation: fragment-rise 4s ease-out forwards;
+    }
+    /* High-danger fragments get a red border and glow */
+    .narrative-fragment.danger {
+      border-color: var(--danger);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2), 0 0 10px rgba(255,51,102,0.15);
+    }
+    .fragment-text {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+    .narrative-fragment.danger .fragment-text { color: var(--danger); }
+
+    /* ============================================================
+       CHAPTER END CARD — END CHAPTER 1 final beat styling
+    ============================================================ */
+    .end-card {
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    /* ============================================================
+       [EFFECT: SYSTEM CRASH OVERLAY]
+       Full-screen black that fades in on the SYSTEM_CRASH beat.
+       Applied by JS when beat signal === 'crash'.
+    ============================================================ */
+    #crash-overlay {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #000;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 8000;
+      transition: opacity 2.5s ease;
+    }
+    #crash-overlay.active { opacity: 1; pointer-events: auto; }
+    #crash-message {
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--danger);
+      letter-spacing: 0.15em;
+      z-index: 8001;
+      opacity: 0;
+      text-align: center;
+      line-height: 2;
+      transition: opacity 1s ease 2s; /* delayed — appears after black settles */
+    }
+    #crash-message.active { opacity: 1; }
+  </style>
+</head>
+
+<body>
+  <!-- ============================================================
+       PROGRESS BAR
+  ============================================================ -->
+  <div id="progress-container"><div id="progress-bar"></div></div>
+
+  <!-- ============================================================
+       SCROLL MACHINE — sticky stage with wave canvas
+  ============================================================ -->
+  <div id="scroll-machine">
+    <div id="stage">
+      <canvas id="wave-bg"></canvas>
+      <div id="beat-container"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       VIGNETTE — updated dynamically by coherence level
+  ============================================================ -->
+  <div id="vignette"></div>
+
+  <!-- ============================================================
+       SCROLL HINT
+  ============================================================ -->
+  <div id="scroll-hint">
+    <span>BEGIN READING</span>
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M12 5v14M19 12l-7 7-7-7"/>
+    </svg>
+  </div>
+
+  <!-- ============================================================
+       UI LAYER — HUD + controls
+  ============================================================ -->
+  <div id="ui-layer">
+    <div class="ui-top">
+      <!-- Branding top-left -->
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;">KEEPING TIME</div>
+        <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-dim);">CH.01 — THE ZAP</div>
+      </div>
+      <!-- HUD readout top-right -->
+      <div id="hud">
+        <div class="hud-line">
+          <span>TENSION</span>
+          <div class="hud-bar"><div id="hud-tension" class="hud-bar-fill"></div></div>
+          <span class="hud-value" id="hud-tension-val">0.00</span>
+        </div>
+        <div class="hud-line">
+          <span>COHERENCE</span>
+          <div class="hud-bar"><div id="hud-coherence" class="hud-bar-fill"></div></div>
+          <span class="hud-value" id="hud-coherence-val">1.00</span>
+        </div>
+        <div class="hud-line" id="hud-bpm">
+          BPM: <span id="bpm-val">—</span>
+        </div>
+        <div class="hud-line">
+          <span id="hud-section" style="color: var(--accent);">INITIALIZING...</span>
+        </div>
+      </div>
+    </div>
+    <!-- Controls bottom-left -->
+    <div class="ui-bottom">
+      <button onclick="toggleTheme()">[ INVRT ]</button>
+      <span style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-dim);">
+        CHAPTER 1 OF 17
+      </span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NARRATIVE FRAGMENTS container — fragments appended here by JS
+  ============================================================ -->
+  <div id="fragment-container"></div>
+
+  <!-- ============================================================
+       SYSTEM CRASH OVERLAY — fades in at final beat
+  ============================================================ -->
+  <div id="crash-overlay"></div>
+  <div id="crash-message">
+    > SYSTEM_CRASH [UNRECOVERABLE]<br>
+    > BASELINE_ALTERED<br>
+    > REBOOTING...<br>
+    <span style="color: var(--text-dim);">END OF CHAPTER 1</span>
+  </div>
+
+
+<!-- ============================================================
+     NOVEL DATA (hidden) — Chapter 1 only
+     Each beat has data-vol (tension 0–1) and data-coh (coherence 0–1)
+     These drive effects that change throughout the chapter arc.
+
+     Arc:    Boot (calm) → Locker Room (building) → The Floor (rising)
+             → [PAIN] (spike) → The Crash (peak) → System Crash (total)
+============================================================ -->
+<div id="novel-data" hidden>
+  <div data-ch-id="ch1" data-signal="ch01_zap">
+    <div class="chapter" id="ch1">
+
+      <!-- ── CHAPTER HEADER ─────────────────────────── -->
+      <h3>Chapter 1: The Zap</h3>
+
+      <!-- ── BOOT STATE — very low tension, near-total coherence ── -->
+      <p data-vol="0.12" data-coh="0.96" data-fmt="system" data-tag="boot">
+        <strong><span class="tooltip" data-tip="The moment the world stops being flesh and becomes code again.">&gt; SENSATION: BOOT_SEQUENCE</span></strong>
+      </p>
+
+      <!-- ── THE ZAP section header ─────────────────── -->
+      <h4 data-vol="0.30" data-coh="0.85">[00:00:00] THE ZAP</h4>
+
+      <!-- Rising tension: the impact -->
+      <p data-vol="0.40" data-coh="0.80">It hits you like a nail gun to the base of the skull.</p>
+
+      <p data-vol="0.52" data-coh="0.72">White light. Static. The taste of copper and burning hair—<em>Electrical discharge detected in gustatory cortex</em>, the system whispered, measuring the threshold at a searing 4.2mA.</p>
+
+      <p data-vol="0.48" data-coh="0.74">For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. The Score doesn't just ask for your participation; it demands your total alignment. We like to think of our lives as melodies we write ourselves, but in this world, we are just strings being plucked by a hand we can't see. Your nervous system shrieks as the <span class="tooltip" data-tip="A direct neural link so fast it feels like your own thoughts are lagging behind.">Neural-Acoustic Interface</span> overrides your optic nerve, forcing a new Score onto your wetware.</p>
+
+      <p data-vol="0.55" data-coh="0.68">Then, the crash.</p>
+
+      <p data-vol="0.45" data-coh="0.78">Your vision reboots. The world snaps back, but it hasn't just returned. It has been <em>rewritten</em>. Reality, it turns out, is just a shared hallucination with a very strict conductor.</p>
+
+      <!-- System comes back online — coherence recovers -->
+      <p data-vol="0.30" data-coh="0.90" data-fmt="system" data-tag="online">
+        <em>PERCEPTION: ONLINE</em>. Acoustic sensory input was restored to the standard 440 Hz baseline. I felt the internal rhythm of my own heart—110 BPM, the pulse point flashing in my peripheral vision with nominal sync.
+      </p>
+
+      <p data-vol="0.28" data-coh="0.88">I blinked, but the data wasn't floating in front of me. It was burned into the world itself. The text wasn't a screen overlay; it was a hallucination carved into the walls.</p>
+
+      <p data-vol="0.25" data-coh="0.90" data-fmt="thought"><em>Breathe,</em> I told myself. <em>Sync the clock.</em></p>
+
+      <p data-vol="0.32" data-coh="0.87">My heartbeat thumped against my ribs, but I didn't just feel it. I saw it—a jagged yellow line pulsing in the corner of my eye.</p>
+
+      <!-- Locker room — relative calm, orientation -->
+      <p data-vol="0.28" data-coh="0.88">I stood in the staff locker room of Sector 7-C Calibration Hall. To a <span class="tooltip" data-tip="Disconnected. They live in a world of silence we can only dream of.">Normal</span>—someone without a chip—it was just a room with gray lockers and a flickering fluorescent light.</p>
+
+      <p data-vol="0.26" data-coh="0.90">To me? It was a data stream.</p>
+
+      <p data-vol="0.33" data-coh="0.85">The ventilation system didn't just blow air; it sang a constant, sterile F-sharp that grated against the base of my skull. The air tasted of ionized ozone and the stale, burnt-coffee smell of a breakroom that hadn't seen a real bean in a decade.</p>
+
+      <p data-vol="0.35" data-coh="0.83">The light fixture wasn't just flickering; it tasted like sour milk—a dirty <strong>Hum</strong> bleeding into the air. The lockers hummed with the <strong>Resonance: Steel</strong>, vibrating against my teeth even though I wasn't touching them.</p>
+
+      <p data-vol="0.32" data-coh="0.85">The door was a wall of red static. My intuition flagged an obstruction, a mismatch in the acoustic pattern. I needed the baseline—440 Hz, Standard A—to clear the path.</p>
+
+      <p data-vol="0.30" data-coh="0.87">I swiped my <span class="tooltip" data-tip="These are the only things keeping my internal noise from screaming into the room.">damping bands</span>—three heavy cuffs locked over the pulse point—across the sensor.</p>
+
+      <p data-vol="0.25" data-coh="0.92" data-fmt="system" data-tag="unlock">
+        <em>SENSATION: UNLOCKED.</em> Phase-match successful. Gateway open.
+      </p>
+
+      <p data-vol="0.28" data-coh="0.90">The red static shattered into green particles, and the door slid open. I stepped out onto the floor.</p>
+
+      <!-- ── THE FLOOR section header — tension begins climbing ── -->
+      <h4 data-vol="0.42" data-coh="0.75">[00:14:32] THE FLOOR</h4>
+
+      <p data-vol="0.40" data-coh="0.78">The main calibration floor was a cathedral of data.</p>
+
+      <p data-vol="0.44" data-coh="0.74">The environmental baseline was a perfect Middle C, vibrating at 261.63 Hz. In my vision, it felt like being submerged in golden syrup, a direct neural mapping of the room's standard resonance.</p>
+
+      <p data-vol="0.46" data-coh="0.72">The room didn't just sound like Middle C; it <em>felt</em> like it. In the Score's eyes, there is no such thing as silence—only varying degrees of organized noise. We are all just frequencies looking for a resolution that never quite comes. The Conductors call it harmony; I call it a cage.</p>
+
+      <p data-vol="0.48" data-coh="0.70">A massive, golden sine wave floated through the center of the room—not a projection, but a shared hallucination enforced by <span class="tooltip" data-tip="The digital skin stretched over the skeleton of reality to keep everyone in tune.">The Score</span> itself. It was beautiful. Perfect. Boring.</p>
+
+      <!-- Building tension — Taro's internal pressure -->
+      <p data-vol="0.55" data-coh="0.64">I kept my head down. My own signal felt like a scratch in my throat—a nervous, jagged <strong>ORANGE WARNING</strong>. My output was throttled to a mere fifteen percent, but the pressure was building. Stress accumulation hit 84 SU, and my neural load was pushing into the red at ninety-two percent.</p>
+
+      <!-- Remi arrives — slight dip, then creeps back up -->
+      <p data-vol="0.50" data-coh="0.68">"Hey, Wrong Note."</p>
+
+      <p data-vol="0.48" data-coh="0.70">Remi hopped over the railing. To my synesthetic eyes, she was surrounded by a faint, bubbly blue distortion. D Major. Happy. Bright. She had that "stay flat" energy they teach in the academies—the kind of forced composure that makes you feel like you're failing a test just by standing near her.</p>
+
+      <p data-vol="0.52" data-coh="0.67">"You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your capacity is too wide for these standard damping bands. They're already hitting thermal limit. You're clipping, Taro. Badly."</p>
+
+      <p data-vol="0.56" data-coh="0.63">"Bad night," I muttered. "My hardware feels like it's grinding. Too much sawtooth oscillation in the air today."</p>
+
+      <p data-vol="0.60" data-coh="0.58">"You need to dump heat," Remi said. "You can't keep carrying that load. You're gonna peak and take the whole floor with you. Seriously, the vibe is getting way too loud. Just stay flat."</p>
+
+      <p data-vol="0.58" data-coh="0.60">"It's not a grenade," I said. "It's just drift artifacts. I'm humming, that's all."</p>
+
+      <!-- ── PAIN — tension spikes hard. Glitch begins here ── -->
+      <p data-vol="0.88" data-coh="0.22" data-fmt="system" data-tag="pain">
+        <strong>[PAIN] [PAIN] [PAIN]</strong>
+      </p>
+
+      <p data-vol="0.84" data-coh="0.26">My vision flared red. It wasn't a popup window. It was a migraine that slammed into my frontal lobe. In the Score, pain is just a particularly sharp dissonance, a note that shouldn't exist tearing through the fabric of your consciousness.</p>
+
+      <p data-vol="0.90" data-coh="0.18" data-fmt="system" data-tag="override">
+        <strong><span class="tooltip" data-tip="Emergency acoustic event detected. Local protocols suspended.">&gt; PRIORITY_OVERRIDE</span></strong>
+      </p>
+
+      <p data-vol="0.88" data-coh="0.20">The air suddenly tasted of rotting meat—a catastrophic biological decay mapped directly onto my senses. <em>Casualty incoming</em>, the system warned. <em>Collision trajectory: 15 meters.</em></p>
+
+      <p data-vol="0.92" data-coh="0.16">The emergency doors at the far end of the hall blasted open.</p>
+
+      <!-- ── THE CRASH section header ── -->
+      <h4 data-vol="0.93" data-coh="0.14">[00:14:45] THE CRASH</h4>
+
+      <p data-vol="0.90" data-coh="0.18">He came in like a corrupted file. Or maybe he was just a man who had lost his rhythm. We are all just one bad beat away from falling apart, from becoming a sequence of errors that the world would rather delete than fix.</p>
+
+      <p data-vol="0.92" data-coh="0.15">A G Vanguard soldier. Stumbling. Screaming.</p>
+
+      <!-- Full glitch territory — coherence near-zero -->
+      <p data-vol="0.94" data-coh="0.12">His avatar was pixelating, tearing apart in real-time. Where a normal person had a smooth <span class="tooltip" data-tip="The soft ionic glow that tells the world your soul is still in sync.">bio-plasma</span> aura, this guy was a storm of black and purple static. It smelled like burning plastic and ozone.</p>
+
+      <p data-vol="0.96" data-coh="0.09">The golden sine wave of the room's Middle C hit him—and shattered. Visually, it looked like glass breaking. The technicians nearest him fell to their knees, clutching their heads as the interference hit them like a physical blow.</p>
+
+      <p data-vol="0.94" data-coh="0.10">"Get the stabilizers!" Remi shouted, her blue D Major aura spiking into a sharp, fearful indigo. "The vibe is totally blown! He's running too sharp!"</p>
+
+      <p data-vol="0.96" data-coh="0.08">The soldier collapsed in the center of the room. He was convulsing. His Score port on his neck was sparking—real sparks, not AR—and the data pouring out of him was raw code. I could taste the metal of his agony.</p>
+
+      <!-- Audio clipping — high-danger system tag -->
+      <p data-vol="0.98" data-coh="0.06" data-fmt="system" data-tag="clip">
+        <strong>[AUDIO_CLIPPING]</strong>
+      </p>
+
+      <!-- Emotional override — limiter removed. Peak moment. -->
+      <p data-vol="1.00" data-coh="0.04" data-fmt="system" data-tag="override">
+        <strong><span class="tooltip" data-tip="A neural-acoustic surge driven by empathy, overriding every safety protocol.">&gt; EMOTIONAL_OVERRIDE</span></strong>
+      </p>
+
+      <p data-vol="1.00" data-coh="0.04">My hand moved on its own. I reached out.</p>
+
+      <p data-vol="1.00" data-coh="0.02" data-fmt="system" data-tag="limiter">
+        <strong><span class="tooltip" data-tip="Safety hardware destroyed. The leash is off.">&gt; LIMITER: REMOVED</span></strong>
+      </p>
+
+      <p data-vol="1.00" data-coh="0.02">The three damping bands on my wrist didn't just fail; they slagged. It felt like free-fall, the weightlessness of a world where the rules of gravity had simply ceased to exist.</p>
+
+      <p data-vol="1.00" data-coh="0.02">I saw the soldier's waveform coming at me—a jagged mess of peaks that defied the local key. And I saw the solution. It was a math problem. He was missing a variable. He was trying to resolve a chord without the tonic.</p>
+
+      <p data-vol="1.00" data-coh="0.01" data-fmt="system" data-tag="execute">
+        <em>EXECUTE: PITCH_SHIFT.</em> I took the 261.63 Hz baseline and doubled it, striking the upper octave at 523.25 Hz.
+      </p>
+
+      <p data-vol="1.00" data-coh="0.01">A massive, vertical pillar of gold light erupted from my hand. Solid. Infinite. Absolute. A pure sine-wave strike that overrode the local <span class="tooltip" data-tip="The dominant frequency protocol, locked in a rigid C Major that leaves no room for improvisation.">Key Signature</span>.</p>
+
+      <p data-vol="1.00" data-coh="0.01"><em>Baseline: 440 Hz | Current: 880 Hz | Peak Drift: 440 Hz | SDI: 0.98</em></p>
+
+      <p data-vol="1.00" data-coh="0.01">For one single frame of animation, we synced. His chaos locked into my order. The purple static aligned into a perfect, terrifying geometric pattern.</p>
+
+      <p data-vol="1.00" data-coh="0.00">Then, the math broke.</p>
+
+      <!-- INTEGER OVERFLOW — peak chaos, coherence zero -->
+      <p data-vol="1.00" data-coh="0.00" data-fmt="system" data-tag="overflow">
+        <strong><span class="tooltip" data-tip="The moment the numbers decide they've had enough.">&gt; SENSATION: INTEGER_OVERFLOW</span></strong>
+      </p>
+
+      <p data-vol="1.00" data-coh="0.00">The numbers got too big. My brain couldn't render the magnitude. In the end, we are all just numbers, and sometimes the numbers decide they've had enough.</p>
+
+      <p data-vol="1.00" data-coh="0.00"><em>CRACK.</em></p>
+
+      <p data-vol="0.98" data-coh="0.02">The soldier's bio-plasma field didn't stabilize. It didn't dampen. It <em>popped</em>. Like a balloon. One second, he was a storm of data. The next, he was just... a guy. A bricked unit. Lying on the floor. His Score port dark. His aura gone.</p>
+
+      <!-- Silence descends — tension releases, coherence creeps back -->
+      <p data-vol="0.60" data-coh="0.30">Silence. Real silence. No hum. No Middle C. No data.</p>
+
+      <p data-vol="0.55" data-coh="0.35">I stood there, my hand still outstretched. Smoke was rising from my wrist where the bands used to be. My vision was flickering. Wrong noting.</p>
+
+      <!-- Final system diagnostics — triggers crash overlay -->
+      <p data-vol="0.80" data-coh="0.15" data-fmt="system" data-tag="diagnostic">
+        <strong><span class="tooltip" data-tip="My resonant identity has been permanently changed.">&gt; DIAGNOSTIC: BASELINE_ALTERED</span></strong><br>
+        <strong><span class="tooltip" data-tip="A new frequency signature has been detected.">&gt; NEW_USER_ID: DETECTED [AUTHORITY_NULL]</span></strong>
+      </p>
+
+      <p data-vol="0.85" data-coh="0.12">I looked at my hand. In The Score, it wasn't a hand anymore. It was a burning torch of pure code, rewriting the air around it.</p>
+
+      <p data-vol="0.88" data-coh="0.10">Remi was staring at me. Or rather, staring at the space <em>above</em> me. Floating where a normal ID tag should be was a new symbol. It wasn't a Shield. It wasn't a Tuning Fork. It was a Crown.</p>
+
+      <!-- WARNING flags -->
+      <p data-vol="0.92" data-coh="0.08" data-fmt="system" data-tag="warning">
+        <strong><span class="tooltip" data-tip="The system flags me as a high-level harmonic threat.">&gt; WARNING: VANGUARD_CLASS_DETECTED</span></strong><br>
+        <strong><span class="tooltip" data-tip="Subject is a high-level harmonic threat.">&gt; STATUS: HIGH_FIDELITY_THREAT</span></strong>
+      </p>
+
+      <p data-vol="0.95" data-coh="0.05">The text burned into my retina. Once. Twice. Then the world went black.</p>
+
+      <!-- FINAL BEAT — triggers system crash overlay -->
+      <p data-vol="1.00" data-coh="0.00" data-fmt="system" data-tag="crash">
+        <strong><span class="tooltip" data-tip="The final crash. Reboot failed.">&gt; SYSTEM_CRASH [UNRECOVERABLE]</span></strong>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     END OF NOVEL DATA
+============================================================ -->
+
+<script>
+/* ============================================================
+   NARRATIVE DATA COMPILER
+   Reads the hidden #novel-data DOM, builds an array of beat objects.
+   Each paragraph/heading becomes one "beat" with tension + coherence values
+   baked in from data attributes (data-vol, data-coh).
+============================================================ */
+const NARRATIVE_DATA = [];
+
+function compileNarrative() {
+  const container = document.getElementById('novel-data');
+
+  container.querySelectorAll('h3, h4, p').forEach(el => {
+    // Read per-element tension/coherence or use defaults
+    const vol = parseFloat(el.dataset.vol ?? '0.25');
+    const coh = parseFloat(el.dataset.coh ?? '0.80');
+    const fmt = el.dataset.fmt ?? null;    // 'system' | 'thought' | null
+    const tag = el.dataset.tag ?? null;    // named event: 'pain', 'crash', etc.
+
+    if (el.tagName === 'H3') {
+      // Chapter header — split into label + title
+      const parts = el.innerText.split(':');
+      NARRATIVE_DATA.push({
+        type: 'chapter',
+        vol, coh,
+        sentences: [
+          { text: parts[0].trim().toUpperCase(), format: 'label' },
+          { text: (parts[1] || parts[0]).trim().toUpperCase(), format: 'title' }
+        ]
+      });
+    } else if (el.tagName === 'H4') {
+      // Section timestamp header
+      NARRATIVE_DATA.push({
+        type: 'section',
+        vol, coh, tag,
+        sentences: [{ text: el.innerHTML, format: 'label' }]
+      });
+    } else {
+      // Standard paragraph
+      NARRATIVE_DATA.push({
+        type: 'standard',
+        vol, coh, fmt, tag,
+        sentences: [{ text: el.innerHTML, format: fmt || 'standard' }]
+      });
+    }
+  });
+}
+
+/* ============================================================
+   NARRATIVE STATE
+   Smoothly interpolates tension/coherence toward target values.
+   Drives all visual effects — vignette, glow, heartbeat, waveform.
+============================================================ */
+class NarrativeState {
+  constructor() {
+    this.volume    = 0.15;  // current tension (smoothed)
+    this.coherence = 0.95;  // current coherence (smoothed)
+    this.targetVol = 0.15;
+    this.targetCoh = 0.95;
+  }
+
+  // Called every frame with the active beat's target values
+  update(beat) {
+    if (beat) {
+      this.targetVol = beat.vol ?? 0.25;
+      this.targetCoh = beat.coh ?? 0.80;
+    }
+    // Lerp toward targets — 0.04 factor gives smooth ~0.5s transitions
+    this.volume    += (this.targetVol - this.volume)    * 0.04;
+    this.coherence += (this.targetCoh - this.coherence) * 0.04;
+
+    // Update HUD displays
+    const tensionEl   = document.getElementById('hud-tension-val');
+    const coherenceEl = document.getElementById('hud-coherence-val');
+    tensionEl.textContent   = this.volume.toFixed(2);
+    coherenceEl.textContent = this.coherence.toFixed(2);
+    // Flash values red at high tension
+    tensionEl.classList.toggle('danger',   this.volume > 0.80);
+    coherenceEl.classList.toggle('danger', this.coherence < 0.20);
+    document.getElementById('hud-tension').style.width   = (this.volume * 100) + '%';
+    document.getElementById('hud-coherence').style.width = (this.coherence * 100) + '%';
+
+    // HUD tension bar turns red at max tension
+    document.getElementById('hud-tension').classList.toggle('danger', this.volume > 0.80);
+  }
+}
+
+const narrativeState = new NarrativeState();
+
+/* ============================================================
+   SCROLL ENGINE
+   Manages the sticky-scroll paradigm:
+   - Allocates vertical scroll budget per beat
+   - Smooth-scrolls with lerp
+   - Calls tick() every rAF to update all effects
+============================================================ */
+class ScrollEngine {
+  constructor(data) {
+    this.data            = data;
+    this.currentBeatIndex= -1;
+    this.beatMap         = [];
+    this.baseBeatHeight  = window.innerHeight * 1.1;
+    this.targetY         = 0;
+    this.currentY        = 0;
+    this.lerpFactor      = 0.07;  // snappy but smooth
+    this.fragmentTimer   = 0;     // tracks time for fragment spawning
+  }
+
+  init() {
+    this._calculateHeights();
+    document.getElementById('scroll-machine').style.height = this.totalHeight + 'px';
+    this.targetY = this.currentY = window.scrollY;
+    window.addEventListener('scroll', () => { this.targetY = window.scrollY; }, { passive: true });
+    window.addEventListener('resize', () => {
+      this.baseBeatHeight = window.innerHeight * 1.1;
+      this._calculateHeights();
+      document.getElementById('scroll-machine').style.height = this.totalHeight + 'px';
+    });
+    this._loop();
+  }
+
+  _calculateHeights() {
+    let px = 0;
+    this.beatMap = this.data.map(beat => {
+      // Longer beats for action-dense paragraphs; shorter for punchy lines
+      const wordCount  = beat.sentences.reduce((acc, s) => acc + s.text.replace(/<[^>]+>/g,'').split(' ').length, 0);
+      const h = this.baseBeatHeight + Math.min(wordCount * 6, 400);
+      const start = px;
+      px += h;
+      return { start, end: px };
+    });
+    this.totalHeight = px;
+  }
+
+  _loop(time) {
+    const diff = this.targetY - this.currentY;
+    if (Math.abs(diff) > 0.05) this.currentY += diff * this.lerpFactor;
+    else this.currentY = this.targetY;
+
+    this.tick(time || performance.now());
+    drawWaveform(time || performance.now());
+    requestAnimationFrame(t => this._loop(t));
+  }
+
+  tick(time) {
+    const y         = this.currentY;
+    const maxScroll = Math.max(1, this.totalHeight - window.innerHeight);
+    const progress  = Math.min(1, Math.max(0, y / maxScroll));
+
+    // Progress bar
+    document.getElementById('progress-bar').style.transform = `scaleX(${progress})`;
+
+    // Scroll hint visibility
+    const hint = document.getElementById('scroll-hint');
+    if (this.targetY > 60) hint.classList.add('hidden');
+    else hint.classList.remove('hidden');
+
+    // Active beat detection
+    const activeIdx = this._getActiveBeat(y);
+    if (activeIdx !== this.currentBeatIndex) {
+      this.currentBeatIndex = activeIdx;
+      this._renderBeat(activeIdx);
+    }
+
+    const beat = this.data[this.currentBeatIndex];
+    if (beat) {
+      this._updateSentences(y, beat);
+      narrativeState.update(beat);
+
+      // [EFFECT: DYNAMIC VIGNETTE] — updates based on coherence
+      updateVignette(narrativeState.coherence);
+
+      // [EFFECT: AMBIENT GLOW] — radial glow at center tied to tension
+      updateAmbientGlow(narrativeState.volume);
+
+      // [EFFECT: HEARTBEAT PULSE] — BPM display + beat-container pulse
+      updateHeartbeat(time, narrativeState.volume, narrativeState.coherence);
+
+      // [EFFECT: NARRATIVE FRAGMENTS] — sporadic context-aware spawning
+      this._maybeSpawnFragment(time, beat);
+
+      // [EFFECT: SECTION LABEL] — HUD section name
+      document.getElementById('hud-section').textContent =
+        (beat.tag || 'ch01_zap').toUpperCase();
+
+      // [EFFECT: SYSTEM CRASH OVERLAY] — triggered on final beat
+      if (beat.tag === 'crash' && progress > 0.98) {
+        triggerSystemCrash();
+      }
+    }
+  }
+
+  _getActiveBeat(y) {
+    for (let i = 0; i < this.beatMap.length; i++) {
+      if (y >= this.beatMap[i].start && y < this.beatMap[i].end) return i;
+    }
+    return y >= this.totalHeight ? this.data.length - 1 : 0;
+  }
+
+  /* ── Render the active beat into #beat-container ── */
+  _renderBeat(index) {
+    const beat      = this.data[index];
+    const container = document.getElementById('beat-container');
+    let   html      = beat.type === 'chapter' ? '<div class="beat-chapter">' : '';
+
+    beat.sentences.forEach((s, i) => {
+      let cls;
+      if      (s.format === 'label')    cls = 'chapter-label';
+      else if (s.format === 'title')    cls = 'chapter-title';
+      else if (s.format === 'system')   cls = 'format-system';
+      else if (s.format === 'thought')  cls = 'format-thought';
+      else if (s.format === 'dialogue') cls = 'format-dialogue';
+      else                              cls = '';
+
+      html += `<div id="s-${i}" class="sentence future ${cls}">${s.text}</div>`;
+    });
+
+    if (beat.type === 'chapter') html += '</div>';
+    container.innerHTML = html;
+
+    // [EFFECT: CHAPTER FLASH] — cyan flash when chapter header renders
+    if (beat.type === 'chapter') {
+      triggerChapterFlash();
+    }
+  }
+
+  /* ── Per-frame sentence focus update ── */
+  _updateSentences(y, beat) {
+    const map         = this.beatMap[this.currentBeatIndex];
+    const beatProg    = (y - map.start) / (map.end - map.start);
+    const vol         = narrativeState.volume;
+    const coh         = narrativeState.coherence;
+
+    beat.sentences.forEach((s, i) => {
+      const el = document.getElementById(`s-${i}`);
+      if (!el) return;
+
+      const n          = beat.sentences.length;
+      const sStart     = i / n;
+      const sEnd       = (i + 1) / n;
+      const sProgress  = (beatProg - sStart) / (sEnd - sStart);
+
+      // Sine-curve focus: natural ease in/out across the budget
+      const intensity  = Math.max(0, Math.sin(sProgress * Math.PI));
+      const translateY = 0; // [REMOVED] vertical drift — kept text stationary per feedback
+      const opacity    = Math.pow(intensity, 0.9);
+      const blur       = (1 - intensity) * 7;
+      const scale      = 1.0; // [REMOVED] scale pulse on sentences — too intense
+
+      // State classes (drive border + cursor CSS)
+      if (intensity > 0.65) {
+        if (!el.classList.contains('active')) {
+          el.classList.remove('past', 'future');
+          el.classList.add('active');
+          // [EFFECT: TEXT SCRAMBLE] — decrypt system-format text on entry
+          if (s.format === 'system' && !el._scrambled) {
+            scrambleText(el, el.innerHTML, 500);
+            el._scrambled = true;
+          }
+        }
+      } else {
+        if (el.classList.contains('active')) {
+          el._scrambled = false; // reset flag so it rescrambles if revisited
+        }
+        el.classList.remove('active');
+        el.classList.add(sProgress < 0.5 ? 'future' : 'past');
+      }
+
+      // [EFFECT: CHROMATIC ABERRATION] — adds text-shadow channel split at tension
+      el.classList.remove('tension-mid', 'tension-high');
+      if (el.classList.contains('active')) {
+        if (vol > 0.85) el.classList.add('tension-high');
+        else if (vol > 0.60) el.classList.add('tension-mid');
+      }
+
+      // [EFFECT: GLITCH DISTORTION] — clip-path channel split at extreme tension
+      const shouldGlitch = vol > 0.82 && coh < 0.30 && el.classList.contains('active');
+      if (shouldGlitch && !el.classList.contains('glitch')) {
+        // data-text mirrors visible text content for pseudo-element rendering
+        el.setAttribute('data-text', el.innerText);
+        el.classList.add('glitch');
+      } else if (!shouldGlitch) {
+        el.classList.remove('glitch');
+      }
+
+      el.style.transform = `translateY(${translateY}px) scale(${scale})`;
+      el.style.opacity   = opacity;
+      el.style.filter    = `blur(${Math.min(10, blur)}px)`;
+    });
+  }
+
+  /* ── Spawn narrative fragments at intervals ── */
+  _maybeSpawnFragment(time, beat) {
+    // Fragments spawn more frequently at high tension
+    const spawnRate = beat.vol > 0.8 ? 2200 : 5000;
+    if (time - this.fragmentTimer > spawnRate) {
+      this.fragmentTimer = time;
+      if (Math.random() < (beat.vol > 0.7 ? 0.85 : 0.35)) {
+        spawnFragment(beat.tag);
+      }
+    }
+  }
+}
+
+/* ============================================================
+   [EFFECT: TEXT SCRAMBLE / DECRYPT]
+   Cycles characters through noise before resolving to real content.
+   Only applied to .format-system sentences on active entry.
+   Uses innerHTML (not textContent) to preserve inner HTML structure
+   by operating on text nodes only.
+============================================================ */
+function scrambleText(el, originalHTML, duration = 520) {
+  // Character pool — ASCII noise + Score-themed glyphs
+  const chars   = '!<>_\\/[]{}—=+*^?#░▒▓|01';
+  // Extract plain text for scrambling, preserve inner tags
+  const plain   = el.innerText;
+  const letters = plain.split('');
+  let   iteration = 0;
+  const totalFrames = duration / 16;
+
+  clearInterval(el._scrambleInterval);
+  el._scrambleInterval = setInterval(() => {
+    // Build scrambled string — resolved chars left of iteration, noise to the right
+    const scrambled = letters
+      .map((letter, idx) => {
+        if (letter === ' ' || letter === '\n') return letter; // preserve whitespace
+        if (idx < iteration) return letter;                   // resolved
+        return chars[Math.floor(Math.random() * chars.length)]; // noise
+      })
+      .join('');
+
+    // Wrap in the original's color/style by keeping it simple — just replace text
+    el.innerText = scrambled;
+    iteration += letters.length / totalFrames;
+
+    if (iteration >= letters.length) {
+      clearInterval(el._scrambleInterval);
+      el.innerHTML = originalHTML; // restore full HTML (tooltips, spans, etc.)
+    }
+  }, 16);
+}
+
+/* ============================================================
+   [EFFECT: DYNAMIC VIGNETTE]
+   Updates the fixed #vignette overlay gradient based on coherence.
+   At coherence = 1.0: transparent, no effect.
+   At coherence = 0.0: heavy dark edges, world closing in.
+============================================================ */
+function updateVignette(coherence) {
+  const vignette  = document.getElementById('vignette');
+  // Quadratic curve — barely visible until coherence < 0.4, then rapid
+  const intensity = Math.pow(Math.max(0, 1 - coherence), 2.2);
+  const clearZone = 35 + (coherence * 35); // center clear zone shrinks with tension
+
+  vignette.style.background = `radial-gradient(
+    ellipse at center,
+    transparent ${clearZone}%,
+    rgba(0,0,0,${intensity * 0.88}) 100%
+  )`;
+}
+
+/* ============================================================
+   [EFFECT: AMBIENT GLOW]
+   Radial glow at the stage center — intensity driven by tension.
+   Color shifts from cool cyan to warm danger-red as vol approaches 1.
+============================================================ */
+function updateAmbientGlow(volume) {
+  const stage = document.getElementById('stage');
+  if (volume < 0.2) {
+    stage.style.setProperty('--ambient', 'transparent');
+    return;
+  }
+
+  const intensity = Math.min(1, (volume - 0.2) / 0.8); // 0–1 after threshold
+  // Blend from cyan to red as tension rises above 0.75
+  const blendToRed = Math.max(0, (volume - 0.75) / 0.25);
+  const r = Math.round(0   + blendToRed * 255);
+  const g = Math.round(243 - blendToRed * 200);
+  const b = Math.round(255 - blendToRed * 220);
+
+  stage.style.setProperty(
+    '--ambient',
+    `rgba(${r},${g},${b}, ${intensity * 0.18})`
+  );
+  stage.style.background =
+    `radial-gradient(circle at center, var(--ambient) 0%, transparent 75%)`;
+}
+
+/* ============================================================
+   [EFFECT: HEARTBEAT PULSE]
+   BPM scales from 70 (calm) to 160 (peak crisis), matching Taro's
+   110 BPM reading in the text. At low coherence, arrhythmia kicks in.
+   Applies a very subtle scale pulse to #beat-container.
+============================================================ */
+let lastBeatTime    = 0;
+let bpmDisplayValue = 70;
+
+function updateHeartbeat(time, volume, coherence) {
+  // Map tension to BPM range
+  const targetBPM = 70 + (volume * 90);
+  bpmDisplayValue += (targetBPM - bpmDisplayValue) * 0.03; // smooth display
+  document.getElementById('bpm-val').textContent =
+    Math.round(bpmDisplayValue) + (coherence < 0.2 ? '?' : '');
+
+  const interval     = 60000 / targetBPM; // ms per beat
+  const elapsed      = time - lastBeatTime;
+  const beatProgress = (elapsed % interval) / interval; // 0→1 per cycle
+
+  // At low coherence: inject random timing jitter (arrhythmia)
+  const jitter = coherence < 0.25 ? (Math.random() - 0.5) * 0.18 : 0;
+  const pulse  = Math.sin((beatProgress + jitter) * Math.PI * 2);
+
+  // [REMOVED] beat-container scale pulse — contributed to text bounce feeling
+  // Container stays at scale(1) always; only HUD bar and BPM display react to heartbeat
+
+  // Flash HUD tension bar on downbeat at high volume
+  const bar = document.getElementById('hud-tension');
+  if (volume > 0.65 && pulse > 0.85) {
+    bar.style.background = 'var(--danger)';
+  } else {
+    bar.style.background = volume > 0.80 ?
+      `rgba(255,51,102,${0.4 + volume * 0.6})` : 'var(--accent)';
+  }
+}
+
+/* ============================================================
+   [EFFECT: ENHANCED WAVEFORM]
+   Three-layer canvas waveform:
+   Layer 1: Background harmonics (original, enhanced)
+   Layer 2: Cyan accent signal wave (appears above vol 0.25)
+   Layer 3: Pixel noise static (appears below coh 0.3)
+   All driven by narrativeState.
+============================================================ */
+function drawWaveform(time) {
+  const canvas = document.getElementById('wave-bg');
+  const ctx    = canvas.getContext('2d');
+  canvas.width  = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const vol = narrativeState.volume;
+  const coh = narrativeState.coherence;
+
+  // ── Layer 1: Background harmonic waves ──
+  ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--wave-color');
+  ctx.lineWidth   = 1;
+  for (let j = 0; j < 5; j++) {
+    ctx.beginPath();
+    for (let x = 0; x < canvas.width; x += 8) {
+      // Noise factor increases as coherence drops (more chaotic)
+      const noise = Math.sin(x * 0.045 + time * 0.0018) * (1 - coh) * 28;
+      const y = (canvas.height / 2)
+        + (j - 2.5) * 22 * vol
+        + Math.sin(x * 0.002 * (2 - coh) + time * 0.0005 + j) * canvas.height * 0.11 * vol
+        + noise;
+      x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+  }
+
+  // ── Layer 2: Accent signal wave — visible above vol 0.25 ──
+  if (vol > 0.25) {
+    const sigOpacity = Math.min(1, (vol - 0.25) / 0.75);
+    ctx.strokeStyle  = `rgba(0, 243, 255, ${sigOpacity * 0.14})`;
+    ctx.lineWidth    = 2;
+    ctx.beginPath();
+    for (let x = 0; x < canvas.width; x += 4) {
+      const y = (canvas.height / 2)
+        + Math.sin(x * 0.004 + time * 0.0022) * canvas.height * 0.07 * vol
+        + Math.sin(x * 0.012 + time * 0.005) * 14 * vol;  // high-freq overtone
+      x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+  }
+
+  // ── Layer 3: Pixel noise static — at low coherence ──
+  if (coh < 0.30) {
+    const noiseIntensity = Math.pow((0.30 - coh) / 0.30, 1.5);
+    // Cyan static dots
+    ctx.fillStyle = `rgba(0, 243, 255, ${noiseIntensity * 0.055})`;
+    for (let i = 0; i < 300 * noiseIntensity; i++) {
+      const sx   = Math.random() * canvas.width;
+      const sy   = Math.random() * canvas.height;
+      const size = Math.random() * 2.5 + 0.5;
+      ctx.fillRect(sx, sy, size, size);
+    }
+    // Red static dots at extreme chaos
+    if (coh < 0.10) {
+      ctx.fillStyle = `rgba(255, 51, 102, ${(0.10 - coh) / 0.10 * 0.04})`;
+      for (let i = 0; i < 150; i++) {
+        ctx.fillRect(
+          Math.random() * canvas.width,
+          Math.random() * canvas.height,
+          Math.random() * 2 + 0.5,
+          Math.random() * 2 + 0.5
+        );
+      }
+    }
+  }
+}
+
+/* ============================================================
+   [EFFECT: CHAPTER FLASH]
+   Cyan screen flash when a chapter or section header renders.
+   Peaks at 55% opacity then fades out — like a camera shutter or system ping.
+============================================================ */
+function triggerChapterFlash() {
+  let overlay = document.getElementById('flash-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'flash-overlay';
+    Object.assign(overlay.style, {
+      position: 'fixed', top: 0, left: 0,
+      width: '100%', height: '100%',
+      background: 'var(--accent)',
+      opacity: 0, pointerEvents: 'none',
+      zIndex: 900,
+    });
+    document.body.appendChild(overlay);
+  }
+  // Spike up fast, fade out slowly
+  overlay.style.transition = 'opacity 0.04s ease-in';
+  overlay.style.opacity    = 0.5;
+  setTimeout(() => {
+    overlay.style.transition = 'opacity 0.5s ease-out';
+    overlay.style.opacity    = 0;
+  }, 55);
+}
+
+/* ============================================================
+   [EFFECT: SYSTEM CRASH OVERLAY]
+   On the final beat (SYSTEM_CRASH), fade the entire world to black.
+   A styled error message fades in after the darkness settles.
+   Called from tick() when final beat is active.
+============================================================ */
+let crashTriggered = false;
+function triggerSystemCrash() {
+  if (crashTriggered) return;
+  crashTriggered = true;
+
+  const overlay = document.getElementById('crash-overlay');
+  const msg     = document.getElementById('crash-message');
+  overlay.classList.add('active');
+  // Message appears after overlay transition (2.5s) + 0.5s delay
+  setTimeout(() => msg.classList.add('active'), 3000);
+}
+
+/* ============================================================
+   [EFFECT: CONTEXT-AWARE FRAGMENTS]
+   Floating data fragments in bottom-right — content matches
+   the current narrative beat tag for diegetic immersion.
+============================================================ */
+const FRAGMENT_POOL = {
+  boot:       ['BOOT_SEQUENCE...', 'NAI: HANDSHAKE', '440 Hz BASELINE', 'SYNC: NOMINAL'],
+  online:     ['PERCEPTION: ONLINE', 'BPM: 110', 'HUD: ACTIVE', 'SIGNAL: NOMINAL'],
+  unlock:     ['GATEWAY: OPEN', 'PHASE-MATCH: OK', 'SECTOR 7-C', 'DAMPING: 100%'],
+  pain:       ['PAIN SIGNAL DETECTED', 'MIGRAINE: ACUTE', 'DISSONANCE SPIKE', 'NEURAL OVERLOAD'],
+  override:   ['PRIORITY_OVERRIDE', 'PROTOCOLS SUSPENDED', 'LOCAL KEY: VIOLATED'],
+  clip:       ['AUDIO_CLIPPING', 'BUFFER OVERFLOW', 'THERMAL LIMIT HIT', 'SIGNAL SATURATED'],
+  limiter:    ['LIMITER: REMOVED', 'BANDS SLAGGED', 'AMPLITUDE: FREE', 'LEASH OFF'],
+  execute:    ['523.25 Hz', 'PITCH_SHIFT ACTIVE', 'SDI: 0.98', '+60dB SURGE'],
+  overflow:   ['INTEGER_OVERFLOW', 'NUMBERS: TOO BIG', 'RENDER: FAILED', '!!ERR!!'],
+  diagnostic: ['BASELINE_ALTERED', 'NEW_ID: DETECTED', 'AUTHORITY: NULL', 'CROWN DETECTED'],
+  warning:    ['VANGUARD_CLASS', 'HIGH_FIDELITY THREAT', 'SYSTEM FLAGGED'],
+  crash:      ['UNRECOVERABLE', 'REBOOT: FAILED', '——————', 'NULL'],
+  default:    ['SIGNAL DRIFT', 'HARMONIC VARIANCE', 'MONITORING...', 'FREQ CHECK'],
+};
+
+function spawnFragment(tag) {
+  const isDanger = ['pain','override','clip','limiter','overflow','crash','warning'].includes(tag);
+  const pool     = FRAGMENT_POOL[tag] || FRAGMENT_POOL.default;
+  const text     = pool[Math.floor(Math.random() * pool.length)];
+
+  const frag = document.createElement('div');
+  frag.className = `narrative-fragment${isDanger ? ' danger' : ''}`;
+  frag.innerHTML = `<span class="fragment-text">${text}</span>`;
+
+  // Alternate left/right alignment within the container
+  frag.style.alignSelf = Math.random() > 0.5 ? 'flex-end' : 'flex-start';
+
+  document.getElementById('fragment-container').appendChild(frag);
+  // Animation is CSS (4s) — remove after it completes
+  setTimeout(() => frag.remove(), 4100);
+}
+
+/* ============================================================
+   [EFFECT: CINEMATIC THEME TOGGLE]
+   Replaces instant theme swap with a horizontal wipe (shutter effect).
+   Wipe crosses screen in two phases: in (covers) → theme flips → out.
+============================================================ */
+function toggleTheme() {
+  const wipe = document.createElement('div');
+  Object.assign(wipe.style, {
+    position: 'fixed', top: 0, left: '-100%',
+    width: '100%', height: '100%',
+    background: 'var(--accent)',
+    zIndex: 10000, pointerEvents: 'none',
+    transition: 'left 0.22s ease-in',
+  });
+  document.body.appendChild(wipe);
+
+  // Phase 1: sweep across screen
+  requestAnimationFrame(() => { wipe.style.left = '0%'; });
+
+  setTimeout(() => {
+    // Phase 2: flip theme while screen is covered
+    const current = document.body.getAttribute('data-theme') ?? 'dark';
+    document.body.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    // Phase 3: sweep off the other side
+    wipe.style.transition = 'left 0.22s ease-out';
+    wipe.style.left = '100%';
+  }, 230);
+
+  setTimeout(() => wipe.remove(), 470);
+}
+
+/* ============================================================
+   [EFFECT: HUD BOOT SEQUENCE]
+   On page load, HUD boots up sequentially:
+   1. Tension bar ticks up to ch01_zap start value (0.40)
+   2. Section label cycles through status strings
+   3. Engine init runs after boot completes
+============================================================ */
+async function runHUDBootSequence() {
+  // Step 1: tick tension bar up from 0 → 0.15 (ch01 opening value)
+  await new Promise(resolve => {
+    let t = 0;
+    const tick = setInterval(() => {
+      t += 0.008;
+      const tensionBar = document.getElementById('hud-tension');
+      const tensionVal = document.getElementById('hud-tension-val');
+      if (tensionBar && tensionVal) {
+        tensionBar.style.width = (t * 100) + '%';
+        tensionVal.textContent = t.toFixed(2);
+      }
+      if (t >= 0.15) { clearInterval(tick); resolve(); }
+    }, 18);
+  });
+
+  // Step 2: cycle status strings before landing on boot label
+  const statuses = ['CONNECTING...', 'NAI_HANDSHAKE...', 'SYNC_CHECK...', 'PERCEPTION: ONLINE'];
+  for (const str of statuses) {
+    document.getElementById('hud-section').textContent = str;
+    await new Promise(r => setTimeout(r, 260));
+  }
+
+  // Step 3: seed initial coherence bar
+  document.getElementById('hud-coherence').style.width = '96%';
+  document.getElementById('hud-coherence-val').textContent = '0.96';
+  document.getElementById('bpm-val').textContent = '70';
+}
+
+/* ============================================================
+   MAIN INIT
+   Compile narrative → run HUD boot → start scroll engine.
+============================================================ */
+window.onload = async () => {
+  compileNarrative();
+  await runHUDBootSequence();
+  const engine = new ScrollEngine(NARRATIVE_DATA);
+  engine.init();
+};
+</script>
+</body>
+</html>

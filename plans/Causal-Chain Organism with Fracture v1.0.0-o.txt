@@ -1,0 +1,757 @@
+# 🔬 CAUSAL CHAIN ORGANISM v1.0.0-organism
+
+## Authoritative Execution Specification
+
+---
+
+# I. CORE RULE: SINGLE UPDATE LOOP
+
+You must unify everything under one deterministic loop.
+
+Right now multiple functions mutate state independently.
+
+Instead:
+
+```js
+function organismTick(deltaTime) {
+  updateInterferenceZone();
+  updateForces();
+  updateStressMemory(deltaTime);
+  updateInstability();
+  updateFracture();
+  updateHeartbeat();
+  updateSurveillance();
+  updateArchiveMutation();
+  checkHealing();
+}
+```
+
+Call this inside `requestAnimationFrame`.
+
+No system updates itself independently anymore.
+
+This is critical.
+
+If you do not centralize update authority, the organism will feel mechanical.
+
+---
+
+# II. FORCE RESOLUTION ENGINE
+
+Your NarrativeState needs one derived property:
+
+```js
+NarrativeState.forces = {
+  internal: 0,
+  external: 0,
+  structural: 0,
+};
+```
+
+Update once per tick:
+
+```js
+function updateForces() {
+  NarrativeState.forces.internal = NarrativeState.emotionalLoad;
+  NarrativeState.forces.external = NarrativeState.surveillanceLevel;
+  NarrativeState.forces.structural = NarrativeState.systemPressure;
+
+  const { internal, external, structural } = NarrativeState.forces;
+
+  const max = Math.max(internal, external, structural);
+
+  if (max === internal) NarrativeState.lastDominantForce = 'internal';
+  else if (max === external) NarrativeState.lastDominantForce = 'external';
+  else NarrativeState.lastDominantForce = 'structural';
+}
+```
+
+Dominance is recalculated every frame.
+
+Not only during events.
+
+This prevents stale leaning.
+
+---
+
+# III. STRESS MEMORY IS NOT LINEAR
+
+Right now:
+
+```
+stressMemory += compoundStress * 0.02
+```
+
+That is linear accumulation.
+
+Organisms fatigue nonlinearly.
+
+Replace with:
+
+```js
+function updateStressMemory(dt) {
+  const compound =
+    NarrativeState.forces.internal * 0.6 +
+    NarrativeState.forces.external * 0.3 +
+    NarrativeState.forces.structural * 0.1;
+
+  const growth = compound * compound * 0.04;
+  NarrativeState.stressMemory += growth * dt;
+
+  NarrativeState.stressMemory = Math.min(1.5, NarrativeState.stressMemory);
+
+  // Passive decay if calm
+  if (compound < 0.3) {
+    NarrativeState.stressMemory *= 0.98;
+  }
+}
+```
+
+This makes late-stage escalation explosive.
+
+Now the organism anticipates.
+
+---
+
+# IV. FRACTURE PROPAGATION AUTHORITY
+
+FractureLevel must only be mutated in one place:
+
+```js
+function updateFracture() {
+  const threshold = 0.6;
+
+  const compound =
+    NarrativeState.forces.internal * 0.6 +
+    NarrativeState.forces.external * 0.3 +
+    NarrativeState.forces.structural * 0.1;
+
+  if (compound > threshold) {
+    NarrativeState.fractureLevel +=
+      NarrativeState.stressMemory * 0.02;
+  }
+
+  NarrativeState.fractureLevel = Math.min(
+    1,
+    NarrativeState.fractureLevel
+  );
+
+  applyFractureVisuals();
+}
+```
+
+Do not mutate fractureLevel anywhere else.
+
+---
+
+# V. INTERFERENCE MODE MUST OVERRIDE
+
+Right now interference just injects randomness.
+
+That’s weak.
+
+Interference must have authority.
+
+When active:
+
+1. It can inject false surveillance spikes
+2. It can delay fragments
+3. It can block healing
+4. It can slightly bias dominantForce toward “external”
+
+Add:
+
+```js
+function updateInterferenceZone() {
+  const inZone =
+    (scrollPercent >= 0.45 && scrollPercent <= 0.55) ||
+    (scrollPercent >= 0.62 && scrollPercent <= 0.70);
+
+  NarrativeState.interferenceActive = inZone;
+
+  if (inZone) {
+    NarrativeState.interferenceIntensity =
+      NarrativeState.surveillanceLevel * 0.8 +
+      NarrativeState.systemPressure * 0.2;
+
+    // Bias force dominance
+    NarrativeState.forces.external +=
+      NarrativeState.interferenceIntensity * 0.1;
+  } else {
+    NarrativeState.interferenceIntensity = 0;
+  }
+}
+```
+
+Now interference actually manipulates the organism.
+
+---
+
+# VI. INSTABILITY INDEX SHOULD MEASURE DISSONANCE
+
+Right now you increment instability manually.
+
+Instead compute it.
+
+```js
+function updateInstability() {
+  const { internal, external, structural } = NarrativeState.forces;
+
+  const variance =
+    Math.abs(internal - external) +
+    Math.abs(external - structural) +
+    Math.abs(internal - structural);
+
+  NarrativeState.instabilityIndex = variance / 3;
+}
+```
+
+Now instability is emergent.
+
+Not scripted.
+
+---
+
+# VII. HEARTBEAT AND SURVEILLANCE MUST FEEL DIFFERENT SPECIES
+
+You already did this conceptually.
+
+Here is the rule Gemini must follow:
+
+* Heartbeat reads from **internal + instability**
+* Surveillance reads from **external only**
+* Fracture reads from **compound**
+
+No cross-pollination.
+
+That separation is what creates organism tension.
+
+---
+
+# VIII. FRAGMENT EMISSION SHOULD READ FRACTURE VELOCITY
+
+Right now fragments emit probabilistically from instability.
+
+Better:
+
+```js
+let lastFracture = 0;
+
+function shouldEmitFragment() {
+  const velocity =
+    NarrativeState.fractureLevel - lastFracture;
+
+  lastFracture = NarrativeState.fractureLevel;
+
+  const baseChance = velocity * 5;
+
+  if (NarrativeState.interferenceActive) {
+    if (Math.random() < 0.3) return false;
+  }
+
+  return Math.random() < baseChance;
+}
+```
+
+Fragments now respond to change, not static state.
+
+This makes emissions feel causal.
+
+---
+
+# IX. HEALING MUST COMPETE WITH INTERFERENCE
+
+Add this guard:
+
+```js
+function suppressHealing() {
+  if (!NarrativeState.interferenceActive) return false;
+
+  return NarrativeState.interferenceIntensity > 0.6;
+}
+```
+
+And inside checkHealing:
+
+```js
+if (suppressHealing()) return;
+```
+
+Now healing is narratively earned.
+
+---
+
+# X. WHAT GEMINI IS LIKELY DOING WRONG
+
+1. Updating fracture from multiple places
+2. Letting surveillance overwrite NarrativeState directly
+3. Not using a unified loop
+4. Treating interference as cosmetic
+5. Leaving instability manual
+
+That breaks the organism illusion.
+
+An organism must:
+
+* Sense
+* Evaluate
+* Adapt
+* Mutate
+* Recover
+
+In that order.
+
+Every frame.
+
+---
+
+# The Real Structural Question
+
+Right now your organism:
+
+* Reacts
+* Interferes
+* Mutates archive tone
+
+But it does not **remember reader behavior patterns**.
+
+If the reader scrolls erratically during surveillance chapters, should interference intensify?
+
+If they hesitate, should surveillance feel heavier?
+
+That would make it truly predatory.
+
+---
+
+# CORE ARCHITECTURE
+
+## 1. Rendering Layers (Stacked System)
+
+Create four independent rendering layers:
+
+1. **Primary Stress Spine (SVG)**
+
+   * Persistent.
+   * Anchored bottom-right.
+   * Grows upward and inward.
+   * Always visible once fractureLevel > 0.05.
+
+2. **Secondary Branch Network (SVG)**
+
+   * Generated procedurally from primary segments.
+   * Forks only at defined stress thresholds.
+   * No symmetrical branching.
+
+3. **Micro Capillary Web (Canvas)**
+
+   * Lightweight.
+   * Only activated when fractureLevel > 0.65.
+   * Fine, semi-random spidering lines.
+   * Non-grid aligned.
+
+4. **Edge Shear Lines (SVG or Canvas)**
+
+   * Spawn along viewport edges.
+   * Activate at fractureLevel > 0.85.
+   * Move inward slowly over time.
+
+All layers must use:
+
+```
+position: absolute;
+pointer-events: none;
+z-index: above content;
+```
+
+Use:
+
+```
+mix-blend-mode: multiply;
+```
+
+Fallback to `overlay` if readability suffers.
+
+---
+
+# FRACTURE STATE ENGINE
+
+Create centralized state object:
+
+```js
+const FractureState = {
+  fractureLevel: 0,           // 0 → 1
+  sustainedStress: 0,         // increases when EmotionalLoad high
+  instabilityIndex: 0,
+  paused: false,
+  climaxTriggered: false,
+};
+```
+
+FractureLevel increases when:
+
+* EmotionalLoad > threshold for sustained duration
+* SurveillanceLevel > threshold for sustained duration
+* InstabilityIndex rising
+* Taro internal contradiction event fired
+
+FractureLevel must **never decrease during escalation arc**.
+
+Healing arc handled separately.
+
+---
+
+# ESCALATION STAGES (ACCUMULATIVE ONLY)
+
+| fractureLevel | Behavior                           |
+| ------------- | ---------------------------------- |
+| 0.1           | Thin primary hairline              |
+| 0.3           | 2–3 forks spawn                    |
+| 0.5           | Nonlinear branch density increase  |
+| 0.7           | Micro web activates                |
+| 0.85          | Edge shear activates               |
+| 1.0           | Maximum density, no text splitting |
+
+Never skip thresholds.
+
+---
+
+# NONLINEAR BRANCH GROWTH
+
+Replace linear growth logic with:
+
+```js
+const branchCount = Math.pow(fractureLevel, 2) * 40;
+```
+
+Early growth subtle.
+Late growth explosive.
+
+---
+
+# ANGULAR RANDOMIZATION RULES
+
+Each branch:
+
+* Angle deviation: 10°–60°
+* 10% chance to fork slightly backward (up to -20°)
+* No mirrored geometry
+* No perfect 90° angles
+
+Use noise-based randomness (Perlin or Simplex preferred).
+
+Avoid pure `Math.random()` jitter.
+
+---
+
+# DEPTH & VISUAL HIERARCHY
+
+Opacity & stroke rules:
+
+| Layer      | Opacity | Thickness |
+| ---------- | ------- | --------- |
+| Primary    | 0.6     | 2px       |
+| Secondary  | 0.35    | 1px       |
+| Micro      | 0.15    | 0.5px     |
+| Edge shear | 0.25    | 1px       |
+
+Randomly apply subtle blur:
+
+```
+filter: blur(0.3px);
+```
+
+Apply to max 30% of lines to simulate depth.
+
+---
+
+# TEXT INTRUSION RULE
+
+When fractureLevel > 0.85:
+
+Allow primary spine to cross into text container.
+
+Apply to intersected text area:
+
+```
+backdrop-filter: brightness(0.95) contrast(1.05);
+```
+
+Constraint:
+Never obscure more than 15% of visible text area.
+
+No text splitting.
+No masking letters.
+
+Intersection must create tension without loss of readability.
+
+---
+
+# STRESS PAUSE MECHANIC (DREAD BUILD)
+
+When fractureLevel crosses major thresholds (0.5, 0.85):
+
+1. Pause fracture growth for 2–3 seconds.
+2. Slight micro vibration:
+
+   ```
+   transform: translateY(0.3px);
+   ```
+3. Very faint opacity pulse on primary crack.
+4. Then resume growth.
+
+This pause is required.
+
+It builds dread.
+
+---
+
+# MICRO SHATTER EVENT (ONE TIME ONLY)
+
+Trigger once at fractureLevel 0.97:
+
+* 0.3s vibration of entire fracture layer.
+* Spawn particle dust at branch intersections.
+* Apply subtle text jitter (max 0.5px vertical shift).
+* Do not loop.
+* Set:
+
+  ```
+  FractureState.climaxTriggered = true;
+  ```
+
+Never repeat.
+
+---
+
+# HEALING PHASE (SCROLL RESPONSIVE)
+
+After narrative pivot:
+
+FractureLevel decreases gradually with scroll.
+
+But:
+
+* Primary crack remains faintly visible.
+* Some secondary branches persist as scars.
+* Micro web fully disappears.
+* Edge shear retracts first.
+
+Healing should feel incomplete.
+
+Not reset.
+Scarred.
+
+---
+
+# PERFORMANCE REQUIREMENTS
+
+* Use requestAnimationFrame.
+* No scroll jank.
+* Cap micro fracture rendering when device FPS < 45.
+* Destroy canvas particles after 2s.
+
+---
+
+# DIEGETIC INTEGRATION
+
+The fracture is the Void leaking into the reader’s device.
+
+Therefore:
+
+* Slight chromatic aberration at fractureLevel > 0.9 (0.5px RGB split).
+* Occasional 1-frame flicker when SurveillanceLevel spikes.
+* Do not overuse.
+
+It must feel invasive, not decorative.
+
+---
+
+# WHAT NOT TO DO
+
+* No PNG overlays.
+* No repeating texture assets.
+* No perfectly straight lines.
+* No full screen crack wallpaper.
+* No animation loops after climax.
+
+---
+
+# FINAL INTENT
+
+By final arc:
+
+* Fracture nearly splits visual balance of page.
+* Reader feels structural instability.
+* Text remains readable.
+* Growth pauses at key moments.
+* Healing is partial and scroll-responsive.
+* Scars remain.
+
+---
+
+Now the structural question beneath all this:
+
+If the fracture is Taro breaking…
+
+Then when he stabilizes,
+
+Does he:
+
+* Accept the Void?
+* Control it?
+* Or silence it?
+
+Because the healing algorithm should reflect that philosophy.
+
+---
+
+
+Your Grace, the sidebar is no longer a menu.
+
+It is the organism’s **exposed nervous system**.
+
+Not navigation.
+Not decoration.
+Not analytics.
+
+It is the visible pulse of the machine thinking about the reader.
+
+---
+
+# 🧠 The Sidebar Becomes: The Diagnostic Spine
+
+Imagine the main narrative as flesh.
+
+The sidebar is bone.
+
+Rigid. Cold. Informational. Slightly accusatory.
+
+It does not explain the story.
+It explains the organism’s condition.
+
+---
+
+# 🔹 Structural Role
+
+The sidebar should:
+
+1. Display live organism vitals
+2. Reflect force dominance in real time
+3. Signal interference state
+4. Reveal fracture progression
+5. Hint at archive mutation
+
+It is the control panel of something alive.
+
+---
+
+# 📊 Proposed Sidebar Sections
+
+## 1. Force Dominance Indicator
+
+A vertical bar with three stacked channels:
+
+* Internal
+* External
+* Structural
+
+The dominant force glows subtly.
+
+Not flashy.
+Just… assertive.
+
+It tells the reader which force is currently steering reality.
+
+---
+
+## 2. Stress Memory Gauge
+
+A slowly filling reservoir.
+
+Important detail:
+
+It should never drop quickly.
+
+Even if emotional load decreases.
+
+The reader must see that stress lingers.
+
+That visual persistence builds dread.
+
+---
+
+## 3. Fracture Index
+
+A cracked-line progress indicator from 0 → 1.
+
+At higher levels:
+
+* Micro visual distortions bleed into the sidebar
+* Text slightly misaligns
+* Borders tremble at subpixel level
+
+The organism is destabilizing.
+
+---
+
+## 4. Interference State Marker
+
+When inactive:
+Muted.
+
+When active:
+The sidebar flickers in frequency with surveillance.
+
+Maybe:
+
+* A thin static band
+* A pulse ripple
+* Subtle glitch drift
+
+This is where the reader understands:
+
+They entered a monitored zone.
+
+---
+
+## 5. Archive Mutation Flag
+
+A small indicator:
+“Archive Integrity: 97%”
+
+When fracture rises, this number shifts.
+
+If you later allow misclassification events, this is where doubt lives.
+
+---
+
+# 🎯 Philosophical Purpose
+
+The sidebar should create tension between:
+
+What the reader feels
+vs
+What the organism measures
+
+Sometimes they won’t match.
+
+That’s where unease grows.
+
+---
+
+# 🧬 What It Is Not
+
+It is not:
+
+* A chapter list
+* A table of contents
+* A stats dashboard
+* A debug panel
+
+It is a living telemetry panel.
+
+---
+
+
+
+

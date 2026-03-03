@@ -1,0 +1,274 @@
+
+
+## Causal Chain Organism System v1.0.0
+
+You are upgrading an existing narrative engine into a unified organism system.
+
+This is a structural refactor, not a feature addition.
+
+You must centralize state updates, enforce mutation authority boundaries, and implement a nonlinear fracture system driven by stress memory and force dominance.
+
+Do not create independent update loops.
+Do not mutate fractureLevel outside its designated function.
+Do not allow visual systems to write directly to NarrativeState.
+
+---
+
+# 1. GLOBAL STATE STRUCTURE
+
+Ensure NarrativeState contains:
+
+```js
+const NarrativeState = {
+  emotionalLoad: 0,
+  surveillanceLevel: 0,
+  systemPressure: 0,
+
+  stressMemory: 0,
+  fractureLevel: 0,
+  instabilityIndex: 0,
+
+  interferenceActive: false,
+  interferenceIntensity: 0,
+  lastDominantForce: null,
+
+  forces: {
+    internal: 0,
+    external: 0,
+    structural: 0,
+  }
+};
+```
+
+No other system may redefine these properties.
+
+---
+
+# 2. SINGLE AUTHORITATIVE UPDATE LOOP
+
+All updates must run inside one function called per frame:
+
+```js
+function organismTick(deltaTime) {
+  updateInterferenceZone();
+  updateForces();
+  updateStressMemory(deltaTime);
+  updateInstability();
+  updateFracture();
+  updateHeartbeat();
+  updateSurveillance();
+  updateArchiveMutation();
+  checkHealing();
+}
+```
+
+Attach this to `requestAnimationFrame`.
+
+No system self-updates independently.
+
+---
+
+# 3. FORCE RESOLUTION SYSTEM
+
+Implement:
+
+```js
+function updateForces() {
+  NarrativeState.forces.internal = NarrativeState.emotionalLoad;
+  NarrativeState.forces.external = NarrativeState.surveillanceLevel;
+  NarrativeState.forces.structural = NarrativeState.systemPressure;
+
+  const { internal, external, structural } = NarrativeState.forces;
+
+  const max = Math.max(internal, external, structural);
+
+  if (max === internal) NarrativeState.lastDominantForce = 'internal';
+  else if (max === external) NarrativeState.lastDominantForce = 'external';
+  else NarrativeState.lastDominantForce = 'structural';
+}
+```
+
+Dominance must be recalculated every frame.
+
+---
+
+# 4. NONLINEAR STRESS MEMORY
+
+Replace any linear accumulation logic with:
+
+```js
+function updateStressMemory(dt) {
+  const compound =
+    NarrativeState.forces.internal * 0.6 +
+    NarrativeState.forces.external * 0.3 +
+    NarrativeState.forces.structural * 0.1;
+
+  const growth = compound * compound * 0.04;
+  NarrativeState.stressMemory += growth * dt;
+
+  NarrativeState.stressMemory = Math.min(1.5, NarrativeState.stressMemory);
+
+  if (compound < 0.3) {
+    NarrativeState.stressMemory *= 0.98;
+  }
+}
+```
+
+StressMemory must never exceed 1.5.
+
+---
+
+# 5. FRACTURE SYSTEM (SINGLE AUTHORITY)
+
+FractureLevel must only change inside updateFracture():
+
+```js
+function updateFracture() {
+  const threshold = 0.6;
+
+  const compound =
+    NarrativeState.forces.internal * 0.6 +
+    NarrativeState.forces.external * 0.3 +
+    NarrativeState.forces.structural * 0.1;
+
+  if (compound > threshold) {
+    NarrativeState.fractureLevel +=
+      NarrativeState.stressMemory * 0.02;
+  }
+
+  NarrativeState.fractureLevel =
+    Math.min(1, NarrativeState.fractureLevel);
+
+  applyFractureVisuals();
+}
+```
+
+No other function may mutate fractureLevel.
+
+---
+
+# 6. INTERFERENCE ZONE WITH FORCE BIAS
+
+Interference must have behavioral authority:
+
+```js
+function updateInterferenceZone() {
+  const inZone =
+    (scrollPercent >= 0.45 && scrollPercent <= 0.55) ||
+    (scrollPercent >= 0.62 && scrollPercent <= 0.70);
+
+  NarrativeState.interferenceActive = inZone;
+
+  if (inZone) {
+    NarrativeState.interferenceIntensity =
+      NarrativeState.surveillanceLevel * 0.8 +
+      NarrativeState.systemPressure * 0.2;
+
+    NarrativeState.forces.external +=
+      NarrativeState.interferenceIntensity * 0.1;
+  } else {
+    NarrativeState.interferenceIntensity = 0;
+  }
+}
+```
+
+Interference must bias external force dominance.
+
+---
+
+# 7. EMERGENT INSTABILITY INDEX
+
+Replace manual instability logic with:
+
+```js
+function updateInstability() {
+  const { internal, external, structural } = NarrativeState.forces;
+
+  const variance =
+    Math.abs(internal - external) +
+    Math.abs(external - structural) +
+    Math.abs(internal - structural);
+
+  NarrativeState.instabilityIndex = variance / 3;
+}
+```
+
+Instability must be derived, not manually incremented.
+
+---
+
+# 8. FRACTURE VELOCITY-BASED FRAGMENT EMISSION
+
+Implement:
+
+```js
+let lastFracture = 0;
+
+function shouldEmitFragment() {
+  const velocity =
+    NarrativeState.fractureLevel - lastFracture;
+
+  lastFracture = NarrativeState.fractureLevel;
+
+  const baseChance = velocity * 5;
+
+  if (NarrativeState.interferenceActive) {
+    if (Math.random() < 0.3) return false;
+  }
+
+  return Math.random() < baseChance;
+}
+```
+
+Fragment emission must depend on fracture velocity, not static fracture level.
+
+---
+
+# 9. HEALING SUPPRESSION RULE
+
+Add:
+
+```js
+function suppressHealing() {
+  if (!NarrativeState.interferenceActive) return false;
+  return NarrativeState.interferenceIntensity > 0.6;
+}
+```
+
+Inside checkHealing():
+
+```js
+if (suppressHealing()) return;
+```
+
+Healing must be blocked during high interference.
+
+---
+
+# 10. CONSTRAINTS
+
+* Do not introduce parallel state variables.
+* Do not mutate fractureLevel outside updateFracture().
+* Do not allow visual components to write to NarrativeState.
+* Do not use setInterval for state mutation.
+* All derived metrics must be recomputed per frame.
+
+---
+
+# OUTPUT REQUIREMENTS
+
+1. Provide complete refactored organism system code.
+2. Show how it integrates with requestAnimationFrame.
+3. Clearly separate:
+
+   * State
+   * Update functions
+   * Visual application functions
+4. Ensure the system is deterministic except where randomness is explicitly defined.
+
+Do not provide explanation.
+Provide clean, production-ready code.
+
+---
+
+Give me a full description implementation plan first. Maintain mobile friendliness and full responsiveness.

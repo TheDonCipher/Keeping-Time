@@ -53,7 +53,7 @@ The man looked up. He saw the Vanguard uniform. He didn't see a hero. He saw a b
 
 "They are noise," she corrected. "And our objective is to tune them out. We are here for the signal."
 
-She pointed to a structure ahead. It was a Resonance Node—a massive tuning fork embedded in the street. But in Taro's vision, it was surrounded by a cloud of black static. <em>ANOMALY_DETECTED.</em> Incoming signals were outside the standard spectrum, returning zero packets as they hit an absolute acoustic absorption field. Pattern recognition: <em>FAILED</em>.
+She pointed to a structure ahead. It was a Resonance Node—a massive tuning fork embedded in the street. But in Taro's vision, it was surrounded by a cloud of black static. <em>ANOMALY_DETECTED.</em> Incoming signals were outside the standard spectrum, returning null signal as they hit an absolute acoustic absorption field. Pattern recognition: <em>FAILED</em>.
 
 "You see that?" Taro asked.
 
@@ -69,7 +69,7 @@ There was a symbol scratch-etched into the metal. It wasn't C-Order. It wasn't V
 
 "Hana," Taro said, his voice dropping to a cautious whisper. "We're not patrolling. The system is lagging. We're being hunted by something the Score can't render."
 
-The shadows stretched. And for the first time, the Score gave him no data at all. Zero packets. <em>ENEMY: [REDACTED_ANOMALY].</em> Signal: <em>ABSOLUTE_SILENCE</em>.
+The shadows stretched. And for the first time, the Score gave him no data at all. Zero signal. <em>ENEMY: [REDACTED_ANOMALY].</em> Signal: <em>ABSOLUTE_SILENCE</em>.
 
 ---
 

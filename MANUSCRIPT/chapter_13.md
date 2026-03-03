@@ -17,7 +17,7 @@ No headache. No lag. No stutter. No hum.
 
 The constant, grinding background noise of the universe—the 50-cycle hum of the power grid, the distant friction of tires on pavement, the jagged static of people's emotions—was gone.
 
-Silence. Not the void-silence of the alley. A curated, harmonious silence. <em>ALL_SYSTEMS_GO.</em> Biometric verify was okay, the neural handshake locked. My sync rate was a perfect one hundred percent, and my mood was tagged as calm. SDI: 0.00, HIQ: 0.00.
+Silence. Not the void-silence of the alley. A curated, harmonious silence. <em>ALL_SYSTEMS_GO.</em> Biometric verify was okay, the neural link locked. My sync rate was a perfect one hundred percent, and my mood was tagged as calm. SDI: 0.00, HIQ: 0.00.
 
 He looked at his hands.
 

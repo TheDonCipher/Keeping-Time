@@ -60,14 +60,14 @@ A new topology was established: the Ground Wire. My system calculated a synergy 
 
 ### [22:00:00] THE COMMODITY OF SILENCE
 
-The dorms were loud. Not acoustically loud—the soundproofing was technically standard grade—but digitally deafening. The air was thick with the idle pings, status updates, and emotional leakage of four hundred students trying to wind down. Taro lay on his bunk in Room 404, the ambient noise hitting 65dB of raw data hum, with a moderate level of social pressure bleeding through the walls.
+The dorms were loud. Not acoustically loud—the soundproofing was technically standard grade—but digitally deafening. The air was thick with the idle pulses, status updates, and emotional leakage of four hundred students trying to wind down. Taro lay on his bunk in Room 404, the ambient noise hitting 65dB of raw data hum, with a moderate level of social pressure bleeding through the walls.
 
 Every wall in the room was broadcasting. Not ads, but presence.
 The guy in the bunk above him—a nervous kid from the Choral division—was leaking a constant, low-level anxiety hum that tasted like sour milk. He was off-tone, and he knew it, but he couldn't find the rhythm to stay flat.
 Through the thin partition, Taro could feel the aggressive, jagged heat of a Vanguard drill instructor pacing the hall.
 
 Silence was the most expensive commodity in Malkuth.
-Quiet Rooms were reserved for the elite. Prefects like Hana probably slept in zero-latency isolation tanks, wrapped in a blanket of perfect, expensive damping.
+Quiet Rooms were reserved for the elite. Prefects like Hana probably slept in zero-drift isolation tanks, wrapped in a blanket of perfect, expensive damping.
 
 But Taro? He was in general population.
 The noise was a physical itch under his skin. His Score port was trying to parse four hundred different heartbeats at once. <em>Thump-thump. Thump-thump. Thump-thump.</em> It was maddening. A cacophony of biology and code.

@@ -76,7 +76,7 @@ The air solidified. The sound waves he created didn't dissipate; they hung in th
 
 "End of simulation," Dorian Vale announced.
 
-Marcus tapped the cage. <em>PING.</em>
+Marcus tapped the cage. <em>PULSE.</em>
 
 *CRITICAL_FAILURE.* A kernel panic was detected, the system forcing a restart. <em>SYSTEM_REBOOTING...</em>
 
