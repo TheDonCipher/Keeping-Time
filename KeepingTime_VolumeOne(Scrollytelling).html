@@ -67,14 +67,19 @@
     }
 
     #wave-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-    #beat-container { position: relative; z-index: 10; width: 90%; max-width: 65ch; min-height: 50vh; display: flex; flex-direction: column; justify-content: center; transition: transform 0.3s; }
+    #beat-container { 
+      position: relative; z-index: 10; width: 90%; max-width: 65ch; min-height: 50vh; 
+      display: flex; flex-direction: column; justify-content: center; 
+      transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1), opacity 0.5s ease-in-out;
+      perspective: 1200px; transform-style: preserve-3d;
+    }
 
     .sentence {
       margin-bottom: 3.5rem; padding-left: 1.5rem; border-left: 3px solid transparent;
       will-change: transform, opacity, filter;
-      /* No opacity/filter transition to avoid blur during fast scroll */
       transition: border-color 0.5s ease;
       position: relative;
+      backface-visibility: hidden;
     }
     .sentence.active { border-left-color: var(--accent); text-shadow: 0 0 20px rgba(0,243,255,0.1); }
     .sentence.past, .sentence.future { border-left-color: transparent; }
@@ -210,6 +215,94 @@
     @media (max-height: 500px) {
       #ui-layer { display: none; }
       #beat-container { min-height: 80vh; }
+    }
+
+    /* === CINEMATIC REFINEMENT — APPEND AFTER EXISTING STYLES === */
+
+    #beat-container {
+      perspective: 1100px;
+      transform-style: preserve-3d;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: radial-gradient(ellipse 60% 40% at 30% 60%, 
+                    rgba(245, 181, 90, 0.07) 0%, transparent 70%);
+      background-size: 200% 200%;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: radial-gradient(ellipse 50% 55% at 70% 30%, 
+                    rgba(147, 100, 255, 0.06) 0%, transparent 70%);
+      background-size: 200% 200%;
+    }
+
+    .sentence.active {
+      text-shadow: -0.5px 0 rgba(0, 243, 255, 0.18), 
+                    0.5px 0 rgba(255, 51, 102, 0.18);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .sentence {
+        animation: sentenceRise 0.75s ease-out both;
+      }
+
+      body::before {
+        animation: orbDriftA 55s ease-in-out infinite alternate;
+      }
+
+      body::after {
+        animation: orbDriftB 70s ease-in-out infinite alternate;
+      }
+
+      .chapter-title {
+        animation: titleFloat 4s ease-in-out infinite;
+      }
+
+      @keyframes sentenceRise {
+        0% {
+          transform: translateY(22px) skewX(0.4deg);
+        }
+        100% {
+          transform: translateY(0) skewX(0deg);
+        }
+      }
+
+      @keyframes orbDriftA {
+        from {
+          background-position: 25% 55%;
+        }
+        to {
+          background-position: 75% 45%;
+        }
+      }
+
+      @keyframes orbDriftB {
+        from {
+          background-position: 65% 25%;
+        }
+        to {
+          background-position: 35% 75%;
+        }
+      }
+
+      @keyframes titleFloat {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-6px);
+        }
+      }
     }
   </style>
 </head>
@@ -1548,12 +1641,15 @@ class ScrollEngine {
   constructor(data) {
     this.data = data; this.currentBeatIndex = -1; this.beatMap = [];
     this.baseBeatHeight = window.innerHeight * 1.2; this.targetY = 0; this.currentY = 0;
-    this.lerpFactor = 0.07; this.fragmentTimer = 0;
+    this.lastY = 0; this.velocity = 0; this.smoothedVelocity = 0;
+    this.lerpFactor = 0.05; this.fragmentTimer = 0;
+    this.cumulativeTime = 0; this.lastTime = 0;
   }
   init() {
     this._calculateHeights();
     const sm = document.getElementById('scroll-machine'); if (sm) sm.style.height = this.totalHeight + 'px';
-    this.targetY = this.currentY = window.scrollY;
+    this.targetY = this.currentY = this.lastY = window.scrollY;
+    this.lastTime = performance.now();
     window.addEventListener('scroll', () => { this.targetY = window.scrollY; }, { passive: true });
     this._loop();
   }
@@ -1566,10 +1662,22 @@ class ScrollEngine {
     this.totalHeight = px;
   }
   _loop(time) {
+    if (!time) time = performance.now();
+    const deltaTime = time - this.lastTime;
+    this.lastTime = time;
+
     const diff = this.targetY - this.currentY;
     if (Math.abs(diff) > 0.1) this.currentY += diff * this.lerpFactor; else this.currentY = this.targetY;
-    this.tick(time || performance.now());
-    drawWaveform(time || performance.now());
+
+    this.velocity = Math.abs(this.currentY - this.lastY) / (deltaTime || 16);
+    this.lastY = this.currentY;
+    this.smoothedVelocity += (this.velocity - this.smoothedVelocity) * 0.1;
+    
+    const speedMultiplier = 1.0 + this.smoothedVelocity * 0.5;
+    this.cumulativeTime += deltaTime * speedMultiplier;
+
+    this.tick(time, this.smoothedVelocity);
+    drawWaveform(this.cumulativeTime);
     requestAnimationFrame(t => this._loop(t));
   }
   jumpToChapter(chId) {
@@ -1578,16 +1686,23 @@ class ScrollEngine {
       window.scrollTo({ top: this.beatMap[targetIdx].start + 10, behavior: 'smooth' });
     }
   }
-  tick(time) {
+  tick(time, velocity) {
     const y = this.currentY;
     const progress = Math.min(1, y / (this.totalHeight - window.innerHeight));
     const pb = document.getElementById('progress-bar'); if (pb) pb.style.transform = `scaleX(${progress})`;
     
     const idx = this._getActiveBeat(y);
-    if (idx !== this.currentBeatIndex) { this.currentBeatIndex = idx; this._renderBeat(idx); }
+    if (idx !== this.currentBeatIndex) { 
+      this.currentBeatIndex = idx; 
+      this._renderBeat(idx); 
+      this._triggerBeatPulse();
+    }
+    
     const beat = this.data[this.currentBeatIndex];
     if (beat) {
-      this._updateSentences(y, beat);
+      this._updateSentences(y, beat, velocity, time);
+      this._updateParagraphResponse(velocity, time);
+      
       narrativeState.update(beat);
       updateVignette(narrativeState.coherence);
       updateAmbientGlow(narrativeState.volume);
@@ -1617,6 +1732,36 @@ class ScrollEngine {
       if (beat.tag === 'crash' && progress > 0.98) triggerSystemCrash();
     }
   }
+  
+  _triggerBeatPulse() {
+    const container = document.getElementById('beat-container');
+    if (!container) return;
+    container.style.transition = 'none';
+    container.style.transform = `${container.style.transform} scale(1.03)`;
+    container.style.opacity = '0.7';
+    setTimeout(() => {
+      container.style.transition = 'transform 0.5s cubic-bezier(0.2, 0, 0.2, 1), opacity 0.5s ease-out';
+      container.style.opacity = '1';
+    }, 20);
+  }
+
+  _updateParagraphResponse(velocity, time) {
+    const container = document.getElementById('beat-container');
+    if (!container) return;
+    
+    // Momentum-based tilting of the entire paragraph
+    const scrollDiff = this.targetY - this.currentY;
+    const tiltX = Math.min(Math.max(scrollDiff * -0.015, -10), 10);
+    const tiltY = Math.sin(time * 0.001) * 2;
+    
+    // Focus zoom (grows slightly when movement is slow)
+    const focusScale = 1.0 + (1 / (1 + velocity * 2)) * 0.02;
+    
+    // Inertial drift
+    const driftY = scrollDiff * 0.05;
+    
+    container.style.transform = `translate3d(0, ${driftY}px, 0) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(${focusScale})`;
+  }
   _getActiveBeat(y) { for (let i = 0; i < this.beatMap.length; i++) if (y >= this.beatMap[i].start && y < this.beatMap[i].end) return i; return this.data.length - 1; }
   _renderBeat(index) {
     const beat = this.data[index]; const container = document.getElementById('beat-container');
@@ -1628,40 +1773,113 @@ class ScrollEngine {
     container.innerHTML = html + (beat.type === 'chapter' ? '</div>' : '');
     if (beat.type === 'chapter') triggerChapterFlash();
   }
-    _updateSentences(y, beat) {
+    _updateSentences(y, beat, velocity, time) {
       const map = this.beatMap[this.currentBeatIndex];
       const beatProg = (y - map.start) / (map.end - map.start);
+      
       beat.sentences.forEach((s, i) => {
         const el = document.getElementById(`s-${i}`); if (!el) return;
-        const n = beat.sentences.length; const sStart = i / n; const sEnd = (i + 1) / n; const sProg = (beatProg - sStart) / (sEnd - sStart);
-
-        let intensity = Math.sin(sProg * Math.PI);
-        intensity = Math.min(1.0, intensity * 2.0); 
+        const n = beat.sentences.length;
         
-        if (intensity > 0.4) {
+        // Deep liquid stagger
+        const staggerFactor = 0.35; 
+        const sStart = (i / n) * (1 - staggerFactor);
+        const sEnd = sStart + staggerFactor + (1 / n);
+        const rawProg = (beatProg - sStart) / (sEnd - sStart);
+        const sProg = Math.max(0, Math.min(1, rawProg));
+
+        // Organic smoothstep intensity
+        let intensity = Math.sin(sProg * Math.PI);
+        intensity = intensity * intensity * (3 - 2 * intensity); 
+
+        if (intensity > 0.02) {
           if (!el.classList.contains('active')) {
             el.className = `sentence active ${el.className.split(' ').filter(c => c !== 'future' && c !== 'past').join(' ')}`;
-            if (s.format === 'system' && !el._scrambled) { scrambleText(el, el.innerHTML, 500); el._scrambled = true; }
+            if (s.format === 'system' && !el._scrambled) { scrambleText(el, el.innerHTML, 600); el._scrambled = true; }
           }
         } else {
           el.classList.remove('active'); el.classList.add(sProg < 0.5 ? 'future' : 'past');
         }
+        
         const vol = narrativeState.volume;
         el.classList.remove('tension-mid', 'tension-high', 'glitch', 'combat-tagged');
+        
+        let transform = '';
+        
         if (el.classList.contains('active')) {
           if (vol > 0.85) el.classList.add('tension-high'); else if (vol > 0.6) el.classList.add('tension-mid');
-          if (vol > 0.82 && narrativeState.coherence < 0.3) { el.setAttribute('data-text', el.innerText); el.classList.add('glitch'); }
+          if ((vol > 0.82 && narrativeState.coherence < 0.3) || velocity > 4.5) { 
+            el.setAttribute('data-text', el.innerText); 
+            el.classList.add('glitch'); 
+          }
           if (beat.tag === 'combat_ui') el.classList.add('combat-tagged');
-          if (beat.tag === 'frame_skip') { el.style.transform = `translateX(${(Math.random()-0.5)*10}px)`; el.style.opacity = Math.random() > 0.1 ? 1.0 : 0.2; }
+          
+          // --- STABILIZED KINETICS ---
+          
+          const scrollDiff = this.targetY - this.currentY;
+          const focusDampen = 1 - (intensity * 0.85); // Dramatically stabilize focused text
+          
+          // 1. Kinetic Stretching (Reduced for steadiness)
+          const stretchFactor = Math.min(velocity * 12, 60); 
+          const stretchY = (i - (n/2)) * (stretchFactor * (1.1 - intensity) * focusDampen); 
+          
+          // 2. Viscous Lag (Smoothed)
+          const lagY = scrollDiff * (0.04 + (i * 0.015)) * focusDampen; 
+          
+          // 3. Magnetic Focus Pull (Keep it framed)
+          const centerPull = (0.5 - sProg) * 100 * (1 - Math.min(velocity * 0.4, 1));
+          
+          // 4. Horizontal Fluid Wave (Stabilized on focus)
+          const waveFreq = 0.0005 + (velocity * 0.0003);
+          const swayX = Math.sin(time * waveFreq + (i * 0.6)) * (4 + velocity * 5) * focusDampen;
+          
+          // 5. Kinetic Rotations (Subtle on focus)
+          const rotX = Math.min(Math.max(scrollDiff * -0.04, -15), 15) * focusDampen;
+          const rotY = swayX * 0.5;
+          
+          // 6. Velocity Jitter (Only at high speeds, dampened on focus)
+          const jitterX = velocity > 4.0 ? (Math.random() - 0.5) * velocity * focusDampen : 0;
+          const jitterY = velocity > 4.0 ? (Math.random() - 0.5) * velocity * focusDampen : 0;
+          
+          // 7. Depth & Breathing (Subtle)
+          const zDepth = intensity * 50;
+          const pulse = Math.sin(time * 0.0008 + i) * 0.004;
+          const scale = 1.0 + (intensity * 0.05) + pulse;
+          
+          transform = `translate3d(${swayX + jitterX}px, ${lagY + stretchY + centerPull + jitterY}px, ${zDepth}px) scale(${scale}) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+          
+          // 8. Dynamic Distortion (Chromatic Aberration - higher threshold)
+          if (velocity > 2.0) {
+            const shift = Math.min(velocity * 1.5, 10);
+            el.style.textShadow = `${shift}px 0 rgba(0,243,255,0.3), -${shift}px 0 rgba(255,51,102,0.3)`;
+          } else {
+            el.style.textShadow = 'none';
+          }
+
+          if (beat.tag === 'frame_skip') { 
+            transform += ` translateX(${(Math.random()-0.5)*35}px)`; 
+            el.style.opacity = Math.random() > 0.1 ? 1.0 : 0.4; 
+          }
+        } else {
+          // Weighted Floating Exit/Entry Stacks
+          const vertOffset = (sProg - 0.5) * -150;
+          const fadeDepth = (sProg < 0.5 ? -1 : 1) * (1 - intensity) * 120;
+          transform = `translate3d(0, ${vertOffset}px, ${fadeDepth}px) scale(0.88)`;
+          el.style.textShadow = 'none';
         }
 
-        if (intensity > 0.85) {
+        el.style.transform = transform;
+
+        // Visual Liquidity
+        if (intensity > 0.96) {
             el.style.opacity = 1.0;
             el.style.filter = 'none';
         } else {
-            el.style.opacity = Math.pow(intensity, 0.3);
-            const blurAmt = (1 - intensity) * 3; 
-            el.style.filter = blurAmt < 0.2 ? 'none' : `blur(${blurAmt}px)`;
+            const visualIntensity = Math.pow(intensity, 0.45);
+            el.style.opacity = visualIntensity;
+            const velocityBlur = Math.min(velocity * 3.2, 22);
+            const blurAmt = (1 - intensity) * 8 + velocityBlur; 
+            el.style.filter = blurAmt < 0.6 ? 'none' : `blur(${blurAmt}px)`;
         }
       });
     }
@@ -1712,27 +1930,57 @@ function drawWaveform(time) {
   const ctx = c.getContext('2d'); c.width = window.innerWidth; c.height = window.innerHeight;
   const vol = narrativeState.volume; const coh = narrativeState.coherence; const mode = narrativeState.mode;
   ctx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--wave-color'); ctx.lineWidth = 2;
+  
   if (mode === 'sine' || mode === 'dropout') {
-    for (let j = 0; j < 5; j++) {
+    for (let j = 0; j < 6; j++) {
       ctx.beginPath();
-      for (let x = 0; x < c.width; x += 8) {
-        if (mode === 'dropout' && Math.random() < 0.02 * (1-coh)) { ctx.moveTo(x+20, c.height/2); continue; }
-        const y = (c.height/2) + (j-2.5)*22*vol + Math.sin(x*0.002*(2-coh) + time*0.0005 + j) * c.height*0.11*vol + Math.sin(x*0.045+time*0.0018)*(1-coh)*28;
+      ctx.globalAlpha = 0.3 + (j * 0.1);
+      for (let x = 0; x < c.width; x += 6) {
+        if (mode === 'dropout' && Math.random() < 0.015 * (1-coh)) { ctx.moveTo(x+25, c.height/2); continue; }
+        
+        // Liquid flow physics
+        const baseSine = Math.sin(x * 0.0015 * (2-coh) + time * 0.0006 + j);
+        const detailSine = Math.sin(x * 0.035 + time * 0.002 + (j * 0.5)) * (1-coh) * 25;
+        const fluidSway = Math.sin(time * 0.0004 + x * 0.0005) * 15;
+        
+        const y = (c.height/2) + (j-3)*25*vol + fluidSway + 
+                  baseSine * c.height * 0.12 * vol + detailSine;
+        
         x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
       }
       ctx.stroke();
     }
+    ctx.globalAlpha = 1.0;
   } else if (mode === 'square') {
-    ctx.beginPath(); const p = 100;
-    for (let x = 0; x < c.width; x += 2) { const h = ((x+time*0.1)%p) < p/2; const y = (c.height/2) + (h?-40:40)*vol; x===0?ctx.moveTo(x,y):ctx.lineTo(x,y); }
+    ctx.beginPath(); const p = 120;
+    for (let x = 0; x < c.width; x += 2) { 
+      const h = ((x + time * 0.12) % p) < p/2; 
+      const y = (c.height/2) + (h ? -45 : 45) * vol + Math.sin(x * 0.01 + time * 0.001) * 5; 
+      x===0?ctx.moveTo(x,y):ctx.lineTo(x,y); 
+    }
     ctx.stroke();
   } else if (mode === 'sawtooth') {
-    ctx.beginPath(); const p = 80;
-    for (let x = 0; x < c.width; x += 2) { const ph = ((x+time*0.15)%p)/p; const y = (c.height/2) + (ph*2-1)*60*vol; x===0?ctx.moveTo(x,y):ctx.lineTo(x,y); }
+    ctx.beginPath(); const p = 90;
+    for (let x = 0; x < c.width; x += 2) { 
+      const ph = ((x + time * 0.18) % p) / p; 
+      const y = (c.height/2) + (ph * 2 - 1) * 70 * vol + Math.cos(x * 0.02) * 3; 
+      x===0?ctx.moveTo(x,y):ctx.lineTo(x,y); 
+    }
     ctx.stroke();
   } else if (mode === 'collapse') {
-    ctx.beginPath(); for (let x = 0; x < c.width; x += 10) { const y = (c.height/2) + (Math.random()-0.5)*10*vol*coh; x===0?ctx.moveTo(x,y):ctx.lineTo(x,y); }
+    ctx.beginPath(); 
+    for (let x = 0; x < c.width; x += 8) { 
+      const y = (c.height/2) + (Math.random() - 0.5) * 15 * vol * coh + Math.sin(time * 0.001 + x * 0.01) * 10; 
+      x===0?ctx.moveTo(x,y):ctx.lineTo(x,y); 
+    }
     ctx.stroke();
+  } else if (mode === 'wireframe') {
+     // Wireframe handled by CSS class, but we can add a scanning line
+     ctx.beginPath();
+     ctx.strokeStyle = 'rgba(68,136,255,0.2)';
+     const scanY = (time * 0.2) % c.height;
+     ctx.moveTo(0, scanY); ctx.lineTo(c.width, scanY);
+     ctx.stroke();
   }
 }
 
