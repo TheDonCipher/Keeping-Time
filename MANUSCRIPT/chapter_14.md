@@ -5,9 +5,9 @@
 
 ### [08:00:00] THE UNCANNY VALLEY
 
-The gates of Malkuth Academy didn't look golden anymore. My HUD showed the area as a high-fidelity educational tier, the global synchronization at a perfect one hundred percent. The firmware—version 2.0, patched and optimized—was active, its cognitive bias layer humming behind my eyes as it verified my identity. Status: <em>COMPLIANT</em>.
+The gates of Malkuth Academy didn't look golden anymore. His HUD showed the area as a high-fidelity educational tier, the global synchronization at a perfect one hundred percent. The firmware—version 2.0, patched and optimized—active, its cognitive bias layer humming behind his eyes as it verified his identity. Status: *COMPLIANT*.
 
-Now, he just saw the stress fractures. He stood at the transit platform, staring up at the entrance. The patch Voss had installed—the "upgrade"—was running silent in the background. No more frantic red warnings. Just a quiet, high-frequency hum that felt like tinnitus.
+Now, he just saw the stress fractures. He stood at the transit platform, staring up at the entrance. The patch Voss installed—the "upgrade"—ran silent in the background. No more frantic red warnings. Just a quiet, high-frequency hum feeling like tinnitus.
 
 The world wasn't smooth. It was a jagged mess of conflicting frequencies.
 
@@ -15,7 +15,7 @@ Across the courtyard, a group of First Years were laughing. To Taro's old eyes, 
 
 It was [[Social Harmony::An auto-tuning algorithm that smooths out the rough edges of human interaction, ensuring every word and gesture is perfectly in key.]] .
 
-He tapped his temple, a phantom itch where the old collar used to be. The new limiter was internal, buried deep in his Score port's kernel. It was a mute button for his output, not his input. It was an internal noose, tightening every time he tried to run sharp.
+He tapped his temple, a phantom itch where the old collar used to be. The new limiter was internal, buried deep in his Score port's kernel. A mute button for his output, not his input. An internal noose, tightening every time he tried to run sharp.
 
 "Cadet Taro?"
 
@@ -31,9 +31,9 @@ Taro stiffened. Staccato.
 
 The Amphitheater was a bowl of sound. Five hundred cadets sat in concentric rings, their personal resonance fields humming in a low, collective drone.
 
-Taro slipped into the back row. Instead of the familiar golden stave floating in the air, a sparse, utilitarian menu flickered into view. The optimization layer was active and nominal, but my public footprint was restricted, my signal masked to maintain a low profile. SDI: 0.01, HIQ: 0.01.
+Taro slipped into the back row. Instead of the familiar golden stave floating in the air, a sparse, utilitarian menu flickered into view. The optimization layer active and nominal, but his public footprint restricted, his signal masked to maintain a low profile. SDI: 0.01, HIQ: 0.01.
 
-Down in the center of the pit, Major Staccato was pacing.
+Down in the center of the pit, Major Staccato paced.
 
 "Precision," Staccato barked. "Is not a suggestion. It is civic hygiene. It is the law of physics."
 
@@ -43,19 +43,19 @@ He pointed at a holograph. It showed a replay of a recent sortie. The hologram z
 
 Taro watched the hologram. To everyone else, it looked like a standard error. But Taro saw the interference. The air around the cadet in the video wasn't empty. It was thick with a localized distortion field.
 
-It was a [[Damping Field::An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold.]] .
+A [[Damping Field::An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold.]] .
 
-<em>It wasn't his fault,</em> Taro realized. <em>The environment was hostile.</em>
+*He didn't miss. The environment was hostile.*
 
-He leaned forward. He saw faint, purple vectors swirling around the cadet's feet. My HUD identified a negative resonance sink, an external energy drain that defied triangulation. SDI: 0.85, HIQ: 0.72.
+He leaned forward. Faint, purple vectors swirled around the cadet's feet. Target analysis identified a negative resonance sink, an external energy drain defying triangulation. SDI: 0.85, HIQ: 0.72.
 
-"Major," a voice called out. It was Hana.
+"Major," a voice called out. Hana.
 
-"The atmospheric density in that sector," Hana said. Her voice was clear, but Taro could hear the strain in it. "Analysis: The replay does not account for the local key signature. If the environment was anti-phase Low-Fi, then the propagation delay is within standard error margins."
+"The atmospheric density in that sector," Hana said. Her voice clear, but the strain audible. "Analysis: The replay does not account for the local key signature. If the environment was anti-phase Low-Fi, then the propagation delay is within standard error margins."
 
 "Stay flat, Cadet. Your logic is oscillating."
 
-Hana sat. The air around her spiked with a sudden, jagged red waveform. Resentment.
+Hana sat. The air around her spiked with a sudden, jagged red waveform.
 
 ---
 
@@ -63,7 +63,7 @@ Hana sat. The air around her spiked with a sudden, jagged red waveform. Resentme
 
 "You look like you've been defragged." Ven's voice was a deep, rumbling bass.
 
-They were in the mess hall. Three hundred spoons hit three hundred bowls in a near-perfect polyrhythm. The kitchen staff were <em>tuning</em> the soup to ensure the nutrient mash vibrated at a compliant 440Hz.
+They were in the mess hall. Three hundred spoons hit three hundred bowls in a near-perfect polyrhythm. The kitchen staff were *tuning* the soup to ensure the nutrient mash vibrated at a compliant 440Hz.
 
 "I feel defragged," Taro muttered.
 
@@ -79,13 +79,13 @@ Hana slid into the seat next to Ven. "You're out of sync," she said. "Your carri
 
 "I think," Taro whispered, "that the Silence isn't just outside the walls anymore. It's inside the house."
 
-He pulled up his comms menu. My target analysis confirmed Yumi Nishimura was currently offline, her link unreachable.
+He pulled up his comms menu. Target analysis confirmed Yumi Nishimura was currently offline, her link unreachable.
 
-*ALERT: COMMS_INTERCEPT [ACTIVE].* Unauthorized link redirection was detected, Adjutant Krell monitoring the call with root priority. SDI: 0.99, HIQ: 0.99.
+*ALERT: COMMS_INTERCEPT [ACTIVE].* Unauthorized link redirection detected, Adjutant Krell monitoring the call with root priority. SDI: 0.99, HIQ: 0.99.
 
 "Taro?" Her voice was tinny, compressed. "Is that you?"
 
-Taro's throat tightened. The red text was still scrolling. <em>THREAT_LEVEL: ELEVATED.</em> A proximity lock was established, targeting her apartment in Sector 7.
+Taro's throat tightened. The red text still scrolling. *THREAT_LEVEL: ELEVATED.* A proximity lock established, targeting her apartment in Sector 7.
 
 "I'm fine, Mom," Taro said. His voice was perfect. Smooth. Dead. "Everything is great. I’m staying flat."
 
@@ -93,11 +93,11 @@ Taro's throat tightened. The red text was still scrolling. <em>THREAT_LEVEL: ELE
 
 "I finally found my rhythm. I have to go."
 
-He cut the line. He couldn't listen to her say it. Not while Krell was listening.
+He cut the line. He couldn't listen to her say it. Not while Krell listened.
 
-He looked across the room. At a table near the exit, a group of senior cadets were eating. One of them—a tall girl with a cello case—was flickering. For a split second, her skin rendered as wireframe.
+He looked across the room. At a table near the exit, a group of senior cadets were eating. One of them—a tall girl with a cello case—flickered. For a split second, her skin rendered as wireframe.
 
-<em>The wrong note is inside the house.</em>
+*The wrong note is inside the house.*
 
 ---
 

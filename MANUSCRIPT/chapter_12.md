@@ -5,21 +5,21 @@
 
 ### [TIME: 08:00:00] THE DEBUGGING SUITE
 
-Taro woke up screaming. We were in Zone: Malkuth_Medical, a secure containment tier defined by its maximum environmental fidelity and restricted access. My status was quarantine, my identity verified but my frequency signature null. I was Case_ID: Fatal_Exception_099, an audit protocol designated as lethal.
+Taro woke up screaming. They were in Zone: Malkuth_Medical, a secure containment tier defined by its maximum environmental fidelity and restricted access. His status flagged as quarantine, identity verified but frequency signature null. He was Case_ID: Fatal_Exception_099, an audit protocol designated as lethal.
 
-But the scream didn't leave his throat. It hit a hard limit, censored by the software running in his neck. <em>OUTPUT: FLAGGED [EXCESSIVE_VOLUME].</em> Output gain was restricted to zero percent as the system performed a mandatory mute. SDI: 0.94, HIQ: 0.92.
+But the scream didn't leave his throat. It hit a hard limit, censored by the software running in his neck. *OUTPUT: FLAGGED [EXCESSIVE_VOLUME].* Output gain restricted to zero percent as the system performed a mandatory mute. SDI: 0.94, HIQ: 0.92.
 
 He was strapped to a table. It wasn't a bed. A bed implies comfort. This was a diagnostic slab. A cold, white, composite surface designed to facilitate maximum data throughput from the subject's nervous system. The room was aggressively high-fidelity. The walls were a perfect, seamless white. The lighting was shadowless, emanating from everywhere at once. It smelled of absolutely nothing—a sterile void of olfactory data. In this room, there was no drift. No noise. Just the audit.
 
-<em>RESTRAINTS: CLASS_5.</em> Haptic dampeners were active, my resonance footprint hidden from the public grid by an active masking field.
+*RESTRAINTS: CLASS_5.* Haptic dampeners active, his resonance footprint hidden from the public grid by an active masking field.
 
-Taro tried to move his hands. The restraints didn't bulge. They weren't just physical; they were haptic dampeners. They canceled out any kinetic energy he tried to generate.
+Taro tried to move his hands. The restraints didn't budge. They weren't just physical; they were haptic dampeners. They canceled out any kinetic energy he generated.
 
 "Subject is online," a voice said.
 
-It wasn't the smooth, polished voice of a Calibrator. It was the flat, grinding tone of a heavy-duty industrial fan. My target analysis confirmed him as Adjutant Krell, an Enforcer with an aggressive acoustic profile and a lethal threat rating. His authority was unchecked, his visor a deep, angry red.
+It wasn't the smooth, polished voice of a Calibrator. It was the flat, grinding tone of a heavy-duty industrial fan. Target analysis confirmed the man as Adjutant Krell, an Enforcer with an aggressive acoustic profile and a lethal threat rating. His authority unchecked, his visor a deep, angry red.
 
-Krell didn't look at Taro. He looked at a floating holographic display that showed a diagram of Taro's nervous system. Parts of it were flashing red.
+Krell didn't look at Taro. He looked at a floating holographic display showing a diagram of Taro's nervous system. Parts of it flashed red.
 
 "Neural pathways are scorched," Krell noted, tapping the air. "He ran at 300% capacity for seven minutes. His myelin sheaths are stripped. He was carrying load that would have slagged a platoon. He should be dead."
 
@@ -39,7 +39,7 @@ Krell didn't wait. He shoved the probe into Taro's mouth, piercing the gum line.
 
 *CRACK.*
 
-Taro convulsed against the straps. A jolt of pure white electricity shot through his jaw and into his skull. <em>PAIN_THRESHOLD_EXCEEDED.</em> A bone conduction test was in progress, resonant frequency verification hitting 140 Score Units. SDI: 0.98, HIQ: 0.95.
+Taro convulsed against the straps. A jolt of pure white electricity shot through his jaw and into his skull. *PAIN_THRESHOLD_EXCEEDED.* A bone conduction test in progress, resonant frequency verification hitting 140 Score Units. SDI: 0.98, HIQ: 0.95.
 
 "Resonance test," Krell muttered, watching the display. "He conducted that scream through his own skeleton. The bone density is altered. High-frequency calcification. He's been running sharp for years."
 
@@ -53,13 +53,13 @@ Krell leaned in. The red light of his visor bathed Taro's face.
 
 "Heroes follow the script, Anomaly. You improvised. That makes you a wrong note. And we don't allow wrong notes in the Grand Concord."
 
-He raised his hand again. The gauntlet hummed with a low, menacing frequency. A bass driver. It was designed to shatter kidney stones—or kidneys.
+He raised his hand again. The gauntlet hummed with a low, menacing frequency. A bass driver designed to shatter kidney stones—or kidneys.
 
 "Let's see if your hardware can carry the load," Krell said.
 
 "That's enough, Adjutant."
 
-The voice stopped Krell mid-swing. It was soft. Cultured. Perfect.
+The voice stopped Krell mid-swing. Soft. Cultured. Perfect.
 
 The door slid open. Headmaster Kael Voss walked in. He wasn't wearing armor. He wore his pristine white robes, unblemished by the chaos of the world.
 
@@ -79,7 +79,7 @@ The door hissed shut. Silence returned. But it wasn't the heavy silence of Krell
 
 Voss swiped his hand through the air. A hologram appeared—a replay of the alleyway fight. Taro saw himself throwing the brick. He saw the chaotic wave. He saw the Silence agents recoil.
 
-"You see this?" Voss pointed to the jagged red waveform Taro had created. "This is not music. This is a virus."
+"You see this?" Voss pointed to the jagged red waveform Taro created. "This is not music. This is a virus."
 
 "It worked," Taro argued weakly. "It stopped them."
 
@@ -89,9 +89,9 @@ Taro shook his head.
 
 "It crashes," Voss said. "And when the grid crashes, everyone dies. Not just you. Hana. Ven. Every citizen in Unison who relies on the Score to pump their hearts and regulate their breathing. You risked millions to save three. You clipped the entire composition."
 
-Taro felt cold. He hadn't thought about the grid. He just wanted to survive.
+Taro froze. He hadn't thought about the grid. He just wanted to survive.
 
-"You are dangerous," Voss continued. "Not because you are malicious. But because you are incompatible. You vibrate at a frequency that tears the world apart. You need to stay flat."
+"You are dangerous," Voss continued. "Not because you are malicious. But because you are incompatible. You vibrate at a frequency tearing the world apart. You need to stay flat."
 
 Voss leaned forward. His golden eyes locked onto Taro's.
 
@@ -115,7 +115,7 @@ He reached into his robe and pulled out a small, black chip. It didn't reflect l
 
 "I am going to save you," Voss corrected. "And your friends. Stay flat, Taro."
 
-He tapped the table. A video feed appeared. Hana was in a medical tank, floating in blue fluid. Her skin was pale. Her eyes were vacant.
+He tapped the table. A video feed appeared. Hana was in a medical tank, floating in blue fluid. Her skin pale. Her eyes vacant.
 
 "Hana Chord is currently in critical condition," Voss said. "Her resonance core was shattered by your little stunt. She requires a high-level system restore. Expensive. Complex."
 
@@ -135,7 +135,7 @@ Taro struggled against the straps. "No! It was my fault!"
 
 The room was silent. The threat wasn't angry. It was just math. An If/Then statement.
 
-Taro looked at the chip. It was small. Dark. Permanent.
+Taro looked at the chip. Small. Dark. Permanent.
 
 He looked at Hana floating in the tank.
 
@@ -151,11 +151,11 @@ He closed his eyes.
 
 "Good choice. Stay flat."
 
-Voss pressed the chip into the port at the base of Taro's neck. It didn't hurt. It felt like ice water pouring into his brain. The screaming in his head—the constant, jagged noise of his own thoughts—suddenly stopped. It was cut off, like a wire being snipped. The fear vanished. The anger vanished. The guilt vanished.
+Voss pressed the chip into the port at the base of Taro's neck. It didn't hurt. It felt like ice water pouring into his brain. The screaming in his head—the constant, jagged noise of his own thoughts—suddenly stopped. It cut off, like a wire snipped. The fear vanished. The anger vanished. The guilt vanished.
 
-<em>SYSTEM_UPDATE: INSTALLING... [100%].</em> Neural optimization was in progress, the patching layer filing away the rough edges of his mind. Baseline alignment was restored, and the optimization was complete. Session resumed. Efficiency: 99.9%.
+*SYSTEM_UPDATE: INSTALLING... [100%].* Neural optimization in progress, the patching layer filing away the rough edges of his mind. Baseline alignment restored, optimization complete. Session resumed. Efficiency: 99.9%.
 
-Taro opened his eyes. The world was white. And for the first time in his life, it was quiet. <em>WELCOME_BACK_USER.</em>
+Taro opened his eyes. The world was white. And for the first time in his life, it was quiet. *WELCOME_BACK_USER.*
 
 ---
 

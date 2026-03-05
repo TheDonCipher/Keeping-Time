@@ -5,7 +5,7 @@
 
 ### [TIME: 07:00:00] REBOOT
 
-Taro opened his eyes. We were back in the student housing tier, the Academy dorms rendered in maximum environmental fidelity. My system status was online, all hardware components functioning within standard tolerance. Firmware version 2.0 was active, the neural-acoustic optimization layer at one hundred percent compliance. I was recovered, a standard user once more. Status: <em>ONLINE</em>.
+Taro opened his eyes. He was back in the student housing tier, the Academy dorms rendered in maximum environmental fidelity. His system status mapped online, all hardware components functioning within standard tolerance. Firmware version 2.0 active, the neural-acoustic optimization layer at one hundred percent compliance. He was recovered, a standard user once more. Status: *ONLINE*.
 
 The world was beautiful.
 
@@ -17,7 +17,7 @@ No headache. No lag. No stutter. No hum.
 
 The constant, grinding background noise of the universe—the 50-cycle hum of the power grid, the distant friction of tires on pavement, the jagged static of people's emotions—was gone.
 
-Silence. Not the void-silence of the alley. A curated, harmonious silence. <em>ALL_SYSTEMS_GO.</em> Biometric verify was okay, the neural link locked. My sync rate was a perfect one hundred percent, and my mood was tagged as calm. SDI: 0.00, HIQ: 0.00.
+Silence. Not the void-silence of the alley. A curated, harmonious silence. *ALL_SYSTEMS_GO.* Biometric verify was okay, the neural link locked. His sync rate dialed in at a perfect one hundred percent, his mood tagged as calm. SDI: 0.00, HIQ: 0.00.
 
 He looked at his hands.
 
@@ -49,7 +49,7 @@ And around his neck...
 
 A new collar.
 
-Sleek. Black. Matte finish. It hummed with a low, barely audible frequency. A calming wave. My target analysis confirmed it as the Voss_Link v2, a neural optimization interface. The administrative link was established and active, restricting my output to a safe fifty percent amplitude. <em>EMOTIONAL_DAMPING: 30%.</em> Phase stabilization was active, keeping me level. SDI: 0.01, HIQ: 0.01.
+Sleek. Black. Matte finish. It hummed with a low, barely audible frequency. A calming wave. Target analysis confirmed it as the Voss_Link v2, a neural optimization interface. The administrative link was established and active, restricting output to a safe fifty percent amplitude. *EMOTIONAL_DAMPING: 30%.* Phase stabilization active, keeping him level. SDI: 0.01, HIQ: 0.01.
 
 Taro touched the collar. It felt like it was fused to his skin.
 
@@ -59,7 +59,7 @@ He reached for that fire.
 
 But the collar hummed louder. A soft, blue vibration.
 
-The anger evaporated. It didn't just go away; it was deleted. Replaced by a mild, floating sense of acceptance. It's better this way, a thought whispered. But was it his thought? Or was it the firmware?
+The anger evaporated. It didn't just go away; it was deleted. Replaced by a mild, floating sense of acceptance. A background process registered that it was better this way.
 
 "Taro?"
 
@@ -71,7 +71,7 @@ He looked... clean. His heavy armor was polished to a mirror shine. His face was
 
 "Hey," Taro said. "You okay?"
 
-"I'm great," Ven smiled. It was a wide, easy smile. "My thermal load is stable at 40%. The cooling system they installed is... it's amazing. I feel light. I'm finally compatible, Taro."
+"I'm great," Ven smiled. A wide, easy smile. "My thermal load is stable at 40%. The cooling system they installed is... it's amazing. I feel light. I'm finally compatible, Taro."
 
 Ven walked over and patted Taro on the shoulder. The impact was gentle. Controlled. No sparks. No heat dump.
 
@@ -85,7 +85,7 @@ Ven walked over and patted Taro on the shoulder. The impact was gentle. Controll
 
 "Yeah. The Triad drill. We're going to nail it this time. Perfect C-Major. No clipping."
 
-Taro followed Ven out into the hallway. The dorms were quiet. Orderly. Students walked in straight lines. They nodded politely as Taro passed. <em>POLITE_NOD.</em> Social alignment check passed, status accepted.
+Taro followed Ven out into the hallway. The dorms were quiet. Orderly. Students walked in straight lines. They nodded politely as Taro passed. *POLITE_NOD.* Social alignment check passed, status accepted.
 
 Taro nodded back. His neck moved smoothly. No resistance.
 
@@ -97,7 +97,7 @@ Hana was standing by the fountain.
 
 She looked radiant. Her uniform was crisp, her hair perfectly styled. Her aura was a stable, glowing blue square wave.
 
-"Target sighted," she announced, her voice lacking its usual robotic edge. It sounded... human. Almost <em>too</em> human. "Good morning, Nishimura. Analysis: Your signal is flat. Optimal. Latency is zero."
+"Target sighted," she announced, her voice lacking its usual robotic edge. It sounded... human. Almost *too* human. "Good morning, Nishimura. Analysis: Your signal is flat. Optimal. Latency is zero."
 
 "Hi, Hana," Taro said.
 
@@ -133,13 +133,13 @@ Because they forgot.
 
 Taro closed the box. His fingers traced the frayed edge of the headphone jack.
 
-<em>Remember,</em> he told himself. <em>LIE_DETECTED.</em> Neural variance detected, my internal signal suppressed as the masking protocol engaged. My mood was tagged as pretending.
+*LIE_DETECTED.* Neural variance detected, internal signal suppressed as the masking protocol engaged. His mood tagged as pretending.
 
 He closed his eyes. He tried to find the sawtooth wave. The angry, jagged noise that was him.
 
 It was buried. Deep under the lavender-scented code. But it wasn't gone. It was just damped.
 
-<em>Bookmark it,</em> he thought. <em>File: ANGER. Status: HIDDEN. Access Key: PENDING.</em>
+*File: ANGER. Status: HIDDEN. Access Key: PENDING.*
 
 He opened his eyes.
 
@@ -153,7 +153,7 @@ He walked into the sunlight.
 
 The collar around his neck hummed.
 
-It felt cold. <em>COMPLIANT.</em> Subject aligned with grid hierarchy, soul buffering at twelve percent capacity.
+It felt cold. *COMPLIANT.* Subject aligned with grid hierarchy, soul buffering at twelve percent capacity.
 
 ---
 

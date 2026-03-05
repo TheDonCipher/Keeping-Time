@@ -9,217 +9,237 @@
 
 ### [00:00:00] THE ZAP
 
-It hits you like a nail gun to the base of the skull. 
+It hit like a nail gun to the base of the skull. 
 
-White light. Static. The taste of copper and burning hair—*Electrical discharge detected in gustatory cortex*, the system whispered, measuring the threshold at a searing 4.2mA.
+White light. Static. The taste of copper and burning hair.
 
-For a microsecond, you aren't human. You aren't Taro Nishimura. You are just a node trying to sync with a network that is infinitely larger than you. The Score doesn't just ask for your participation; it demands your total alignment. We like to think of our lives as melodies we write ourselves, but in this world, we are just strings being plucked by a hand we can't see. Your nervous system shrieks as the [[Neural-Acoustic Interface::A direct neural link so fast it feels like your own thoughts are lagging behind.]] overrides your optic nerve, forcing a new Score onto your wetware. The system attempts a sync with the Global Resonance Grid, a root priority request that feels like a physical weight pressing against your brain. The local grid is rejecting your presence; your heartbeat is lagging, and the world is hitching before it even hits your nerves.
+> SYSTEM ALERT: Electrical discharge detected in gustatory cortex [Threshold: 4.2mA]
+
+Four point two. High enough to scorch the receptors. It was fine. He was logging it.
+
+For a microsecond, he wasn't human. He wasn't Taro Nishimura. He was a node attempting to sync with a network infinitely larger than his own processing capacity. The Score didn't request participation; it forced alignment. His nervous system seized as the [[Neural-Acoustic Interface::A direct neural link so fast it feels like your own thoughts are dropping frames.]] overrode his optic nerve, writing a new Score onto his wetware. The system attempted a sync with the Global Resonance Grid. A root priority request. It pressed against his brain like a physical weight. The local grid was rejecting his presence. His heartbeat was out of phase, the world hitching before it hit his nerves.
 
 Then, the crash.
 
-Your vision reboots. The world snaps back, but it hasn't just returned. It has been *rewritten*. Reality, it turns out, is just a shared hallucination with a very strict conductor.
+His vision rebooted. The world snapped back. It hadn't merely returned; it had been rewritten. Reality was a shared hallucination with a very strict conductor.
 
-*PERCEPTION: ONLINE*, the HUD flickered. Acoustic sensory input was restored to the standard 440 Hz baseline. I felt the internal rhythm of my own heart—110 BPM, the pulse point flashing in my peripheral vision with nominal sync.
+> PERCEPTION: ONLINE [Acoustic Input: 440 Hz Standard]
 
-I blinked, but the data wasn't floating in front of me. It was burned into the world itself. The text wasn't a screen overlay; it was a hallucination carved into the walls.
+He checked his internal clock. One-ten BPM. The pulse point flashed in his peripheral vision with nominal sync.
 
-*Breathe,* I told myself. *Sync the clock.*
+He blinked. The data didn't float in front of him. It was burned into the architecture. The text wasn't a screen overlay. It was carved into the walls.
 
-My heartbeat thumped against my ribs, but I didn't just feel it. I saw it—a jagged yellow line pulsing in the corner of my eye.
+The systems needed to catch up. Sync the clock.
 
-I stood in the staff locker room of Sector 7-C Calibration Hall. To a [[Normal::Disconnected. They live in a world of silence we can only dream of.]]—someone without a chip—it was just a room with gray lockers and a flickering fluorescent light.
+His heartbeat thumped against his ribs. He didn't just feel it. He saw it—a jagged yellow line pulsing in the corner of his eye.
 
-To me? It was a data stream.
+He stood in the staff locker room of Sector 7-C Calibration Hall. To a [[Normal::Disconnected. They live in a world of silence he could only dream of.]]—someone without a chip—it was just a room with gray lockers and a flickering fluorescent light. 
 
-The ventilation system didn't just blow air; it sang a constant, sterile F-sharp that grated against the base of my skull. The air tasted of ionized ozone and the stale, burnt-coffee smell of a breakroom that hadn't seen a real bean in a decade. In the corner, a junior tech was banging on his locker—not out of anger, but in a rhythmic *thump-thump-click* to force the rusted tumblers to sync with the room’s dominant frequency.
+To Taro, it was a data stream.
 
-The light fixture wasn't just flickering; it tasted like sour milk—a dirty **Hum** bleeding into the air. The lockers hummed with the **Resonance: Steel**, vibrating against my teeth even though I wasn't touching them.
+The ventilation system didn't blow air; it sang a constant, sterile F-sharp. It grated against the base of his skull. The air tasted of ionized ozone and stale coffee. In the corner, a junior tech banged on his locker. Not in anger. A rhythmic *thump-thump-click* to force the rusted tumblers to sync with the room’s dominant frequency.
+
+The light fixture wasn't just flickering. It tasted like sour milk—a dirty **Hum** bleeding into the air. The lockers hummed with **Resonance: Steel**, vibrating against his teeth even when he wasn't touching them.
 
 And the door...
 
-The door was a wall of red static. My intuition flagged an obstruction, a mismatch in the acoustic pattern. I needed the baseline—440 Hz, Standard A—to clear the path.
+The door was a wall of red static. His internal diagnostic flagged an obstruction, a mismatch in the acoustic pattern. He needed the baseline—440 Hz, Standard A—to clear the path.
 
-I swiped my [[damping bands::These are the only things keeping my internal noise from screaming into the room.]]—three heavy cuffs locked over the pulse point—across the sensor.
+He swiped his [[damping bands::The only things keeping his internal noise from screaming into the room.]]—three heavy cuffs locked over the pulse point—across the sensor.
 
 *Beep.*
 
-> PROCESS: GATEWAY_OPEN Phase-match successful. Gateway open.
+> PROCESS: GATEWAY_OPEN [Phase-match successful]
 
-The red static shattered into green particles, and the door slid open.
+The red static shattered into green particles. The door slid open.
 
-I stepped out onto the floor.
+He stepped out onto the floor.
 
 ### [00:14:32] THE FLOOR
 
 The main calibration floor was a cathedral of data.
 
-It opened up into a massive, circular chamber. The air here smelled scrubbed, filtered to a perfect, sterile transparency. But my head... my head was screaming.
+It opened into a massive, circular chamber. The air smelled scrubbed, filtered to perfect, sterile transparency. But his head was screaming. Thermal load was already building.
 
-The environmental baseline was a perfect Middle C, vibrating at 261.63 Hz. In my vision, it felt like being submerged in golden syrup, a direct neural mapping of the room's standard resonance.
+The environmental baseline was a perfect Middle C, vibrating at 261.63 Hz. In his vision, it felt like being submerged in golden syrup, a direct neural mapping of the room's standard resonance.
 
-The room didn't just sound like Middle C; it *felt* like it. In the Score's eyes, there is no such thing as silence—only varying degrees of organized noise. We are all just frequencies looking for a resolution that never quite comes. The Conductors call it harmony; I call it a cage.
+The room didn't just sound like Middle C. It felt like it. In the Score's eyes, silence didn't exist—only varying degrees of organized noise. The Conductors called it harmony. He considered it a cage. Obviously a cage.
 
-A massive, golden sine wave floated through the center of the room—not a projection, but a shared hallucination enforced by [[The Score::The digital skin stretched over the skeleton of reality to keep everyone in tune.]] itself. It was beautiful. Perfect. Boring.
+A massive, golden sine wave floated through the center of the room. Not a projection. A shared hallucination enforced by [[The Score::The digital skin stretched over the skeleton of reality to keep everyone in tune.]] itself. It was beautiful. Perfect. Boring.
 
-It rolled through the air, touching everything. When it passed through the technicians working at their stations, I felt their calmness as a soft, green warmth. **SYNCED**.
+It rolled through the air, touching everything. When it passed through the technicians working at their stations, he observed their calmness as a soft, green warmth. **SYNCED**.
 
-I kept my head down. My own signal felt like a scratch in my throat—a nervous, jagged **ORANGE WARNING**. My output was throttled to a mere fifteen percent, but the pressure was building. Stress accumulation hit 84 SU, and my neural load was pushing into the red at ninety-two percent.
+He kept his head down. His own signal felt like a scratch in his throat—a jagged **ORANGE WARNING**. His output was throttled to fifteen percent, but the pressure was building. 
+
+> SYSTEM WARNING: Stress accumulation [84 SU]
+> NEURAL LOAD: 92%
 
 "Hey, Wrong Note."
 
-I didn't need to look up. The air suddenly smelled like bubblegum and ozone. A frequency signature in D Major—Remi Sato. My intent analysis flagged her as casual, a low threat level confirmed by the bright, playful resonance of her dominant harmonic.
+He didn't need to look up. The air smelled like bubblegum and ozone. A frequency signature in D Major. Remi Sato. 
 
-Remi hopped over the railing. To my synesthetic eyes, she was surrounded by a faint, bubbly blue distortion. D Major. Happy. Bright. She had that "stay flat" energy they teach in the academies—the kind of forced composure that makes you feel like you're failing a test just by standing near her. I could see her chest moving in the slow, rhythmic pattern of diaphragmatic damping.
+> INTENT ANALYSIS: Casual [Threat Level: Low]
+> DOMINANT HARMONIC: Bright / Playful
 
-"You're leaking," she said, pointing at my head.
+Remi hopped over the railing. To his synesthetic eyes, she was surrounded by a faint, bubbly blue distortion. D Major. Happy. Bright. She possessed that exact "stay flat" energy they taught in the academies—the forced composure that made other people feel like they were failing a diagnostic just by standing near her. He watched her chest move in the slow, rhythmic pattern of diaphragmatic damping.
 
-I touched my temple. No blood.
+"You're leaking," she said. She pointed at his head.
+
+He touched his temple. No blood.
 
 "You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your capacity is too wide for these standard damping bands." She leaned in, squinting at the worn etching on the inner band. "Custom job? That maker's mark is archaic."
 
-I pulled my wrist back. "Just old gear. They're already hitting thermal limit. You’re clipping, Taro. Badly."
+He pulled his wrist back. "Old gear. They're hitting thermal limit."
 
-I glanced at my wrist. The three bands weren't just warm; they were glowing faint red in my thermal vision, already at sixty percent capacity and climbing. My amplitude was peaking, the interference index spiking as the load became unbearable.
+"You’re clipping, Taro. Badly."
 
-"Bad night," I muttered. "My hardware feels like it's grinding. Too much sawtooth oscillation in the air today."
+He checked his wrist. The three bands weren't just warm. They glowed faint red in his thermal vision. Sixty percent capacity and climbing. His amplitude was peaking, the interference index spiking as the CPU drain became pronounced.
 
-"You need to dump heat," Remi said, walking alongside me. Her footsteps left little ripple-rings of blue light on the floor. "You can't keep carrying that load. You're gonna peak and take the whole floor with you. Seriously, the vibe is getting way too loud. Just stay flat."
+"Bad night," he muttered. "My hardware is grinding. Too much sawtooth oscillation in the air today."
 
-"It's not a grenade," I said. "It's just drift artifacts. I'm humming, that's all."
+"You need to dump heat," Remi said, walking alongside him. Her footsteps left ripple-rings of blue light on the floor. "You can't keep carrying that load. You're gonna peak and take the whole floor with you. Seriously, the vibe is getting way too loud. Just stay flat."
+
+"It's not a grenade," he said. "It's drift artifacts. I'm humming, that's all."
 
 "It's incredible," she corrected. "If you'd just let the Score index it—"
 
 **[PAIN] [PAIN] [PAIN]**
 
-My vision flared red. It wasn't a popup window. It was a migraine that slammed into my frontal lobe. In the Score, pain is just a particularly sharp dissonance, a note that shouldn't exist tearing through the fabric of your consciousness.
+His vision flared red. It wasn't a popup window. A migraine slammed into his frontal lobe. In the Score, pain was a sharp dissonance, a note that shouldn't exist tearing through consciousness.
 
 **[[> PRIORITY_OVERRIDE::Emergency acoustic event detected. Local protocols suspended.]]**
 
-The air suddenly tasted of rotting meat—a catastrophic biological decay mapped directly onto my senses. *Casualty incoming*, the system warned. *Collision trajectory: 15 meters.*
+The air tasted of rotting meat. Catastrophic biological decay mapped directly onto his senses. 
+
+> SYSTEM ALERT: Casualty incoming [Collision trajectory: 15 meters]
 
 The emergency doors at the far end of the hall blasted open.
 
 ### [00:14:45] THE CRASH
 
-He came in like a corrupted file. Or maybe he was just a man who had lost his rhythm. We are all just one bad beat away from falling apart, from becoming a sequence of errors that the world would rather delete than fix.
+He came in like a corrupted file. A man who had lost his sync. 
 
 A G Vanguard soldier. Stumbling. Screaming.
 
-But through The Score, he was a catastrophe.
+Through The Score, he was a catastrophe.
 
-His avatar was pixelating, tearing apart in real-time. Where a normal person had a smooth [[bio-plasma::The soft ionic glow that tells the world your soul is still in sync.]] aura, this guy was a storm of black and purple static. It smelled like burning plastic and ozone.
+His avatar was pixelating, tearing apart in real-time. Where a normal person projected a smooth [[bio-plasma::The soft ionic glow that tells the world your soul is still in sync.]] aura, this man was a storm of black and purple static. He smelled like burning plastic and ozone.
 
-His flesh—actual flesh—seemed to be lagging behind his movement, smearing like a bad video buffer. The carrier wave was fragmenting, integrity dropping below forty-five percent. My vestibular system revolted, nausea hitting me as it rejected the chaotic frequency input. Biological desync was already critical; the probability of a re-sync was almost zero.
+His flesh lagged behind his movement, smearing like a bad video buffer. The carrier wave was fragmenting. Integrity dropping below forty-five percent. Taro's vestibular system revolted, nausea hitting as it rejected the chaotic frequency input. Biological desync was critical. The probability of a re-sync was zero.
 
-The golden sine wave of the room’s Middle C hit him—and shattered.
+The golden sine wave of the room’s Middle C hit the soldier—and shattered.
 
-Visually, it looked like glass breaking. The soldier’s chaotic field smashed into the perfection of the hall, sending shards of virtual gold flying everywhere. The technicians nearest him fell to their knees, clutching their heads as the interference hit them like a physical blow.
+Visually, it looked like glass breaking. The soldier’s chaotic field smashed into the perfection of the hall. Shards of virtual gold flew everywhere. The technicians nearest him fell to their knees, clutching their heads as the interference hit them like a physical blow.
 
-"Get the stabilizers!" Remi shouted, her blue D Major aura spiking into a sharp, fearful indigo. "The vibe is totally blown! He's running too sharp!"
+"Get the stabilizers!" Remi shouted. Her blue D Major aura spiked into a sharp, fearful indigo. "The vibe is totally blown! He's running too sharp!"
 
-I froze.
+Taro froze.
 
-My brain was trying to process the data, but it was too fast. My logic engine was failing to resolve the incoming waveform, tagging it only as *unstable oscillation*.
+His brain attempted to process the data. It was too fast. He was dropping frames. His logic engine failed to resolve the incoming waveform. It tagged it only as *unstable oscillation*.
 
-The soldier collapsed in the center of the room. He was convulsing. His Score port on his neck was sparking—real sparks, not AR—and the data pouring out of him was raw code. I could taste the metal of his agony.
+The soldier collapsed in the center of the room. Convulsing. His Score port on his neck sparked—real sparks, not AR—and the data pouring out of him was raw code. Taro could taste the metal of the man's agony.
 
-*Help me. End it. Silence.*
+> UNFORMATTED BURST: Help me. End it. Silence.
 
-The Calibration team rushed in with stabilizers—big, bulky pylons designed to force a signal reset. They slammed them into the floor.
+The Calibration team rushed in with stabilizers—bulky pylons designed to force a signal reset. They slammed them into the floor.
 
 *Thoom.*
 
-A blue containment field sprang up. The pressure dropped instantly as the local density stabilized, but it wasn't enough. The soldier’s static ate through the blue wall like acid. The field flickered, grayed out, and collapsed.
+A blue containment field sprang up. The pressure dropped instantly as the local density stabilized. It wasn't enough. The soldier’s static ate through the blue wall like acid. The field flickered, grayed out, and collapsed.
 
-He let out a sound—a physical scream that hit the microphone limiters in my ears.
+He let out a sound. A physical scream that hit the microphone limiters in Taro's ears.
 
 **[AUDIO_CLIPPING]**
 
-My damping bands got hot. Really hot. They hit ninety-five percent of their thermal limit, and a warning flashed—*Containment breach imminent*. My bio-plasma field was already exceeding the safety caps.
+The damping bands got hot. Ninety-five percent of thermal limit. A warning flashed.
 
-I felt the High Register inside me waking up. It didn't care about the soldier. It didn't care about Remi. It was the part of me that understood the Score better than the Score understood itself. It was the wrong note that made the whole piece interesting.
+> SYSTEM ALERT: Containment breach imminent
 
-It saw the chaos. It saw the broken code. And it wanted to *fix* it.
+His bio-plasma field was already exceeding the safety caps.
 
-*Don't,* I thought. *Stay flat.*
+He felt the High Register inside him waking up. It didn't care about the soldier. It didn't care about Remi. It was the part of him that understood the Score better than the Score understood itself. It was the wrong note.
 
-But the soldier’s field spiked. A massive wave of purple distortion rolled toward us. Remi threw her hands up, her little D Major shield buckling instantly.
+It saw the chaos. It saw the broken code. And it wanted to patch it.
+
+The impulse was there. Stay flat.
+
+But the soldier’s field spiked. A massive wave of purple distortion rolled toward them. Remi threw her hands up, her little D Major shield buckling instantly.
 
 She was going to get wiped. Deleted.
 
-**[[> EMOTIONAL_OVERRIDE::A neural-acoustic surge driven by empathy, overriding every safety protocol in my head.]]**
+**[[> EMOTIONAL_OVERRIDE::A neural-acoustic surge driven by empathy, overriding every safety protocol in his head.]]**
 
-My hand moved on its own.
+His hand moved on its own.
 
-I reached out.
+He reached out.
 
 **[[> LIMITER: REMOVED::Safety hardware destroyed. The leash is off.]]**
 
-The three damping bands on my wrist didn't just fail; they slagged. In The Score, I saw them turn white-hot and effectively vaporize from the data load. It felt like free-fall, the weightlessness of a world where the rules of gravity had simply ceased to exist.
+The three damping bands on his wrist failed. They slagged. In The Score, he watched them turn white-hot and vaporize from the data load. It felt like free-fall. A world where the rules of gravity had simply ceased to exist.
 
 The world slowed down. Motion stutter.
 
-I saw the soldier’s waveform coming at me—a jagged mess of peaks that defied the local key.
+He saw the soldier’s waveform coming. A jagged mess of peaks defying the local key.
 
-And I saw the solution.
+He saw the solution.
 
-It was a math problem. He was missing a variable. He was trying to resolve a chord without the tonic.
+It was a math problem. The man was missing a variable. Trying to resolve a chord without the tonic.
 
-I gave it to him.
+Taro gave it to him.
 
-I didn't scream. I didn't shout. I pulsed.
+He didn't scream. He didn't shout. He pulsed.
 
-*EXECUTE: PITCH_SHIFT.* I took the 261.63 Hz baseline and doubled it, striking the upper octave at 523.25 Hz.
+*EXECUTE: PITCH_SHIFT.* He took the 261.63 Hz baseline and doubled it, striking the upper octave at 523.25 Hz.
 
-A massive, vertical pillar of Gold light erupted from my hand. It looked like a god-ray striking the earth. Solid. Infinite. Absolute. A pure sawtooth strike that overrode the local [[Key Signature::The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation.]]
+A massive, vertical pillar of Gold light erupted from his hand. Solid. Infinite. Absolute. A pure sawtooth strike that overrode the local [[Key Signature::The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation.]]
 
-The waves aligned in perfect constructive interference. The gain hit +60dB, the amplitude peak shattering through my internal buffer limits. Four million joules of resonant energy were released in a single, focused burst.
+The waves aligned in perfect constructive interference. The gain hit +60dB, the amplitude peak shattering through his internal buffer limits. Four million joules of resonant energy released in a single burst.
 
-*Baseline: 440 Hz | Current: 880 Hz | Peak Drift: 440 Hz | SDI: 0.98 | Phase Drift: 0.002*
+> LIMIT ALERT: Baseline: 440 Hz | Current: 880 Hz | Peak Drift: 440 Hz | SDI: 0.98 | Phase Drift: 0.002
 
-For one single frame of animation, we synced. His chaos locked into my order. The purple static aligned into a perfect, terrifying geometric pattern.
+For one single frame, they synced. The chaos locked into Taro's order. The purple static aligned into a perfect, terrifying geometric pattern.
 
 Then, the math broke.
 
 **[[> SENSATION: INTEGER_OVERFLOW::The moment the numbers decide they've had enough.]]**
 
-The numbers got too big. My brain couldn't render the magnitude. In the end, we are all just numbers, and sometimes the numbers decide they've had enough.
+The numbers got too big. His brain couldn't render the magnitude. In the end, they were all just numbers, and sometimes the numbers decided they'd had enough.
 
 *CRACK.*
 
 The soldier’s bio-plasma field didn't stabilize. It didn't dampen. It *popped*. 
 
-Like a balloon. One second, he was a storm of data. The next, he was just... a guy. A bricked unit. Lying on the floor. His Score port dark. His aura gone.
+Like a balloon. One second, a storm of data. The next, just a guy. A bricked unit. Lying on the floor. His Score port dark. His aura gone.
 
-The signal was lost, the subject non-responsive. Total null.
+The signal was lost. Subject non-responsive. Total null.
 
 Silence. 
 
 Real silence. No hum. No Middle C. No data.
 
-I stood there, my hand still outstretched. Smoke was rising from my wrist where the bands used to be. My capacity was still pegged, the raw signal screaming in the dead air.
+Taro stood there, his hand still outstretched. Smoke rose from his wrist where the bands used to be. His capacity was still pegged, the raw signal screaming in the dead air.
 
-My vision was flickering. Wrong noting.
+His vision flickered. Dropping frames.
 
-**[[> DIAGNOSTIC: BASELINE_ALTERED::My resonant identity has been permanently changed. The Score no longer knows who I am.]]**
+**[[> DIAGNOSTIC: BASELINE_ALTERED::His resonant identity has been permanently changed. The Score no longer knows who he is.]]**
 **[[> NEW_USER_ID: DETECTED [AUTHORITY_NULL]::A new frequency signature has been detected. Admin access required.]]**
 
-I looked at my hand. In The Score, it wasn't a hand anymore.
+He looked at his hand. In The Score, it wasn't a hand anymore.
 
-It was a burning torch of pure code, rewriting the air around it.
+It was a burning torch of pure code. It was rewriting the air around it.
 
-Remi was staring at me. Or rather, staring at the space *above* me.
+Remi was staring at him. Or rather, staring at the space *above* him.
 
-I looked up.
+He looked up.
 
-Floating above my head, where a normal ID tag should be, was a new symbol. It wasn't a Shield. It wasn't a Tuning Fork. 
+Floating above his head, where a normal ID tag should be, was a new symbol. Not a Shield. Not a Tuning Fork. 
 
 It was a Crown.
 
-**[[> WARNING: VANGUARD_CLASS_DETECTED::The system flags me as a high-level harmonic threat.]]**
+**[[> WARNING: VANGUARD_CLASS_DETECTED::The system flags him as a high-level harmonic threat.]]**
 **[[> STATUS: HIGH_FIDELITY_THREAT::Subject is a high-level harmonic threat.]]**
 
-The text burned into my retina. Once. Twice.
+The text burned into his retina. Once. Twice.
 
 Then the world went black. 
 
