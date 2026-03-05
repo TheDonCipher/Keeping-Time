@@ -1,102 +1,205 @@
 # KEEPING TIME
 ## Chapter 7: The Architecture of Sound
 
+> REGULATORY NOTICE: Authorized structural manipulation of the local
+> physical rendered environment is restricted to personnel holding
+> confirmed Architect-Class licensing or higher. Non-licensed editing 
+> constitutes a Class-1 Coherence Deviation.
+> — *C-Order Compliance Handbook, Vol. V, §1.1*
+
+**ZONE: MALKUTH ACADEMY [LECTURE_HALL_01]**
+**FIDELITY: HI-FI [CONTROLLED]**
+**STATUS: ACTIVE**
+
 ---
 
 ### [14:00:00] THE ARCHITECTURE OF SOUND
 
-The Lecture Hall was a marvel of acoustic engineering. They were in Zone: Lecture_Hall_01, a space defined by its uniform acoustic profile and a ninety-eight percent damping factor. The room was deadened, an absorptive environment with a gain of -20dB and an RT60 of 0.1s. In this room, you couldn't hide your drift. Every syllable was an audit.
+The primary Lecture Hall was a marvel of acoustic engineering.
+
+The system categorized the space as Zone: Lecture_Hall_01, an environment defined by its uniform acoustic profile and a ninety-eight percent damping factor. The room was effectively deadened. It functioned as an absorptive environment with a systemic gain of -20dB and an RT60 reverberation time of 0.1s. In this room, phase drift was impossible to obscure. 
+Every syllable output was an involuntary audit.
 
 "Reality," Instructor Dorian Vale said, "is a standing wave."
 
-He stood at the bottom of the amphitheater. Target analysis confirmed him as Architect Vale, a structural architect with an advanced curriculum and a high stability rating. He didn't pace. He didn't gesture. As a [[Structural Architect::A specialized class of user who doesn't just play the world's music, but builds the instruments that define reality itself.]] , his movements were precise, engineered to minimize waste energy.
+He occupied the nadir of the amphitheater. Target analysis confirmed him as Architect Vale, a structural architect carrying an advanced curriculum clearance and a high-tier stability rating. He did not pace. He did not engage in extraneous manual gestures. 
 
-He raised a hand. A complex, rotating 3D model of a building appeared in the air above him. It wasn't made of light; it was made of blue wireframe sound.
+<aside>
+<details>
+<summary><strong>SUBJECT: Structural Architect</strong></summary>
+<blockquote>
+<strong>Observation:</strong> A specialized class of user who doesn't just play the world's music, but builds the instruments that define reality itself.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-"Most of you think of resonance as 'power'," Vale continued, his voice crisp and dry. "You think of amplitude. Volume. The ability to shout reality into submission. This is socially embarrassing noise, common among Low-Fidelity users who have never learned to carry their load."
+As an Architect, his physical movements were precise, engineered specifically to minimize waste energy.
 
-He glanced at the back row, where Taro sat with Ven and Hana. Taro felt the weight of the gaze—it felt like a calipers measuring his skull.
+He raised his right hand. A complex, rotating 3D architectural model rendered in the space directly above him. It was not constructed of light; it was constructed of blue wireframe sound.
 
-"Resonance is not volume," Vale corrected. "It is alignment. A bridge does not collapse because the wind is loud. It collapses because the wind finds its *natural frequency* and enters a feedback loop. A whisper, applied at the right interval, can shatter a diamond. Stay flat, and you control the medium. Spike, and you are merely a casualty of your own noise."
+"Most of you think of resonance as 'power'," Vale continued. His vocal output was crisp, lacking any ambient decay. "You think of amplitude. Volume. The ability to shout reality into submission. This is socially embarrassing noise, common among Low-Fidelity users who have never learned to carry their load."
 
-He snapped his fingers. *Click.* The wireframe building shattered into a million blue polygons.
+// [NOTE: Instructor Vale's description of Low-Fidelity behavior aligns numerically with the subject's baseline operating parameters.]
+// [NOTE: Logging correlation.]
+
+He shifted his optical focus to the elevated rear seating array, specifically locating the coordinates occupied by Taro, Ven, and Hana. 
+Taro registered the weight of the gaze. It produced a sensation akin to physical calipers measuring his cranial structure.
+
+"Resonance is not volume," Vale corrected. "It is alignment. A bridge does not collapse because the wind is loud. It collapses because the wind finds its *natural frequency* and enters a destructive feedback loop. A whisper, applied at the right interval, can shatter a diamond. Stay flat, and you control the medium. Spike, and you are merely a casualty of your own noise."
+
+He executed a manual friction maneuver. 
+
+*CLICK.* 
+
+The blue wireframe structure shattered into several million disconnected polygons.
 
 "Control," Vale said. "Not force. That is the lesson. To be an Architect is to understand the structure of the world so perfectly that you do not need to break it. You simply... untie it."
 
-Hana transcribed every word into her HUD at a speed that blurred the text. Ven was asleep, or perhaps meditating, while Taro just kept tapping his foot. *One-two-three. One-two-three.*
+Hana transcribed the entire auditory output into her HUD at a speed that blurred the resulting text. Ven appeared to be in a restorative cycle, or perhaps low-power meditation. 
+Taro maintained a repetitive physical impact with his foot against the floor grid. *One-two-three. One-two-three.*
 
 "New Student," Vale said.
 
-The room went deadly silent.
+The environmental acoustics dropped to absolute zero.
 
-Taro looked up. "Me?"
+> `NOISE_FLOOR: -140dB`
 
-"Yes. The rhythmic anomaly. You are broadcasting a polyrhythm in a 4/4 environment. It is structurally unsound. Socially disruptive. Demonstrate your style. Enter the Circle."
+Taro raised his optical focus. "Me?"
+
+"Yes. The rhythmic anomaly. You are broadcasting a polyrhythm in a 4/4 environment. It is structurally unsound. Socially disruptive." 
+
+Vale pointed a precisely angled finger. 
+
+"Demonstrate your style. Enter the Circle."
 
 ---
 
 ### [14:30:00] MIL-SPEC SIMULATION
 
-Taro stood in the center of the demonstration ring. The floor lit up with a tactical grid. Instructor Vale announced the opponent: Cadet Marcus Staccato, a Vanguard elite. Target analysis identified him as a rhythm operator, a tier 3 resonator specialized in phase manipulation with a near-perfect ninety-nine percent sync. The threat level was severe.
+Taro stood in the center of the demonstration ring. The floor architecture illuminated, rendering a tactical coordinate grid. 
 
-Marcus didn't walk; he ticked forward. Every step landed on a perfect beat. He wore matte-black training armor that absorbed light. His aura was encrypted—a jagged, aggressive static that Taro couldn't read.
+Instructor Vale announced the opposing variable: Cadet Marcus Staccato, a Vanguard elite. 
 
-"The lesson is pattern recognition," Vale announced from the podium. "Staccato is a Rhythm Operator. He controls the time signature of the fight. Nishimura is... untrained noise. Observe the difference between design and chaos."
+> `TARGET_ANALYSIS: STACCATO_MARCUS [CLASS: VANGUARD_TIER_3]`
+> `SPECIALTY: RHYTHM_OPERATOR [PHASE_MANIPULATION]`
+> `SYNC_RATE: 99.1% [NEAR_PERFECT]`
+> `THREAT_LEVEL: SEVERE`
+
+Marcus did not utilize standard bipedal walking mechanics; his movement registered as sequential ticking. Every forward placement landed on a perfect, mathematically calculated beat. He was equipped with matte-black training armor designed to absorb environmental light. His aura was encrypted—a jagged, aggressive static pattern that Taro's local system failed to decode.
+
+"The lesson is pattern recognition," Vale announced from the podium. "Staccato is a Rhythm Operator. He controls the time signature of the engagement. Nishimura is... untrained noise. Observe the difference between design and chaos."
 
 "Begin."
 
-Marcus vanished. A visual artifact of a frame skip suggested temporal compression in the local grid. One second he was ten meters away; the next frame, he was in Taro's face. The proximity alarm shrieked. *ALERT: COLLISION_IMMINENT.*
+Marcus vanished from the visual plane. 
+
+> `VISUAL_ARTIFACT: FRAME_SKIP_DETECTED`
+
+The system logged temporal compression in the local grid. At Time Index 00.00, he existed ten meters away; at Time Index 00.01, he occupied coordinates directly inside Taro's immediate boundaries. 
+
+The proximity alarm engaged with maximum gain. 
+
+> `ALERT: COLLISION_IMMINENT`
 
 *CRACK.*
 
-A baton hit Taro's ribs. It wasn't just a kinetic impact. It was a downbeat. The resonance of the rod forced Taro's entire nervous system to reset its cycle. His lungs froze. His vision greyscaled. *STATUS: STUNNED.* Neural reset was in progress, motor control offline as an external pulse forced a reset of his entire bio-plasma cycle. SDI: 0.95, HIQ: 0.88.
+A physical baton impacted Taro's lateral rib structure. It was not merely a kinetic sub-routine. It functioned as a systemic downbeat. The targeted resonance of the rod forced Taro's entire nervous system into a mandatory cycle reset. 
 
-Taro stumbled back, gasping. "How..."
+His respiratory function halted. His optical feed reverted to grayscale parameters. 
 
-"You operate on analog time," Marcus said, circling him. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Anomaly. I’m already in the next pulse."
+> `STATUS: STUNNED`
+> `NEURAL_RESET: IN_PROGRESS`
 
-He was right. To Taro's eyes, Marcus was vibrating. His movements synced to a 140 BPM master clock that Taro couldn't hear.
+Motor control was placed offline as an external pulse forced a complete restart of his localized bio-plasma cycle. 
+
+> `TARO_METRICS: SDI 0.95 // HIQ 0.88`
+
+Taro stumbled backward, re-engaging his respiratory cycle with audible gasps. "How..."
+
+"You operate on analog time," Marcus said, establishing a circular pacing pattern around Taro's coordinates. "I operate on Grid Time. I am moving between your legacy refresh rate. You’re lagging, Anomaly. I’m already in the next pulse."
+
+The diagnostic was accurate. To Taro's optical sensors, Marcus was actively vibrating. His physical micro-movements were synchronized to a master clock at 140 BPM that Taro possessed no authorization to hear.
 
 "Fight back," Dorian Vale ordered. "Chaos has no structure. Prove me right."
 
-Taro gritted his teeth. *Ignore the visuals. Focus on the hum.* He pulled on his internal signal. He didn't clamp it. He let it scream. *OUTPUT: 80%. Sawtooth burst.*
+Taro engaged his jaw musculature. *Ignore the visuals. Focus on the hum.* 
+He accessed his internal signal capacity. He did not apply damping. He allowed the feed to escalate. 
 
-Taro threw a wave of jagged noise at Marcus. A wide cone of distortion.
+> `OUTPUT_TARO: 80% [SAWTOOTH_BURST]`
 
-Marcus didn't dodge. He parried the sound. He swung his baton in a perfect vertical arc. The red tip cut through Taro's yellow wave like a hot knife through styrofoam. *INTERFERENCE: DESTRUCTIVE.* Opposing phases cancelled the signal energy, nullifying the attack with absolute efficiency.
+Taro projected a localized wave of jagged acoustic noise at Marcus's coordinates. It rendered as a wide cone of high-amplitude yellow distortion.
 
-The wave dissolved into harmless static. It was [[Destructive Interference::A phenomenon where two waves collide and cancel each other out, leaving only a cold and hollow silence in their wake.]] .
+Marcus did not initiate evasion vectors. He engaged the sound directly. 
+He executed a perfect vertical arc with his physical baton. The red-illuminated tip intersected Taro's yellow wave, bisecting the signal geometry flawlessly. 
+
+> `INTERFERENCE: DESTRUCTIVE`
+
+<aside>
+<details>
+<summary><strong>SUBJECT: Destructive Interference</strong></summary>
+<blockquote>
+<strong>Observation:</strong> A phenomenon where two waves collide and cancel each other out, leaving only a cold and hollow silence in their wake.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+Opposing phases effectively cancelled the signal energy, nullifying the attack with absolute mathematical efficiency.
+The wave dissolved into harmless, particulate static. 
 
 "Sloppy," Marcus sneered. "High amplitude. Zero structure. You're just shouting at the wall. You found the right note, but you played it with zero envelope. You're clipping the whole Dojo."
 
-He raised the baton. The tip hummed red. "This is high-fidelity."
+He elevated the baton. The impact tip hummed with a concentrated red frequency. "This is high-fidelity."
 
-*Click-click-click.* Three rapid strikes. A triplet pattern.
+*Click-click-click.* 
 
-The air solidified. The sound waves he created didn't dissipate; they hung in the air, forming a physical cage of red light around Taro. *TRAP_DETECTED: RHYTHM_CAGE.* Movement was restricted, the status showing him as contained within a high-fidelity construct generating 1,200 Score Units.
+He executed three rapid strikes. A triplet pattern.
+
+The atmospheric parameters solidified. The resultant sound waves he generated did not dissipate into the environment; they maintained cohesion, forming a physical geometric cage of red light encompassing Taro's coordinates. 
+
+> `TRAP_DETECTED: RHYTHM_CAGE`
+
+Movement was fundamentally restricted. The system status indicated Taro was contained within a high-fidelity construct generating 1,200 Score Units of sustained pressure.
 
 "End of simulation," Dorian Vale announced.
 
-Marcus tapped the cage. *PULSE.*
+Marcus executed a manual tap against the cage structure.
 
-*CRITICAL_FAILURE.* A kernel panic was detected, the system forcing a restart. *SYSTEM_REBOOTING...*
+*PULSE.*
 
-Taro was on the floor. Groaning.
+> `ERROR: CRITICAL_FAILURE`
 
-Marcus stood over him. He deactivated his jammer for one second. His sync was a perfect ninety-nine percent, his efficiency total. Vocal analysis confirmed clinical boredom.
+A kernel panic manifested in Taro's local systems. The hardware initiated an unprompted safety restart. 
+
+> `SYSTEM_REBOOTING...`
+
+Taro occupied the floor grid. He was emitting low-frequency groans.
+
+Marcus stood directly over him. He deactivated his localized jamming protocol for a single second. His synchronization held at a perfect ninety-nine percent, his overall efficiency rendering as total. 
+
+> `VOCAL_ANALYSIS: CLINICAL_BOREDOM`
 
 "Get a metronome, Wrong Note," Marcus said. "You're just noise in my signal path."
 
-Marcus walked away. *Step. Step. Step.* Perfect 140 BPM.
+Marcus departed the ring. *Step. Step. Step.* 
+Locked to a perfect 140 BPM.
 
-Dorian Vale looked down at Taro.
+Dorian Vale directed his optical focus downward toward Taro.
 
 "Chaos is energy," Vale said, "but without structure, it is just heat. You have potential, Nishimura. But until you learn to build a frame for your power... you are just a bomb waiting to go off. Socially embarrassing."
 
 Taro looked up.
 
-High above, in the observation booth, a golden light flickered. The Headmaster was watching. And unlike Vale, he wasn't looking at Taro with disdain. He was checking his watch, timing the explosion. *LESSON_COMPLETE.*
+At significant elevation, within the secure observation booth, a golden light flickered. The Headmaster was maintaining visual surveillance. And unlike Vale, the system evaluated that he was not observing Taro with disdain. 
+
+He was checking an analog chronometer. He was timing the explosion. 
+
+> `LESSON_COMPLETE`
 
 ---
 
-**END CHAPTER 7**
+**> TRACK: 07_COMPLETE**
+**> SAVING...**

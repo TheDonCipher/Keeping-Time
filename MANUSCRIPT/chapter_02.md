@@ -1,128 +1,167 @@
 # KEEPING TIME
 ## Chapter 2: The Assessment
 
+> REGULATORY NOTICE: Impedance Mismatch events between bonded citizens
+> are classified as a Class-2 Coherence Deviation. Families are advised
+> to schedule voluntary recalibration within 72 hours of symptom onset.
+> Failure to present constitutes a Drift Event under Article 9, §3.
+> — *C-Order Compliance Handbook, Vol. IV, §9.3*
+
+**ZONE: RECOVERY WARD [UNISON HALL]**
+**FIDELITY: SAFE MODE**
+**STATUS: CONNECTED**
+
 ---
 
 ### [02:00:00] THE WHITE ROOM
 
-Taro woke up in the White Room. He was in Unison Hall’s recovery ward, a secure containment sector buried deep in the root of the grid. His system was in safe mode, operational protocols throttled to a mere five percent. A level-five damping field was active, suppressing every signal until the noise floor dropped to a crushing -140dB.
+The subject regained consciousness in the White Room. He was located in Unison Hall’s recovery ward, a secure containment sector integrated into the root of the grid. His personal system was locked in safe mode, operational protocols throttled to five percent capacity. A Level-5 damping field was active, suppressing local environmental signals until the noise floor dropped to -140dB.
 
-Technically, it was a [[Sensory Deprivation Chamber::A blank canvas forced over the senses, absorbing every sound and sight until you are nothing but a ghost in a white void.]] , but the street name was the White Room. The walls were lined with acoustic foam so dense it absorbed 99.9% of all reflected sound. The visual feed was overridden by a "Privacy Mask"—a generated infinite void of white pixels designed to lower the user's cognitive load. They were all just pixels in a screen they didn't buy, and the White Room was the ultimate erasure—a reminder that without the Score's light, they were nothing. Or so the manual claimed. He was logging it as propaganda.
+<aside>
+<details>
+<summary><strong>SUBJECT: Sensory Deprivation Chamber</strong></summary>
+<blockquote>
+<strong>Observation:</strong> A blank canvas forced over the senses, absorbing every sound and sight until you are nothing but a ghost in a white void.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-It was a hard reset for the brain. A blank canvas forced over the senses. In the schools, they taught students to breathe through the silence, to find a center when the world went dark. Civic hygiene. He called it being buried before you ceased processing.
+The physical architecture was lined with acoustic foam designed to absorb 99.9% of all reflected sound. The visual feed was administratively overridden by a Privacy Mask—an infinitely rendering void of white pixels designed to lower the user's cognitive load. 
 
-He tried to turn his head. A heavy mechanical resistance corrected the motion—a damping collar, locked and engaged with a steady 4.2V charge. It was functioning at total resonance suppression, its active damping loop holding his baseline at flat zero.
+It was a hard reset for the brain. A blank canvas forced over the senses. In the academies, students were instructed to breathe through the silence, to find a center when the world went dark. Civic hygiene. 
+Obviously it was just a way to be buried before you ceased processing.
 
-The collar hummed against his neck. Not just a restraint. A circuit breaker. It actively monitored his biometrics, waiting for the spike of an Upper Octave oscillation. Upon detection, it grounded the signal before it could propagate to his extremities. In the Grand Concord, to stay flat was to be safe. To spike was to be a threat. Being off-tone meant guaranteed patch failure.
+The system registered the subject's intent to rotate his head. A physical damping collar corrected the motion with heavy mechanical resistance, administering a steady 4.2V charge. It was functioning at total resonance suppression, its active damping loop holding his baseline at flat zero.
 
-For the first time in years, his system was completely logged "Flat." It was identical to being buried alive.
+The collar transferred a low-frequency vibration to his cervical spine. It actively monitored biometrics, waiting for the amplitude spike of an Upper Octave oscillation. Upon detection, it grounded the signal before propagation. In the Grand Concord, to stay flat was to be safe. To spike was to be a threat. Being off-tone meant guaranteed patch failure.
+
+For the first time in consecutive annual cycles, his system was completely logged "Flat." 
+The data indicated absolute biological calm.
+It did not indicate comfort.
 
 "Diagnostic complete," a voice said.
 
-The infinite white void flickered. The privacy mask didn't dissolve creatively; it simply terminated. 
+The infinite white void terminated abruptly. 
 
-> END_PROCESS: PRIVACY_MASK
+> `END_PROCESS: PRIVACY_MASK [AUTHORITY: ADJUTANT]`
 
-The room rendered in. A desk. A chair. A man.
+The room rendered. A desk. A chair. A man.
 
 Adjutant Voss.
 
-Adjutant Voss looked less human and more like a high-end peripheral. His suit was a matte-gray, frictionless material standard for [[C-Order::The ruling order of the city, a cold and absolute collective that demands every soul stay perfectly in tune or face deletion.]] administration. He sat perfectly still, his hands folded on the desk. He overwrote the air around him, radiating an aura of enforced stability. The Score liked predictability. It liked things that minimized thermal load.
+> `TARGET_ANALYSIS: VOSS_KAEL [CLASS: 8_ADJUTANT]`
+> `AURA: VERIFIED [SINE_WAVE]`
+> `VOLATILITY: NULL`
 
-> TARGET_ANALYSIS: Voss, Kael [Class-8 Adjutant]
-> AURA: Verified
-> VOLATILITY: Null
+The system classified Voss as an optimal structural asset. His attire was a frictionless, matte-gray synthetic standard for C-Order administration. He remained completely stationary. He overwrote the air around him, radiating an aura of enforced stability. The Score preferred predictability. It preferred assets that minimized thermal load.
 
-His target analysis flickered, logging the man's acoustic profile. Zero variance. Voss smoothed the local grid just by existing in it. Completely out of phase.
+His acoustic profile contained zero variance. He smoothed the local grid simply by occupying it. Perfectly out of phase.
 
-"Hello, Taro," Voss said. His voice was calibrated. Perfectly pitched to the room's acoustics. No echo. No wasted frequency. The auditory equivalent of a sans-serif font.
+"Hello, Taro," Voss said. 
 
-"Where am I?" Taro asked. His voice was flat, the collar swallowing the resonance of his vocal cords.
+> `VOCAL_ANALYSIS: CALIBRATED [ECHO: NULL] [WASTE_FREQUENCY: 0%]`
+
+"Where am I?" the subject asked. His respiratory output was restricted, the collar absorbing the resonance of his vocal cords.
 
 "You are in Recovery," Voss said. "We had to initiate a forced reboot. You suffered a catastrophic buffer overflow on the floor. Do you recall the incident?"
 
-Taro closed his eyes. The memory wasn't a blur; it was a corrupt file. Jagged edges. Purple static.
+The subject closed his eyes. The memory wasn't a blur. It was a corrupt file. Jagged edges. Purple static.
 
 "The soldier," Taro whispered. "He was desyncing."
 
-"He was experiencing a cascade failure," Voss corrected, his tone cool and clinical. "His bio-plasma field had destabilized beyond the 5% tolerance threshold. You, however... you were running high, Taro. Extremely high. You spiked so hard the room couldn't register anything else."
+"He was experiencing a cascade failure," Voss corrected, his vocal parameters clinical and cold. "His bio-plasma field had destabilized beyond the 5% tolerance threshold. You, however... you were running high, Taro. Extremely high. You spiked so hard the room couldn't register anything else."
 
-Voss tapped the desk. A holographic window snapped into existence between them. It displayed a 3D wireframe of the soldier—or what was left of him.
+Voss interacted with the desk surface. A holographic interface rendered between them. It displayed a 3D wireframe of the G-Vanguard soldier.
 
 "You executed an unauthorized overwrite," Voss said. "You didn't patch his signal. You deleted the carrier wave entirely. You bricked a Class-4 Vanguard unit in three frames. You were clipping the entire sector."
 
-The wireframe on the screen rotated. It showed the soldier's nervous system. It was dark. Dormant. Total signal loss.
+The wireframe rotated. It illustrated the soldier's nervous system. It was dormant. Total signal loss.
 
 "He is functionally dead to the Soundscape," Voss explained. "A bricked unit. No sync possible."
 
-He looked at his hands. The phantom vibration of the High Register persisted—the systemic urge to patch, to tune, to rewrite.
+The subject examined his hands. The phantom vibration of the High Register persisted in his localized telemetry—the systemic urge to patch, to tune, to rewrite.
 
 "He was going to crash the grid," Taro said. "I balanced the equation."
 
 "You balanced it with a sledgehammer," Voss noted. "The Grand Concord relies on precision, Taro. Not brute force. We are a high-fidelity society. Your tone was sharp. Socially embarrassing."
 
-Voss stood up. He walked around the desk, his movement efficient, conserving kinetic energy. Every step was a calibrated vector.
+Voss stood. He traversed the space around the desk. His kinetic sequence was highly efficient. Every step was a calibrated vector.
 
-"The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss pointed a manicured finger at Taro's chest. "You’re off-tone. You are broadcasting across the entire capacity of Sector 7. You need to stay flat."
+"The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss aimed a precisely angled finger at Taro's sternum. "You’re off-tone. You are broadcasting across the entire capacity of Sector 7. You need to stay flat."
 
-> SYSTEM WARNING: SIGNAL_INSTABILITY_DETECTED
-> EMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]
+> `SYSTEM_WARNING: SIGNAL_INSTABILITY_DETECTED`
+> `EMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]`
 
-A sustained drift identified itself in his own signal. The stability index dropped as the load hit 142 SU.
+A sustained drift identified itself in the subject's signal. The stability index dropped as the cardiovascular load reached 142 SU.
 
-The collar tightened a millimeter. The physical damping was effective. His tapping slowed. His breathing steadied. His own involuntary compliance flagged as a high-confidence annoyance.
+The collar tightened by one millimeter. The physical damping was highly effective. The subject's tapping stopped. His respiratory cycle steadied. 
+His own involuntary compliance flagged as a high-confidence annoyance.
 
-"We have two administrative options," Voss said, holding up two fingers.
+"We have two administrative options," Voss said. He extended two fingers.
 
-**OPTION A: REFORMAT**
-**> PROCEDURE:** Neural dampening.
-**> OUTCOME:** Subject becomes a standard Listener (Class 1).
-**> STATUS:** APPROVED.
+> `OPTION_A: REFORMAT`
+> `PROCEDURE: NEURAL_DAMPENING`
+> `OUTCOME: LISTENER [CLASS_1]`
+> `STATUS: APPROVED`
 
 "We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again. You stay flat forever."
 
-He analyzed the text floating in the air. [[Reformat::The ultimate social hygiene—a clean and absolute deletion of the soul's ability to process its own noise.]]. Systems-speak for a lobotomy. A clean wipe of the hard drive.
+The subject analyzed the rendered text. 
 
-**OPTION B: INTEGRATION**
-**> PROCEDURE:** Transfer to Malkuth Academy.
-**> OUTCOME:** Vanguard Certification.
-**> STATUS:** HIGH_RISK.
+<aside>
+<details>
+<summary><strong>SUBJECT: Reformat</strong></summary>
+<blockquote>
+<strong>Observation:</strong> The ultimate social hygiene—a clean and absolute deletion of the soul's ability to process its own noise.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-"We utilize the noise," Voss said. "The Vanguard creates Siege Breakers. Units capable of generating high-amplitude dissonance for combat purposes. We take your wrong note... and we weaponize it. We teach you to carrying load for the state."
+Systems-speak for a lobotomy. A clean wipe of the root drive.
 
-Voss leaned in. For a moment, the perfect, manual-compliant facade cracked. The green dissonance in his eye flickered—a single frame of unauthorized code.
+> `OPTION_B: INTEGRATION`
+> `PROCEDURE: TRANSFER [MALKUTH_ACADEMY]`
+> `OUTCOME: VANGUARD_CERTIFICATION`
+> `STATUS: HIGH_RISK`
+
+"We utilize the noise," Voss said. "The Vanguard creates Siege Breakers. Units capable of generating high-amplitude dissonance for combat purposes. We take your wrong note... and we weaponize it. We teach you to carry load for the state."
+
+Voss closed the distance. For a duration measured in milliseconds, the optimal facade displayed a coherence fault. A green dissonance briefly corrupted his optic rendering—a single frame of unauthorized code.
 
 "You are dangerous, Taro," Voss whispered. "But the Score needs danger. It needs heavy artillery."
 
-> ANOMALY: DETECTED
-> CLASSIFICATION: [REDACTED]
+> `ANOMALY: DETECTED`
+> `CLASSIFICATION: [REDACTED]`
 
-Taro looked at the options.
-Option A was deletion.
-Option B was compilation.
+The subject evaluated the parameters. Option A was deletion. Option B was compilation.
 
 "I'm not a soldier," Taro said. "I'm a calibrator. I... I fix things. My hardware is built for alignment, not for combat."
 
 "The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application. We take your sawtooth oscillation and we make it tactical. We teach you to carry that load without clipping the grid."
 
-Voss swiped his hand. **OPTION A** dissolved into code.
+Voss executed a gesture. Option A dissolved from the display.
 
-> COMMAND: EXECUTE_TRANSFER
+> `COMMAND: EXECUTE_TRANSFER [DESTINATION: MALKUTH_ACADEMY]`
 
-An administrative override executed. The destination locked to Malkuth Academy—a high-fidelity resonance training facility.
+An administrative override bypassed standard routing. The destination locked to Malkuth Academy—a high-fidelity resonance training facility.
 
-"The transport leaves at 0800," Voss said, straightening his suit. "Read the manual, Taro. Learn the rules. Because if you break them again..."
+"The transport leaves at 0800," Voss said, restoring the alignment of his synthetic garment. "Read the manual, Taro. Learn the rules. Because if you break them again..."
 
-He tapped the collar.
+He tapped the metallic surface of the collar.
 
 "...we will simply turn you off."
 
-> SESSION: TERMINATED
+> `SESSION: TERMINATED`
 
 The secure link closed. The recording archived itself for the C-Order's silent audit.
 
-The lights cut out.
+The optical feed went black.
 
 ---
 
-**END CHAPTER 2**
+**> TRACK: 02_COMPLETE**
+**> SAVING...**

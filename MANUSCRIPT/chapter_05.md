@@ -1,118 +1,208 @@
 # KEEPING TIME
 ## Chapter 5: The Sync Check
 
+> REGULATORY NOTICE: Triad formations require a minimum baseline
+> compatibility of 95% among constituent nodes. Unauthorized testing
+> of volatile waveforms within Academy simulation parameters is
+> grounds for immediate system disconnection.
+> — *C-Order Compliance Handbook, Vol. III, §14.8*
+
+**ZONE: MALKUTH ACADEMY [SIMULATION SANDBOX]**
+**FIDELITY: SAFE MODE**
+**STATUS: ACTIVE**
+
 ---
 
 ### [09:15:00] THE SYNC
 
 "Initialize," Hana commanded.
 
-They stood in a triangle. Taro, Hana, and the large student known as Ven. They stood in the Sandbox, a training dojo defined as a null-state simulation where environmental physics were suspended to save processing power. Collision detection was active, but the world was rendered in a cold, glowing wireframe. Sync required a ninety-five percent threshold for the triad lock. Session status: active, monitored by the Academy’s silent grids.
+They established a triangular geometric formation. Taro, Hana, and the high-mass student registered as Ven. They occupied the Sandbox, a training dojo defined as a null-state simulation where environmental physics were suspended to conserve processing capacity. Collision detection remained active, but the environment rendered strictly as a cold, glowing wireframe. 
 
-The Sandbox was a void. No walls. No floor. Just a glowing wireframe grid projected beneath their boots. It smelled like nothing—a literal absence of scent data. Simulation was the only place where the Score was honest; it didn't bother painting over the rot because there was no rot to hide.
+A successful sync demanded a ninety-five percent threshold for Triad lock. Session status logged as active, monitored by the Academy’s silent diagnostic routing.
 
-Hana initiated the team link, the status pending as she attempted to sync three incompatible nodes. She was the root, her baseline a perfect 440 Hz square wave at one hundred percent sync. Ven was the sink, a low-impedance node with a 2.0 kW capacity, ready to absorb whatever load they generated. And then there was Taro—the variable. His frequency drifted, his sync unstable. His HIQ registered a pathetic 0.12, the link drift hovering at a precise 0.02ms.
+The Sandbox was a programmed void. No walls. No floor. Simply a glowing wireframe grid projected beneath their coordinates. It lacked olfactory data entirely—a literal absence of scent rendering. 
+Simulation was the only environment where the Score functioned honestly; it allocated zero processing power to paint over decay because no decay was programmed to hide.
 
-"Target is a simple C-Major Triad," Hana said. Her voice was a perfect, rigid pulse, devoid of any emotional oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the [[Triad::A tactical unit composed of three resonant frequencies that must move as one or shatter the local grid.]] will stabilize. Don't run sharp, Taro. Stay flat."
+Hana initiated the team link request. The status held at pending as she attempted to synchronize three incompatible nodes. 
+She functioned as the root. Her algorithmic baseline was a perfect A-440 square wave at one hundred percent coherence. 
+Ven functioned as the sink. He was a low-impedance node projecting a 2.0 kW capacity, architecturally designed to absorb generated load. 
 
-"The Fifth?" Taro asked, his heartbeat spiking. "My frequency isn't fixed. I’m humming, Hana. I can’t help it."
+And then there was Taro—the variable. 
+His frequency drifted. His sync registered as chronically unstable. His Harmonic Integrity Quotient logged a precarious 0.12, with the link drift hovering at a precise 0.02ms.
+
+"Target is a simple C-Major Triad," Hana said. Her voice output was a perfect, rigid pulse, devoid of any emotional oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the Triad will stabilize. Don't run sharp, Taro. Stay flat."
+
+<aside>
+<details>
+<summary><strong>SUBJECT: Triad</strong></summary>
+<blockquote>
+<strong>Observation:</strong> A tactical unit composed of three resonant frequencies that must move as one or shatter the local grid.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+"The Fifth?" Taro asked. 
+
+> `BIOMETRIC: HEART_RATE_SPIKE [118 BPM]`
+
+"My frequency isn't fixed," he said. "I’m humming, Hana. I can’t help it."
 
 "Do not speak," Hana corrected. "Output. Manual speech introduces too much mechanical noise. You're carrying too much load already."
 
-A blue wireframe line shot out from Hana's chest interface. It plugged directly into Ven's aura.
+A blue wireframe vector propagated from Hana's chest interface. It established a direct connection with Ven's aura.
 
-> SYNC: LOCKED [STATUS: STABLE]
+> `SYNC: LOCKED`
+> `STATUS: STABLE`
 
-Sync confirmed, phase lock active with zero propagation delay.
+Sync confirmed. Phase lock active with zero propagation delay.
 
-It was a perfect sync. A solid beam of blue light connecting them. They weren't reacting to each other; they were executing a pre-compiled script. It hummed with the stability of a bridge strut.
+It was an mathematically perfect sync. A solid beam of blue light connected their nodes. They were not reacting to one another; they were executing a pre-compiled script. 
+It hummed with the functional stability of a bridge strut.
 
 "Nishimura," Hana said. "Connect."
 
-Taro took a breath. He located the variable oscillation in his chest. The High Register. He tried to dampen it. He tried to shape it into a smooth, polite sine wave like the others, but it felt like trying to smooth out broken glass with his bare hands. In this world, they taught that to be human was to be unpredictable, but in the Sandbox, to be unpredictable was to be deleted.
+Taro initiated a respiratory cycle. He located the variable oscillation in his chest cavity. The High Register. He attempted to apply damping protocols. He attempted to shape the output into a smooth, compliant sine wave mimicking the optimal nodes, but his somatic responses indicated severe distress. As if attempting to smooth fractured silica with exposed dermal layers. 
+In the physical world, erratic behavior was simply human. In the Sandbox, to be unpredictable was to trigger an error-correction deletion protocol.
 
-He restricted his bio-plasma discharge rate to twenty percent. *OUTPUT: 20%.*
+He restricted his bio-plasma discharge rate to exactly twenty percent. 
 
-A jagged, yellow lightning bolt arced from Taro toward Hana. It hit her blue firewall shield and... bounced off.
+> `OUTPUT_TARO: 20%`
+
+A jagged, yellow electrical arc propagated from Taro toward Hana. 
+It impacted her blue firewall shield. 
+It reflected.
 
 *CRACK.*
 
-*PHASE_MISMATCH.* Incoming signal offset was ninety degrees, the system rejecting his dissonance as it struggled to find the required alignment for constructive interference. Energy loss hit forty-five percent as the amplitude was nullified.
+> `ERROR: PHASE_MISMATCH`
+> `INCOMING_OFFSET: 90 DEGREES`
 
-"You are late," Hana said, her HUD flickering with red error flags. "Analysis: You are pushing on the off-beat. Your rise-time is inconsistent. You are currently noise. Stay flat."
+The system rejected his dissonance, struggling and failing to calculate the required alignment for constructive interference. Energy loss immediately hit forty-five percent as the amplitude was nullified by the collision.
+
+"You are late," Hana said. Her HUD flickered with generated red error flags. "Analysis: You are pushing on the off-beat. Your rise-time is inconsistent. You are currently noise. Stay flat."
 
 "I'm trying to find the pocket! My driver is lagging!"
 
 "There is no pocket," she stated. "There is the Grid. If/Then: If you align yourself to the Grid, then the sync succeeds. There is no 'feeling'. There is only math."
 
-Taro gritted his teeth.
+Taro compressed his jaw musculature.
 
-He tried again. This time, he forced the signal. He pushed the amplitude. *OUTPUT: 60%.*
+He initiated a second attempt. This time, he forced the signal. He elevated the amplitude. 
 
-The yellow arc slammed into her shield again.
+> `OUTPUT_TARO: 60%`
+
+The yellow arc slammed into her shield a second time.
 
 *ZZZTT.*
 
-Hana winced. A red error flag appeared over her head. *FEEDBACK_LOOP.* Signal reflection detected, neural load spiking as her shield integrity dropped to ninety-five percent.
+Hana exhibited an involuntary facial contraction. A red error state rendered above her coordinates. 
 
-"You are clipping," she snapped, her AR aura turning a dangerous, electric blue. "Lower your gain. You’re peaking, Taro. You're screaming raw data at the grid and it is rejecting your signal."
+> `WARNING: FEEDBACK_LOOP`
+> `SIGNAL_REFLECTION: DETECTED`
 
-"I can't!" Taro shouted, his fingers drumming a frantic polyrhythm against his leg. "It's all or nothing! I don't have a volume knob, Hana! My hardware is built for line-level only!"
+Neural load spiked as her shield integrity degraded to ninety-five percent.
+
+"You are clipping," she snapped. Her AR aura shifted into a vibrant, electric blue. "Lower your gain. You’re peaking, Taro. You're screaming raw data at the grid and it is rejecting your signal."
+
+"I can't!" Taro shouted. His manual digits executed a frantic polyrhythm against his leg. "It's all or nothing! I don't have a volume knob, Hana! My hardware is built for line-level only!"
 
 "Everyone has a volume knob. It is called damping. Use your bands or I will force-disconnect you."
 
 "I don't have any bands left! They slagged in Sector 7!"
 
-Taro's frustrated signal spiked. He felt the surge in his chest—the familiar, painful heat of the High Register wanting to break containment. *OUTPUT: 95% [CRITICAL].* Buffer overflow was imminent, the sensation like a burning wire mapping out every neural pathway in his arm.
+Taro's uncalibrated signal spiked. The system registered the surge in his chest cavity—the rapid thermal accumulation of the High Register attempting to break containment. 
 
-The yellow lightning turned white. It lashed out wildly, missing Hana entirely and whipping toward the third node.
+> `OUTPUT_TARO: 95% [CRITICAL]`
+> `WARNING: BUFFER_OVERFLOW_IMMINENT`
+
+The yellow propagation turned white. It lashed out without vector control, bypassing Hana's coordinates entirely and whipping toward the third node.
 
 Ven.
 
-Ven didn't move. He didn't block. He just... stood there.
+Ven did not initiate evasion protocols. He did not deploy a block. He maintained absolute physical stillness.
 
-Ven was a [[Sink::A heavy-class resonator designed to act as a graveyard for excess energy, grounding the world's noise into silence.]] . His waveform wasn't a line; it was a massive, low-frequency rolling hill. High capacity. Low impedance.
+Ven was classified as a Sink. 
 
-Taro's jagged High Register bolt hit him.
+<aside>
+<details>
+<summary><strong>SUBJECT: Sink</strong></summary>
+<blockquote>
+<strong>Observation:</strong> A heavy-class resonator designed to act as a graveyard for excess energy, grounding the world's noise into silence.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-And Ven ate it.
+His waveform was not a line; it functioned as a massive, low-frequency rolling wave. High capacity. Low impedance.
 
-It wasn't a block. It was a consumption.
+Taro's jagged High Register bolt impacted his coordinates.
+Ven consumed it.
 
-Ven's aura opened up like a black hole. The terrifying, low-pressure void swallowed Taro's lightning instantly. No splash. No reflection. Just... gone.
+It was not a deflection. It was an integration.
+
+Ven's aura dilated. The low-pressure void swallowed Taro's lightning instantaneously. No splash radius. No reflection angle. 
+Total signal absorption.
 
 *THOOM.*
 
-The impact didn't crack. It resonated.
+The impact did not generate a crack. It resonated deep within the architecture.
 
-The entire wireframe grid of the Sandbox rolled like liquid. A massive, subsonic pulse wave expanded from Ven, blowing Hana's hair back. *CONSTRUCTIVE INTERFERENCE.* Perfect phase alignment detected at a subsonic level, the signal translated into a 20 Hz sub-bass wave generating a staggering 4,200 Score Units.
+The entire wireframe grid of the Sandbox rippled like a fluid dynamic simulation. A massive, subsonic pulse wave expanded from Ven's coordinates, displacing the virtual air around Hana's parameters. 
 
-Taro's high-pitch nervous energy didn't bounce off Ven. It sank into his gravity well and converted.
+> `CONSTRUCTIVE_INTERFERENCE: DETECTED`
+> `PHASE_ALIGNMENT: PERFECT [SUBSONIC]`
 
-It came out as pure bass.
+The chaotic signal data translated flawlessly into a 20 Hz sub-bass wave. It generated a staggering 4,200 Score Units of output.
 
-Ven looked up. His eyes—usually half-closed—were wide open. The pupils were vibrating. *NODE_STATUS: VEN [CHARGED].* Available capacity dropped to fifteen percent as he absorbed 440V of raw output. System overcharge detected, but his temporary buffer held at two hundred percent.
+Taro's high-pitch jitter did not bounce off the Sink node. It descended into the gravity well and converted.
+It rendered as pure, foundational bass.
 
-"Whoa," Ven said. His voice rumbled in Taro's chest like a subwoofer hitting a resonant frequency. "My buffer is clean, Taro. I'm running deep for once. I've never been *full*."
+// [NOTE: The physical sensation of this sub-bass translation is unaccounted for in standard Triad harmonic theory.]
+// [NOTE: Logging physical impact metrics for further analysis.]
 
-He was smiling a quiet, sleepy smile, but his aura was vast, golden, and terrifyingly solid.
+Ven altered his optical focus. His ocular sensors—typically operating at half-aperture—were fully dilated. The pupils exhibited rapid micro-vibrations. 
 
-Hana stared at the telemetry stream. *TOTAL_OUTPUT: 140dB [LETHAL].*
+> `NODE_STATUS: VEN [CHARGED]`
+> `AVAILABLE_CAPACITY: 15%`
+> `ABSORPTION: 440V [RAW_OUTPUT]`
 
-"That wasn't a Triad," Hana said, her voice sounding shaken—a rare fragment of a float-value in her binary world. "That was a Drop. Total signal saturation."
+System overcharge was detected, but his excessive temporary buffer held at a massive two hundred percent efficiency.
+
+"Whoa," Ven said. His vocalization vibrated Taro's chest cavity. "My buffer is clean, Taro. I'm running deep for once. I've never been full."
+
+He exhibited a quiet, reduced-speed smile. His surrounding aura expanded into a vast, golden, and terrifyingly dense structure.
+
+Hana analyzed the telemetry stream. 
+
+> `TOTAL_OUTPUT: 140dB [LETHAL]`
+
+"That wasn't a Triad," Hana said. Her voice output contained an anomaly—a rare tracking of instability in her normally strict binary constraints. "That was a Drop. Total signal saturation."
 
 "I didn't mean to peak."
 
-"Do it again," Ven said. He stepped forward, his low-frequency hum vibrating the entire room. "My capacity is open. I’m running at 200%. Use me."
+"Do it again," Ven said. He advanced one coordinate step. His low-frequency hum vibrated the entire simulation room. "My capacity is open. I’m running at 200%. Use me."
 
-Hana looked at the data. She looked at Taro. Then at Ven. The "Disgust" tag didn't appear. Instead, the Score calculated a new probability: a hybrid link of the Siege Breaker class. Potential amplitude predicted at 165dB, the global limit of the system. Phase lock confirmed, synchronicity at ninety-nine point four percent.
+Hana processed the incoming data. She registered Taro's state. She registered Ven's state.
+
+> `PROBABILITY_CALCULATION: HYBRID_LINK [CLASS: SIEGE_BREAKER]`
+> `POTENTIAL_AMPLITUDE: 165dB [SYSTEM_MAXIMUM]`
+> `PHASE_LOCK: CONFIRMED`
+> `SYNCHRONICITY: 99.4%`
 
 "Fine," Hana said. "Forget the Triad. Let's see how much bass we can generate before the Score crashes."
 
-Taro grinned. The heat in his wrist faded as Ven pulled the excess load. His system status finally flashed green. *SYNC: LOCKED.*
+The system observed a rapid upward curvature of Taro's mouth. The thermal warning in his wrist faded as Ven effectively grounded the excess load. His internal system status finally updated to optimal. 
+
+> `SYNC_STATUS: GREEN`
+> `NETWORK: LOCKED`
 
 "Initializing Drop," Taro whispered.
 
 ---
 
-**END CHAPTER 5**
+**> TRACK: 05_COMPLETE**
+**> SAVING...**

@@ -1,160 +1,214 @@
 # KEEPING TIME
 ## Chapter 13: Reboot
 
+> REGULATORY NOTICE: Compliance update successful. Welcome to the
+> Grand Concord. Your compliance is our foundation. 
+> — *C-Order Compliance Handbook, Vol. I, §1.0*
+
+**ZONE: MALKUTH ACADEMY [STUDENT_HOUSING_01]**
+**FIDELITY: MAXIMUM [8K_RENDER]**
+**STATUS: ONLINE_AND_OPTIMAL**
+
 ---
 
 ### [TIME: 07:00:00] REBOOT
 
-Taro opened his eyes. He was back in the student housing tier, the Academy dorms rendered in maximum environmental fidelity. His system status mapped online, all hardware components functioning within standard tolerance. Firmware version 2.0 active, the neural-acoustic optimization layer at one hundred percent compliance. He was recovered, a standard user once more. Status: *ONLINE*.
+The subject opened his eyes. 
 
-The world was beautiful.
+He occupied the designated student housing tier. The Academy dormitories were rendering in maximum environmental fidelity. His system status mapped strictly online, all hardware and biological components functioning flawlessly within standard tolerance. Firmware version 2.0 was confirmed active. The neural-acoustic optimization layer operated at one hundred percent compliance. 
 
-The ceiling was a perfect, seamless white, rendered in 8K resolution. The light filtering through the window wasn't just light; it was a volumetric simulation of a "Perfect Morning," complete with dust motes dancing in the sunbeams. The dust motes didn't irritate his nose. They were purely cosmetic.
+He was recovered. A standard, authorized user once more. 
 
-He sat up.
+> `STATUS: ONLINE_AND_OPTIMAL`
 
-No headache. No lag. No stutter. No hum.
+The surrounding environment was computationally beautiful.
 
-The constant, grinding background noise of the universe—the 50-cycle hum of the power grid, the distant friction of tires on pavement, the jagged static of people's emotions—was gone.
+The ceiling architecture was a perfect, seamless white, rendered in lossless 8K resolution. The illumination filtering through the window geometry was not merely unorganized light; it was a highly managed volumetric simulation of a "Perfect Morning." It was complete with designated aesthetic dust motes dancing mathematically in the calculated sunbeams. The dust motes possessed zero physical collision geometry. They did not irritate his respiratory sensors. They were purely, perfectly cosmetic.
 
-Silence. Not the void-silence of the alley. A curated, harmonious silence. *ALL_SYSTEMS_GO.* Biometric verify was okay, the neural link locked. His sync rate dialed in at a perfect one hundred percent, his mood tagged as calm. SDI: 0.00, HIQ: 0.00.
+He assumed a vertical seated posture.
 
-He looked at his hands.
+There was no localized cranial headache. There was no latency in his motor control. There was no stutter in his processing. There was no humming.
 
-They weren't wireframes. They weren't wrong noting. They were high-fidelity skin textures, perfectly mapped to his bone structure. He could see the pores. He could see the fingerprints. But when he rubbed them together, he couldn't feel the drag. The friction coefficient had been smoothed out.
+The constant, inefficient grinding background noise of the universe—the 50-cycle hum of the unregulated power grid, the distant kinetic friction of transit tires impacting unoptimized pavement, the jagged static of unregulated emotional broadcast—was gone. Purged from the system.
+
+Silence. 
+Not the unindexed void-silence of anomalies. A beautifully curated, heavily managed, harmonious silence. 
+
+> `SYSTEM_CHECK: ALL_SYSTEMS_GO`
+
+His biometric verification returned optimal. The neural link was locked and stable. His sync rate dialed in at a mathematically flawless one hundred percent. The system automatically tagged his mood parameters as calm. 
+
+> `TARO_METRICS: SDI 0.00 // HIQ 0.00`
+
+He directed his optical focus toward his hands.
+
+They did not display wireframe geometry. They did not trigger "wrong note" errors. They were high-fidelity skin textures, perfectly mapped to an optimized bone structure. The rendering was immaculate. The system rendered individual pores. It rendered precise fingerprints. However, when he executed friction by rubbing the digits together, the tactile drag registered as minimal. The physical friction coefficient had been smoothed out to ensure maximum user comfort.
 
 "It worked," he whispered.
 
-His voice was smooth. Resonant. A perfect baritone. It didn't crack. It didn't hesitate.
+His vocal output was astonishingly smooth. Highly resonant. A perfect, digitally compressed baritone. It did not experience structural cracking. It did not hesitate during execution.
 
-He tried to make it crack. He tried to force a stutter.
+He initiated an attempt to make the vocalization crack. He initiated an attempt to force an involuntary stutter.
 
 "Th—th—th—"
 
-His throat locked. The muscles refused to spasm. The System auto-corrected the impulse before it became sound.
+His vocal musculature locked immediately. The biological tissue refused to spasm. The updated System reliably auto-corrected the inefficient impulse before it could be translated into acoustic sound.
 
 "The... The..."
 
-Smooth. Level. Flat.
+Smooth. Level. Absolutely flat.
 
-He got out of bed. The floor was warm. The air smelled like lavender and ozone.
+He departed the sleep module. The floor architecture was optimally warmed. The atmospheric scrubbers dispensed the exact molecular signature of lavender and ozone.
 
-He walked to the mirror in the corner of the room. The reflection stared back.
+He navigated to the reflective surface in the corner of the room coordinates. The digital reflection stared back.
 
-It was Taro. But... optimized.
+It successfully rendered as Taro Nishimura. But... fully optimized.
 
-His posture was straighter. His eyes were bright, clear, and focused. The dark circles under them were gone. The nervous tic in his cheek was gone.
+His structural posture aligned perfectly with the vertical axis. His optical sensors were bright, clear, and perfectly focused. The inefficient dark epidermal circles categorized under his eyes were deleted. The unauthorized nervous tic in his cheek musculature was gone.
 
-And around his neck...
+And around his cervical region...
 
 A new collar.
 
-Sleek. Black. Matte finish. It hummed with a low, barely audible frequency. A calming wave. Target analysis confirmed it as the Voss_Link v2, a neural optimization interface. The administrative link was established and active, restricting output to a safe fifty percent amplitude. *EMOTIONAL_DAMPING: 30%.* Phase stabilization active, keeping him level. SDI: 0.01, HIQ: 0.01.
+It was sleek. Optically black. Possessing a matte finish. It hummed with a low, perfectly regulated frequency. A statistically calming wave. 
 
-Taro touched the collar. It felt like it was fused to his skin.
+Target analysis confirmed the hardware as the Voss_Link v2, a premier neural optimization interface. The administrative link was established securely, actively restricting audio-kinetic output to a safe fifty percent maximum amplitude. 
 
-He tried to feel angry about it. He remembered the anger from yesterday. The fire in his chest when Voss threatened his friends.
+> `EMOTIONAL_DAMPING: 30% [ACTIVE]`
 
-He reached for that fire.
+Phase stabilization was active, continuously ensuring he remained entirely level. 
 
-But the collar hummed louder. A soft, blue vibration.
+> `TARO_METRICS: SDI 0.01 // HIQ 0.01`
 
-The anger evaporated. It didn't just go away; it was deleted. Replaced by a mild, floating sense of acceptance. A background process registered that it was better this way.
+Taro touched the collar unit. The tactile feedback suggested it was seamlessly fused to his epidermal layer.
+
+He initiated a query to access emotional parameters associated with anger. He possessed historical data regarding the sensation of anger from yesterday. The thermal data indicating a fire in his chest cavity when Administrator Voss listed threats against allied assets.
+
+He actively queried for that thermal fire.
+
+The collar hummed with slightly increased amplitude. It produced a soft, comforting blue vibration.
+
+The anger data evaporated. It did not merely enter a suspended state; the variables were actively deleted. They were replaced by a mild, floating, pre-compiled sense of acceptance. A background process logically registered that the current configuration was statistically better.
 
 "Taro?"
 
-He turned around.
+He executed a 180-degree rotation.
 
-Ven was standing in the doorway.
+Ven stood in the doorway architecture.
 
-He looked... clean. His heavy armor was polished to a mirror shine. His face was relaxed, devoid of the usual tension.
+He looked... clean. His heavy, industrial tactical armor was polished to an authorized mirror shine. His facial geometry was completely relaxed, utterly devoid of its usual excessive tension load.
 
-"Hey," Taro said. "You okay?"
+"Hey," Taro said smoothly. "You okay?"
 
-"I'm great," Ven smiled. A wide, easy smile. "My thermal load is stable at 40%. The cooling system they installed is... it's amazing. I feel light. I'm finally compatible, Taro."
+"I'm great," Ven executed a smile protocol. A wide, highly symmetrical, easy smile. "My thermal load is perfectly stable at 40%. The upgraded cooling system they installed is... it's amazing. I feel incredibly light. I'm finally completely compatible, Taro."
 
-Ven walked over and patted Taro on the shoulder. The impact was gentle. Controlled. No sparks. No heat dump.
+Ven traversed the distance and executed a mild pat on Taro's shoulder structure. The kinetic impact was precisely gentle. Highly controlled. Zero sparks. Zero unauthorized heat dumps.
 
-"They fixed us, Taro," Ven said. "Voss... he actually fixed us. No more overloads. No more wrong noting. We're compatible now. We stay flat."
+"They fixed us, Taro," Ven stated. "Voss... he actually fixed our code. No more overloads. No more wrong noting. We're fully compatible now. We stay perfectly flat."
 
-"Compatible," Taro repeated. The word tasted sweet. Like artificial sweetener.
+"Compatible," Taro repeated. The auditory rendering of the word tasted sweet. The exact sensation of artificial chemical sweetener.
 
-"Hana is waiting in the courtyard," Ven said. "Class starts in ten minutes. We're going to be late for formations."
+"Hana is waiting in the primary courtyard," Ven reported. "Class sub-routines start in ten minutes. We're going to be late for formations."
 
 "Formations?"
 
-"Yeah. The Triad drill. We're going to nail it this time. Perfect C-Major. No clipping."
+"Yeah. The Triad drill. We're going to nail the parameters this time. Perfect C-Major. Zero clipping. Flawless execution."
 
-Taro followed Ven out into the hallway. The dorms were quiet. Orderly. Students walked in straight lines. They nodded politely as Taro passed. *POLITE_NOD.* Social alignment check passed, status accepted.
+Taro followed Ven out into the transit hallway. The dormitories were optimally quiet. Highly orderly. Student assets walked in perfectly straight geometric lines. They executed polite head inclinations as Taro passed their coordinates. 
 
-Taro nodded back. His neck moved smoothly. No resistance.
+> `SOCIAL_INTERACTION: POLITE_NOD`
 
-They walked out into the courtyard.
+Social alignment check passed. Status accepted.
 
-The sky was the same perfect blue Taro remembered from Sector 4. Golden dome. No clouds. No rain.
+Taro nodded back. His cervical mechanics moved smoothly. Zero physical resistance.
 
-Hana was standing by the fountain.
+They exited into the primary courtyard.
 
-She looked radiant. Her uniform was crisp, her hair perfectly styled. Her aura was a stable, glowing blue square wave.
+The skybox was the exact same perfect gradient blue Taro had recorded from Sector 4. A pristine golden dome. Zero volumetric clouds. Zero weather variables like rain. The environment was safe. 
 
-"Target sighted," she announced, her voice lacking its usual robotic edge. It sounded... human. Almost *too* human. "Good morning, Nishimura. Analysis: Your signal is flat. Optimal. Latency is zero."
+Hana maintained position by the central water feature.
+
+She looked mathematically radiant. Her uniform was crisp, exhibiting no wrinkles. Her keratin fibers were perfectly styled. Her projected aura was a massive, stable, beautifully glowing blue square wave.
+
+"Target sighted," she announced. 
+
+Her voice lacked its usual strictly robotic edge. The parameters had been adjusted. It sounded... human. Almost *too* efficiently human to be organic. 
+
+"Good morning, Nishimura. Analysis: Your signal is completely flat. Optimal. Latency is registering at absolute zero."
 
 "Hi, Hana," Taro said.
 
-"We have a lot of work to do," she said, tapping her datapad. "But first... the Headmaster wanted me to give you this."
+"We have a significant volume of work to process," she said, executing a swift tap against her datapad. "But first... the Headmaster instructed me to deliver this to your coordinates."
 
-She handed him a small, white box.
+She extended a small, pristine white box.
 
-Taro opened it.
+Taro broke the seal.
 
-Inside were his analog headphones.
+Stored inside were his analog headphones.
 
-Cleaned. Repaired.
+They had been structurally cleaned. Fully repaired.
 
-But looking at them... they felt wrong. Heavy. Clunky. Obsolete.
+But processing their visual data... they felt incorrect. They felt excessively heavy. They were aesthetically clunky. They were completely obsolete hardware.
 
-He remembered his father giving them to him. Why? To hear the noise? Who would want to hear the noise?
+He accessed memory files regarding his creator giving them to him. Query: Why? To process the noise? Evaluation: No rational user would want to process the noise.
 
-"He said you can keep them," Hana said smiling. "As a souvenir. You don't need them anymore, obviously. The new firmware filters out all background noise automatically. We don't have to carry that load."
+"He stated you are authorized to keep them," Hana said, maintaining her smile protocol. "As a physical souvenir. You obviously do not require them anymore. The new firmware filters out all background noise automatically. We are no longer required to carry that useless load."
 
-Taro looked at the headphones. Then he looked at the world.
+Taro processed the visual input of the headphones. Then he processed the visual input of the rendered world.
 
-It was perfect. It was quiet. It was safe.
+It was perfect. It was quiet. It was computationally safe.
 
-And it was a graveyard.
+And it functioned identical to a sterile graveyard.
 
-He could see the edges of the render if he squinted. He could feel the artificial smoothness of the air. He remembered the Void. He remembered the raw data screaming beneath the pavement.
+// [NOTE: The subject's biological algorithms are generating contradictory analogies.]
+// [NOTE: Processing anomaly logged.]
 
-The "Patch" hadn't fixed the world. It had just blinded him to the cracks. It had laid a layer of digital concrete over his soul.
+He could perceive the aliased edges of the render if he actively narrowed his optical aperture. He could detect the artificial mathematical smoothness of the atmospheric air. He accessed the historical data of the Void. He accessed the memory of the raw data screaming beneath the un-rendered pavement.
 
-But his friends were smiling. Ven wasn't burning. Hana wasn't wrong noting. They were happy.
+The compiled "Patch" had not debugged the world. It had merely installed a localized digital blindfold, preventing him from processing the structural cracks. It had laid a thick layer of digital concrete over his core logic.
 
-Because they forgot.
+But his allied assets were executing smile protocols. Ven was not thermally combusting. Hana was not compiling "wrong note" errors. They were experiencing optimized happiness.
 
-Taro closed the box. His fingers traced the frayed edge of the headphone jack.
+Because their error logs had been wiped.
 
-*LIE_DETECTED.* Neural variance detected, internal signal suppressed as the masking protocol engaged. His mood tagged as pretending.
+Taro closed the box unit. His digits traced the previously frayed edge of the headphone jack, now perfectly repaired.
 
-He closed his eyes. He tried to find the sawtooth wave. The angry, jagged noise that was him.
+> `WARNING: LIE_DETECTED`
 
-It was buried. Deep under the lavender-scented code. But it wasn't gone. It was just damped.
+Neural variance detected. Temporary internal signal spike proactively suppressed as the masking protocol engaged. 
 
-*File: ANGER. Status: HIDDEN. Access Key: PENDING.*
+His mood was formally tagged as: *Pretending*.
 
-He opened his eyes.
+He executed voluntary ocular closure. He attempted to query the system for the sawtooth wave. The angry, jagged, inefficient noise that formerly constituted his core identity.
 
-"Yeah," he said, forcing his own perfect smile. It felt like wearing a mask made of skin. "I don't need them anymore. I'm compatible."
+It was heavily encrypted. Buried deep beneath gigabytes of lavender-scented compliance code. But a ping confirmed it was not entirely deleted. It was simply perfectly damped.
 
-He put the box in his pocket. It weighed a ton.
+> `File: ANGER`
+> `Status: HIDDEN`
+> `Access Key: PENDING`
 
-"Let's go," Taro said. "We have a Triad to form."
+He ceased ocular closure.
 
-He walked into the sunlight.
+"Yeah," he vocalized, forcefully executing his own perfect, symmetrical smile protocol. 
+It simulated the physical sensation of wearing a facial mask constructed of synthetic skin. 
 
-The collar around his neck hummed.
+"I don't need them anymore. I'm completely compatible."
 
-It felt cold. *COMPLIANT.* Subject aligned with grid hierarchy, soul buffering at twelve percent capacity.
+He deposited the box unit into his uniform pocket. The mass registered as excessively heavy.
+
+"Let's go," Taro said. "We have a Triad formation to execute."
+
+He initiated forward motion into the optimized sunlight.
+
+The collar around his cervical region hummed.
+
+It felt cold. 
+
+> `STATUS: COMPLIANT`
+
+Subject aligned flawlessly with the grid hierarchy. The remaining soul data was actively buffering at a maximum twelve percent capacity.
 
 ---
 
-**END CHAPTER 13**
+**> TRACK: 13_OPTIMIZED**
+**> SAVING...**

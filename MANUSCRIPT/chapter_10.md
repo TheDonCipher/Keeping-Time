@@ -1,24 +1,53 @@
 # KEEPING TIME
 ## Chapter 10: The Unmasking
 
+> [SYNTAX_ERROR: REGULATORY_NOTICE_UNAVAILABLE]
+> [WARNING: HOSTILE_ARCHITECTURE]
+> [CRITICAL: MAINTAIN_DISTANCE_FROM_SUBJECT]
+
+**ZONE: [CORRUPTION_DETECTED]**
+**FIDELITY: NULL**
+**STATUS: FAILING**
+
 ---
 
 ### [18:20:00] THE UNMASKING
 
-They were cornered. They stood in a redacted zone where environmental fidelity dropped to null. Taro's system integrity was critical, failing at eighty-two percent as a buffer overflow became imminent. The active damping loops had failed, leaving him unshielded and vulnerable. The neural-acoustic load exceeded organic thresholds—a nervous system meltdown flaring in his HUD.
+They occupied a dead end. 
+They were corralled within a redacted sector where environmental fidelity had dropped to absolute zero. Taro's system integrity registered as critical, failing rapidly at eighty-two percent as a computational buffer overflow became mathematically imminent. His active damping loops had collapsed, leaving his architecture unshielded and completely vulnerable. 
 
-The Silence agents had pinned them against a dead-end wall. The air was dead. Taro's acoustic distraction bought them seconds, but the agents had adapted. They radiated a damping field so strong it felt like the atmospheric pressure had tripled. Acoustic transparency was down to almost nothing, the environment heavy and thick. Ven was immobile, his motor pathways locked by an external sink. Hana was unconscious, her neural sync lost and her biological stability fading. SDI: 1.00, HIQ: 1.00.
+> `WARNING: NEURAL_LOAD_EXCEEDS_ORGANIC_LIMITS`
+> `SYSTEM: MELTDOWN_IMMNNET`
 
-Hana was down. Her perfect square wave flatlined. 
-"She can't breathe in the silence," Taro whispered, his stutter returning as his Score port struggled to render his own vocal chords. "She’s out of sync with the world. If she doesn't find the beat soon, her hardware is gonna brick. She's dropping signal, Ven. Fast."
+The neural-acoustic pressure vastly exceeded standard human thresholds. A complete nervous system meltdown was actively flaring in the HUD diagnostics.
 
-"Taro," Ven grunted. "I can't... hold them. My buffer is pinned."
+The unidentified Silence agents had pinned the squad against an unrendered boundary wall. The atmospheric data was dead. Taro's analog acoustic distraction had purchased them fractional seconds, but the entities possessed adaptive algorithms. They radiated a localized damping field so intense it registered as a tripling of atmospheric pressure. 
+Acoustic transparency dropped to statistical zero. The environment was suffocatingly thick. 
 
-Taro looked at the agents. They raised their knives. They were going to kill them. Quietly. Efficiently. A deletion event in a sector that the Conductors would simply paint over tomorrow. His HUD flickered, showing no viable options for survival or distress signals. The network was gone.
+Ven was immobile, his motor pathways hard-locked by the external sink effect. 
+Hana was unconscious. Her authorized neural sync was severed, her biological stability rapidly fading. 
 
-No options. Voss was right. Taro wasn't a soldier. He was a variable. And variables break equations.
+> `SDI_METRIC: 1.00 [MAXIMUM_DRIFT]`
+> `HIQ: 1.00 [MAXIMUM_CORRUPTION]`
 
-"Ven," Taro whispered, leaning into the Low-Fi grit. "Drop the link. Unplug me from your buffer. I'm carrying too much load."
+Hana was down. Her pristine, perfect square wave had flatlined into jagged noise.
+
+// [NOTE: The Vanguard asset should have maintained structure. The failure is hers.]
+// [NOTE: C-Order training is insufficient for this variable.]
+
+"She can't breathe in the silence," Taro whispered. His vocal stutter returned as his compromised Score port struggled to render the physics of his own vocal chords. "She’s out of sync with the world. If she doesn't find the beat soon, her hardware is gonna brick. She's dropping signal, Ven. Fast."
+
+"Taro," Ven grunted. The vocalization required massive physical effort against the pressure. "I can't... hold them. My buffer is pinned."
+
+Taro processed the advancing agents. They elevated their null-blades. 
+They intended to execute a deletion. Quietly. Efficiently. A localized formatting event in a forgotten sector that the Conductors would simply digitally paint over during the next server refresh. 
+
+The HUD flickered violently, calculating zero viable options for survival. No distress signal routed. The network connection was entirely gone.
+
+No authorized options remained. Voss's initial assessment was correct. Taro was not a tuned instrument. He was a variable. 
+And variables destroy closed equations.
+
+"Ven," Taro whispered, leaning his physical mass into the Low-Fi grit of the unrendered wall. "Drop the link. Unplug me from your buffer. I'm carrying too much load."
 
 "What? No! I can take it! Don't reboot now!"
 
@@ -28,34 +57,106 @@ No options. Voss was right. Taro wasn't a soldier. He was a variable. And variab
 
 "Do it!"
 
-Ven hesitated, then ripped his hand away from Taro's arm. *SNAP.* The connection broke, and the safety net was gone. The High Register oscillation—which had been flowing safely into Ven like water into a drain—slammed back into Taro's own nervous system. *GROUND_LOST.* Voltage spiked, his neural load hitting one hundred and forty percent as the stability index plummeted. SDI: 0.99, HIQ: 0.99. Phase Drift Coefficient: 0.85.
+Ven's processing logic hesitated for exactly 0.8 seconds, then he violently disengaged physical contact with Taro's arm. 
 
-Taro grabbed the silver ring around his neck. The Voss-issued limiter. It burned hot. The metal warped under the thermal load of his internal signal. It smelled like burning hair. He didn't care. He dug his fingers under the rim, ignoring the hardware warranty warnings and administrative alerts flaring in his vision. *TAMPER_DETECTED. WARRANTY_VOID.*
+*SNAP.* 
 
-He pulled. *CRACK.* The ring snapped. The white light of the C-Order vanished.
+The hardline connection severed. The safety net vanished entirely. 
+The High Register oscillation—which had been flowing safely into Ven's capacity like a river into a reservoir—slammed catastrophically back into Taro's own isolated nervous system. 
 
-And the noise... the noise was beautiful. *LIMITER: REMOVED.* Neural dampening hit zero percent as his output became unbounded. System overclocking active, peak energy surging to one hundred and twenty percent.
+> `ERROR: GROUND_LOST`
+> `VOLTAGE: MAXIMUM_SPIKE`
 
-Taro screamed. It wasn't a human scream. It was a raw, analog feedback loop amplified by bio-plasma. A total gain-override shattering the local keyspace. In that moment, he wasn't a student or a Siege Breaker; he was a flaw in the composition refusing to be tuned.
+His neural load instantaneously hit one hundred and forty percent. His stability index plummeted off the measurable scale. 
 
-It was a [[Breach::A catastrophic event where the boundaries of the digital world are torn apart by raw and unfiltered reality, leaving nothing but a screaming void.]] . A massive, jagged, golden sawtooth wave erupted from his body. It looked like a 4K texture torn from a low-poly mesh. It hit the Silence Field like a power-grid exploding.
+> `TARO_METRICS: SDI 0.99 // HIQ 0.99`
+> `PHASE_DRIFT: 0.85 [SEVERE]`
+
+Taro grasped the silver hardware ring locked around his cervical spine. The Voss-issued limiter. 
+It registered as thermally hazardous. The metal alloy was physically warping under the massive thermal load of his internal signal attempting to breach containment. 
+
+Olfactory sensors logged the scent of combusting keratin and synthetic skin. He did not abort the action. He forced his digits beneath the rim, actively ignoring the frantic hardware warranty warnings and administrative C-Order alerts flooding his visual layer. 
+
+> `TAMPER_DETECTED: YES`
+> `WARRANTY: VOID`
+> `AUTHORITY: OVERRIDDEN`
+
+He pulled. 
+
+*CRACK.* 
+
+The limiter ring snapped. The clinical white light of the C-Order vanished from his aura.
+
+And the resulting noise... 
+The noise was mathematically beautiful. 
+
+> `LIMITER: REMOVED`
+> `NEURAL_DAMPING: 0.00%`
+
+His output became completely unbounded. System overclocking engaged automatically, his peak energy pushing past one hundred and twenty percent and climbing logarithmically.
+
+Taro utilized his vocal chords. It did not register as a human scream. It was a raw, analog, localized feedback loop amplified by unregulated bio-plasma. A total gain-override built to shatter the local keyspace. 
+In that microsecond, he was not a registered student. He was not a Vanguard Siege Breaker. He was a fundamental flaw in the universal composition refusing to accept tuning.
+
+<aside>
+<details>
+<summary><strong>SUBJECT: Breach</strong></summary>
+<blockquote>
+<strong>Observation:</strong> A catastrophic event where the boundaries of the digital world are torn apart by raw and unfiltered reality, leaving nothing but a screaming void.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+It was a full systemic Breach. 
+A massive, jagged, golden sawtooth wave erupted from his physical coordinates. Visually, it manifested like a hyper-dense 4K texture violently torn from a low-poly foundational mesh. It impacted the Silence Field like a localized power-grid detonation.
 
 *SHATTER.*
 
-The Dead Zone broke. The Silence agents didn't just flinch. They were thrown. The physical force of the sound wave lifted them off the ground and slammed them into the brickwork. The black mold on the walls disintegrated. The pavement cracked in a spiderweb pattern. *PHYSICS_ENGINE: OVERWRITE.* Environmental parameters rewritten by his presence alone, a dominant high-pitch resonance overflowing the system's ability to calculate.
+The Dead Zone broke. 
+The Silence agents did not merely flinch. They were subjected to massive kinetic displacement. The physical force of Taro's uncompressed sound wave lifted their mass off the pavement and slammed them into the structural brickwork. 
 
-Taro stood in the center of the vortex. His vision was melting. Literally. The world wasn't just losing its overlay; it lost cohesion. The geometry of the alleyway unspooled. The brickwork didn't crumble; it pixelated into raw, unformatted data.
+The black mold on the walls instantly disintegrated into dust. The physical pavement cracked in a chaotic, non-repeating spiderweb pattern. 
 
-*CRITICAL_FAILURE: RENDER_THREAD_EXCEPTION.* Graphics memory exhausted, the reality rendering halting completely. His graphics driver was not found.
+> `PHYSICS_ENGINE: OVERWRITE_IMMINENT`
 
-He looked at Hana. She wasn't a girl anymore. She was a cloud of biological probabilities, a terrifying smear of motion without definition. He looked at Ven. Ven was a towering pillar of thermal gradients, devoid of human shape. He looked at his hands. They weren't hands anymore. Just... uninitialized input. Raw, undefined interaction points flickering with missing texture flags. His Score port hadn't just crashed. It stopped interpreting the universe. The Score was dead. *SHUTDOWN_SEQUENCE: IRREVERSIBLE.* Core logic collapsing, a null pointer exception flaring in his mind as the system state failed.
+Environmental parameters were being actively rewritten by his sheer presence. The dominant high-pitch resonance immediately overflowed the local system's ability to calculate reality.
 
-The world dissolved. Not into silence. Into noise.
+Taro stood at the epicenter of the acoustic vortex. 
+His visual rendering was actively melting. The localized world was not merely losing its AR overlay; it was losing foundational cohesion. The geometry of the alleyway unspooled. The brickwork did not crumble; it pixelated violently back into raw, unformatted hexadecimal data.
 
-The last thing Taro saw before his mind collapsed was the sky. The "golden sky" of Sector 4 didn't tear open. It simply ceased to render. The texture map vanished, revealing the raw geometry of the abyss. And behind it, there was no grey rain. There were no clouds. No atmosphere. There was only the screaming abyss of un-tuned reality. A vast, non-Euclidean static defying depth, color, and logic. An analog hell of raw probability. It wasn't the "real world." It was the source code.
+> `CRITICAL_FAILURE: RENDER_THREAD_EXCEPTION`
 
-*KERNEL_PANIC: REALITY_NOT_FOUND.* Critical exception at address 0x00000000. System halt.
+Graphics memory was fully exhausted. Reality rendering halted completely. The local graphics driver could not be located.
+
+He observed Hana. She no longer rendered as a human female. She was reduced to a cloud of biological probabilities, a terrifying smear of kinetic motion without defined geometric borders. 
+He observed Ven. Ven registered as a towering, indistinct pillar of thermal gradients, utterly devoid of humanoid shape. 
+He observed his own hands. They were no longer appendages. They were uninitialized input vectors. Raw, undefined interaction points rapidly flickering with missing texture flags. 
+
+The internal Score port had not merely crashed. It had ceased to interpret the known universe. 
+
+The Score was dying. 
+
+> `SHUTDOWN_SEQUENCE: IRREVERSIBLE`
+> `CORE_LOGIC: COLLAPSING`
+
+A brutal null pointer exception flared in his cognitive centers as the global system state failed completely.
+
+The rendered world dissolved. Not into silence. Into unformatted noise.
+
+The final visual data Taro processed before his cognitive functions collapsed was the skybox. The "golden sky" of Sector 4 did not tear open. It simply ceased to execute. The texture map vanished entirely, revealing the raw operational geometry of the abyss. 
+
+And behind the texture, there was no simulated grey rain. There were no volumetric clouds. No atmospheric density. 
+There was exactly one thing: the screaming abyss of un-tuned reality. A vast, non-Euclidean static defying depth parameters, color gradients, and foundational logic. An analog hell of raw, terrifying probability. 
+It was not the "real world." It was the source code.
+
+> `KERNEL_PANIC: REALITY_NOT_FOUND`
+> `CRITICAL_EXCEPTION_AT: 0x00000000`
+> `SYSTEM: HALTED`
 
 ---
 
-**END PHASE III**
+**> [SYSTEM: FATAL ERROR]**
+**> [CORE DUMP INITIATED...]**
+**> END PHASE III**
