@@ -29,8 +29,10 @@
       --bg: #F4F0EB;
       --text: #1A1A1A;
       --text-dim: #666666;
+      --accent: #008899;
+      --accent-dim: rgba(0, 136, 153, 0.1);
       --wave-color: rgba(0,0,0,0.06);
-      --ui-bg: rgba(244, 240, 235, 0.92);
+      --ui-bg: rgba(244, 240, 235, 0.95);
       --ui-border: rgba(0,0,0,0.1);
     }
 
@@ -111,6 +113,15 @@
     .hud-bar { width: 60px; height: 2px; background: var(--ui-border); position: relative; }
     .hud-bar-fill { position: absolute; top: 0; left: 0; height: 100%; background: var(--accent); transition: width 0.3s, background 0.3s; }
     .hud-bar-fill.danger { background: var(--danger); }
+
+    /* Audio HUD Visualizer */
+    .hud-drone-status { color: var(--accent); font-weight: 700; text-transform: uppercase; }
+    .hud-viz { display: flex; align-items: flex-end; gap: 2px; height: 10px; margin-left: 5px; }
+    .hud-viz-bar { width: 2px; background: var(--accent); opacity: 0.6; }
+    .hud-viz-bar.active { animation: hudViz 0.4s infinite alternate; }
+    @keyframes hudViz { 0% { height: 20%; opacity: 0.3; } 100% { height: 100%; opacity: 0.8; } }
+    .hud-viz-bar:nth-child(2) { animation-delay: 0.1s; }
+    .hud-viz-bar:nth-child(3) { animation-delay: 0.2s; }
 
     #vignette { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5; transition: background 0.6s ease, box-shadow 1s; }
     
@@ -319,6 +330,30 @@
       50%       { opacity: 0.08; }
     }
 
+    /* ——— Light Mode Render Profiles ——— */
+    body[data-theme="light"].render-standard {
+      --bg: #FDFBF7; --text: #2A261F; --text-dim: #7A7265;
+      --accent: #9B7E23; --danger: #D62850;
+      --wave-color: rgba(155,126,35,0.12);
+      --ui-border: rgba(155,126,35,0.2);
+    }
+    body[data-theme="light"].render-hifi {
+      --bg: #F0F8FF; --text: #003344; --text-dim: #447788;
+      --accent: #008899; --danger: #CC0033;
+      --wave-color: rgba(0,136,153,0.15);
+    }
+    body[data-theme="light"].render-safe {
+      --bg: #E8F0F8; --text: #113366; --text-dim: #446699;
+      --accent: #1155AA; --danger: #CC3344;
+      --wave-color: rgba(17,85,170,0.15);
+      --ui-border: rgba(17,85,170,0.25);
+    }
+    body[data-theme="light"].render-void {
+      --bg: #EEEDED; --text: #333333; --text-dim: #777777;
+      --accent: #5A009D; --danger: #AA0022;
+      --wave-color: rgba(90,0,157,0.2);
+    }
+
     /* SPEC 08: Typographic disruption — emotional readout via text rendering */
 
     /* STATE B elevated — slight tracking increase on body text */
@@ -486,10 +521,20 @@
         <div class="hud-line">
           <span id="hud-section" style="color: var(--accent);">INITIALIZING...</span>
         </div>
+        <div class="hud-line" id="hud-drone-line">
+          <span>DRONE</span>
+          <div class="hud-viz">
+            <div class="hud-viz-bar"></div><div class="hud-viz-bar"></div><div class="hud-viz-bar"></div>
+          </div>
+          <span class="hud-drone-status" id="hud-drone-val">OFFLINE</span>
+        </div>
       </div>
     </div>
     <div class="ui-bottom">
-      <button onclick="toggleTheme()">[ INVRT ]</button>
+      <div style="display: flex; gap: 0.5rem;">
+        <button id="audio-toggle" onclick="audioEngine.toggle()">[ AUDIO: OFF ]</button>
+        <button onclick="toggleTheme()">[ INVRT ]</button>
+      </div>
       <select id="chapter-selector" onchange="window.engine.jumpToChapter(this.value)">
         <option value="ch1">CH.01 -- THE ZAP</option>
         <option value="ch2">CH.02 -- THE ASSESSMENT</option>
@@ -2494,15 +2539,23 @@ function scrambleText(el, html, dur) {
 
 function updateVignette(coh) {
   const v = document.getElementById('vignette'); if (!v) return;
+  const isLight = document.body.getAttribute('data-theme') === 'light';
   const intensity = Math.pow(1 - coh, 2.2); const clear = 35 + coh * 35;
-  v.style.background = `radial-gradient(ellipse at center, transparent ${clear}%, rgba(0,0,0,${intensity * 0.95}) 100%)`;
+  const color = isLight ? `244,240,235` : `0,0,0`;
+  v.style.background = `radial-gradient(ellipse at center, transparent ${clear}%, rgba(${color},${intensity * 0.95}) 100%)`;
 }
 
 function updateAmbientGlow(vol) {
   const s = document.getElementById('stage'); if (!s) return;
   if (vol < 0.2) { s.style.setProperty('--ambient', 'transparent'); return; }
+  const isLight = document.body.getAttribute('data-theme') === 'light';
   const b = Math.max(0, (vol - 0.75) / 0.25);
-  const r = Math.round(b * 255); const g = Math.round(243 - b * 200); const bl = Math.round(255 - b * 220);
+  let r, g, bl;
+  if (isLight) {
+    r = Math.round(b * 244 + (1-b)*0); g = Math.round(b * 240 + (1-b)*136); bl = Math.round(b * 235 + (1-b)*153);
+  } else {
+    r = Math.round(b * 255); g = Math.round(243 - b * 200); bl = Math.round(255 - b * 220);
+  }
   s.style.setProperty('--ambient', `rgba(${r},${g},${bl}, ${Math.min(1, (vol-0.2)/0.8) * 0.35})`);
 }
 
@@ -2547,7 +2600,10 @@ function drawWaveform(time) {
 
 // SPEC 05: Surveillance Cursor
 function buildCursorSVG(surveillanceLevel) {
-  const baseColor = surveillanceLevel < 0.5 ? '%2300f3ff' : '%23ff3366';
+  const isLight = document.body.getAttribute('data-theme') === 'light';
+  const accent = isLight ? '%23008899' : '%2300f3ff';
+  const danger = isLight ? '%23CC0033' : '%23ff3366';
+  const baseColor = surveillanceLevel < 0.5 ? accent : danger;
   const size = 24; const cx = size / 2;
   let rings = '';
   if (surveillanceLevel > 0.4) rings += `<circle cx='${cx}' cy='${cx}' r='7' fill='none' stroke='${baseColor}' stroke-width='1' opacity='0.7'/>`;
@@ -2573,9 +2629,10 @@ function triggerChapterFlash() {
     Object.assign(o.style, { position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: '#4488ff', opacity: 0, pointerEvents: 'none', zIndex: 900 }); 
     document.body.appendChild(o); 
   }
-  o.style.background = '#4488ff';
+  const isLight = document.body.getAttribute('data-theme') === 'light';
+  o.style.background = isLight ? '#4488ff' : '#4488ff'; // Could be different if needed
   o.style.transition = 'opacity 0.05s ease-in'; 
-  o.style.opacity = 0.3; 
+  o.style.opacity = isLight ? 0.15 : 0.3; 
   setTimeout(() => { 
     document.body.classList.remove('wireframe-mode');
     o.style.transition = 'opacity 0.4s ease-out'; 
@@ -2691,26 +2748,67 @@ function triggerSystemCrash() {
 // ============================================================
 class AudioEngine {
   constructor() {
-    this.ctx = null;          // AudioContext - created on first interaction
-    this.masterGain = null;   // Master volume node
-    this.droneOsc = null;     // Primary oscillator node
-    this.droneGain = null;    // Per-drone gain node
-    this.noiseNode = null;    // BufferSourceNode for noise/crackle types
-    this.currentType = null;  // Track current drone type to avoid restarts
-    this.ready = false;       // True after user gesture unlocks AudioContext
+    this.ctx = null;          
+    this.masterGain = null;   
+    this.droneOsc = null;     
+    this.droneGain = null;    
+    this.noiseNode = null;    
+    this.currentType = null;  
+    this.currentConfig = null; // Store last config for resume
+    this.ready = false;       
+    this.enabled = true;       // Enabled by default once initialized
   }
 
-  // Call once on first user interaction
   init() {
     if (this.ready) return;
-    this.ctx = new (window.AudioContext || window.webkitAudioContext)();
-    this.masterGain = this.ctx.createGain();
-    this.masterGain.gain.value = 0.7; // Overall ambient volume ceiling
-    this.masterGain.connect(this.ctx.destination);
-    this.ready = true;
+    try {
+      this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+      this.masterGain = this.ctx.createGain();
+      this.masterGain.gain.value = 0.7;
+      this.masterGain.connect(this.ctx.destination);
+      this.ready = true;
+      this.updateUI();
+    } catch(e) { console.error("Audio init failed", e); }
   }
 
-  // Generate white noise buffer for crackle/static types
+  toggle() {
+    if (!this.ready) { this.init(); }
+    this.enabled = !this.enabled;
+    if (!this.enabled) {
+      this._fadeOut();
+    } else if (this.currentConfig) {
+      this._startDrone(this.currentConfig);
+    }
+    this.updateUI();
+  }
+
+  updateUI() {
+    const statusEl = document.getElementById('hud-drone-val');
+    const toggleBtn = document.getElementById('audio-toggle');
+    const vizBars = document.querySelectorAll('.hud-viz-bar');
+    
+    if (!this.ready) {
+      if (statusEl) statusEl.textContent = 'OFFLINE';
+      if (toggleBtn) toggleBtn.textContent = '[ AUDIO: OFF ]';
+      vizBars.forEach(b => b.classList.remove('active'));
+      return;
+    }
+
+    if (!this.enabled) {
+      if (statusEl) statusEl.textContent = 'PAUSED';
+      if (toggleBtn) toggleBtn.textContent = '[ AUDIO: OFF ]';
+      vizBars.forEach(b => b.classList.remove('active'));
+    } else {
+      if (statusEl) statusEl.textContent = (this.currentType || 'IDLE').toUpperCase();
+      if (toggleBtn) toggleBtn.textContent = '[ AUDIO: ON ]';
+      if (this.currentType && this.currentType !== 'silence') {
+        vizBars.forEach(b => b.classList.add('active'));
+      } else {
+        vizBars.forEach(b => b.classList.remove('active'));
+      }
+    }
+  }
+
   _createNoiseBuffer() {
     const bufferSize = this.ctx.sampleRate * 2;
     const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
@@ -2719,48 +2817,47 @@ class AudioEngine {
     return buffer;
   }
 
-  // Apply a biquad lowpass to shape noise into crackle character
   _createCrackleFilter() {
     const filter = this.ctx.createBiquadFilter();
-    filter.type = 'lowpass';
-    filter.frequency.value = 800;
-    filter.Q.value = 0.5;
+    filter.type = 'lowpass'; filter.frequency.value = 800; filter.Q.value = 0.5;
     return filter;
   }
 
-  // Main method: called by NarrativeState.update() on chapter change
   setDrone(droneConfig) {
+    this.currentConfig = droneConfig;
     if (!this.ready || !droneConfig) return;
-    if (droneConfig.type === this.currentType) return; // No restart if same type
+    if (droneConfig.type === this.currentType) return;
     this.currentType = droneConfig.type;
 
-    // Gracefully fade out current drone over 2 seconds
-    this._fadeOut(() => this._startDrone(droneConfig));
+    if (this.enabled) {
+      this._fadeOut(() => this._startDrone(droneConfig));
+    } else {
+      this.updateUI();
+    }
   }
 
   _fadeOut(callback) {
     if (this.droneGain) {
-      // Use setTargetAtTime directly to avoid breaking inside browsers strictly enforcing rules
       this.droneGain.gain.setTargetAtTime(0, this.ctx.currentTime, 0.5);
     }
     setTimeout(() => {
-      // Stop and disconnect existing nodes
       if (this.droneOsc) { try { this.droneOsc.stop(); } catch(e){} this.droneOsc = null; }
       if (this.noiseNode) { try { this.noiseNode.stop(); } catch(e){} this.noiseNode = null; }
       if (callback) callback();
     }, 2000);
   }
 
-  _startDrone({ type, baseFreq, gain, detune = 0 }) {
-    // 'silence' type: just fade out, don't start new source
-    if (type === 'silence') return;
+  _startDrone(config) {
+    if (!this.enabled || config.type === 'silence') { 
+      this.updateUI();
+      return; 
+    }
 
     this.droneGain = this.ctx.createGain();
-    this.droneGain.gain.value = 0; // Start silent, fade in
+    this.droneGain.gain.value = 0;
     this.droneGain.connect(this.masterGain);
 
-    if (type === 'crackle' || type === 'noise') {
-      // Noise-based source
+    if (config.type === 'crackle' || config.type === 'noise') {
       this.noiseNode = this.ctx.createBufferSource();
       this.noiseNode.buffer = this._createNoiseBuffer();
       this.noiseNode.loop = true;
@@ -2769,23 +2866,21 @@ class AudioEngine {
       filter.connect(this.droneGain);
       this.noiseNode.start();
     } else {
-      // Oscillator-based source (sine | sawtooth)
       this.droneOsc = this.ctx.createOscillator();
-      this.droneOsc.type = type;
-      this.droneOsc.frequency.value = baseFreq;
-      if (detune) this.droneOsc.detune.value = detune * 100; // cents
+      this.droneOsc.type = config.type;
+      this.droneOsc.frequency.value = config.baseFreq;
+      if (config.detune) this.droneOsc.detune.value = config.detune * 100;
       this.droneOsc.connect(this.droneGain);
       this.droneOsc.start();
     }
 
-    // Fade in over 3 seconds
-    this.droneGain.gain.setTargetAtTime(gain, this.ctx.currentTime, 1.0);
+    this.droneGain.gain.setTargetAtTime(config.gain, this.ctx.currentTime, 1.0);
+    this.updateUI();
   }
 }
 
 const audioEngine = new AudioEngine();
 
-// Unlock audio on first scroll or click (browser autoplay policy)
 const unlockAudio = () => {
   audioEngine.init();
   window.removeEventListener('scroll', unlockAudio);
