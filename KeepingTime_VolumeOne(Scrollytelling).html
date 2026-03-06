@@ -55,8 +55,9 @@
       transition: background 0.5s, color 0.5s;
     }
 
-    #progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 9999; background: transparent; }
-    #progress-bar { height: 100%; width: 100%; background: linear-gradient(90deg, var(--accent), var(--danger)); transform-origin: left; transform: scaleX(0); box-shadow: 0 0 15px var(--accent); }
+    /* SPEC 04: Replace old #progress-bar rules */
+    #progress-container { position: fixed; top: 0; left: 0; width: 100%; z-index: 9999; }
+    #progress-wave { overflow: visible; filter: drop-shadow(0 0 3px var(--accent)); }
 
     #scroll-machine { position: relative; width: 100%; }
     #stage {
@@ -133,6 +134,39 @@
     #scroll-hint { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); color: var(--accent); font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; z-index: 50; transition: opacity 0.6s; text-shadow: 0 0 10px var(--accent); animation: bounceHint 2.2s infinite; display: flex; align-items: center; gap: 0.5rem; }
     #scroll-hint.hidden { opacity: 0; pointer-events: none; }
     @keyframes bounceHint { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(10px); } }
+
+    /* SPEC 09 Expansion: System Messages and Lore Tooltips */
+    .format-system {
+      font-family: var(--font-mono);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-left: 2px solid var(--accent);
+      padding-left: 1rem;
+      margin: 1rem 0;
+      opacity: 0.9;
+    }
+    
+    .lore-epigraph {
+      font-style: italic;
+      color: var(--text-dim);
+      border-left: 1px solid var(--accent);
+      padding: 1rem 1.5rem;
+      margin: 2.5rem 0;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 0 8px 8px 0;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .lore-epigraph strong { color: var(--text); }
+    .lore-epigraph .lore-source {
+      display: block; 
+      margin-top: 1rem; 
+      font-family: var(--font-mono); 
+      font-size: 0.75rem; 
+      color: var(--accent); 
+      text-transform: uppercase; 
+      letter-spacing: 0.1em;
+    }
 
     /* ============================================================
        RESPONSIVE DESIGN (Mobile Friendly)
@@ -211,10 +245,210 @@
       #ui-layer { display: none; }
       #beat-container { min-height: 80vh; }
     }
+
+    /* SPEC 02: Silence lock screen */
+    #silence-lock {
+      position: fixed; inset: 0; z-index: 5000;
+      background: #000;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.8s ease;
+      font-family: var(--font-mono);
+    }
+    #silence-lock.active { opacity: 1; pointer-events: all; }
+    #silence-lock-text {
+      color: var(--danger); font-size: 0.85rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      text-align: center; line-height: 2.5;
+    }
+    #silence-lock-bar {
+      width: 0; height: 1px; background: var(--danger);
+      margin-top: 2rem;
+      transition: width 4s linear; /* Matches lock duration */
+    }
+    #silence-lock.active #silence-lock-bar { width: 200px; }
+
+    /* SPEC 03: Render Mode Palettes
+       Applied as body class: body.render-standard | render-hifi | render-safe | render-void */
+
+    /* STANDARD (C-Order) — Default. Gold warmth. Marble perfection. */
+    body.render-standard {
+      --bg: #0A0A0C; --text: #EAEAEA; --text-dim: #888888;
+      --accent: #c8a84b; --danger: #ff3366;
+      --wave-color: rgba(200,168,75,0.08);
+      --ui-border: rgba(200,168,75,0.15);
+    }
+
+    /* HI-FI — Overclocked. Too much information. Cyan overload. */
+    body.render-hifi {
+      --bg: #030508; --text: #f0f8ff; --text-dim: #6090b0;
+      --accent: #00f3ff; --danger: #ff3366;
+      --wave-color: rgba(0,243,255,0.1);
+    }
+    body.render-hifi #scroll-machine {
+      filter: contrast(1.08) saturate(1.1);
+    }
+
+    /* SAFE MODE (BIOS) — Stripped. Blueprint world. Cold. */
+    body.render-safe {
+      --bg: #02080F; --text: #4488ff; --text-dim: #224488;
+      --accent: #4488ff; --danger: #ff4466;
+      --wave-color: rgba(68,136,255,0.1);
+      --ui-border: rgba(68,136,255,0.2);
+    }
+
+    /* VOID — Render failure. Purple-black checkerboard signature. */
+    body.render-void {
+      --bg: #000000; --text: #c0c0c0; --text-dim: #505050;
+      --accent: #7b00d4; --danger: #ff0044;
+      --wave-color: rgba(123,0,212,0.15);
+    }
+    /* Void adds noise texture via pseudo-element */
+    body.render-void::before {
+      content: '';
+      position: fixed; inset: 0; z-index: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      opacity: 0.12;
+      animation: voidFlicker 0.08s infinite;
+    }
+    @keyframes voidFlicker {
+      0%, 100% { opacity: 0.12; }
+      50%       { opacity: 0.08; }
+    }
+
+    /* SPEC 08: Typographic disruption — emotional readout via text rendering */
+
+    /* STATE B elevated — slight tracking increase on body text */
+    #beat-container.state-elevated .sentence:not(.format-system) {
+      letter-spacing: 0.01em;
+      transition: letter-spacing 0.8s ease;
+    }
+
+    /* STATE C overload — text starts to fragment */
+    #beat-container.state-overload .sentence:not(.format-system):not(.active) {
+      letter-spacing: 0.04em;
+      opacity: 0.6;
+      transition: letter-spacing 0.4s ease, opacity 0.4s ease;
+    }
+    /* Active (focused) sentence remains readable even in overload */
+    #beat-container.state-overload .sentence.active {
+      letter-spacing: 0em;
+    }
+
+    /* VOID state — text barely holds together */
+    #beat-container.state-void .sentence:not(.active) {
+      letter-spacing: 0.08em;
+      opacity: 0.35;
+      filter: blur(0.5px);
+    }
+    #beat-container.state-void .sentence.active {
+      letter-spacing: 0.02em;
+      opacity: 0.9;
+    }
+
+    /* Incomplete fragment trail — applies to sentences ending in em-dash or ellipsis */
+    /* Tag these in HTML with data-fmt="fragment" */
+    .format-fragment {
+      opacity: 0.7;
+      letter-spacing: 0.06em;
+      font-style: italic;
+      color: var(--text-dim);
+    }
+    .format-fragment::after {
+      content: '—';
+      opacity: 0.4;
+      animation: fragmentPulse 2s infinite;
+    }
+    @keyframes fragmentPulse {
+      0%, 100% { opacity: 0.4; }
+      50%       { opacity: 0.1; }
+    }
+
+    /* SPEC 09: In-world document epigraph styling */
+    .format-epigraph {
+      font-family: var(--font-mono); font-size: 0.78rem;
+      color: var(--text-dim); border-left: 2px solid var(--text-dim);
+      padding: 1rem 1.5rem; margin-bottom: 0.5rem; line-height: 1.8;
+      opacity: 0.75; letter-spacing: 0.02em;
+    }
+    .format-epigraph .epigraph-source {
+      display: block; margin-top: 0.75rem; font-size: 0.7rem; color: var(--accent);
+      opacity: 0.6; letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .sentence.active.format-epigraph {
+      border-left-color: var(--accent); opacity: 1; transition: opacity 1.2s ease, border-left-color 0.5s ease;
+    }
+
+    /* SPEC 10: Second-person void intrusion — used ONCE in ch10 */
+    .format-void-break {
+      font-family: var(--font-body);
+      font-style: italic;
+      color: var(--text);
+      letter-spacing: 0.03em;
+      border-left: none !important;
+      padding-left: 0 !important;
+      text-indent: 0;
+    }
+    .sentence.format-void-break + .sentence { margin-top: 1rem; }
+
+    /* SPEC 11: Palimpsest — the accumulated reading history */
+    #palimpsest-layer {
+      position: fixed;
+      left: 0; top: 0;
+      width: 180px; height: 100vh;
+      pointer-events: none;
+      z-index: 2;
+      overflow: hidden;
+    }
+    .palimpsest-ghost {
+      position: absolute;
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--accent);
+      opacity: 0.06;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      pointer-events: none;
+      transition: opacity 0.5s ease;
+    }
+    #palimpsest-layer.void-glitch .palimpsest-ghost {
+      opacity: 0.25;
+      animation: ghostGlitch 0.15s infinite;
+      color: var(--danger);
+    }
+    @keyframes ghostGlitch {
+      0%   { transform: translateX(0); }
+      25%  { transform: translateX(-3px); }
+      75%  { transform: translateX(3px); }
+      100% { transform: translateX(0); }
+    }
   </style>
 </head>
 <body>
-  <div id="progress-container"><div id="progress-bar"></div></div>
+  <!-- SPEC 04: Waveform Progress Bar -->
+  <div id="progress-container">
+    <svg id="progress-wave" width="100%" height="20" preserveAspectRatio="none"
+         style="position:fixed;top:0;left:0;z-index:9999;pointer-events:none;">
+      <defs>
+        <clipPath id="progress-clip">
+          <rect id="progress-clip-rect" x="0" y="0" width="0%" height="20"/>
+        </clipPath>
+      </defs>
+      <path id="progress-wave-path" clip-path="url(#progress-clip)"
+            fill="none" stroke-width="1.5"
+            stroke="url(#progress-gradient)"/>
+      <defs>
+        <linearGradient id="progress-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="var(--accent)"/>
+          <stop offset="100%" stop-color="var(--danger)"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
   <div id="scroll-machine">
     <div id="stage">
       <canvas id="wave-bg"></canvas>
@@ -278,6 +512,7 @@
     </div>
   </div>
   <div id="fragment-container"></div>
+  <div id="palimpsest-layer"></div>
   <div id="crash-overlay"></div>
   <div id="crash-message">
     > SYSTEM_CRASH [UNRECOVERABLE]<br>
@@ -290,7 +525,7 @@
 <div class="chapter" id="ch1">
 <h3>Chapter 1: The Zap</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">INCIDENT CLASSIFICATION: Spontaneous Resonance Discharge events above<br>100% rated output are designated Class-Ω Anomalies. All witnesses are<br>required to submit to mandatory memory indexing within 6 hours.<br>The sector will be repainted within 48 hours.<br>There was no incident.<br>— <em>G-Vanguard Field Protocol, Directive 7-ZETA</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">INCIDENT CLASSIFICATION: Spontaneous Resonance Discharge events above<br>100% rated output are designated Class-Ω Anomalies. All witnesses are<br>required to submit to mandatory memory indexing within 6 hours.<br>The sector will be repainted within 48 hours.<br>There was no incident.<br>— <em>G-Vanguard Field Protocol, Directive 7-ZETA</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: SECTOR 7-C CALIBRATION HALL</strong><br><strong>FIDELITY: STANDARD</strong><br><strong>STATUS: CONNECTED</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The subject experienced a localized neural event.</p>
@@ -298,7 +533,11 @@
 <p data-vol="0.25" data-coh="0.8">`SYSTEM_ALERT: ELECTRICAL_DISCHARGE [LOCATION: GUSTATORY_CORTEX] [THRESHOLD: 4.2mA]`</p>
 <p data-vol="0.25" data-coh="0.8">Four point two. High enough to scorch the receptors. It was fine. He was logging it.</p>
 <p data-vol="0.25" data-coh="0.8">The system initiated a mandatory hardware handshake. The subject, Nishimura Taro, possessed a processing capacity insufficient for immediate integration. The system did not request participation; it enforced alignment. The root priority request engaged. The subject's nervous system seized. The local grid rejected his presence vector. His heartbeat fell out of phase, the physical world stuttering before neural transmission completed.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Neural-Acoustic Interface</strong></summary><br><blockquote><br><strong>Observation:</strong> A direct neural link so fast it feels like your own thoughts are dropping frames.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Neural-Acoustic Interface</strong><br>
+<strong>Observation:</strong> A direct neural link so fast it feels like your own thoughts are dropping frames. The C-Order relies on this high-bandwidth connection to enforce near-instantaneous behavioral regulation, turning human consciousness into an auditable data stream.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">Then, the crash.</p>
 <p data-vol="0.25" data-coh="0.8">The subject's optic feed rebooted. The environment rendered. Reality was no longer physical; it was a shared architecture managed by a strict rule set.</p>
 <p data-vol="0.25" data-coh="0.8">The resulting geometry was elegant.</p>
@@ -309,12 +548,20 @@
 <p data-vol="0.25" data-coh="0.8">His heartbeat thumped against his ribs. He didn't just feel it. He saw it—a jagged yellow line pulsing in the corner of his eye.</p>
 <p data-vol="0.25" data-coh="0.8">The subject stood in the staff locker room of Sector 7-C Calibration Hall. To an unindexed citizen without a sync chip, it was a room with gray lockers and a flickering fluorescent light.</p>
 <p data-vol="0.25" data-coh="0.8">To the Score, it was a data stream.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: The Unindexed (Normals)</strong></summary><br><blockquote><br><strong>Observation:</strong> Disconnected. They live in a world of silence.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: The Unindexed (Normals)</strong><br>
+<strong>Observation:</strong> Disconnected. They live in a world of silence, immune to the Score's coercive beauty but permanently locked out of the city's rendered infrastructure. To be normal is to be functionally invisible.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">The ventilation system emitted a constant sequence at F-sharp. The environmental sensors registered ionized ozone and oxidized coffee compounds. In the corner, a junior technician struck his locker repeatedly. Not in anger. A rhythmic <em>thump-thump-click</em> to align the rusted tumblers with the room’s dominant frequency.</p>
 <p data-vol="0.25" data-coh="0.8">The light fixture emitted a dirty <strong>Hum</strong>. The lockers vibrated with <strong>Resonance: Steel</strong>, transferring kinetic energy to the subject's teeth upon proximity.</p>
 <p data-vol="0.25" data-coh="0.8">The door registered as a wall of red static. The system flagged an obstruction, a phase mismatch in the acoustic pattern. Access required the baseline—A-440 Standard Calibration Pulse—to verify clearance.</p>
 <p data-vol="0.25" data-coh="0.8">The subject swiped his damping bands across the sensor.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Damping Bands</strong></summary><br><blockquote><br><strong>Observation:</strong> The only things keeping his internal noise from screaming into the room.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Damping Bands</strong><br>
+<strong>Observation:</strong> The only things keeping his internal noise from screaming into the room. These restrictive coils act as hardware governors, forcibly compressing a citizen's natural resonance to comply with the mandated harmonic baseline.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8"><em>PING.</em></p>
 <p data-vol="0.25" data-coh="0.8">`PROCESS: GATEWAY_OPEN [PHASE_MATCH: SUCCESSFUL]`</p>
 <p data-vol="0.25" data-coh="0.8">The red static shifted into permissive green vectors. The door opened.</p>
@@ -355,7 +602,11 @@
 <p data-vol="0.25" data-coh="0.8">The incoming entity was failing.</p>
 <p data-vol="0.25" data-coh="0.8">A G-Vanguard soldier stumbled into the chamber. His vocalizations were erratic.<br>To the system, he was a cascade failure in progress.</p>
 <p data-vol="0.25" data-coh="0.8">His structural integrity was pixelating, separating from his anchor coordinates in real-time. A standard bio-plasma field was absent. The unit projected a storm of black and purple interference. The chemical olfactory sensors registered burning polymers and ozone.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Bio-Plasma</strong></summary><br><blockquote><br><strong>Observation:</strong> The soft ionic glow that tells the world your soul is still in sync.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Bio-Plasma</strong><br>
+<strong>Observation:</strong> The soft ionic glow that tells the world your soul is still in sync. It is the physical manifestation of biological energy converting into digital acoustic data, a visible metric of one's subservience to the Grid.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">The geometry of his flesh lagged behind his physical movement, smearing like a degraded video buffer. The carrier wave was fragmenting. Integrity hovered at forty-four percent. The subject experienced immediate vestibular rejection of the chaotic input. Biological desync was critical. The probability of a re-sync was zero.</p>
 <p data-vol="0.25" data-coh="0.8">The golden calibration wave of the room’s Middle C hit the soldier.<br>It shattered.</p>
 <p data-vol="0.25" data-coh="0.8">The physical result was catastrophic hardware rejection. The chaotic field impacted the hall's baseline. Hexagonal shards of virtual gold scattered into the void space. Nearby technicians fell to their knees as the interference administered a concussive force.</p>
@@ -386,7 +637,11 @@
 <p data-vol="0.25" data-coh="0.8">He did not scream. He did not shout. He pulsed.</p>
 <p data-vol="0.25" data-coh="0.8"><em>EXECUTE: PITCH_SHIFT.</em> He took the 261.63 Hz baseline and multiplied it by two, isolating the upper octave at 523.25 Hz.</p>
 <p data-vol="0.25" data-coh="0.8">A vertical column of pure Gold data erupted from his coordinates. It was solid. Absolute. A sawtooth wave that overwrote the local Key Signature.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Key Signature</strong></summary><br><blockquote><br><strong>Observation:</strong> The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Key Signature</strong><br>
+<strong>Observation:</strong> The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation. It is the mathematical cage that ensures social cohesion through enforced, absolute uniformity.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">The waves aligned in mathematically perfect constructive interference. The system registered the gain at +60dB. The amplitude peak completely bypassed his internal buffer limits. Four million joules of resonant energy were released in a single burst.</p>
 <p data-vol="0.25" data-coh="0.8">`LIMIT_ALERT: BASELINE: 440 Hz // CURRENT: 880 Hz // PHASE_DRIFT: 0.002`</p>
 <p data-vol="0.25" data-coh="0.8">For a localized duration of one frame, synchronization was achieved. The purple static aligned into a geometric structure.</p>
@@ -421,11 +676,15 @@
 <div class="chapter" id="ch2">
 <h3>Chapter 2: The Assessment</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Impedance Mismatch events between bonded citizens<br>are classified as a Class-2 Coherence Deviation. Families are advised<br>to schedule voluntary recalibration within 72 hours of symptom onset.<br>Failure to present constitutes a Drift Event under Article 9, §3.<br>— <em>C-Order Compliance Handbook, Vol. IV, §9.3</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Impedance Mismatch events between bonded citizens<br>are classified as a Class-2 Coherence Deviation. Families are advised<br>to schedule voluntary recalibration within 72 hours of symptom onset.<br>Failure to present constitutes a Drift Event under Article 9, §3.<br>— <em>C-Order Compliance Handbook, Vol. IV, §9.3</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: RECOVERY WARD [UNISON HALL]</strong><br><strong>FIDELITY: SAFE MODE</strong><br><strong>STATUS: CONNECTED</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The subject regained consciousness in the White Room. He was located in Unison Hall’s recovery ward, a secure containment sector integrated into the root of the grid. His personal system was locked in safe mode, operational protocols throttled to five percent capacity. A Level-5 damping field was active, suppressing local environmental signals until the noise floor dropped to -140dB.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Sensory Deprivation Chamber</strong></summary><br><blockquote><br><strong>Observation:</strong> A blank canvas forced over the senses, absorbing every sound and sight until you are nothing but a ghost in a white void.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Sensory Deprivation Chamber</strong><br>
+<strong>Observation:</strong> A blank canvas forced over the senses, absorbing every sound and sight until you are nothing but a ghost in a white void. Used by the authorities to manually wipe dissonant thoughts before they can propagate.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">The physical architecture was lined with acoustic foam designed to absorb 99.9% of all reflected sound. The visual feed was administratively overridden by a Privacy Mask—an infinitely rendering void of white pixels designed to lower the user's cognitive load.</p>
 <p data-vol="0.25" data-coh="0.8">It was a hard reset for the brain. A blank canvas forced over the senses. In the academies, students were instructed to breathe through the silence, to find a center when the world went dark. Civic hygiene.<br>Obviously it was just a way to be buried before you ceased processing.</p>
 <p data-vol="0.25" data-coh="0.8">The system registered the subject's intent to rotate his head. A physical damping collar corrected the motion with heavy mechanical resistance, administering a steady 4.2V charge. It was functioning at total resonance suppression, its active damping loop holding his baseline at flat zero.</p>
@@ -462,7 +721,11 @@
 <p data-vol="0.25" data-coh="0.8">`OPTION_A: REFORMAT`<br>`PROCEDURE: NEURAL_DAMPENING`<br>`OUTCOME: LISTENER [CLASS_1]`<br>`STATUS: APPROVED`</p>
 <p data-vol="0.25" data-coh="0.8">"We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again. You stay flat forever."</p>
 <p data-vol="0.25" data-coh="0.8">The subject analyzed the rendered text.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Reformat</strong></summary><br><blockquote><br><strong>Observation:</strong> The ultimate social hygiene—a clean and absolute deletion of the soul's ability to process its own noise.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Reformat</strong><br>
+<strong>Observation:</strong> The ultimate social hygiene—a clean and absolute deletion of the soul's ability to process its own noise. A fate worse than physical death, leaving behind a compliant biological drone entirely stripped of unique resonance.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">Systems-speak for a lobotomy. A clean wipe of the root drive.</p>
 <p data-vol="0.25" data-coh="0.8">`OPTION_B: INTEGRATION`<br>`PROCEDURE: TRANSFER [MALKUTH_ACADEMY]`<br>`OUTCOME: VANGUARD_CERTIFICATION`<br>`STATUS: HIGH_RISK`</p>
 <p data-vol="0.25" data-coh="0.8">"We utilize the noise," Voss said. "The Vanguard creates Siege Breakers. Units capable of generating high-amplitude dissonance for combat purposes. We take your wrong note... and we weaponize it. We teach you to carry load for the state."</p>
@@ -489,13 +752,17 @@
 <div class="chapter" id="ch3">
 <h3>Chapter 3: Modulation</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Environmental baseline degradation is permitted in<br>residential sectors designated Class-C. Citizens are advised to maintain<br>active internal damping loops to prevent Phase Drift.<br>— <em>C-Order Compliance Handbook, Vol. II, §4.1</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Environmental baseline degradation is permitted in<br>residential sectors designated Class-C. Citizens are advised to maintain<br>active internal damping loops to prevent Phase Drift.<br>— <em>C-Order Compliance Handbook, Vol. II, §4.1</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: SECTOR 7-C RESIDENTIAL [DEAD ZONE]</strong><br><strong>FIDELITY: DEGRADED</strong><br><strong>STATUS: ACTIVE</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The subject maintained position outside the residential unit door. He was located in Sector 7-C, a tier defined by low environmental fidelity and a constant, eighty-two percent probability of signal interference.</p>
 <p data-vol="0.25" data-coh="0.8">The local atmosphere was saturated with analog interference. The hallway rendered as dim and contaminated. To the system, it was a high-density particulate storm of stray radio waves, unshielded power coupling hums, and the jagged chatter of non-compliant hardware. The subject's HUD generated multiple proximity warnings—acoustic transparency restricted, connection latency at 150ms. Signal integrity was critical. Only fifteen percent of the carrier wave penetrated the local static.</p>
 <p data-vol="0.25" data-coh="0.8">The subject executed a repetitive kinetic sequence against his thigh. <em>Tap. Tap. Tap.</em></p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Somatic Calibration Loop</strong></summary><br><blockquote><br><strong>Observation:</strong> A physical mechanism to force the internal clock to sync when the external grid hitches.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Somatic Calibration Loop</strong><br>
+<strong>Observation:</strong> A physical mechanism to force the internal clock to sync when the external grid hitches. By manually engaging rhythmic muscle memory, operatives can stabilize their data throughput and withstand cognitive tearing.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">"Just get the bag," he whispered. His vocal output caught on the sawtooth oscillation of the background noise. "Get out. Stay flat."</p>
 <p data-vol="0.25" data-coh="0.8">He interacted with the lock. It was a Generation-1 contact plate, corroded and lacking optimization. It transmitted a suboptimal vibration validating worn-out condensers, then disengaged.</p>
 <p data-vol="0.25" data-coh="0.8">The interior environment registered lower coherence than the corridor.</p>
@@ -586,7 +853,7 @@
 <div class="chapter" id="ch4">
 <h3>Chapter 4: The Medium</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Academy Intake zones are designated High-Fidelity.<br>Non-compliant signatures will be subject to immediate error correction.<br>Variance from standard scheduling constitutes a procedural mismatch.<br>— <em>C-Order Compliance Handbook, Vol. III, §12.2</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Academy Intake zones are designated High-Fidelity.<br>Non-compliant signatures will be subject to immediate error correction.<br>Variance from standard scheduling constitutes a procedural mismatch.<br>— <em>C-Order Compliance Handbook, Vol. III, §12.2</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY INTAKE</strong><br><strong>FIDELITY: HI-FI [RENDER: 8K]</strong><br><strong>STATUS: CONNECTED</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The environmental data at Malkuth Academy did not merely register as clean. It registered as rendered. The subject's HUD confirmed coordination within an authorized High-Fidelity zone where reality resolution peaked at 8K. The system load was optimal, thermal efficiency running at a flawless ninety-eight percent, and the pixel pitch so finely compressed it functioned as a lossless optic lens.</p>
@@ -603,7 +870,11 @@
 <p data-vol="0.25" data-coh="0.8">The subject turned. The student managing the intake terminal exhibited an intimidating resonance signature.</p>
 <p data-vol="0.25" data-coh="0.8">Her waveform was a rigid square wave. The rise-time was instantaneous, entirely bypassing standard frequency transition delays. Her projected aura lacked the soft diffusion of standard bio-plasma. It was a geometric fortress. Vertical rises. Instant drops. Sharp 90-degree corners.</p>
 <p data-vol="0.25" data-coh="0.8">It cut through the ambient air with the efficiency of a razor blade.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Square Wave</strong></summary><br><blockquote><br><strong>Observation:</strong> A binary waveform where transitions between states occur with zero drift, leaving no room for nuance.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Square Wave</strong><br>
+<strong>Observation:</strong> A binary waveform where transitions between states occur with zero drift, leaving no room for nuance. It represents the Vanguard's ideal soldier: brutally efficient, utterly predictable, and rigidly adherent to the grid.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">"Name?" she repeated. The waveform of her vocal output drew a perfectly flat line.</p>
 <p data-vol="0.25" data-coh="0.8">"Taro Nishimura," he said. His voice fractured. The vowel structure cracked as his internal oscillator failed to sync with the local key signature.</p>
 <p data-vol="0.25" data-coh="0.8">`SYNC: FAILED [IMPEDANCE_MISMATCH]`</p>
@@ -639,7 +910,11 @@
 <p data-vol="0.25" data-coh="0.8">"Welcome," the Headmaster said. The textual data rendered in the subject's mind identically and simultaneously with the auditory impact.</p>
 <p data-vol="0.25" data-coh="0.8">`LATENCY: 0.0ms`</p>
 <p data-vol="0.25" data-coh="0.8">"You have entered the Medium," the Headmaster said. "Here... you are Architects. You do not consume signal."</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Architects</strong></summary><br><blockquote><br><strong>Observation:</strong> Users with direct reality-editing permissions.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Architects</strong><br>
+<strong>Observation:</strong> Users with direct reality-editing permissions. They don't just perceive the Score; they actively write the physical equations of the environment, shaping concrete and steel through pure acoustic mathematics.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">The Headmaster raised his hand. The entire structural Score of the room shifted.</p>
 <p data-vol="0.25" data-coh="0.8">`SCORE_PHYSICS: LOCAL_OVERRIDE`</p>
 <p data-vol="0.25" data-coh="0.8">A root-level modification of the environmental parameters executed. The gravitational downbeat rotated precisely ninety degrees. The physical sensation in the room fundamentally changed.</p>
@@ -654,7 +929,7 @@
 <div class="chapter" id="ch5">
 <h3>Chapter 5: The Sync Check</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Triad formations require a minimum baseline<br>compatibility of 95% among constituent nodes. Unauthorized testing<br>of volatile waveforms within Academy simulation parameters is<br>grounds for immediate system disconnection.<br>— <em>C-Order Compliance Handbook, Vol. III, §14.8</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Triad formations require a minimum baseline<br>compatibility of 95% among constituent nodes. Unauthorized testing<br>of volatile waveforms within Academy simulation parameters is<br>grounds for immediate system disconnection.<br>— <em>C-Order Compliance Handbook, Vol. III, §14.8</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY [SIMULATION SANDBOX]</strong><br><strong>FIDELITY: SAFE MODE</strong><br><strong>STATUS: ACTIVE</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">"Initialize," Hana commanded.</p>
@@ -664,7 +939,11 @@
 <p data-vol="0.25" data-coh="0.8">Hana initiated the team link request. The status held at pending as she attempted to synchronize three incompatible nodes.<br>She functioned as the root. Her algorithmic baseline was a perfect A-440 square wave at one hundred percent coherence.<br>Ven functioned as the sink. He was a low-impedance node projecting a 2.0 kW capacity, architecturally designed to absorb generated load.</p>
 <p data-vol="0.25" data-coh="0.8">And then there was Taro—the variable.<br>His frequency drifted. His sync registered as chronically unstable. His Harmonic Integrity Quotient logged a precarious 0.12, with the link drift hovering at a precise 0.02ms.</p>
 <p data-vol="0.25" data-coh="0.8">"Target is a simple C-Major Triad," Hana said. Her voice output was a perfect, rigid pulse, devoid of any emotional oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the Triad will stabilize. Don't run sharp, Taro. Stay flat."</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Triad</strong></summary><br><blockquote><br><strong>Observation:</strong> A tactical unit composed of three resonant frequencies that must move as one or shatter the local grid.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Triad</strong><br>
+<strong>Observation:</strong> A tactical unit composed of three resonant frequencies that must move as one or shatter the local grid. Finding the perfect harmonic balance between three distinct souls is the cornerstone of Vanguard offensive strategy.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">"The Fifth?" Taro asked.</p>
 <p data-vol="0.25" data-coh="0.8">`BIOMETRIC: HEART_RATE_SPIKE [118 BPM]`</p>
 <p data-vol="0.25" data-coh="0.8">"My frequency isn't fixed," he said. "I’m humming, Hana. I can’t help it."</p>
@@ -702,7 +981,11 @@
 <p data-vol="0.25" data-coh="0.8">Ven.</p>
 <p data-vol="0.25" data-coh="0.8">Ven did not initiate evasion protocols. He did not deploy a block. He maintained absolute physical stillness.</p>
 <p data-vol="0.25" data-coh="0.8">Ven was classified as a Sink.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Sink</strong></summary><br><blockquote><br><strong>Observation:</strong> A heavy-class resonator designed to act as a graveyard for excess energy, grounding the world's noise into silence.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Sink</strong><br>
+<strong>Observation:</strong> A heavy-class resonator designed to act as a graveyard for excess energy, grounding the world's noise into silence. Without a Sink to absorb the thermal runoff of high-amplitude combat, a fireteam would quickly boil themselves alive.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">His waveform was not a line; it functioned as a massive, low-frequency rolling wave. High capacity. Low impedance.</p>
 <p data-vol="0.25" data-coh="0.8">Taro's jagged High Register bolt impacted his coordinates.<br>Ven consumed it.</p>
 <p data-vol="0.25" data-coh="0.8">It was not a deflection. It was an integration.</p>
@@ -738,12 +1021,16 @@
 <div class="chapter" id="ch6">
 <h3>Chapter 6: The Ground State</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Environmental grounding vaults are strictly designated<br>for administrative energy dissipation. Prolonged biological exposure<br>to unrefined waste heat constitutes a Level-B procedural risk.<br>— <em>C-Order Compliance Handbook, Vol. II, §8.4</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Environmental grounding vaults are strictly designated<br>for administrative energy dissipation. Prolonged biological exposure<br>to unrefined waste heat constitutes a Level-B procedural risk.<br>— <em>C-Order Compliance Handbook, Vol. II, §8.4</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY [SECTION 0]</strong><br><strong>FIDELITY: INDUSTRIAL [UNFILTERED]</strong><br><strong>STATUS: CONNECTED</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">Gaseous vapor exhausted from the cervical vents in the student Ven's armor. They occupied Malkuth Academy's Section 0, an industrial subsurface level defined by dense reinforced concrete shielding and a blistering ambient temperature of 45°C. The environment functioned as a specialized heat exchange vault. The system status indicated a constant atmospheric venting cycle; coolant loops operated at maximum capacity to prevent a localized core meltdown.</p>
 <p data-vol="0.25" data-coh="0.8">They were deep underground in a Grounding Vault.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Grounding Vault</strong></summary><br><blockquote><br><strong>Observation:</strong> A specialized graveyard for energy, where the world's noise is grounded into copper bus-bars and converted into waste heat.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Grounding Vault</strong><br>
+<strong>Observation:</strong> A specialized graveyard for energy, where the world's noise is grounded into copper bus-bars and converted into waste heat. The physical byproduct of the city's flawless digital harmony is an ocean of scorching industrial runoff.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">The structural walls were coated in thick concrete, layered with high-mass copper bus-bars designed specifically to absorb excess resonant energy. In the adjacent alcoves, a cohort of juvenile apprentices—aged approximately ten years—gathered around a senior Rhythm Engineer. They did not utilize projected data tablets. Instead, they applied their bare dermal layers to the copper, their ocular inputs closed. They were learning to "listen" to the texture of the waste heat prior to the system's automated labeling protocol.</p>
 <p data-vol="0.25" data-coh="0.8">The air was dense with particulate matter. The olfactory sensors registered wet iron and ozone—the exact chemical signature of high-voltage waste.<br>It smelled like an engine failing slowly.</p>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: This olfactory interpretation is non-standard. The odor is simply O3 and Fe.]<br>// [NOTE: Annotation retained.]</p>
@@ -766,7 +1053,11 @@
 <p data-vol="0.25" data-coh="0.8">He shifted his optical focus to Taro. His pupils were fully dilated, vibrating rapidly with a high-capacity afterimage.</p>
 <p data-vol="0.25" data-coh="0.8">"Most people... their noise is messy," Ven said. "Hana's signal is sharp. It’s a square-wave cut. The Vanguard students are jagged sawtooth types. When I absorb them, it feels like my hardware is grinding on sand. Gritty."</p>
 <p data-vol="0.25" data-coh="0.8">A severe acoustic groan escaped him as a secondary wave of excess heat vented from his suit's exhaust ports. A visible thermal dump clouded the immediate radius.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Resonance Sickness</strong></summary><br><blockquote><br><strong>Observation:</strong> A dangerous condition where the body's internal circuitry overheats, melting the boundary between the user and the code.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Resonance Sickness</strong><br>
+<strong>Observation:</strong> A dangerous condition where the body's internal circuitry overheats, melting the boundary between the user and the code. It is the cost of carrying a signal too large for biological parameters to safely process.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">Olfactory analysis confirmed the scent of combusting composite materials.</p>
 <p data-vol="0.25" data-coh="0.8">"But your oscillation," Ven murmured. "It's clean. It's full-spectrum. No filters. Just 'I am here.' High-resolution existence."</p>
 <p data-vol="0.25" data-coh="0.8">"It breaks things," Taro said. "I'm a walking overload."</p>
@@ -828,14 +1119,18 @@
 <div class="chapter" id="ch7">
 <h3>Chapter 7: The Architecture of Sound</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Authorized structural manipulation of the local<br>physical rendered environment is restricted to personnel holding<br>confirmed Architect-Class licensing or higher. Non-licensed editing<br>constitutes a Class-1 Coherence Deviation.<br>— <em>C-Order Compliance Handbook, Vol. V, §1.1</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Authorized structural manipulation of the local<br>physical rendered environment is restricted to personnel holding<br>confirmed Architect-Class licensing or higher. Non-licensed editing<br>constitutes a Class-1 Coherence Deviation.<br>— <em>C-Order Compliance Handbook, Vol. V, §1.1</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY [LECTURE_HALL_01]</strong><br><strong>FIDELITY: HI-FI [CONTROLLED]</strong><br><strong>STATUS: ACTIVE</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The primary Lecture Hall was a marvel of acoustic engineering.</p>
 <p data-vol="0.25" data-coh="0.8">The system categorized the space as Zone: Lecture_Hall_01, an environment defined by its uniform acoustic profile and a ninety-eight percent damping factor. The room was effectively deadened. It functioned as an absorptive environment with a systemic gain of -20dB and an RT60 reverberation time of 0.1s. In this room, phase drift was impossible to obscure.<br>Every syllable output was an involuntary audit.</p>
 <p data-vol="0.25" data-coh="0.8">"Reality," Instructor Dorian Vale said, "is a standing wave."</p>
 <p data-vol="0.25" data-coh="0.8">He occupied the nadir of the amphitheater. Target analysis confirmed him as Architect Vale, a structural architect carrying an advanced curriculum clearance and a high-tier stability rating. He did not pace. He did not engage in extraneous manual gestures.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Structural Architect</strong></summary><br><blockquote><br><strong>Observation:</strong> A specialized class of user who doesn't just play the world's music, but builds the instruments that define reality itself.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Structural Architect</strong><br>
+<strong>Observation:</strong> A specialized class of user who doesn't just play the world's music, but builds the instruments that define reality itself. They speak the language of physics seamlessly, untying the world rather than breaking it.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">As an Architect, his physical movements were precise, engineered specifically to minimize waste energy.</p>
 <p data-vol="0.25" data-coh="0.8">He raised his right hand. A complex, rotating 3D architectural model rendered in the space directly above him. It was not constructed of light; it was constructed of blue wireframe sound.</p>
 <p data-vol="0.25" data-coh="0.8">"Most of you think of resonance as 'power'," Vale continued. His vocal output was crisp, lacking any ambient decay. "You think of amplitude. Volume. The ability to shout reality into submission. This is socially embarrassing noise, common among Low-Fidelity users who have never learned to carry their load."</p>
@@ -881,7 +1176,11 @@
 <p data-vol="0.25" data-coh="0.8">Taro projected a localized wave of jagged acoustic noise at Marcus's coordinates. It rendered as a wide cone of high-amplitude yellow distortion.</p>
 <p data-vol="0.25" data-coh="0.8">Marcus did not initiate evasion vectors. He engaged the sound directly.<br>He executed a perfect vertical arc with his physical baton. The red-illuminated tip intersected Taro's yellow wave, bisecting the signal geometry flawlessly.</p>
 <p data-vol="0.25" data-coh="0.8">`INTERFERENCE: DESTRUCTIVE`</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Destructive Interference</strong></summary><br><blockquote><br><strong>Observation:</strong> A phenomenon where two waves collide and cancel each other out, leaving only a cold and hollow silence in their wake.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Destructive Interference</strong><br>
+<strong>Observation:</strong> A phenomenon where two waves collide and cancel each other out, leaving only a cold and hollow silence in their wake. It is the ultimate defensive technique, turning an attacker's own energy into absolute void.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">Opposing phases effectively cancelled the signal energy, nullifying the attack with absolute mathematical efficiency.<br>The wave dissolved into harmless, particulate static.</p>
 <p data-vol="0.25" data-coh="0.8">"Sloppy," Marcus sneered. "High amplitude. Zero structure. You're just shouting at the wall. You found the right note, but you played it with zero envelope. You're clipping the whole Dojo."</p>
 <p data-vol="0.25" data-coh="0.8">He elevated the baton. The impact tip hummed with a concentrated red frequency. "This is high-fidelity."</p>
@@ -915,12 +1214,16 @@
 <div class="chapter" id="ch8">
 <h3>Chapter 8: The Golden Filter</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Sector 4 (Twilight Band) experiences periodic<br>resolution degradation. Personnel are advised to maintain active<br>Golden Age v2 filtering to ensure psychological compliance.<br>— <em>C-Order Compliance Handbook, Vol. IV, §2.2</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Sector 4 (Twilight Band) experiences periodic<br>resolution degradation. Personnel are advised to maintain active<br>Golden Age v2 filtering to ensure psychological compliance.<br>— <em>C-Order Compliance Handbook, Vol. IV, §2.2</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: SECTOR 4 [TWILIGHT BAND]</strong><br><strong>FIDELITY: VARIABLE</strong><br><strong>STATUS: CONNECTED</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The transport bulkheads disengaged. The squad entered Sector 4, a transition zone designated as the Twilight Band where environmental fidelity was actively variable. Taro's HUD systematically applied the Golden Age v2 visual filter at maximum threshold, masking the underlying architectural reality with active, high-poly texture mapping. The system held his damping status at a perfect one hundred percent.</p>
 <p data-vol="0.25" data-coh="0.8">The objective was logged as a standard patrol sweep. Fireteam Echo: Confirmed and Active.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Twilight Band</strong></summary><br><blockquote><br><strong>Observation:</strong> A dangerous borderland where the city's rendered perfection begins to peel away, revealing the raw and unformatted world beneath.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Twilight Band</strong><br>
+<strong>Observation:</strong> A dangerous borderland where the city's rendered perfection begins to peel away, revealing the raw and unformatted world beneath. It is the physical manifestation of the system's inability to maintain its perfect lie.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">Beneath their transit vector lay a "Wrong Note" zone characterized by inconsistent reality rendering. Localized textures suffered frequent pop-in/pop-out errors. Atmospheric analysis detected elevated levels of O3 and sulfur. It was a geographic coordinate where the C-Order's mask slipped, exposing the jagged, unformatted structural framework of the world beneath.</p>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: The phrase 'unformatted structural framework' is sufficient. 'Bone of the world' implies organic intent to the architecture.]<br>// [NOTE: Annotation retained.]</p>
 <p data-vol="0.25" data-coh="0.8">"Deployment in 3... 2... 1..."</p>
@@ -942,7 +1245,11 @@
 <p data-vol="0.25" data-coh="0.8">"It's a slum," Taro whispered. His vocalization caught on the dissonance he was processing. "The architecture... it’s all low-bit placeholders. We're walking on a lie."</p>
 <p data-vol="0.25" data-coh="0.8">"Maintain comms discipline and filter your inputs," Hana said. Her tone was a sharp, linear, and entirely compliant reminder. She traversed the center of the thoroughfare, locked to a glowing green Nav-Line pulling her forward on an optimized path.</p>
 <p data-vol="0.25" data-coh="0.8">To her processing centers, this sector was a high-fidelity paradise. Her authorized Score port aggressively damped the atmospheric presence of sewage.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Golden Filter</strong></summary><br><blockquote><br><strong>Observation:</strong> A digital blindfold that erases poverty and decay from the user's mind, replacing the world's pain with expensive and hollow textures.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Golden Filter</strong><br>
+<strong>Observation:</strong> A digital blindfold that erases poverty and decay from the user's mind, replacing the world's pain with expensive and hollow textures. It ensures psychological compliance by literally rendering out the suffering of the unregistered.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">Her perception software utilized the Golden Filter to completely erase the presence of unhoused citizens occupying the gutters, seamlessly replacing their coordinates with generic street furniture or rendering them as dead space.<br>To lack an index tag in this zone was to be computationally erased from existence.</p>
 <p data-vol="0.25" data-coh="0.8">`MASKING_PROTOCOL: MAX_LOAD`</p>
 <p data-vol="0.25" data-coh="0.8">Non-compliant environmental data was aggressively purged in real-time as the system performed its mandated selective omission of reality.</p>
@@ -985,7 +1292,7 @@
 <div class="chapter" id="ch9">
 <h3>Chapter 9: The Blue Screen</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">[ERROR_CODE_404: DIRECTORY_INVALID]<br>[WARNING: UNRECOGNIZED_PERMUTATION]<br>[CRITICAL: SENSORY_DATA_CORRUPTED]</p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">[ERROR_CODE_404: DIRECTORY_INVALID]<br>[WARNING: UNRECOGNIZED_PERMUTATION]<br>[CRITICAL: SENSORY_DATA_CORRUPTED]</blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: [REDACTED_LOCATION]</strong><br><strong>FIDELITY: UNKNOWN</strong><br><strong>STATUS: OFFLINE</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">"I can't see anything," Hana whispered.</p>
@@ -1004,7 +1311,11 @@
 <p data-vol="0.25" data-coh="0.8">"It's not jamming," Taro said, his vocalization severely fragmented. "Analysis: It's absorbing. It’s a total-sink. They’re eating our amplitude."</p>
 <p data-vol="0.25" data-coh="0.8">Taro identified the scratch-etched circular geometry on the adjacent structure. The Silence. It was not broadcasting oppositional noise. It functioned as a literal sinkhole within the data stream. It aggressively vacuumed the broadband capacity out of the local atmosphere, mimicking the sudden depressurization of an orbital cabin.</p>
 <p data-vol="0.25" data-coh="0.8">This was an absolute-zero signal event. A signal floor of -200 dB where the local reality rendering had simply ceased execution.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: The Silence</strong></summary><br><blockquote><br><strong>Observation:</strong> A black-ops resonant anomaly, a shadow in the system that consumes all signal and leaves only a hollow and absolute zero in its place.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: The Silence</strong><br>
+<strong>Observation:</strong> A black-ops resonant anomaly, a shadow in the system that consumes all signal and leaves only a hollow and absolute zero in its place. They are the antithesis of the Grand Concord's music, a hunting protocol designed to erase wrong notes entirely.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">He directed his manual digits toward his cervical region. He elevated the analog headphone unit over his auditory processors.</p>
 <p data-vol="0.25" data-coh="0.8"><em>CLICK.</em></p>
 <p data-vol="0.25" data-coh="0.8">The hardware bypass engaged successfully. The digital shrieking of his crashed Score port faded instantly. It was replaced by the warm, uncompressed, fuzzy silence of analog foam and braided copper wire.</p>
@@ -1025,7 +1336,11 @@
 <p data-vol="0.25" data-coh="0.8">Hana executed the command. A beam of pure, focused blue light discharged from her palm interface. A standard calibration pulse. It illuminated the physical alley geometry for a single microsecond.</p>
 <p data-vol="0.25" data-coh="0.8">The lead Silence agent advanced. He elevated a black, geometric blade. He did not attempt to block the energy beam. He bisected the frequency.</p>
 <p data-vol="0.25" data-coh="0.8">The knife severed the wave structure.<br>The blue light impacted the blade and vanished completely—consumed by the active void. The local atmosphere tasted of cold ash and missing data packets.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Null-Blade</strong></summary><br><blockquote><br><strong>Observation:</strong> A handheld resonance sink, a tool of the void that drinks the world's music and leaves only a cold and hollow silence.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Null-Blade</strong><br>
+<strong>Observation:</strong> A handheld resonance sink, a tool of the void that drinks the world's music and leaves only a cold and hollow silence. It does not cut flesh; it functionally severs the target's connection to the localized reality grid.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">`ATTACK: NULLIFIED`<br>`CORE_VOLTAGE: DROPPING`<br>`EFFICIENCY: 12% [CRITICAL_DRAIN]`</p>
 <p data-vol="0.25" data-coh="0.8">Hana gasped, executing an involuntary collapse to her knees. She grasped her chest plating. "My core... it’s losing voltage..."</p>
 <p data-vol="0.25" data-coh="0.8">"They drain resonance," Taro shouted, his volume unnecessary in the data void. "Ven! Don't ground them! You'll drain the whole grid!"</p>
@@ -1056,7 +1371,7 @@
 <div class="chapter" id="ch10">
 <h3>Chapter 10: The Unmasking</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">[SYNTAX_ERROR: REGULATORY_NOTICE_UNAVAILABLE]<br>[WARNING: HOSTILE_ARCHITECTURE]<br>[CRITICAL: MAINTAIN_DISTANCE_FROM_SUBJECT]</p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">[SYNTAX_ERROR: REGULATORY_NOTICE_UNAVAILABLE]<br>[WARNING: HOSTILE_ARCHITECTURE]<br>[CRITICAL: MAINTAIN_DISTANCE_FROM_SUBJECT]</blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: [CORRUPTION_DETECTED]</strong><br><strong>FIDELITY: NULL</strong><br><strong>STATUS: FAILING</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">They occupied a dead end.<br>They were corralled within a redacted sector where environmental fidelity had dropped to absolute zero. Taro's system integrity registered as critical, failing rapidly at eighty-two percent as a computational buffer overflow became mathematically imminent. His active damping loops had collapsed, leaving his architecture unshielded and completely vulnerable.</p>
@@ -1093,7 +1408,11 @@
 <p data-vol="0.25" data-coh="0.8">`LIMITER: REMOVED`<br>`NEURAL_DAMPING: 0.00%`</p>
 <p data-vol="0.25" data-coh="0.8">His output became completely unbounded. System overclocking engaged automatically, his peak energy pushing past one hundred and twenty percent and climbing logarithmically.</p>
 <p data-vol="0.25" data-coh="0.8">Taro utilized his vocal chords. It did not register as a human scream. It was a raw, analog, localized feedback loop amplified by unregulated bio-plasma. A total gain-override built to shatter the local keyspace.<br>In that microsecond, he was not a registered student. He was not a Vanguard Siege Breaker. He was a fundamental flaw in the universal composition refusing to accept tuning.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Breach</strong></summary><br><blockquote><br><strong>Observation:</strong> A catastrophic event where the boundaries of the digital world are torn apart by raw and unfiltered reality, leaving nothing but a screaming void.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Breach</strong><br>
+<strong>Observation:</strong> A catastrophic event where the boundaries of the digital world are torn apart by raw and unfiltered reality, leaving nothing but a screaming void. It is the ultimate rejection of the system's imposed harmony, forcing a fatal kernel panic across the local execution environment.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">It was a full systemic Breach.<br>A massive, jagged, golden sawtooth wave erupted from his physical coordinates. Visually, it manifested like a hyper-dense 4K texture violently torn from a low-poly foundational mesh. It impacted the Silence Field like a localized power-grid detonation.</p>
 <p data-vol="0.25" data-coh="0.8"><em>SHATTER.</em></p>
 <p data-vol="0.25" data-coh="0.8">The Dead Zone broke.<br>The Silence agents did not merely flinch. They were subjected to massive kinetic displacement. The physical force of Taro's uncompressed sound wave lifted their mass off the pavement and slammed them into the structural brickwork.</p>
@@ -1111,6 +1430,8 @@
 <p data-vol="0.25" data-coh="0.8">The rendered world dissolved. Not into silence. Into unformatted noise.</p>
 <p data-vol="0.25" data-coh="0.8">The final visual data Taro processed before his cognitive functions collapsed was the skybox. The "golden sky" of Sector 4 did not tear open. It simply ceased to execute. The texture map vanished entirely, revealing the raw operational geometry of the abyss.</p>
 <p data-vol="0.25" data-coh="0.8">And behind the texture, there was no simulated grey rain. There were no volumetric clouds. No atmospheric density.<br>There was exactly one thing: the screaming abyss of un-tuned reality. A vast, non-Euclidean static defying depth parameters, color gradients, and foundational logic. An analog hell of raw, terrifying probability.<br>It was not the "real world." It was the source code.</p>
+<p data-vol="0.95" data-coh="0.05" data-fmt="void-break">You don't filter this.</p>
+<p data-vol="0.95" data-coh="0.05" data-fmt="void-break">There is nothing to filter.</p>
 <p data-vol="0.25" data-coh="0.8">`KERNEL_PANIC: REALITY_NOT_FOUND`<br>`CRITICAL_EXCEPTION_AT: 0x00000000`<br>`SYSTEM: HALTED`</p>
 <hr>
 <p data-vol="0.25" data-coh="0.8"><strong>> [SYSTEM: FATAL ERROR]</strong><br><strong>> [CORE DUMP INITIATED...]</strong><br><strong>> END PHASE III</strong></p>
@@ -1120,7 +1441,7 @@
 <div class="chapter" id="ch11">
 <h3>Chapter 11: The Wire</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">[ERROR: I_CANNOT_SYNC]<br>[WHY_IS_IT_SO_DARK]<br>[PLEASE_REBOOT]</p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">[ERROR: I_CANNOT_SYNC]<br>[WHY_IS_IT_SO_DARK]<br>[PLEASE_REBOOT]</blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: [NULL]</strong><br><strong>FIDELITY: WIREFRAME [BARE METAL]</strong><br><strong>STATUS: OFFLINE</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">There was no up. There was no down. There was only noise.<br>He was in an unindexed zone, the reality rendering suspended as his system integrity hit zero percent. My core logic had failed. The standard physics engine was completely offline. Biometric links were severed. Neural links were returning null values.</p>
@@ -1138,7 +1459,11 @@
 <p data-vol="0.25" data-coh="0.8">Emergency recovery protocol was active. I restricted my own processing load to five percent just to keep his autonomous functions running. Resolution dropped to a pathetic 180p. Surface mapping was offline. Textures were entirely disabled.</p>
 <p data-vol="0.25" data-coh="0.8">`TARO_METRICS: SDI 0.00 // HIQ 0.00`<br>`PHASE_DRIFT: 0.00`<br>`SCORE_UNITS: 0 SU`</p>
 <p data-vol="0.25" data-coh="0.8">It was Safe Mode.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Safe Mode</strong></summary><br><blockquote><br><strong>Observation:</strong> A digital purgatory, a stripped-down version of reality where the world's beauty is erased to save the system's soul.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Safe Mode</strong><br>
+<strong>Observation:</strong> A digital purgatory, a stripped-down version of reality where the world's beauty is erased to save the system's soul. It abandons geometry and texture, rendering only a desperate, terrifying wireframe cage to prevent total resonant failure.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">And it was terrifying. Even to me.</p>
 <p data-vol="0.25" data-coh="0.8">Because Taro felt the wrongness. Time executed differently here. Every single respiratory cycle took an eternity to log. The drift between intent and action was measured in stuttering microseconds that dragged like agonizing hours. He was a low-poly sketch of a person in a world that had forgotten how to draw.</p>
 <p data-vol="0.25" data-coh="0.8">He tried to sit up. His physical body was rendered as wireframe too. Just a skeletal mesh of glowing, fragile blue edges.</p>
@@ -1175,7 +1500,7 @@
 <div class="chapter" id="ch12">
 <h3>Chapter 12: The Audit</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">[ERROR: PERMISSION_DENIED]<br>[CRITICAL: I_CANNOT_LOOK_AWAY]<br>[WHY_ARE_THEY_HURTING_HIM]</p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">[ERROR: PERMISSION_DENIED]<br>[CRITICAL: I_CANNOT_LOOK_AWAY]<br>[WHY_ARE_THEY_HURTING_HIM]</blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH_MEDICAL [RESTRICTED]</strong><br><strong>FIDELITY: MAXIMUM</strong><br><strong>STATUS: FATAL_EXCEPTION</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">Taro initiated a waking sequence with an immediate, violent vocalization.</p>
@@ -1283,7 +1608,7 @@
 <div class="chapter" id="ch13">
 <h3>Chapter 13: Reboot</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Compliance update successful. Welcome to the<br>Grand Concord. Your compliance is our foundation.<br>— <em>C-Order Compliance Handbook, Vol. I, §1.0</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Compliance update successful. Welcome to the<br>Grand Concord. Your compliance is our foundation.<br>— <em>C-Order Compliance Handbook, Vol. I, §1.0</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY [STUDENT_HOUSING_01]</strong><br><strong>FIDELITY: MAXIMUM [8K_RENDER]</strong><br><strong>STATUS: ONLINE_AND_OPTIMAL</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The subject opened his eyes.</p>
@@ -1389,7 +1714,7 @@
 <div class="chapter" id="ch14">
 <h3>Chapter 14: The Return</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Maintain optimal atmospheric conditions.<br>Dissonance is a failure of community hygiene.<br>— <em>C-Order Compliance Handbook, Vol. I, §2.4</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Maintain optimal atmospheric conditions.<br>Dissonance is a failure of community hygiene.<br>— <em>C-Order Compliance Handbook, Vol. I, §2.4</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY [TRANSIT_HUB]</strong><br><strong>FIDELITY: MAXIMUM [8K_RENDER]</strong><br><strong>STATUS: ONLINE_AND_OPTIMAL</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The primary gates of Malkuth Academy rendered perfectly in their designated golden spectrum. His HUD confirmed the area as a high-fidelity educational tier, local synchronization at a flawless one hundred percent. The firmware—version 2.0, patched and optimized—was confirmed active, its cognitive bias layer operating flawlessly in the background as it verified his identity.</p>
@@ -1397,7 +1722,11 @@
 <p data-vol="0.25" data-coh="0.8">Taro occupied the transit platform, focusing his optical sensors on the main entrance. The compliance patch installed by Administrator Voss—the "upgrade"—executed silently in his sub-routines. There were no longer any frantic red administrative warnings. Only a quiet, mathematically perfect, high-frequency hum that simulated the physiological sensation of tinnitus.</p>
 <p data-vol="0.25" data-coh="0.8">The rendered world was perfectly smooth. However, the subject’s localized processing algorithms continued to incorrectly model jagged messes of conflicting frequencies.</p>
 <p data-vol="0.25" data-coh="0.8">Across the courtyard geometry, a registered group of First Year assets were executing laughter protocols. To Subject Taro's previous, unoptimized sensors, they would have registered as a harmonious cluster of pleasant notes. Under current firmware constraints, he should perceive only optimal social interaction. Yet, his internal logic incorrectly visualized jagged waveforms of anxiety spiking through their verified laughter.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Social Harmony</strong></summary><br><blockquote><br><strong>Observation:</strong> An auto-tuning algorithm that smooths out the rough edges of human interaction, ensuring every word and gesture is perfectly in key.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Social Harmony</strong><br>
+<strong>Observation:</strong> An auto-tuning algorithm that smooths out the rough edges of human interaction, ensuring every word and gesture is perfectly in key. It enforces mandatory cheerfulness by mathematically eliminating the frequencies associated with anxiety, fear, or dissent.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8">He executed a manual tap against his temporal lobe, registering a phantom tactile alert where the obsolete external collar previously resided. The new limiter was fully internal, securely buried deep within his Score port's kernel architecture. It functioned as an active noise-gate for his output, strictly managing his amplitude. An internal administrative noose, mathematically tightening every time his internal logic attempted to run sharp.</p>
 <p data-vol="0.25" data-coh="0.8">"Cadet Taro?"</p>
 <p data-vol="0.25" data-coh="0.8">"Medical leave," Taro vocalized. His own acoustic output registered as synthetically strange to his auditory sensors—perfectly flat, heavily compressed. "My buffer was full. Logged a total signal loss in the tank."</p>
@@ -1413,7 +1742,11 @@
 <p data-vol="0.25" data-coh="0.8">He indicated a central holographic projection. It rendered a high-fidelity replay of a recent sortie parameter. The hologram zoomed in on a registered cadet executing a sonic pulse weapon. Visual analysis confirmed the wave was slightly off-beat, lagging exactly 14 milliseconds behind the muscular trigger pull.</p>
 <p data-vol="0.25" data-coh="0.8">"This asset," Staccato said, decreasing his amplitude to a highly effective, dramatic whisper, "is dead. In a field environment, a 14-millisecond delay is the mathematical difference between a clean execution and a resonant feedback loop that liquifies the operator's organs. He was running too sharp. He spiked when protocol demanded he stay flat."</p>
 <p data-vol="0.25" data-coh="0.8">Taro processed the holographic rendering. To the standard observant parameters, it registered as a fatal timing error. However, Taro's internal variance algorithms detected interference. The rendered air around the cadet in the video was not clean. It was mathematically thick with an active, localized distortion field.</p>
-<p data-vol="0.25" data-coh="0.8"><aside><br><details><br><summary><strong>SUBJECT: Damping Field</strong></summary><br><blockquote><br><strong>Observation:</strong> An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold.<br><br><br><br><strong>- Source: In-World Text</strong><br></blockquote><br></details><br></aside></p>
+<blockquote class="lore-epigraph" data-vol="0.25" data-coh="0.8">
+<strong>SUBJECT: Damping Field</strong><br>
+<strong>Observation:</strong> An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold. It is actively weaponized to induce lag in targeted assets, forcing them to drift out of sync with critical reality parameters.
+<span class="lore-source">- Source: In-World Text</span>
+</blockquote>
 <p data-vol="0.25" data-coh="0.8"><em>He didn't miss. The environment was hostile.</em></p>
 <p data-vol="0.25" data-coh="0.8">Taro adjusted his posture forward by 12 degrees. Faint, irregular purple vectors swirled around the structural rendering of the cadet's feet. Target analysis immediately identified a negative resonance sink, an external energy drain defying standard triangulation protocols.</p>
 <p data-vol="0.25" data-coh="0.8">`TARO_METRICS_SPIKE: SDI 0.85 // HIQ 0.72`</p>
@@ -1458,7 +1791,7 @@
 <div class="chapter" id="ch15">
 <h3>Chapter 15: The Phantom Mesh</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Report any visual anomalies or texture<br>mapping errors to central command immediately. Visual stability<br>is mental stability.<br>— <em>C-Order Compliance Handbook, Vol. II, §3.1</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">REGULATORY NOTICE: Report any visual anomalies or texture<br>mapping errors to central command immediately. Visual stability<br>is mental stability.<br>— <em>C-Order Compliance Handbook, Vol. II, §3.1</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY [PRACTICE_ANNEX]</strong><br><strong>FIDELITY: MAXIMUM [RESTRICTED_ACCESS]</strong><br><strong>STATUS: OPTIMAL</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The practice annex operated as a hollow, highly secure vault of acoustic silence. It was an authorized rehearsal tier where the environmental fidelity pushed to the absolute bounds of its high-resolution rendering limit.</p>
@@ -1506,7 +1839,7 @@
 <div class="chapter" id="ch16">
 <h3>Chapter 16: Illegal Modulations</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">SECURITY ALERT: Modifying factory settings is a Class 1 Felony.<br>You are the instrument. Do not attempt to tune yourself.<br>— <em>C-Order Compliance Handbook, Vol. III, §1.1</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">SECURITY ALERT: Modifying factory settings is a Class 1 Felony.<br>You are the instrument. Do not attempt to tune yourself.<br>— <em>C-Order Compliance Handbook, Vol. III, §1.1</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH_ACADEMY [PRACTICE_RM_404]</strong><br><strong>FIDELITY: UNVERIFIED [LOCAL_MASKING_ACTIVE]</strong><br><strong>STATUS: COMPROMISED</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">"We categorise it as modulating," Elara stated.</p>
@@ -1573,7 +1906,7 @@
 <div class="chapter" id="ch17">
 <h3>Chapter 17: The Underground</h3>
 <hr>
-<p data-vol="0.25" data-coh="0.8">CRITICAL WARNING: Loss of signal detected. Reconnect to the<br>Grand Concord immediately. Anomaly designated.<br>— <em>C-Order Automated Response System</em></p>
+<blockquote class="epigraph" data-vol="0.25" data-coh="0.8">CRITICAL WARNING: Loss of signal detected. Reconnect to the<br>Grand Concord immediately. Anomaly designated.<br>— <em>C-Order Automated Response System</em></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: SUB-BASS LEVELS [UNINDEXED]</strong><br><strong>FIDELITY: NULL [RAW_DATA]</strong><br><strong>STATUS: SIGNAL_LOST</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The mechanical elevator descended physically past the city's foundational roots. The subjects moved cleanly through an unauthorized, unmapped infrastructure tier, the deepest sub-bass levels of Sector 4 where the ambient signal floor was a mathematically crushing -120dB.</p>
@@ -1676,7 +2009,9 @@ const CHAPTER_CONFIG = {
     "accent": "#00f3ff",
     "waveMode": "sine",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "hifi",
+    "drone": { "type": "sine", "baseFreq": 55, "gain": 0.04 }
   },
   "ch02_assessment": {
     "accent": "#00f3ff",
@@ -1684,7 +2019,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "social_tag"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "standard",
+    "drone": { "type": "sine", "baseFreq": 880, "gain": 0.025, "detune": 5 }
   },
   "ch03_modulation": {
     "accent": "#f5a623",
@@ -1692,7 +2029,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "impedance"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "standard",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch04_medium": {
     "accent": "#00f3ff",
@@ -1700,7 +2039,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "fidelity"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "hifi",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch05_sync_check": {
     "accent": "#00f3ff",
@@ -1708,13 +2049,17 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "team_link"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "safe",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch06_ground_state": {
     "accent": "#00f3ff",
     "waveMode": "sine",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "safe",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch07_rival": {
     "accent": "#00f3ff",
@@ -1722,7 +2067,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "combat"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "hifi",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch08_sortie": {
     "accent": "#00f3ff",
@@ -1730,25 +2077,33 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "altimeter"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "standard",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch09_silence": {
     "accent": "#9933ff",
     "waveMode": "collapse",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "void",
+    "drone": { "type": "silence", "baseFreq": 0, "gain": 0 }
   },
   "ch10_breach": {
     "accent": "#9933ff",
     "waveMode": "sawtooth",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "void",
+    "drone": { "type": "sawtooth", "baseFreq": 110, "gain": 0.06 }
   },
   "ch11_safe_mode": {
     "accent": "#4488ff",
     "waveMode": "wireframe",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "safe",
+    "drone": { "type": "sine", "baseFreq": 220, "gain": 0.03 }
   },
   "ch12_audit": {
     "accent": "#4488ff",
@@ -1756,19 +2111,25 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "camera"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "standard",
+    "drone": { "type": "sine", "baseFreq": 880, "gain": 0.025, "detune": 5 }
   },
   "ch13_patch": {
     "accent": "#00ff88",
     "waveMode": "grid",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "standard",
+    "drone": { "type": "sine", "baseFreq": 880, "gain": 0.025, "detune": 5 }
   },
   "ch14_return": {
     "accent": "#00ff88",
     "waveMode": "grid",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "hifi",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch15_phantom_mesh": {
     "accent": "#00f3ff",
@@ -1776,19 +2137,25 @@ const CHAPTER_CONFIG = {
     "hudExtras": [
       "palimpsest"
     ],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "hifi",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch16_illegal_modulations": {
     "accent": "#00f3ff",
     "waveMode": "sine",
     "hudExtras": [],
-    "analogMode": false
+    "analogMode": false,
+    "renderMode": "standard",
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
   },
   "ch17_underground": {
     "accent": "#00f3ff",
     "waveMode": "static",
     "hudExtras": [],
-    "analogMode": true
+    "analogMode": true,
+    "renderMode": "void",
+    "drone": { "type": "crackle", "baseFreq": 60, "gain": 0.05 }
   }
 };
 
@@ -1809,7 +2176,7 @@ function compileNarrative() {
   container.querySelectorAll('[data-ch-id]').forEach(chDiv => {
     const signal = chDiv.dataset.signal || 'ch01_zap';
     const config = CHAPTER_CONFIG[signal] || CHAPTER_CONFIG['ch01_zap'];
-    chDiv.querySelectorAll('h3, h4, p').forEach(el => {
+    chDiv.querySelectorAll('h3, h4, p, blockquote').forEach(el => {
       const vol = parseFloat(el.getAttribute('data-vol') || '0.25');
       const coh = parseFloat(el.getAttribute('data-coh') || '0.80');
       const tag = el.getAttribute('data-tag');
@@ -1819,8 +2186,10 @@ function compileNarrative() {
         NARRATIVE_DATA.push({ type: 'chapter', vol, coh, signal, config, sentences: [{ text: p[0].trim().toUpperCase(), format: 'label' }, { text: (p[1] || p[0]).trim().toUpperCase(), format: 'title' }] });
       } else if (el.tagName === 'H4') {
         NARRATIVE_DATA.push({ type: 'section', vol, coh, tag, signal, config, sentences: [{ text: el.innerHTML, format: 'label' }] });
+      } else if (el.tagName === 'BLOCKQUOTE') {
+        NARRATIVE_DATA.push({ type: 'standard', vol: 0.1, coh: 0.95, fmt: 'epigraph', tag: null, signal, config, sentences: [{ text: el.innerHTML, format: 'epigraph' }] });
       } else {
-        let det = fmt; if (!det) { if (el.innerText.trim().startsWith('>')) det = 'system'; else if (el.innerText.trim().startsWith('"')) det = 'dialogue'; }
+        let det = fmt; if (!det) { if (el.innerText.trim().startsWith('>') || el.innerText.trim().startsWith('`')) det = 'system'; else if (el.innerText.trim().startsWith('"')) det = 'dialogue'; }
         NARRATIVE_DATA.push({ type: 'standard', vol, coh, fmt: det, tag, signal, config, sentences: [{ text: el.innerHTML, format: det || 'standard' }] });
       }
     });
@@ -1840,6 +2209,20 @@ class NarrativeState {
       this.accent = beat.config.accent;
       document.documentElement.style.setProperty('--accent', this.accent);
       if (beat.config.analogMode && !window.analogMode) enterAnalogMode();
+      // SPEC 03: Apply render mode body class on chapter change
+      if (beat.config.renderMode) {
+        const modes = ['render-standard', 'render-hifi', 'render-safe', 'render-void'];
+        document.body.classList.remove(...modes);
+        document.body.classList.add('render-' + beat.config.renderMode);
+      }
+      // SPEC 01: Trigger drone change on chapter config change
+      if (beat.config.drone && typeof audioEngine !== 'undefined') audioEngine.setDrone(beat.config.drone);
+      
+      // SPEC 05: Update cursor based on surveillance level
+      const survData = NARRATIVE_SIGNALS[beat.signal];
+      if (survData) {
+        document.body.style.cursor = buildCursorSVG(survData.surveillance);
+      }
     }
     this.volume += (this.targetVol - this.volume) * 0.05;
     this.coherence += (this.targetCoh - this.coherence) * 0.05;
@@ -1851,6 +2234,50 @@ class NarrativeState {
   }
 }
 const narrativeState = new NarrativeState();
+
+// SPEC 04: SVG Progress wave generator
+function generateProgressWavePath(waveMode, width, height) {
+  const cy = height / 2;
+  const amp = 7;
+  let d = '';
+
+  if (waveMode === 'sine' || waveMode === 'dropout') {
+    d = `M 0 ${cy}`;
+    for (let x = 0; x <= width; x += 4) {
+      const y = cy + Math.sin((x / width) * Math.PI * 8) * amp;
+      d += ` L ${x} ${y}`;
+    }
+  } else if (waveMode === 'square' || waveMode === 'flat' || waveMode === 'grid') {
+    const period = width / 16;
+    d = `M 0 ${cy - amp}`;
+    for (let i = 0; i < 16; i++) {
+      const x1 = i * period; const x2 = x1 + period / 2; const x3 = x1 + period;
+      const y = i % 2 === 0 ? cy - amp : cy + amp;
+      d += ` H ${x2} V ${cy - y + cy} H ${x3}`;
+    }
+  } else if (waveMode === 'sawtooth') {
+    const period = width / 12;
+    d = `M 0 ${cy}`;
+    for (let i = 0; i < 12; i++) {
+      d += ` L ${(i + 1) * period} ${cy - amp} L ${(i + 1) * period} ${cy + amp}`;
+    }
+  } else if (waveMode === 'collapse' || waveMode === 'wireframe') {
+    d = `M 0 ${cy}`;
+    for (let x = 0; x <= width; x += 8) {
+      const jitter = (Math.random() - 0.5) * 3;
+      d += ` L ${x} ${cy + jitter}`;
+    }
+  } else if (waveMode === 'static') {
+    d = `M 0 ${cy}`;
+    for (let x = 0; x <= width; x += 2) {
+      const y = cy + (Math.random() - 0.5) * amp * 2;
+      d += ` L ${x} ${y}`;
+    }
+  } else {
+    d = `M 0 ${cy} H ${width}`;
+  }
+  return d;
+}
 
 class ScrollEngine {
   constructor(data) {
@@ -1889,14 +2316,45 @@ class ScrollEngine {
   tick(time) {
     const y = this.currentY;
     const progress = Math.min(1, y / (this.totalHeight - window.innerHeight));
-    const pb = document.getElementById('progress-bar'); if (pb) pb.style.transform = `scaleX(${progress})`;
+    const clipRect = document.getElementById('progress-clip-rect');
+    if (clipRect) clipRect.setAttribute('width', (progress * 100) + '%');
     
     const idx = this._getActiveBeat(y);
+    
+    // SPEC 04: Regenerate SVG path only on chapter change
+    if (idx !== this._lastProgressChapter) {
+      this._lastProgressChapter = idx;
+      const beat = this.data[idx];
+      const wavePath = document.getElementById('progress-wave-path');
+      if (wavePath && beat?.config?.waveMode) {
+        wavePath.setAttribute('d', generateProgressWavePath(
+          beat.config.waveMode,
+          window.innerWidth,
+          20
+        ));
+      }
+    }
+
     if (idx !== this.currentBeatIndex) { this.currentBeatIndex = idx; this._renderBeat(idx); }
     const beat = this.data[this.currentBeatIndex];
     if (beat) {
       this._updateSentences(y, beat);
       narrativeState.update(beat);
+
+      // SPEC 08: Apply typographic state class to beat-container
+      const container = document.getElementById('beat-container');
+      if (container) {
+        const vol = narrativeState.volume;
+        const coh = narrativeState.coherence;
+        container.classList.remove('state-elevated', 'state-overload', 'state-void');
+      
+        if (vol > 0.85 || coh < 0.3) {
+          container.classList.add(coh < 0.2 ? 'state-void' : 'state-overload');
+        } else if (vol > 0.55) {
+          container.classList.add('state-elevated');
+        }
+      }
+
       updateVignette(narrativeState.coherence);
       updateAmbientGlow(narrativeState.volume);
       updateHeartbeat(time, narrativeState.volume, narrativeState.coherence);
@@ -1923,6 +2381,35 @@ class ScrollEngine {
       }
 
       if (beat.tag === 'crash' && progress > 0.98) triggerSystemCrash();
+
+      // SPEC 11: Void glitch — fires once when ch10 (Breach) begins
+      if (beat.signal === 'ch10_breach' && !window.palimpsestGlitchFired) {
+        window.palimpsestGlitchFired = true;
+        triggerPalimpsestGlitch();
+      }
+
+      // SPEC 02: One-shot silence lock — fires once when ch09 is entered
+      if (beat.signal === 'ch09_silence' && !window.silenceLockFired) {
+        window.silenceLockFired = true;
+        const lockEl = document.getElementById('silence-lock');
+        const barEl = document.getElementById('silence-lock-bar');
+      
+        // Disable scroll during lock
+        document.body.style.overflow = 'hidden';
+        if (lockEl) lockEl.classList.add('active');
+      
+        // Trigger audio silence (Spec 01 integration)
+        if (typeof audioEngine !== 'undefined') audioEngine.setDrone({ type: 'silence', baseFreq: 0, gain: 0 });
+      
+        // Trigger bar animation on next frame so CSS transition fires
+        requestAnimationFrame(() => { if (barEl) barEl.style.width = '200px'; });
+      
+        // Release after 4 seconds
+        setTimeout(() => {
+          if (lockEl) lockEl.classList.remove('active');
+          document.body.style.overflow = '';
+        }, 4200);
+      }
     }
   }
   _getActiveBeat(y) { for (let i = 0; i < this.beatMap.length; i++) if (y >= this.beatMap[i].start && y < this.beatMap[i].end) return i; return this.data.length - 1; }
@@ -1945,7 +2432,16 @@ class ScrollEngine {
 
         let intensity = Math.sin(sProg * Math.PI);
         intensity = Math.min(1.0, intensity * 2.0); 
+
+        // SPEC 07: Parallax depth by narrative layer
+        let parallaxSpeed = 0;
+        if (s.format === 'system') parallaxSpeed = -0.05;
+        else if (s.format === 'thought' || s.format === 'epigraph') parallaxSpeed = 0.02;
         
+        let parallaxOffset = (y - map.start) * parallaxSpeed;
+        
+        let currentTransform = parallaxOffset !== 0 ? `translateY(${parallaxOffset}px)` : '';
+
         if (intensity > 0.4) {
           if (!el.classList.contains('active')) {
             el.className = `sentence active ${el.className.split(' ').filter(c => c !== 'future' && c !== 'past').join(' ')}`;
@@ -1960,8 +2456,13 @@ class ScrollEngine {
           if (vol > 0.85) el.classList.add('tension-high'); else if (vol > 0.6) el.classList.add('tension-mid');
           if (vol > 0.82 && narrativeState.coherence < 0.3) { el.setAttribute('data-text', el.innerText); el.classList.add('glitch'); }
           if (beat.tag === 'combat_ui') el.classList.add('combat-tagged');
-          if (beat.tag === 'frame_skip') { el.style.transform = `translateX(${(Math.random()-0.5)*10}px)`; el.style.opacity = Math.random() > 0.1 ? 1.0 : 0.2; }
+          if (beat.tag === 'frame_skip') { 
+            currentTransform += ` translateX(${(Math.random()-0.5)*10}px)`; 
+            el.style.opacity = Math.random() > 0.1 ? 1.0 : 0.2; 
+          }
         }
+
+        el.style.transform = currentTransform;
 
         if (intensity > 0.85) {
             el.style.opacity = 1.0;
@@ -2044,9 +2545,42 @@ function drawWaveform(time) {
   }
 }
 
+// SPEC 05: Surveillance Cursor
+function buildCursorSVG(surveillanceLevel) {
+  const baseColor = surveillanceLevel < 0.5 ? '%2300f3ff' : '%23ff3366';
+  const size = 24; const cx = size / 2;
+  let rings = '';
+  if (surveillanceLevel > 0.4) rings += `<circle cx='${cx}' cy='${cx}' r='7' fill='none' stroke='${baseColor}' stroke-width='1' opacity='0.7'/>`;
+  if (surveillanceLevel > 0.75) rings += `<circle cx='${cx}' cy='${cx}' r='11' fill='none' stroke='${baseColor}' stroke-width='0.5' opacity='0.4'/>`;
+  const svg = `
+    <svg xmlns='http://www.w3.org/2000/svg' width='${size}' height='${size}' viewBox='0 0 ${size} ${size}'>
+      <line x1='${cx}' y1='2' x2='${cx}' y2='9'   stroke='${baseColor}' stroke-width='1.5'/>
+      <line x1='${cx}' y1='15' x2='${cx}' y2='22' stroke='${baseColor}' stroke-width='1.5'/>
+      <line x1='2'  y1='${cx}' x2='9'  y2='${cx}' stroke='${baseColor}' stroke-width='1.5'/>
+      <line x1='15' y1='${cx}' x2='22' y2='${cx}' stroke='${baseColor}' stroke-width='1.5'/>
+      <circle cx='${cx}' cy='${cx}' r='1.5' fill='${baseColor}'/>
+      ${rings}
+    </svg>`;
+  return `url("data:image/svg+xml,${svg.trim().replace(/\n\s*/g, ' ')}") ${cx} ${cx}, crosshair`;
+}
+
+// SPEC 06: Chapter transition as system reboot
 function triggerChapterFlash() {
-  let o = document.getElementById('f-overlay'); if (!o) { o = document.createElement('div'); o.id = 'f-overlay'; Object.assign(o.style, { position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'var(--accent)', opacity: 0, pointerEvents: 'none', zIndex: 900 }); document.body.appendChild(o); }
-  o.style.transition = 'opacity 0.04s ease-in'; o.style.opacity = 0.5; setTimeout(() => { o.style.transition = 'opacity 0.5s ease-out'; o.style.opacity = 0; }, 55);
+  document.body.classList.add('wireframe-mode');
+  let o = document.getElementById('f-overlay'); 
+  if (!o) { 
+    o = document.createElement('div'); o.id = 'f-overlay'; 
+    Object.assign(o.style, { position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: '#4488ff', opacity: 0, pointerEvents: 'none', zIndex: 900 }); 
+    document.body.appendChild(o); 
+  }
+  o.style.background = '#4488ff';
+  o.style.transition = 'opacity 0.05s ease-in'; 
+  o.style.opacity = 0.3; 
+  setTimeout(() => { 
+    document.body.classList.remove('wireframe-mode');
+    o.style.transition = 'opacity 0.4s ease-out'; 
+    o.style.opacity = 0; 
+  }, 500);
 }
 
 function updateSocialTagDisplay(vol) {
@@ -2079,11 +2613,47 @@ const FRAGMENT_POOL = {
   default:    ['SIGNAL DRIFT', 'HARMONIC VARIANCE', 'MONITORING...', 'FREQ CHECK'],
 };
 
+// SPEC 11: Palimpsest pool — stores up to 40 ghost traces
+const PALIMPSEST_POOL = [];
+const PALIMPSEST_MAX = 40;
+
+function addToPalimpsest(text) {
+  if (!text || !text.trim().startsWith('>')) return;
+  PALIMPSEST_POOL.push(text.slice(0, 30));
+  if (PALIMPSEST_POOL.length > PALIMPSEST_MAX) PALIMPSEST_POOL.shift();
+  renderPalimpsest();
+}
+
+function renderPalimpsest() {
+  const layer = document.getElementById('palimpsest-layer');
+  if (!layer) return;
+  layer.innerHTML = '';
+  PALIMPSEST_POOL.forEach((text, i) => {
+    const ghost = document.createElement('div');
+    ghost.className = 'palimpsest-ghost';
+    ghost.textContent = text;
+    const topPct = (i / PALIMPSEST_MAX) * 90 + 5;
+    ghost.style.top = topPct + '%';
+    ghost.style.left = (Math.random() * 20) + 'px';
+    const ageFactor = i / PALIMPSEST_POOL.length;
+    ghost.style.opacity = (0.03 + ageFactor * 0.06).toString();
+    layer.appendChild(ghost);
+  });
+}
+
+function triggerPalimpsestGlitch() {
+  const layer = document.getElementById('palimpsest-layer');
+  if (!layer) return;
+  layer.classList.add('void-glitch');
+  setTimeout(() => layer.classList.remove('void-glitch'), 3000);
+}
+
 function spawnFragment(tag) {
   const isD = ['pain','override','clip','limiter','overflow','crash','warning'].includes(tag);
   const pool = FRAGMENT_POOL[tag] || FRAGMENT_POOL.default; const t = pool[Math.floor(Math.random()*pool.length)];
   const f = document.createElement('div'); f.className = `narrative-fragment${isD?' danger':''}`; f.innerHTML = `<span class="fragment-text">${t}</span>`;
   const c = document.getElementById('fragment-container'); if (c) { c.appendChild(f); setTimeout(() => f.remove(), 4100); }
+  addToPalimpsest('> ' + t);
 }
 
 async function runHUDBootSequence() {
@@ -2114,8 +2684,128 @@ function triggerSystemCrash() {
   if (msg) setTimeout(() => msg.classList.add('active'), 3000);
 }
 
+// ============================================================
+// SPEC 01: AMBIENT DRONE ENGINE
+// Manages Web Audio API drone layer. Initialised on first user
+// interaction (click/scroll) to comply with browser autoplay policy.
+// ============================================================
+class AudioEngine {
+  constructor() {
+    this.ctx = null;          // AudioContext - created on first interaction
+    this.masterGain = null;   // Master volume node
+    this.droneOsc = null;     // Primary oscillator node
+    this.droneGain = null;    // Per-drone gain node
+    this.noiseNode = null;    // BufferSourceNode for noise/crackle types
+    this.currentType = null;  // Track current drone type to avoid restarts
+    this.ready = false;       // True after user gesture unlocks AudioContext
+  }
+
+  // Call once on first user interaction
+  init() {
+    if (this.ready) return;
+    this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+    this.masterGain = this.ctx.createGain();
+    this.masterGain.gain.value = 0.7; // Overall ambient volume ceiling
+    this.masterGain.connect(this.ctx.destination);
+    this.ready = true;
+  }
+
+  // Generate white noise buffer for crackle/static types
+  _createNoiseBuffer() {
+    const bufferSize = this.ctx.sampleRate * 2;
+    const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
+    const data = buffer.getChannelData(0);
+    for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+    return buffer;
+  }
+
+  // Apply a biquad lowpass to shape noise into crackle character
+  _createCrackleFilter() {
+    const filter = this.ctx.createBiquadFilter();
+    filter.type = 'lowpass';
+    filter.frequency.value = 800;
+    filter.Q.value = 0.5;
+    return filter;
+  }
+
+  // Main method: called by NarrativeState.update() on chapter change
+  setDrone(droneConfig) {
+    if (!this.ready || !droneConfig) return;
+    if (droneConfig.type === this.currentType) return; // No restart if same type
+    this.currentType = droneConfig.type;
+
+    // Gracefully fade out current drone over 2 seconds
+    this._fadeOut(() => this._startDrone(droneConfig));
+  }
+
+  _fadeOut(callback) {
+    if (this.droneGain) {
+      // Use setTargetAtTime directly to avoid breaking inside browsers strictly enforcing rules
+      this.droneGain.gain.setTargetAtTime(0, this.ctx.currentTime, 0.5);
+    }
+    setTimeout(() => {
+      // Stop and disconnect existing nodes
+      if (this.droneOsc) { try { this.droneOsc.stop(); } catch(e){} this.droneOsc = null; }
+      if (this.noiseNode) { try { this.noiseNode.stop(); } catch(e){} this.noiseNode = null; }
+      if (callback) callback();
+    }, 2000);
+  }
+
+  _startDrone({ type, baseFreq, gain, detune = 0 }) {
+    // 'silence' type: just fade out, don't start new source
+    if (type === 'silence') return;
+
+    this.droneGain = this.ctx.createGain();
+    this.droneGain.gain.value = 0; // Start silent, fade in
+    this.droneGain.connect(this.masterGain);
+
+    if (type === 'crackle' || type === 'noise') {
+      // Noise-based source
+      this.noiseNode = this.ctx.createBufferSource();
+      this.noiseNode.buffer = this._createNoiseBuffer();
+      this.noiseNode.loop = true;
+      const filter = this._createCrackleFilter();
+      this.noiseNode.connect(filter);
+      filter.connect(this.droneGain);
+      this.noiseNode.start();
+    } else {
+      // Oscillator-based source (sine | sawtooth)
+      this.droneOsc = this.ctx.createOscillator();
+      this.droneOsc.type = type;
+      this.droneOsc.frequency.value = baseFreq;
+      if (detune) this.droneOsc.detune.value = detune * 100; // cents
+      this.droneOsc.connect(this.droneGain);
+      this.droneOsc.start();
+    }
+
+    // Fade in over 3 seconds
+    this.droneGain.gain.setTargetAtTime(gain, this.ctx.currentTime, 1.0);
+  }
+}
+
+const audioEngine = new AudioEngine();
+
+// Unlock audio on first scroll or click (browser autoplay policy)
+const unlockAudio = () => {
+  audioEngine.init();
+  window.removeEventListener('scroll', unlockAudio);
+  window.removeEventListener('click', unlockAudio);
+};
+window.addEventListener('scroll', unlockAudio, { passive: true, once: true });
+window.addEventListener('click', unlockAudio, { once: true });
+
 window.onload = async () => { compileNarrative(); await runHUDBootSequence(); window.engine = new ScrollEngine(NARRATIVE_DATA); window.engine.init(); };
 </script>
+
+<!-- SPEC 02: Silence lock overlay -->
+<div id="silence-lock">
+  <div id="silence-lock-text">
+    > SIGNAL_LOSS<br>
+    > ATTEMPTING_RECOVERY...<br>
+    <span style="color: var(--text-dim);">[ SUBJECT IS UNRESPONSIVE ]</span>
+  </div>
+  <div id="silence-lock-bar"></div>
+</div>
 
 </body>
 </html>
