@@ -2412,46 +2412,56 @@ class ScrollEngine {
     this.targetY = this.currentY = window.scrollY;
     window.addEventListener('scroll', () => { this.targetY = window.scrollY; }, { passive: true });
 
-    // ── Touch / swipe support for mobile (horizontal) ───────
-    // Right-to-left swipe advances the story (translates X drag
-    // into vertical scroll so the engine picks it up naturally).
-    // passive:false lets us call preventDefault to suppress
-    // the browser's own horizontal pan/overscroll behaviour.
-    let _touchStartX = 0;
-    let _touchLastX  = 0;
-    let _touchVelX   = 0;
+    // ── Touch / swipe (mobile) — discrete beat-snap ─────────
+    // One swipe = exactly one paragraph (beat).
+    // During drag nothing scrolls; on release we snap to the
+    // neighbouring beat boundary. A 50px threshold prevents
+    // accidental triggers, a 400ms cooldown blocks double-fires.
+    let _txStart  = 0;
+    let _tyStart  = 0;
+    let _swipeLocked = false;
 
     document.addEventListener('touchstart', (e) => {
       const lock = document.getElementById('silence-lock');
       if (lock && lock.classList.contains('active')) return;
-      _touchStartX = e.touches[0].clientX;
-      _touchLastX  = _touchStartX;
-      _touchVelX   = 0;
+      _txStart = e.touches[0].clientX;
+      _tyStart = e.touches[0].clientY;
     }, { passive: true });
 
     document.addEventListener('touchmove', (e) => {
-      const lock = document.getElementById('silence-lock');
-      if (lock && lock.classList.contains('active')) return;
-      const x  = e.touches[0].clientX;
-      const dx = _touchLastX - x;  // positive = swipe left → advance story
-      _touchVelX  = dx;
-      _touchLastX = x;
-      e.preventDefault();           // block native horizontal pan / overscroll
-      window.scrollBy(0, dx * 3.5); // 3.5× — one beat per confident swipe
+      // Suppress horizontal browser pan only when the swipe is
+      // predominantly horizontal (dx > dy), so vertical scrolling
+      // of the page still works if the user swipes at a steep angle.
+      const dx = Math.abs(e.touches[0].clientX - _txStart);
+      const dy = Math.abs(e.touches[0].clientY - _tyStart);
+      if (dx > dy && dx > 10) e.preventDefault();
     }, { passive: false });
 
-    document.addEventListener('touchend', () => {
+    document.addEventListener('touchend', (e) => {
       const lock = document.getElementById('silence-lock');
       if (lock && lock.classList.contains('active')) return;
-      // Short momentum flick — decays quickly so overshoot is minimal
-      let vel = _touchVelX * 8;
-      const decay = () => {
-        if (Math.abs(vel) < 0.5) return;
-        window.scrollBy(0, vel);
-        vel *= 0.85;
-        requestAnimationFrame(decay);
-      };
-      requestAnimationFrame(decay);
+      if (_swipeLocked) return;
+
+      const netX = _txStart - e.changedTouches[0].clientX; // + = left swipe
+      const netY = Math.abs(_tyStart - e.changedTouches[0].clientY);
+
+      // Only trigger on predominantly horizontal swipes ≥ 50px
+      if (Math.abs(netX) < 50 || netY > Math.abs(netX)) return;
+
+      // Find current beat and jump to neighbour
+      const engine = window.engine;
+      if (!engine || !engine.beatMap) return;
+      const idx = engine._getActiveBeat(window.scrollY);
+      const target = netX > 0
+        ? Math.min(idx + 1, engine.beatMap.length - 1)  // swipe left → next
+        : Math.max(idx - 1, 0);                          // swipe right → prev
+
+      if (target !== idx) {
+        // Land slightly inside the beat so _getActiveBeat snaps correctly
+        window.scrollTo({ top: engine.beatMap[target].start + 10, behavior: 'smooth' });
+        _swipeLocked = true;
+        setTimeout(() => { _swipeLocked = false; }, 400);
+      }
     }, { passive: true });
     // ────────────────────────────────────────────────────────
 
