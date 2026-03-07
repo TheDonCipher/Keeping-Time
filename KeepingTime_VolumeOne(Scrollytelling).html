@@ -2101,7 +2101,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "hifi",
-    "drone": { "type": "sine", "baseFreq": 55, "gain": 0.04 }
+    // 261.63Hz = Middle C — "environmental baseline held at a perfect Middle C"
+    // Layered gives it the resonant fullness of the calibration hall
+    "drone": { "type": "layered", "baseFreq": 261.63, "gain": 0.03, "lfoDepth": 0.003, "lfoMax": 0.2, "filterFloor": 500 }
   },
   "ch02_assessment": {
     "accent": "#00f3ff",
@@ -2111,7 +2113,9 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "standard",
-    "drone": { "type": "sine", "baseFreq": 880, "gain": 0.025, "detune": 5 }
+    // 440Hz = A-440 Standard Calibration Pulse — the Score's enforcement baseline
+    // Clinical sine, minimal reactivity — the system is in control here
+    "drone": { "type": "sine", "baseFreq": 440, "gain": 0.025, "lfoDepth": 0.002, "lfoMax": 0.15, "filterFloor": 600 }
   },
   "ch03_modulation": {
     "accent": "#f5a623",
@@ -2121,7 +2125,9 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "standard",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // 369.99Hz = F#4 — "ventilation system emitted a constant sequence at F-sharp"
+    // Slight detune spread for warmth; moderate reactivity as Taro discovers his range
+    "drone": { "type": "sine", "baseFreq": 369.99, "gain": 0.03, "detune": 2, "detune2": -2, "lfoDepth": 0.004, "lfoMax": 0.35, "filterFloor": 400 }
   },
   "ch04_medium": {
     "accent": "#00f3ff",
@@ -2131,7 +2137,8 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "hifi",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // A-440 square wave — harmonic edge matches the Medium's abrasive surveillance
+    "drone": { "type": "square", "baseFreq": 440, "gain": 0.018, "lfoDepth": 0.003, "lfoMax": 0.25, "filterFloor": 500 }
   },
   "ch05_sync_check": {
     "accent": "#00f3ff",
@@ -2141,7 +2148,9 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "safe",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // Beating: 440Hz + 441Hz — models two signals trying to find each other
+    // beatFreq: 1 = one amplitude pulse per second (slow, uncertain sync)
+    "drone": { "type": "beating", "baseFreq": 440, "beatFreq": 1, "gain": 0.025, "lfoDepth": 0.004, "lfoMax": 0.3, "filterFloor": 450 }
   },
   "ch06_ground_state": {
     "accent": "#00f3ff",
@@ -2149,7 +2158,8 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "safe",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // A2 (110Hz) — resting, grounded, low energy; sub-bass presence for physical weight
+    "drone": { "type": "sine", "baseFreq": 110, "gain": 0.035, "subFreq": 40, "subGain": 0.025, "lfoDepth": 0.002, "lfoMax": 0.15, "filterFloor": 350 }
   },
   "ch07_rival": {
     "accent": "#00f3ff",
@@ -2159,7 +2169,9 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "hifi",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // C5 (523.25Hz) — appears verbatim in FRAGMENT_POOL as '523.25 Hz'
+    // Slight tension — the rival's challenge is present in the tone
+    "drone": { "type": "sine", "baseFreq": 523.25, "gain": 0.025, "lfoDepth": 0.005, "lfoMax": 0.5, "filterFloor": 400 }
   },
   "ch08_sortie": {
     "accent": "#00f3ff",
@@ -2169,7 +2181,9 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "standard",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // A1 (55Hz) layered — combat weight; felt as sub-bass, not heard as pitch
+    // Additional subFreq for maximum physical presence
+    "drone": { "type": "layered", "baseFreq": 55, "gain": 0.035, "subFreq": 27.5, "subGain": 0.03, "lfoDepth": 0.006, "lfoMax": 0.7, "filterFloor": 250 }
   },
   "ch09_silence": {
     "accent": "#9933ff",
@@ -2177,7 +2191,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "void",
-    "drone": { "type": "silence", "baseFreq": 0, "gain": 0 }
+    // void-decay: white noise fading to true silence over 3.5 seconds
+    // "silence did not exist — only varying degrees of organized noise"
+    "drone": { "type": "void-decay", "baseFreq": 0, "gain": 0.04, "decayTime": 3.5, "lfoMax": 0, "filterFloor": 800 }
   },
   "ch10_breach": {
     "accent": "#9933ff",
@@ -2185,7 +2201,8 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "void",
-    "drone": { "type": "sawtooth", "baseFreq": 110, "gain": 0.06 }
+    // Bb2 (116.54Hz) sawtooth — dissonant, torn, aggressive; widest reactivity range
+    "drone": { "type": "sawtooth", "baseFreq": 116.54, "gain": 0.04, "lfoDepth": 0.008, "lfoMax": 1.2, "filterFloor": 180 }
   },
   "ch11_safe_mode": {
     "accent": "#4488ff",
@@ -2193,7 +2210,8 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "safe",
-    "drone": { "type": "sine", "baseFreq": 220, "gain": 0.03 }
+    // A3 (220Hz) — cold, stripped, blueprint register; safe mode's sterile clarity
+    "drone": { "type": "sine", "baseFreq": 220, "gain": 0.025, "lfoDepth": 0.002, "lfoMax": 0.2, "filterFloor": 550 }
   },
   "ch12_audit": {
     "accent": "#4488ff",
@@ -2203,7 +2221,8 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "standard",
-    "drone": { "type": "sine", "baseFreq": 880, "gain": 0.025, "detune": 5 }
+    // A-440 re-imposed — maximum enforcement; barely reactive (administration is not emotional)
+    "drone": { "type": "sine", "baseFreq": 440, "gain": 0.03, "lfoDepth": 0.001, "lfoMax": 0.2, "filterFloor": 500 }
   },
   "ch13_patch": {
     "accent": "#00ff88",
@@ -2211,7 +2230,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "standard",
-    "drone": { "type": "sine", "baseFreq": 880, "gain": 0.025, "detune": 5 }
+    // Chord type: Middle C + perfect fifth — healing back toward baseline
+    // The most consonant interval; stable, forward-looking, earned
+    "drone": { "type": "chord", "baseFreq": 261.63, "gain": 0.028, "lfoDepth": 0.003, "lfoMax": 0.25, "filterFloor": 450 }
   },
   "ch14_return": {
     "accent": "#00ff88",
@@ -2219,7 +2240,8 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "hifi",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // 40Hz sub-bass — the underground's physical foundation; barely a pitch, mostly presence
+    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.035, "subFreq": 20, "subGain": 0.025, "lfoDepth": 0.004, "lfoMax": 0.4, "filterFloor": 300 }
   },
   "ch15_phantom_mesh": {
     "accent": "#00f3ff",
@@ -2229,7 +2251,8 @@ const CHAPTER_CONFIG = {
     ],
     "analogMode": false,
     "renderMode": "hifi",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // Beating: 440Hz + 441.5Hz — ghost signal; slightly wider beat than ch05 (less stable)
+    "drone": { "type": "beating", "baseFreq": 440, "beatFreq": 1.5, "gain": 0.025, "lfoDepth": 0.005, "lfoMax": 0.45, "filterFloor": 380 }
   },
   "ch16_illegal_modulations": {
     "accent": "#00f3ff",
@@ -2237,7 +2260,9 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": false,
     "renderMode": "standard",
-    "drone": { "type": "sine", "baseFreq": 40, "gain": 0.04 }
+    // Dissonant: Middle C + tritone shadow — the forbidden interval beneath the baseline
+    // Elara's mod: beauty that the system cannot parse
+    "drone": { "type": "dissonant", "baseFreq": 261.63, "gain": 0.028, "lfoDepth": 0.005, "lfoMax": 0.5, "filterFloor": 300 }
   },
   "ch17_underground": {
     "accent": "#00f3ff",
@@ -2245,7 +2270,8 @@ const CHAPTER_CONFIG = {
     "hudExtras": [],
     "analogMode": true,
     "renderMode": "void",
-    "drone": { "type": "crackle", "baseFreq": 60, "gain": 0.05 }
+    // Crackle — no Score signal. Pure analogue noise. The system has no data here.
+    "drone": { "type": "crackle", "baseFreq": 0, "gain": 0.05, "filterFreq": 600, "lfoMax": 0.5, "filterFloor": 200 }
   }
 };
 
@@ -2321,6 +2347,11 @@ class NarrativeState {
     const cv = document.getElementById('hud-coherence-val'); if (cv) cv.innerText = this.coherence.toFixed(2);
     const tb = document.getElementById('hud-tension'); if (tb) tb.style.width = (this.volume * 100) + '%';
     const cb = document.getElementById('hud-coherence'); if (cb) cb.style.width = (this.coherence * 100) + '%';
+    // AE-02: Feed current tension + coherence into the audio engine each tick
+    // so LFO rate and filter cutoff track the story state in real time.
+    if (typeof audioEngine !== 'undefined') {
+      audioEngine.updateNarrativeState(this.volume, this.coherence);
+    }
   }
 }
 const narrativeState = new NarrativeState();
@@ -2486,11 +2517,15 @@ class ScrollEngine {
       
         // Disable scroll during lock
         document.body.style.overflow = 'hidden';
+        // AE: void-decay — white noise fades to silence over 3.5s, arriving at zero
+        // as the lock screen completes. The system doesn't cut — it dies.
+        if (typeof audioEngine !== 'undefined') {
+          audioEngine.setDrone({ type: 'void-decay', baseFreq: 0, gain: 0.04, decayTime: 3.5, lfoMax: 0, filterFloor: 800 });
+        }
         if (lockEl) lockEl.classList.add('active');
       
-        // Trigger audio silence (Spec 01 integration)
-        if (typeof audioEngine !== 'undefined') audioEngine.setDrone({ type: 'silence', baseFreq: 0, gain: 0 });
       
+
         // Trigger bar animation on next frame so CSS transition fires
         requestAnimationFrame(() => { if (barEl) barEl.style.width = '200px'; });
       
@@ -2787,35 +2822,82 @@ function triggerSystemCrash() {
 }
 
 // ============================================================
-// SPEC 01: AMBIENT DRONE ENGINE
+// SPEC 01: AMBIENT DRONE ENGINE v2
 // Manages Web Audio API drone layer. Initialised on first user
 // interaction (click/scroll) to comply with browser autoplay policy.
+//
+// Architecture (four layers):
+//   A. Primary oscillator  — always present when not silent
+//   B. Secondary oscillator — harmony partner (type-dependent)
+//   C. Sub-bass sine       — <60Hz, bypasses filter (optional)
+//   D. Noise source        — crackle/static, replaces A+B
+//
+// Signal chain:
+//   [osc(s) / noise] → filter → droneGain → masterGain → output
+//                                   ↑
+//                          lfo → lfoDepth  (amplitude tremolo)
+//   subOsc → subGain → masterGain  (bypasses filter entirely)
 // ============================================================
 class AudioEngine {
   constructor() {
-    this.ctx = null;          
-    this.masterGain = null;   
-    this.droneOsc = null;     
-    this.droneGain = null;    
-    this.noiseNode = null;    
-    this.currentType = null;  
-    this.currentConfig = null; // Store last config for resume
-    this.ready = false;       
-    this.enabled = true;       // Enabled by default once initialized
+    // ── Core context & gain ───────────────────────────────────
+    this.ctx         = null;
+    this.masterGain  = null;   // Top-level gain; everything routes here
+
+    // ── Primary drone layer ───────────────────────────────────
+    this.droneOsc    = null;   // Primary oscillator
+    this.droneGain   = null;   // Post-filter gain for primary/secondary layers
+    this.noiseNode   = null;   // White noise source (crackle / void-decay)
+
+    // ── Secondary oscillator (harmony partner) ────────────────
+    this.droneOsc2   = null;   // Octave, beat partner, tritone, or fifth
+
+    // ── Sub-bass layer ────────────────────────────────────────
+    // Connects directly to masterGain; bypasses tonal filter
+    // so very low frequencies are felt physically, not filtered away.
+    this.subOsc      = null;   // Sine at <60 Hz
+    this.subGain     = null;   // Gain node for sub-bass mix level
+
+    // ── Tonal shaping ─────────────────────────────────────────
+    // Lowpass filter. Cutoff tracks coherence: bright when coherent,
+    // dark/muffled as coherence drops. Changes are very slow (3s TC).
+    this.filter      = null;
+
+    // ── Tremolo LFO ──────────────────────────────────────────
+    // Sine LFO modulates droneGain.gain for subtle amplitude shimmer.
+    // Rate tracks tension: slow at rest, faster under stress (2s TC).
+    this.lfo         = null;
+    this.lfoDepth    = null;   // GainNode scaling LFO output before it hits droneGain.gain
+
+    // ── Narrative state ───────────────────────────────────────
+    this.currentTension   = 0.15;  // Default: very low tension
+    this.currentCoherence = 0.95;  // Default: near-perfect coherence
+
+    // ── Engine state ──────────────────────────────────────────
+    this.currentType   = null;
+    this.currentConfig = null;   // Store last config for toggle-resume
+    this.ready         = false;
+    this.enabled       = true;
   }
 
+  // ── Initialisation ────────────────────────────────────────────
+  // Creates AudioContext and master gain. Called on first user gesture
+  // to satisfy browser autoplay policy.
   init() {
     if (this.ready) return;
     try {
       this.ctx = new (window.AudioContext || window.webkitAudioContext)();
       this.masterGain = this.ctx.createGain();
-      this.masterGain.gain.value = 0.7;
+      // 0.65 (was 0.7) — headroom for multiple simultaneous layers
+      this.masterGain.gain.value = 0.65;
       this.masterGain.connect(this.ctx.destination);
       this.ready = true;
       this.updateUI();
     } catch(e) { console.error("Audio init failed", e); }
   }
 
+  // ── Toggle ────────────────────────────────────────────────────
+  // Mutes/unmutes. If re-enabling, resumes the current chapter drone.
   toggle() {
     if (!this.ready) { this.init(); }
     this.enabled = !this.enabled;
@@ -2827,11 +2909,14 @@ class AudioEngine {
     this.updateUI();
   }
 
+  // ── HUD display ───────────────────────────────────────────────
+  // SPEC AE-05: Shows Hz value instead of type name, creating
+  // lore-confirmation moments when readers glance at the HUD.
   updateUI() {
     const statusEl = document.getElementById('hud-drone-val');
     const toggleBtn = document.getElementById('audio-toggle');
     const vizBars = document.querySelectorAll('.hud-viz-bar');
-    
+
     if (!this.ready) {
       if (statusEl) statusEl.textContent = 'OFFLINE';
       if (toggleBtn) toggleBtn.textContent = '[ AUDIO: OFF ]';
@@ -2840,20 +2925,43 @@ class AudioEngine {
     }
 
     if (!this.enabled) {
-      if (statusEl) statusEl.textContent = 'PAUSED';
+      if (statusEl) statusEl.textContent = 'MUTED';
       if (toggleBtn) toggleBtn.textContent = '[ AUDIO: OFF ]';
       vizBars.forEach(b => b.classList.remove('active'));
-    } else {
-      if (statusEl) statusEl.textContent = (this.currentType || 'IDLE').toUpperCase();
-      if (toggleBtn) toggleBtn.textContent = '[ AUDIO: ON ]';
-      if (this.currentType && this.currentType !== 'silence') {
-        vizBars.forEach(b => b.classList.add('active'));
-      } else {
-        vizBars.forEach(b => b.classList.remove('active'));
+      return;
+    }
+
+    // Build the DRONE readout text based on type:
+    let droneText = '';
+    const cfg = this.currentConfig;
+    if (cfg) {
+      const t = cfg.type;
+      if (t === 'beating') {
+        // Show both frequencies separated by pipe: "440|441"
+        const f1 = Math.round(cfg.baseFreq);
+        const f2 = Math.round(cfg.baseFreq + (cfg.beatFreq || 0));
+        droneText = f1 + '|' + f2;
+      } else if (t === 'void-decay') {
+        droneText = 'ZERO';
+      } else if (t === 'silence') {
+        droneText = '';
+      } else if (cfg.baseFreq) {
+        // All single-oscillator types: show rounded Hz value
+        droneText = Math.round(cfg.baseFreq) + 'Hz';
       }
+    }
+
+    if (statusEl) statusEl.textContent = droneText;
+    if (toggleBtn) toggleBtn.textContent = '[ AUDIO: ON ]';
+    if (this.currentType && this.currentType !== 'silence' && this.currentType !== 'void-decay') {
+      vizBars.forEach(b => b.classList.add('active'));
+    } else {
+      vizBars.forEach(b => b.classList.remove('active'));
     }
   }
 
+  // ── Noise buffer factory ──────────────────────────────────────
+  // Two-second white noise buffer, looped for crackle and void-decay.
   _createNoiseBuffer() {
     const bufferSize = this.ctx.sampleRate * 2;
     const buffer = this.ctx.createBuffer(1, bufferSize, this.ctx.sampleRate);
@@ -2862,16 +2970,23 @@ class AudioEngine {
     return buffer;
   }
 
+  // ── Crackle filter ────────────────────────────────────────────
+  // Analogue-flavour lowpass for the ch17 crackle / noise types.
   _createCrackleFilter() {
-    const filter = this.ctx.createBiquadFilter();
-    filter.type = 'lowpass'; filter.frequency.value = 800; filter.Q.value = 0.5;
-    return filter;
+    const f = this.ctx.createBiquadFilter();
+    f.type = 'lowpass'; f.frequency.value = 800; f.Q.value = 0.5;
+    return f;
   }
 
+  // ── Set drone from config ─────────────────────────────────────
+  // Called by NarrativeState whenever the chapter changes.
+  // Guards against redundant rebuilds when type hasn't changed.
   setDrone(droneConfig) {
     this.currentConfig = droneConfig;
     if (!this.ready || !droneConfig) return;
-    if (droneConfig.type === this.currentType) return;
+    // Allow void-decay to re-trigger even if type matches,
+    // so the Ch09 scroll trigger can re-issue the decay.
+    if (droneConfig.type !== 'void-decay' && droneConfig.type === this.currentType) return;
     this.currentType = droneConfig.type;
 
     if (this.enabled) {
@@ -2881,46 +2996,262 @@ class AudioEngine {
     }
   }
 
+  // ── Fade out and clean up ─────────────────────────────────────
+  // Ramps droneGain to 0 over ~2s then stops / nulls every node
+  // that may be running, preventing stale AudioNode references.
   _fadeOut(callback) {
     if (this.droneGain) {
       this.droneGain.gain.setTargetAtTime(0, this.ctx.currentTime, 0.5);
     }
     setTimeout(() => {
-      if (this.droneOsc) { try { this.droneOsc.stop(); } catch(e){} this.droneOsc = null; }
+      // ── Stop primary oscillator ───
+      if (this.droneOsc)  { try { this.droneOsc.stop();  } catch(e){} this.droneOsc  = null; }
+      // ── Stop secondary oscillator ─
+      if (this.droneOsc2) { try { this.droneOsc2.stop(); } catch(e){} this.droneOsc2 = null; }
+      // ── Stop noise source ─────────
       if (this.noiseNode) { try { this.noiseNode.stop(); } catch(e){} this.noiseNode = null; }
+      // ── Stop sub-bass oscillator ──
+      if (this.subOsc)    { try { this.subOsc.stop();    } catch(e){} this.subOsc    = null; }
+      // ── Stop LFO oscillator ───────
+      if (this.lfo)       { try { this.lfo.stop();       } catch(e){} this.lfo       = null; }
+      // ── Null remaining graph nodes ─
+      this.filter   = null;
+      this.lfoDepth = null;
+      this.subGain  = null;
       if (callback) callback();
     }, 2000);
   }
 
+  // ── Build full signal chain ───────────────────────────────────
+  // Constructs the four-layer drone for the given config object.
+  // All oscillators route through filter → droneGain → masterGain.
+  // Sub-bass routes directly to masterGain (bypasses filter).
+  // LFO modulates droneGain.gain for ambient tremolo.
   _startDrone(config) {
-    if (!this.enabled || config.type === 'silence') { 
+    if (!this.enabled || config.type === 'silence') {
       this.updateUI();
-      return; 
+      return;
     }
 
-    this.droneGain = this.ctx.createGain();
-    this.droneGain.gain.value = 0;
+    const ctx = this.ctx;
+    const now = ctx.currentTime;
+
+    // ── droneGain — post-filter mix level ─────────────────────
+    this.droneGain = ctx.createGain();
+    this.droneGain.gain.value = 0; // Fade in below
+
+    // ── BiquadFilter — coherence-reactive tonal shaping ───────
+    // Starts at a neutral cutoff; updateNarrativeState() will
+    // move it toward the coherence-derived target over 3s.
+    this.filter = ctx.createBiquadFilter();
+    this.filter.type = 'lowpass';
+    this.filter.frequency.value = 180 + this.currentCoherence * 620;
+    this.filter.Q.value = 0.8;
+
+    // Main routing: filter → droneGain → masterGain
+    this.filter.connect(this.droneGain);
     this.droneGain.connect(this.masterGain);
 
-    if (config.type === 'crackle' || config.type === 'noise') {
-      this.noiseNode = this.ctx.createBufferSource();
-      this.noiseNode.buffer = this._createNoiseBuffer();
-      this.noiseNode.loop = true;
-      const filter = this._createCrackleFilter();
-      this.noiseNode.connect(filter);
-      filter.connect(this.droneGain);
-      this.noiseNode.start();
-    } else {
-      this.droneOsc = this.ctx.createOscillator();
-      this.droneOsc.type = config.type;
-      this.droneOsc.frequency.value = config.baseFreq;
-      if (config.detune) this.droneOsc.detune.value = config.detune * 100;
-      this.droneOsc.connect(this.droneGain);
-      this.droneOsc.start();
+    // ── LFO tremolo setup (all types except silence/void-decay) ──
+    // The LFO sine output feeds through lfoDepth (a GainNode that
+    // scales its amplitude) and then into droneGain.gain, so the
+    // LFO amplitude-modulates the drone without touching the filter.
+    if (config.type !== 'void-decay') {
+      this.lfo = ctx.createOscillator();
+      this.lfo.type = 'sine';
+      this.lfo.frequency.value = 0.08 + this.currentTension * 1.12;
+
+      this.lfoDepth = ctx.createGain();
+      this.lfoDepth.gain.value = config.lfoDepth || 0;
+
+      this.lfo.connect(this.lfoDepth);
+      this.lfoDepth.connect(this.droneGain.gain);
+      this.lfo.start(now);
     }
 
-    this.droneGain.gain.setTargetAtTime(config.gain, this.ctx.currentTime, 1.0);
+    // ── Build the audio source based on drone personality type ──
+
+    if (config.type === 'crackle' || config.type === 'noise') {
+      // ── Analogue noise (ch17) ──────────────────────────────
+      // White noise → custom lowpass → filter chain.
+      // Models the absence of any Score signal.
+      this.noiseNode = ctx.createBufferSource();
+      this.noiseNode.buffer = this._createNoiseBuffer();
+      this.noiseNode.loop = true;
+      const crackleFilter = this._createCrackleFilter();
+      this.noiseNode.connect(crackleFilter);
+      crackleFilter.connect(this.filter);
+      this.noiseNode.start(now);
+
+    } else if (config.type === 'void-decay') {
+      // ── Void-decay (ch09 only) ─────────────────────────────
+      // White noise filtered at 800Hz, decaying to silence over
+      // config.decayTime seconds. The system doesn't cut — it dies.
+      this.noiseNode = ctx.createBufferSource();
+      this.noiseNode.buffer = this._createNoiseBuffer();
+      this.noiseNode.loop = true;
+      const voidFilter = ctx.createBiquadFilter();
+      voidFilter.type = 'lowpass';
+      voidFilter.frequency.value = 800;
+      voidFilter.Q.value = 0.5;
+      this.noiseNode.connect(voidFilter);
+      voidFilter.connect(this.droneGain);
+      this.noiseNode.start(now);
+      // Set gain immediately to config.gain, then ramp to 0
+      this.droneGain.gain.setValueAtTime(config.gain, now);
+      this.droneGain.gain.linearRampToValueAtTime(0, now + (config.decayTime || 3.5));
+      this.updateUI();
+      return; // Skip the standard fade-in below
+
+    } else if (config.type === 'layered') {
+      // ── Layered (ch01, ch08) ───────────────────────────────
+      // Fundamental sine + octave harmonic at −9dB (gain 0.35).
+      // Models Ven's Sink-class output: maximum signal density.
+      this.droneOsc = ctx.createOscillator();
+      this.droneOsc.type = 'sine';
+      this.droneOsc.frequency.value = config.baseFreq;
+      this.droneOsc.connect(this.filter);
+      this.droneOsc.start(now);
+
+      this.droneOsc2 = ctx.createOscillator();
+      this.droneOsc2.type = 'sine';
+      this.droneOsc2.frequency.value = config.baseFreq * 2; // Octave harmonic
+      const osc2Gain = ctx.createGain();
+      osc2Gain.gain.value = 0.35; // –9dB relative to fundamental
+      this.droneOsc2.connect(osc2Gain);
+      osc2Gain.connect(this.filter);
+      this.droneOsc2.start(now);
+
+    } else if (config.type === 'beating') {
+      // ── Beating (ch05, ch15) ───────────────────────────────
+      // Two sines separated by config.beatFreq Hz — their slight
+      // pitch difference creates a slow amplitude "beat" at
+      // exactly beatFreq cycles/second (e.g. 1Hz = one pulse/sec).
+      // Models two signals trying to sync-lock onto each other.
+      this.droneOsc = ctx.createOscillator();
+      this.droneOsc.type = 'sine';
+      this.droneOsc.frequency.value = config.baseFreq;
+      this.droneOsc.connect(this.filter);
+      this.droneOsc.start(now);
+
+      this.droneOsc2 = ctx.createOscillator();
+      this.droneOsc2.type = 'sine';
+      this.droneOsc2.frequency.value = config.baseFreq + (config.beatFreq || 1);
+      const osc2Gain = ctx.createGain();
+      osc2Gain.gain.value = 0.85;
+      this.droneOsc2.connect(osc2Gain);
+      osc2Gain.connect(this.filter);
+      this.droneOsc2.start(now);
+
+    } else if (config.type === 'dissonant') {
+      // ── Dissonant (ch16) ───────────────────────────────────
+      // Fundamental + tritone (√2 ratio ≈ 1.4142).
+      // The historically forbidden interval — "the devil in music".
+      // Models beauty that the Score's enforcement system cannot parse.
+      this.droneOsc = ctx.createOscillator();
+      this.droneOsc.type = 'sine';
+      this.droneOsc.frequency.value = config.baseFreq;
+      this.droneOsc.connect(this.filter);
+      this.droneOsc.start(now);
+
+      this.droneOsc2 = ctx.createOscillator();
+      this.droneOsc2.type = 'sine';
+      this.droneOsc2.frequency.value = config.baseFreq * 1.4142; // Tritone (√2)
+      const osc2Gain = ctx.createGain();
+      osc2Gain.gain.value = 0.45;
+      this.droneOsc2.connect(osc2Gain);
+      osc2Gain.connect(this.filter);
+      this.droneOsc2.start(now);
+
+    } else if (config.type === 'chord') {
+      // ── Chord (ch13) ──────────────────────────────────────
+      // Fundamental + perfect fifth (3:2 ratio).
+      // The most stable, consonant interval in Western harmony.
+      // Healing, forward-looking, earned after the chaos of ch10-12.
+      this.droneOsc = ctx.createOscillator();
+      this.droneOsc.type = 'sine';
+      this.droneOsc.frequency.value = config.baseFreq;
+      this.droneOsc.connect(this.filter);
+      this.droneOsc.start(now);
+
+      this.droneOsc2 = ctx.createOscillator();
+      this.droneOsc2.type = 'sine';
+      this.droneOsc2.frequency.value = config.baseFreq * 1.5; // Perfect fifth (3:2)
+      const osc2Gain = ctx.createGain();
+      osc2Gain.gain.value = 0.55;
+      this.droneOsc2.connect(osc2Gain);
+      osc2Gain.connect(this.filter);
+      this.droneOsc2.start(now);
+
+    } else {
+      // ── Standard waveform types: sine, square, sawtooth ────
+      // Single oscillator routed through filter.
+      // Detune fields (in semitones) apply warmth/spread where set.
+      this.droneOsc = ctx.createOscillator();
+      this.droneOsc.type = config.type; // 'sine' | 'square' | 'sawtooth'
+      this.droneOsc.frequency.value = config.baseFreq;
+      if (config.detune)  this.droneOsc.detune.value = config.detune * 100;
+      this.droneOsc.connect(this.filter);
+      this.droneOsc.start(now);
+    }
+
+    // ── Sub-bass layer (optional) ──────────────────────────────
+    // If config.subFreq is set, add a sine oscillator at a very low
+    // frequency (<60Hz) that connects directly to masterGain,
+    // bypassing the tonal filter entirely so it is felt, not filtered.
+    if (config.subFreq && config.type !== 'crackle' && config.type !== 'void-decay') {
+      this.subOsc = ctx.createOscillator();
+      this.subOsc.type = 'sine';
+      this.subOsc.frequency.value = config.subFreq;
+      this.subGain = ctx.createGain();
+      this.subGain.gain.value = 0; // Start silent, fade in
+      this.subOsc.connect(this.subGain);
+      this.subGain.connect(this.masterGain);
+      this.subOsc.start(now);
+      // Slow fade-in for physical presence — 2.5s time constant
+      this.subGain.gain.setTargetAtTime(config.subGain || 0.03, now, 2.5);
+    }
+
+    // ── Standard fade-in for droneGain ───────────────────────
+    // 1.0s time constant — slow enough to avoid any click artifact
+    // on chapter transitions.
+    this.droneGain.gain.setTargetAtTime(config.gain, now, 1.0);
     this.updateUI();
+  }
+
+  // ── Narrative reactivity ──────────────────────────────────────
+  // Called each scroll tick by NarrativeState.update().
+  // Updates LFO rate (tracks tension) and filter cutoff (tracks coherence)
+  // using slow time constants so all changes are subliminal.
+  // Per-chapter lfoMax and filterFloor ceilings are enforced here.
+  updateNarrativeState(tension, coherence) {
+    // Cache for use when rebuilding after toggle
+    this.currentTension   = tension;
+    this.currentCoherence = coherence;
+
+    if (!this.ready || !this.lfo || !this.filter) return;
+
+    const cfg = this.currentConfig || {};
+    const now = this.ctx.currentTime;
+
+    // ── LFO rate — tracks TENSION ─────────────────────────────
+    // Range: 0.08Hz (resting) → 1.2Hz (maximum tension)
+    // Each chapter declares an lfoMax ceiling; calm chapters are
+    // capped so tension spikes never make them feel anxious.
+    let targetLFO = 0.08 + tension * 1.12;
+    if (cfg.lfoMax !== undefined) targetLFO = Math.min(targetLFO, cfg.lfoMax);
+    // Time constant 2.0s — changes take ~6 seconds to fully arrive
+    this.lfo.frequency.setTargetAtTime(targetLFO, now, 2.0);
+
+    // ── Filter cutoff — tracks COHERENCE ─────────────────────
+    // Range: 800Hz (fully coherent, bright) → 180Hz (collapse, muffled)
+    // Each chapter declares a filterFloor minimum so high-fidelity
+    // chapters never go completely dark regardless of coherence drops.
+    let targetFilter = 180 + coherence * 620;
+    if (cfg.filterFloor !== undefined) targetFilter = Math.max(targetFilter, cfg.filterFloor);
+    // Time constant 3.0s — even slower than LFO; tonal shifts must
+    // be so gradual the reader never consciously notices them.
+    this.filter.frequency.setTargetAtTime(targetFilter, now, 3.0);
   }
 }
 
