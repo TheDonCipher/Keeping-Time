@@ -2412,42 +2412,43 @@ class ScrollEngine {
     this.targetY = this.currentY = window.scrollY;
     window.addEventListener('scroll', () => { this.targetY = window.scrollY; }, { passive: true });
 
-    // ── Touch / swipe support for mobile ────────────────────
-    // Translates vertical finger drag into window scroll so the
-    // existing scroll listener picks it up naturally.
-    let _touchStartY = 0;
-    let _touchLastY  = 0;
-    let _touchVelY   = 0;  // pixels/ms — used for momentum flick
+    // ── Touch / swipe support for mobile (horizontal) ───────
+    // Right-to-left swipe advances the story (translates X drag
+    // into vertical scroll so the engine picks it up naturally).
+    // passive:false lets us call preventDefault to suppress
+    // the browser's own horizontal pan/overscroll behaviour.
+    let _touchStartX = 0;
+    let _touchLastX  = 0;
+    let _touchVelX   = 0;
 
     document.addEventListener('touchstart', (e) => {
-      // Don't interrupt the silence-lock screen
       const lock = document.getElementById('silence-lock');
       if (lock && lock.classList.contains('active')) return;
-      _touchStartY = e.touches[0].clientY;
-      _touchLastY  = _touchStartY;
-      _touchVelY   = 0;
+      _touchStartX = e.touches[0].clientX;
+      _touchLastX  = _touchStartX;
+      _touchVelX   = 0;
     }, { passive: true });
 
     document.addEventListener('touchmove', (e) => {
       const lock = document.getElementById('silence-lock');
       if (lock && lock.classList.contains('active')) return;
-      const y   = e.touches[0].clientY;
-      const dy  = _touchLastY - y;   // positive = swipe up = scroll down
-      _touchVelY  = dy;              // store last delta for flick
-      _touchLastY = y;
-      // Scroll multiplier 1.8 — matches typical browser touch sensitivity
-      window.scrollBy(0, dy * 1.8);
-    }, { passive: true });
+      const x  = e.touches[0].clientX;
+      const dx = _touchLastX - x;  // positive = swipe left → advance story
+      _touchVelX  = dx;
+      _touchLastX = x;
+      e.preventDefault();           // block native horizontal pan / overscroll
+      window.scrollBy(0, dx * 3.5); // 3.5× — one beat per confident swipe
+    }, { passive: false });
 
     document.addEventListener('touchend', () => {
       const lock = document.getElementById('silence-lock');
       if (lock && lock.classList.contains('active')) return;
-      // Momentum flick — decays over ~20 frames
-      let vel = _touchVelY * 12;
+      // Short momentum flick — decays quickly so overshoot is minimal
+      let vel = _touchVelX * 8;
       const decay = () => {
         if (Math.abs(vel) < 0.5) return;
         window.scrollBy(0, vel);
-        vel *= 0.88;
+        vel *= 0.85;
         requestAnimationFrame(decay);
       };
       requestAnimationFrame(decay);
@@ -3314,7 +3315,25 @@ window.onload = async () => {
   // Update scroll hint for touch-capable devices
   if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
     const hint = document.getElementById('scroll-hint');
-    if (hint) hint.querySelector('span').textContent = 'SWIPE TO READ';
+    if (hint) {
+      const span = hint.querySelector('span');
+      if (span) span.textContent = 'SWIPE LEFT';
+      // Swap downward arrow for left-pointing chevron
+      const svg = hint.querySelector('svg');
+      if (svg) {
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.innerHTML = '<path d="M19 12H5M12 19l-7-7 7-7"/>';
+      }
+      // Override bounce animation: pulse left instead of down
+      hint.style.setProperty('animation', 'bounceHintH 2.2s infinite');
+    }
+    // Inject horizontal bounce keyframes once
+    if (!document.getElementById('swipe-hint-style')) {
+      const st = document.createElement('style');
+      st.id = 'swipe-hint-style';
+      st.textContent = '@keyframes bounceHintH { 0%,100%{transform:translateX(-50%) translateX(0)} 50%{transform:translateX(-50%) translateX(-10px)} }';
+      document.head.appendChild(st);
+    }
   }
   compileNarrative();
   await runHUDBootSequence();
