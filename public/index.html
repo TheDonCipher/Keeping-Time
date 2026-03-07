@@ -2411,6 +2411,49 @@ class ScrollEngine {
     const sm = document.getElementById('scroll-machine'); if (sm) sm.style.height = this.totalHeight + 'px';
     this.targetY = this.currentY = window.scrollY;
     window.addEventListener('scroll', () => { this.targetY = window.scrollY; }, { passive: true });
+
+    // ── Touch / swipe support for mobile ────────────────────
+    // Translates vertical finger drag into window scroll so the
+    // existing scroll listener picks it up naturally.
+    let _touchStartY = 0;
+    let _touchLastY  = 0;
+    let _touchVelY   = 0;  // pixels/ms — used for momentum flick
+
+    document.addEventListener('touchstart', (e) => {
+      // Don't interrupt the silence-lock screen
+      const lock = document.getElementById('silence-lock');
+      if (lock && lock.classList.contains('active')) return;
+      _touchStartY = e.touches[0].clientY;
+      _touchLastY  = _touchStartY;
+      _touchVelY   = 0;
+    }, { passive: true });
+
+    document.addEventListener('touchmove', (e) => {
+      const lock = document.getElementById('silence-lock');
+      if (lock && lock.classList.contains('active')) return;
+      const y   = e.touches[0].clientY;
+      const dy  = _touchLastY - y;   // positive = swipe up = scroll down
+      _touchVelY  = dy;              // store last delta for flick
+      _touchLastY = y;
+      // Scroll multiplier 1.8 — matches typical browser touch sensitivity
+      window.scrollBy(0, dy * 1.8);
+    }, { passive: true });
+
+    document.addEventListener('touchend', () => {
+      const lock = document.getElementById('silence-lock');
+      if (lock && lock.classList.contains('active')) return;
+      // Momentum flick — decays over ~20 frames
+      let vel = _touchVelY * 12;
+      const decay = () => {
+        if (Math.abs(vel) < 0.5) return;
+        window.scrollBy(0, vel);
+        vel *= 0.88;
+        requestAnimationFrame(decay);
+      };
+      requestAnimationFrame(decay);
+    }, { passive: true });
+    // ────────────────────────────────────────────────────────
+
     this._loop();
   }
   _calculateHeights() {
@@ -3261,11 +3304,23 @@ const unlockAudio = () => {
   audioEngine.init();
   window.removeEventListener('scroll', unlockAudio);
   window.removeEventListener('click', unlockAudio);
+  window.removeEventListener('touchstart', unlockAudio);
 };
 window.addEventListener('scroll', unlockAudio, { passive: true, once: true });
 window.addEventListener('click', unlockAudio, { once: true });
+window.addEventListener('touchstart', unlockAudio, { passive: true, once: true });
 
-window.onload = async () => { compileNarrative(); await runHUDBootSequence(); window.engine = new ScrollEngine(NARRATIVE_DATA); window.engine.init(); };
+window.onload = async () => {
+  // Update scroll hint for touch-capable devices
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    const hint = document.getElementById('scroll-hint');
+    if (hint) hint.querySelector('span').textContent = 'SWIPE TO READ';
+  }
+  compileNarrative();
+  await runHUDBootSequence();
+  window.engine = new ScrollEngine(NARRATIVE_DATA);
+  window.engine.init();
+};
 </script>
 
 <!-- SPEC 02: Silence lock overlay -->
