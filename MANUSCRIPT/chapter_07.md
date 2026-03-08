@@ -1,9 +1,12 @@
 # KEEPING TIME
-## Chapter 7: The Architecture of Sound
+## Chapter 7: The Rival
+
+
+---
 
 > REGULATORY NOTICE: Authorized structural manipulation of the local
 > physical rendered environment is restricted to personnel holding
-> confirmed Architect-Class licensing or higher. Non-licensed editing 
+> confirmed Architect-Class licensing or higher. Non-licensed editing
 > constitutes a Class-1 Coherence Deviation.
 > — *C-Order Compliance Handbook, Vol. V, §1.1*
 
@@ -11,24 +14,23 @@
 **FIDELITY: HI-FI [CONTROLLED]**
 **STATUS: ACTIVE**
 
----
 
-### [14:00:00] THE ARCHITECTURE OF SOUND
+---
 
 The primary Lecture Hall was a marvel of acoustic engineering.
 
-The system categorized the space as Zone: Lecture_Hall_01, an environment defined by its uniform acoustic profile and a ninety-eight percent damping factor. The room was effectively deadened. It functioned as an absorptive environment with a systemic gain of -20dB and an RT60 reverberation time of 0.1s. In this room, phase drift was impossible to obscure. 
+The system categorized the space as Zone: Lecture_Hall_01, an environment defined by its uniform acoustic profile and a ninety-eight percent damping factor. The room was effectively deadened. It functioned as an absorptive environment with a systemic gain of -20dB and an RT60 reverberation time of 0.1s. In this room, phase drift was impossible to obscure.
 Every syllable output was an involuntary audit.
 
 "Reality," Instructor Dorian Vale said, "is a standing wave."
 
-He occupied the nadir of the amphitheater. Target analysis confirmed him as Architect Vale, a structural architect carrying an advanced curriculum clearance and a high-tier stability rating. He did not pace. He did not engage in extraneous manual gestures. 
+He occupied the nadir of the amphitheater. Target analysis confirmed him as Architect Vale, a structural architect carrying an advanced curriculum clearance and a high-tier stability rating. He did not pace. He did not engage in extraneous manual gestures.
 
 <aside>
 <details>
 <summary><strong>SUBJECT: Structural Architect</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A specialized class of user who doesn't just play the world's music, but builds the instruments that define reality itself.
+<strong>Observation:</strong> A specialized class of user who doesn't just play the world's music, but builds the instruments that define reality itself. They speak the language of physics seamlessly, untying the world rather than breaking it.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -44,20 +46,20 @@ He raised his right hand. A complex, rotating 3D architectural model rendered in
 // [NOTE: Instructor Vale's description of Low-Fidelity behavior aligns numerically with the subject's baseline operating parameters.]
 // [NOTE: Logging correlation.]
 
-He shifted his optical focus to the elevated rear seating array, specifically locating the coordinates occupied by Taro, Ven, and Hana. 
+He shifted his optical focus to the elevated rear seating array, specifically locating the coordinates occupied by Taro, Ven, and Hana.
 Taro registered the weight of the gaze. It produced a sensation akin to physical calipers measuring his cranial structure.
 
 "Resonance is not volume," Vale corrected. "It is alignment. A bridge does not collapse because the wind is loud. It collapses because the wind finds its *natural frequency* and enters a destructive feedback loop. A whisper, applied at the right interval, can shatter a diamond. Stay flat, and you control the medium. Spike, and you are merely a casualty of your own noise."
 
-He executed a manual friction maneuver. 
+He executed a manual friction maneuver.
 
-*CLICK.* 
+*CLICK.*
 
 The blue wireframe structure shattered into several million disconnected polygons.
 
 "Control," Vale said. "Not force. That is the lesson. To be an Architect is to understand the structure of the world so perfectly that you do not need to break it. You simply... untie it."
 
-Hana transcribed the entire auditory output into her HUD at a speed that blurred the resulting text. Ven appeared to be in a restorative cycle, or perhaps low-power meditation. 
+Hana transcribed the entire auditory output into her HUD at a speed that blurred the resulting text. Ven appeared to be in a restorative cycle, or perhaps low-power meditation.
 Taro maintained a repetitive physical impact with his foot against the floor grid. *One-two-three. One-two-three.*
 
 "New Student," Vale said.
@@ -68,19 +70,18 @@ The environmental acoustics dropped to absolute zero.
 
 Taro raised his optical focus. "Me?"
 
-"Yes. The rhythmic anomaly. You are broadcasting a polyrhythm in a 4/4 environment. It is structurally unsound. Socially disruptive." 
+"Yes. The rhythmic anomaly. You are broadcasting a polyrhythm in a 4/4 environment. It is structurally unsound. Socially disruptive."
 
-Vale pointed a precisely angled finger. 
+Vale pointed a precisely angled finger.
 
 "Demonstrate your style. Enter the Circle."
 
+
 ---
 
-### [14:30:00] MIL-SPEC SIMULATION
+Taro stood in the center of the demonstration ring. The floor architecture illuminated, rendering a tactical coordinate grid.
 
-Taro stood in the center of the demonstration ring. The floor architecture illuminated, rendering a tactical coordinate grid. 
-
-Instructor Vale announced the opposing variable: Cadet Marcus Staccato, a Vanguard elite. 
+Instructor Vale announced the opposing variable: Cadet Marcus Staccato, a Vanguard elite.
 
 > `TARGET_ANALYSIS: STACCATO_MARCUS [CLASS: VANGUARD_TIER_3]`
 > `SPECIALTY: RHYTHM_OPERATOR [PHASE_MANIPULATION]`
@@ -93,26 +94,26 @@ Marcus did not utilize standard bipedal walking mechanics; his movement register
 
 "Begin."
 
-Marcus vanished from the visual plane. 
+Marcus vanished from the visual plane.
 
 > `VISUAL_ARTIFACT: FRAME_SKIP_DETECTED`
 
-The system logged temporal compression in the local grid. At Time Index 00.00, he existed ten meters away; at Time Index 00.01, he occupied coordinates directly inside Taro's immediate boundaries. 
+The system logged temporal compression in the local grid. At Time Index 00.00, he existed ten meters away; at Time Index 00.01, he occupied coordinates directly inside Taro's immediate boundaries.
 
-The proximity alarm engaged with maximum gain. 
+The proximity alarm engaged with maximum gain.
 
 > `ALERT: COLLISION_IMMINENT`
 
 *CRACK.*
 
-A physical baton impacted Taro's lateral rib structure. It was not merely a kinetic sub-routine. It functioned as a systemic downbeat. The targeted resonance of the rod forced Taro's entire nervous system into a mandatory cycle reset. 
+A physical baton impacted Taro's lateral rib structure. It was not merely a kinetic sub-routine. It functioned as a systemic downbeat. The targeted resonance of the rod forced Taro's entire nervous system into a mandatory cycle reset.
 
-His respiratory function halted. His optical feed reverted to grayscale parameters. 
+His respiratory function halted. His optical feed reverted to grayscale parameters.
 
 > `STATUS: STUNNED`
 > `NEURAL_RESET: IN_PROGRESS`
 
-Motor control was placed offline as an external pulse forced a complete restart of his localized bio-plasma cycle. 
+Motor control was placed offline as an external pulse forced a complete restart of his localized bio-plasma cycle.
 
 > `TARO_METRICS: SDI 0.95 // HIQ 0.88`
 
@@ -124,15 +125,15 @@ The diagnostic was accurate. To Taro's optical sensors, Marcus was actively vibr
 
 "Fight back," Dorian Vale ordered. "Chaos has no structure. Prove me right."
 
-Taro engaged his jaw musculature. *Ignore the visuals. Focus on the hum.* 
-He accessed his internal signal capacity. He did not apply damping. He allowed the feed to escalate. 
+Taro engaged his jaw musculature. *Ignore the visuals. Focus on the hum.*
+He accessed his internal signal capacity. He did not apply damping. He allowed the feed to escalate.
 
 > `OUTPUT_TARO: 80% [SAWTOOTH_BURST]`
 
 Taro projected a localized wave of jagged acoustic noise at Marcus's coordinates. It rendered as a wide cone of high-amplitude yellow distortion.
 
-Marcus did not initiate evasion vectors. He engaged the sound directly. 
-He executed a perfect vertical arc with his physical baton. The red-illuminated tip intersected Taro's yellow wave, bisecting the signal geometry flawlessly. 
+Marcus did not initiate evasion vectors. He engaged the sound directly.
+He executed a perfect vertical arc with his physical baton. The red-illuminated tip intersected Taro's yellow wave, bisecting the signal geometry flawlessly.
 
 > `INTERFERENCE: DESTRUCTIVE`
 
@@ -140,7 +141,7 @@ He executed a perfect vertical arc with his physical baton. The red-illuminated 
 <details>
 <summary><strong>SUBJECT: Destructive Interference</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A phenomenon where two waves collide and cancel each other out, leaving only a cold and hollow silence in their wake.
+<strong>Observation:</strong> A phenomenon where two waves collide and cancel each other out, leaving only a cold and hollow silence in their wake. It is the ultimate defensive technique, turning an attacker's own energy into absolute void.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -148,17 +149,17 @@ He executed a perfect vertical arc with his physical baton. The red-illuminated 
 </aside>
 
 Opposing phases effectively cancelled the signal energy, nullifying the attack with absolute mathematical efficiency.
-The wave dissolved into harmless, particulate static. 
+The wave dissolved into harmless, particulate static.
 
 "Sloppy," Marcus sneered. "High amplitude. Zero structure. You're just shouting at the wall. You found the right note, but you played it with zero envelope. You're clipping the whole Dojo."
 
 He elevated the baton. The impact tip hummed with a concentrated red frequency. "This is high-fidelity."
 
-*Click-click-click.* 
+*Click-click-click.*
 
 He executed three rapid strikes. A triplet pattern.
 
-The atmospheric parameters solidified. The resultant sound waves he generated did not dissipate into the environment; they maintained cohesion, forming a physical geometric cage of red light encompassing Taro's coordinates. 
+The atmospheric parameters solidified. The resultant sound waves he generated did not dissipate into the environment; they maintained cohesion, forming a physical geometric cage of red light encompassing Taro's coordinates.
 
 > `TRAP_DETECTED: RHYTHM_CAGE`
 
@@ -172,20 +173,29 @@ Marcus executed a manual tap against the cage structure.
 
 > `ERROR: CRITICAL_FAILURE`
 
-A kernel panic manifested in Taro's local systems. The hardware initiated an unprompted safety restart. 
+A kernel panic manifested in Taro's local systems. The hardware initiated an unprompted safety restart.
 
 > `SYSTEM_REBOOTING...`
 
 Taro occupied the floor grid. He was emitting low-frequency groans.
 
-Marcus stood directly over him. He deactivated his localized jamming protocol for a single second. His synchronization held at a perfect ninety-nine percent, his overall efficiency rendering as total. 
+Marcus stood directly over him. He deactivated his localized jamming protocol for a single second. His synchronization held at a perfect ninety-nine percent, his overall efficiency rendering as total.
 
 > `VOCAL_ANALYSIS: CLINICAL_BOREDOM`
 
 "Get a metronome, Wrong Note," Marcus said. "You're just noise in my signal path."
 
-Marcus departed the ring. *Step. Step. Step.* 
+Marcus departed the ring. *Step. Step. Step.*
 Locked to a perfect 140 BPM.
+
+Marcus adjusted his armor plating at the ring's edge. He was not looking at Taro. He was not addressing anyone in particular.
+
+*"Rank 3,"* Marcus said. *"Sector leaderboard. Out of forty thousand active users."*
+
+He walked toward the equipment corridor.
+
+> `SOCIAL_METRIC: RANK_3 — SECTOR_LEADERBOARD`
+> `MARCUS: MENTIONS THIS FREQUENTLY`
 
 Dorian Vale directed his optical focus downward toward Taro.
 
@@ -193,11 +203,12 @@ Dorian Vale directed his optical focus downward toward Taro.
 
 Taro looked up.
 
-At significant elevation, within the secure observation booth, a golden light flickered. The Headmaster was maintaining visual surveillance. And unlike Vale, the system evaluated that he was not observing Taro with disdain. 
+At significant elevation, within the secure observation booth, a golden light flickered. The Headmaster was maintaining visual surveillance. And unlike Vale, the system evaluated that he was not observing Taro with disdain.
 
-He was checking an analog chronometer. He was timing the explosion. 
+He was checking an analog chronometer. He was timing the explosion.
 
 > `LESSON_COMPLETE`
+
 
 ---
 

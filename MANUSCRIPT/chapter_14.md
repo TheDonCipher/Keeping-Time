@@ -1,7 +1,10 @@
 # KEEPING TIME
 ## Chapter 14: The Return
 
-> REGULATORY NOTICE: Maintain optimal atmospheric conditions. 
+
+---
+
+> REGULATORY NOTICE: Maintain optimal atmospheric conditions.
 > Dissonance is a failure of community hygiene.
 > — *C-Order Compliance Handbook, Vol. I, §2.4*
 
@@ -9,11 +12,10 @@
 **FIDELITY: MAXIMUM [8K_RENDER]**
 **STATUS: ONLINE_AND_OPTIMAL**
 
+
 ---
 
-### [08:00:00] THE UNCANNY VALLEY
-
-The primary gates of Malkuth Academy rendered perfectly in their designated golden spectrum. His HUD confirmed the area as a high-fidelity educational tier, local synchronization at a flawless one hundred percent. The firmware—version 2.0, patched and optimized—was confirmed active, its cognitive bias layer operating flawlessly in the background as it verified his identity. 
+The primary gates of Malkuth Academy rendered perfectly in their designated golden spectrum. His HUD confirmed the area as a high-fidelity educational tier, local synchronization at a flawless one hundred percent. The firmware—version 2.0, patched and optimized—was confirmed active, its cognitive bias layer operating flawlessly in the background as it verified his identity.
 
 > `STATUS: COMPLIANT`
 
@@ -27,7 +29,7 @@ Across the courtyard geometry, a registered group of First Year assets were exec
 <details>
 <summary><strong>SUBJECT: Social Harmony</strong></summary>
 <blockquote>
-<strong>Observation:</strong> An auto-tuning algorithm that smooths out the rough edges of human interaction, ensuring every word and gesture is perfectly in key.
+<strong>Observation:</strong> An auto-tuning algorithm that smooths out the rough edges of human interaction, ensuring every word and gesture is perfectly in key. It enforces mandatory cheerfulness by mathematically eliminating the frequencies associated with anxiety, fear, or dissent.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -44,13 +46,12 @@ He executed a manual tap against his temporal lobe, registering a phantom tactil
 
 Taro stiffened. Muscle tension increased by 14%.
 
----
 
-### [08:15:00] THE AMPHITHEATER
+---
 
 The Amphitheater architecture formed a perfect parabolic bowl designed for maximum acoustic containment. Five hundred registered cadets occupied concentric seating rings, their personal resonance fields combining into a low, mathematically optimal, collective drone.
 
-Taro proceeded to the rear row. The familiar golden stave UI did not render in his visual field. Instead, a sparse, highly utilitarian menu flickered into view. 
+Taro proceeded to the rear row. The familiar golden stave UI did not render in his visual field. Instead, a sparse, highly utilitarian menu flickered into view.
 
 > `OPTIMIZATION_LAYER: ACTIVE`
 > `PUBLIC_FOOTPRINT: RESTRICTED`
@@ -72,7 +73,7 @@ Taro processed the holographic rendering. To the standard observant parameters, 
 <details>
 <summary><strong>SUBJECT: Damping Field</strong></summary>
 <blockquote>
-<strong>Observation:</strong> An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold.
+<strong>Observation:</strong> An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold. It is actively weaponized to induce lag in targeted assets, forcing them to drift out of sync with critical reality parameters.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -81,7 +82,7 @@ Taro processed the holographic rendering. To the standard observant parameters, 
 
 *He didn't miss. The environment was hostile.*
 
-Taro adjusted his posture forward by 12 degrees. Faint, irregular purple vectors swirled around the structural rendering of the cadet's feet. Target analysis immediately identified a negative resonance sink, an external energy drain defying standard triangulation protocols. 
+Taro adjusted his posture forward by 12 degrees. Faint, irregular purple vectors swirled around the structural rendering of the cadet's feet. Target analysis immediately identified a negative resonance sink, an external energy drain defying standard triangulation protocols.
 
 > `TARO_METRICS_SPIKE: SDI 0.85 // HIQ 0.72`
 
@@ -93,9 +94,8 @@ Taro adjusted his posture forward by 12 degrees. Faint, irregular purple vectors
 
 Hana resumed her seated position. The air surrounding her coordinates spiked with a sudden, localized, jagged red waveform.
 
----
 
-### [12:00:00] THE MESS HALL
+---
 
 "You look like you've been fully defragged." Ven's vocal output registered as a deep, perfectly stable rumbling bass.
 
@@ -115,7 +115,7 @@ Hana assumed the seating position adjacent to Ven. "You're slipping out of sync,
 
 "I calculate," Taro whispered, "that the Silence anomaly isn't just operating outside the perimeter walls anymore. It's inside the facility."
 
-He accessed his communication menu interface. 
+He accessed his communication menu interface.
 
 > `TARGET_ANALYSIS: YUMI_NISHIMURA`
 > `STATUS: OFFLINE`
@@ -124,21 +124,21 @@ Her link was unreachable.
 
 > `ALERT: COMMS_INTERCEPT [ACTIVE]`
 
-Unauthorized link redirection detected. Enforcer Krell was actively monitoring the communication line with root administrative priority. 
+Unauthorized link redirection detected. Enforcer Krell was actively monitoring the communication line with root administrative priority.
 
 > `TARO_METRICS_SPIKE: SDI 0.99 // HIQ 0.99`
 
 "Taro?" The audio return was tinny, heavily compressed and degraded. "Is that you?"
 
-Taro's throat musculature tightened. The red administrative text continued scrolling across his HUD layer. 
+Taro's throat musculature tightened. The red administrative text continued scrolling across his HUD layer.
 
 > `THREAT_LEVEL: ELEVATED`
 
 A hostile proximity lock had been established, actively targeting her residential apartment coordinates in Sector 7.
 
-"I'm fine, Mom," Taro said. 
+"I'm fine, Mom," Taro said.
 
-His vocal output was perfect. Absolutely smooth. Computationally dead. 
+His vocal output was perfect. Absolutely smooth. Computationally dead.
 
 "Everything is great parameters. I’m staying flat."
 
@@ -148,12 +148,13 @@ His vocal output was perfect. Absolutely smooth. Computationally dead.
 
 He severed the link. He could not process her audio while Enforcer Krell maintained an active intercept.
 
-He directed his optical sensors across the Mess Hall perfectly calculated geometry. At a table near the primary exit, a group of senior Cadets were executing nutritional intake. One of the assets—a tall female with a cello case—flickered. 
+He directed his optical sensors across the Mess Hall perfectly calculated geometry. At a table near the primary exit, a group of senior Cadets were executing nutritional intake. One of the assets—a tall female with a cello case—flickered.
 
 For a span of 0.4 seconds, her epidermal skin rendered entirely as blue wireframe.
 
 *The wrong note is inside the house.*
 
+
 ---
 
-**END CHAPTER 14**
+**> END CHAPTER 14**

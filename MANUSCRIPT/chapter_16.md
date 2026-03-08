@@ -1,7 +1,10 @@
 # KEEPING TIME
-## Chapter 16: Illegal Modulations
+## Chapter 16: Modulation
 
-> SECURITY ALERT: Modifying factory settings is a Class 1 Felony. 
+
+---
+
+> SECURITY ALERT: Modifying factory settings is a Class 1 Felony.
 > You are the instrument. Do not attempt to tune yourself.
 > — *C-Order Compliance Handbook, Vol. III, §1.1*
 
@@ -9,26 +12,25 @@
 **FIDELITY: UNVERIFIED [LOCAL_MASKING_ACTIVE]**
 **STATUS: COMPROMISED**
 
+
 ---
 
-### [05:00:00] THE CONVERSATION
-
-"We categorise it as modulating," Elara stated. 
+"We categorise it as modulating," Elara stated.
 
 Her vocal output possessed a slight, unauthorized echo, a shimmering audio texture indicating that her Score port’s compliance filters were partially disengaged. They occupied the coordinates of Practice Room 404, a locked acoustic vault where unauthorized access was successfully masked and central monitoring was actively suppressed. The grid was executing its scheduled maintenance cycle, and the room's soundproofing parameters were pushed to their maximum 120dB limit, ensuring an acoustic leakage variable of less than zero point zero zero one percent.
 
-The cello instrument rested unutilized on the floor geometry. She assumed a cross-legged seated position, a holographic interface hovering between their respective coordinates. 
+The cello instrument rested unutilized on the floor geometry. She assumed a cross-legged seated position, a holographic interface hovering between their respective coordinates.
 It was a hacking deck—a custom, highly illegal jailbroken UI radiating an unauthorized, warm amber luminescence. It visually registered as vintage analog hardware aggressively inserted into a pristine digital environment. Messy. Low-Fi. Aesthetically beautiful.
 
 "Modulating," Taro repeated. His own vocal output fragmented as his internal algorithms struggled to match her non-standard tempo. "Analogous to... changing your assigned key signature?"
 
 "Fundamentally deeper," Elara said. She executed a tactile command. A waveform rendered in the local air space. Ugly, incredibly jagged, and computationally chaotic—a raw, completely uncompressed full-spectrum signal.
 
-"This is my core," she stated, indicating the chaos. "This is my raw, unedited resonance. My [[Factory Setting::The hardcoded frequency protocol assigned at birth, a digital cage that defines who you are before you've even learned to speak.]] . The system scans this waveform at birth, categorizes it as 'High Mass, Low-End Pitch,' and permanently locks the Hull class. It totally ignores the complex sub-harmonics. It commands you to stay mathematically flat before your vocal algorithms have even learned to sing."
+"This is my core," she stated, indicating the chaos. "This is my raw, unedited resonance. My Factory Setting *(The hardcoded frequency protocol assigned at birth, a digital cage that defines who you are before you've even learned to speak.)* . The system scans this waveform at birth, categorizes it as 'High Mass, Low-End Pitch,' and permanently locks the Hull class. It totally ignores the complex sub-harmonics. It commands you to stay mathematically flat before your vocal algorithms have even learned to sing."
 
 She tapped a secondary command. An alternate waveform rendered, overlaying the first—smooth, perfectly compliant sine-wave perfection.
 
-"And this," she said, her vocal frequency dropping into a grainier, highly degraded bit-crushed tone, "is the authorized mask. The C-Order stabilizer algorithm. It forcefully compresses my wide signal into a clean sine wave. It functions as an active noise-cancellation filter running 24/7 in my cervical port. It is comprised of Hi-Fi lies. It is socially acceptable damping."
+"And this," she said, her vocal frequency dropping into a grainier, highly degraded bit-crushed tone, "is the authorized mask. The C-Order stabilizer algorithm. It forcefully compresses my wide signal into a clean sine wave. It functions as an active noise-completion filter running 24/7 in my cervical port. It is comprised of Hi-Fi lies. It is socially acceptable damping."
 
 Taro processed the graph. "That mathematically explains why it triggers pain sensors. You are constantly fighting your own output. Your internal hardware is continuously redlining."
 
@@ -38,20 +40,20 @@ She re-established optical contact with Taro. The emotional vulnerability in her
 
 "But a workaround exists. A software patch. Modulation."
 
-She executed a manual swipe. The amber interface shifted layout. 
+She executed a manual swipe. The amber interface shifted layout.
 
 > `EXECUTE: MODULATION_PROTOCOL`
 
-An unauthorized frequency shift was requested, explicitly targeting a pitch shift of plus two octaves to hit 1.2 kHz. 
+An unauthorized frequency shift was requested, explicitly targeting a pitch shift of plus two octaves to hit 1.2 kHz.
 
 > `CRITICAL_WARNING: WARRANTY_VOID`
 
-The local security kernel was completely bypassed. The administrative alert was fully neutralized. 
+The local security kernel was completely bypassed. The administrative alert was fully neutralized.
 
 > `ELARA_METRICS: SDI 0.95 // HIQ 0.88`
 > `PHASE_DRIFT: 0.45 [SEVERE]`
 
-She was executing an illegal [[Modulation::The unauthorized modification of one's own soul, a crime against the Grand Concord's absolute order.]] .
+She was executing an illegal Modulation *(The unauthorized modification of one's own soul, a crime against the Grand Concord's absolute order.)* .
 
 "The System permanently locks our resonance," Elara explained. "It defines your pitch as fixed. Immutable. Biological destiny. Required social hygiene." She executed an unformatted scoff logic. "But the Score interface is merely software. And software can be cracked by superior logic."
 
@@ -79,7 +81,7 @@ Taro executed a shudder subroutine. He possessed data regarding what reformattin
 
 "We hide," Elara mathematically corrected. "There are additional unauthorized assets, Taro. Not a statistically large number. But sufficient mass to form a chorus."
 
-She analyzed his facial geometry. 
+She analyzed his facial geometry.
 
 "You stated you observed the mesh," she said. "You observed me. Unfiltered."
 
@@ -113,7 +115,7 @@ She offered him a small, physical data-chip. Obsolete hardware tech—a solid-st
 
 "If you ever require visual confirmation of what you truly look like," she said, "without the assigned hull... locate our coordinates."
 
-Taro accepted the physical chip. It registered as thermally warm. 
+Taro accepted the physical chip. It registered as thermally warm.
 
 > `ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]`
 > `WARNING: ACOUSTIC_SIGNATURE_CONFIRMED`
@@ -129,6 +131,7 @@ Taro processed the visual of the chip, then re-focused on Elara. The "Tank" cade
 
 "I will be present," Taro stated.
 
+
 ---
 
-**END CHAPTER 16**
+**> END CHAPTER 16**

@@ -1,23 +1,25 @@
 # KEEPING TIME
 ## Chapter 13: Reboot
 
+
+---
+
 > REGULATORY NOTICE: Compliance update successful. Welcome to the
-> Grand Concord. Your compliance is our foundation. 
+> Grand Concord. Your compliance is our foundation.
 > — *C-Order Compliance Handbook, Vol. I, §1.0*
 
 **ZONE: MALKUTH ACADEMY [STUDENT_HOUSING_01]**
 **FIDELITY: MAXIMUM [8K_RENDER]**
 **STATUS: ONLINE_AND_OPTIMAL**
 
+
 ---
 
-### [TIME: 07:00:00] REBOOT
+The subject opened his eyes.
 
-The subject opened his eyes. 
+He occupied the designated student housing tier. The Academy dormitories were rendering in maximum environmental fidelity. His system status mapped strictly online, all hardware and biological components functioning flawlessly within standard tolerance. Firmware version 2.0 was confirmed active. The neural-acoustic optimization layer operated at one hundred percent compliance.
 
-He occupied the designated student housing tier. The Academy dormitories were rendering in maximum environmental fidelity. His system status mapped strictly online, all hardware and biological components functioning flawlessly within standard tolerance. Firmware version 2.0 was confirmed active. The neural-acoustic optimization layer operated at one hundred percent compliance. 
-
-He was recovered. A standard, authorized user once more. 
+He was recovered. A standard, authorized user once more.
 
 > `STATUS: ONLINE_AND_OPTIMAL`
 
@@ -31,12 +33,12 @@ There was no localized cranial headache. There was no latency in his motor contr
 
 The constant, inefficient grinding background noise of the universe—the 50-cycle hum of the unregulated power grid, the distant kinetic friction of transit tires impacting unoptimized pavement, the jagged static of unregulated emotional broadcast—was gone. Purged from the system.
 
-Silence. 
-Not the unindexed void-silence of anomalies. A beautifully curated, heavily managed, harmonious silence. 
+Silence.
+Not the unindexed void-silence of anomalies. A beautifully curated, heavily managed, harmonious silence.
 
 > `SYSTEM_CHECK: ALL_SYSTEMS_GO`
 
-His biometric verification returned optimal. The neural link was locked and stable. His sync rate dialed in at a mathematically flawless one hundred percent. The system automatically tagged his mood parameters as calm. 
+His biometric verification returned optimal. The neural link was locked and stable. His sync rate dialed in at a mathematically flawless one hundred percent. The system automatically tagged his mood parameters as calm.
 
 > `TARO_METRICS: SDI 0.00 // HIQ 0.00`
 
@@ -70,13 +72,13 @@ And around his cervical region...
 
 A new collar.
 
-It was sleek. Optically black. Possessing a matte finish. It hummed with a low, perfectly regulated frequency. A statistically calming wave. 
+It was sleek. Optically black. Possessing a matte finish. It hummed with a low, perfectly regulated frequency. A statistically calming wave.
 
-Target analysis confirmed the hardware as the Voss_Link v2, a premier neural optimization interface. The administrative link was established securely, actively restricting audio-kinetic output to a safe fifty percent maximum amplitude. 
+Target analysis confirmed the hardware as the Voss_Link v2, a premier neural optimization interface. The administrative link was established securely, actively restricting audio-kinetic output to a safe fifty percent maximum amplitude.
 
 > `EMOTIONAL_DAMPING: 30% [ACTIVE]`
 
-Phase stabilization was active, continuously ensuring he remained entirely level. 
+Phase stabilization was active, continuously ensuring he remained entirely level.
 
 > `TARO_METRICS: SDI 0.01 // HIQ 0.01`
 
@@ -114,7 +116,7 @@ Ven traversed the distance and executed a mild pat on Taro's shoulder structure.
 
 "Yeah. The Triad drill. We're going to nail the parameters this time. Perfect C-Major. Zero clipping. Flawless execution."
 
-Taro followed Ven out into the transit hallway. The dormitories were optimally quiet. Highly orderly. Student assets walked in perfectly straight geometric lines. They executed polite head inclinations as Taro passed their coordinates. 
+Taro followed Ven out into the transit hallway. The dormitories were optimally quiet. Highly orderly. Student assets walked in perfectly straight geometric lines. They executed polite head inclinations as Taro passed their coordinates.
 
 > `SOCIAL_INTERACTION: POLITE_NOD`
 
@@ -124,15 +126,15 @@ Taro nodded back. His cervical mechanics moved smoothly. Zero physical resistanc
 
 They exited into the primary courtyard.
 
-The skybox was the exact same perfect gradient blue Taro had recorded from Sector 4. A pristine golden dome. Zero volumetric clouds. Zero weather variables like rain. The environment was safe. 
+The skybox was the exact same perfect gradient blue Taro had recorded from Sector 4. A pristine golden dome. Zero volumetric clouds. Zero weather variables like rain. The environment was safe.
 
 Hana maintained position by the central water feature.
 
 She looked mathematically radiant. Her uniform was crisp, exhibiting no wrinkles. Her keratin fibers were perfectly styled. Her projected aura was a massive, stable, beautifully glowing blue square wave.
 
-"Target sighted," she announced. 
+"Target sighted," she announced.
 
-Her voice lacked its usual strictly robotic edge. The parameters had been adjusted. It sounded... human. Almost *too* efficiently human to be organic. 
+Her voice lacked its usual strictly robotic edge. The parameters had been adjusted. It sounded... human. Almost *too* efficiently human to be organic.
 
 "Good morning, Nishimura. Analysis: Your signal is completely flat. Optimal. Latency is registering at absolute zero."
 
@@ -160,9 +162,6 @@ It was perfect. It was quiet. It was computationally safe.
 
 And it functioned identical to a sterile graveyard.
 
-// [NOTE: The subject's biological algorithms are generating contradictory analogies.]
-// [NOTE: Processing anomaly logged.]
-
 He could perceive the aliased edges of the render if he actively narrowed his optical aperture. He could detect the artificial mathematical smoothness of the atmospheric air. He accessed the historical data of the Void. He accessed the memory of the raw data screaming beneath the un-rendered pavement.
 
 The compiled "Patch" had not debugged the world. It had merely installed a localized digital blindfold, preventing him from processing the structural cracks. It had laid a thick layer of digital concrete over his core logic.
@@ -175,7 +174,7 @@ Taro closed the box unit. His digits traced the previously frayed edge of the he
 
 > `WARNING: LIE_DETECTED`
 
-Neural variance detected. Temporary internal signal spike proactively suppressed as the masking protocol engaged. 
+Neural variance detected. Temporary internal signal spike proactively suppressed as the masking protocol engaged.
 
 His mood was formally tagged as: *Pretending*.
 
@@ -189,8 +188,8 @@ It was heavily encrypted. Buried deep beneath gigabytes of lavender-scented comp
 
 He ceased ocular closure.
 
-"Yeah," he vocalized, forcefully executing his own perfect, symmetrical smile protocol. 
-It simulated the physical sensation of wearing a facial mask constructed of synthetic skin. 
+"Yeah," he vocalized, forcefully executing his own perfect, symmetrical smile protocol.
+It simulated the physical sensation of wearing a facial mask constructed of synthetic skin.
 
 "I don't need them anymore. I'm completely compatible."
 
@@ -202,13 +201,11 @@ He initiated forward motion into the optimized sunlight.
 
 The collar around his cervical region hummed.
 
-It felt cold. 
+It felt cold.
 
 > `STATUS: COMPLIANT`
 
 Subject aligned flawlessly with the grid hierarchy. The remaining soul data was actively buffering at a maximum twelve percent capacity.
 
----
 
-**> TRACK: 13_OPTIMIZED**
-**> SAVING...**
+---

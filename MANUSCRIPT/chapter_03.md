@@ -1,6 +1,9 @@
 # KEEPING TIME
 ## Chapter 3: Modulation
 
+
+---
+
 > REGULATORY NOTICE: Environmental baseline degradation is permitted in
 > residential sectors designated Class-C. Citizens are advised to maintain
 > active internal damping loops to prevent Phase Drift.
@@ -10,9 +13,8 @@
 **FIDELITY: DEGRADED**
 **STATUS: ACTIVE**
 
----
 
-### [20:01:15] THE DEAD ZONE
+---
 
 The subject maintained position outside the residential unit door. He was located in Sector 7-C, a tier defined by low environmental fidelity and a constant, eighty-two percent probability of signal interference.
 
@@ -24,7 +26,7 @@ The subject executed a repetitive kinetic sequence against his thigh. *Tap. Tap.
 <details>
 <summary><strong>SUBJECT: Somatic Calibration Loop</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A physical mechanism to force the internal clock to sync when the external grid hitches.
+<strong>Observation:</strong> A physical mechanism to force the internal clock to sync when the external grid hitches. By manually engaging rhythmic muscle memory, operatives can stabilize their data throughput and withstand cognitive tearing.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -58,13 +60,13 @@ Kael was a living reference tone. He was so stable that the chaotic air of the s
 
 "You're back," Kael said. His vocal output was an uncompressed sine wave. No decay. No grit.
 
-> `VOCAL_ANALYSIS: OPTIMAL [DECAY_RATE: 0]`
+> `> OBJECT_ANALYSIS: UNKNOWN_TECH [CONNECTIVITY: NONE]`
 
 The subject advanced. The impedance mismatch registered immediately.
 
 His internal signal—a high-pressure oscillation—impacted the dense, heavy atmosphere Kael was projecting. It felt like walking into a wall of solid gold.
 
-The volumetric space between them exhibited visual shimmering. 
+The volumetric space between them exhibited visual shimmering.
 
 > `ERROR: PHASE_CONFLICT`
 > `CALCULATING_RESOLUTION...`
@@ -99,7 +101,7 @@ The subject's visual feed flared green. The note was so mathematically precise i
 
 "It's quiet because I keep the noise out! I carry the load so you can stay flat!"
 
-Kael’s amplitude spiked. An acoustic transient of 85dB impacted the room. For a fractional second, the apartment's Damping Field buckled. 
+Kael’s amplitude spiked. An acoustic transient of 85dB impacted the room. For a fractional second, the apartment's Damping Field buckled.
 
 > `WARNING: TRANSIENT_AMPLITUDE_SPIKE [85dB]`
 > `DAMPING_FIELD: STRESS_DETECTED`
@@ -163,17 +165,17 @@ Just Taro. No filters. No metadata. No Score.
 
 "She wanted you to hear yourself," Kael said. The acoustic signal propagated through bone conduction, muffled but distinct. "Without the Score. Without the Code. Without the C-Order's compression algorithms."
 
-The subject closed his eyes. 
+The subject closed his eyes.
 
 For the first time in the current cycle, the data stream terminated.
 
 > `SIGNAL_LOSS: AUXILIARY_OVERRIDE`
 
-No red error flags. No latency warnings. No pressure metrics. 
+No red error flags. No latency warnings. No pressure metrics.
 
-Just the dark. And a low, steady thrum in his chest. 
+Just the dark. And a low, steady thrum in his chest.
 
-The Sawtooth Oscillation. 
+The Sawtooth Oscillation.
 
 Not a wrong note. A song. A raw, high-resolution sample of his own existence.
 
@@ -210,7 +212,7 @@ He opened the door and exited into the unshielded noise of the corridor.
 > `AUDIO_PROTOCOL: BYPASS_DISENGAGED`
 > `PROCESS: NAI_SYNC_RESTORED`
 
-The Score re-initialized, restoring neural-acoustic synchronization and global phase alignment. 
+The Score re-initialized, restoring neural-acoustic synchronization and global phase alignment.
 
 The system logged his departure from the residential unit.
 It did not register a reason for his reluctance.
@@ -221,6 +223,7 @@ His dad was a pure sine wave. Perfect. Unchanging.
 But the world wasn't a sine wave.
 The world was noise.
 And Taro was going to play it.
+
 
 ---
 

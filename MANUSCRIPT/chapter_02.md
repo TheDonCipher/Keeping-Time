@@ -1,6 +1,9 @@
 # KEEPING TIME
 ## Chapter 2: The Assessment
 
+
+---
+
 > REGULATORY NOTICE: Impedance Mismatch events between bonded citizens
 > are classified as a Class-2 Coherence Deviation. Families are advised
 > to schedule voluntary recalibration within 72 hours of symptom onset.
@@ -11,9 +14,8 @@
 **FIDELITY: SAFE MODE**
 **STATUS: CONNECTED**
 
----
 
-### [02:00:00] THE WHITE ROOM
+---
 
 The subject regained consciousness in the White Room. He was located in Unison Hall’s recovery ward, a secure containment sector integrated into the root of the grid. His personal system was locked in safe mode, operational protocols throttled to five percent capacity. A Level-5 damping field was active, suppressing local environmental signals until the noise floor dropped to -140dB.
 
@@ -21,29 +23,29 @@ The subject regained consciousness in the White Room. He was located in Unison H
 <details>
 <summary><strong>SUBJECT: Sensory Deprivation Chamber</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A blank canvas forced over the senses, absorbing every sound and sight until you are nothing but a ghost in a white void.
+<strong>Observation:</strong> A blank canvas forced over the senses, absorbing every sound and sight until you are nothing but a ghost in a white void. Used by the authorities to manually wipe dissonant thoughts before they can propagate.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
 
-The physical architecture was lined with acoustic foam designed to absorb 99.9% of all reflected sound. The visual feed was administratively overridden by a Privacy Mask—an infinitely rendering void of white pixels designed to lower the user's cognitive load. 
+The physical architecture was lined with acoustic foam designed to absorb 99.9% of all reflected sound. The visual feed was administratively overridden by a Privacy Mask—an infinitely rendering void of white pixels designed to lower the user's cognitive load.
 
-It was a hard reset for the brain. A blank canvas forced over the senses. In the academies, students were instructed to breathe through the silence, to find a center when the world went dark. Civic hygiene. 
+It was a hard reset for the brain. A blank canvas forced over the senses. In the academies, students were instructed to breathe through the silence, to find a center when the world went dark. Civic hygiene.
 Obviously it was just a way to be buried before you ceased processing.
 
 The system registered the subject's intent to rotate his head. A physical damping collar corrected the motion with heavy mechanical resistance, administering a steady 4.2V charge. It was functioning at total resonance suppression, its active damping loop holding his baseline at flat zero.
 
 The collar transferred a low-frequency vibration to his cervical spine. It actively monitored biometrics, waiting for the amplitude spike of an Upper Octave oscillation. Upon detection, it grounded the signal before propagation. In the Grand Concord, to stay flat was to be safe. To spike was to be a threat. Being off-tone meant guaranteed patch failure.
 
-For the first time in consecutive annual cycles, his system was completely logged "Flat." 
+For the first time in consecutive annual cycles, his system was completely logged "Flat."
 The data indicated absolute biological calm.
 It did not indicate comfort.
 
 "Diagnostic complete," a voice said.
 
-The infinite white void terminated abruptly. 
+The infinite white void terminated abruptly.
 
 > `END_PROCESS: PRIVACY_MASK [AUTHORITY: ADJUTANT]`
 
@@ -59,7 +61,7 @@ The system classified Voss as an optimal structural asset. His attire was a fric
 
 His acoustic profile contained zero variance. He smoothed the local grid simply by occupying it. Perfectly out of phase.
 
-"Hello, Taro," Voss said. 
+"Hello, Taro," Voss said.
 
 > `VOCAL_ANALYSIS: CALIBRATED [ECHO: NULL] [WASTE_FREQUENCY: 0%]`
 
@@ -68,6 +70,10 @@ His acoustic profile contained zero variance. He smoothed the local grid simply 
 "You are in Recovery," Voss said. "We had to initiate a forced reboot. You suffered a catastrophic buffer overflow on the floor. Do you recall the incident?"
 
 The subject closed his eyes. The memory wasn't a blur. It was a corrupt file. Jagged edges. Purple static.
+
+> `BUFFER_FLUSH: INITIATED`
+> `ARTIFACT_DETECTED: [H——p ——. DISCARDING]`
+> `DISCARD: COMPLETE`
 
 "The soldier," Taro whispered. "He was desyncing."
 
@@ -96,7 +102,7 @@ Voss stood. He traversed the space around the desk. His kinetic sequence was hig
 
 A sustained drift identified itself in the subject's signal. The stability index dropped as the cardiovascular load reached 142 SU.
 
-The collar tightened by one millimeter. The physical damping was highly effective. The subject's tapping stopped. His respiratory cycle steadied. 
+The collar tightened by one millimeter. The physical damping was highly effective. The subject's tapping stopped. His respiratory cycle steadied.
 His own involuntary compliance flagged as a high-confidence annoyance.
 
 "We have two administrative options," Voss said. He extended two fingers.
@@ -108,13 +114,13 @@ His own involuntary compliance flagged as a high-confidence annoyance.
 
 "We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again. You stay flat forever."
 
-The subject analyzed the rendered text. 
+The subject analyzed the rendered text.
 
 <aside>
 <details>
 <summary><strong>SUBJECT: Reformat</strong></summary>
 <blockquote>
-<strong>Observation:</strong> The ultimate social hygiene—a clean and absolute deletion of the soul's ability to process its own noise.
+<strong>Observation:</strong> The ultimate social hygiene—a clean and absolute deletion of the soul's ability to process its own noise. A fate worse than physical death, leaving behind a compliant biological drone entirely stripped of unique resonance.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -160,6 +166,7 @@ He tapped the metallic surface of the collar.
 The secure link closed. The recording archived itself for the C-Order's silent audit.
 
 The optical feed went black.
+
 
 ---
 

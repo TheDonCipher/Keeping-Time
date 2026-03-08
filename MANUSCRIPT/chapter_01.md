@@ -1,6 +1,9 @@
 # KEEPING TIME
 ## Chapter 1: The Zap
 
+
+---
+
 > INCIDENT CLASSIFICATION: Spontaneous Resonance Discharge events above
 > 100% rated output are designated Class-Ω Anomalies. All witnesses are
 > required to submit to mandatory memory indexing within 6 hours.
@@ -12,11 +15,10 @@
 **FIDELITY: STANDARD**
 **STATUS: CONNECTED**
 
+
 ---
 
-### [00:00:00] THE ZAP
-
-The subject experienced a localized neural event. 
+The subject experienced a localized neural event.
 
 White light. Static. The taste of copper and burning hair.
 
@@ -30,7 +32,7 @@ The system initiated a mandatory hardware handshake. The subject, Nishimura Taro
 <details>
 <summary><strong>SUBJECT: Neural-Acoustic Interface</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A direct neural link so fast it feels like your own thoughts are dropping frames.
+<strong>Observation:</strong> A direct neural link so fast it feels like your own thoughts are dropping frames. The C-Order relies on this high-bandwidth connection to enforce near-instantaneous behavioral regulation, turning human consciousness into an auditable data stream.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -53,7 +55,7 @@ The environmental data was not a screen overlay. It had been integrated into the
 
 His heartbeat thumped against his ribs. He didn't just feel it. He saw it—a jagged yellow line pulsing in the corner of his eye.
 
-The subject stood in the staff locker room of Sector 7-C Calibration Hall. To an unindexed citizen without a sync chip, it was a room with gray lockers and a flickering fluorescent light. 
+The subject stood in the staff locker room of Sector 7-C Calibration Hall. To an unindexed citizen without a sync chip, it was a room with gray lockers and a flickering fluorescent light.
 
 To the Score, it was a data stream.
 
@@ -61,7 +63,7 @@ To the Score, it was a data stream.
 <details>
 <summary><strong>SUBJECT: The Unindexed (Normals)</strong></summary>
 <blockquote>
-<strong>Observation:</strong> Disconnected. They live in a world of silence.
+<strong>Observation:</strong> Disconnected. They live in a world of silence, immune to the Score's coercive beauty but permanently locked out of the city's rendered infrastructure. To be normal is to be functionally invisible.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -80,7 +82,7 @@ The subject swiped his damping bands across the sensor.
 <details>
 <summary><strong>SUBJECT: Damping Bands</strong></summary>
 <blockquote>
-<strong>Observation:</strong> The only things keeping his internal noise from screaming into the room.
+<strong>Observation:</strong> The only things keeping his internal noise from screaming into the room. These restrictive coils act as hardware governors, forcibly compressing a citizen's natural resonance to comply with the mandated harmonic baseline.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -95,13 +97,12 @@ The red static shifted into permissive green vectors. The door opened.
 
 The subject stepped out onto the floor.
 
----
 
-### [00:14:32] THE FLOOR
+---
 
 The main calibration floor was a high-capacity data node.
 
-It opened into a massive, circular chamber. The air scrubber systems filtered the atmosphere to absolute transparency. 
+It opened into a massive, circular chamber. The air scrubber systems filtered the atmosphere to absolute transparency.
 But his head was screaming. Thermal load was already building.
 
 The environmental baseline held at a perfect Middle C, vibrating at 261.63 Hz. The room's standard resonance rendered in the visual spectrum as golden viscosity.
@@ -124,7 +125,7 @@ The subject kept his head down. His own signal felt like a scratch in his throat
 
 "Hey, Wrong Note."
 
-The subject did not look up. The system detected an acoustic signature in D Major, accompanied by traces of bubblegum flavoring and ozone. 
+The subject did not look up. The system detected an acoustic signature in D Major, accompanied by traces of bubblegum flavoring and ozone.
 
 > `INTENT_ANALYSIS: CASUAL [THREAT_LEVEL: LOW]`
 > `DOMINANT_HARMONIC: D-MAJOR [BRIGHT]`
@@ -166,13 +167,12 @@ The atmospheric sensors recorded biological decay mapping directly onto the acou
 
 The emergency doors at the far end of the hall breached.
 
----
 
-### [00:14:45] THE CRASH
+---
 
 The incoming entity was failing.
 
-A G-Vanguard soldier stumbled into the chamber. His vocalizations were erratic. 
+A G-Vanguard soldier stumbled into the chamber. His vocalizations were erratic.
 To the system, he was a cascade failure in progress.
 
 His structural integrity was pixelating, separating from his anchor coordinates in real-time. A standard bio-plasma field was absent. The unit projected a storm of black and purple interference. The chemical olfactory sensors registered burning polymers and ozone.
@@ -181,7 +181,7 @@ His structural integrity was pixelating, separating from his anchor coordinates 
 <details>
 <summary><strong>SUBJECT: Bio-Plasma</strong></summary>
 <blockquote>
-<strong>Observation:</strong> The soft ionic glow that tells the world your soul is still in sync.
+<strong>Observation:</strong> The soft ionic glow that tells the world your soul is still in sync. It is the physical manifestation of biological energy converting into digital acoustic data, a visible metric of one's subservience to the Grid.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -205,7 +205,7 @@ The soldier collapsed in the center of the room. Seizure activity was detected. 
 
 > `UNFORMATTED_BURST: Help me. End it. Silence.`
 
-The Calibration team deployed emergency stabilizers—heavy pylons designed to force a signal reset. 
+The Calibration team deployed emergency stabilizers—heavy pylons designed to force a signal reset.
 
 *THOOM.*
 
@@ -215,7 +215,7 @@ The soldier produced a vocalization that triggered the microphone limiters in th
 
 > `AUDIO_CLIPPING [PEAK_WARNING]`
 
-The subject's damping bands reached ninety-five percent thermal limit. 
+The subject's damping bands reached ninety-five percent thermal limit.
 
 > `SYSTEM_ALERT: CONTAINMENT_BREACH_IMMINENT`
 
@@ -237,7 +237,7 @@ He reached out.
 
 > `LIMITER: REMOVED [STATUS: DESTROYED]`
 
-The three limiters on his wrist melted. The system observed them reach vaporization thresholds from the sheer data load. 
+The three limiters on his wrist melted. The system observed them reach vaporization thresholds from the sheer data load.
 It felt like free-fall. A world where the rules of gravity had simply ceased to exist.
 
 The environment entered a state of motion stutter.
@@ -258,7 +258,18 @@ A vertical column of pure Gold data erupted from his coordinates. It was solid. 
 <details>
 <summary><strong>SUBJECT: Key Signature</strong></summary>
 <blockquote>
-<strong>Observation:</strong> The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation.
+<strong>Observation:</strong> The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation. It represents the mathematical cage that ensures social cohesion through enforced, absolute uniformity.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+<aside>
+<details>
+<summary><strong>SUBJECT: The Dead Zone</strong></summary>
+<blockquote>
+<strong>Observation:</strong> The Outer Ring residential sectors, where the Spires' signal grows thin and the world's original, messy frequency begins to seep through. Life here is slower, dirtier, and undeniably more human than the High-Fidelity core.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -286,11 +297,11 @@ The system recorded the cessation of all data output from the unit. The Score po
 > `WARNING: SIGNAL_VOID`
 > `DAMPING: EXTERNAL_SOURCE`
 
-`[NO DATA]`
+> `[NO DATA]`
 
-`[NO DATA]`
+> `[NO DATA]`
 
-`[NO DATA]`
+> `[NO DATA]`
 
 The subject was still standing. The system recovered logging functions at [00:15:02].
 
@@ -317,11 +328,12 @@ It was a Crown.
 > `WARNING: VANGUARD_CLASS_DETECTED [HARMONIC_THREAT]`
 > `STATUS: HIGH_FIDELITY_THREAT`
 
-The diagnostic text burned into his retinas. 
+The diagnostic text burned into his retinas.
 
 Then the feed terminated.
 
 > `SYSTEM_CRASH [UNRECOVERABLE]`
+
 
 ---
 
