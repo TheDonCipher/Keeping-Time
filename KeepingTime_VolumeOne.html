@@ -624,19 +624,19 @@
         <option value="ch2">CH.02 -- THE ASSESSMENT</option>
         <option value="ch3">CH.03 -- MODULATION</option>
         <option value="ch4">CH.04 -- THE MEDIUM</option>
-        <option value="ch5">CH.05 -- SYNC CHECK</option>
-        <option value="ch6">CH.06 -- GROUND STATE</option>
-        <option value="ch7">CH.07 -- RIVAL</option>
-        <option value="ch8">CH.08 -- SORTIE</option>
-        <option value="ch9">CH.09 -- SILENCE</option>
-        <option value="ch10">CH.10 -- BREACH</option>
-        <option value="ch11">CH.11 -- SAFE MODE</option>
-        <option value="ch12">CH.12 -- AUDIT</option>
-        <option value="ch13">CH.13 -- PATCH</option>
-        <option value="ch14">CH.14 -- RETURN</option>
-        <option value="ch15">CH.15 -- PHANTOM MESH</option>
-        <option value="ch16">CH.16 -- ILLEGAL MODS</option>
-        <option value="ch17">CH.17 -- UNDERGROUND</option>
+        <option value="ch5">CH.05 -- THE SYNC CHECK</option>
+        <option value="ch6">CH.06 -- THE GROUND STATE</option>
+        <option value="ch7">CH.07 -- THE ARCHITECTURE OF SOUND</option>
+        <option value="ch8">CH.08 -- THE GOLDEN FILTER</option>
+        <option value="ch9">CH.09 -- THE BLUE SCREEN</option>
+        <option value="ch10">CH.10 -- THE UNMASKING</option>
+        <option value="ch11">CH.11 -- THE WIRE</option>
+        <option value="ch12">CH.12 -- THE AUDIT</option>
+        <option value="ch13">CH.13 -- REBOOT</option>
+        <option value="ch14">CH.14 -- THE RETURN</option>
+        <option value="ch15">CH.15 -- THE PHANTOM MESH</option>
+        <option value="ch16">CH.16 -- MODULATION</option>
+        <option value="ch17">CH.17 -- THE UNDERGROUND</option>
       </select>
     </div>
   </div>
@@ -983,6 +983,8 @@
 <p data-vol="0.10" data-coh="0.95"><strong>> TRACK: 03_COMPLETE</strong><br><strong>> SAVING...</strong></p>
 </div>
 </div>
+<div data-ch-id="ch4" data-signal="ch04_medium">
+<div class="chapter" id="ch4">
 <h3 data-vol="0.10" data-coh="0.95">Chapter 4: The Medium</h3>
 <hr>
 <blockquote class="epigraph" data-vol="0.10" data-coh="0.95">REGULATORY NOTICE: Academy Intake zones are designated High-Fidelity.<br>Non-compliant signatures will be subject to immediate error correction.<br>Variance from standard scheduling constitutes a procedural mismatch.<br>— <em>C-Order Compliance Handbook, Vol. III, §12.2</em></blockquote>
@@ -2419,7 +2421,8 @@ function compileNarrative() {
       const fmt = el.getAttribute('data-fmt');
       if (el.tagName === 'H3') {
         const p = el.innerText.split(':');
-        NARRATIVE_DATA.push({ type: 'chapter', vol, coh, signal, config, sentences: [{ text: p[0].trim().toUpperCase(), format: 'label' }, { text: (p[1] || p[0]).trim().toUpperCase(), format: 'title' }] });
+        const shortTitle = (p[1] || p[0]).trim().toUpperCase();
+        NARRATIVE_DATA.push({ type: 'chapter', vol, coh, signal, config, title: shortTitle, sentences: [{ text: p[0].trim().toUpperCase(), format: 'label' }, { text: shortTitle, format: 'title' }] });
       } else if (el.tagName === 'H4') {
         NARRATIVE_DATA.push({ type: 'section', vol, coh, tag, signal, config, sentences: [{ text: el.innerHTML, format: 'label' }] });
       } else if (el.tagName === 'BLOCKQUOTE') {
@@ -2596,7 +2599,6 @@ class ScrollEngine {
 
     // ── Keyboard Navigation ──────────────────────────────────
     window.addEventListener('keydown', (e) => {
-      // Guard for silence lock or cooldown
       const lock = document.getElementById('silence-lock');
       if ((lock && lock.classList.contains('active')) || this._keyLocked) return;
 
@@ -2610,40 +2612,27 @@ class ScrollEngine {
         target = Math.max(idx - 1, 0);
         e.preventDefault();
       } else if (e.key === 'ArrowRight') {
-        // Next Chapter
-        const nextCh = this.data.findIndex((b, i) => i > idx && b.type === 'chapter');
-        if (nextCh !== -1) {
-          const chId = this.data[nextCh].signal.split('_')[0].replace('ch0', 'ch');
-          this.jumpToChapter(chId);
-        }
+        target = this.data.findIndex((b, i) => i > idx && b.type === 'chapter');
         e.preventDefault();
       } else if (e.key === 'ArrowLeft') {
-        // Previous Chapter (must be at least 2 steps back if we're at the start of current)
         const prevCh = [...this.data].slice(0, idx).reverse().findIndex(b => b.type === 'chapter');
-        if (prevCh !== -1) {
-          const actualIdx = (idx - 1) - prevCh;
-          const chId = this.data[actualIdx].signal.split('_')[0].replace('ch0', 'ch');
-          this.jumpToChapter(chId);
-        }
+        if (prevCh !== -1) target = (idx - 1) - prevCh;
         e.preventDefault();
       }
 
       if (target !== -1 && target !== idx) {
-        // Land slightly inside the beat so _getActiveBeat snaps correctly
-        window.scrollTo({ top: this.beatMap[target].start + 10, behavior: 'smooth' });
+        this._snapToBeat(target);
         
-        // Flash-landed effect on the landed beat's sentences
-        // We defer this slightly to ensure the render pass for the new beat has happened
+        this._keyLocked = true;
+        setTimeout(() => { this._keyLocked = false; }, 300);
+
+        // Flash feedback
         setTimeout(() => {
-          const els = document.querySelectorAll('#beat-container .sentence');
-          els.forEach(el => {
+          document.querySelectorAll('#beat-container .sentence').forEach(el => {
             el.classList.add('key-landed');
             setTimeout(() => el.classList.remove('key-landed'), 400);
           });
         }, 50);
-
-        this._keyLocked = true;
-        setTimeout(() => { this._keyLocked = false; }, 300);
       }
     });
     // ────────────────────────────────────────────────────────
@@ -2734,16 +2723,20 @@ class ScrollEngine {
     const map = this.beatMap[idx];
     
     // ── READING CENTER: 30% into the beat = sProg 0.3 = full intensity ──
-    const readingCenter = map.start + (map.end - map.start) * 0.3;
+    const targetY = map.start + (map.end - map.start) * 0.3;
     
-    // Set targetY directly — let the LERP in _loop() animate the journey.
-    this.targetY = readingCenter;
+    // AE-03: Use window.scrollTo for all snaps to keep browser in sync.
+    // This allows subsequent keyboard/wheel inputs to calculate 'idx' correctly.
+    window.scrollTo({ top: targetY, behavior: 'smooth' });
     
-    // Update window history silently to keep things robust
+    // Update targetY immediately so the lerp in _loop starts moving content 
+    // even before the browser's 'scroll' event fires.
+    this.targetY = targetY;
+    
     window.history.replaceState(null, '', window.location.pathname);
     
-    // Adjust currentY partially to avoid jarring instant jumps
-    this.currentY = this.currentY + (readingCenter - this.currentY) * 0.1;
+    // Kick-start currentY slightly for responsiveness
+    this.currentY = this.currentY + (targetY - this.currentY) * 0.1;
     
     this._snapTargetIdx = idx;
     this._snapInProgress = true;
@@ -2779,7 +2772,8 @@ class ScrollEngine {
     if (idx !== this.currentBeatIndex) {
       // HAPTIC FEEDBACK (mobile)
       // Mirrors the in-world Score/heartbeat theme: a physical pulse for narrative progression.
-      if ('vibrate' in navigator) {
+      // Guarded by _userHasInteracted to prevent browser security interventions.
+      if (this._userHasInteracted && 'vibrate' in navigator) {
         const nextBeat = this.data[idx];
         if (nextBeat && nextBeat.type === 'chapter') {
           navigator.vibrate([60, 30, 60]); // Distinct double-pulse for chapter transitions
@@ -2832,7 +2826,18 @@ class ScrollEngine {
       
       if (beat.config.waveMode === 'wireframe') document.body.classList.add('wireframe-mode'); else document.body.classList.remove('wireframe-mode');
       
-      const hs = document.getElementById('hud-section'); if (hs) hs.textContent = (beat.tag || beat.signal || 'ch01').toUpperCase();
+      const hs = document.getElementById('hud-section');
+      if (hs) {
+        // Find the last chapter beat before or including this beat
+        let currentChapterTitle = '';
+        for (let i = idx; i >= 0; i--) {
+          if (this.data[i].type === 'chapter' && this.data[i].title) {
+            currentChapterTitle = this.data[i].title;
+            break;
+          }
+        }
+        hs.textContent = beat.tag ? beat.tag.toUpperCase() : (currentChapterTitle || beat.signal || 'ch01');
+      }
       
       const selector = document.getElementById('chapter-selector');
       if (selector) {
@@ -3853,6 +3858,9 @@ const audioEngine = new AudioEngine();
 
 const unlockAudio = () => {
   audioEngine.init();
+  if (window.engine) {
+    window.engine._userHasInteracted = true;
+  }
   window.removeEventListener('scroll', unlockAudio);
   window.removeEventListener('click', unlockAudio);
   window.removeEventListener('touchstart', unlockAudio);
