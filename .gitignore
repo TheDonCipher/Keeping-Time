@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+*.log
+sync_output.txt
+res.txt
+.DS_Store
