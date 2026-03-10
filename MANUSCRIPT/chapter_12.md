@@ -76,20 +76,23 @@ A bone conduction diagnostic was in progress. The resonant frequency verificatio
 
 He extracted the probe. Taro executed a sharp gasp, his olfactory and gustatory sensors registering blood. Metallic. Biological. Real.
 
-The field technician was already in the room. She had been there since intake — seated against the far wall with her portable array, logging Krell's biometric stress outputs as standard compliance documentation. When the probe went in, she marked the timestamp. She marked the decibel spike. She marked the heart rate reading.
+The field technician was already in the room. She had been there since intake—seated against the far wall with her portable array, logging Krell's biometric stress outputs as standard compliance documentation. When the probe went in, she marked the timestamp. She marked the decibel spike. She marked the heart rate reading.
 
 She did not raise her optical sensors.
 
-Her instruments were analog. The readings required no network connection. They only required a hand steady enough to write the numbers down, and hers was.
+A technician in a standard D-Major mask approached the chair to check the nerve-leads. Her hands were steady, but the resonance coming off her was a mess of indigo anxiety.
 
-> `CONTACT: SATO_REMI — PROXIMATE: 2.1M`
-> `COLLAR: ACTIVE — SUPPRESSION: 100%`
-> `SIGNAL: NULL`
+"Remi?" Taro whispered, his voice already losing its gain as the prep-collars tightened.
 
-She was logging the audit. Officially. That was her function in this room. But the paper notebook was under the official log.
-And in the paper notebook, the numbers were different from the official log. More accurate. Harder to file as "standard".
+She didn't answer. To do so would have triggered a compliance audit on her own port. She simply leaned in to check the placement of the bone-conduction probe. For a fraction of a second, her hand brushed against his temple, and he felt a small, physical piece of wood. A pencil. A piece of the un-rendered world, hidden in her sleeve.
 
-When Krell left the room at Voss's instruction, she did not move from her position. She did not look at Taro. She waited four seconds, then quietly closed both logs, stood, and exited through the secondary access door.
+She withdrew it instantly, her face a mask of clinical boredom.
+
+SATO_REMI: STATUS_NOMINAL RELIABILITY: 100%
+
+She turned her back to him as the probe initiated. She didn't watch. She looked at the blank page of her notebook, waiting for the screaming to stop so she could write down what they were doing to him.
+
+When Krell left the room at Voss's instruction, she did not move from her position. She waited four seconds, then quietly closed both logs, stood, and exited through the secondary access door. Taro registered the faint, analog scratch of graphite on paper that preceded it. The only honest sound in the room.
 
 Taro registered the dual-door close. He registered the faint analog scratch of pencil on paper that preceded it. He did not look toward her coordinates.
 

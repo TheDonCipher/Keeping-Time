@@ -19,8 +19,7 @@
 
 The primary Lecture Hall was a marvel of acoustic engineering.
 
-The system categorized the space as Zone: Lecture_Hall_01, an environment defined by its uniform acoustic profile and a ninety-eight percent damping factor. The room was effectively deadened. It functioned as an absorptive environment with a systemic gain of -20dB and an RT60 reverberation time of 0.1s. In this room, phase drift was impossible to obscure.
-Every syllable output was an involuntary audit.
+Environmental acoustics: -20dB gain. The room was an acoustic vacuum—surgical and merciless. With an RT60 of 0.1s, there was no reverb to hide behind, no echo to blur a mistake. In this dead-air space, every heartbeat was a broadcast, and every phase-drift was a loud, visible failure
 
 "Reality," Instructor Dorian Vale said, "is a standing wave."
 
@@ -57,7 +56,11 @@ He executed a manual friction maneuver.
 
 The blue wireframe structure shattered into several million disconnected polygons.
 
-"Control," Vale said. "Not force. That is the lesson. To be an Architect is to understand the structure of the world so perfectly that you do not need to break it. You simply... untie it."
+"Control," Vale said, his voice dropping into a register that made the floor-grid vibrate with cold sympathy. "Not force. Force is the desperate tool of those who cannot see the math.
+
+Imagine this wall isn’t concrete. Imagine it is an equation currently solving for 'Solid.' If you hit it with enough amplitude, you might shatter the representation. But if you are an Architect? You don't hit the wall. You find the phase-lock holding those atoms in that specific coordinate. You introduce a null signal. One perfectly timed pulse to solve the equation for zero.
+
+You don't break the world, Nishimura. You unwrite it. You simply... untie the intent."
 
 Hana transcribed the entire auditory output into her HUD at a speed that blurred the resulting text. Ven appeared to be in a restorative cycle, or perhaps low-power meditation.
 Taro maintained a repetitive physical impact with his foot against the floor grid. *One-two-three. One-two-three.*
@@ -88,7 +91,7 @@ Instructor Vale announced the opposing variable: Cadet Marcus Staccato, a Vangua
 > `SYNC_RATE: 99.1% [NEAR_PERFECT]`
 > `THREAT_LEVEL: SEVERE`
 
-Marcus did not utilize standard bipedal walking mechanics; his movement registered as sequential ticking. Every forward placement landed on a perfect, mathematically calculated beat. He was equipped with matte-black training armor designed to absorb environmental light. His aura was encrypted—a jagged, aggressive static pattern that Taro's local system failed to decode.
+Marcus didn't walk; he quantized. His movement registered as a sequence of perfect 120-BPM ticks, each step snapping to the local grid with zero latency. He moved like a high-end playback head, gliding across the floor-coordinate plane with a precision that made the rest of the room look like it was lagging. He was equipped with matte-black training armor designed to absorb environmental light. His aura was encrypted—a jagged, aggressive static pattern that Taro's local system failed to decode.
 
 "The lesson is pattern recognition," Vale announced from the podium. "Staccato is a Rhythm Operator. He controls the time signature of the engagement. Nishimura is... untrained noise. Observe the difference between design and chaos."
 
@@ -159,7 +162,7 @@ He elevated the baton. The impact tip hummed with a concentrated red frequency. 
 
 He executed three rapid strikes. A triplet pattern.
 
-The atmospheric parameters solidified. The resultant sound waves he generated did not dissipate into the environment; they maintained cohesion, forming a physical geometric cage of red light encompassing Taro's coordinates.
+The atmospheric parameters solidified. The sound waves didn't fade; they crystallized. The triplet-strike didn't just echo—it hung in the air, folding into a rigid, high-poly cage of red geometric force. It wasn't just a trap; it was a physical loop of frozen audio, vibrating at a frequency that made Taro’s very atoms feel like they were being crushed into a 4/4 time signature.
 
 > `TRAP_DETECTED: RHYTHM_CAGE`
 
@@ -190,7 +193,7 @@ Locked to a perfect 140 BPM.
 
 Marcus adjusted his armor plating at the ring's edge. He was not looking at Taro. He was not addressing anyone in particular.
 
-*"Rank 3,"* Marcus said. *"Sector leaderboard. Out of forty thousand active users."*
+*"Rank 3,"* Marcus said. *"Sector leaderboard. Out of forty thousand active users. Link in Bio."*
 
 He walked toward the equipment corridor.
 
@@ -199,7 +202,7 @@ He walked toward the equipment corridor.
 
 Dorian Vale directed his optical focus downward toward Taro.
 
-"Chaos is energy," Vale said, "but without structure, it is just heat. You have potential, Nishimura. But until you learn to build a frame for your power... you are just a bomb waiting to go off. Socially embarrassing."
+"Chaos is energy," Vale said, "but without a frame, Nishimura, power is just waste-heat. You're not an Architect yet. You're just a bomb with a broken timer. Socially... undignified."
 
 Taro looked up.
 

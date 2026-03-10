@@ -28,11 +28,7 @@ Taro's HUD system status flagged as critical. The threat parameter remained UNKN
 Hana initiated manual contact with her cranial plating. Her physical rhythm was frantic, a jagged mechanical loop that completely failed to sync with the C-Order master clock. Her projected aura—typically a flawless, structurally sound Square Wave—was visibly fraying at the geometric edges.
 It was tearing.
 
-The "Golden Filter" of the C-Order had not merely faded; it had suffered a catastrophic failure. She was dropping sensory frames. Her cognitive processing actively lagged behind the descending darkness. Within the authorized city limits, the Score functioned as a comforting, heavily damped blanket; in this coordinate, the blanket was ripped away by an undocumented protocol, abandoning her to the cold static of the Void.
-
-// [NOTE: The phrase 'abandoning her to the cold static' exhibits unauthorized narrative empathy.]
-// [NOTE: C-Order assets are not 'abandoned'. They experience protocol misalignment.]
-// [NOTE: Annotation retained. The cold is a factual variable.]
+The "Golden Filter" of the C-Order had not merely faded; it had suffered a catastrophic failure. She was dropping sensory frames. Her cognitive processing actively lagged behind the descending darkness. In the city, the Score was a warm, digital cocoon. Here, that cocoon had been shredded. Hana was exposed to the raw, unbuffered cold of a world without a master-clock. She was dropping sensory frames by the dozens, her mind unable to render a reality that wasn't being fed to her through a filter. She wasn't just blind; she was computationally naked.
 
 Taro's optical buffer cleared entirely. The visual feed registered offline.
 

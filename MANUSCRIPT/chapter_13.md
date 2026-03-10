@@ -106,7 +106,7 @@ He looked... clean. His heavy, industrial tactical armor was polished to an auth
 
 Ven traversed the distance and executed a mild pat on Taro's shoulder structure. The kinetic impact was precisely gentle. Highly controlled. Zero sparks. Zero unauthorized heat dumps.
 
-"They fixed us, Taro," Ven stated. "Voss... he actually fixed our code. No more overloads. No more wrong noting. We're fully compatible now. We stay perfectly flat."
+"They fixed us, Taro," Ven stated. "Voss... he actually fixed our code. No more overloads. No bad plays. We're fully compatible now. We stay perfectly flat."
 
 "Compatible," Taro repeated. The auditory rendering of the word tasted sweet. The exact sensation of artificial chemical sweetener.
 

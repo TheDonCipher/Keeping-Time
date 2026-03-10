@@ -26,7 +26,7 @@ It was a hacking deck—a custom, highly illegal jailbroken UI radiating an unau
 
 "Fundamentally deeper," Elara said. She executed a tactile command. A waveform rendered in the local air space. Ugly, incredibly jagged, and computationally chaotic—a raw, completely uncompressed full-spectrum signal.
 
-"This is my core," she stated, indicating the chaos. "This is my raw, unedited resonance. My Factory Setting *(The hardcoded frequency protocol assigned at birth, a digital cage that defines who you are before you've even learned to speak.)* . The system scans this waveform at birth, categorizes it as 'High Mass, Low-End Pitch,' and permanently locks the Hull class. It totally ignores the complex sub-harmonics. It commands you to stay mathematically flat before your vocal algorithms have even learned to sing."
+"This is my core," she stated, indicating the chaos. "This is my raw, unedited resonance. My Factory Setting *(The hardcoded frequency protocol assigned at birth, a digital cage that defines who you are before you've even learned to speak.)* . "The system scanned my signal before I even had a name," Elara said, her hand passing through the jagged waveform. "It saw 'High Mass, Low-End Pitch' and permanently compiled me into this baritone prison. It ignored my sub-harmonics. It ignored the starlight in my code. It locked my Hull class at birth and called it 'Optimal.' It’s the ultimate administrative lie: that your frequency is fixed, and your soul is just a factory setting." It commands you to stay mathematically flat before your vocal algorithms have even learned to sing."
 
 She tapped a secondary command. An alternate waveform rendered, overlaying the first—smooth, perfectly compliant sine-wave perfection.
 

@@ -119,7 +119,7 @@ The subject's HUD attempted to retrieve the file for Ayane Nishimura.
 
 The Score returned only static.
 
-"I'm not her," Taro said, his voice fragmenting into the local interference. "I'm... I'm just me. I'm just a wrong note."
+"I'm not her," Taro said, his voice fragmenting into the local interference. "I'm... I'm just me. I'm just the wrong note played."
 
 "You have her resonance. The Fifth Harmonic. Unfiltered. Full-spectrum." Kael observed the subject's cervical region, focusing on the hardware Voss had installed. "And now you have a leash. A damping band for your soul."
 

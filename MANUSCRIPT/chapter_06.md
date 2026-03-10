@@ -16,7 +16,7 @@
 
 ---
 
-Gaseous vapor exhausted from the cervical vents in the student Ven's armor. They occupied Malkuth Academy's Section 0, an industrial subsurface level defined by dense reinforced concrete shielding and a blistering ambient temperature of 45°C. The environment functioned as a specialized heat exchange vault. The system status indicated a constant atmospheric venting cycle; coolant loops operated at maximum capacity to prevent a localized core meltdown.
+Searing, white-hot vapor hissed from the cervical exhaust ports of Ven’s armor. They were standing in Section 0—Malkuth’s industrial basement. It was a cathedral of reinforced concrete and high-heat punishment, baking at a constant 45°C. The air didn't just feel hot; it felt heavy, saturated with the electromagnetic runoff of the city’s perfection above. The environment functioned as a specialized heat exchange vault. The system status indicated a constant atmospheric venting cycle; coolant loops operated at maximum capacity to prevent a localized core meltdown.
 
 They were deep underground in a Grounding Vault.
 
@@ -31,7 +31,7 @@ They were deep underground in a Grounding Vault.
 </details>
 </aside>
 
-The structural walls were coated in thick concrete, layered with high-mass copper bus-bars designed specifically to absorb excess resonant energy. In the adjacent alcoves, a cohort of juvenile apprentices—aged approximately ten years—gathered around a senior Rhythm Engineer. They did not utilize projected data tablets. Instead, they applied their bare dermal layers to the copper, their ocular inputs closed. They were learning to "listen" to the texture of the waste heat prior to the system's automated labeling protocol.
+The structural walls were coated in thick concrete, layered with high-mass copper bus-bars designed specifically to absorb excess resonant energy. In the adjacent alcoves, a cohort of juvenile apprentices—aged approximately ten years—gathered around a senior Rhythm Engineer. No data tablets. No AR overlays. The children simply pressed their bare palms against the scorching copper, eyes squeezed shut. They weren't reading data; they were feeling for the vibration of the city’s sins. They were learning to map the noise before the Score could sanitize it with a label.
 
 The air was dense with particulate matter. The olfactory sensors registered wet iron and ozone—the exact chemical signature of high-voltage waste.
 It smelled like an engine failing slowly.
@@ -110,12 +110,13 @@ Taro exhibited an indecisive stance. His internal diagnostic warnings were broad
 
 He recalled the data from the Sandbox simulation. He recalled the systemic relief of the pressure valve opening.
 
-Taro extended his limb and established physical contact with Ven's hand.
+Taro reached out, his skin meeting the limit-tested alloy of Ven’s gauntlet.
 
 *THUD.*
 
 > `CIRCUIT: CLOSED`
-> `PHASE_LOCK: CONFIRMED`
+
+It wasn't just a touch—it was a drainage. The high-pressure scream behind Taro’s eyes didn't just stop; it poured out of him. The sensation was cooling, a violent sawtooth pulse suddenly smoothing into a deep, laminar current that raced down his arm and vanished into the infinite, hungry gravity of Ven’s capacity.
 
 Impedance matching completed successfully. Energy transfer activated at a rate of 1.2 kW/s, flowing linearly from Taro into Ven with ninety-nine percent stability. The localized pressure in Taro's anterior lobe—the constant, grinding processing hum of his signal—drained away instantaneously. The sensation resembled switching from a harsh sawtooth pulse to a clean, laminar fluid flow. It progressed out of his arm and directly into Ven's infinite, low-impedance capacity.
 
@@ -208,9 +209,9 @@ Digital audio drivers suspended instantly. The direct acoustic link snapped into
 
 The rendered world vanished. The anxiety hum of the Choral student ceased registering. The aggressive thermal footprint of the Vanguard personnel disappeared. The constant, demanding query-load of the Academy network severed cleanly.
 
-Silence. Or rather, a localized acoustic warmth.
-The faint hiss of copper wiring. The biological sound of his own blood traversing his auditory pathways. The physical pressure of the foam isolating his skull.
-It did not resemble the sterile, programmatic void of the Recovery Room. It functioned as a blanket. Usable, honest darkness.
+Silence. But not the empty, digital zero of a mute button. This was weight.
+
+It was the faint, organic hiss of oxygen-free copper. The rhythmic, reassuring thrum of his own blood-flow. The heavy, physical embrace of the foam-pads crushing against his skull to keep the world out. It wasn't the sterile void of the Academy; it was a sanctuary of honest shadows. For the first time, Taro wasn't being broadcasted. He was just... there.
 
 // [NOTE: C-Order citizens allocate significant processing power to ensure their presence is logged.]
 // [NOTE: The refusal to resonate represents a massive systemic inefficiency.]

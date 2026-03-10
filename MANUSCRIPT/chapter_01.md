@@ -125,34 +125,27 @@ The subject kept his head down. His own signal felt like a scratch in his throat
 
 "Hey, Wrong Note."
 
-The subject did not look up. The system detected an acoustic signature in D Major, accompanied by traces of bubblegum flavoring and ozone.
+The subject did not look up, but his internal logic stuttered. The system detected an acoustic signature in D-Major—bright, uncompressed, and stubbornly optimistic. It was accompanied by the prohibited scent of bubblegum and the sharp ozone of a technician who spent too much time overclocking her own port.
 
-> `INTENT_ANALYSIS: CASUAL [THREAT_LEVEL: LOW]`
-> `DOMINANT_HARMONIC: D-MAJOR [BRIGHT]`
+> `TAG: FASCINATION [CONFIDENCE: 92%]`
+> `DOMINANT_HARMONIC: D-MAJOR [UNFILTERED]`
 
-The approaching unit was Remi Sato.
+Remi Sato. 
 
-She traversed the railing. To the system's sensors, she generated a faint, stable blue distortion. D Major. Her output adhered perfectly to the enforced composure baseline. Her diaphragmatic damping was rhythmic and precise.
+She leaned against the railing, her presence generating ripple-rings of amber light on the floor grid that the Score’s stabilizers were struggling to smooth out. She didn't look like a technician; she looked like a high-gain signal trying to pass as a standard broadcast.
 
-"You're leaking," she said. She pointed at his head.
+"You're leaking, Taro," she whispered. She didn't point. She just tilted her head, her optical sensors locking onto his coordinates. 
 
-The subject touched his temple. No physical fluids were detected.
+"The Score says I'm within parameters," he muttered, keeping his focus on the floor.
 
-"You're leaking signal," she clarified. "I can taste the fuzz on your edges. Your capacity is too wide for these standard damping bands." She leaned in, focusing on his wrist. "Custom job? That maker's mark is archaic."
+"The Score is lying to save its own hardware," she said, stepping closer. The air between them hummed with a sympathetic resonance that made Taro’s teeth vibrate. "I can taste the fuzz on your edges. It’s like listening to a low-bit track through velvet. It’s... beautiful. And dangerous."
 
-The subject pulled his arm back. "Old gear. They're hitting thermal limit."
+She reached out, her manual digits stopping just millimeters from his wrist. "Custom bands? That maker's mark is archaic. My instruments can't even find a serial number for it."
 
-"You’re clipping, Taro. Badly."
+The subject pulled his arm back, his heart rate spiking to 125 BPM. "It's just old gear, Remi. Hitting thermal limit."
 
-The subject checked his wrist. The system read the three bands functioning at ninety-five percent thermal capacity. His amplitude was peaking. The interference index rose in direct correlation with sustained CPU drain.
+"No," she corrected, her voice dropping into a register that felt real, not rendered. "You're clipping because the world is too small for you. You're a high-fidelity signal in a low-bit cage. One day you’re going to peak, and I want to be the one who’s there to record it."
 
-"Bad night," he muttered. "My hardware is grinding. Too much sawtooth oscillation in the air today."
-
-"You need to dump heat," Remi said, walking alongside him. Her motion generated ripple-rings of blue visual data on the floor grid. "You can't keep carrying that load. You're gonna peak and take the whole floor with you. Seriously, the vibe is getting way too loud. Just stay flat."
-
-"It's not a grenade," he said. "It's drift artifacts. I'm humming, that's all."
-
-"It's incredible," she corrected. "If you'd just let the Score index it—"
 
 > `NEURAL_TRAUMA: ACUTE [SOURCE: UNKNOWN]`
 > `DISSONANCE_DETECTED [CLASS: FATAL]`
@@ -197,7 +190,7 @@ The physical result was catastrophic hardware rejection. The chaotic field impac
 
 "Get the stabilizers!" Remi shouted. Her D Major field shifted into a sharp, erratic indigo pattern. "The vibe is totally blown! He's running too sharp!"
 
-The subject froze.
+Taro froze.
 
 His brain attempted to process the data. It was too fast. He was dropping frames. His logic engine failed to resolve the incoming waveform. It tagged it only as unstable oscillation.
 

@@ -27,16 +27,15 @@ Taro observed perfectly as his signal strength telemetry dropped bar by bar, eig
 
 > `NETWORK_STRENGTH: [|||||] ... [|||..] ... [|....]`
 
-When the final telemetry bar vanished entirely, an undocumented sensation washed over his physical form.
-The constant, highly optimized, high-pitched hum of the C-Order Network—the flawless carrier wave connecting every active Score port in the metropolis—cut out.
+When the last telemetry bar flickered and died, the world didn't go quiet—it went heavy.
 
-Silence. Real, heavy, terrifyingly un-rendered analog silence.
+The C-Order’s carrier wave, that constant, high-frequency scream that tells every citizen how to feel and where to walk, simply... evaporated. In its place was a silence so thick it felt like physical mass. It was the sound of a universe that didn't care to be rendered. Analog. Unoptimized. Honest.
 
 > `CONNECTION_LOST: PLEASE_STAND_BY`
 
 The physical elevator doors groaned open. The atmospheric air in this unauthorized sector was undeniably thick, molecularly smelling of unrefined ozone and heavily degraded coolant fluid.
 
-"Welcome to the Dead Zone," Elara stated. Her vocal output was already beginning to trigger massive "wrong note" errors without the C-Order network active to automatically smooth her formants. "Zero network coverage in these coordinates. Total analog territory. You can finally cease attempting to stay flat."
+"Welcome to the Dead Zone," Elara stated. Her vocal output was already beginning to trigger massive "wrong note" errors without the C-Order network active to automatically smooth her formants. "Zero network coverage in these coordinates. Total analog territory. You can finally be yourself here."
 
 She assumed a standing position adjacent to his coordinates, visually registering as highly unstable. Without the Network connection to forcefully render her Hull ID, her "Tank" avatar flickered violently. The heavy, armored shoulders phased erratically in and out of local existence, repeatedly revealing the raw wireframe light operating beneath.
 
@@ -82,9 +81,9 @@ She applied physical grip to his arm and exerted kinetic force to pull him towar
 
 She executed optical closure. She initiated a deep respiratory cycle. And she ceased all masking protocols.
 
-The "Tank" hull did not merely log a wrong note—it catastrophically shattered. The heavy white uniform, the broad shoulders, the square jaw geometry—it all violently exploded into raw pixels and permanently dissolved from local memory.
+The "Tank" hull—that massive, white-and-gold lie of a soldier—didn't just glitch. It fractured. The geometry of her shoulders and the weight of her rank-tags shattered like cheap porcelain, peeling away in jagged, un-rendered shards.
 
-And from the resulting digital debris rose the raw Wireframe.
+From the debris rose the real Elara. She wasn't a skeleton; she was a miracle of high-gain architecture. Built of neon-blue glass and raw, pulsating starlight, she stood in the center of the dark like a living treble clef. She was a frequency spike made manifest, too fast and too sharp for any standard monitor to catch.
 
 It was not merely a skeletal mesh anymore. In the entirely signal-free atmospheric air of the Null, her true texture map fully loaded. Elara was mathematically radiant. She was constructed of neon-blue glass and raw starlight data. Her true form was remarkably slender, exceptionally sharp, and terrifyingly fast-processing. She moved like a pure frequency spike, a living treble clef physically slicing through the heavy, un-rendered air.
 
@@ -198,13 +197,14 @@ Her instruments caught the acoustic event when Taro's limiter failed. The collar
 > `NEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]`
 > `CONFIDENCE: 4%`
 
-She did not act on the 4%. She wrote it down.
+She did not act on the 4%. She didn't report the 4,200 watts of un-rendered truth she’d just witnessed.
 
-In the paper notebook. With the pencil. In an analog record that the Score could not flag, audit, or delete.
+In the paper notebook. With the pencil. In an analog record that the Score could not flag, audit, or delete. Her hand trembled as she wrote the final entry—not as a technician, but as a witness.
 
-She closed the notebook. She re-entered standard function. She would file the official log in the morning with all anomalous readings rounded to zero.
+She closed the notebook and tucked the pencil into her hair. She re-entered the grid’s standard function, her face resetting into a mask of compliant boredom. She would file the official log in the morning. She would report that the Sector was quiet. She would round every anomalous spike, every beautiful ripple, and every trace of Taro’s real name down to an absolute, un-auditable zero.
 
-She had been doing this since Chapter 6.
+Because the system didn't deserve to know how bright he really was.
+
 
 **> SYSTEM_STATUS: RESONANCE_ACCEPTED *(The mask is gone, the truth exposed—a reflection of the soul that the world tried to erase.)***
 **> HULL_TYPE: NULL_VOID [UNIQUE] *(Subject signature confirmed. Unique resonance pattern identified.)***

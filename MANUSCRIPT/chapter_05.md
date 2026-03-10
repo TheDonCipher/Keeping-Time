@@ -23,7 +23,7 @@ They established a triangular geometric formation. Taro, Hana, and the high-mass
 
 A successful sync demanded a ninety-five percent threshold for Triad lock. Session status logged as active, monitored by the Academy’s silent diagnostic routing.
 
-The Sandbox was a programmed void. No walls. No floor. Simply a glowing wireframe grid projected beneath their coordinates. It lacked olfactory data entirely—a literal absence of scent rendering.
+The Sandbox was a sterile optimization. No walls. No horizon. Simply a cold, phosphorescent wireframe grid flickering at the base of their coordinate space. It was a sensory desert; the system hadn't even allocated the processing cycles to render the smell of ozone. It was reality with the skin peeled off.
 Simulation was the only environment where the Score functioned honestly; it allocated zero processing power to paint over decay because no decay was programmed to hide.
 
 Hana initiated the team link request. The status held at pending as she attempted to synchronize three incompatible nodes.
@@ -33,7 +33,7 @@ Ven functioned as the sink. He was a low-impedance node projecting a 2.0 kW capa
 And then there was Taro—the variable.
 His frequency drifted. His sync registered as chronically unstable. His Harmonic Integrity Quotient logged a precarious 0.12, with the link drift hovering at a precise 0.02ms.
 
-"Target is a simple C-Major Triad," Hana said. Her voice output was a perfect, rigid pulse, devoid of any emotional oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the Triad will stabilize. Don't run sharp, Taro. Stay flat."
+"Target is a simple C-Major Triad," Hana said. Her voice output was a perfect, rigid pulse, devoid of any emotional oscillation. "Analysis: I am the Root. Ven is the bass-frequency sink. Nishimura, you are the fifth overtone. If/Then: If we maintain phase alignment, then the Triad will stabilize. Don't run like you always do, Taro. Stay flat."
 
 <aside>
 <details>
@@ -73,11 +73,11 @@ He restricted his bio-plasma discharge rate to exactly twenty percent.
 
 > `OUTPUT_TARO: 20%`
 
-A jagged, yellow electrical arc propagated from Taro toward Hana.
-It impacted her blue firewall shield.
-It reflected.
+A jagged, orange-peel arc of uncompiled data lashed out from Taro’s chest. It didn't travel; it glitched across the distance to slam into Hana’s blue firewall. The collision wasn't physical—it was a syntax error made manifest.
 
 *CRACK.*
+
+The sound was a speaker blowing out in a vacuum.
 
 > `ERROR: PHASE_MISMATCH`
 > `INCOMING_OFFSET: 90 DEGREES`
@@ -87,7 +87,6 @@ It reflected.
 // [CONTENT: ...nd it...]
 // [FLAGGING AS: ACOUSTIC_ARTIFACT — DISCARD]
 // [DISCARDED]
-// [NOTE: IT RETURNED]
 // [NOTE: RETAINED]
 
 The system rejected his dissonance, struggling and failing to calculate the required alignment for constructive interference. Energy loss immediately hit forty-five percent as the amplitude was nullified by the collision.
@@ -149,13 +148,9 @@ Ven was classified as a Sink.
 
 His waveform was not a line; it functioned as a massive, low-frequency rolling wave. High capacity. Low impedance.
 
-Taro's jagged High Register bolt impacted his coordinates.
-Ven consumed it.
+Taro’s High Register lanced out—a blinding, white-noise scream of pure amplitude. It should have vaporized the room. Instead, it hit Ven and vanished.
 
-It was not a deflection. It was an integration.
-
-Ven's aura dilated. The low-pressure void swallowed Taro's lightning instantaneously. No splash radius. No reflection angle.
-Total signal absorption.
+It wasn't a block; it was a hungry vacuum. Ven didn't stop the signal—he invited it. His aura didn't just dilate; it inverted, becoming a low-impedance gravity well that drank Taro’s lightning until the jagged edges smoothed into something heavy, dark, and foundational.
 
 *THOOM.*
 
@@ -210,7 +205,21 @@ The system observed a rapid upward curvature of Taro's mouth. The thermal warnin
 > `SYNC_STATUS: GREEN`
 > `NETWORK: LOCKED`
 
-"Initializing Drop," Taro whispered.
+Taro’s fingers twitched against the empty air, finding a ghost-fader and slamming it to the ceiling.
+
+"Kill the limiter," he whispered. "Initializing Drop."
 
 **> TRACK: 05_COMPLETE**
 **> SAVING...**
+
+Thirty meters above the wireframe floor, in the shadowed curve of the observation booth, Remi Sato didn't look at the official diagnostics. She ignored the green stability bars and the polite, normalized averages on her main console.
+
+Instead, she looked at the raw waveform on her handheld analog scanner—a jagged, sawtooth monster that was currently trying to swallow the room's Middle C.
+
+THOOM.
+
+The sub-bass hit the observation glass, and for a second, her vision dropped to grayscale. She didn't flinch. She opened her notebook and scribbled a single line of high-friction graphite:
+
+Subject Taro: Signal is hungry. It’s not just a noise; it’s a gravity well. He isn't a cadet. He's a siege engine waiting for a driver.
+
+"Stay flat, Taro," she whispered to the glass, her breath fogging the view of the golden boy below. "Don't let them see you yet."

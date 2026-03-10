@@ -171,9 +171,11 @@ A root-level modification of the environmental parameters executed. The gravitat
 
 "You write it," the Headmaster said.
 
-The subject looked at his hand. The data structure surrounding it had fundamentally altered.
-It wasn't a wrong note anymore. It was an input interface.
-A cursor. Blinking.
+The subject raised his palm. It was no longer a limb; it was a vertex point. The surrounding data didn’t just alter—it initialized, transparent terminal lines bleeding from his fingertips to anchor into the void.
+
+Not an object. An interface.
+
+A cursor. Blinking with the weight of a thousand unwritten equations.
 
 > `SYSTEM: READY`
 

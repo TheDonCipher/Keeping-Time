@@ -2,33 +2,31 @@ import os
 import re
 
 # =============================================================================
-# KEEPING TIME: MANUSCRIPT TO HTML SYNC UTILITY
+# KEEPING TIME: MANUSCRIPT TO HTML SYNC UTILITY v2.0
 # =============================================================================
-# This script synchronizes the content of the Markdown manuscript files in the
-# MANUSCRIPT directory with the Scrollytelling HTML file.
-# It preserves scrollytelling meta-tags (data-vol, data-coh) and chapter signals.
+# Updated to support High-Fidelity HUD tags, Asides, and custom metadata.
 # =============================================================================
 
 # Configuration
 MD_DIR = "MANUSCRIPT"
-HTML_FILE = "KeepingTime_VolumeOne(Scrollytelling).html"
+HTML_FILE = "KeepingTime_VolumeOne.html"
 CHAPTER_COUNT = 17
 
 def markdown_to_html(text):
-    """Basic conversion of Markdown elements to HTML for the scrollytelling engine."""
+    """Refined conversion for the Keeping Time engine."""
     # Tooltips: [[Text::Hint]] -> <span class="tooltip" data-tip="Hint">Text</span>
     text = re.sub(r'\[\[(.*?)::(.*?)\]\]', r'<span class="tooltip" data-tip="\2">\1</span>', text)
     # Bold: **Text** -> <strong>Text</strong>
     text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
     # Italics: *Text* -> <em>Text</em>
     text = re.sub(r'\*([^\*]+)\*', r'<em>\1</em>', text)
-    # Remove blockquote markers but keep text
-    if text.startswith('> '):
-        text = text[2:].strip()
+    # Code/HUD units: `Text` -> <code>Text</code>
+    text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
+    
     return text
 
 def rebuild_chapter(ch_num, md_content):
-    """Reconstructs the <div> structure for a single chapter."""
+    """Reconstructs the <div> structure for a single chapter with better block detection."""
     ch_id = f"ch{ch_num}"
     
     # Extract Title (## Chapter X: Title)
@@ -42,30 +40,67 @@ def rebuild_chapter(ch_num, md_content):
     html += '<hr>\n'
     
     # Split into blocks by double newline
-    blocks = md_content.split('\n\n')
+    blocks = re.split(r'\n\n+', md_content)
     for block in blocks:
         block = block.strip()
         if not block: continue
-        if block.startswith('#'): continue # Skip headers (handled above)
+        if block.startswith('#'): continue # Skip headers
         
+        # Horizontal Rule
         if block == '---':
             html += '<hr>\n'
             continue
             
+        # Sub-headers (like [00:00:00] THE ZAP)
         if block.startswith('### '):
-            # Sub-headers (like [00:00:00] THE ZAP)
             html += f'<h4>{block[4:].strip()}</h4>\n'
             continue
             
-        # Convert paragraph lines (handling single-newline breaks as <br>)
+        # Handle Aside/Lore blocks (literal HTML)
+        if block.startswith('<aside') or block.startswith('<div class="lore'):
+            html += f'{block}\n'
+            continue
+
+        # Handle Blockquotes (Epigraphs)
+        if block.startswith('> '):
+            lines = block.split('\n')
+            # Clean lines and handle the Source line
+            clean_lines = []
+            source = ""
+            for l in lines:
+                l = l.strip()
+                if l.startswith('> —'):
+                    source = l[2:].strip()
+                elif l.startswith('> '):
+                    clean_lines.append(l[2:].strip())
+            
+            content = "<br>".join([markdown_to_html(cl) for cl in clean_lines])
+            if source:
+                content += f'<span class="lore-source">{markdown_to_html(source)}</span>'
+            
+            html += f'<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95">{content}</blockquote>\n'
+            continue
+
+        # HUD / System Tags (Lines starting with > but not necessarily a quote block)
+        # Note: If it's a single line like "> BIOMETRIC...", we preserve the >
+        is_hud = block.startswith('> ')
+        
+        # Convert paragraph lines
         lines = block.split('\n')
         inner_html = "<br>".join([markdown_to_html(l.strip()) for l in lines if l.strip()])
         
         if inner_html:
-            # Note: We default to baseline scrollytelling tokens. 
-            # Advanced tokens (like data-tag="online") should be handled in the MD if needed,
-            # but for now we apply standard volume/coherence attributes.
-            html += f'<p data-vol="0.25" data-coh="0.8">{inner_html}</p>\n'
+            vol = "0.25"
+            coh = "0.8"
+            css_class = ""
+            
+            # Auto-detect HUD blocks for styling
+            if is_hud or "<code>" in inner_html:
+                vol = "0.1"
+                coh = "0.95"
+                css_class = ' class="format-system"'
+            
+            html += f'<p data-vol="{vol}" data-coh="{coh}"{css_class}>{inner_html}</p>\n'
             
     html += '</div>'
     return html
@@ -78,7 +113,7 @@ def sync():
     with open(HTML_FILE, 'r', encoding='utf-8') as f:
         html_content = f.read()
 
-    # 1. Extract existing signals (ch01_zap, etc.) to preserve them
+    # 1. Extract existing signals
     signals = {}
     signal_matches = re.finditer(r'<div data-ch-id="ch(\d+)" data-signal="(.*?)">', html_content)
     for m in signal_matches:

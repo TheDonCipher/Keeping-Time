@@ -21,15 +21,13 @@ The practice annex operated as a hollow, highly secure vault of acoustic silence
 External to the facility, the Academy had executed its night cycle, the local urban grid humming efficiently in a low-load, low-power state.
 Internally, however, Taro's neural-acoustic masking layer was experiencing micro-failures. A registered twelve-percent variance in his core logic was causing the localized rendering of the world to stutter.
 
-Taro applied physical grip to the edge of the porcelain sink geometry. He directed his optical sensors at his digital reflection.
+Taro gripped the cold porcelain. His reflection was dropping frames.
 
-To the C-Order database, he registered as Cadet Taro. Validated survivor of the Void anomaly.
+The C-Order skin—the broad jaw, the stable cadet eyes—felt like a 60fps lie struggling to hide a 0fps truth. Beneath the "Taro" asset was a pressure that the local architecture couldn't calculate.
 
-But then, he executed a blink protocol.
+Flicker.
 
-*Flicker.*
-
-For a duration of one microsecond, the texture map of his facial geometry popped. The rendered skin, the hair assets—it all vanished entirely. It was replaced by a jagged, screaming, un-rendered wireframe of raw blue light. It was not merely a simple "wrong note" audio error. It was a completely alien geometric shape.
+The texture map snapped. For a microsecond, his face didn't just change; it un-rendered. A visual scream of jagged, blue-starlight wireframe strobed through the air, an aperiodic ghost trying to overwrite the simulation. He wasn't a broken soldier. He was a geometry error that the world's physics couldn't solve.
 
 The Cadet Taro Hull *(The AR social skin that the world sees—a polished, stable major chord of flesh designed to hide the dissonance underneath.)* was mathematically symmetrical, structurally solid, acoustically harmonious. The true wireframe executing underneath was severely jagged, highly asymmetrical, definitively splintered. A mathematically dissonant chord aggressively struggling to break free of containment.
 
@@ -52,17 +50,11 @@ He navigated the academy grounds, plotting a trajectory for the practice wing. T
 He advanced into the interior... and halted kinetic motion completely. The room was already occupied.
 In the center coordinates of the unlit room, a recognized silhouette operated a cello instrument. Cadet Kimura. Designation: "The Tank."
 
-But Kimura was generating massive "wrong note" errors.
+Kimura was a server-side error made manifest.
 
-Taro observed as the cadet executed a melodic progression so structurally fragile it caused Taro's own dental architecture to register sympathetic acoustic pain. With every executed note, the "Tank" hull flickered violently. The broad, heavily armored shoulders vanished from the render, revealing a decidedly slender, highly radiant wireframe of pure light underneath the false textures.
+Every note she pulled from the cello tore a hole in the "Tank" hull. The armored shoulders didn't just fade—they glitched out in jagged, white-noise squares, exposing a wireframe underneath that was too slender, too fast, and too treble.
 
-Kimura was executing weeping protocols. Silently. The tears were not rendering as water; they were glowing, unformatted pixels, dripping onto the floor geometry and vanishing from system memory.
-
-*Not the only one.*
-
-Kimura ceased musical output. The cadet executed a rapid 180-degree rotation. The assigned "Tank" hull aggressively snapped back into approved visual alignment.
-
-"Get out!" Kimura barked. The vocal output was excessively deep, clearly forced through an artificial lowering filter.
+The tears on her face weren't water; they were unformatted pixels, glowing artifacts of a soul and a frequency that the C-Order was trying, and failing, to compress into a baritone container.
 
 "I witnessed it," Taro stated. "I saw the underlying mesh geometry."
 
@@ -82,7 +74,9 @@ Kimura's optical sensors expanded. The aggressive anger parameters drained compl
 
 "I am Taro," he stated.
 
-"Elara," she whispered. "My designation is Elara. I am... I am full-spectrum. And the operating system... it exclusively requires me to execute as a single, flat note."
+"Resonance Dysphoria," she said, and the words hit like a system crash. Her voice-filter was failing, the deep "Command" mask flickering away to reveal a high-gain frequency that the C-Order hadn't authorized.
+
+"My designation is Elara," she whispered, her glass-like hands vibrating with a frequency that made the floor-grid lag. "The operating system only has a baritone driver for this body, Taro. It doesn't know how to render me. I’m a high-fidelity signal trapped in a low-frequency cage. I am full-spectrum data... and the world is just a single, flat note."
 
 For the first time since the system reboot, the constant, oppressive noise within Taro's core logic went perfectly quiet.
 

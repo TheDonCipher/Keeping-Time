@@ -31,7 +31,7 @@ The objective was logged as a standard patrol sweep. Fireteam Echo: Confirmed an
 </details>
 </aside>
 
-Beneath their transit vector lay a "Wrong Note" zone characterized by inconsistent reality rendering. Localized textures suffered frequent pop-in/pop-out errors. Atmospheric analysis detected elevated levels of O3 and sulfur. It was a geographic coordinate where the C-Order's mask slipped, exposing the jagged, unformatted structural framework of the world beneath.
+Beneath their transit vector lay a Fidelity Gap where the C-Order's mask was fraying. The reality-render was dropping frames—localized textures stuttering and snapping like a dying projector. It was a scar in the world’s rendering, exposing the jagged, unformatted structural framework where the lie hadn't quite taken hold. Atmospheric analysis detected elevated levels of O3 and sulfur. It was a geographic coordinate where the C-Order's mask slipped, exposing the jagged, unformatted structural framework of the world beneath.
 
 // [NOTE: The phrase 'unformatted structural framework' is sufficient. 'Bone of the world' implies organic intent to the architecture.]
 // [NOTE: Annotation retained.]
@@ -74,7 +74,6 @@ His filter-agnostic neural architecture caught the rendering error. For a fracti
 
 Beneath the optical illusion of white marble, the physical wall consisted of crumbling concrete, compromised by aggressive black mold. Olfactory sensors logged the scent of wet biological rot.
 
-> `ERROR: WRONG_NOTE_DETECTED`
 > `WARNING: TEXTURE_FAILURE [5%]`
 
 Underlying geometry was briefly exposed, revealing a localized phase variance that the systemic filters struggled to mask.
@@ -129,7 +128,7 @@ She ran her sensor across the surface without preamble. Read the output aloud, c
 
 "Seventy-three percent substrate failure. The render is running at triple overhead just to paint this."
 
-The zone anomaly had stripped the Golden Filter from both their visual feeds simultaneously — a proximity glitch, a fidelity gap the system kept patching and kept losing. For 4.1 seconds, they were both looking at the same wall. The concrete. The mold. The black water staining at the base where the drainage had failed two years before anyone's render-budget covered it.
+A proximity glitch tore through the data-stream, and for 4.1 seconds, the Golden Filter just... evaporated. The marble skin of the building flaked away like ash, revealing the wet, black throat of a slum beneath. The mold wasn't just a texture; it was a broadcast of neglect. The air tasted like rot and old concrete, a raw, unindexed truth that the system was already screaming to patch. For 4.1 seconds, they were both looking at the same wall. The concrete. The mold. The black water staining at the base where the drainage had failed two years before anyone's render-budget covered it.
 
 > `GOLDEN_FILTER: OFFLINE — SECTOR_ANOMALY`
 > `FIDELITY: RAW`
@@ -137,9 +136,19 @@ The zone anomaly had stripped the Golden Filter from both their visual feeds sim
 
 Neither of them said anything about the wall. She kept reading her instruments. He kept looking at it.
 
-Then, quieter, still facing the surface:
+Then, quieter, her shoulder nearly touching his as they occupied the same 4.1 seconds of honest, un-rendered air:
 
-"They're working really hard to make this not look like what it is."
+Then, quieter, her shoulder nearly touching his as they occupied the same 4.1 seconds of honest, un-rendered air:
+
+"They're working really hard to make this not look like what it is," she said. She wasn't looking at him; she was looking at the raw, wet concrete through her sensor-lens, as if the mold was a piece of art she’d been waiting all month to see. "But I think I like the rot better, Taro. It doesn't have a render-budget. It’s the only thing in this sector that isn't trying to sell me a lie."
+
+She reached into her technician’s belt and pulled out a small, physical notebook. The sound of her pencil moving against the paper was the only thing Taro could hear besides his own heart.
+
+SCRATCH. SCRATCH.
+
+"You're recording a wall?" Taro asked.
+
+"I'm recording the truth," she said, tucking the pencil back into her hair as the Golden Filter snapped back into place. "The system doesn't know how to render a memory that isn't a data-packet. I’m making sure this one stays un-indexed."
 
 > `VOCAL_ANALYSIS: SATO_REMI — REGISTER: NON-TACTICAL`
 > `CONTENT: FILED FOR REVIEW — PRIORITY: LOW`
