@@ -77,7 +77,7 @@ It cut through the ambient air with the efficiency of a razor blade.
 
 "Name?" she repeated. The waveform of her vocal output drew a perfectly flat line.
 
-"Taro Nishimura," he said. His voice fractured. The vowel structure cracked as his internal oscillator failed to sync with the local key signature.
+"Chaos is energy," Vale said, "but without a frame, Nishimura, power is just waste-heat. You're not an Architect yet. You're just a bomb with a broken timer—a **Runtime Error** with nowhere to go. Socially... undignified."
 
 > `SYNC: FAILED [IMPEDANCE_MISMATCH]`
 
@@ -108,7 +108,7 @@ The subject's internal pressure spiked. The resonant music of the student body h
 
 Link requests, status queries, and localized ambient data collided with his aura. The surrounding nodes immediately flagged his signature as a high-fidelity risk. The pressure of so many perfect signals threatened to crush his erratic wave into nothingness.
 
-"Close your inputs," Hana ordered. "You are processing the visual representation of the resonance. Your capacity is too narrow for that load. You will peak and crash before we reach the hall. If/Then: If you want to survive the storm, then you must switch to AUDIO_ONLY."
+"Resonance is not volume," Vale corrected. "It is a **Vector of Permission.** A bridge does not collapse because the wind is loud; it collapses because the wind finds the structural **Key Signature** and enters a destructive feedback loop. You do not shout at reality, Nishimura. You **unwrite the intent.** A whisper, phased at 180 degrees, can nullify a mountain. Stay flat, and you own the Medium. Spike, and you are merely a **Resource Out of Bounds.**"
 
 The subject executed voluntary eyelid closure.
 
@@ -150,7 +150,7 @@ It wasn't loud. It possessed immense acoustic density.
 
 > `LATENCY: 0.0ms`
 
-"You have entered the Medium," the Headmaster said. "Here... you are Architects. You do not consume signal."
+"You have entered the Medium," the Headmaster said. His voice didn't propagate through the air; it initialized directly in their processing buffers. "Here... you are Architects. You do not consume signal. You define the **Physics of the Intent.**"
 
 <aside>
 <details>
@@ -175,7 +175,7 @@ The subject raised his palm. It was no longer a limb; it was a vertex point. The
 
 Not an object. An interface.
 
-A cursor. Blinking with the weight of a thousand unwritten equations.
+"A cursor. A flickering singularity in the grid, where his intent was already beginning to resolve into the room's new physics."
 
 > `SYSTEM: READY`
 

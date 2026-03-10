@@ -1,5 +1,5 @@
 # KEEPING TIME
-## Chapter 3: Modulation
+## Chapter 3: Transposition
 
 
 ---
