@@ -77,8 +77,6 @@ It cut through the ambient air with the efficiency of a razor blade.
 
 "Name?" she repeated. The waveform of her vocal output drew a perfectly flat line.
 
-"Chaos is energy," Vale said, "but without a frame, Nishimura, power is just waste-heat. You're not an Architect yet. You're just a bomb with a broken timer—a **Runtime Error** with nowhere to go. Socially... undignified."
-
 > `SYNC: FAILED [IMPEDANCE_MISMATCH]`
 
 "Analysis: You are late," she said. "Intake closed at 0800. It is 0803. If/Then: If you are not inside by 0800, then you are a system error. Stay flat, Anomaly. You're humming."
@@ -107,8 +105,6 @@ The subject's internal pressure spiked. The resonant music of the student body h
 > `VITAL_CAPACITY: MAXIMUM`
 
 Link requests, status queries, and localized ambient data collided with his aura. The surrounding nodes immediately flagged his signature as a high-fidelity risk. The pressure of so many perfect signals threatened to crush his erratic wave into nothingness.
-
-"Resonance is not volume," Vale corrected. "It is a **Vector of Permission.** A bridge does not collapse because the wind is loud; it collapses because the wind finds the structural **Key Signature** and enters a destructive feedback loop. You do not shout at reality, Nishimura. You **unwrite the intent.** A whisper, phased at 180 degrees, can nullify a mountain. Stay flat, and you own the Medium. Spike, and you are merely a **Resource Out of Bounds.**"
 
 The subject executed voluntary eyelid closure.
 
