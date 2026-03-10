@@ -138,8 +138,6 @@ Neither of them said anything about the wall. She kept reading her instruments. 
 
 Then, quieter, her shoulder nearly touching his as they occupied the same 4.1 seconds of honest, un-rendered air:
 
-Then, quieter, her shoulder nearly touching his as they occupied the same 4.1 seconds of honest, un-rendered air:
-
 "They're working really hard to make this not look like what it is," she said. She wasn't looking at him; she was looking at the raw, wet concrete through her sensor-lens, as if the mold was a piece of art she’d been waiting all month to see. "But I think I like the rot better, Taro. It doesn't have a render-budget. It’s the only thing in this sector that isn't trying to sell me a lie."
 
 She reached into her technician’s belt and pulled out a small, physical notebook. The sound of her pencil moving against the paper was the only thing Taro could hear besides his own heart.

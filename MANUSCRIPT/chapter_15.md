@@ -68,13 +68,9 @@ Kimura's optical sensors expanded. The aggressive anger parameters drained compl
 
 "The assigned hull doesn't fit the data," Taro said quietly. "Does it? You’re carrying far too much computational load."
 
-"No," Kimura said. The vocal filter cracked under the strain—the deep, authorized "Command Voice" slipping momentarily into a much truer, significantly higher frequency."
-
-"Resonance Dysphoria," Kimura corrected, supplying the authorized medical terminology. "A Pathological Misalignment *(The clinical term for a soul that rejects its assigned frequency, leaving you a ghost in your own machine.)* between assigned frequency baseline and internal geometry."
+"No," Kimura said. The vocal filter cracked under the strain—the deep, authorized "Command Voice" slipping momentarily into a much truer, significantly higher frequency. "Resonance Dysphoria," she corrected, supplying the authorized medical terminology. "A Pathological Misalignment *(The clinical term for a soul that rejects its assigned frequency, leaving you a ghost in your own machine.)* between assigned frequency baseline and internal geometry."
 
 "I am Taro," he stated.
-
-"Resonance Dysphoria," she said, and the words hit like a system crash. Her voice-filter was failing, the deep "Command" mask flickering away to reveal a high-gain frequency that the C-Order hadn't authorized.
 
 "My designation is Elara," she whispered, her glass-like hands vibrating with a frequency that made the floor-grid lag. "The operating system only has a baritone driver for this body, Taro. It doesn't know how to render me. I’m a high-fidelity signal trapped in a low-frequency cage. I am full-spectrum data... and the world is just a single, flat note."
 

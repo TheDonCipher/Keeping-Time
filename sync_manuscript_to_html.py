@@ -27,7 +27,7 @@ def markdown_to_html(text):
 
 def rebuild_chapter(ch_num, md_content):
     """Reconstructs the <div> structure for a single chapter with better block detection."""
-    ch_id = f"ch{ch_num}"
+    ch_id = f"ch{ch_num:02d}"
     
     # Extract Title (## Chapter X: Title)
     title = f"Chapter {ch_num}"
@@ -133,14 +133,14 @@ def sync():
             md_content = f.read()
             
         signal = signals.get(ch_num, f"ch{ch_num:02d}_signal")
-        new_novel_data += f'<div data-ch-id="ch{ch_num}" data-signal="{signal}">\n'
+        new_novel_data += f'<div data-ch-id="ch{ch_num:02d}" data-signal="{signal}">\n'
         new_novel_data += rebuild_chapter(ch_num, md_content)
         new_novel_data += '\n</div>\n'
         
     new_novel_data += '  </div>'
 
     # 3. Inject new novel-data into the HTML
-    novel_data_pattern = re.compile(r'<div id="novel-data" hidden>.*?  </div>', re.S)
+    novel_data_pattern = re.compile(r'<div id="novel-data"[\s\S]*?>[\s\S]*?  </div>', re.S)
     if not novel_data_pattern.search(html_content):
         print("Error: Could not find <div id=\"novel-data\" hidden> in HTML.")
         return

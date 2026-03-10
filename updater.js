@@ -5,15 +5,15 @@ const html = fs.readFileSync('KeepingTime_VolumeOne.html', 'utf8');
 const $ = cheerio.load(html, { decodeEntities: false });
 
 const chapBaselines = {
-    ch1: [0.45, 0.65],
-    ch2: [0.30, 0.82],
-    ch3: [0.40, 0.62],
-    ch4: [0.32, 0.78],
-    ch5: [0.42, 0.70],
-    ch6: [0.35, 0.65],
-    ch7: [0.50, 0.68],
-    ch8: [0.65, 0.55],
-    ch9: [0.12, 0.22],
+    ch01: [0.45, 0.65],
+    ch02: [0.30, 0.82],
+    ch03: [0.40, 0.62],
+    ch04: [0.32, 0.78],
+    ch05: [0.42, 0.70],
+    ch06: [0.35, 0.65],
+    ch07: [0.50, 0.68],
+    ch08: [0.65, 0.55],
+    ch09: [0.12, 0.22],
     ch10: [0.72, 0.40],
     ch11: [0.38, 0.75],
     ch12: [0.28, 0.80],
@@ -51,17 +51,17 @@ $('div.chapter').each((i, chapElem) => {
 
         // --- TAGGING LOGIC ---
         // bass_drop: First beat of Ch06 or Ch08 subsonic arrival
-        if (chId === 'ch6' && j <= 2 && lowerText.includes('fifty-five hertz')) tag = 'bass_drop';
-        else if (chId === 'ch8' && j <= 2) tag = 'bass_drop';
+        if (chId === 'ch06' && j <= 2 && lowerText.includes('fifty-five hertz')) tag = 'bass_drop';
+        else if (chId === 'ch08' && j <= 2) tag = 'bass_drop';
         
         // combat_ui: First impact beat in Ch08 Sortie
-        else if (chId === 'ch8' && (lowerText.includes('struck') || lowerText.includes('slammed') || lowerText.includes('hit'))) tag = 'combat_ui';
+        else if (chId === 'ch08' && (lowerText.includes('struck') || lowerText.includes('slammed') || lowerText.includes('hit'))) tag = 'combat_ui';
         
         // frame_skip: Error / glitch beats in Ch09 and Ch10
         else if ((chId === 'ch9' || chId === 'ch10') && (lowerText.includes('error') || lowerText.includes('glitch'))) tag = 'frame_skip';
         
         // impedance: Collar-tighten beats (Ch02, Ch04, Ch11)
-        else if ((chId === 'ch2' || chId === 'ch4' || chId === 'ch11') && lowerText.includes('collar tightened')) tag = 'impedance';
+        else if ((chId === 'ch02' || chId === 'ch04' || chId === 'ch11') && lowerText.includes('collar tightened')) tag = 'impedance';
         
         // headmaster: Krell direct-address
         else if (chId === 'ch11' && (lowerText.includes('headmaster') || text.includes('Krell')) && text.includes('"')) tag = 'headmaster';
@@ -80,9 +80,9 @@ $('div.chapter').each((i, chapElem) => {
         else if (lowerText.includes('limiter removed') || lowerText.includes('unmask')) tag = 'limiter';
         
         // ghost: Specific beats (Ch02 Artifact, Ch05 bleed-through, Ch08 jagged circle, Ch11 unformatted end it, Ch16 authenticated ghost)
-        else if (chId === 'ch2' && text.includes('[ARTIFACT: H——p ——. DISCARDING]')) tag = 'ghost';
-        else if (chId === 'ch5' && lowerText.includes('bleed-through')) tag = 'ghost';
-        else if (chId === 'ch8' && lowerText.includes('jagged circle')) tag = 'ghost';
+        else if (chId === 'ch02' && text.includes('[ARTIFACT: H——p ——. DISCARDING]')) tag = 'ghost';
+        else if (chId === 'ch05' && lowerText.includes('bleed-through')) tag = 'ghost';
+        else if (chId === 'ch08' && lowerText.includes('jagged circle')) tag = 'ghost';
         else if (chId === 'ch11' && text.includes('[UNFORMATTED: End it...]')) tag = 'ghost';
         else if (chId === 'ch16' && lowerText.includes('authenticated ghost')) tag = 'ghost';
 

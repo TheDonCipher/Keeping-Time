@@ -20,7 +20,7 @@
 - **AR Focus**: Social Tagging. Voss's deceptive "Safe" tags vs. Taro's "Threat" perception.
 - **Manga Beat**: The extreme close-up of Voss's eye wrong noting green for one frame.
 
-### Chapter 3: Modulation
+### Chapter 3: Transposition
 - **Event**: Taro says goodbye to Kael (Father).
 - **AR Focus**: "Impedance Mismatch." Visualizing the static/distortion between them.
 - **Manga Beat**: Kael handing over the Analog Headphones (Relic of the old world).
@@ -46,12 +46,12 @@
 - **AR Focus**: Industrial UI. Temperature gauges. "Cooling" mechanics.
 - **Manga Beat**: Steam venting from Ven's armor vents.
 
-### Chapter 7: The Rival (Planned)
+### Chapter 7: The Rival
 - **Event**: Introduction of Marcus Staccato (Vanguard Elite).
 - **AR Focus**: "Combat UI." Threat assessment, path prediction.
 - **Manga Beat**: Marcus moving faster than the frame rate (Wrong Note movement).
 
-### Chapter 8: The Sortie (Planned)
+### Chapter 8: The Sortie
 - **Event**: First field mission. Into the "Twilight Band."
 - **AR Focus**: "Fog of War." Limited data, interference patterns.
 - **Manga Beat**: The team dropping from the dropship in formation.
