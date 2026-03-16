@@ -1,14 +1,50 @@
-<html lang="en"><head></head><body>﻿
-
-
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>KEEPING TIME | Chapter 1: The Zap</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="A web-native cyberpunk novel. Reality is a signal. Harmony is a cage. Taro Nishimura is the wrong note the system can't delete. — Volume One.">
+  <meta name="author" content="Kealeboga Eugene Ratshipa (TheDonCipher)">
+  <meta name="theme-color" content="#0A0A0C">
+  
+  <meta property="og:title" content="KEEPING TIME — Volume One">
+  <meta property="og:description" content="Reality is a signal. Harmony is a cage. A web-native cyberpunk novel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://keepingtime.app">
+  <meta property="og:image" content="./og-image.png">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KEEPING TIME — Volume One">
+  <meta name="twitter:description" content="Reality is a signal. Harmony is a cage.">
+  <meta name="twitter:image" content="./og-image.png">
+  
+  <link rel="canonical" href="https://keepingtime.app">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&amp;family=Outfit:wght@400;600;900&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
-
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;600;900&display=swap" rel="stylesheet">
   
+  <!-- JetBrains Mono should be self-hosted, importing locally. Adjust path as needed. -->
+  <link rel="preload" href="./public/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'JetBrains Mono';
+      src: url('./public/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'JetBrains Mono';
+      src: url('./public/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
   <style>
     :root {
       --bg: #0A0A0C;
@@ -147,9 +183,9 @@
     .fragment-text { font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent); text-transform: uppercase; }
 
     /* ── GHOST SIGNAL FRAGMENT ──────────────────────────────────────────────────────
-       Persistent UI haunt. Baseline opacity 0.04 — peripheral vision only.
+       Persistent UI haunt. Baseline opacity 0.06 — peripheral vision only.
        Content is the soldier's broadcast, partially corrupted.
-       Surfaces to 0.09 on ghost-tagged beats via JS class toggle.
+       Surfaces to 0.14 on ghost-tagged beats via JS class toggle.
        Positioned top-left, away from standard fragment bottom-right cluster.
        The reader catches it. They cannot resolve it. This is correct. */
     #ghost-signal-fragment {
@@ -159,7 +195,7 @@
       font-family: var(--font-mono);
       font-size: 0.6rem;
       color: var(--danger);
-      opacity: 0.04;
+      opacity: 0.06;
       pointer-events: none;
       z-index: 90;
       letter-spacing: 0.12em;
@@ -169,7 +205,7 @@
       max-width: 160px;
     }
     #ghost-signal-fragment.surfacing {
-      opacity: 0.09;
+      opacity: 0.14;
       transition: opacity 0.4s ease;
     }
 
@@ -628,12 +664,45 @@
       75%  { transform: translateX(3px); }
       100% { transform: translateX(0); }
     }
+
+    /* SPEC 12: prefers-reduced-motion override */
+    @media (prefers-reduced-motion: reduce) {
+      .sentence.glitch::before,
+      .sentence.glitch::after { animation: none; opacity: 0; }
+      
+      .flash-standard,
+      .flash-breach,
+      .flash-krell,
+      .flash-patch,
+      .flash-illegal { animation: none; opacity: 0; }
+      
+      #progress-wave { transition: none; }
+      
+      .hud-viz-bar.active { animation: none; height: 50%; opacity: 0.5; }
+      
+      .sentence { transition: border-color 0.3s ease; }
+    }
+    
+    html.reduce-motion .sentence.glitch::before,
+    html.reduce-motion .sentence.glitch::after { animation: none; opacity: 0; }
+    
+    html.reduce-motion .flash-standard,
+    html.reduce-motion .flash-breach,
+    html.reduce-motion .flash-krell,
+    html.reduce-motion .flash-patch,
+    html.reduce-motion .flash-illegal { animation: none; opacity: 0; }
+    
+    html.reduce-motion #progress-wave { transition: none; }
+    
+    html.reduce-motion .hud-viz-bar.active { animation: none; height: 50%; opacity: 0.5; }
+    
+    html.reduce-motion .sentence { transition: border-color 0.3s ease; }
   </style>
-
-
+</head>
+<body>
   <!-- SPEC 04: Waveform Progress Bar -->
   <div id="progress-container">
-    <svg id="progress-wave" width="100%" height="20" preserveAspectRatio="none" style="position:fixed;top:0;left:0;z-index:9999;pointer-events:none;">
+    <svg id="progress-wave" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" width="100%" height="20" preserveAspectRatio="none" style="position:fixed;top:0;left:0;z-index:9999;pointer-events:none;">
       <defs>
         <clipPath id="progress-clip">
           <rect id="progress-clip-rect" x="0" y="0" width="0%" height="20"></rect>
@@ -666,16 +735,17 @@
       <div>
         <div style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em;">KEEPING TIME</div>
         <div style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-dim);">VOLUME ONE</div>
+        <button id="steady-toggle" aria-label="Toggle reduced motion" onclick="document.documentElement.classList.toggle('reduce-motion')" style="margin-top: 5px; padding: 2px 4px; font-size: 0.6rem;">[ STEADY ]</button>
       </div>
       <div id="hud">
         <div class="hud-line">
           <span id="hud-tension-label">TENSION</span>
-          <div class="hud-bar"><div id="hud-tension" class="hud-bar-fill"></div></div>
+          <div class="hud-bar" role="meter" aria-label="Tension" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"><div id="hud-tension" class="hud-bar-fill"></div></div>
           <span class="hud-value" id="hud-tension-val">0.00</span>
         </div>
         <div class="hud-line">
           <span id="hud-coherence-label">COHERENCE</span>
-          <div class="hud-bar"><div id="hud-coherence" class="hud-bar-fill"></div></div>
+          <div class="hud-bar" role="meter" aria-label="Coherence" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div id="hud-coherence" class="hud-bar-fill"></div></div>
           <span class="hud-value" id="hud-coherence-val">1.00</span>
         </div>
         <div class="hud-line" id="hud-bpm">
@@ -698,7 +768,7 @@
         <button id="audio-toggle" onclick="audioEngine.toggle()">[ AUDIO: OFF ]</button>
         <button onclick="toggleTheme()">[ INVRT ]</button>
       </div>
-      <select id="chapter-selector" onchange="window.engine.jumpToChapter(this.value)">
+      <select id="chapter-selector" aria-label="Navigate to chapter" onchange="window.engine.jumpToChapter(this.value)">
         <option value="ch1">CH.01 -- THE ZAP</option>
         <option value="ch2">CH.02 -- THE ASSESSMENT</option>
         <option value="ch3">CH.03 -- TRANSPOSITION</option>
@@ -2841,12 +2911,13 @@ class ScrollEngine {
   constructor(data) {
     this.data = data; this.currentBeatIndex = -1; this.beatMap = [];
     this.baseBeatHeight = window.innerHeight * 1.2; this.targetY = 0; this.currentY = 0;
-    this.lerpFactor = 0.07; this.fragmentTimer = 0;
+    this._lastTime = 0; this.fragmentTimer = 0;
     this._keyLocked = false; this._userHasInteracted = false;
     this._lastProgressSignature = ''; this._finalCrashHold = false; this._crashTriggered = false;
     this._pleaseNoGlitchUntil = 0; this._pleaseNoSavedCoh = null;
     this._angerBoostUntil = 0; this._sawtoothFlashUntil = 0;
     this._collarSnapTimer = null; this._collarSnapBeatIndex = -1;
+    this._saveTimer = null;
     
     // ── Discrete Wheel / Snap State ──────────────────────────
     this._wheelAccum = 0;
@@ -2860,6 +2931,10 @@ class ScrollEngine {
     this._calculateHeights();
     const sm = document.getElementById('scroll-machine'); if (sm) sm.style.height = this.totalHeight + 'px';
     this.targetY = this.currentY = window.scrollY;
+    
+    // Progress restoration check
+    this._restoreProgress();
+
     window.addEventListener('scroll', () => { this.targetY = window.scrollY; }, { passive: true });
 
     // ── Touch / swipe (mobile) — discrete beat-snap ─────────
@@ -2999,9 +3074,50 @@ class ScrollEngine {
     });
     this.totalHeight = px;
   }
+  _restoreProgress() {
+    try {
+      const saved = localStorage.getItem('kt_progress');
+      if (saved && parseInt(saved) > 0) {
+        const beatIdx = parseInt(saved);
+        // Find the chapter name this beat corresponds to
+        let chTitle = 'THE START';
+        for (let i = beatIdx; i >= 0; i--) {
+          if (this.data[i].type === 'chapter' && this.data[i].title) {
+            chTitle = this.data[i].title;
+            break;
+          }
+        }
+        
+        const btn = document.createElement('button');
+        btn.innerHTML = `[ CONTINUE &mdash; ${chTitle} ]`;
+        Object.assign(btn.style, {
+          position: 'fixed', bottom: '100px', left: '1.5rem',
+          zIndex: '9999', background: 'var(--ui-bg)', border: '1px solid var(--accent)',
+          color: 'var(--accent)', animation: 'frag-up 4s forwards reverse'
+        });
+        btn.onclick = () => {
+          this._snapToBeat(beatIdx);
+          btn.remove();
+        };
+        document.body.appendChild(btn);
+        
+        // Remove button after 10 seconds if unclicked to avoid cluttering UI permanently
+        setTimeout(() => btn.remove(), 10000);
+      }
+    } catch(e) {}
+  }
   _loop(time) {
+    const defaultTime = time || performance.now();
+    const delta = Math.min((defaultTime - (this._lastTime || defaultTime)) / 16.67, 3); // cap at 3x
+    this._lastTime = defaultTime;
+    
     const diff = this.targetY - this.currentY;
-    if (Math.abs(diff) > 0.1) this.currentY += diff * this.lerpFactor; else this.currentY = this.targetY;
+    if (Math.abs(diff) > 0.1) {
+      const lerpFactor = 1 - Math.pow(1 - 0.07, delta);
+      this.currentY += diff * lerpFactor;
+    } else {
+      this.currentY = this.targetY;
+    }
     
     // TRANSIT DETECTION: Drives "scanning" visual state during movement
     if (this._snapInProgress) {
@@ -3097,16 +3213,35 @@ class ScrollEngine {
       // HAPTIC FEEDBACK (mobile)
       // Mirrors the in-world Score/heartbeat theme: a physical pulse for narrative progression.
       // Guarded by _userHasInteracted to prevent browser security interventions.
-      if (this._userHasInteracted && 'vibrate' in navigator) {
-        if (nextBeat && nextBeat.type === 'chapter') {
-          navigator.vibrate([60, 30, 60]); // Distinct double-pulse for chapter transitions
-        } else {
-          navigator.vibrate(40); // Standard micro-pulse for normal beats
+      if (nextBeat && nextBeat.type === 'chapter') {
+        // Haptic pulse
+        if (this._userHasInteracted && 'vibrate' in navigator) navigator.vibrate([60, 30, 60]); 
+        
+        // Enhance: Show scroll hint at chapter transition
+        const hint = document.getElementById('scroll-hint');
+        if (hint) {
+          hint.classList.remove('hidden');
+          clearTimeout(this._hintTimer);
+          this._hintTimer = setTimeout(() => hint.classList.add('hidden'), 2000);
         }
+      } else {
+        if (this._userHasInteracted && 'vibrate' in navigator) navigator.vibrate(40);
+        
+        // Hide scroll hint consistently on normal beats
+        const hint = document.getElementById('scroll-hint');
+        if (hint && this.currentBeatIndex > 0) hint.classList.add('hidden');
       }
 
       this.currentBeatIndex = idx; 
       this._renderBeat(idx); 
+      
+      // Save progress (debounced)
+      clearTimeout(this._saveTimer);
+      this._saveTimer = setTimeout(() => {
+        try {
+          localStorage.setItem('kt_progress', idx.toString());
+        } catch(e) {} // fail silently in private browsing or constrained environments
+      }, 1000);
       
       if (nextBeat && nextBeat.tag && typeof audioEngine !== 'undefined') {
         audioEngine._triggerTagAudio(nextBeat.tag);
@@ -3291,7 +3426,8 @@ class ScrollEngine {
     let html = beat.type === 'chapter' ? '<div class="beat-chapter">' : '';
     beat.sentences.forEach((s, i) => {
       let cls = s.format === 'label' ? 'chapter-label' : s.format === 'title' ? 'chapter-title' : s.format ? `format-${s.format}` : '';
-      html += `<div id="s-${i}" class="sentence future ${cls}">${s.text}</div>`;
+      let aria = s.format === 'system' ? 'role="note" aria-label="System annotation"' : '';
+      html += `<div id="s-${i}" class="sentence future ${cls}" ${aria}>${s.text}</div>`;
     });
     container.innerHTML = html + (beat.type === 'chapter' ? '</div>' : '');
     if (beat.type === 'chapter') triggerChapterFlash(beat.signal);
