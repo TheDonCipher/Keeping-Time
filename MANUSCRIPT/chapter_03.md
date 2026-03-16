@@ -2,13 +2,6 @@
 ## Chapter 3: Transposition
 
 
----
-
-> REGULATORY NOTICE: Environmental baseline degradation is permitted in
-> residential sectors designated Class-C. Citizens are advised to maintain
-> active internal damping loops to prevent Phase Drift.
-> — *C-Order Compliance Handbook, Vol. II, §4.1*
-
 **ZONE: SECTOR 7-C RESIDENTIAL [DEAD ZONE]**
 **FIDELITY: DEGRADED**
 **STATUS: ACTIVE**
@@ -160,6 +153,7 @@ The digital audio driver suspended. A direct acoustic link engaged. The sampling
 Silence.
 But not the White Room dead silence.
 This was warm silence. The sound of cardiovascular fluid rushing in the inner ear. The low-fidelity hum of copper wire waiting for a current.
+Then, underneath the rush of his own blood, he heard it. It was faint—a ghost trapped in analog decay—but it was there. Ayane's melody. A sequence of five notes, completely unindexed, holding no mathematical purpose. It didn't ask to be optimized. It just existed, raw and untagged, playing in a loop only he could hear. It was the only secret he had left. The only sound the Score couldn't classify.
 The static of the Zone vanished. The crushing pressure of his father’s perfection vanished.
 Just Taro. No filters. No metadata. No Score.
 
@@ -183,7 +177,7 @@ He opened his eyes.
 His father maintained visual contact.
 
 The environmental data tags had ceased rendering. The systemic readout of Kael's biometrics was unavailable. The threat level indicator was offline.
-Just his dad. Looking sad.
+Just Kael. Unfiltered visual data.
 
 "Thank you," Taro said.
 
@@ -215,7 +209,7 @@ He opened the door and exited into the unshielded noise of the corridor.
 The Score re-initialized, restoring neural-acoustic synchronization and global phase alignment.
 
 The system logged his departure from the residential unit.
-It did not register a reason for his reluctance.
+> `LOG_ENTRY: SUBJECT_DEPARTURE_CONFIRMED [PARAMETERS: NORMAL]`
 
 He positioned the analog headphones around his neck.
 

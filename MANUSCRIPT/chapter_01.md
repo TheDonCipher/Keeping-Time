@@ -8,7 +8,7 @@
 > 100% rated output are designated Class-Ω Anomalies. All witnesses are
 > required to submit to mandatory memory indexing within 6 hours.
 > The sector will be repainted within 48 hours.
-> There was no incident.
+> [CLASSIFICATION: INCIDENT_NIL]
 > — *G-Vanguard Field Protocol, Directive 7-ZETA*
 
 **ZONE: SECTOR 7-C CALIBRATION HALL**
@@ -63,7 +63,7 @@ To the Score, it was a data stream.
 <details>
 <summary><strong>SUBJECT: The Unindexed (Normals)</strong></summary>
 <blockquote>
-<strong>Observation:</strong> Disconnected. They live in a world of silence, immune to the Score's coercive beauty but permanently locked out of the city's rendered infrastructure. To be normal is to be functionally invisible.
+<strong>Observation:</strong> Disconnected. They live in a world of silence, immune to the Score's coercive resonance but permanently locked out of the city's rendered infrastructure. To be normal is to be functionally invisible.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -108,7 +108,7 @@ But his head was screaming. Thermal load was already building.
 The environmental baseline held at a perfect Middle C, vibrating at 261.63 Hz. The room's standard resonance rendered in the visual spectrum as golden viscosity.
 
 In the Score's parameters, silence did not exist—only varying degrees of organized noise. The system optimized for harmony.
-He considered it a cage. Obviously a cage.
+He considered it a cage. A mathematical prison.
 
 A massive, golden sine wave propagated through the center of the room. It was not a projection. It was structural enforcement maintained by the Score.
 

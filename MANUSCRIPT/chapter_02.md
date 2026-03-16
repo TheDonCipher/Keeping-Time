@@ -33,7 +33,7 @@ The subject regained consciousness in the White Room. He was located in Unison H
 The physical architecture was lined with acoustic foam designed to absorb 99.9% of all reflected sound. The visual feed was administratively overridden by a Privacy Mask—an infinitely rendering void of white pixels designed to lower the user's cognitive load.
 
 It was a hard reset for the brain. A blank canvas forced over the senses. In the academies, students were instructed to breathe through the silence, to find a center when the world went dark. Civic hygiene.
-Obviously it was just a way to be buried before you ceased processing.
+A designated termination of active processing.
 
 The system registered the subject's intent to rotate his head. A physical damping collar corrected the motion with heavy mechanical resistance, administering a steady 4.2V charge. It was functioning at total resonance suppression, its active damping loop holding his baseline at flat zero.
 
@@ -141,7 +141,7 @@ Voss closed the distance. For a duration measured in milliseconds, the optimal f
 "You are dangerous, Taro," Voss whispered. "But the Score needs danger. It needs heavy artillery."
 
 > `ANOMALY: DETECTED`
-> `CLASSIFICATION: [REDACTED]`
+> `CLASSIFICATION: THREAT_LEVEL_ELEVATED [MONITORING]`
 
 The subject evaluated the parameters. Option A was deletion. Option B was compilation.
 

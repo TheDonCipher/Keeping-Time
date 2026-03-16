@@ -42,8 +42,8 @@ He raised his right hand. A complex, rotating 3D architectural model rendered in
 
 "Most of you think of resonance as 'power'," Vale continued. His vocal output was crisp, lacking any ambient decay. "You think of amplitude. Volume. The ability to shout reality into submission. This is socially embarrassing noise, common among Low-Fidelity users who have never learned to carry their load."
 
-// [NOTE: Instructor Vale's description of Low-Fidelity behavior aligns numerically with the subject's baseline operating parameters.]
-// [NOTE: Logging correlation.]
+// [NOTE: VALE'S CLASSIFICATION OF LOW-FIDELITY ALIGNS WITH SUBJECT'S BASELINE.]
+// [NOTE: RETAINED. NO RESOLUTION ACTIONABLE.]
 
 He shifted his optical focus to the elevated rear seating array, specifically locating the coordinates occupied by Taro, Ven, and Hana.
 Taro registered the weight of the gaze. It produced a sensation akin to physical calipers measuring his cranial structure.
@@ -128,7 +128,10 @@ The diagnostic was accurate. To Taro's optical sensors, Marcus was actively vibr
 
 "Fight back," Dorian Vale ordered. "Chaos has no structure. Prove me right."
 
+"Fight back," Dorian Vale ordered. "Chaos has no structure. Prove me right."
+
 Taro engaged his jaw musculature. *Ignore the visuals. Focus on the hum.*
+The hum smelled like rain on hot asphalt. It was the smell of the first thunderstorm after the long, suffocating summer in Sector 7—the sudden, violent break in tension. It was the smell of his mother’s room, right before the physical structure of the walls gave out. He grabbed that memory, holding onto the sensory weight of the ozone and the wet street. It wasn't code. It was real.
 He accessed his internal signal capacity. He did not apply damping. He allowed the feed to escalate.
 
 > `OUTPUT_TARO: 80% [SAWTOOTH_BURST]`
@@ -198,7 +201,13 @@ Marcus adjusted his armor plating at the ring's edge. He was not looking at Taro
 He walked toward the equipment corridor.
 
 > `SOCIAL_METRIC: RANK_3 — SECTOR_LEADERBOARD`
-> `MARCUS: MENTIONS THIS FREQUENTLY`
+
+Marcus Staccato traversed the equipment corridor until the auditory footprint of the Lecture Hall faded into absolute zero. He paused beside an inactive calibration plinth. His reflection surfaced in the high-gloss black polymer.
+
+> `BIOMETRIC: HEART_RATE [ELEVATED: 92 BPM]`
+> `SYNC_RATE: 97.3% [DEGRADATION_DETECTED]`
+
+He stared at his own optical sensors in the reflection. The jagged, aggressive static pattern of his aura flickered, momentarily attempting to render as a simpler, quieter wave before Marcus forced the encryption back over his signal. 97.3%. It was the lowest his stability had dropped in a fiscal quarter. The anomaly wasn't just noise; the anomaly had forced an adaptation. And an adaptation meant the math was imperfect. He struck the plinth once, his gauntlet producing a dull, flat thud that logged no resonance.
 
 Dorian Vale directed his optical focus downward toward Taro.
 
@@ -208,7 +217,20 @@ Taro looked up.
 
 At significant elevation, within the secure observation booth, a golden light flickered. The Headmaster was maintaining visual surveillance. And unlike Vale, the system evaluated that he was not observing Taro with disdain.
 
+At significant elevation, within the secure observation booth, a golden light flickered. The Headmaster was maintaining visual surveillance. And unlike Vale, the system evaluated that he was not observing Taro with disdain. The logs indicated his session had been active for fourteen minutes prior to Taro's simulation start.
+
 He was checking an analog chronometer. He was timing the explosion.
+
+> `LESSON_COMPLETE`
+
+---
+
+The transit corridor post-simulation was an exercise in systematic avoidance. Taro's proximity to any standard nodes resulted in immediate pathing detours from compliant students. 
+
+As he approached the intersection of Hall B, a cadet stepped directly into his pathing vector. It was Elara Kimura. Her rigid square wave aura cut a sharp vertical line through the air. She didn't speak. She engaged Taro's optical focus for 0.4 seconds, held out a small, unindexed manila envelope, and pressed it into his hand. Before Taro could process a vocal response, she had resumed her optimized gait, merging flawlessly back into the harmonic storm of the student body. 
+
+> `ITEM_RECEIVED: UNCODED_ENVELOPE`
+> `SENDER: KIMURA_ELARA`
 
 > `LESSON_COMPLETE`
 

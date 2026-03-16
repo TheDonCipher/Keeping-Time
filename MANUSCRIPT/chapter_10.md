@@ -4,9 +4,6 @@
 
 ---
 
-> [SYNTAX_ERROR: REGULATORY_NOTICE_UNAVAILABLE]
-> [WARNING: HOSTILE_ARCHITECTURE]
-> [CRITICAL: MAINTAIN_DISTANCE_FROM_SUBJECT]
 
 **ZONE: [CORRUPTION_DETECTED]**
 **FIDELITY: NULL**
@@ -34,8 +31,8 @@ Hana was unconscious. Her authorized neural sync was severed, her biological sta
 
 Hana was down. Her pristine, perfect square wave had flatlined into jagged noise.
 
-// [NOTE: The Vanguard asset should have maintained structure. The failure is hers.]
-// [NOTE: C-Order training is insufficient for this variable.]
+// [NOTE: VANGUARD ASSET STRUCTURAL FAILURE CONFIRMED.]
+// [NOTE: C-ORDER TRAINING DEVIATION LOGGED.]
 
 "She can't breathe in the silence," Taro whispered. His vocal stutter returned as his compromised Score port struggled to render the physics of his own vocal chords. "She’s out of sync with the world. If she doesn't find the beat soon, her hardware is gonna brick. She's dropping signal, Ven. Fast."
 
@@ -142,6 +139,7 @@ Graphics memory was fully exhausted. Reality rendering halted completely. The lo
 
 He observed Hana. She no longer rendered as a human female. She was reduced to a cloud of biological probabilities, a terrifying smear of kinetic motion without defined geometric borders.
 He observed Ven. Ven registered as a towering, indistinct pillar of thermal gradients, utterly devoid of humanoid shape.
+He observed himself. For 0.3 seconds, the HUD's camera feed completely failed to recognize his mass. The system rendered him as an unindexed entity, an ERROR string wrapped in golden distortion. His own hardware didn't know who he was anymore.
 He observed his own hands. They were no longer appendages. They were uninitialized input vectors. Raw, undefined interaction points rapidly flickering with missing texture flags.
 
 The internal Score port had not merely crashed. It had ceased to interpret the known universe.
@@ -161,14 +159,9 @@ And behind the texture, there was no simulated grey rain. There were no volumetr
 There was exactly one thing: the screaming abyss of un-tuned reality. A vast, non-Euclidean static defying depth parameters, color gradients, and foundational logic. An analog hell of raw, terrifying probability.
 It was not the "real world." It was the source code.
 
-You don't filter this.
-
-There is nothing to filter.
-
 > `KERNEL_PANIC: REALITY_NOT_FOUND`
 > `CRITICAL_EXCEPTION_AT: 0x00000000`
 > `SYSTEM: HALTED`
-
 
 ---
 

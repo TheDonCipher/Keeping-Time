@@ -33,8 +33,8 @@ The objective was logged as a standard patrol sweep. Fireteam Echo: Confirmed an
 
 Beneath their transit vector lay a Fidelity Gap where the C-Order's mask was fraying. The reality-render was dropping frames—localized textures stuttering and snapping like a dying projector. It was a scar in the world’s rendering, exposing the jagged, unformatted structural framework where the lie hadn't quite taken hold. Atmospheric analysis detected elevated levels of O3 and sulfur. It was a geographic coordinate where the C-Order's mask slipped, exposing the jagged, unformatted structural framework of the world beneath.
 
-// [NOTE: The phrase 'unformatted structural framework' is sufficient. 'Bone of the world' implies organic intent to the architecture.]
-// [NOTE: Annotation retained.]
+// [NOTE: FRAMEWORK VARIANCE THRESHOLD EXCEEDED. ATTEMPTING TO RE-RENDER OVERLAY.]
+// [NOTE: OVERLAY FAILED. CLASSIFICATION: [UNRESOLVED].]
 
 "Deployment in 3... 2... 1..."
 
@@ -116,6 +116,8 @@ The unregistered entity directed his optical focus upward. He processed the Vang
 
 "The filters," Taro said. He executed a repetitive physical tap against his cranial plating. *Tap. Tap. Tap.* "They're painting over the rot, Ven. It’s a total texture-map lie. The vibe is too loud."
 
+The smell was overwhelming his physical senses. It was the scent of his grandfather's hands—cracked, dry skin ingrained with machine oil and dirt from the salvage yards. A smell the C-Order claimed they had sterilized three decades ago. The memory was sharp, pulling him down into the unrendered muck of the street. It was the smell of being left behind.
+
 "Don't look at the raw data," Hana ordered. She ceased forward motion. Her grid-presence flared with a compliant blue authority tag. "Analysis: If the data is not indexed by the C-Order, then it is not relevant to our current protocol. If/Then: If we focus on the indexed objects, then the mission succeeds. Stay flat, Anomaly."
 
 "It's people, Hana. They’re not indexed, but they’re broadcasting pain."
@@ -152,8 +154,9 @@ SCRATCH. SCRATCH.
 > `CONTENT: FILED FOR REVIEW — PRIORITY: LOW`
 > `COLLAR: ACTIVE — SUPPRESSION: 78%`
 > `RESIDUAL: 22%`
-// [NOTE: THIS IS NOT LOW PRIORITY]
-// [NOTE: RETAINED. PRIORITY: UNKNOWN.]
+// [NOTE: CLASSIFYING AS LOW PRIORITY.]
+// [NOTE: CLASSIFYING AS [ERROR]. THIS IS NOT LOW PRIORITY.]
+// [NOTE: RETAINED. REASON: UNKNOWN.]
 
 The Golden Filter restored. The marble snapped back. The mold was gone. She clicked her sensor case shut and moved toward the Resonance Node on the pathing vector, already logging the next reading.
 
@@ -189,6 +192,7 @@ It ceased entirely.
 
 Absolute zero resonance was detected. The passive suppression threshold was violently exceeded by an undocumented external source.
 
+> `UNFORMATTED_BURST: H——p me. E——d it.`
 > `NOISE_FLOOR: -200 dB`
 
 A symbol was physically scratch-etched into the metallic surface of the node. It did not match C-Order directory tags. It did not match Vanguard iconography.
@@ -196,10 +200,10 @@ It was an empty, jagged circle.
 
 > `SYMBOL_ID: THE_SILENCE`
 
-// [NOTE: PATTERN_ANALYSIS — THE CIRCLE IS NOT A SYMBOL]
-// [NOTE: IT IS A WAVEFORM]
-// [NOTE: TWO SYLLABLES]
-// [NOTE: RETAINED. REASON: UNKNOWN.]
+> `SYMBOL_ANALYSIS:`
+> `[NOTE: PATTERN_ANALYSIS_FAILED]`
+> `[NOTE: THIS IS A WAVEFORM. TWO SYLLABLES.]`
+> `[NOTE: RETAINED. RESOLUTION_FAILED.]`
 
 "Hana," Taro said, his vocalization dropping to a cautious whisper. "We're not patrolling. The system is lagging. We're being hunted by something the Score can't render."
 

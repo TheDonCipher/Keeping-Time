@@ -46,13 +46,20 @@ He stepped off the transport skiff. The transition impacted his neural architect
 
 The local resolution shifted to ultra-high capacity, flooding the subject's processing centers.
 
-The Academy courtyard was a marvel of aggressive perfection.
-It was precise. It was cold.
+The Academy courtyard was an installation of aggressive perfection.
+It was mathematically exact. Unyielding.
+
+> `ROUTINE_AUDIT: COMPLIANCE_CHECK_ACTIVE`
+> `SUBJECT_0492: POSTURE_CORRECTION_APPLIED [-2 MERITS]`
+> `SUBJECT_1044: VOCAL_DAMPING_ENGAGED [EXCESS_VOLUME]`
+> `SECTOR_AVERAGE_SYNC: 99.8%`
+
+It was a standard Tuesday in the Grand Concord. The physical enforcement of systemic order operated invisibly and relentlessly. Students adjusted their gait to match the grid's tempo without conscious thought. A minor infraction resulted in a localized haptic correction—a sharp sting to the cervical port followed by a forced deduction in social bandwidth. They called it 'frictionless society.' It was the frictionless silence of a vacuum.
 
 The structural grid lines on the physical plane were not painted. They were haptic boundaries, laser-straight and mathematically exact to the nanometer. The floating informational data—schedules, frequency maps, biometric IDs—did not flicker. It hung in the air, solid and unyielding.
 
-In Unison Hall, clarity was a commodity. To be blurry was to be poor.
-In Malkuth Academy, clarity was a weapon.
+In Unison Hall, optical clarity was a resource metric. Sub-optimal rendering designated lower citizen tiers.
+In Malkuth Academy, clarity was an operational requirement.
 
 The ambient baseline locked at A-440 Standard. Subject jitter zeroed. Total signal integrity registered as absolute.
 
@@ -95,11 +102,15 @@ She articulated physical contact with her temple.
 
 ---
 
-The primary transit corridor was not empty. To the physical eye, it was crowded. To the system, it was a wind tunnel.
+The primary transit corridor was operating at peak threshold. To unindexed optics, it appeared crowded with cadets. To the system, it was a high-velocity wind tunnel of interdependent data.
+
+Among the rendering interference, Taro's gaze caught on a sharp visual contradiction. A cadet moving flawlessly against the dominant current. She possessed a severe, unadorned optical signature, but what caused the impedance mismatch was the object slung across her back—a massive, analog cello case. It was scuffed, deeply unauthorized, and completely unindexed. It cast no digital shadow. She shifted it higher on her shoulder and merged into the architecture before the Score could fully scan it.
+
+> `ANOMALY_TRACKING: UNINDEXED_ITEM [LOST_CONTACT]`
 
 The Academy referred to this density as a Harmonic Storm. The aggregate signal load from hundreds of High-Fidelity users simultaneously exceeded the local processing buffer.
 
-The subject's internal pressure spiked. The resonant music of the student body hit peak amplitude. The subject stumbled. His visual telemetry began to artifact—pixelated green geometric anomalies corrupting the edges of his rendered reality. The rapid succession of social pulses impacted him with kinetic force. His respiratory cycle locked.
+The subject's internal pressure spiked. The resonant data-streams of the student body hit peak amplitude. The subject stumbled. His visual telemetry began to artifact—pixelated green geometric anomalies corrupting the edges of his rendered reality. The rapid succession of social pulses impacted him with kinetic force. His respiratory cycle locked.
 
 > `SYSTEM_WARNING: BUFFER_OVERFLOW`
 > `VITAL_CAPACITY: MAXIMUM`
@@ -124,9 +135,8 @@ The subject's auditory processors began organizing the chaos. He didn't just hea
 
 His physical movement smoothed.
 
-// [NOTE: The subject's compensation mechanism is highly efficient.]
-// [NOTE: This observation exceeds required assessment detail.]
-// [NOTE: Annotation retained.]
+// [NOTE: SUBJECT COMPENSATION MECHANISM RATED HIGHLY EFFICIENT.]
+// [NOTE: RECOMMEND ADD TO TRAINING PROFILE.]
 
 They entered the primary Lecture Hall.
 
@@ -171,7 +181,11 @@ The subject raised his palm. It was no longer a limb; it was a vertex point. The
 
 Not an object. An interface.
 
-"A cursor. A flickering singularity in the grid, where his intent was already beginning to resolve into the room's new physics."
+A cadet acting as demonstration assistant attempted to replicate the sequence. The math faltered. The air rippled with a dull, red error state as the cadet’s signal collapsed back into standard baseline physics. The Headmaster did not acknowledge the failure.
+
+> `EVENT_LOG: REPLICATION_FAILURE [STUDENT_ID: 884] [EXPECTED_OUTCOME]`
+
+"A cursor," Taro breathed. A flickering singularity in the grid, where his intent was already beginning to resolve into the room's new physics.
 
 > `SYSTEM: READY`
 

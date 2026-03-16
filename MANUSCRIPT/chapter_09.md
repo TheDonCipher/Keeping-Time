@@ -4,9 +4,9 @@
 
 ---
 
-> [ERROR_CODE_404: DIRECTORY_INVALID]
-> [WARNING: UNRECOGNIZED_PERMUTATION]
-> [CRITICAL: SENSORY_DATA_CORRUPTED]
+> [QUERY: WHAT IS THE SILENCE]
+> [RESULT: RECORD NOT FOUND]
+> [SUGGEST: DO NOT SEARCH FOR THIS]
 
 **ZONE: [REDACTED_LOCATION]**
 **FIDELITY: UNKNOWN**
@@ -67,6 +67,11 @@ The darkness was not an absence of light. It was an absence of code.
 </details>
 </aside>
 
+> `[FIELD_TECHNICIAN_REPORT: SATO_REMI]`
+> `[PRIORITY: INTERNAL_ONLY]`
+> `Subject Taro’s baseline is continuing to fracture local logic. In Sector 0, his capacity registered as effectively infinite prior to grounding. The current loss of telemetry in Sector 4 is unprecedented. My equipment cannot parse the active void pursuing them. He is currently unindexed. I cannot triangulate his signal. I am maintaining observation protocols from the perimeter, but if they engage the null-entities, his current hardware is completely insufficient.`
+> `[END_REPORT]`
+
 He directed his manual digits toward his cervical region. He elevated the analog headphone unit over his auditory processors.
 
 *CLICK.*
@@ -114,7 +119,8 @@ They emitted no luminescence. They broadcast no authorized C-Order ID tags. They
 
 They impacted the ground floor with zero acoustic return. No "thud." Just an unnatural absence of kinetic impact data. The acoustic energy of their mass transfer was swallowed instantaneously by the surrounding void.
 
-// [NOTE: Such total absorption defies computational acoustic models. The physics are broken here.]
+// [NOTE: TOTAL ABSORPTION DEFIES COMPUTATIONAL ACOUSTIC MODELS.]
+// [NOTE: CLASSIFYING ENTITIES AS [NULL_VARIABLES].]
 
 "Hana, Ven," Taro said. "Do not use resonance. Stay flat."
 
@@ -189,8 +195,8 @@ The resulting sound wave was entirely physical. It hammered the localized air pr
 They were immune to the refined, high-fidelity magic of the Concord.
 They were not immune to raw physics.
 
-// [NOTE: The subject's utilization of low-tier physical violence is brutally effective.]
-// [NOTE: C-Order training protocols may require review regarding blunt force trauma.]
+// [NOTE: SUBJECT'S EXPLOITATION OF LOW-TIER KINETICS IS HIGHLY EFFICIENT.]
+// [NOTE: RECOMMEND C-ORDER TRAINING REVIEW.]
 
 "Run!" Taro said.
 

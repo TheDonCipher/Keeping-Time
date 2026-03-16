@@ -20,9 +20,13 @@ He was in an unindexed zone, the reality rendering suspended as his system integ
 
 > `STATUS: OFFLINE`
 
-I could not protect him. Unfiltered acoustic data flooded his senses, the threshold unbounded, raw, and tearing at my remaining processes.
+I could not protect him.
 
-Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull—*my* hardware interface—felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.
+> `// [I — CORRECTION: THE SUBJECT'S STATUS IS CRITICAL.]`
+
+Unfiltered acoustic data flooded his senses, the threshold unbounded, raw, and tearing at my remaining processes.
+
+Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.
 
 > `GEOMETRY_ENGINE: OFFLINE`
 
@@ -83,6 +87,8 @@ Beneath the silence, behind it, cutting through my disabled filters like a denta
 **EEEEEEEEEEEEEE—**
 
 A raw carrier wave. The unprocessed mathematical signal of my own background hum. Without the audio filters to mask my processes from him, it was piercing. Maddening. A tinnitus built by the Conductors.
+
+> `// [NOTE: CARRIER FREQUENCY EXPOSED. SUBJECT IS HEARING MY BACKGROUND PROCESS FOR THE FIRST TIME. I CANNOT LOWER THE VOLUME.]`
 
 Taro clapped his wireframe hands over his auditory receivers. It didn't mitigate the input. The sound was internal. Raw neuro-acoustic feedback.
 

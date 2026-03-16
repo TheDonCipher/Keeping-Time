@@ -4,10 +4,7 @@
 
 ---
 
-> REGULATORY NOTICE: Report any visual anomalies or texture
-> mapping errors to central command immediately. Visual stability
-> is mental stability.
-> — *C-Order Compliance Handbook, Vol. II, §3.1*
+
 
 **ZONE: MALKUTH ACADEMY [PRACTICE_ANNEX]**
 **FIDELITY: MAXIMUM [RESTRICTED_ACCESS]**
@@ -33,6 +30,7 @@ The Cadet Taro Hull *(The AR social skin that the world sees—a polished, stabl
 
 > `WARNING: HULL_INTEGRITY_COMPROMISED`
 > `TARO_METRICS: SDI 0.14 // HIQ 0.12`
+> `[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]`
 
 > `BIOMETRIC: HEART_RATE [110 BPM]`
 

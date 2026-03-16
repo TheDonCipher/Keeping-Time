@@ -2,12 +2,7 @@
 ## Chapter 6: The Ground State
 
 
----
 
-> REGULATORY NOTICE: Environmental grounding vaults are strictly designated
-> for administrative energy dissipation. Prolonged biological exposure
-> to unrefined waste heat constitutes a Level-B procedural risk.
-> — *C-Order Compliance Handbook, Vol. II, §8.4*
 
 **ZONE: MALKUTH ACADEMY [SECTION 0]**
 **FIDELITY: INDUSTRIAL [UNFILTERED]**
@@ -36,8 +31,7 @@ The structural walls were coated in thick concrete, layered with high-mass coppe
 The air was dense with particulate matter. The olfactory sensors registered wet iron and ozone—the exact chemical signature of high-voltage waste.
 It smelled like an engine failing slowly.
 
-// [NOTE: This olfactory interpretation is non-standard. The odor is simply O3 and Fe.]
-// [NOTE: Annotation retained.]
+// [NOTE: THIS OLFACTORY INTERPRETATION ALIGNS WITH CORRODED O3/Fe BONDS. FILED AS: DECAY.]
 
 Ven occupied a concrete bench. A target analysis confirmed his classification as a Sink. His unit status flagged a critical error: he was functioning under a ninety-eight percent thermal load. His core internal temperature had reached 104°F. Bio-plasma buffer utilization fluctuated at ninety-nine percent.
 
@@ -78,6 +72,8 @@ He shifted his optical focus to Taro. His pupils were fully dilated, vibrating r
 "Most people... their noise is messy," Ven said. "Hana's signal is sharp. It’s a square-wave cut. The Vanguard students are jagged sawtooth types. When I absorb them, it feels like my hardware is grinding on sand. Gritty."
 
 A severe acoustic groan escaped him as a secondary wave of excess heat vented from his suit's exhaust ports. A visible thermal dump clouded the immediate radius.
+
+Taro wiped sweat from his face. The oppressive heat of the Grounding Vault tasted like the back alley behind his father’s apartment block right after a thunder strike—the sharp, acidic bite of ozone mingling with baking trash and wet copper. It was a smell that belonged to the Dead Zone. It didn't belong in Malkuth Academy. The memory dragged him down, a sensory anchor pulling him away from the high-fidelity rendering and back into the dirt where he was born. He missed it. He missed the imperfection.
 
 <aside>
 <details>
@@ -155,13 +151,17 @@ She made a mark on the page.
 > `CONTACT: SATO_REMI — PROXIMATE: 1.4M`
 > `COLLAR: ACTIVE — SUPPRESSION: 91%`
 > `RESIDUAL: 9%`
-> `FILING AS: AMBIENT_SIGNAL_VARIANCE`
-// [NOTE: THIS HAS BEEN FILED AS AMBIENT FOR 9 MINUTES]
-// [NOTE: RETAINED]
+// [NOTE: FILED AS AMBIENT_SIGNAL_VARIANCE FOR 9 MINUTES.]
+// [NOTE: CLASSIFICATION: [PENDING]. THIS IS NOT A VARIANCE.]
 
 She had not named him. She had described a measurement. Neither of them remarked on the difference. She closed the notebook, collected her array, and left Section 0 with the same efficiency she'd arrived with. Her footsteps had no echo. The vault absorbed everything.
 
 Taro looked at the space she'd occupied. The ambient temperature was already reclaiming it.
+
+He shifted his gaze across the vault. Set against the thick concrete of the copper bus-bars, half-obscured in the steam and rendering artifacts of Section 0, stood a lone figure. It was the same severe cadet from the transit corridor. Elara Kimura. Her optical focus was fixed entirely on the industrial apparatus. She wasn't absorbing heat; she was measuring it. Slung across her back, looking incongruous and impossibly heavy in the high-voltage environment, was the analog cello case. She didn't move. She just watched the copper burn. 
+
+> `ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 02]`
+> `SUBJECT: KIMURA_ELARA [PROXIMITY: 25M]`
 
 
 ---

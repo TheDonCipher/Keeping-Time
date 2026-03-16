@@ -2,13 +2,7 @@
 ## Chapter 5: Sync Check
 
 
----
 
-> REGULATORY NOTICE: Triad formations require a minimum baseline
-> compatibility of 95% among constituent nodes. Unauthorized testing
-> of volatile waveforms within Academy simulation parameters is
-> grounds for immediate system disconnection.
-> — *C-Order Compliance Handbook, Vol. III, §14.8*
 
 **ZONE: MALKUTH ACADEMY [SIMULATION SANDBOX]**
 **FIDELITY: SAFE MODE**
@@ -86,7 +80,7 @@ The sound was a speaker blowing out in a vacuum.
 // [SOURCE: NULL]
 // [CONTENT: ...nd it...]
 // [FLAGGING AS: ACOUSTIC_ARTIFACT — DISCARD]
-// [DISCARDED]
+// [DISCARD: FAILED. FILE RETAINED.]
 // [NOTE: RETAINED]
 
 The system rejected his dissonance, struggling and failing to calculate the required alignment for constructive interference. Energy loss immediately hit forty-five percent as the amplitude was nullified by the collision.
@@ -166,8 +160,8 @@ The chaotic signal data translated flawlessly into a 20 Hz sub-bass wave. It gen
 Taro's high-pitch jitter did not bounce off the Sink node. It descended into the gravity well and converted.
 It rendered as pure, foundational bass.
 
-// [NOTE: The physical sensation of this sub-bass translation is unaccounted for in standard Triad harmonic theory.]
-// [NOTE: Logging physical impact metrics for further analysis.]
+// [NOTE: PHYSICAL SENSATION OF SUB-BASS TRANSLATION IS UNACCOUNTED FOR IN TRIAD HARMONIC THEORY.]
+// [NOTE: CLASSIFICATION: [UNKNOWN]. STATUS: RETAINED.]
 
 Ven altered his optical focus. His ocular sensors—typically operating at half-aperture—were fully dilated. The pupils exhibited rapid micro-vibrations.
 
@@ -211,6 +205,12 @@ Taro’s fingers twitched against the empty air, finding a ghost-fader and slamm
 
 **> TRACK: 05_COMPLETE**
 **> SAVING...**
+
+High above the wireframe floor, positioned in the shadowed curve of the observation gallery, an armored cadet colloquially designated 'The Tank' maintained absolute stillness. Her systemic output registered as a flawless square wave. She did not engage with her integrated diagnostic displays, nor did she acknowledge the simulation’s raw telemetry output. Her optical sensors locked onto Taro. She observed the unregulated oscillation with cold, geometric precision. 
+
+> `OBSERVATION_NODE: KIMURA_ELARA [CLASS: VANGUARD_ELITE]`
+> `FOCUS_TARGET: NISHIMURA_TARO`
+> `CLASSIFICATION: [EVALUATING]`
 
 Thirty meters above the wireframe floor, in the shadowed curve of the observation booth, Remi Sato didn't look at the official diagnostics. She ignored the green stability bars and the polite, normalized averages on her main console.
 

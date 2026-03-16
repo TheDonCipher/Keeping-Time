@@ -4,9 +4,7 @@
 
 ---
 
-> SECURITY ALERT: Modifying factory settings is a Class 1 Felony.
-> You are the instrument. Do not attempt to tune yourself.
-> — *C-Order Compliance Handbook, Vol. III, §1.1*
+
 
 **ZONE: MALKUTH_ACADEMY [PRACTICE_RM_404]**
 **FIDELITY: UNVERIFIED [LOCAL_MASKING_ACTIVE]**
@@ -52,8 +50,7 @@ The local security kernel was completely bypassed. The administrative alert was 
 
 > `ELARA_METRICS: SDI 0.95 // HIQ 0.88`
 > `PHASE_DRIFT: 0.45 [SEVERE]`
-
-She was executing an illegal Modulation *(The unauthorized modification of one's own soul, a crime against the Grand Concord's absolute order.)* .
+> `[NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]`
 
 "The System permanently locks our resonance," Elara explained. "It defines your pitch as fixed. Immutable. Biological destiny. Required social hygiene." She executed an unformatted scoff logic. "But the Score interface is merely software. And software can be cracked by superior logic."
 

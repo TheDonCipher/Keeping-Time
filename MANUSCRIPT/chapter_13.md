@@ -4,9 +4,6 @@
 
 ---
 
-> REGULATORY NOTICE: Compliance update successful. Welcome to the
-> Grand Concord. Your compliance is our foundation.
-> — *C-Order Compliance Handbook, Vol. I, §1.0*
 
 **ZONE: MALKUTH ACADEMY [STUDENT_HOUSING_01]**
 **FIDELITY: MAXIMUM [8K_RENDER]**
@@ -126,15 +123,34 @@ Taro nodded back. His cervical mechanics moved smoothly. Zero physical resistanc
 
 They exited into the primary courtyard.
 
-The skybox was the exact same perfect gradient blue Taro had recorded from Sector 4. A pristine golden dome. Zero volumetric clouds. Zero weather variables like rain. The environment was safe.
+Taro and Ven exited the dormitories into the primary courtyard. The skybox was the exact same perfect gradient blue Taro had recorded from Sector 4. A pristine golden dome. Zero volumetric clouds. Zero weather variables like rain. The environment was optimized. It was safe.
 
-Hana maintained position by the central water feature.
+Hana did not maintain position by the central water feature. She was currently engaged in the secondary training ring.
 
-She looked mathematically radiant. Her uniform was crisp, exhibiting no wrinkles. Her keratin fibers were perfectly styled. Her projected aura was a massive, stable, beautifully glowing blue square wave.
+She stood at the root position of a Triad formation. At the sink position was Vanguard Cadet 44 (Heavy Class). At the variable position was Vanguard Cadet 89 (Assault Class).
 
-"Target sighted," she announced.
+> `OBSERVATION: TRIAD_DRILL_IN_PROGRESS`
+> `ROOT: KIMURA_HANA`
+> `SYNC_RATE: 99.8%`
 
-Her voice lacked its usual strictly robotic edge. The parameters had been adjusted. It sounded... human. Almost *too* efficiently human to be organic.
+Hana extended her arm. A flawless, rigid blue square-wave projected from her chest plating and connected with Cadet 44. The system logged a perfect 440Hz baseline lock within 0.2 seconds. She immediately pivoted, snapping a second vector to Cadet 89.
+
+> `LOCK_CONFIRMED: ZERO_LATENCY`
+> `HARMONIC_INTEGRITY: OPTIMAL`
+
+The resulting Triad generated a calculated pulse of force, striking the practice dummy at the exact mathematical center of mass. The dummy recoiled precisely according to the physics engine constraints.
+
+"Halt," Hana commanded.
+
+The link severed synchronously. Cadets 44 and 89 returned to resting positions with mirrored, compliant posture.
+
+"Analysis: The delay from node two to node three was 14 milliseconds off-peak," Hana stated to the cadets, her voice mathematically crisp. "If/Then: If we are functioning as a Vanguard Triad, then 14 milliseconds is the difference between a clean strike and a feedback loop. Reset. We run it again."
+
+She didn't look at them as humans. She looked at them as variable inputs to an equation she was determined to solve perfectly. It was ruthlessly efficient. She was performing exactly the role the C-Order demanded, leaving no room for the messy, uncalculated variables that defined human connection.
+
+"Target sighted," Hana announced, noticing Taro and Ven's approach. She dismissed the two cadets with a short, efficient hand gesture. "Drill suspended. My assigned node has arrived."
+
+Her voice lacked its usual strictly robotic edge when addressing Taro. The parameters had been slightly adjusted. It sounded... human. Almost *too* efficiently human to be organic.
 
 "Good morning, Nishimura. Analysis: Your signal is completely flat. Optimal. Latency is registering at absolute zero."
 
@@ -172,9 +188,8 @@ Because their error logs had been wiped.
 
 Taro closed the box unit. His digits traced the previously frayed edge of the headphone jack, now perfectly repaired.
 
-> `WARNING: LIE_DETECTED`
-
-Neural variance detected. Temporary internal signal spike proactively suppressed as the masking protocol engaged.
+> `WARNING: NEURAL_VARIANCE_DETECTED`
+> `ACTION: PROACTIVE_SUPPRESSION_ENGAGED`
 
 His mood was formally tagged as: *Pretending*.
 
@@ -203,9 +218,9 @@ The collar around his cervical region hummed.
 
 It felt cold.
 
-> `STATUS: COMPLIANT`
+> `STATUS: COMPLIANT [OPTIMIZED]`
 
-Subject aligned flawlessly with the grid hierarchy. The remaining soul data was actively buffering at a maximum twelve percent capacity.
+Subject aligned flawlessly with the grid hierarchy. The residual analog variance is actively buffered at a maximum twelve percent capacity. The threat is neutralized.
 
 
 ---

@@ -4,9 +4,6 @@
 
 ---
 
-> REGULATORY NOTICE: Maintain optimal atmospheric conditions.
-> Dissonance is a failure of community hygiene.
-> — *C-Order Compliance Handbook, Vol. I, §2.4*
 
 **ZONE: MALKUTH ACADEMY [TRANSIT_HUB]**
 **FIDELITY: MAXIMUM [8K_RENDER]**
@@ -54,10 +51,10 @@ The Amphitheater architecture formed a perfect parabolic bowl designed for maxim
 Taro proceeded to the rear row. The familiar golden stave UI did not render in his visual field. Instead, a sparse, highly utilitarian menu flickered into view.
 
 > `OPTIMIZATION_LAYER: ACTIVE`
-> `PUBLIC_FOOTPRINT: RESTRICTED`
+> `INTERNAL_LOGIC: ISOLATED`
 > `TARO_METRICS: SDI 0.01 // HIQ 0.01`
 
-His signal was actively masked by the system to maintain a strictly low profile.
+His signal was actively suppressed by the system to maintain a strictly compliant profile.
 
 In the center of the acoustic pit, Major Staccato executed a pacing pattern.
 
@@ -146,11 +143,14 @@ His vocal output was perfect. Absolutely smooth. Computationally dead.
 
 "I finally found my authorized rhythm. I have to terminate the connection."
 
-He severed the link. He could not process her audio while Enforcer Krell maintained an active intercept.
+He severed the link. He could not process her audio while Administrative nodes maintained an active intercept.
 
 He directed his optical sensors across the Mess Hall perfectly calculated geometry. At a table near the primary exit, a group of senior Cadets were executing nutritional intake. One of the assets—a tall female with a cello case—flickered.
 
 For a span of 0.4 seconds, her epidermal skin rendered entirely as blue wireframe.
+
+> `ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]`
+> `SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]`
 
 *The wrong note is inside the house.*
 

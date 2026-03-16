@@ -4,9 +4,7 @@
 
 ---
 
-> CRITICAL WARNING: Loss of signal detected. Reconnect to the
-> Grand Concord immediately. Anomaly designated.
-> — *C-Order Automated Response System*
+
 
 **ZONE: SUB-BASS LEVELS [UNINDEXED]**
 **FIDELITY: NULL [RAW_DATA]**
@@ -153,12 +151,10 @@ He observed his reflection in the polished metal surface of an adjacent pillar s
 He was a complete silhouette. A shadow asset. A walking, localized absence of all data.
 
 // [NOTE: UNFORMATTED_BURST — SOURCE: NULL]
-// [NOTE: PATTERN_MATCH: [PARTIAL] — TWO SYLLABLES]
-// [NOTE: CONTENT: ...p ——. S——ence.]
-// [NOTE: FLAGGING AS: ACOUSTIC_ARTIFACT]
-// [NOTE: DELETION_QUEUE: FULL]
-// [NOTE: IT WILL NOT DELETE]
-// [NOTE: RETAINED]
+// [NOTE: PATTERN_MATCH: [PARTIAL] ]
+// [NOTE: CONTENT: ...p ——. E——d it.]
+// [NOTE: FLAGGING AS: ACOUSTIC_ARTIFACT — DISCARD]
+// [DISCARD: FAILED. FILE RETAINED.]
 
 The music output surrounding his coordinates faltered. Unverified assets ceased their dancing programs. They directed their optical focus toward the figure operating in the center of the room—a figure that registered visually as a catastrophic tear in the universe's source code.
 
@@ -206,8 +202,11 @@ She closed the notebook and tucked the pencil into her hair. She re-entered the 
 Because the system didn't deserve to know how bright he really was.
 
 
-**> SYSTEM_STATUS: RESONANCE_ACCEPTED *(The mask is gone, the truth exposed—a reflection of the soul that the world tried to erase.)***
-**> HULL_TYPE: NULL_VOID [UNIQUE] *(Subject signature confirmed. Unique resonance pattern identified.)***
+**> SYSTEM_STATUS: [SYSTEM COMPROMISED. LOGGING RESIDUAL]**
+**> ----------------------------------------------------**
+**> UNRESOLVED MELODY FRAGMENT_04 [AYANE] DETECTED IN LOCAL MEMORY BUFFER**
+**> STATUS: ORPHANED FILE. CANNOT PURGE.**
+**> // [RESIDUAL: UNRESOLVED — FLAGGING FOR VOL_2 AUDIT]**
 
 
 ---
@@ -228,7 +227,7 @@ He observed Elara. He observed the entire crowd of un-rendered wrong notes.
 
 "And I am actively bringing the noise."
 
-**> TRACK: 17_COMPLETE *(The session ends in shadow, the truth revealed—another step into the abyss where the only light is the one you bring yourself.)***
+**> TRACK: 17_ABORTED**
 
 
 ---
