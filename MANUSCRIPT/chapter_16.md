@@ -5,6 +5,7 @@
 ---
 
 
+---
 
 **ZONE: MALKUTH_ACADEMY [PRACTICE_RM_404]**
 **FIDELITY: UNVERIFIED [LOCAL_MASKING_ACTIVE]**
@@ -40,17 +41,42 @@ She re-established optical contact with Taro. The emotional vulnerability in her
 
 She executed a manual swipe. The amber interface shifted layout.
 
-> `EXECUTE: MODULATION_PROTOCOL`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> EXECUTE: MODULATION_PROTOCOL
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 An unauthorized frequency shift was requested, explicitly targeting a pitch shift of plus two octaves to hit 1.2 kHz.
 
-> `CRITICAL_WARNING: WARRANTY_VOID`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> CRITICAL_WARNING: WARRANTY_VOID
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The local security kernel was completely bypassed. The administrative alert was fully neutralized.
 
-> `ELARA_METRICS: SDI 0.95 // HIQ 0.88`
-> `PHASE_DRIFT: 0.45 [SEVERE]`
-> `[NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ELARA_METRICS: SDI 0.95 // HIQ 0.88PHASE_DRIFT: 0.45 [SEVERE][NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "The System permanently locks our resonance," Elara explained. "It defines your pitch as fixed. Immutable. Biological destiny. Required social hygiene." She executed an unformatted scoff logic. "But the Score interface is merely software. And software can be cracked by superior logic."
 
@@ -114,9 +140,16 @@ She offered him a small, physical data-chip. Obsolete hardware tech—a solid-st
 
 Taro accepted the physical chip. It registered as thermally warm.
 
-> `ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]`
-> `WARNING: ACOUSTIC_SIGNATURE_CONFIRMED`
-> `TARGET: SUB_BASS_SECTOR`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]WARNING: ACOUSTIC_SIGNATURE_CONFIRMEDTARGET: SUB_BASS_SECTOR
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The system correctly flagged a critical crossroads. A profound neural variance threshold was identified. A binary decision was required.
 
@@ -131,4 +164,5 @@ Taro processed the visual of the chip, then re-focused on Elara. The "Tank" cade
 
 ---
 
-**> END CHAPTER 16**
+**> TRACK: 16_ILLEGAL**
+**> FLAGGED_FOR_AUDIT**

@@ -5,6 +5,8 @@
 ---
 
 
+---
+
 **ZONE: MALKUTH ACADEMY [TRANSIT_HUB]**
 **FIDELITY: MAXIMUM [8K_RENDER]**
 **STATUS: ONLINE_AND_OPTIMAL**
@@ -14,24 +16,22 @@
 
 The primary gates of Malkuth Academy rendered perfectly in their designated golden spectrum. His HUD confirmed the area as a high-fidelity educational tier, local synchronization at a flawless one hundred percent. The firmware—version 2.0, patched and optimized—was confirmed active, its cognitive bias layer operating flawlessly in the background as it verified his identity.
 
-> `STATUS: COMPLIANT`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> STATUS: COMPLIANT
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro occupied the transit platform, focusing his optical sensors on the main entrance. The compliance patch installed by Administrator Voss—the "upgrade"—executed silently in his sub-routines. There were no longer any frantic red administrative warnings. Only a quiet, mathematically perfect, high-frequency hum that simulated the physiological sensation of tinnitus.
 
 The rendered world was perfectly smooth. However, the subject’s localized processing algorithms continued to incorrectly model jagged messes of conflicting frequencies.
 
 Across the courtyard geometry, a registered group of First Year assets were executing laughter protocols. To Subject Taro's previous, unoptimized sensors, they would have registered as a harmonious cluster of pleasant notes. Under current firmware constraints, he should perceive only optimal social interaction. Yet, his internal logic incorrectly visualized jagged waveforms of anxiety spiking through their verified laughter.
-
-<aside>
-<details>
-<summary><strong>SUBJECT: Social Harmony</strong></summary>
-<blockquote>
-<strong>Observation:</strong> An auto-tuning algorithm that smooths out the rough edges of human interaction, ensuring every word and gesture is perfectly in key. It enforces mandatory cheerfulness by mathematically eliminating the frequencies associated with anxiety, fear, or dissent.
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
 
 He executed a manual tap against his temporal lobe, registering a phantom tactile alert where the obsolete external collar previously resided. The new limiter was fully internal, securely buried deep within his Score port's kernel architecture. It functioned as an active noise-gate for his output, strictly managing his amplitude. An internal administrative noose, mathematically tightening every time his internal logic attempted to run sharp.
 
@@ -50,9 +50,16 @@ The Amphitheater architecture formed a perfect parabolic bowl designed for maxim
 
 Taro proceeded to the rear row. The familiar golden stave UI did not render in his visual field. Instead, a sparse, highly utilitarian menu flickered into view.
 
-> `OPTIMIZATION_LAYER: ACTIVE`
-> `INTERNAL_LOGIC: ISOLATED`
-> `TARO_METRICS: SDI 0.01 // HIQ 0.01`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> OPTIMIZATION_LAYER: ACTIVEINTERNAL_LOGIC: ISOLATEDTARO_METRICS: SDI 0.01 // HIQ 0.01
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 His signal was actively suppressed by the system to maintain a strictly compliant profile.
 
@@ -66,22 +73,20 @@ He indicated a central holographic projection. It rendered a high-fidelity repla
 
 Taro processed the holographic rendering. To the standard observant parameters, it registered as a fatal timing error. However, Taro's internal variance algorithms detected interference. The rendered air around the cadet in the video was not clean. It was mathematically thick with an active, localized distortion field.
 
+*He didn't miss. The environment was hostile.*
+
+Taro adjusted his posture forward by 12 degrees. Faint, irregular purple vectors swirled around the structural rendering of the cadet's feet. Target analysis immediately identified a negative resonance sink, an external energy drain defying standard triangulation protocols.
+
 <aside>
 <details>
-<summary><strong>SUBJECT: Damping Field</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold. It is actively weaponized to induce lag in targeted assets, forcing them to drift out of sync with critical reality parameters.
+<strong>Observation:</strong> TARO_METRICS_SPIKE: SDI 0.85 // HIQ 0.72
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
-
-*He didn't miss. The environment was hostile.*
-
-Taro adjusted his posture forward by 12 degrees. Faint, irregular purple vectors swirled around the structural rendering of the cadet's feet. Target analysis immediately identified a negative resonance sink, an external energy drain defying standard triangulation protocols.
-
-> `TARO_METRICS_SPIKE: SDI 0.85 // HIQ 0.72`
 
 "Major," an authorized voice interrupted. Cadet Hana.
 
@@ -114,22 +119,57 @@ Hana assumed the seating position adjacent to Ven. "You're slipping out of sync,
 
 He accessed his communication menu interface.
 
-> `TARGET_ANALYSIS: YUMI_NISHIMURA`
-> `STATUS: OFFLINE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARGET_ANALYSIS: YUMI_NISHIMURASTATUS: OFFLINE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Her link was unreachable.
 
-> `ALERT: COMMS_INTERCEPT [ACTIVE]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ALERT: COMMS_INTERCEPT [ACTIVE]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Unauthorized link redirection detected. Enforcer Krell was actively monitoring the communication line with root administrative priority.
 
-> `TARO_METRICS_SPIKE: SDI 0.99 // HIQ 0.99`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS_SPIKE: SDI 0.99 // HIQ 0.99
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Taro?" The audio return was tinny, heavily compressed and degraded. "Is that you?"
 
 Taro's throat musculature tightened. The red administrative text continued scrolling across his HUD layer.
 
-> `THREAT_LEVEL: ELEVATED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> THREAT_LEVEL: ELEVATED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 A hostile proximity lock had been established, actively targeting her residential apartment coordinates in Sector 7.
 
@@ -149,10 +189,33 @@ He directed his optical sensors across the Mess Hall perfectly calculated geomet
 
 For a span of 0.4 seconds, her epidermal skin rendered entirely as blue wireframe.
 
-> `ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]`
-> `SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 *The wrong note is inside the house.*
+
+The ozone in the courtyard carried a trace molecular signature his olfactory sensors flagged as: *wet asphalt, post-rain.*
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> EMOTIONAL_VARIABLE: DETECTED ORIGIN: OLFACTORY_CHANNEL_03 CLASSIFICATION: UNKNOWN STATUS: SUPPRESSED COLLAR_RESPONSE: +2% DAMPING [APPLIED]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+The trace dissipated. The variable was no longer detectable. He continued his route to the training hall.
 
 
 ---

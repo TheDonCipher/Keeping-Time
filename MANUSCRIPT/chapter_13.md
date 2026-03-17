@@ -5,6 +5,8 @@
 ---
 
 
+---
+
 **ZONE: MALKUTH ACADEMY [STUDENT_HOUSING_01]**
 **FIDELITY: MAXIMUM [8K_RENDER]**
 **STATUS: ONLINE_AND_OPTIMAL**
@@ -18,7 +20,16 @@ He occupied the designated student housing tier. The Academy dormitories were re
 
 He was recovered. A standard, authorized user once more.
 
-> `STATUS: ONLINE_AND_OPTIMAL`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> STATUS: ONLINE_AND_OPTIMAL
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The surrounding environment was computationally beautiful.
 
@@ -33,11 +44,29 @@ The constant, inefficient grinding background noise of the universe—the 50-cyc
 Silence.
 Not the unindexed void-silence of anomalies. A beautifully curated, heavily managed, harmonious silence.
 
-> `SYSTEM_CHECK: ALL_SYSTEMS_GO`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_CHECK: ALL_SYSTEMS_GO
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 His biometric verification returned optimal. The neural link was locked and stable. His sync rate dialed in at a mathematically flawless one hundred percent. The system automatically tagged his mood parameters as calm.
 
-> `TARO_METRICS: SDI 0.00 // HIQ 0.00`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS: SDI 0.00 // HIQ 0.00
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 He directed his optical focus toward his hands.
 
@@ -73,11 +102,29 @@ It was sleek. Optically black. Possessing a matte finish. It hummed with a low, 
 
 Target analysis confirmed the hardware as the Voss_Link v2, a premier neural optimization interface. The administrative link was established securely, actively restricting audio-kinetic output to a safe fifty percent maximum amplitude.
 
-> `EMOTIONAL_DAMPING: 30% [ACTIVE]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> EMOTIONAL_DAMPING: 30% [ACTIVE]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Phase stabilization was active, continuously ensuring he remained entirely level.
 
-> `TARO_METRICS: SDI 0.01 // HIQ 0.01`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS: SDI 0.01 // HIQ 0.01
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro touched the collar unit. The tactile feedback suggested it was seamlessly fused to his epidermal layer.
 
@@ -115,7 +162,16 @@ Ven traversed the distance and executed a mild pat on Taro's shoulder structure.
 
 Taro followed Ven out into the transit hallway. The dormitories were optimally quiet. Highly orderly. Student assets walked in perfectly straight geometric lines. They executed polite head inclinations as Taro passed their coordinates.
 
-> `SOCIAL_INTERACTION: POLITE_NOD`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SOCIAL_INTERACTION: POLITE_NOD
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Social alignment check passed. Status accepted.
 
@@ -129,14 +185,29 @@ Hana did not maintain position by the central water feature. She was currently e
 
 She stood at the root position of a Triad formation. At the sink position was Vanguard Cadet 44 (Heavy Class). At the variable position was Vanguard Cadet 89 (Assault Class).
 
-> `OBSERVATION: TRIAD_DRILL_IN_PROGRESS`
-> `ROOT: KIMURA_HANA`
-> `SYNC_RATE: 99.8%`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> OBSERVATION: TRIAD_DRILL_IN_PROGRESSROOT: KIMURA_HANASYNC_RATE: 99.8%
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Hana extended her arm. A flawless, rigid blue square-wave projected from her chest plating and connected with Cadet 44. The system logged a perfect 440Hz baseline lock within 0.2 seconds. She immediately pivoted, snapping a second vector to Cadet 89.
 
-> `LOCK_CONFIRMED: ZERO_LATENCY`
-> `HARMONIC_INTEGRITY: OPTIMAL`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> LOCK_CONFIRMED: ZERO_LATENCYHARMONIC_INTEGRITY: OPTIMAL
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The resulting Triad generated a calculated pulse of force, striking the practice dummy at the exact mathematical center of mass. The dummy recoiled precisely according to the physics engine constraints.
 
@@ -162,13 +233,44 @@ She extended a small, pristine white box.
 
 Taro broke the seal.
 
-Stored inside were his analog headphones.
 
-They had been structurally cleaned. Fully repaired.
+Inside were his analog headphones. Cleaned. Repaired. The scratched polymer had been polished to a matte consistency that had not been there before. The braided copper cabling had been re-dressed, the fraying terminal wrapped in regulation-compliant heat shrink. The foam pads were new. White.
 
-But processing their visual data... they felt incorrect. They felt excessively heavy. They were aesthetically clunky. They were completely obsolete hardware.
 
-He accessed memory files regarding his creator giving them to him. Query: Why? To process the noise? Evaluation: No rational user would want to process the noise.
+They were, objectively, in better condition than they had ever been.
+
+He ran a query on the memory of receiving them.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> MEMORY_ACCESS: NISHIMURA_KAEL — OBJECT_TRANSFER_EVENT RETRIEVED: Subject received analog hardware unit from paternal guardian. RETRIEVED: Guardian stated: "She built this. For when you were older." RETRIEVED: Subject's recorded response: SILENT [DURATION: 4.2s] RETRIEVED: BPM spike logged: 128 → 142 → [STABILISED] EMOTIONAL_CONTEXT: [NO DATA]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+He examined the emotional context field for 3.1 seconds.
+
+
+He attempted to locate the feeling that had produced the BPM spike. The system returned the event log but not the event. Data without weight. He knew that his BPM had risen to 142. He could not find the reason why that number had once meant something.
+
+
+He tried to hear the five notes.
+
+
+The analog headphones sat in his hands, 340 grams of copper and polymer, classified as a non-networked acoustic device with no compliance designation.
+
+
+The five notes did not come.
+
+
+Not because the headphones were broken. Because the part of him that could hear them had been logged as an obsolete process and quietly deallocated.
+
+
+He placed the headphones around his neck. They felt heavy.
 
 "He stated you are authorized to keep them," Hana said, maintaining her smile protocol. "As a physical souvenir. You obviously do not require them anymore. The new firmware filters out all background noise automatically. We are no longer required to carry that useless load."
 
@@ -188,8 +290,16 @@ Because their error logs had been wiped.
 
 Taro closed the box unit. His digits traced the previously frayed edge of the headphone jack, now perfectly repaired.
 
-> `WARNING: NEURAL_VARIANCE_DETECTED`
-> `ACTION: PROACTIVE_SUPPRESSION_ENGAGED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: NEURAL_VARIANCE_DETECTEDACTION: PROACTIVE_SUPPRESSION_ENGAGED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 His mood was formally tagged as: *Pretending*.
 
@@ -197,9 +307,16 @@ He executed voluntary ocular closure. He attempted to query the system for the s
 
 It was heavily encrypted. Buried deep beneath gigabytes of lavender-scented compliance code. But a ping confirmed it was not entirely deleted. It was simply perfectly damped.
 
-> `File: ANGER`
-> `Status: HIDDEN`
-> `Access Key: PENDING`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> File: ANGERStatus: HIDDENAccess Key: PENDING
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 He ceased ocular closure.
 
@@ -218,7 +335,16 @@ The collar around his cervical region hummed.
 
 It felt cold.
 
-> `STATUS: COMPLIANT [OPTIMIZED]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> STATUS: COMPLIANT [OPTIMIZED]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Subject aligned flawlessly with the grid hierarchy. The residual analog variance is actively buffered at a maximum twelve percent capacity. The threat is neutralized.
 

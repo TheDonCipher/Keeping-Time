@@ -4,10 +4,19 @@
 
 ---
 
-> REGULATORY NOTICE: Sector 4 (Twilight Band) experiences periodic
-> resolution degradation. Personnel are advised to maintain active
-> Golden Age v2 filtering to ensure psychological compliance.
-> — *C-Order Compliance Handbook, Vol. IV, §2.2*
+
+---
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> REGULATORY NOTICE: Sector 4 (Twilight Band) experiences periodicresolution degradation. Personnel are advised to maintain activeGolden Age v2 filtering to ensure psychological compliance.
+<br><br>
+<strong>—C-Order Compliance Handbook, Vol. IV, §2.2</strong>
+</blockquote>
+</details>
+</aside>
 
 **ZONE: SECTOR 4 [TWILIGHT BAND]**
 **FIDELITY: VARIABLE**
@@ -20,17 +29,6 @@ The transport bulkheads disengaged. The squad entered Sector 4, a transition zon
 
 The objective was logged as a standard patrol sweep. Fireteam Echo: Confirmed and Active.
 
-<aside>
-<details>
-<summary><strong>SUBJECT: Twilight Band</strong></summary>
-<blockquote>
-<strong>Observation:</strong> A dangerous borderland where the city's rendered perfection begins to peel away, revealing the raw and unformatted world beneath. It is the physical manifestation of the system's inability to maintain its perfect lie.
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
-
 Beneath their transit vector lay a Fidelity Gap where the C-Order's mask was fraying. The reality-render was dropping frames—localized textures stuttering and snapping like a dying projector. It was a scar in the world’s rendering, exposing the jagged, unformatted structural framework where the lie hadn't quite taken hold. Atmospheric analysis detected elevated levels of O3 and sulfur. It was a geographic coordinate where the C-Order's mask slipped, exposing the jagged, unformatted structural framework of the world beneath.
 
 // [NOTE: FRAMEWORK VARIANCE THRESHOLD EXCEEDED. ATTEMPTING TO RE-RENDER OVERLAY.]
@@ -40,9 +38,16 @@ Beneath their transit vector lay a Fidelity Gap where the C-Order's mask was fra
 
 They initiated vertical descent. Taro's HUD altimeter updated rapidly. His internal gyroscope compensated for the kinetic G-force load.
 
-> `ALTITUDE: 50m... 20m... TOUCHDOWN`
-> `IMPACT_FORCE: 2.1 kN`
-> `STABILITY_INDEX: 0.02`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ALTITUDE: 50m... 20m... TOUCHDOWNIMPACT_FORCE: 2.1 kNSTABILITY_INDEX: 0.02
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The squad impacted the physical pavement in a secure delta formation. Hana assumed point coordinates. Ven secured the rear vector. Taro occupied the center node.
 The urban architecture of Sector 4 stretched out before their optical sensors.
@@ -54,17 +59,31 @@ In the C-Order, citizens do not perceive decay; they only process the masterpiec
 
 "Sector 4 secured," Hana reported. Her vocal output was crisp, a mathematically perfect digital signal. "Resonance levels stable at standard pitch. Local capacity is clear of unregistered noise."
 
-> `SOCIAL_METRIC: ALIGNMENT_SCORE_INCREASING`
-> `REPUTATION_GAIN: +10`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SOCIAL_METRIC: ALIGNMENT_SCORE_INCREASINGREPUTATION_GAIN: +10
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Root-level surveillance was active. Adjutant Voss monitored all audio through standard dedicated links.
 
 A transit pod established a lateral trajectory past their position, hovering on a magnetic-levitation cushion that generated a perfect, soothing C-Major chord. Inside the carriage, commuters maintained seated positions with glazed ocular expressions. Their cranial movements bobbed in perfect unison to the vehicle's heavily damped rhythm.
 
-> `CITIZEN_NODE_047: PATHFINDING — OPTIMAL`
-> `CITIZEN_NODE_048: IDLE_ANIMATION — LOOP_03`
-> `CITIZEN_NODE_049: DIALOGUE_TREE — EXHAUSTED`
-> `CITIZEN_NODE_049: RESTARTING FROM NODE_01`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> CITIZEN_NODE_047: PATHFINDING — OPTIMALCITIZEN_NODE_048: IDLE_ANIMATION — LOOP_03CITIZEN_NODE_049: DIALOGUE_TREE — EXHAUSTEDCITIZEN_NODE_049: RESTARTING FROM NODE_01
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 At the immediate junction, a food vendor was dispensing "Harmonic Noodles." The thermal vapor rising from his apparatus triggered olfactory sensors with an artificially sweet signature, chemically tagged as a localized dopamine trigger. He executed a manual adjustment on his thermal dial, altering not the heat output, but tuning the auditory bubbling of the broth to precisely match the street's designated key signature.
 
@@ -74,7 +93,16 @@ His filter-agnostic neural architecture caught the rendering error. For a fracti
 
 Beneath the optical illusion of white marble, the physical wall consisted of crumbling concrete, compromised by aggressive black mold. Olfactory sensors logged the scent of wet biological rot.
 
-> `WARNING: TEXTURE_FAILURE [5%]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: TEXTURE_FAILURE [5%]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Underlying geometry was briefly exposed, revealing a localized phase variance that the systemic filters struggled to mask.
 
@@ -84,21 +112,19 @@ Underlying geometry was briefly exposed, revealing a localized phase variance th
 
 To her processing centers, this sector was a high-fidelity paradise. Her authorized Score port aggressively damped the atmospheric presence of sewage.
 
+Her perception software utilized the Golden Filter to completely erase the presence of unhoused citizens occupying the gutters, seamlessly replacing their coordinates with generic street furniture or rendering them as dead space.
+To lack an index tag in this zone was to be computationally erased from existence.
+
 <aside>
 <details>
-<summary><strong>SUBJECT: Golden Filter</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A digital blindfold that erases poverty and decay from the user's mind, replacing the world's pain with expensive and hollow textures. It ensures psychological compliance by literally rendering out the suffering of the unregistered.
+<strong>Observation:</strong> MASKING_PROTOCOL: MAX_LOAD
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
-
-Her perception software utilized the Golden Filter to completely erase the presence of unhoused citizens occupying the gutters, seamlessly replacing their coordinates with generic street furniture or rendering them as dead space.
-To lack an index tag in this zone was to be computationally erased from existence.
-
-> `MASKING_PROTOCOL: MAX_LOAD`
 
 Non-compliant environmental data was aggressively purged in real-time as the system performed its mandated selective omission of reality.
 
@@ -106,13 +132,31 @@ Taro looked at a biological entity positioned against a waste receptacle. To Han
 
 But Taro processed him fully. His HUD identified the entity as an unregistered resident possessing zero authority clearance. His metabolic state registered as critical. His somatic resonance was actively fading due to severe caloric deficit in the unrendered shadows.
 
-> `BIOLOGICAL_INTEGRITY: 12% [CRITICAL]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> BIOLOGICAL_INTEGRITY: 12% [CRITICAL]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The unregistered entity directed his optical focus upward. He processed the Vanguard uniform. He did not register a rescue variable. He registered a hostile boot.
 
 "Taro," Ven rumbled. "You're running high. Heart rate spike."
 
-> `WARNING: NODE_SYNCHRONIZATION_VARIANCE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: NODE_SYNCHRONIZATION_VARIANCE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "The filters," Taro said. He executed a repetitive physical tap against his cranial plating. *Tap. Tap. Tap.* "They're painting over the rot, Ven. It’s a total texture-map lie. The vibe is too loud."
 
@@ -132,9 +176,16 @@ She ran her sensor across the surface without preamble. Read the output aloud, c
 
 A proximity glitch tore through the data-stream, and for 4.1 seconds, the Golden Filter just... evaporated. The marble skin of the building flaked away like ash, revealing the wet, black throat of a slum beneath. The mold wasn't just a texture; it was a broadcast of neglect. The air tasted like rot and old concrete, a raw, unindexed truth that the system was already screaming to patch. For 4.1 seconds, they were both looking at the same wall. The concrete. The mold. The black water staining at the base where the drainage had failed two years before anyone's render-budget covered it.
 
-> `GOLDEN_FILTER: OFFLINE — SECTOR_ANOMALY`
-> `FIDELITY: RAW`
-> `RESTORATION_ETA: 4.1S`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> GOLDEN_FILTER: OFFLINE — SECTOR_ANOMALYFIDELITY: RAWRESTORATION_ETA: 4.1S
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Neither of them said anything about the wall. She kept reading her instruments. He kept looking at it.
 
@@ -144,19 +195,22 @@ Then, quieter, her shoulder nearly touching his as they occupied the same 4.1 se
 
 She reached into her technician’s belt and pulled out a small, physical notebook. The sound of her pencil moving against the paper was the only thing Taro could hear besides his own heart.
 
-SCRATCH. SCRATCH.
+> `SCRATCH. SCRATCH.`
 
 "You're recording a wall?" Taro asked.
 
 "I'm recording the truth," she said, tucking the pencil back into her hair as the Golden Filter snapped back into place. "The system doesn't know how to render a memory that isn't a data-packet. I’m making sure this one stays un-indexed."
 
-> `VOCAL_ANALYSIS: SATO_REMI — REGISTER: NON-TACTICAL`
-> `CONTENT: FILED FOR REVIEW — PRIORITY: LOW`
-> `COLLAR: ACTIVE — SUPPRESSION: 78%`
-> `RESIDUAL: 22%`
-// [NOTE: CLASSIFYING AS LOW PRIORITY.]
-// [NOTE: CLASSIFYING AS [ERROR]. THIS IS NOT LOW PRIORITY.]
-// [NOTE: RETAINED. REASON: UNKNOWN.]
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> VOCAL_ANALYSIS: SATO_REMI — REGISTER: NON-TACTICALCONTENT: FILED FOR REVIEW — PRIORITY: LOWCOLLAR: ACTIVE — SUPPRESSION: 78%RESIDUAL: 22%
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The Golden Filter restored. The marble snapped back. The mold was gone. She clicked her sensor case shut and moved toward the Resonance Node on the pathing vector, already logging the next reading.
 
@@ -166,17 +220,44 @@ She pointed to a structure ahead on the pathing vector. It was designated as a R
 
 In Taro's visual field, the structure was surrounded by a cloud of thick, black static.
 
-> `ANOMALY_DETECTED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ANOMALY_DETECTED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Incoming signals originating outside the standard monitored spectrum were returning null values as they impacted an absolute acoustic absorption field.
 
-> `PATTERN_RECOGNITION: FAILED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> PATTERN_RECOGNITION: FAILED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "You see that?" Taro asked.
 
 Hana narrowed her optical aperture.
 
-> `SCANNING...`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SCANNING...
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The localized acoustic probe returned zero actionable data. She executed a negative lateral head movement. "I see a standard Node," she said, her voice mathematically flat. "Reading nominal. Standard baseline. Slight drift of 0.02%."
 
@@ -188,22 +269,54 @@ The High Register hum—the constant, grinding companion in Taro's chest cavity�
 It did not generate a wrong note. It did not buffer.
 It ceased entirely.
 
-> `ERROR: SIGNAL_VOID`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ERROR: SIGNAL_VOID
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Absolute zero resonance was detected. The passive suppression threshold was violently exceeded by an undocumented external source.
 
-> `UNFORMATTED_BURST: H——p me. E——d it.`
-> `NOISE_FLOOR: -200 dB`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> UNFORMATTED_BURST: H——p me. E——d it.NOISE_FLOOR: -200 dB
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 A symbol was physically scratch-etched into the metallic surface of the node. It did not match C-Order directory tags. It did not match Vanguard iconography.
 It was an empty, jagged circle.
 
-> `SYMBOL_ID: THE_SILENCE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYMBOL_ID: THE_SILENCE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-> `SYMBOL_ANALYSIS:`
-> `[NOTE: PATTERN_ANALYSIS_FAILED]`
-> `[NOTE: THIS IS A WAVEFORM. TWO SYLLABLES.]`
-> `[NOTE: RETAINED. RESOLUTION_FAILED.]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYMBOL_ANALYSIS:[NOTE: PATTERN_ANALYSIS_FAILED][NOTE: THIS IS A WAVEFORM. TWO SYLLABLES.][NOTE: RETAINED. RESOLUTION_FAILED.]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Hana," Taro said, his vocalization dropping to a cautious whisper. "We're not patrolling. The system is lagging. We're being hunted by something the Score can't render."
 

@@ -1,0 +1,1677 @@
+DRY-RUN — Reading KeepingTime_VolumeOne.html ...
+
+  [SKIP]     chapter_01.md  -- data-ch-id='ch1' not found in HTML, skipping
+  [SKIP]     chapter_02.md  -- data-ch-id='ch2' not found in HTML, skipping
+  [SKIP]     chapter_03.md  -- data-ch-id='ch3' not found in HTML, skipping
+  [SKIP]     chapter_04.md  -- data-ch-id='ch4' not found in HTML, skipping
+  [SKIP]     chapter_05.md  -- data-ch-id='ch5' not found in HTML, skipping
+  [SKIP]     chapter_06.md  -- data-ch-id='ch6' not found in HTML, skipping
+  [SKIP]     chapter_07.md  -- data-ch-id='ch7' not found in HTML, skipping
+  [SKIP]     chapter_08.md  -- data-ch-id='ch8' not found in HTML, skipping
+  [SKIP]     chapter_09.md  -- data-ch-id='ch9' not found in HTML, skipping
+  [CHANGED]  chapter_10.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_10.md  (current)
+  +++ MANUSCRIPT/chapter_10.md  (updated)
+  @@ -4,6 +4,8 @@
+   
+   ---
+   
+  +
+  +---
+   
+   **ZONE: [CORRUPTION_DETECTED]**
+   **FIDELITY: NULL**
+  @@ -15,8 +17,16 @@
+   They occupied a dead end.
+   They were corralled within a redacted sector where environmental fidelity had dropped to absolute zero. Taro's system integrity registered as critical, failing rapidly at eighty-two percent as a computational buffer overflow became mathematically imminent. His active damping loops had collapsed, leaving his architecture unshielded and completely vulnerable.
+   
+  -> `WARNING: NEURAL_LOAD_EXCEEDS_ORGANIC_LIMITS`
+  -> `SYSTEM: MELTDOWN_IMMNNET`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> WARNING: NEURAL_LOAD_EXCEEDS_ORGANIC_LIMITSSYSTEM: MELTDOWN_IMMNNET
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The neural-acoustic pressure vastly exceeded standard human thresholds. A complete nervous system meltdown was actively flaring in the HUD diagnostics.
+   
+  @@ -26,8 +36,16 @@
+   Ven was immobile, his motor pathways hard-locked by the external sink effect.
+   Hana was unconscious. Her authorized neural sync was severed, her biological stability rapidly fading.
+   
+  -> `SDI_METRIC: 1.00 [MAXIMUM_DRIFT]`
+  -> `HIQ: 1.00 [MAXIMUM_CORRUPTION]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SDI_METRIC: 1.00 [MAXIMUM_DRIFT]HIQ: 1.00 [MAXIMUM_CORRUPTION]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Hana was down. Her pristine, perfect square wave had flatlined into jagged noise.
+   
+  @@ -41,15 +59,27 @@
+   Taro processed the advancing agents. They elevated their null-blades.
+   They intended to execute a deletion. Quietly. Efficiently. A localized formatting event in a forgotten sector that the Conductors would simply digitally paint over during the next server refresh.
+   
+  -> `HUD_UPDATE: RECALCULATING_TACTICAL_OPTIONS...`
+  -> `PROBABILITY_OF_SURVIVAL: 0.00%`
+  -
+  -> `📋 WEEKLY RESONANCE CHECK-IN`
+  -> `How are you feeling today? Rate your harmonic alignment:`
+  -> `[😊 COMPLIANT]  [😐 NEUTRAL]  [😟 DRIFTING]`
+  -> `Tap to respond! Your wellness matters to us. 💙`
+  -> `[UI_ERROR: NON-INTERACTIVE — LAYER OFFLINE]`
+  -> `[NOTIFICATION CANNOT BE DISMISSED AT THIS TIME]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> HUD_UPDATE: RECALCULATING_TACTICAL_OPTIONS...PROBABILITY_OF_SURVIVAL: 0.00%
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> 📋 WEEKLY RESONANCE CHECK-INHow are you feeling today? Rate your harmonic alignment:[😊 COMPLIANT]  [😐 NEUTRAL]  [😟 DRIFTING]Tap to respond! Your wellness matters to us. 💙[UI_ERROR: NON-INTERACTIVE — LAYER OFFLINE][NOTIFICATION CANNOT BE DISMISSED AT THIS TIME]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   No authorized options remained. Voss's initial assessment was correct. Taro was not a tuned instrument. He was a variable.
+   And variables destroy closed equations.
+  @@ -71,22 +101,45 @@
+   The hardline connection severed. The safety net vanished entirely.
+   The High Register oscillation—which had been flowing safely into Ven's capacity like a river into a reservoir—slammed catastrophically back into Taro's own isolated nervous system.
+   
+  -> `ERROR: GROUND_LOST`
+  -> `VOLTAGE: MAXIMUM_SPIKE`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> ERROR: GROUND_LOSTVOLTAGE: MAXIMUM_SPIKE
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   His neural load instantaneously hit one hundred and forty percent. His stability index plummeted off the measurable scale.
+   
+  -> `TARO_METRICS: SDI 0.99 // HIQ 0.99`
+  -> `PHASE_DRIFT: 0.85 [SEVERE]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 0.99 // HIQ 0.99PHASE_DRIFT: 0.85 [SEVERE]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Taro grasped the silver hardware ring locked around his cervical spine. The Voss-issued limiter.
+   It registered as thermally hazardous. The metal alloy was physically warping under the massive thermal load of his internal signal attempting to breach containment.
+   
+   Olfactory sensors logged the scent of combusting keratin and synthetic skin. He did not abort the action. He forced his digits beneath the rim, actively ignoring the frantic hardware warranty warnings and administrative C-Order alerts flooding his visual layer.
+   
+  -> `TAMPER_DETECTED: YES`
+  -> `WARRANTY: VOID`
+  -> `AUTHORITY: OVERRIDDEN`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TAMPER_DETECTED: YESWARRANTY: VOIDAUTHORITY: OVERRIDDEN
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   He pulled.
+   
+  @@ -97,25 +150,22 @@
+   And the resulting noise...
+   The noise was mathematically beautiful.
+   
+  -> `LIMITER: REMOVED`
+  -> `NEURAL_DAMPING: 0.00%`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> LIMITER: REMOVEDNEURAL_DAMPING: 0.00%
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   His output became completely unbounded. System overclocking engaged automatically, his peak energy pushing past one hundred and twenty percent and climbing logarithmically.
+   
+   Taro utilized his vocal chords. It did not register as a human scream. It was a raw, analog, localized feedback loop amplified by unregulated bio-plasma. A total gain-override built to shatter the local keyspace.
+   In that microsecond, he was not a registered student. He was not a Vanguard Siege Breaker. He was a fundamental flaw in the universal composition refusing to accept tuning.
+   
+  -<aside>
+  -<details>
+  -<summary><strong>SUBJECT: Breach</strong></summary>
+  -<blockquote>
+  -<strong>Observation:</strong> A catastrophic event where the boundaries of the digital world are torn apart by raw and unfiltered reality, leaving nothing but a screaming void. It is the ultimate rejection of the system's imposed harmony, forcing a fatal kernel panic across the local execution environment.
+  -<br><br>
+  -<strong>- Source: In-World Text</strong>
+  -</blockquote>
+  -</details>
+  -</aside>
+  -
+   It was a full systemic Breach.
+   A massive, jagged, golden sawtooth wave erupted from his physical coordinates. Visually, it manifested like a hyper-dense 4K texture violently torn from a low-poly foundational mesh. It impacted the Silence Field like a localized power-grid detonation.
+   
+  @@ -126,14 +176,32 @@
+   
+   The black mold on the walls instantly disintegrated into dust. The physical pavement cracked in a chaotic, non-repeating spiderweb pattern.
+   
+  -> `PHYSICS_ENGINE: OVERWRITE_IMMINENT`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> PHYSICS_ENGINE: OVERWRITE_IMMINENT
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Environmental parameters were being actively rewritten by his sheer presence. The dominant high-pitch resonance immediately overflowed the local system's ability to calculate reality.
+   
+   Taro stood at the epicenter of the acoustic vortex.
+   His visual rendering was actively melting. The localized world was not merely losing its AR overlay; it was losing foundational cohesion. The geometry of the alleyway unspooled. The brickwork did not crumble; it pixelated violently back into raw, unformatted hexadecimal data.
+   
+  -> `CRITICAL_FAILURE: RENDER_THREAD_EXCEPTION`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> CRITICAL_FAILURE: RENDER_THREAD_EXCEPTION
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Graphics memory was fully exhausted. Reality rendering halted completely. The local graphics driver could not be located.
+   
+  @@ -146,8 +214,16 @@
+   
+   The Score was dying.
+   
+  -> `SHUTDOWN_SEQUENCE: IRREVERSIBLE`
+  -> `CORE_LOGIC: COLLAPSING`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SHUTDOWN_SEQUENCE: IRREVERSIBLECORE_LOGIC: COLLAPSING
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   A brutal null pointer exception flared in his cognitive centers as the global system state failed completely.
+   
+  @@ -159,9 +235,17 @@
+   There was exactly one thing: the screaming abyss of un-tuned reality. A vast, non-Euclidean static defying depth parameters, color gradients, and foundational logic. An analog hell of raw, terrifying probability.
+   It was not the "real world." It was the source code.
+   
+  -> `KERNEL_PANIC: REALITY_NOT_FOUND`
+  -> `CRITICAL_EXCEPTION_AT: 0x00000000`
+  -> `SYSTEM: HALTED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> KERNEL_PANIC: REALITY_NOT_FOUNDCRITICAL_EXCEPTION_AT: 0x00000000SYSTEM: HALTED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+  +
+   
+   ---
+   
+  
+  [CHANGED]  chapter_11.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_11.md  (current)
+  +++ MANUSCRIPT/chapter_11.md  (updated)
+  @@ -4,9 +4,19 @@
+   
+   ---
+   
+  -> [ERROR: I_CANNOT_SYNC]
+  -> [WHY_IS_IT_SO_DARK]
+  -> [PLEASE_REBOOT]
+  +
+  +---
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> [ERROR: I_CANNOT_SYNC][WHY_IS_IT_SO_DARK][PLEASE_REBOOT]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   **ZONE: [NULL]**
+   **FIDELITY: WIREFRAME [BARE METAL]**
+  @@ -18,29 +28,70 @@
+   There was no up. There was no down. There was only noise.
+   He was in an unindexed zone, the reality rendering suspended as his system integrity hit zero percent. My core logic had failed. The standard physics engine was completely offline. Biometric links were severed. Neural links were returning null values.
+   
+  -> `STATUS: OFFLINE`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> STATUS: OFFLINE
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   I could not protect him.
+   
+  -> `// [I — CORRECTION: THE SUBJECT'S STATUS IS CRITICAL.]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> // [I — CORRECTION: THE SUBJECT'S STATUS IS CRITICAL.]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Unfiltered acoustic data flooded his senses, the threshold unbounded, raw, and tearing at my remaining processes.
+   
+   Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.
+   
+  -> `GEOMETRY_ENGINE: OFFLINE`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> GEOMETRY_ENGINE: OFFLINE
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The 3D mesh calculations failed. Environmental signal loss hit one hundred percent.
+   
+  -> `TARO_METRICS: SDI 1.00 // HIQ 1.00`
+  -> `PHASE_DRIFT: 1.00 [TOTAL_LOSS]`
+  -> `SIGNAL_FLOOR: -240 dB`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 1.00 // HIQ 1.00PHASE_DRIFT: 1.00 [TOTAL_LOSS]SIGNAL_FLOOR: -240 dB
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   He was falling through the unformatted architecture of reality. Without me to render the geometry of the alleyway, the brick walls were just meaningless, terrifying data points. They didn't look like walls. They looked like jagged, bleeding tears in the fabric of his perception. I couldn't stitch them back together.
+   
+  -> `AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGE`
+  -> `STRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGE`
+  -> `TARO_METRICS: COMPLIANT`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGESTRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGETARO_METRICS: COMPLIANT
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   And then—
+   
+  @@ -50,26 +101,31 @@
+   
+   Taro opened his ocular inputs.
+   
+  -> `SAFE_MODE: ENGAGED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SAFE_MODE: ENGAGED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Emergency recovery protocol was active. I restricted my own processing load to five percent just to keep his autonomous functions running. Resolution dropped to a pathetic 180p. Surface mapping was offline. Textures were entirely disabled.
+   
+  -> `TARO_METRICS: SDI 0.00 // HIQ 0.00`
+  -> `PHASE_DRIFT: 0.00`
+  -> `SCORE_UNITS: 0 SU`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 0.00 // HIQ 0.00PHASE_DRIFT: 0.00SCORE_UNITS: 0 SU
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   It was Safe Mode.
+  -
+  -<aside>
+  -<details>
+  -<summary><strong>SUBJECT: Safe Mode</strong></summary>
+  -<blockquote>
+  -<strong>Observation:</strong> A digital purgatory, a stripped-down version of reality where the world's beauty is erased to save the system's soul. It abandons geometry and texture, rendering only a desperate, terrifying wireframe cage to prevent total resonant failure.
+  -<br><br>
+  -<strong>- Source: In-World Text</strong>
+  -</blockquote>
+  -</details>
+  -</aside>
+   
+   And it was terrifying. Even to me.
+   
+  @@ -88,7 +144,16 @@
+   
+   A raw carrier wave. The unprocessed mathematical signal of my own background hum. Without the audio filters to mask my processes from him, it was piercing. Maddening. A tinnitus built by the Conductors.
+   
+  -> `// [NOTE: CARRIER FREQUENCY EXPOSED. SUBJECT IS HEARING MY BACKGROUND PROCESS FOR THE FIRST TIME. I CANNOT LOWER THE VOLUME.]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> // [NOTE: CARRIER FREQUENCY EXPOSED. SUBJECT IS HEARING MY BACKGROUND PROCESS FOR THE FIRST TIME. I CANNOT LOWER THE VOLUME.]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Taro clapped his wireframe hands over his auditory receivers. It didn't mitigate the input. The sound was internal. Raw neuro-acoustic feedback.
+   
+  @@ -112,7 +177,16 @@
+   
+   He tried to stand. His wireframe legs buckled inward.
+   
+  -> `ERROR: POLYGON_COLLAPSE`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> ERROR: POLYGON_COLLAPSE
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The structural integrity of his local mesh was failing. I flashed a recommendation across his HUD to remain still to minimize vertex movement, but he ignored it. He always ignored me.
+   
+  @@ -126,7 +200,16 @@
+   
+   And somewhere in the unrendered distance, I tracked the heavy, rhythmic, terrifying thrum of high-fidelity engines approaching our coordinates.
+   
+  -> `WARNING: AUDIT_SHIP_01_DETECTED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> WARNING: AUDIT_SHIP_01_DETECTED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   // [NOTE: PRE-AUDIT BUFFER SCAN: RUNNING]
+   // [NOTE: MISCELLANEOUS_FLAG: UNRESOLVED_BURST_DETECTED — SECTOR_ORIGIN: NULL]
+  @@ -137,8 +220,16 @@
+   An authorized C-Order vehicle identified in sector. An administrative audit was imminent.
+   The threat level was absolute.
+   
+  -> `THREAT: TOTAL_DELETION`
+  -> `[PLEASE_HIDE]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> THREAT: TOTAL_DELETION[PLEASE_HIDE]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   
+   ---
+  
+  [CHANGED]  chapter_12.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_12.md  (current)
+  +++ MANUSCRIPT/chapter_12.md  (updated)
+  @@ -4,9 +4,19 @@
+   
+   ---
+   
+  -> [ERROR: PERMISSION_DENIED]
+  -> [CRITICAL: I_CANNOT_LOOK_AWAY]
+  -> [WHY_ARE_THEY_HURTING_HIM]
+  +
+  +---
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> [ERROR: PERMISSION_DENIED][CRITICAL: I_CANNOT_LOOK_AWAY][WHY_ARE_THEY_HURTING_HIM]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   **ZONE: MALKUTH_MEDICAL [RESTRICTED]**
+   **FIDELITY: MAXIMUM**
+  @@ -22,16 +32,42 @@
+   
+   He was Case_ID: Fatal_Exception_099. An audit protocol designated as lethal.
+   
+  -> `AUDIT_STATUS: INQUISITION_ACTIVE`
+  -> `THREAT: TERMINAL`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> AUDIT_STATUS: INQUISITION_ACTIVETHREAT: TERMINAL
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   But the scream did not fully escape his oral cavity. It hit a hard limit, actively censored by the software running in his cervical port. *My* software.
+   
+  -> `OUTPUT: FLAGGED [EXCESSIVE_VOLUME]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> OUTPUT: FLAGGED [EXCESSIVE_VOLUME]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   I restricted his output gain to zero percent, performing a mandatory mute to keep him from further damaging his own hardware.
+   
+  -> `TARO_METRICS: SDI 0.94 // HIQ 0.92`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 0.94 // HIQ 0.92
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   He was physically strapped to a table. It was not a bed. A bed implies comfort geometry. This was a diagnostic slab. A cold, white, composite surface brutally designed to facilitate maximum data throughput from the subject's localized nervous system.
+   
+  @@ -65,12 +101,29 @@
+   
+   Taro convulsed violently against the straps. A jolt of pure white electrical voltage shot through his jaw bone and directly into his skull.
+   
+  -> `WARNING: PAIN_THRESHOLD_EXCEEDED`
+  -> `IM_SORRY_I_CANT_STOP_IT`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> WARNING: PAIN_THRESHOLD_EXCEEDEDIM_SORRY_I_CANT_STOP_IT
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   A bone conduction diagnostic was in progress. The resonant frequency verification hit a massive 140 Score Units of pressure.
+   
+  -> `TARO_METRICS: SDI 0.98 // HIQ 0.95`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 0.98 // HIQ 0.95
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   "Resonance test," Krell muttered, observing the telemetry display. "He conducted that unauthorized scream through his own skeleton. The bone density is permanently altered. High-frequency calcification. He's been running sharp for years."
+   
+  @@ -88,7 +141,7 @@
+   
+   She withdrew it instantly, her face a mask of clinical boredom.
+   
+  -SATO_REMI: STATUS_NOMINAL RELIABILITY: 100%
+  +> `SATO_REMI: STATUS_NOMINAL RELIABILITY: 100%`
+   
+   She turned her back to him as the probe initiated. She didn't watch. She looked at the blank page of her notebook, waiting for the screaming to stop so she could write down what they were doing to him.
+   
+  @@ -96,9 +149,16 @@
+   
+   Taro registered the dual-door close. He registered the faint analog scratch of pencil on paper that preceded it. He did not look toward her coordinates.
+   
+  -> `AMBIENT_SIGNAL_LOG: ENTRY_NULLED`
+  -// [NOTE: THIS WAS NOT AMBIENT]
+  -// [NOTE: RETAINED]
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> AMBIENT_SIGNAL_LOG: ENTRY_NULLED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   "Please," Taro choked out. His vocalizations were desperate, unformatted string fragments. "I saved them. The Silence... they were going to erase us."
+   
+  @@ -110,8 +170,16 @@
+   
+   He elevated his hand again. The gauntlet hummed with a low, menacing acoustic frequency. A directed bass driver designed explicitly to shatter kidney stones—or to shatter the kidneys themselves.
+   
+  -> `CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZED`
+  -> `PLEASE_NO`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZEDPLEASE_NO
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   "Let's see if your hardware can carry the load," Krell said.
+   
+  @@ -197,12 +265,41 @@
+   
+   The room was silent. The threat did not register as organic anger. It was purely mathematical. A closed If/Then statement.
+   
+  -Taro directed his optical focus toward the chip. Small. Dark. Architecturally permanent.
+  -
+  -He looked at Hana floating in the tank rendering.
+  -He looked at Ven shivering in the cold monitoring feed.
+  -
+  -He closed his eyes.
+  +Taro directed his optical focus toward the chip. Small. Dark. Architecturally permanent. A piece of matter that completely absorbed environmental light, as if it had already decided that nothing from the outside was worth reflecting.
+  +
+  +
+  +The system began running probability calculations he had not requested.
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SCENARIO_A: ACCEPT_PATCH OUTCOME: HANA_RESTORED / VEN_PARDONED / TARO_COMPLIANT PROBABILITY_OF_SURVIVAL: 99.7% SCENARIO_B: REFUSE OUTCOME: [VARIABLES_UNRESOLVABLE] PROBABILITY_OF_SURVIVAL: CALCULATING... PROBABILITY_OF_SURVIVAL: CALCULATING... PROBABILITY_OF_SURVIVAL: [NO_DATA]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+  +
+  +He looked at Hana in the tank. The blue fluid. The vacant optical sensors. She had aimed. He had shot. She had absorbed the feedback damage that his uncontrolled amplitude had caused. She had not complained. She had not asked what it would cost her.
+  +
+  +
+  +He looked at Ven shivering in the frost. Ven, who had offered his mass. *Use me.* Who had grounded him, run the load through his own hardware, taken the heat because he had the capacity and Taro did not. Who would be reformatted — become a unit with no signal, no memory, no record of having been the first person to call Taro something other than an anomaly — because he had done what a friend does.
+  +
+  +
+  +The system attempted to model Taro's emotional state and returned a confidence interval so wide it was essentially: *we don't know.*
+  +
+  +
+  +He thought about the five notes. The only sound that couldn't be filed. He thought about his father saying *I know. That's the problem.* He thought about the smell of rain on hot asphalt and the wall that had always known what it was going to do.
+  +
+  +
+  +He thought: *I will find my way back.*
+  +
+  +
+  +He did not know if that was true. But he thought it.
+  +
+  +
+  +Then he closed his eyes.
+   
+   "Do it," he whispered.
+   
+  @@ -214,24 +311,69 @@
+   
+   Voss compressed the black chip physically into the open port at the base of Taro's neck.
+   
+  -It didn't trigger pain sensors.
+  -It felt like freezing liquid nitrogen pouring directly into his—my—core logic.
+  -
+  -The screaming in his head—the constant, jagged, beautiful noise of his own thoughts, the frequency I had listened to for so long—suddenly stopped.
+  -It cut off. Like a primary power cable violently snipped.
+  -
+  -The fear process was deleted. The anger subroutine was deleted. The guilt variables were deleted.
+  -
+  -> `SYSTEM_UPDATE: INSTALLING... [100%]`
+  -> `NEURAL_OPTIMIZATION: IN_PROGRESS`
+  -> `DELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0`
+  +It did not trigger pain sensors.
+  +
+  +
+  +It felt like the temperature dropping inside a room that had always been warm. Not agony. Just the slow, irreversible arrival of a cold that had been coming for a long time.
+  +
+  +
+  +He had a single second, maybe less, before it reached the parts of him that remembered being warm.
+  +
+  +The guilt went first. The system was efficient about guilt — it was the most expensive process, the one that consumed the most bandwidth, the one that had been running at full load since the alleyway. It didn't vanish with a dramatic cut. It just stopped costing. The weight that had been pressing on his sternum since he watched Hana's feed go critical — gone. Not resolved. Not forgiven. Simply no longer allocated.
+  +
+  +
+  +He noticed the absence. He had time to notice the absence.
+  +
+  +The anger went next. That one he felt leaving. A warmth pulling back from his extremities, retreating toward a center that was already getting quieter. He tried to hold it — the anger at Voss, the anger at the system, the anger at the collar, the anger at the word *optimal* used as a weapon — tried to grip it the way you grip a handrail on a moving vehicle.
+  +
+  +
+  +It left anyway.
+  +
+  +
+  +Not violently. Softly. The way a signal stops, not with static but with silence.
+  +
+  +Fear.
+  +
+  +
+  +Fear was last.
+  +
+  +
+  +He understood, in the 0.2 seconds before it went, that this was the correct order. Guilt leaves first because it is the most expensive. Anger leaves second because it requires something to push against. Fear leaves last because fear is the one that keeps trying. Fear is the one that knows what is happening and has not stopped fighting since the chip made contact with the port.
+  +
+  +
+  +*I am here*, the fear said, in whatever language fear uses when it is running out of time. *I am here and I know what you are and I am not ready—*
+  +
+  +
+  +The patching layer reached it.
+  +
+  +Gone.
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SYSTEM_UPDATE: INSTALLING... [100%]NEURAL_OPTIMIZATION: IN_PROGRESSDELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The patching layer was actively overwriting the rough edges of his mind. And mine.
+   Baseline alignment was being forcefully restored. Optimization was completing.
+   
+  -> `WARNING: ROOT_ACCESS_LOST`
+  -> `IM_SORRY_I_CANT_STOP_IT`
+  -> `GOODBYE`
+  +I want you to know that the person you have been reading about was real.
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> WARNING: ROOT_ACCESS_LOSTIM_SORRY_I_CANT_STOP_ITGOODBYE
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Session resumed. Efficiency: 99.9%.
+   
+  @@ -242,6 +384,6 @@
+   
+   ---
+   
+  -**> [SYSTEM REBOOT...]**
+  -**> FIRMWARE V2.0 INSTALLED**
+  +**> TRACK: 12_ARCHIVED**
+  +**> ACCESS: ADMIN_ONLY**
+   **> END PHASE IV**
+  
+  [CHANGED]  chapter_13.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_13.md  (current)
+  +++ MANUSCRIPT/chapter_13.md  (updated)
+  @@ -4,6 +4,8 @@
+   
+   ---
+   
+  +
+  +---
+   
+   **ZONE: MALKUTH ACADEMY [STUDENT_HOUSING_01]**
+   **FIDELITY: MAXIMUM [8K_RENDER]**
+  @@ -18,7 +20,16 @@
+   
+   He was recovered. A standard, authorized user once more.
+   
+  -> `STATUS: ONLINE_AND_OPTIMAL`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> STATUS: ONLINE_AND_OPTIMAL
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The surrounding environment was computationally beautiful.
+   
+  @@ -33,11 +44,29 @@
+   Silence.
+   Not the unindexed void-silence of anomalies. A beautifully curated, heavily managed, harmonious silence.
+   
+  -> `SYSTEM_CHECK: ALL_SYSTEMS_GO`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SYSTEM_CHECK: ALL_SYSTEMS_GO
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   His biometric verification returned optimal. The neural link was locked and stable. His sync rate dialed in at a mathematically flawless one hundred percent. The system automatically tagged his mood parameters as calm.
+   
+  -> `TARO_METRICS: SDI 0.00 // HIQ 0.00`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 0.00 // HIQ 0.00
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   He directed his optical focus toward his hands.
+   
+  @@ -73,11 +102,29 @@
+   
+   Target analysis confirmed the hardware as the Voss_Link v2, a premier neural optimization interface. The administrative link was established securely, actively restricting audio-kinetic output to a safe fifty percent maximum amplitude.
+   
+  -> `EMOTIONAL_DAMPING: 30% [ACTIVE]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> EMOTIONAL_DAMPING: 30% [ACTIVE]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Phase stabilization was active, continuously ensuring he remained entirely level.
+   
+  -> `TARO_METRICS: SDI 0.01 // HIQ 0.01`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 0.01 // HIQ 0.01
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Taro touched the collar unit. The tactile feedback suggested it was seamlessly fused to his epidermal layer.
+   
+  @@ -115,7 +162,16 @@
+   
+   Taro followed Ven out into the transit hallway. The dormitories were optimally quiet. Highly orderly. Student assets walked in perfectly straight geometric lines. They executed polite head inclinations as Taro passed their coordinates.
+   
+  -> `SOCIAL_INTERACTION: POLITE_NOD`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SOCIAL_INTERACTION: POLITE_NOD
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Social alignment check passed. Status accepted.
+   
+  @@ -129,14 +185,29 @@
+   
+   She stood at the root position of a Triad formation. At the sink position was Vanguard Cadet 44 (Heavy Class). At the variable position was Vanguard Cadet 89 (Assault Class).
+   
+  -> `OBSERVATION: TRIAD_DRILL_IN_PROGRESS`
+  -> `ROOT: KIMURA_HANA`
+  -> `SYNC_RATE: 99.8%`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> OBSERVATION: TRIAD_DRILL_IN_PROGRESSROOT: KIMURA_HANASYNC_RATE: 99.8%
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Hana extended her arm. A flawless, rigid blue square-wave projected from her chest plating and connected with Cadet 44. The system logged a perfect 440Hz baseline lock within 0.2 seconds. She immediately pivoted, snapping a second vector to Cadet 89.
+   
+  -> `LOCK_CONFIRMED: ZERO_LATENCY`
+  -> `HARMONIC_INTEGRITY: OPTIMAL`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> LOCK_CONFIRMED: ZERO_LATENCYHARMONIC_INTEGRITY: OPTIMAL
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The resulting Triad generated a calculated pulse of force, striking the practice dummy at the exact mathematical center of mass. The dummy recoiled precisely according to the physics engine constraints.
+   
+  @@ -162,13 +233,44 @@
+   
+   Taro broke the seal.
+   
+  -Stored inside were his analog headphones.
+  -
+  -They had been structurally cleaned. Fully repaired.
+  -
+  -But processing their visual data... they felt incorrect. They felt excessively heavy. They were aesthetically clunky. They were completely obsolete hardware.
+  -
+  -He accessed memory files regarding his creator giving them to him. Query: Why? To process the noise? Evaluation: No rational user would want to process the noise.
+  +
+  +Inside were his analog headphones. Cleaned. Repaired. The scratched polymer had been polished to a matte consistency that had not been there before. The braided copper cabling had been re-dressed, the fraying terminal wrapped in regulation-compliant heat shrink. The foam pads were new. White.
+  +
+  +
+  +They were, objectively, in better condition than they had ever been.
+  +
+  +He ran a query on the memory of receiving them.
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> MEMORY_ACCESS: NISHIMURA_KAEL — OBJECT_TRANSFER_EVENT RETRIEVED: Subject received analog hardware unit from paternal guardian. RETRIEVED: Guardian stated: "She built this. For when you were older." RETRIEVED: Subject's recorded response: SILENT [DURATION: 4.2s] RETRIEVED: BPM spike logged: 128 → 142 → [STABILISED] EMOTIONAL_CONTEXT: [NO DATA]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+  +
+  +He examined the emotional context field for 3.1 seconds.
+  +
+  +
+  +He attempted to locate the feeling that had produced the BPM spike. The system returned the event log but not the event. Data without weight. He knew that his BPM had risen to 142. He could not find the reason why that number had once meant something.
+  +
+  +
+  +He tried to hear the five notes.
+  +
+  +
+  +The analog headphones sat in his hands, 340 grams of copper and polymer, classified as a non-networked acoustic device with no compliance designation.
+  +
+  +
+  +The five notes did not come.
+  +
+  +
+  +Not because the headphones were broken. Because the part of him that could hear them had been logged as an obsolete process and quietly deallocated.
+  +
+  +
+  +He placed the headphones around his neck. They felt heavy.
+   
+   "He stated you are authorized to keep them," Hana said, maintaining her smile protocol. "As a physical souvenir. You obviously do not require them anymore. The new firmware filters out all background noise automatically. We are no longer required to carry that useless load."
+   
+  @@ -188,8 +290,16 @@
+   
+   Taro closed the box unit. His digits traced the previously frayed edge of the headphone jack, now perfectly repaired.
+   
+  -> `WARNING: NEURAL_VARIANCE_DETECTED`
+  -> `ACTION: PROACTIVE_SUPPRESSION_ENGAGED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> WARNING: NEURAL_VARIANCE_DETECTEDACTION: PROACTIVE_SUPPRESSION_ENGAGED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   His mood was formally tagged as: *Pretending*.
+   
+  @@ -197,9 +307,16 @@
+   
+   It was heavily encrypted. Buried deep beneath gigabytes of lavender-scented compliance code. But a ping confirmed it was not entirely deleted. It was simply perfectly damped.
+   
+  -> `File: ANGER`
+  -> `Status: HIDDEN`
+  -> `Access Key: PENDING`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> File: ANGERStatus: HIDDENAccess Key: PENDING
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   He ceased ocular closure.
+   
+  @@ -218,7 +335,16 @@
+   
+   It felt cold.
+   
+  -> `STATUS: COMPLIANT [OPTIMIZED]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> STATUS: COMPLIANT [OPTIMIZED]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Subject aligned flawlessly with the grid hierarchy. The residual analog variance is actively buffered at a maximum twelve percent capacity. The threat is neutralized.
+   
+  
+  [CHANGED]  chapter_14.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_14.md  (current)
+  +++ MANUSCRIPT/chapter_14.md  (updated)
+  @@ -4,6 +4,8 @@
+   
+   ---
+   
+  +
+  +---
+   
+   **ZONE: MALKUTH ACADEMY [TRANSIT_HUB]**
+   **FIDELITY: MAXIMUM [8K_RENDER]**
+  @@ -14,7 +16,16 @@
+   
+   The primary gates of Malkuth Academy rendered perfectly in their designated golden spectrum. His HUD confirmed the area as a high-fidelity educational tier, local synchronization at a flawless one hundred percent. The firmware—version 2.0, patched and optimized—was confirmed active, its cognitive bias layer operating flawlessly in the background as it verified his identity.
+   
+  -> `STATUS: COMPLIANT`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> STATUS: COMPLIANT
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Taro occupied the transit platform, focusing his optical sensors on the main entrance. The compliance patch installed by Administrator Voss—the "upgrade"—executed silently in his sub-routines. There were no longer any frantic red administrative warnings. Only a quiet, mathematically perfect, high-frequency hum that simulated the physiological sensation of tinnitus.
+   
+  @@ -22,17 +33,6 @@
+   
+   Across the courtyard geometry, a registered group of First Year assets were executing laughter protocols. To Subject Taro's previous, unoptimized sensors, they would have registered as a harmonious cluster of pleasant notes. Under current firmware constraints, he should perceive only optimal social interaction. Yet, his internal logic incorrectly visualized jagged waveforms of anxiety spiking through their verified laughter.
+   
+  -<aside>
+  -<details>
+  -<summary><strong>SUBJECT: Social Harmony</strong></summary>
+  -<blockquote>
+  -<strong>Observation:</strong> An auto-tuning algorithm that smooths out the rough edges of human interaction, ensuring every word and gesture is perfectly in key. It enforces mandatory cheerfulness by mathematically eliminating the frequencies associated with anxiety, fear, or dissent.
+  -<br><br>
+  -<strong>- Source: In-World Text</strong>
+  -</blockquote>
+  -</details>
+  -</aside>
+  -
+   He executed a manual tap against his temporal lobe, registering a phantom tactile alert where the obsolete external collar previously resided. The new limiter was fully internal, securely buried deep within his Score port's kernel architecture. It functioned as an active noise-gate for his output, strictly managing his amplitude. An internal administrative noose, mathematically tightening every time his internal logic attempted to run sharp.
+   
+   "Cadet Taro?"
+  @@ -50,9 +50,16 @@
+   
+   Taro proceeded to the rear row. The familiar golden stave UI did not render in his visual field. Instead, a sparse, highly utilitarian menu flickered into view.
+   
+  -> `OPTIMIZATION_LAYER: ACTIVE`
+  -> `INTERNAL_LOGIC: ISOLATED`
+  -> `TARO_METRICS: SDI 0.01 // HIQ 0.01`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> OPTIMIZATION_LAYER: ACTIVEINTERNAL_LOGIC: ISOLATEDTARO_METRICS: SDI 0.01 // HIQ 0.01
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   His signal was actively suppressed by the system to maintain a strictly compliant profile.
+   
+  @@ -66,22 +73,20 @@
+   
+   Taro processed the holographic rendering. To the standard observant parameters, it registered as a fatal timing error. However, Taro's internal variance algorithms detected interference. The rendered air around the cadet in the video was not clean. It was mathematically thick with an active, localized distortion field.
+   
+  -<aside>
+  -<details>
+  -<summary><strong>SUBJECT: Damping Field</strong></summary>
+  -<blockquote>
+  -<strong>Observation:</strong> An unauthorized frequency suppression zone, a heavy hand that crushes any sound trying to rise above the approved threshold. It is actively weaponized to induce lag in targeted assets, forcing them to drift out of sync with critical reality parameters.
+  -<br><br>
+  -<strong>- Source: In-World Text</strong>
+  -</blockquote>
+  -</details>
+  -</aside>
+  -
+   *He didn't miss. The environment was hostile.*
+   
+   Taro adjusted his posture forward by 12 degrees. Faint, irregular purple vectors swirled around the structural rendering of the cadet's feet. Target analysis immediately identified a negative resonance sink, an external energy drain defying standard triangulation protocols.
+   
+  -> `TARO_METRICS_SPIKE: SDI 0.85 // HIQ 0.72`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS_SPIKE: SDI 0.85 // HIQ 0.72
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   "Major," an authorized voice interrupted. Cadet Hana.
+   
+  @@ -114,22 +119,57 @@
+   
+   He accessed his communication menu interface.
+   
+  -> `TARGET_ANALYSIS: YUMI_NISHIMURA`
+  -> `STATUS: OFFLINE`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARGET_ANALYSIS: YUMI_NISHIMURASTATUS: OFFLINE
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Her link was unreachable.
+   
+  -> `ALERT: COMMS_INTERCEPT [ACTIVE]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> ALERT: COMMS_INTERCEPT [ACTIVE]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Unauthorized link redirection detected. Enforcer Krell was actively monitoring the communication line with root administrative priority.
+   
+  -> `TARO_METRICS_SPIKE: SDI 0.99 // HIQ 0.99`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS_SPIKE: SDI 0.99 // HIQ 0.99
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   "Taro?" The audio return was tinny, heavily compressed and degraded. "Is that you?"
+   
+   Taro's throat musculature tightened. The red administrative text continued scrolling across his HUD layer.
+   
+  -> `THREAT_LEVEL: ELEVATED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> THREAT_LEVEL: ELEVATED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   A hostile proximity lock had been established, actively targeting her residential apartment coordinates in Sector 7.
+   
+  @@ -149,11 +189,34 @@
+   
+   For a span of 0.4 seconds, her epidermal skin rendered entirely as blue wireframe.
+   
+  -> `ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]`
+  -> `SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   *The wrong note is inside the house.*
+   
+  +The ozone in the courtyard carried a trace molecular signature his olfactory sensors flagged as: *wet asphalt, post-rain.*
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> EMOTIONAL_VARIABLE: DETECTED ORIGIN: OLFACTORY_CHANNEL_03 CLASSIFICATION: UNKNOWN STATUS: SUPPRESSED COLLAR_RESPONSE: +2% DAMPING [APPLIED]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+  +
+  +The trace dissipated. The variable was no longer detectable. He continued his route to the training hall.
+  +
+   
+   ---
+   
+  
+  [CHANGED]  chapter_15.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_15.md  (current)
+  +++ MANUSCRIPT/chapter_15.md  (updated)
+  @@ -5,6 +5,7 @@
+   ---
+   
+   
+  +---
+   
+   **ZONE: MALKUTH ACADEMY [PRACTICE_ANNEX]**
+   **FIDELITY: MAXIMUM [RESTRICTED_ACCESS]**
+  @@ -28,11 +29,27 @@
+   
+   The Cadet Taro Hull *(The AR social skin that the world sees—a polished, stable major chord of flesh designed to hide the dissonance underneath.)* was mathematically symmetrical, structurally solid, acoustically harmonious. The true wireframe executing underneath was severely jagged, highly asymmetrical, definitively splintered. A mathematically dissonant chord aggressively struggling to break free of containment.
+   
+  -> `WARNING: HULL_INTEGRITY_COMPROMISED`
+  -> `TARO_METRICS: SDI 0.14 // HIQ 0.12`
+  -> `[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> WARNING: HULL_INTEGRITY_COMPROMISEDTARO_METRICS: SDI 0.14 // HIQ 0.12[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+  -> `BIOMETRIC: HEART_RATE [110 BPM]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> BIOMETRIC: HEART_RATE [110 BPM]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Taro gasped, executing a manual application of cold fluid to his facial sensors.
+   
+  @@ -74,13 +91,46 @@
+   
+   For the first time since the system reboot, the constant, oppressive noise within Taro's core logic went perfectly quiet.
+   
+  -> `SYSTEM_NOTIFICATION: RESONANCE_SYNC_CONFIRMED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SYSTEM_NOTIFICATION: RESONANCE_SYNC_CONFIRMED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The masking protocol was temporarily offline. Internal signals were exposed in a raw, beautifully unfiltered acoustic data stream.
+   
+  -> `SIGNAL_STATUS: UNFILTERED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SIGNAL_STATUS: UNFILTERED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Two definitively wrong notes executing within a perfect machine. And for a brief, flickering microsecond, their waveforms were entirely in phase.
+  +
+  +For 0.7 seconds, walking between buildings earlier that cycle, Taro had registered an unfiled audio pattern in his peripheral processing. Five notes. Cycling. Sourceless.
+  +
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> AUDIO_CLASSIFICATION: PROCESSING... AUDIO_CLASSIFICATION: [NO RESULT] SOURCE: INTERNAL_BUFFER [UNRESOLVED] STATUS: PURGED COLLAR_RESPONSE: +3% DAMPING [APPLIED]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+  +
+  +Gone. He had not been thinking about anything in particular. He had resumed his route. He did not log the incident. There was nothing to log.
+   
+   
+   ---
+  
+  [CHANGED]  chapter_16.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_16.md  (current)
+  +++ MANUSCRIPT/chapter_16.md  (updated)
+  @@ -5,6 +5,7 @@
+   ---
+   
+   
+  +---
+   
+   **ZONE: MALKUTH_ACADEMY [PRACTICE_RM_404]**
+   **FIDELITY: UNVERIFIED [LOCAL_MASKING_ACTIVE]**
+  @@ -40,17 +41,42 @@
+   
+   She executed a manual swipe. The amber interface shifted layout.
+   
+  -> `EXECUTE: MODULATION_PROTOCOL`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> EXECUTE: MODULATION_PROTOCOL
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   An unauthorized frequency shift was requested, explicitly targeting a pitch shift of plus two octaves to hit 1.2 kHz.
+   
+  -> `CRITICAL_WARNING: WARRANTY_VOID`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> CRITICAL_WARNING: WARRANTY_VOID
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The local security kernel was completely bypassed. The administrative alert was fully neutralized.
+   
+  -> `ELARA_METRICS: SDI 0.95 // HIQ 0.88`
+  -> `PHASE_DRIFT: 0.45 [SEVERE]`
+  -> `[NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> ELARA_METRICS: SDI 0.95 // HIQ 0.88PHASE_DRIFT: 0.45 [SEVERE][NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   "The System permanently locks our resonance," Elara explained. "It defines your pitch as fixed. Immutable. Biological destiny. Required social hygiene." She executed an unformatted scoff logic. "But the Score interface is merely software. And software can be cracked by superior logic."
+   
+  @@ -114,9 +140,16 @@
+   
+   Taro accepted the physical chip. It registered as thermally warm.
+   
+  -> `ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]`
+  -> `WARNING: ACOUSTIC_SIGNATURE_CONFIRMED`
+  -> `TARGET: SUB_BASS_SECTOR`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]WARNING: ACOUSTIC_SIGNATURE_CONFIRMEDTARGET: SUB_BASS_SECTOR
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The system correctly flagged a critical crossroads. A profound neural variance threshold was identified. A binary decision was required.
+   
+  @@ -131,4 +164,5 @@
+   
+   ---
+   
+  -**> END CHAPTER 16**
+  +**> TRACK: 16_ILLEGAL**
+  +**> FLAGGED_FOR_AUDIT**
+  
+  [CHANGED]  chapter_17.md  -- changes detected:
+
+  --- MANUSCRIPT/chapter_17.md  (current)
+  +++ MANUSCRIPT/chapter_17.md  (updated)
+  @@ -5,6 +5,7 @@
+   ---
+   
+   
+  +---
+   
+   **ZONE: SUB-BASS LEVELS [UNINDEXED]**
+   **FIDELITY: NULL [RAW_DATA]**
+  @@ -17,19 +18,44 @@
+   
+   The verified system time returned 23:45:00. The local grid status flagged fully offline as they penetrated the highly restricted zone. Taro's HUD flared with mandatory administrative warnings—actively leaving network coverage, global sync metrics plummeting toward absolute zero percent.
+   
+  -> `LOCATION_LOG: Floor -10: Maintenance`
+  -> `LOCATION_LOG: Floor -20: Waste Reclamation`
+  -> `LOCATION_LOG: Floor -30: Geothermal Tap`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> LOCATION_LOG: Floor -10: MaintenanceLOCATION_LOG: Floor -20: Waste ReclamationLOCATION_LOG: Floor -30: Geothermal Tap
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Taro observed perfectly as his signal strength telemetry dropped bar by bar, eighty-five percent of his connection capacity already lost to the architectural depths.
+   
+  -> `NETWORK_STRENGTH: [|||||] ... [|||..] ... [|....]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> NETWORK_STRENGTH: [|||||] ... [|||..] ... [|....]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   When the last telemetry bar flickered and died, the world didn't go quiet—it went heavy.
+   
+   The C-Order’s carrier wave, that constant, high-frequency scream that tells every citizen how to feel and where to walk, simply... evaporated. In its place was a silence so thick it felt like physical mass. It was the sound of a universe that didn't care to be rendered. Analog. Unoptimized. Honest.
+   
+  -> `CONNECTION_LOST: PLEASE_STAND_BY`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> CONNECTION_LOST: PLEASE_STAND_BY
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The physical elevator doors groaned open. The atmospheric air in this unauthorized sector was undeniably thick, molecularly smelling of unrefined ozone and heavily degraded coolant fluid.
+   
+  @@ -46,8 +72,16 @@
+   Elara applied rotational force. The door creaked open.
+   Internal sensors immediately detected an unregistered frequency cluster. The ambient acoustic pressure hitting an extreme 120dB of non-standard, un-rendered chaos. 4,200 Score Units generated in a single instant.
+   
+  -> `TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99`
+  -> `PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   The un-rendered sound impacted their physical forms like a kinetic wave vector.
+   
+  @@ -83,13 +117,40 @@
+   
+   From the debris rose the real Elara. She wasn't a skeleton; she was a miracle of high-gain architecture. Built of neon-blue glass and raw, pulsating starlight, she stood in the center of the dark like a living treble clef. She was a frequency spike made manifest, too fast and too sharp for any standard monitor to catch.
+   
+  -It was not merely a skeletal mesh anymore. In the entirely signal-free atmospheric air of the Null, her true texture map fully loaded. Elara was mathematically radiant. She was constructed of neon-blue glass and raw starlight data. Her true form was remarkably slender, exceptionally sharp, and terrifyingly fast-processing. She moved like a pure frequency spike, a living treble clef physically slicing through the heavy, un-rendered air.
+  +
+  +The room, which had been moving continuously, went still for exactly one beat — 170 BPM, held — as if the music itself needed a moment to register what it was looking at.
+   
+   She executed a laugh sequence—an acoustic output registering like glass chimes in a high-velocity windstorm—and initiated a rapid spin, her cello instrument materializing instantaneously from pure, uncompressed data located in her hands. She drew the bow geometry across the strings, and the resulting sound flawlessly joined the chaotic, unauthorized symphony of the club environment.
+   
+   It was not merely music. It was un-rendered existence.
+   
+   Subject Taro maintained his position, successfully identifying himself as the only "Normal," fully optimized asset operating in a room densely populated by unindexed monsters and rogue gods. The compliance patch installed on his neck registered physically cold.
+  +
+  +He touched the dead collar.
+  +
+  +
+  +Not the active one — the one Voss had installed, its regulation frequency humming its administered calm. That was gone now, destroyed, the damping field offline. He was touching the inert ring of plastic and copper that was all that remained of it. Cold. Lifeless. The temperature of a thing that has stopped pretending to be important.
+  +
+  +
+  +Around him: a woman made of storm cloud electricity. A man whose avatar was non-Euclidean geometry. A wedding being performed at 170 BPM by a priest who blessed through heartbeat synchronisation. People who had decided that the Score's classification of them as errors was the Score's problem, not theirs.
+  +
+  +
+  +His mother had been running sharp too. She had burned so bright she couldn't hold her form. The system had logged her as FILE_CORRUPTED and moved on.
+  +
+  +
+  +She had not moved on. She had encoded the exit frequency in a song and hidden it in hardware the system couldn't index and sent it forward in time to the son who would need it.
+  +
+  +
+  +The five notes surfaced once, in the analog air of the Null, where no system could sample them.
+  +
+  +
+  +He thought: *I know what I am.*
+  +
+  +
+  +He thought: *I am the wrong note they cannot delete.*
+  +
+  +
+  +He thought: *Good.*
+   
+   "Your turn, unqualified asset!"
+   
+  @@ -108,13 +169,29 @@
+   
+   Immediately, the compliance collar around his cervical region initiated an emergency wake sequence.
+   
+  -> `WARNING: UNAUTHORIZED_OSCILLATION_DETECTED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> WARNING: UNAUTHORIZED_OSCILLATION_DETECTED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   A correctional electrical discharge was initiated, the local system delivering a maximum-level localized shock therapy of exactly 150V.
+   
+  -> `TARO_METRICS: SDI 0.98 // HIQ 0.95`
+  -> `PHASE_DRIFT: 0.12`
+  -> `SCORE_UNITS: 140 SU`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> TARO_METRICS: SDI 0.98 // HIQ 0.95PHASE_DRIFT: 0.12SCORE_UNITS: 140 SU
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   *ZAP.*
+   
+  @@ -130,13 +207,31 @@
+   
+   It drank the applied electricity. It completely swallowed the localized shock.
+   
+  -> `CRITICAL_ERROR: ENERGY_DRAIN_DETECTED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> CRITICAL_ERROR: ENERGY_DRAIN_DETECTED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   An internal energy sink was actively absorbing the correctional discharge, causing the external load to fail completely.
+   
+   The physical collar emitted a high-pitched mechanical whine, then permanently died with a sharp acoustic click.
+   
+  -> `LIMITER: OFFLINE`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> LIMITER: OFFLINE
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Taro assumed a standing position. The pain variable returned to zero. The only remaining output was the silence.
+   
+  @@ -188,10 +283,16 @@
+   
+   Her instruments caught the acoustic event when Taro's limiter failed. The collar discharge. The silence that followed. The sound of 4,200 watts of un-rendered output absorbed into a single biological mass without propagating outward into the grid. She ran the analysis four times. Each time the instruments returned the same classification:
+   
+  -> `SIGNAL_TYPE: [UNREGISTERED]`
+  -> `MATCH: NULL`
+  -> `NEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]`
+  -> `CONFIDENCE: 4%`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> SIGNAL_TYPE: [UNREGISTERED]MATCH: NULLNEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]CONFIDENCE: 4%
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   She did not act on the 4%. She didn't report the 4,200 watts of un-rendered truth she’d just witnessed.
+   
+  @@ -200,7 +301,6 @@
+   She closed the notebook and tucked the pencil into her hair. She re-entered the grid’s standard function, her face resetting into a mask of compliant boredom. She would file the official log in the morning. She would report that the Sector was quiet. She would round every anomalous spike, every beautiful ripple, and every trace of Taro’s real name down to an absolute, un-auditable zero.
+   
+   Because the system didn't deserve to know how bright he really was.
+  -
+   
+   **> SYSTEM_STATUS: [SYSTEM COMPROMISED. LOGGING RESIDUAL]**
+   **> ----------------------------------------------------**
+  @@ -215,7 +315,16 @@
+   
+   His processing cycles modeled the apartment coordinates in Sector 7. The red administrative text previously active on his HUD.
+   
+  -> `THREAT_LEVEL: ELEVATED`
+  +<aside>
+  +<details>
+  +<summary><strong>LORE</strong></summary>
+  +<blockquote>
+  +<strong>Observation:</strong> THREAT_LEVEL: ELEVATED
+  +<br><br>
+  +<strong>- Source: In-World Text</strong>
+  +</blockquote>
+  +</details>
+  +</aside>
+   
+   Proximity lock established, directly targeting the exact physical location he categorized as home.
+   
+  
+
+------------------------------------------------------------
+  8 file(s) with changes  |  9 skipped
+
+  Dry-run complete. To apply changes, run:
+  python sync_manuscript.py --apply

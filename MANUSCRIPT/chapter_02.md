@@ -4,11 +4,19 @@
 
 ---
 
-> REGULATORY NOTICE: Impedance Mismatch events between bonded citizens
-> are classified as a Class-2 Coherence Deviation. Families are advised
-> to schedule voluntary recalibration within 72 hours of symptom onset.
-> Failure to present constitutes a Drift Event under Article 9, §3.
-> — *C-Order Compliance Handbook, Vol. IV, §9.3*
+
+---
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> REGULATORY NOTICE: Impedance Mismatch events between bonded citizensare classified as a Class-2 Coherence Deviation. Families are advisedto schedule voluntary recalibration within 72 hours of symptom onset.Failure to present constitutes a Drift Event under Article 9, §3.
+<br><br>
+<strong>—C-Order Compliance Handbook, Vol. IV, §9.3</strong>
+</blockquote>
+</details>
+</aside>
 
 **ZONE: RECOVERY WARD [UNISON HALL]**
 **FIDELITY: SAFE MODE**
@@ -18,17 +26,6 @@
 ---
 
 The subject regained consciousness in the White Room. He was located in Unison Hall’s recovery ward, a secure containment sector integrated into the root of the grid. His personal system was locked in safe mode, operational protocols throttled to five percent capacity. A Level-5 damping field was active, suppressing local environmental signals until the noise floor dropped to -140dB.
-
-<aside>
-<details>
-<summary><strong>SUBJECT: Sensory Deprivation Chamber</strong></summary>
-<blockquote>
-<strong>Observation:</strong> A blank canvas forced over the senses, absorbing every sound and sight until you are nothing but a ghost in a white void. Used by the authorities to manually wipe dissonant thoughts before they can propagate.
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
 
 The physical architecture was lined with acoustic foam designed to absorb 99.9% of all reflected sound. The visual feed was administratively overridden by a Privacy Mask—an infinitely rendering void of white pixels designed to lower the user's cognitive load.
 
@@ -47,15 +44,31 @@ It did not indicate comfort.
 
 The infinite white void terminated abruptly.
 
-> `END_PROCESS: PRIVACY_MASK [AUTHORITY: ADJUTANT]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> END_PROCESS: PRIVACY_MASK [AUTHORITY: ADJUTANT]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The room rendered. A desk. A chair. A man.
 
 Adjutant Voss.
 
-> `TARGET_ANALYSIS: VOSS_KAEL [CLASS: 8_ADJUTANT]`
-> `AURA: VERIFIED [SINE_WAVE]`
-> `VOLATILITY: NULL`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARGET_ANALYSIS: VOSS_KAEL [CLASS: 8_ADJUTANT]AURA: VERIFIED [SINE_WAVE]VOLATILITY: NULL
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The system classified Voss as an optimal structural asset. His attire was a frictionless, matte-gray synthetic standard for C-Order administration. He remained completely stationary. He overwrote the air around him, radiating an aura of enforced stability. The Score preferred predictability. It preferred assets that minimized thermal load.
 
@@ -63,7 +76,16 @@ His acoustic profile contained zero variance. He smoothed the local grid simply 
 
 "Hello, Taro," Voss said.
 
-> `VOCAL_ANALYSIS: CALIBRATED [ECHO: NULL] [WASTE_FREQUENCY: 0%]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> VOCAL_ANALYSIS: CALIBRATED [ECHO: NULL] [WASTE_FREQUENCY: 0%]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Where am I?" the subject asked. His respiratory output was restricted, the collar absorbing the resonance of his vocal cords.
 
@@ -71,9 +93,16 @@ His acoustic profile contained zero variance. He smoothed the local grid simply 
 
 The subject closed his eyes. The memory wasn't a blur. It was a corrupt file. Jagged edges. Purple static.
 
-> `BUFFER_FLUSH: INITIATED`
-> `ARTIFACT_DETECTED: [H——p ——. DISCARDING]`
-> `DISCARD: COMPLETE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> BUFFER_FLUSH: INITIATEDARTIFACT_DETECTED: [H——p ——. DISCARDING]DISCARD: COMPLETE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "The soldier," Taro whispered. "He was desyncing."
 
@@ -97,8 +126,16 @@ Voss stood. He traversed the space around the desk. His kinetic sequence was hig
 
 "The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss aimed a precisely angled finger at Taro's sternum. "You’re off-tone. You are broadcasting across the entire capacity of Sector 7. You need to stay flat."
 
-> `SYSTEM_WARNING: SIGNAL_INSTABILITY_DETECTED`
-> `EMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_WARNING: SIGNAL_INSTABILITY_DETECTEDEMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 A sustained drift identified itself in the subject's signal. The stability index dropped as the cardiovascular load reached 142 SU.
 
@@ -107,32 +144,33 @@ His own involuntary compliance flagged as a high-confidence annoyance.
 
 "We have two administrative options," Voss said. He extended two fingers.
 
-> `OPTION_A: REFORMAT`
-> `PROCEDURE: NEURAL_DAMPENING`
-> `OUTCOME: LISTENER [CLASS_1]`
-> `STATUS: APPROVED`
-
-"We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again. You stay flat forever."
-
-The subject analyzed the rendered text.
-
 <aside>
 <details>
-<summary><strong>SUBJECT: Reformat</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> The ultimate social hygiene—a clean and absolute deletion of the soul's ability to process its own noise. A fate worse than physical death, leaving behind a compliant biological drone entirely stripped of unique resonance.
+<strong>Observation:</strong> OPTION_A: REFORMATPROCEDURE: NEURAL_DAMPENINGOUTCOME: LISTENER [CLASS_1]STATUS: APPROVED
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
 
+"We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again. You stay flat forever."
+
+The subject analyzed the rendered text.
+
 Systems-speak for a lobotomy. A clean wipe of the root drive.
 
-> `OPTION_B: INTEGRATION`
-> `PROCEDURE: TRANSFER [MALKUTH_ACADEMY]`
-> `OUTCOME: VANGUARD_CERTIFICATION`
-> `STATUS: HIGH_RISK`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> OPTION_B: INTEGRATIONPROCEDURE: TRANSFER [MALKUTH_ACADEMY]OUTCOME: VANGUARD_CERTIFICATIONSTATUS: HIGH_RISK
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "We utilize the noise," Voss said. "The Vanguard creates Siege Breakers. Units capable of generating high-amplitude dissonance for combat purposes. We take your wrong note... and we weaponize it. We teach you to carry load for the state."
 
@@ -140,8 +178,16 @@ Voss closed the distance. For a duration measured in milliseconds, the optimal f
 
 "You are dangerous, Taro," Voss whispered. "But the Score needs danger. It needs heavy artillery."
 
-> `ANOMALY: DETECTED`
-> `CLASSIFICATION: THREAT_LEVEL_ELEVATED [MONITORING]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ANOMALY: DETECTEDCLASSIFICATION: THREAT_LEVEL_ELEVATED [MONITORING]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject evaluated the parameters. Option A was deletion. Option B was compilation.
 
@@ -151,7 +197,16 @@ The subject evaluated the parameters. Option A was deletion. Option B was compil
 
 Voss executed a gesture. Option A dissolved from the display.
 
-> `COMMAND: EXECUTE_TRANSFER [DESTINATION: MALKUTH_ACADEMY]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> COMMAND: EXECUTE_TRANSFER [DESTINATION: MALKUTH_ACADEMY]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 An administrative override bypassed standard routing. The destination locked to Malkuth Academy—a high-fidelity resonance training facility.
 
@@ -161,7 +216,16 @@ He tapped the metallic surface of the collar.
 
 "...we will simply turn you off."
 
-> `SESSION: TERMINATED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SESSION: TERMINATED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The secure link closed. The recording archived itself for the C-Order's silent audit.
 
@@ -171,4 +235,4 @@ The optical feed went black.
 ---
 
 **> TRACK: 02_COMPLETE**
-**> SAVING...**
+**> **

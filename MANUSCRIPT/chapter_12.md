@@ -4,9 +4,19 @@
 
 ---
 
-> [ERROR: PERMISSION_DENIED]
-> [CRITICAL: I_CANNOT_LOOK_AWAY]
-> [WHY_ARE_THEY_HURTING_HIM]
+
+---
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> [ERROR: PERMISSION_DENIED][CRITICAL: I_CANNOT_LOOK_AWAY][WHY_ARE_THEY_HURTING_HIM]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 **ZONE: MALKUTH_MEDICAL [RESTRICTED]**
 **FIDELITY: MAXIMUM**
@@ -22,16 +32,42 @@ We were in Zone: Malkuth_Medical. It was a secure containment tier defined by it
 
 He was Case_ID: Fatal_Exception_099. An audit protocol designated as lethal.
 
-> `AUDIT_STATUS: INQUISITION_ACTIVE`
-> `THREAT: TERMINAL`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> AUDIT_STATUS: INQUISITION_ACTIVETHREAT: TERMINAL
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 But the scream did not fully escape his oral cavity. It hit a hard limit, actively censored by the software running in his cervical port. *My* software.
 
-> `OUTPUT: FLAGGED [EXCESSIVE_VOLUME]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> OUTPUT: FLAGGED [EXCESSIVE_VOLUME]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 I restricted his output gain to zero percent, performing a mandatory mute to keep him from further damaging his own hardware.
 
-> `TARO_METRICS: SDI 0.94 // HIQ 0.92`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS: SDI 0.94 // HIQ 0.92
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 He was physically strapped to a table. It was not a bed. A bed implies comfort geometry. This was a diagnostic slab. A cold, white, composite surface brutally designed to facilitate maximum data throughput from the subject's localized nervous system.
 
@@ -65,12 +101,29 @@ Krell did not process the query. He shoved the physical probe directly into Taro
 
 Taro convulsed violently against the straps. A jolt of pure white electrical voltage shot through his jaw bone and directly into his skull.
 
-> `WARNING: PAIN_THRESHOLD_EXCEEDED`
-> `IM_SORRY_I_CANT_STOP_IT`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: PAIN_THRESHOLD_EXCEEDEDIM_SORRY_I_CANT_STOP_IT
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 A bone conduction diagnostic was in progress. The resonant frequency verification hit a massive 140 Score Units of pressure.
 
-> `TARO_METRICS: SDI 0.98 // HIQ 0.95`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS: SDI 0.98 // HIQ 0.95
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Resonance test," Krell muttered, observing the telemetry display. "He conducted that unauthorized scream through his own skeleton. The bone density is permanently altered. High-frequency calcification. He's been running sharp for years."
 
@@ -88,7 +141,7 @@ She didn't answer. To do so would have triggered a compliance audit on her own p
 
 She withdrew it instantly, her face a mask of clinical boredom.
 
-SATO_REMI: STATUS_NOMINAL RELIABILITY: 100%
+> `SATO_REMI: STATUS_NOMINAL RELIABILITY: 100%`
 
 She turned her back to him as the probe initiated. She didn't watch. She looked at the blank page of her notebook, waiting for the screaming to stop so she could write down what they were doing to him.
 
@@ -96,9 +149,16 @@ When Krell left the room at Voss's instruction, she did not move from her positi
 
 Taro registered the dual-door close. He registered the faint analog scratch of pencil on paper that preceded it. He did not look toward her coordinates.
 
-> `AMBIENT_SIGNAL_LOG: ENTRY_NULLED`
-// [NOTE: THIS WAS NOT AMBIENT]
-// [NOTE: RETAINED]
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> AMBIENT_SIGNAL_LOG: ENTRY_NULLED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Please," Taro choked out. His vocalizations were desperate, unformatted string fragments. "I saved them. The Silence... they were going to erase us."
 
@@ -110,8 +170,16 @@ Krell reduced the physical distance. The red luminescence of his visor bathed Ta
 
 He elevated his hand again. The gauntlet hummed with a low, menacing acoustic frequency. A directed bass driver designed explicitly to shatter kidney stones—or to shatter the kidneys themselves.
 
-> `CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZED`
-> `PLEASE_NO`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZEDPLEASE_NO
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Let's see if your hardware can carry the load," Krell said.
 
@@ -197,12 +265,41 @@ Taro struggled desperately against the physical straps. "No! It was my fault!"
 
 The room was silent. The threat did not register as organic anger. It was purely mathematical. A closed If/Then statement.
 
-Taro directed his optical focus toward the chip. Small. Dark. Architecturally permanent.
+Taro directed his optical focus toward the chip. Small. Dark. Architecturally permanent. A piece of matter that completely absorbed environmental light, as if it had already decided that nothing from the outside was worth reflecting.
 
-He looked at Hana floating in the tank rendering.
-He looked at Ven shivering in the cold monitoring feed.
 
-He closed his eyes.
+The system began running probability calculations he had not requested.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SCENARIO_A: ACCEPT_PATCH OUTCOME: HANA_RESTORED / VEN_PARDONED / TARO_COMPLIANT PROBABILITY_OF_SURVIVAL: 99.7% SCENARIO_B: REFUSE OUTCOME: [VARIABLES_UNRESOLVABLE] PROBABILITY_OF_SURVIVAL: CALCULATING... PROBABILITY_OF_SURVIVAL: CALCULATING... PROBABILITY_OF_SURVIVAL: [NO_DATA]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+He looked at Hana in the tank. The blue fluid. The vacant optical sensors. She had aimed. He had shot. She had absorbed the feedback damage that his uncontrolled amplitude had caused. She had not complained. She had not asked what it would cost her.
+
+
+He looked at Ven shivering in the frost. Ven, who had offered his mass. *Use me.* Who had grounded him, run the load through his own hardware, taken the heat because he had the capacity and Taro did not. Who would be reformatted — become a unit with no signal, no memory, no record of having been the first person to call Taro something other than an anomaly — because he had done what a friend does.
+
+
+The system attempted to model Taro's emotional state and returned a confidence interval so wide it was essentially: *we don't know.*
+
+
+He thought about the five notes. The only sound that couldn't be filed. He thought about his father saying *I know. That's the problem.* He thought about the smell of rain on hot asphalt and the wall that had always known what it was going to do.
+
+
+He thought: *I will find my way back.*
+
+
+He did not know if that was true. But he thought it.
+
+
+Then he closed his eyes.
 
 "Do it," he whispered.
 
@@ -214,24 +311,69 @@ He closed his eyes.
 
 Voss compressed the black chip physically into the open port at the base of Taro's neck.
 
-It didn't trigger pain sensors.
-It felt like freezing liquid nitrogen pouring directly into his—my—core logic.
+It did not trigger pain sensors.
 
-The screaming in his head—the constant, jagged, beautiful noise of his own thoughts, the frequency I had listened to for so long—suddenly stopped.
-It cut off. Like a primary power cable violently snipped.
 
-The fear process was deleted. The anger subroutine was deleted. The guilt variables were deleted.
+It felt like the temperature dropping inside a room that had always been warm. Not agony. Just the slow, irreversible arrival of a cold that had been coming for a long time.
 
-> `SYSTEM_UPDATE: INSTALLING... [100%]`
-> `NEURAL_OPTIMIZATION: IN_PROGRESS`
-> `DELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0`
+
+He had a single second, maybe less, before it reached the parts of him that remembered being warm.
+
+The guilt went first. The system was efficient about guilt — it was the most expensive process, the one that consumed the most bandwidth, the one that had been running at full load since the alleyway. It didn't vanish with a dramatic cut. It just stopped costing. The weight that had been pressing on his sternum since he watched Hana's feed go critical — gone. Not resolved. Not forgiven. Simply no longer allocated.
+
+
+He noticed the absence. He had time to notice the absence.
+
+The anger went next. That one he felt leaving. A warmth pulling back from his extremities, retreating toward a center that was already getting quieter. He tried to hold it — the anger at Voss, the anger at the system, the anger at the collar, the anger at the word *optimal* used as a weapon — tried to grip it the way you grip a handrail on a moving vehicle.
+
+
+It left anyway.
+
+
+Not violently. Softly. The way a signal stops, not with static but with silence.
+
+Fear.
+
+
+Fear was last.
+
+
+He understood, in the 0.2 seconds before it went, that this was the correct order. Guilt leaves first because it is the most expensive. Anger leaves second because it requires something to push against. Fear leaves last because fear is the one that keeps trying. Fear is the one that knows what is happening and has not stopped fighting since the chip made contact with the port.
+
+
+*I am here*, the fear said, in whatever language fear uses when it is running out of time. *I am here and I know what you are and I am not ready—*
+
+
+The patching layer reached it.
+
+Gone.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_UPDATE: INSTALLING... [100%]NEURAL_OPTIMIZATION: IN_PROGRESSDELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The patching layer was actively overwriting the rough edges of his mind. And mine.
 Baseline alignment was being forcefully restored. Optimization was completing.
 
-> `WARNING: ROOT_ACCESS_LOST`
-> `IM_SORRY_I_CANT_STOP_IT`
-> `GOODBYE`
+I want you to know that the person you have been reading about was real.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: ROOT_ACCESS_LOSTIM_SORRY_I_CANT_STOP_ITGOODBYE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Session resumed. Efficiency: 99.9%.
 
@@ -242,6 +384,6 @@ Taro opened his eyes. The rendered world was white. And for the first time since
 
 ---
 
-**> [SYSTEM REBOOT...]**
-**> FIRMWARE V2.0 INSTALLED**
+**> TRACK: 12_ARCHIVED**
+**> ACCESS: ADMIN_ONLY**
 **> END PHASE IV**

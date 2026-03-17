@@ -4,12 +4,30 @@
 
 ---
 
-> INCIDENT CLASSIFICATION: Spontaneous Resonance Discharge events above
-> 100% rated output are designated Class-Ω Anomalies. All witnesses are
-> required to submit to mandatory memory indexing within 6 hours.
-> The sector will be repainted within 48 hours.
-> [CLASSIFICATION: INCIDENT_NIL]
-> — *G-Vanguard Field Protocol, Directive 7-ZETA*
+
+---
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> The thalamus sweeps the cortex from front to back at 40 Hz — forty times per second — binding disparate neural circuits into a unified perceptual moment. Disrupt this sweep and the subject loses consciousness. It is not associated with awareness. It is the mechanism by which awareness is generated.
+<br><br>
+<strong>—Llinás, R. et al. "Thalamocortical loops and consciousness." 1998. [UNINDEXED IN C-ORDER ARCHIVE]</strong>
+</blockquote>
+</details>
+</aside>
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> INCIDENT CLASSIFICATION: Spontaneous Resonance Discharge events above100% rated output are designated Class-Ω Anomalies. All witnesses arerequired to submit to mandatory memory indexing within 6 hours.The sector will be repainted within 48 hours.[CLASSIFICATION: INCIDENT_NIL]
+<br><br>
+<strong>—G-Vanguard Field Protocol, Directive 7-ZETA</strong>
+</blockquote>
+</details>
+</aside>
 
 **ZONE: SECTOR 7-C CALIBRATION HALL**
 **FIDELITY: STANDARD**
@@ -22,22 +40,20 @@ The subject experienced a localized neural event.
 
 White light. Static. The taste of copper and burning hair.
 
-> `SYSTEM_ALERT: ELECTRICAL_DISCHARGE [LOCATION: GUSTATORY_CORTEX] [THRESHOLD: 4.2mA]`
-
-Four point two. High enough to scorch the receptors. It was fine. He was logging it.
-
-The system initiated a mandatory hardware handshake. The subject, Nishimura Taro, possessed a processing capacity insufficient for immediate integration. The system did not request participation; it enforced alignment. The root priority request engaged. The subject's nervous system seized. The local grid rejected his presence vector. His heartbeat fell out of phase, the physical world stuttering before neural transmission completed.
-
 <aside>
 <details>
-<summary><strong>SUBJECT: Neural-Acoustic Interface</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A direct neural link so fast it feels like your own thoughts are dropping frames. The C-Order relies on this high-bandwidth connection to enforce near-instantaneous behavioral regulation, turning human consciousness into an auditable data stream.
+<strong>Observation:</strong> SYSTEM_ALERT: ELECTRICAL_DISCHARGE [LOCATION: GUSTATORY_CORTEX] [THRESHOLD: 4.2mA]
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
+
+Four point two. High enough to scorch the receptors. It was fine. He was logging it.
+
+The system initiated a mandatory hardware handshake. The subject, Nishimura Taro, possessed a processing capacity insufficient for immediate integration. The system did not request participation; it enforced alignment. The root priority request engaged. The subject's nervous system seized. The local grid rejected his presence vector. His heartbeat fell out of phase, the physical world stuttering before neural transmission completed.
 
 Then, the crash.
 
@@ -45,30 +61,37 @@ The subject's optic feed rebooted. The environment rendered. Reality was no long
 
 The resulting geometry was elegant.
 
-> `PERCEPTION: ONLINE [ACOUSTIC_INPUT: A-440 STANDARD]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> PERCEPTION: ONLINE [ACOUSTIC_INPUT: A-440 STANDARD]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject's internal clock registered 110 BPM. The pulse point flashed in his peripheral vision with nominal sync.
 
 The environmental data was not a screen overlay. It had been integrated into the physical architecture. The system synced the local clock.
 
-> `BIOMETRIC: HEART_RATE [110 BPM]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> BIOMETRIC: HEART_RATE [110 BPM]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 His heartbeat thumped against his ribs. He didn't just feel it. He saw it—a jagged yellow line pulsing in the corner of his eye.
 
 The subject stood in the staff locker room of Sector 7-C Calibration Hall. To an unindexed citizen without a sync chip, it was a room with gray lockers and a flickering fluorescent light.
 
 To the Score, it was a data stream.
-
-<aside>
-<details>
-<summary><strong>SUBJECT: The Unindexed (Normals)</strong></summary>
-<blockquote>
-<strong>Observation:</strong> Disconnected. They live in a world of silence, immune to the Score's coercive resonance but permanently locked out of the city's rendered infrastructure. To be normal is to be functionally invisible.
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
 
 The ventilation system emitted a constant sequence at F-sharp. The environmental sensors registered ionized ozone and oxidized coffee compounds. In the corner, a junior technician struck his locker repeatedly. Not in anger. A rhythmic *thump-thump-click* to align the rusted tumblers with the room’s dominant frequency.
 
@@ -78,20 +101,18 @@ The door registered as a wall of red static. The system flagged an obstruction, 
 
 The subject swiped his damping bands across the sensor.
 
+*PING.*
+
 <aside>
 <details>
-<summary><strong>SUBJECT: Damping Bands</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> The only things keeping his internal noise from screaming into the room. These restrictive coils act as hardware governors, forcibly compressing a citizen's natural resonance to comply with the mandated harmonic baseline.
+<strong>Observation:</strong> PROCESS: GATEWAY_OPEN [PHASE_MATCH: SUCCESSFUL]
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
-
-*PING.*
-
-> `PROCESS: GATEWAY_OPEN [PHASE_MATCH: SUCCESSFUL]`
 
 The red static shifted into permissive green vectors. The door opened.
 
@@ -116,25 +137,50 @@ The mathematics governing its curve were flawless.
 
 It rolled through the air, interfacing with all active nodes. When it passed through the technicians working at their stations, the system verified their stability. The visual return was a soft, green thermal signature.
 
-> `STATUS: SYNCED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> STATUS: SYNCED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject kept his head down. His own signal felt like a scratch in his throat—a jagged **ORANGE WARNING**. His output was throttled to fifteen percent, but the pressure was building.
 
-> `SYSTEM_WARNING: STRESS_ACCUMULATION [84 SU]`
-> `NEURAL_LOAD: 92% [APPROACHING_THRESHOLD]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_WARNING: STRESS_ACCUMULATION [84 SU]NEURAL_LOAD: 92% [APPROACHING_THRESHOLD]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Hey, Wrong Note."
 
 The subject did not look up, but his internal logic stuttered. The system detected an acoustic signature in D-Major—bright, uncompressed, and stubbornly optimistic. It was accompanied by the prohibited scent of bubblegum and the sharp ozone of a technician who spent too much time overclocking her own port.
 
-> `TAG: FASCINATION [CONFIDENCE: 92%]`
-> `DOMINANT_HARMONIC: D-MAJOR [UNFILTERED]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TAG: FASCINATION [CONFIDENCE: 92%]DOMINANT_HARMONIC: D-MAJOR [UNFILTERED]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-Remi Sato. 
+Remi Sato.
 
 She leaned against the railing, her presence generating ripple-rings of amber light on the floor grid that the Score’s stabilizers were struggling to smooth out. She didn't look like a technician; she looked like a high-gain signal trying to pass as a standard broadcast.
 
-"You're leaking, Taro," she whispered. She didn't point. She just tilted her head, her optical sensors locking onto his coordinates. 
+"You're leaking, Taro," she whispered. She didn't point. She just tilted her head, her optical sensors locking onto his coordinates.
 
 "The Score says I'm within parameters," he muttered, keeping his focus on the floor.
 
@@ -146,19 +192,51 @@ The subject pulled his arm back, his heart rate spiking to 125 BPM. "It's just o
 
 "No," she corrected, her voice dropping into a register that felt real, not rendered. "You're clipping because the world is too small for you. You're a high-fidelity signal in a low-bit cage. One day you’re going to peak, and I want to be the one who’s there to record it."
 
-
-> `NEURAL_TRAUMA: ACUTE [SOURCE: UNKNOWN]`
-> `DISSONANCE_DETECTED [CLASS: FATAL]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> NEURAL_TRAUMA: ACUTE [SOURCE: UNKNOWN]DISSONANCE_DETECTED [CLASS: FATAL]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject's visual feed flooded with red error states. A severe localized pressure spike impacted his frontal lobe. The system registered the dissonance as an unauthorized frequency tearing through standardized consciousness.
 
-> `PRIORITY_OVERRIDE: EMERGENCY_ACOUSTIC_EVENT_DETECTED [LOCAL_PROTOCOLS: SUSPENDED]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> PRIORITY_OVERRIDE: EMERGENCY_ACOUSTIC_EVENT_DETECTED [LOCAL_PROTOCOLS: SUSPENDED]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The atmospheric sensors recorded biological decay mapping directly onto the acoustic feed.
 
-> `SYSTEM_ALERT: COLLISION_TRAJECTORY [SUBJECT: UNKNOWN] [DISTANCE: 15m]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_ALERT: COLLISION_TRAJECTORY [SUBJECT: UNKNOWN] [DISTANCE: 15m]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The emergency doors at the far end of the hall breached.
+
+// [NOTE: Subject SATO_REMI operating on D-Major harmonic. Unfiltered.]
+// [NOTE: Subject NISHIMURA_TARO response signal: UNCLASSIFIABLE.]
+// [NOTE: Nearest known pattern: [NO MATCH]]
+// [NOTE: Possible classification: RESONANCE_RECOGNITION. Confidence: 12%.]
+// [NOTE: Filing under: PENDING_REVIEW. Priority: LOW.]
+// [NOTE: The system notes, without judgment, that it does not have a category for this.]
 
 
 ---
@@ -169,17 +247,6 @@ A G-Vanguard soldier stumbled into the chamber. His vocalizations were erratic.
 To the system, he was a cascade failure in progress.
 
 His structural integrity was pixelating, separating from his anchor coordinates in real-time. A standard bio-plasma field was absent. The unit projected a storm of black and purple interference. The chemical olfactory sensors registered burning polymers and ozone.
-
-<aside>
-<details>
-<summary><strong>SUBJECT: Bio-Plasma</strong></summary>
-<blockquote>
-<strong>Observation:</strong> The soft ionic glow that tells the world your soul is still in sync. It is the physical manifestation of biological energy converting into digital acoustic data, a visible metric of one's subservience to the Grid.
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
 
 The geometry of his flesh lagged behind his physical movement, smearing like a degraded video buffer. The carrier wave was fragmenting. Integrity hovered at forty-four percent. The subject experienced immediate vestibular rejection of the chaotic input. Biological desync was critical. The probability of a re-sync was zero.
 
@@ -196,7 +263,16 @@ His brain attempted to process the data. It was too fast. He was dropping frames
 
 The soldier collapsed in the center of the room. Seizure activity was detected. The Score port on his cervical spine emitted literal, unauthorized electrical arcing. The data shedding from the port was uncompiled code. The subject registered the metallic flavor of the unit's severe distress.
 
-> `UNFORMATTED_BURST: Help me. End it. Silence.`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> UNFORMATTED_BURST: Help me. End it. Silence.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The Calibration team deployed emergency stabilizers—heavy pylons designed to force a signal reset.
 
@@ -206,11 +282,29 @@ A blue containment field rendered. Local density briefly stabilized. It was insu
 
 The soldier produced a vocalization that triggered the microphone limiters in the subject's auditory processors.
 
-> `AUDIO_CLIPPING [PEAK_WARNING]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> AUDIO_CLIPPING [PEAK_WARNING]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject's damping bands reached ninety-five percent thermal limit.
 
-> `SYSTEM_ALERT: CONTAINMENT_BREACH_IMMINENT`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_ALERT: CONTAINMENT_BREACH_IMMINENT
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject's bio-plasma field was exceeding established safety caps.
 
@@ -223,12 +317,30 @@ The soldier’s field spiked. A wave of purple distortion radiated outward. Remi
 
 The projection indicated total data wipe for her node.
 
-> `EMOTIONAL_OVERRIDE: PARASYMPATHETIC_SURGE_DETECTED [SAFETY_HARDWARE: COMPROMISED]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> EMOTIONAL_OVERRIDE: PARASYMPATHETIC_SURGE_DETECTED [SAFETY_HARDWARE: COMPROMISED]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject's hand moved without conscious command.
 He reached out.
 
-> `LIMITER: REMOVED [STATUS: DESTROYED]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> LIMITER: REMOVED [STATUS: DESTROYED]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The three limiters on his wrist melted. The system observed them reach vaporization thresholds from the sheer data load.
 It felt like free-fall. A world where the rules of gravity had simply ceased to exist.
@@ -247,37 +359,33 @@ He did not scream. He did not shout. He pulsed.
 
 A vertical column of pure Gold data erupted from his coordinates. It was solid. Absolute. A sawtooth wave that overwrote the local Key Signature.
 
-<aside>
-<details>
-<summary><strong>SUBJECT: Key Signature</strong></summary>
-<blockquote>
-<strong>Observation:</strong> The dominant frequency protocol, currently locked in a rigid C Major that leaves no room for improvisation. It represents the mathematical cage that ensures social cohesion through enforced, absolute uniformity.
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
-
-<aside>
-<details>
-<summary><strong>SUBJECT: The Dead Zone</strong></summary>
-<blockquote>
-<strong>Observation:</strong> The Outer Ring residential sectors, where the Spires' signal grows thin and the world's original, messy frequency begins to seep through. Life here is slower, dirtier, and undeniably more human than the High-Fidelity core.
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
-
 The waves aligned in mathematically perfect constructive interference. The system registered the gain at +60dB. The amplitude peak completely bypassed his internal buffer limits. Four million joules of resonant energy were released in a single burst.
 
-> `LIMIT_ALERT: BASELINE: 440 Hz // CURRENT: 880 Hz // PHASE_DRIFT: 0.002`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> LIMIT_ALERT: BASELINE: 440 Hz // CURRENT: 880 Hz // PHASE_DRIFT: 0.002
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 For a localized duration of one frame, synchronization was achieved. The purple static aligned into a geometric structure.
 
 Then, the math failed.
 
-> `ERROR: INTEGER_OVERFLOW`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ERROR: INTEGER_OVERFLOW
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The numbers got too big. His brain couldn't render the magnitude. In the end, they were all just numbers, and sometimes the numbers decided they'd had enough.
 
@@ -286,15 +394,49 @@ The numbers got too big. His brain couldn't render the magnitude. In the end, th
 The soldier’s bio-plasma field did not dampen. It expanded past physical tolerances and terminated.
 The system recorded the cessation of all data output from the unit. The Score port went dark. The aura stopped rendering.
 
-> `TARGET: G-VANGUARD_UNIT [STATUS: NULL]`
-> `WARNING: SIGNAL_VOID`
-> `DAMPING: EXTERNAL_SOURCE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARGET: G-VANGUARD_UNIT [STATUS: NULL]WARNING: SIGNAL_VOIDDAMPING: EXTERNAL_SOURCE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-> `[NO DATA]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> [NO DATA]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-> `[NO DATA]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> [NO DATA]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-> `[NO DATA]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> [NO DATA]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject was still standing. The system recovered logging functions at [00:15:02].
 
@@ -302,8 +444,16 @@ His arm remained outstretched. Smoke rose from the evaporated bands holding his 
 
 His visual interface dropped frames.
 
-> `DIAGNOSTIC: BASELINE_ALTERED [RESONANT_IDENTITY: UNRECOGNIZED]`
-> `NEW_USER_ID: DETECTED [AUTHORITY: NULL]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> DIAGNOSTIC: BASELINE_ALTERED [RESONANT_IDENTITY: UNRECOGNIZED]NEW_USER_ID: DETECTED [AUTHORITY: NULL]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject examined his hand. To the system, its geometry had fundamentally altered.
 It was a flare of pure code. It was overwriting the local atmosphere.
@@ -318,17 +468,34 @@ Hovering in the augmented layer, a new symbol had rendered. It was not a Shield 
 
 It was a Crown.
 
-> `WARNING: VANGUARD_CLASS_DETECTED [HARMONIC_THREAT]`
-> `STATUS: HIGH_FIDELITY_THREAT`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: VANGUARD_CLASS_DETECTED [HARMONIC_THREAT]STATUS: HIGH_FIDELITY_THREAT
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The diagnostic text burned into his retinas.
 
 Then the feed terminated.
 
-> `SYSTEM_CRASH [UNRECOVERABLE]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_CRASH [UNRECOVERABLE]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 
 ---
 
 **> TRACK: 01_COMPLETE**
-**> SAVING...**
+**> **

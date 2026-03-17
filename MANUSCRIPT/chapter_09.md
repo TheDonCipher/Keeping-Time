@@ -4,9 +4,19 @@
 
 ---
 
-> [QUERY: WHAT IS THE SILENCE]
-> [RESULT: RECORD NOT FOUND]
-> [SUGGEST: DO NOT SEARCH FOR THIS]
+
+---
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> [QUERY: WHAT IS THE SILENCE][RESULT: RECORD NOT FOUND][SUGGEST: DO NOT SEARCH FOR THIS]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 **ZONE: [REDACTED_LOCATION]**
 **FIDELITY: UNKNOWN**
@@ -20,8 +30,16 @@
 Her vocal output was structurally thin. It was actively losing its authorized binary certainty.
 They had entered a redacted geographic zone. It was a physical location unindexed by the city's master grid architecture. Signal triangulation failed completely. Zero data packets were received. The localized environment was defined purely by total, aggressive acoustic absorption.
 
-> `ERROR: KERNEL_PANIC_IMMINENT`
-> `LINK: SEVERED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ERROR: KERNEL_PANIC_IMMINENTLINK: SEVERED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro's HUD system status flagged as critical. The threat parameter remained UNKNOWN, yet the physical danger registered as extreme.
 
@@ -32,15 +50,31 @@ The "Golden Filter" of the C-Order had not merely faded; it had suffered a catas
 
 Taro's optical buffer cleared entirely. The visual feed registered offline.
 
-> `GEOMETRY: UNINDEXED`
-> `NAV_MESH: NOT_FOUND`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> GEOMETRY: UNINDEXEDNAV_MESH: NOT_FOUND
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The phase drift coefficient approached 1.00. The signal floor bottomed out at a crushing -200 dB.
 
 He attempted to parse his own HUD output. It was a chaotic mess of tearing pixels and rapidly scrolling error syntax. The text strings were rendering in reverse.
 
-> `E_RROR... R_ETRY... K_ERNEL_P_ANIC...`
-> `[SYNTAX_UNKNOWN: 0xDEADBEEF]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> E_RROR... R_ETRY... K_ERNEL_P_ANIC...[SYNTAX_UNKNOWN: 0xDEADBEEF]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Ven remained stationary. He was not processing. He was grounding.
 His massive physical form acted as a primitive antenna, attempting to catch any stray packet of ambient data to stabilize the squad, but the void consumed every oscillation before it could reach his coordinates.
@@ -51,26 +85,30 @@ His massive physical form acted as a primitive antenna, attempting to catch any 
 
 The darkness was not an absence of light. It was an absence of code.
 
-> `SYSTEM: [REDACTED]`
-
-**> TRACK: 09_COMPLETE**
-**> SAVING...**
-
 <aside>
 <details>
-<summary><strong>SUBJECT: The Silence</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A black-ops resonant anomaly, a shadow in the system that consumes all signal and leaves only a hollow and absolute zero in its place. They are the antithesis of the Grand Concord's music, a hunting protocol designed to erase wrong notes entirely.
+<strong>Observation:</strong> SYSTEM: [REDACTED]
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
 
-> `[FIELD_TECHNICIAN_REPORT: SATO_REMI]`
-> `[PRIORITY: INTERNAL_ONLY]`
-> `Subject Taro’s baseline is continuing to fracture local logic. In Sector 0, his capacity registered as effectively infinite prior to grounding. The current loss of telemetry in Sector 4 is unprecedented. My equipment cannot parse the active void pursuing them. He is currently unindexed. I cannot triangulate his signal. I am maintaining observation protocols from the perimeter, but if they engage the null-entities, his current hardware is completely insufficient.`
-> `[END_REPORT]`
+**> TRACK: 09_CORRUPTED**
+**> DATA_LOSS: UNRECOVERABLE**
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> [FIELD_TECHNICIAN_REPORT: SATO_REMI][PRIORITY: INTERNAL_ONLY]Subject Taro’s baseline is continuing to fracture local logic. In Sector 0, his capacity registered as effectively infinite prior to grounding. The current loss of telemetry in Sector 4 is unprecedented. My equipment cannot parse the active void pursuing them. He is currently unindexed. I cannot triangulate his signal. I am maintaining observation protocols from the perimeter, but if they engage the null-entities, his current hardware is completely insufficient.[END_REPORT]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 He directed his manual digits toward his cervical region. He elevated the analog headphone unit over his auditory processors.
 
@@ -78,7 +116,16 @@ He directed his manual digits toward his cervical region. He elevated the analog
 
 The hardware bypass engaged successfully. The digital shrieking of his crashed Score port faded instantly. It was replaced by the warm, uncompressed, fuzzy silence of analog foam and braided copper wire.
 
-> `AUDIO_PROTOCOL: BYPASS`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> AUDIO_PROTOCOL: BYPASS
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro closed his ocular inputs. He initiated auditory scanning.
 Without the Score's active filtering, the physical world was dangerously, genuinely quiet. Yet, the archaic analog hardware successfully registered what the advanced System actively ignored.
@@ -91,16 +138,29 @@ No registered heart rate. No bio-plasma hum. Just mass engaged in kinetic motion
 
 Hana's targeting array failed. For 1.4 seconds, while her combat sub-routines rebooted, she queried the Score's recommended response protocols for unclassifiable threat events.
 
-> `QUERY: THREAT_RESPONSE — UNCLASSIFIED_ENTITY`
-> `RESULT: NO TACTICAL DATA`
-> `REDIRECTING TO: WELLNESS_PROTOCOL_DATABASE`
-> `RECOMMENDED RESPONSE: STEP 1/4 — ACKNOWLEDGE YOUR FEELINGS`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> QUERY: THREAT_RESPONSE — UNCLASSIFIED_ENTITYRESULT: NO TACTICAL DATAREDIRECTING TO: WELLNESS_PROTOCOL_DATABASERECOMMENDED RESPONSE: STEP 1/4 — ACKNOWLEDGE YOUR FEELINGS
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 She read Step 1. She read Step 2. Step 3 was: *Offer a relevant motivational statement.*
 
-> `STEP 3/4 — SUGGESTED STATEMENT:`
-> `"You are not broken. You are running at a non-standard frequency. This is correctable."`
-> `— C-Order Wellness Division, Vol. I §3.2`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> STEP 3/4 — SUGGESTED STATEMENT:"You are not broken. You are running at a non-standard frequency. This is correctable."— C-Order Wellness Division, Vol. I §3.2
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 She closed the protocol. Combat sub-routines restored.
 
@@ -113,9 +173,16 @@ She closed the protocol. Combat sub-routines restored.
 From the un-rendered upper elevation, three physical shapes dropped into the combat radius.
 They emitted no luminescence. They broadcast no authorized C-Order ID tags. They were clad in matte-black material engineered to absorb precisely 100% of visible light. They moved as literal holes in the reality structure.
 
-> `TARGET_ANALYSIS: FAILED`
-> `CLASSIFICATION: NULL`
-> `SCORE_UNITS: 0`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARGET_ANALYSIS: FAILEDCLASSIFICATION: NULLSCORE_UNITS: 0
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 They impacted the ground floor with zero acoustic return. No "thud." Just an unnatural absence of kinetic impact data. The acoustic energy of their mass transfer was swallowed instantaneously by the surrounding void.
 
@@ -137,18 +204,14 @@ The blue light impacted the blade and vanished completely—consumed by the acti
 
 <aside>
 <details>
-<summary><strong>SUBJECT: Null-Blade</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A handheld resonance sink, a tool of the void that drinks the world's music and leaves only a cold and hollow silence. It does not cut flesh; it functionally severs the target's connection to the localized reality grid.
+<strong>Observation:</strong> ATTACK: NULLIFIEDCORE_VOLTAGE: DROPPINGEFFICIENCY: 12% [CRITICAL_DRAIN]
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
-
-> `ATTACK: NULLIFIED`
-> `CORE_VOLTAGE: DROPPING`
-> `EFFICIENCY: 12% [CRITICAL_DRAIN]`
 
 Hana gasped, executing an involuntary collapse to her knees. She grasped her chest plating. "My core... it’s losing voltage..."
 
@@ -165,7 +228,16 @@ He retrieved a loose brick from the crumbling physical wall. It was a primitive 
 
 He generated a High Register pulse within his chest cavity, but he actively chose not to project the wave. He constrained it, internalizing the destructive vibration for a direct kinetic transfer.
 
-> `OVERRIDE_MODE: VIBRATION_ONLY`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> OVERRIDE_MODE: VIBRATION_ONLY
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 He threw the brick.
 He did not target the agent. He targeted the structural wall directly behind the entity's coordinates.
@@ -179,9 +251,16 @@ Crucially, it was not an authorized bio-plasma wave. It was unrefined kinetic no
 The agent physically flinched.
 For a single microsecond, the active void in their localized data cracked. The agent shifted focus toward the analog sound source. The surrounding Silence Field experienced a measurable fluctuation.
 
-> `VULNERABILITY_DETECTED`
-> `INTERFERENCE_POINT: IDENTIFIED`
-> `PROBABILITY_SUCCESS: 85%`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> VULNERABILITY_DETECTEDINTERFERENCE_POINT: IDENTIFIEDPROBABILITY_SUCCESS: 85%
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Ven!" Taro shouted. "Hit the pipe! Total analog strike! Dump your heat into the steel!"
 

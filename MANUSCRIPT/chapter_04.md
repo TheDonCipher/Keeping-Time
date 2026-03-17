@@ -4,26 +4,30 @@
 
 ---
 
-> We've updated our Terms of Resonance. Key changes include:
-> • Expanded definition of "ambient dissonance" (§4.1)
-> • New community feature: Resonance Gifting (send a friend a calibration! 🎵)
-> • Improved collar calibration transparency (§6.2)
-> • Updated enforcement escalation schedule (§7.4)
-> • Clarification of public resonance etiquette (§8.1)
-> • Revised definitions of "voluntary" sync events (§8.9)
-> • New reporting tools for off-tone community members (§9.3)
-> • Expanded Conductor administrative access (§9.5)
-> • Streamlined appeals process (§9.6 — *note: appeals process removed in §9.6*)
-> • Updated data retention policy for neural-acoustic logs (§10.1)
-> • Minor UI improvements to the compliance dashboard
-> • Clarification of collar escalation thresholds (§11.7)
-> • Wellness notification frequency adjustment (§12.0)
-> • New auto-renewal terms for Grand Concord citizenship (§13.3)
-> • Grammatical corrections throughout
-> • Removal of the opt-out process for neural sync (§14.4)
-> • Minor bug fixes
-> By continuing to exist within the Grand Concord, you agree to these terms.
-> — *C-Order Legal Division, effective immediately upon reading*
+
+---
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> We've updated our Terms of Resonance. Key changes include:• Expanded definition of "ambient dissonance" (§4.1)• New community feature: Resonance Gifting (send a friend a calibration! 🎵)• Improved collar calibration transparency (§6.2)• Updated enforcement escalation schedule (§7.4)• Clarification of public resonance etiquette (§8.1)• Revised definitions of "voluntary" sync events (§8.9)• New reporting tools for off-tone community members (§9.3)• Expanded Conductor administrative access (§9.5)• Streamlined appeals process (§9.6 — note: appeals process removed in §9.6)• Updated data retention policy for neural-acoustic logs (§10.1)• Minor UI improvements to the compliance dashboard• Clarification of collar escalation thresholds (§11.7)• Wellness notification frequency adjustment (§12.0)• New auto-renewal terms for Grand Concord citizenship (§13.3)• Grammatical corrections throughout• Removal of the opt-out process for neural sync (§14.4)• Minor bug fixesBy continuing to exist within the Grand Concord, you agree to these terms.
+<br><br>
+<strong>—C-Order Legal Division, effective immediately upon reading</strong>
+</blockquote>
+</details>
+</aside>
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TERMS_ACCEPTED: AUTOMATICALLY METHOD: CONTINUED_BIOLOGICAL_OPERATION TIMESTAMP: [YOUR_CURRENT_MOMENT] OPT-OUT: SEE §14.4 §14.4: OPT-OUT_PROCESS: REMOVED HAVE A PRODUCTIVE DAY.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 **ZONE: MALKUTH ACADEMY INTAKE**
 **FIDELITY: HI-FI [RENDER: 8K]**
@@ -36,23 +40,45 @@ The environmental data at Malkuth Academy did not merely register as clean. It r
 
 Global phase alignment restored.
 
-> `STATUS: CONNECTED`
-> `ENCRYPTION: AES-RES-256`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> STATUS: CONNECTEDENCRYPTION: AES-RES-256
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 He stepped off the transport skiff. The transition impacted his neural architecture as a localized, high-density physical collision. His Score port engaged a hard-lock protocol, prioritizing local environmental synchronization over internal pacing.
 
-> `PROTOCOL_SYNC: ACCEPTED`
-> `CAPACITY: 100 TB/s`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> PROTOCOL_SYNC: ACCEPTEDCAPACITY: 100 TB/s
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The local resolution shifted to ultra-high capacity, flooding the subject's processing centers.
 
 The Academy courtyard was an installation of aggressive perfection.
 It was mathematically exact. Unyielding.
 
-> `ROUTINE_AUDIT: COMPLIANCE_CHECK_ACTIVE`
-> `SUBJECT_0492: POSTURE_CORRECTION_APPLIED [-2 MERITS]`
-> `SUBJECT_1044: VOCAL_DAMPING_ENGAGED [EXCESS_VOLUME]`
-> `SECTOR_AVERAGE_SYNC: 99.8%`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ROUTINE_AUDIT: COMPLIANCE_CHECK_ACTIVESUBJECT_0492: POSTURE_CORRECTION_APPLIED [-2 MERITS]SUBJECT_1044: VOCAL_DAMPING_ENGAGED [EXCESS_VOLUME]SECTOR_AVERAGE_SYNC: 99.8%
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 It was a standard Tuesday in the Grand Concord. The physical enforcement of systemic order operated invisibly and relentlessly. Students adjusted their gait to match the grid's tempo without conscious thought. A minor infraction resulted in a localized haptic correction—a sharp sting to the cervical port followed by a forced deduction in social bandwidth. They called it 'frictionless society.' It was the frictionless silence of a vacuum.
 
@@ -63,7 +89,16 @@ In Malkuth Academy, clarity was an operational requirement.
 
 The ambient baseline locked at A-440 Standard. Subject jitter zeroed. Total signal integrity registered as absolute.
 
-> `SIGNAL_LOSS: 0.00%`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SIGNAL_LOSS: 0.00%
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The subject turned. The student managing the intake terminal exhibited an intimidating resonance signature.
 
@@ -71,20 +106,18 @@ Her waveform was a rigid square wave. The rise-time was instantaneous, entirely 
 
 It cut through the ambient air with the efficiency of a razor blade.
 
+"Name?" she repeated. The waveform of her vocal output drew a perfectly flat line.
+
 <aside>
 <details>
-<summary><strong>SUBJECT: Square Wave</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A binary waveform where transitions between states occur with zero drift, leaving no room for nuance. It represents the Vanguard's ideal soldier: brutally efficient, utterly predictable, and rigidly adherent to the grid.
+<strong>Observation:</strong> SYNC: FAILED [IMPEDANCE_MISMATCH]
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
-
-"Name?" she repeated. The waveform of her vocal output drew a perfectly flat line.
-
-> `SYNC: FAILED [IMPEDANCE_MISMATCH]`
 
 "Analysis: You are late," she said. "Intake closed at 0800. It is 0803. If/Then: If you are not inside by 0800, then you are a system error. Stay flat, Anomaly. You're humming."
 
@@ -106,24 +139,59 @@ The primary transit corridor was operating at peak threshold. To unindexed optic
 
 Among the rendering interference, Taro's gaze caught on a sharp visual contradiction. A cadet moving flawlessly against the dominant current. She possessed a severe, unadorned optical signature, but what caused the impedance mismatch was the object slung across her back—a massive, analog cello case. It was scuffed, deeply unauthorized, and completely unindexed. It cast no digital shadow. She shifted it higher on her shoulder and merged into the architecture before the Score could fully scan it.
 
-> `ANOMALY_TRACKING: UNINDEXED_ITEM [LOST_CONTACT]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ANOMALY_TRACKING: UNINDEXED_ITEM [LOST_CONTACT]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The Academy referred to this density as a Harmonic Storm. The aggregate signal load from hundreds of High-Fidelity users simultaneously exceeded the local processing buffer.
 
 The subject's internal pressure spiked. The resonant data-streams of the student body hit peak amplitude. The subject stumbled. His visual telemetry began to artifact—pixelated green geometric anomalies corrupting the edges of his rendered reality. The rapid succession of social pulses impacted him with kinetic force. His respiratory cycle locked.
 
-> `SYSTEM_WARNING: BUFFER_OVERFLOW`
-> `VITAL_CAPACITY: MAXIMUM`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_WARNING: BUFFER_OVERFLOWVITAL_CAPACITY: MAXIMUM
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Link requests, status queries, and localized ambient data collided with his aura. The surrounding nodes immediately flagged his signature as a high-fidelity risk. The pressure of so many perfect signals threatened to crush his erratic wave into nothingness.
 
 The subject executed voluntary eyelid closure.
 
-> `COMMAND: DISABLE_VIDEO_LAYER`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> COMMAND: DISABLE_VIDEO_LAYER
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The visual data stream suspended. The subject's neural focus redirected to the raw acoustic signal, relying on an enhanced processing feed that bypassed standard filtering protocols.
 
-> `SIGNAL_OVERRIDE: RAW_ACOUSTIC`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SIGNAL_OVERRIDE: RAW_ACOUSTIC
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The environmental rendering went black.
 And then... the structure opened up.
@@ -140,7 +208,16 @@ His physical movement smoothed.
 
 They entered the primary Lecture Hall.
 
-> `ADMIN_LOGIN: DETECTED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ADMIN_LOGIN: DETECTED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Root-level authorization confirmed. An environmental override seized priority over all local systems. The HUD identified the source as Headmaster Kael Unison. Absolute authority. Permissions unrestricted.
 
@@ -148,30 +225,46 @@ A single pulse propagated through the hall.
 
 *THUMP.*
 
-> `ACOUSTIC_MASS: INFINITE`
-
-It wasn't loud. It possessed immense acoustic density.
-
-"Welcome," the Headmaster said. The textual data rendered in the subject's mind identically and simultaneously with the auditory impact.
-
-> `LATENCY: 0.0ms`
-
-"You have entered the Medium," the Headmaster said. His voice didn't propagate through the air; it initialized directly in their processing buffers. "Here... you are Architects. You do not consume signal. You define the **Physics of the Intent.**"
-
 <aside>
 <details>
-<summary><strong>SUBJECT: Architects</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> Users with direct reality-editing permissions. They don't just perceive the Score; they actively write the physical equations of the environment, shaping concrete and steel through pure acoustic mathematics.
+<strong>Observation:</strong> ACOUSTIC_MASS: INFINITE
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
 
+It wasn't loud. It possessed immense acoustic density.
+
+"Welcome," the Headmaster said. The textual data rendered in the subject's mind identically and simultaneously with the auditory impact.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> LATENCY: 0.0ms
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+"You have entered the Medium," the Headmaster said. His voice didn't propagate through the air; it initialized directly in their processing buffers. "Here... you are Architects. You do not consume signal. You define the **Physics of the Intent.**"
+
 The Headmaster raised his hand. The entire structural Score of the room shifted.
 
-> `SCORE_PHYSICS: LOCAL_OVERRIDE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SCORE_PHYSICS: LOCAL_OVERRIDE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 A root-level modification of the environmental parameters executed. The gravitational downbeat rotated precisely ninety degrees. The physical sensation in the room fundamentally changed.
 
@@ -183,14 +276,32 @@ Not an object. An interface.
 
 A cadet acting as demonstration assistant attempted to replicate the sequence. The math faltered. The air rippled with a dull, red error state as the cadet’s signal collapsed back into standard baseline physics. The Headmaster did not acknowledge the failure.
 
-> `EVENT_LOG: REPLICATION_FAILURE [STUDENT_ID: 884] [EXPECTED_OUTCOME]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> EVENT_LOG: REPLICATION_FAILURE [STUDENT_ID: 884] [EXPECTED_OUTCOME]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "A cursor," Taro breathed. A flickering singularity in the grid, where his intent was already beginning to resolve into the room's new physics.
 
-> `SYSTEM: READY`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM: READY
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 
 ---
 
 **> TRACK: 04_COMPLETE**
-**> SAVING...**
+**> **

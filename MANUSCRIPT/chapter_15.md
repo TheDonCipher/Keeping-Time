@@ -5,6 +5,7 @@
 ---
 
 
+---
 
 **ZONE: MALKUTH ACADEMY [PRACTICE_ANNEX]**
 **FIDELITY: MAXIMUM [RESTRICTED_ACCESS]**
@@ -28,11 +29,27 @@ The texture map snapped. For a microsecond, his face didn't just change; it un-r
 
 The Cadet Taro Hull *(The AR social skin that the world sees—a polished, stable major chord of flesh designed to hide the dissonance underneath.)* was mathematically symmetrical, structurally solid, acoustically harmonious. The true wireframe executing underneath was severely jagged, highly asymmetrical, definitively splintered. A mathematically dissonant chord aggressively struggling to break free of containment.
 
-> `WARNING: HULL_INTEGRITY_COMPROMISED`
-> `TARO_METRICS: SDI 0.14 // HIQ 0.12`
-> `[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: HULL_INTEGRITY_COMPROMISEDTARO_METRICS: SDI 0.14 // HIQ 0.12[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-> `BIOMETRIC: HEART_RATE [110 BPM]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> BIOMETRIC: HEART_RATE [110 BPM]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro gasped, executing a manual application of cold fluid to his facial sensors.
 
@@ -74,13 +91,46 @@ Kimura's optical sensors expanded. The aggressive anger parameters drained compl
 
 For the first time since the system reboot, the constant, oppressive noise within Taro's core logic went perfectly quiet.
 
-> `SYSTEM_NOTIFICATION: RESONANCE_SYNC_CONFIRMED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SYSTEM_NOTIFICATION: RESONANCE_SYNC_CONFIRMED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The masking protocol was temporarily offline. Internal signals were exposed in a raw, beautifully unfiltered acoustic data stream.
 
-> `SIGNAL_STATUS: UNFILTERED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SIGNAL_STATUS: UNFILTERED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Two definitively wrong notes executing within a perfect machine. And for a brief, flickering microsecond, their waveforms were entirely in phase.
+
+For 0.7 seconds, walking between buildings earlier that cycle, Taro had registered an unfiled audio pattern in his peripheral processing. Five notes. Cycling. Sourceless.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> AUDIO_CLASSIFICATION: PROCESSING... AUDIO_CLASSIFICATION: [NO RESULT] SOURCE: INTERNAL_BUFFER [UNRESOLVED] STATUS: PURGED COLLAR_RESPONSE: +3% DAMPING [APPLIED]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+Gone. He had not been thinking about anything in particular. He had resumed his route. He did not log the incident. There was nothing to log.
 
 
 ---

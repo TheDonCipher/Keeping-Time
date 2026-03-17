@@ -5,6 +5,7 @@
 ---
 
 
+---
 
 **ZONE: SUB-BASS LEVELS [UNINDEXED]**
 **FIDELITY: NULL [RAW_DATA]**
@@ -17,19 +18,44 @@ The mechanical elevator descended physically past the city's foundational roots.
 
 The verified system time returned 23:45:00. The local grid status flagged fully offline as they penetrated the highly restricted zone. Taro's HUD flared with mandatory administrative warnings—actively leaving network coverage, global sync metrics plummeting toward absolute zero percent.
 
-> `LOCATION_LOG: Floor -10: Maintenance`
-> `LOCATION_LOG: Floor -20: Waste Reclamation`
-> `LOCATION_LOG: Floor -30: Geothermal Tap`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> LOCATION_LOG: Floor -10: MaintenanceLOCATION_LOG: Floor -20: Waste ReclamationLOCATION_LOG: Floor -30: Geothermal Tap
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro observed perfectly as his signal strength telemetry dropped bar by bar, eighty-five percent of his connection capacity already lost to the architectural depths.
 
-> `NETWORK_STRENGTH: [|||||] ... [|||..] ... [|....]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> NETWORK_STRENGTH: [|||||] ... [|||..] ... [|....]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 When the last telemetry bar flickered and died, the world didn't go quiet—it went heavy.
 
 The C-Order’s carrier wave, that constant, high-frequency scream that tells every citizen how to feel and where to walk, simply... evaporated. In its place was a silence so thick it felt like physical mass. It was the sound of a universe that didn't care to be rendered. Analog. Unoptimized. Honest.
 
-> `CONNECTION_LOST: PLEASE_STAND_BY`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> CONNECTION_LOST: PLEASE_STAND_BY
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The physical elevator doors groaned open. The atmospheric air in this unauthorized sector was undeniably thick, molecularly smelling of unrefined ozone and heavily degraded coolant fluid.
 
@@ -46,8 +72,16 @@ At the conclusion of the tunnel, they encountered a heavy physical blast door. I
 Elara applied rotational force. The door creaked open.
 Internal sensors immediately detected an unregistered frequency cluster. The ambient acoustic pressure hitting an extreme 120dB of non-standard, un-rendered chaos. 4,200 Score Units generated in a single instant.
 
-> `TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99`
-> `PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The un-rendered sound impacted their physical forms like a kinetic wave vector.
 
@@ -83,13 +117,40 @@ The "Tank" hull—that massive, white-and-gold lie of a soldier—didn't just gl
 
 From the debris rose the real Elara. She wasn't a skeleton; she was a miracle of high-gain architecture. Built of neon-blue glass and raw, pulsating starlight, she stood in the center of the dark like a living treble clef. She was a frequency spike made manifest, too fast and too sharp for any standard monitor to catch.
 
-It was not merely a skeletal mesh anymore. In the entirely signal-free atmospheric air of the Null, her true texture map fully loaded. Elara was mathematically radiant. She was constructed of neon-blue glass and raw starlight data. Her true form was remarkably slender, exceptionally sharp, and terrifyingly fast-processing. She moved like a pure frequency spike, a living treble clef physically slicing through the heavy, un-rendered air.
+
+The room, which had been moving continuously, went still for exactly one beat — 170 BPM, held — as if the music itself needed a moment to register what it was looking at.
 
 She executed a laugh sequence—an acoustic output registering like glass chimes in a high-velocity windstorm—and initiated a rapid spin, her cello instrument materializing instantaneously from pure, uncompressed data located in her hands. She drew the bow geometry across the strings, and the resulting sound flawlessly joined the chaotic, unauthorized symphony of the club environment.
 
 It was not merely music. It was un-rendered existence.
 
 Subject Taro maintained his position, successfully identifying himself as the only "Normal," fully optimized asset operating in a room densely populated by unindexed monsters and rogue gods. The compliance patch installed on his neck registered physically cold.
+
+He touched the dead collar.
+
+
+Not the active one — the one Voss had installed, its regulation frequency humming its administered calm. That was gone now, destroyed, the damping field offline. He was touching the inert ring of plastic and copper that was all that remained of it. Cold. Lifeless. The temperature of a thing that has stopped pretending to be important.
+
+
+Around him: a woman made of storm cloud electricity. A man whose avatar was non-Euclidean geometry. A wedding being performed at 170 BPM by a priest who blessed through heartbeat synchronisation. People who had decided that the Score's classification of them as errors was the Score's problem, not theirs.
+
+
+His mother had been running sharp too. She had burned so bright she couldn't hold her form. The system had logged her as FILE_CORRUPTED and moved on.
+
+
+She had not moved on. She had encoded the exit frequency in a song and hidden it in hardware the system couldn't index and sent it forward in time to the son who would need it.
+
+
+The five notes surfaced once, in the analog air of the Null, where no system could sample them.
+
+
+He thought: *I know what I am.*
+
+
+He thought: *I am the wrong note they cannot delete.*
+
+
+He thought: *Good.*
 
 "Your turn, unqualified asset!"
 
@@ -108,13 +169,29 @@ He locked his dental structure entirely and pushed output to maximum.
 
 Immediately, the compliance collar around his cervical region initiated an emergency wake sequence.
 
-> `WARNING: UNAUTHORIZED_OSCILLATION_DETECTED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: UNAUTHORIZED_OSCILLATION_DETECTED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 A correctional electrical discharge was initiated, the local system delivering a maximum-level localized shock therapy of exactly 150V.
 
-> `TARO_METRICS: SDI 0.98 // HIQ 0.95`
-> `PHASE_DRIFT: 0.12`
-> `SCORE_UNITS: 140 SU`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS: SDI 0.98 // HIQ 0.95PHASE_DRIFT: 0.12SCORE_UNITS: 140 SU
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 *ZAP.*
 
@@ -130,13 +207,31 @@ It hissed. It registered as aggressively hungry. Taro felt the un-rendered Void 
 
 It drank the applied electricity. It completely swallowed the localized shock.
 
-> `CRITICAL_ERROR: ENERGY_DRAIN_DETECTED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> CRITICAL_ERROR: ENERGY_DRAIN_DETECTED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 An internal energy sink was actively absorbing the correctional discharge, causing the external load to fail completely.
 
 The physical collar emitted a high-pitched mechanical whine, then permanently died with a sharp acoustic click.
 
-> `LIMITER: OFFLINE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> LIMITER: OFFLINE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro assumed a standing position. The pain variable returned to zero. The only remaining output was the silence.
 
@@ -188,10 +283,16 @@ The field technician was thirty meters down the maintenance tunnel, positioned j
 
 Her instruments caught the acoustic event when Taro's limiter failed. The collar discharge. The silence that followed. The sound of 4,200 watts of un-rendered output absorbed into a single biological mass without propagating outward into the grid. She ran the analysis four times. Each time the instruments returned the same classification:
 
-> `SIGNAL_TYPE: [UNREGISTERED]`
-> `MATCH: NULL`
-> `NEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]`
-> `CONFIDENCE: 4%`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SIGNAL_TYPE: [UNREGISTERED]MATCH: NULLNEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]CONFIDENCE: 4%
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 She did not act on the 4%. She didn't report the 4,200 watts of un-rendered truth she’d just witnessed.
 
@@ -200,7 +301,6 @@ In the paper notebook. With the pencil. In an analog record that the Score could
 She closed the notebook and tucked the pencil into her hair. She re-entered the grid’s standard function, her face resetting into a mask of compliant boredom. She would file the official log in the morning. She would report that the Sector was quiet. She would round every anomalous spike, every beautiful ripple, and every trace of Taro’s real name down to an absolute, un-auditable zero.
 
 Because the system didn't deserve to know how bright he really was.
-
 
 **> SYSTEM_STATUS: [SYSTEM COMPROMISED. LOGGING RESIDUAL]**
 **> ----------------------------------------------------**
@@ -215,7 +315,16 @@ Taro elevated his appendage and made physical contact with the dead collar hardw
 
 His processing cycles modeled the apartment coordinates in Sector 7. The red administrative text previously active on his HUD.
 
-> `THREAT_LEVEL: ELEVATED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> THREAT_LEVEL: ELEVATED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Proximity lock established, directly targeting the exact physical location he categorized as home.
 

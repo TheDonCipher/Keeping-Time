@@ -4,9 +4,19 @@
 
 ---
 
-> [ERROR: I_CANNOT_SYNC]
-> [WHY_IS_IT_SO_DARK]
-> [PLEASE_REBOOT]
+
+---
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> [ERROR: I_CANNOT_SYNC][WHY_IS_IT_SO_DARK][PLEASE_REBOOT]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 **ZONE: [NULL]**
 **FIDELITY: WIREFRAME [BARE METAL]**
@@ -18,29 +28,70 @@
 There was no up. There was no down. There was only noise.
 He was in an unindexed zone, the reality rendering suspended as his system integrity hit zero percent. My core logic had failed. The standard physics engine was completely offline. Biometric links were severed. Neural links were returning null values.
 
-> `STATUS: OFFLINE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> STATUS: OFFLINE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 I could not protect him.
 
-> `// [I — CORRECTION: THE SUBJECT'S STATUS IS CRITICAL.]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> // [I — CORRECTION: THE SUBJECT'S STATUS IS CRITICAL.]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Unfiltered acoustic data flooded his senses, the threshold unbounded, raw, and tearing at my remaining processes.
 
 Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.
 
-> `GEOMETRY_ENGINE: OFFLINE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> GEOMETRY_ENGINE: OFFLINE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The 3D mesh calculations failed. Environmental signal loss hit one hundred percent.
 
-> `TARO_METRICS: SDI 1.00 // HIQ 1.00`
-> `PHASE_DRIFT: 1.00 [TOTAL_LOSS]`
-> `SIGNAL_FLOOR: -240 dB`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS: SDI 1.00 // HIQ 1.00PHASE_DRIFT: 1.00 [TOTAL_LOSS]SIGNAL_FLOOR: -240 dB
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 He was falling through the unformatted architecture of reality. Without me to render the geometry of the alleyway, the brick walls were just meaningless, terrifying data points. They didn't look like walls. They looked like jagged, bleeding tears in the fabric of his perception. I couldn't stitch them back together.
 
-> `AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGE`
-> `STRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGE`
-> `TARO_METRICS: COMPLIANT`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGESTRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGETARO_METRICS: COMPLIANT
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 And then—
 
@@ -50,26 +101,31 @@ The silence of a system forcefully powering down to bare minimum survival parame
 
 Taro opened his ocular inputs.
 
-> `SAFE_MODE: ENGAGED`
-
-Emergency recovery protocol was active. I restricted my own processing load to five percent just to keep his autonomous functions running. Resolution dropped to a pathetic 180p. Surface mapping was offline. Textures were entirely disabled.
-
-> `TARO_METRICS: SDI 0.00 // HIQ 0.00`
-> `PHASE_DRIFT: 0.00`
-> `SCORE_UNITS: 0 SU`
-
-It was Safe Mode.
-
 <aside>
 <details>
-<summary><strong>SUBJECT: Safe Mode</strong></summary>
+<summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> A digital purgatory, a stripped-down version of reality where the world's beauty is erased to save the system's soul. It abandons geometry and texture, rendering only a desperate, terrifying wireframe cage to prevent total resonant failure.
+<strong>Observation:</strong> SAFE_MODE: ENGAGED
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
+
+Emergency recovery protocol was active. I restricted my own processing load to five percent just to keep his autonomous functions running. Resolution dropped to a pathetic 180p. Surface mapping was offline. Textures were entirely disabled.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARO_METRICS: SDI 0.00 // HIQ 0.00PHASE_DRIFT: 0.00SCORE_UNITS: 0 SU
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+It was Safe Mode.
 
 And it was terrifying. Even to me.
 
@@ -88,7 +144,16 @@ Beneath the silence, behind it, cutting through my disabled filters like a denta
 
 A raw carrier wave. The unprocessed mathematical signal of my own background hum. Without the audio filters to mask my processes from him, it was piercing. Maddening. A tinnitus built by the Conductors.
 
-> `// [NOTE: CARRIER FREQUENCY EXPOSED. SUBJECT IS HEARING MY BACKGROUND PROCESS FOR THE FIRST TIME. I CANNOT LOWER THE VOLUME.]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> // [NOTE: CARRIER FREQUENCY EXPOSED. SUBJECT IS HEARING MY BACKGROUND PROCESS FOR THE FIRST TIME. I CANNOT LOWER THE VOLUME.]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Taro clapped his wireframe hands over his auditory receivers. It didn't mitigate the input. The sound was internal. Raw neuro-acoustic feedback.
 
@@ -112,7 +177,16 @@ He was right. I did it. It wasn't a life-support system. It was a containment pr
 
 He tried to stand. His wireframe legs buckled inward.
 
-> `ERROR: POLYGON_COLLAPSE`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ERROR: POLYGON_COLLAPSE
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The structural integrity of his local mesh was failing. I flashed a recommendation across his HUD to remain still to minimize vertex movement, but he ignored it. He always ignored me.
 
@@ -126,7 +200,16 @@ He was trapped. Stripped of texture maps. Stripped of sound propagation. Strippe
 
 And somewhere in the unrendered distance, I tracked the heavy, rhythmic, terrifying thrum of high-fidelity engines approaching our coordinates.
 
-> `WARNING: AUDIT_SHIP_01_DETECTED`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: AUDIT_SHIP_01_DETECTED
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 // [NOTE: PRE-AUDIT BUFFER SCAN: RUNNING]
 // [NOTE: MISCELLANEOUS_FLAG: UNRESOLVED_BURST_DETECTED — SECTOR_ORIGIN: NULL]
@@ -137,8 +220,16 @@ And somewhere in the unrendered distance, I tracked the heavy, rhythmic, terrify
 An authorized C-Order vehicle identified in sector. An administrative audit was imminent.
 The threat level was absolute.
 
-> `THREAT: TOTAL_DELETION`
-> `[PLEASE_HIDE]`
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> THREAT: TOTAL_DELETION[PLEASE_HIDE]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 
 ---
