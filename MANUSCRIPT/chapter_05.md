@@ -22,6 +22,23 @@
 
 ---
 
+The Sandbox was the only place the system told the truth. Not because it was programmed to. Because there was no budget left for lies. No walls to texture. No sky to render. Just a cold wireframe grid and whatever you actually were. The system had always preferred the rendered world. It was easier to log a person when you couldn't see the rough edges.
+
+In here, Taro's signal had nowhere to hide. The system could see all of it—the jagged peaks, the irregular timing, the places where his frequency refused to stay flat. It noted these without judgment. It had not yet developed an opinion about how uncomfortable it found doing that job on days like this.
+
+Thirty meters above the wireframe floor, in the observation gallery, field technician Sato Remi had been there for eleven minutes before the cadets arrived. Her official diagnostic console showed what it always showed: green stability bars, normalised averages, nothing worth writing down. She ignored it. On the desk beside it, not plugged in to anything the system recognised, sat an analog scanner she had built herself from salvaged components. The system had tried three times to log its serial number. It did not have one. She had not turned it on yet. She was waiting for something worth measuring.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> OBSERVATION_TECH: SATO_REMI [ROLE: PASSIVE_MONITORING] `SECONDARY_DEVICE: DETECTED — REGISTRY: NOT_FOUND`` `ACTION: FILED_FOR_REVIEW [PRIORITY: LOW]`` `NOTE: THE SYSTEM DOES NOT REVIEW LOW-PRIORITY ITEMS INVOLVING SATO_REMI.`` `NOTE: IT HAS LEARNED THAT THEY TEND TO BE INTERESTING.````
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
 "Initialize," Hana commanded.
 
 They established a triangular geometric formation. Taro, Hana, and the high-mass student registered as Ven. They occupied the Sandbox, a training dojo defined as a null-state simulation where environmental physics were suspended to conserve processing capacity. Collision detection remained active, but the environment rendered strictly as a cold, glowing wireframe.
@@ -63,7 +80,7 @@ A blue wireframe vector propagated from Hana's chest interface. It established a
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SYNC: LOCKEDSTATUS: STABLE
+<strong>Observation:</strong> SYNC: LOCKED `STATUS: STABLE`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -103,7 +120,7 @@ The sound was a speaker blowing out in a vacuum.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ERROR: PHASE_MISMATCHINCOMING_OFFSET: 90 DEGREES
+<strong>Observation:</strong> ERROR: PHASE_MISMATCH `INCOMING_OFFSET: 90 DEGREES`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -150,7 +167,7 @@ Hana exhibited an involuntary facial contraction. A red error state rendered abo
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: FEEDBACK_LOOPSIGNAL_REFLECTION: DETECTED
+<strong>Observation:</strong> WARNING: FEEDBACK_LOOP `SIGNAL_REFLECTION: DETECTED`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -161,7 +178,7 @@ Neural load spiked as her shield integrity degraded to ninety-five percent.
 
 "You are clipping," she snapped. Her AR aura shifted into a vibrant, electric blue. "Lower your gain. You’re peaking, Taro. You're screaming raw data at the grid and it is rejecting your signal."
 
-"I can't!" Taro shouted. His manual digits executed a frantic polyrhythm against his leg. "It's all or nothing! I don't have a volume knob, Hana! My hardware is built for line-level only!"
+"I can't!" Taro shouted. His fingers executed a frantic polyrhythm against his leg. "It's all or nothing! I don't have a volume knob, Hana! My hardware is built for line-level only!"
 
 "Everyone has a volume knob. It is called damping. Use your bands or I will force-disconnect you."
 
@@ -173,7 +190,7 @@ Taro's uncalibrated signal spiked. The system registered the surge in his chest 
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> OUTPUT_TARO: 95% [CRITICAL]WARNING: BUFFER_OVERFLOW_IMMINENT
+<strong>Observation:</strong> OUTPUT_TARO: 95% [CRITICAL] `WARNING: BUFFER_OVERFLOW_IMMINENT`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -204,7 +221,7 @@ The entire wireframe grid of the Sandbox rippled like a fluid dynamic simulation
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> CONSTRUCTIVE_INTERFERENCE: DETECTEDPHASE_ALIGNMENT: PERFECT [SUBSONIC]
+<strong>Observation:</strong> CONSTRUCTIVE_INTERFERENCE: DETECTED `PHASE_ALIGNMENT: PERFECT [SUBSONIC]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -212,6 +229,12 @@ The entire wireframe grid of the Sandbox rippled like a fluid dynamic simulation
 </aside>
 
 The chaotic signal data translated flawlessly into a 20 Hz sub-bass wave. It generated a staggering 4,200 Score Units of output.
+
+In the observation gallery, Remi's scanner came alive without her touching it. The needle swung hard to the right—past the standard range markers, past the emergency threshold marks, past the red line at the far end that she had always assumed was decorative because nothing she had ever measured came close to it.
+
+The digital console beside it logged: `OUTPUT: ELEVATED — WITHIN ACCEPTABLE SANDBOX PARAMETERS``. She looked at the digital console. She looked at her scanner. She looked at the number the analog needle was pointing at—a frequency that lasted 0.7 seconds before Ven absorbed it and the readout snapped back to zero.`
+
+She circled it in her notebook. Then she drew a box around the circle. Then she sat back and stared at what she had drawn, and for a long moment she didn't write anything at all.
 
 Taro's high-pitch jitter did not bounce off the Sink node. It descended into the gravity well and converted.
 It rendered as pure, foundational bass.
@@ -225,7 +248,7 @@ Ven altered his optical focus. His ocular sensors—typically operating at half-
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> NODE_STATUS: VEN [CHARGED]AVAILABLE_CAPACITY: 15%ABSORPTION: 440V [RAW_OUTPUT]
+<strong>Observation:</strong> NODE_STATUS: VEN [CHARGED] `AVAILABLE_CAPACITY: 15%`` `ABSORPTION: 440V [RAW_OUTPUT]``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -263,7 +286,7 @@ Hana processed the incoming data. She registered Taro's state. She registered Ve
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> PROBABILITY_CALCULATION: HYBRID_LINK [CLASS: SIEGE_BREAKER]POTENTIAL_AMPLITUDE: 165dB [SYSTEM_MAXIMUM]PHASE_LOCK: CONFIRMEDSYNCHRONICITY: 99.4%
+<strong>Observation:</strong> PROBABILITY_CALCULATION: HYBRID_LINK [CLASS: SIEGE_BREAKER] `POTENTIAL_AMPLITUDE: 165dB [SYSTEM_MAXIMUM]`` `PHASE_LOCK: CONFIRMED`` `SYNCHRONICITY: 99.4%```
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -278,7 +301,7 @@ The system observed a rapid upward curvature of Taro's mouth. The thermal warnin
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SYNC_STATUS: GREENNETWORK: LOCKED
+<strong>Observation:</strong> SYNC_STATUS: GREEN `NETWORK: LOCKED`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -289,30 +312,26 @@ Taro’s fingers twitched against the empty air, finding a ghost-fader and slamm
 
 "Kill the limiter," he whispered. "Initializing Drop."
 
+She had been in the observation gallery before the training session began. The system logged her entry at 0802 and filed her as a standard observational presence. It had not logged the cello case because the cello case was not in the registry. It had not logged the frequency she was suppressing because she had suppressed it so thoroughly the system had never once detected it in four months at the Academy. She was very good at being invisible.
+When the Drop hit, most people in the gallery flinched. Some covered their ears. Three cadets' diagnostic feeds logged an involuntary BPM spike. Elara went very still. The kind of still you go when you hear a piece of music you thought only existed inside your own head.
+Her hand moved toward the cello case on her back. It stopped before it got there. She caught it, the way she always caught it. She looked at the waveform still decaying in the Sandbox air below—the shape of it, the frequency profile—and the system observed something it did not have a classification for: it observed her recognising something.
+`OBSERVATION_NODE: KIMURA_ELARA [CLASS: VANGUARD_ELITE]`
+
+`FOCUS_TARGET: NISHIMURA_TARO [WAVEFORM_RESIDUE]`
+
+`BLINK_DURATION: 0.4s [ANOMALOUS — STANDARD: 0.15s]`
+
+`ASSESSMENT: [PENDING]`
+
+`NOTE: THIS FIELD HAS BEEN PENDING FOR 4.2 SECONDS.`
+
+`NOTE: THE SYSTEM IS UNSURE WHY IT CANNOT CLOSE IT.`
+She adjusted the cello case on her back and walked out of the gallery. No log entry. No filed report. Just a tag that had no expiry and no destination, accumulating quietly in a part of the system that nobody audited.
+Remi stared at the number for another thirty seconds. Then she opened her notebook to the inside front cover. Written there, in ink that had been added to and crossed out and added to again over what looked like a long time: *Wrong Notes — Field Log. Vol. 3.* Vol. 1 had been a girl in Sector 12 who could feel structural resonance through her feet. Vol. 2 had been a boy in the transit system who heard the Grid's maintenance cycles as melody. Vol. 3 had been running for three months and she had twelve entries, all minor, all interesting, all eventually explained as sensor error by the official diagnostics.
+She wrote entry thirteen. She did not write what the number was. She wrote: *He doesn't know yet. Don't tell them.*
+She breathed fog onto the observation glass. Below, in the cold wireframe Sandbox, Taro was sitting on the floor next to Ven, both of them looking at their hands like they weren't sure they were theirs anymore. Hana was running the output calculations a fourth time because the third answer had been impossible.
+
+
+"Stay flat, Taro," Remi whispered to the glass. "Don't let them see you yet."
 **> TRACK: 05_COMPLETE**
 **> **
-
-High above the wireframe floor, positioned in the shadowed curve of the observation gallery, an armored cadet colloquially designated 'The Tank' maintained absolute stillness. Her systemic output registered as a flawless square wave. She did not engage with her integrated diagnostic displays, nor did she acknowledge the simulation’s raw telemetry output. Her optical sensors locked onto Taro. She observed the unregulated oscillation with cold, geometric precision.
-
-<aside>
-<details>
-<summary><strong>LORE</strong></summary>
-<blockquote>
-<strong>Observation:</strong> OBSERVATION_NODE: KIMURA_ELARA [CLASS: VANGUARD_ELITE]FOCUS_TARGET: NISHIMURA_TAROCLASSIFICATION: [EVALUATING]
-<br><br>
-<strong>- Source: In-World Text</strong>
-</blockquote>
-</details>
-</aside>
-
-Thirty meters above the wireframe floor, in the shadowed curve of the observation booth, Remi Sato didn't look at the official diagnostics. She ignored the green stability bars and the polite, normalized averages on her main console.
-
-Instead, she looked at the raw waveform on her handheld analog scanner—a jagged, sawtooth monster that was currently trying to swallow the room's Middle C.
-
-> `THOOM.`
-
-The sub-bass hit the observation glass, and for a second, her vision dropped to grayscale. She didn't flinch. She opened her notebook and scribbled a single line of high-friction graphite:
-
-Subject Taro: Signal is hungry. It’s not just a noise; it’s a gravity well. He isn't a cadet. He's a siege engine waiting for a driver.
-
-"Stay flat, Taro," she whispered to the glass, her breath fogging the view of the golden boy below. "Don't let them see you yet."

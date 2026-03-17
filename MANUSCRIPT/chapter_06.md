@@ -28,7 +28,7 @@ Ven occupied a concrete bench. A target analysis confirmed his classification as
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SDI_METRIC: 0.88HIQ: 0.94
+<strong>Observation:</strong> SDI_METRIC: 0.88 `HIQ: 0.94`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -45,7 +45,7 @@ Taro evaluated the telemetry output.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> INTERNAL_CORE_TEMP: 104°FWARNING: HYPERTHERMIA_THRESHOLD_BREACHED
+<strong>Observation:</strong> INTERNAL_CORE_TEMP: 104°F `WARNING: HYPERTHERMIA_THRESHOLD_BREACHED`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -139,7 +139,7 @@ She ran the classification three times. The instruments returned the same answer
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SIGNAL_TYPE: UNREGISTEREDMATCH: NULLNEAREST_KNOWN_PATTERN: [NO RESULT]
+<strong>Observation:</strong> SIGNAL_TYPE: UNREGISTERED `MATCH: NULL`` `NEAREST_KNOWN_PATTERN: [NO RESULT]``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -162,7 +162,7 @@ She made a mark on the page.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> CONTACT: SATO_REMI — PROXIMATE: 1.4MCOLLAR: ACTIVE — SUPPRESSION: 91%RESIDUAL: 9%
+<strong>Observation:</strong> CONTACT: SATO_REMI — PROXIMATE: 1.4M `COLLAR: ACTIVE — SUPPRESSION: 91%`` `RESIDUAL: 9%``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -179,7 +179,7 @@ He shifted his gaze across the vault. Set against the thick concrete of the copp
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 02]SUBJECT: KIMURA_ELARA [PROXIMITY: 25M]
+<strong>Observation:</strong> ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 02] `SUBJECT: KIMURA_ELARA [PROXIMITY: 25M]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -292,7 +292,7 @@ He ran a query he had no reason to run. Force of habit — the system's version 
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> QUERY: NISHIMURA_AYANE RESULT: FILE_CORRUPTED [UNRECOVERABLE]
+<strong>Observation:</strong> QUERY: NISHIMURA_AYANE `RESULT: FILE_CORRUPTED [UNRECOVERABLE]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -309,7 +309,7 @@ He said the next closest thing.
 
 "Goodnight, Dad," he vocalized into the foam.
 
-In the unmonitored dark, insulated by archaic hardware, Taro generated a version of himself that the Score possessed no algorithms to recognize.
+For once, the system didn't know what to call him. Not a Siege Breaker. Not an anomaly. Not a categorized error state. Just Taro, in the dark, not being logged. The system left the classification field blank. It was the kindest thing it knew how to do.
 
 <aside>
 <details>

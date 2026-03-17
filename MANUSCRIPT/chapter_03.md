@@ -39,7 +39,7 @@ In a zone defined by static and grit, Kael was a perfect, anti-aliased object. H
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARGET_ANALYSIS: NISHIMURA_KAEL [CLASS: FUNDAMENTAL]WAVEFORM: SINE_PUREHARMONIC_DISTORTION: 0.00%
+<strong>Observation:</strong> TARGET_ANALYSIS: NISHIMURA_KAEL [CLASS: FUNDAMENTAL] `WAVEFORM: SINE_PURE`` `HARMONIC_DISTORTION: 0.00%``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -47,7 +47,9 @@ In a zone defined by static and grit, Kael was a perfect, anti-aliased object. H
 </aside>
 
 Zero variance.
-Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a Fundamental in a world of variables. Everyone searched for a center, a point of absolute stillness, but Kael *was* the center. And being the center was its own kind of prison. It meant never being allowed to drift, never being allowed to feel the texture of the world's noise.
+Kael was a living reference tone. The system had been logging him for twenty-two years. It knew exactly where he would be at any given moment. It had never once been surprised by him. It was noting this because it did not know whether that was a good thing.
+
+He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a Fundamental in a world of variables. Everyone searched for a center, a point of absolute stillness, but Kael *was* the center. And being the center was its own kind of prison. It meant never being allowed to drift, never being allowed to feel the texture of the world's noise.
 
 "You're back," Kael said. His vocal output was an uncompressed sine wave. No decay. No grit.
 
@@ -72,7 +74,7 @@ The volumetric space between them exhibited visual shimmering.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ERROR: PHASE_CONFLICTCALCULATING_RESOLUTION...
+<strong>Observation:</strong> ERROR: PHASE_CONFLICT `CALCULATING_RESOLUTION...`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -93,7 +95,7 @@ The subject assumed a seated position opposite him. The table transmitted kineti
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> BIOMETRIC_ALERT: NEURAL_SOMATIC_SYNC_FAILUREOSCILLATION_VARIANCE: 12%
+<strong>Observation:</strong> BIOMETRIC_ALERT: NEURAL_SOMATIC_SYNC_FAILURE `OSCILLATION_VARIANCE: 12%`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -110,7 +112,7 @@ The subject assumed a seated position opposite him. The table transmitted kineti
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ACOUSTIC_EVENT: REFERENCE_PITCH [A-440]ACCURACY: 100.00%
+<strong>Observation:</strong> ACOUSTIC_EVENT: REFERENCE_PITCH [A-440] `ACCURACY: 100.00%`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -131,7 +133,7 @@ Kael’s amplitude spiked. An acoustic transient of 85dB impacted the room. For 
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: TRANSIENT_AMPLITUDE_SPIKE [85dB]DAMPING_FIELD: STRESS_DETECTED
+<strong>Observation:</strong> WARNING: TRANSIENT_AMPLITUDE_SPIKE [85dB] `DAMPING_FIELD: STRESS_DETECTED`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -150,7 +152,7 @@ The subject's HUD attempted to retrieve the file for Ayane Nishimura.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> QUERY: NISHIMURA_AYANERESULT: FILE_CORRUPTED [UNRECOVERABLE]
+<strong>Observation:</strong> QUERY: NISHIMURA_AYANE `RESULT: FILE_CORRUPTED [UNRECOVERABLE]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -180,7 +182,7 @@ Inside was an acoustic delivery device.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> OBJECT_ID: ANALOG_HEADPHONES [UNREGISTERED]NETWORK_INTEGRATION: NONETHREAT_LEVEL: ZERO
+<strong>Observation:</strong> OBJECT_ID: ANALOG_HEADPHONES [UNREGISTERED] `NETWORK_INTEGRATION: NONE`` `THREAT_LEVEL: ZERO``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -226,7 +228,7 @@ That was all. No chord structure. No time signature. No metadata. Just five note
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> AUDIO_CLASSIFICATION: PROCESSING... AUDIO_CLASSIFICATION: PROCESSING... AUDIO_CLASSIFICATION: PROCESSING... AUDIO_CLASSIFICATION: [NO RESULT]
+<strong>Observation:</strong> AUDIO_CLASSIFICATION: PROCESSING... `AUDIO_CLASSIFICATION: PROCESSING...`` `AUDIO_CLASSIFICATION: PROCESSING...`` `AUDIO_CLASSIFICATION: [NO RESULT]```
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -287,7 +289,7 @@ The subject stood. His internal routing engaged.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ROUTE_SET: MALKUTH_ACADEMYDISTANCE: 4.2 KMSTATUS: PATH_CLEAR
+<strong>Observation:</strong> ROUTE_SET: MALKUTH_ACADEMY `DISTANCE: 4.2 KM`` `STATUS: PATH_CLEAR``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -310,7 +312,7 @@ He opened the door and exited into the unshielded noise of the corridor.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> AUDIO_PROTOCOL: BYPASS_DISENGAGEDPROCESS: NAI_SYNC_RESTORED
+<strong>Observation:</strong> AUDIO_PROTOCOL: BYPASS_DISENGAGED `PROCESS: NAI_SYNC_RESTORED`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

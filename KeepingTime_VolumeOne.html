@@ -696,6 +696,75 @@
     html.reduce-motion .hud-viz-bar.active { animation: none; height: 50%; opacity: 0.5; }
     
     html.reduce-motion .sentence { transition: border-color 0.3s ease; }
+    /* ── TRACK F: Fight UI ──────────────────────────────────────────────────── */
+
+    /* F7: .combat-tagged — active fight prose sentences */
+    .sentence.active.combat-tagged {
+      border-left-color: var(--danger);
+      border-left-width: 3px;
+      letter-spacing: 0.01em;
+    }
+    .sentence.active.combat-tagged.tension-high {
+      border-left-width: 4px;
+      letter-spacing: 0.02em;
+    }
+
+    /* F1: .format-impact — sound words (CRACK, THOOM, ZZZTT, etc.) */
+    .sentence.format-impact {
+      font-family: var(--font-display);
+      font-weight: 900;
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      letter-spacing: 0.15em;
+      text-align: center;
+      padding-left: 0;
+      border-left: none;
+      color: var(--accent);
+      text-shadow: 0 0 30px var(--accent);
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+    .sentence.format-impact.active {
+      border-left: none;
+      text-shadow: 0 0 40px var(--accent), 0 0 80px rgba(0,243,255,0.3);
+    }
+    /* Heavy impacts: THOOM, SHATTER */
+    .sentence.format-impact[data-impact="heavy"] {
+      color: var(--danger);
+      text-shadow: 0 0 40px var(--danger);
+    }
+    .sentence.format-impact[data-impact="heavy"].active {
+      text-shadow: 0 0 50px var(--danger), 0 0 90px rgba(255,51,102,0.3);
+    }
+    /* Void impacts: SHHKK (the Silence absorbing) */
+    .sentence.format-impact[data-impact="void"] {
+      color: #9933ff;
+      text-shadow: 0 0 40px rgba(153,51,255,0.8);
+    }
+
+    /* F2: TARGET_ANALYSIS lock-on animation in combat context */
+    .combat-context .lore-epigraph:has(code[data-type="target"]) {
+      border-left-color: var(--danger);
+    }
+    @keyframes scanIn {
+      0%   { opacity: 0; transform: translateX(-8px); }
+      60%  { opacity: 1; transform: translateX(2px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    .combat-context .sentence.active .lore-epigraph:has(code[data-type="target"]) {
+      animation: scanIn 0.3s ease-out;
+    }
+
+    /* F6: Sandbox opening narrator voice */
+    body.render-safe .sentence.format-sandbox-open {
+      color: #6090b0;
+      font-size: 0.95em;
+      padding-left: 2.5rem;
+    }
+    body.render-safe .sentence.format-sandbox-open.active {
+      border-left-color: #4488ff;
+      color: var(--text-dim);
+    }
+
     /* COMMENT: Animated save indicator on chapter-end beats.
        Two cycles (~3.6s total), then holds at three dots — save completed.
        Replaces static SAVING... text in TRACK_COMPLETE beats. */
@@ -918,19 +987,19 @@
 <p data-vol="0.25" data-coh="0.8">It rolled through the air, interfacing with all active nodes. When it passed through the technicians working at their stations, the system verified their stability. The visual return was a soft, green thermal signature.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>STATUS: SYNCED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The subject kept his head down. His own signal felt like a scratch in his throat—a jagged <strong>ORANGE WARNING</strong>. His output was throttled to fifteen percent, but the pressure was building.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_WARNING: STRESS_ACCUMULATION [84 SU]</code><br><code>NEURAL_LOAD: 92% [APPROACHING_THRESHOLD]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_WARNING: STRESS_ACCUMULATION [84 SU]</code><code><br><code>NEURAL_LOAD: 92% [APPROACHING_THRESHOLD]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"Hey, Wrong Note."</p>
 <p data-vol="0.25" data-coh="0.8">The subject did not look up, but his internal logic stuttered. The system detected an acoustic signature in D-Major—bright, uncompressed, and stubbornly optimistic. It was accompanied by the prohibited scent of bubblegum and the sharp ozone of a technician who spent too much time overclocking her own port.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TAG: FASCINATION [CONFIDENCE: 92%]</code><br><code>DOMINANT_HARMONIC: D-MAJOR [UNFILTERED]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TAG: FASCINATION [CONFIDENCE: 92%]</code><code><br><code>DOMINANT_HARMONIC: D-MAJOR [UNFILTERED]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Remi Sato.</p>
 <p data-vol="0.25" data-coh="0.8">She leaned against the railing, her presence generating ripple-rings of amber light on the floor grid that the Score’s stabilizers were struggling to smooth out. She didn't look like a technician; she looked like a high-gain signal trying to pass as a standard broadcast.</p>
 <p data-vol="0.25" data-coh="0.8">"You're leaking, Taro," she whispered. She didn't point. She just tilted her head, her optical sensors locking onto his coordinates.</p>
 <p data-vol="0.25" data-coh="0.8">"The Score says I'm within parameters," he muttered, keeping his focus on the floor.</p>
 <p data-vol="0.25" data-coh="0.8">"The Score is lying to save its own hardware," she said, stepping closer. The air between them hummed with a sympathetic resonance that made Taro’s teeth vibrate. "I can taste the fuzz on your edges. It’s like listening to a low-bit track through velvet. It’s... beautiful. And dangerous."</p>
-<p data-vol="0.25" data-coh="0.8">She reached out, her manual digits stopping just millimeters from his wrist. "Custom bands? That maker's mark is archaic. My instruments can't even find a serial number for it."</p>
+<p data-vol="0.25" data-coh="0.8">She reached out, her fingers stopping just millimeters from his wrist. "Custom bands? That maker's mark is archaic. My instruments can't even find a serial number for it."</p>
 <p data-vol="0.25" data-coh="0.8">The subject pulled his arm back, his heart rate spiking to 125 BPM. "It's just old gear, Remi. Hitting thermal limit."</p>
 <p data-vol="0.25" data-coh="0.8">"No," she corrected, her voice dropping into a register that felt real, not rendered. "You're clipping because the world is too small for you. You're a high-fidelity signal in a low-bit cage. One day you’re going to peak, and I want to be the one who’s there to record it."</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>NEURAL_TRAUMA: ACUTE [SOURCE: UNKNOWN]</code><br><code>DISSONANCE_DETECTED [CLASS: FATAL]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>NEURAL_TRAUMA: ACUTE [SOURCE: UNKNOWN]</code><code><br><code>DISSONANCE_DETECTED [CLASS: FATAL]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The subject's visual feed flooded with red error states. A severe localized pressure spike impacted his frontal lobe. The system registered the dissonance as an unauthorized frequency tearing through standardized consciousness.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>PRIORITY_OVERRIDE: EMERGENCY_ACOUSTIC_EVENT_DETECTED [LOCAL_PROTOCOLS: SUSPENDED]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The atmospheric sensors recorded biological decay mapping directly onto the acoustic feed.</p>
@@ -1014,21 +1083,21 @@
 <p data-vol="0.25" data-coh="0.8">The numbers got too big. His brain couldn't render the magnitude. In the end, they were all just numbers, and sometimes the numbers decided they'd had enough.</p>
 <p data-vol="0.25" data-coh="0.8"><em>CRACK.</em></p>
 <p data-vol="0.25" data-coh="0.8">The soldier’s bio-plasma field did not dampen. It expanded past physical tolerances and terminated.<br>The system recorded the cessation of all data output from the unit. The Score port went dark. The aura stopped rendering.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET: G-VANGUARD_UNIT [STATUS: NULL]</code><br><code>WARNING: SIGNAL_VOID</code><br><code>DAMPING: EXTERNAL_SOURCE</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET: G-VANGUARD_UNIT [STATUS: NULL]</code><code><br><code>WARNING: SIGNAL_VOID</code><code><br><code>DAMPING: EXTERNAL_SOURCE</code></blockquote>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>[NO DATA]</code></blockquote>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>[NO DATA]</code></blockquote>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>[NO DATA]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The subject was still standing. The system recovered logging functions at [00:15:02].</p>
 <p data-vol="0.25" data-coh="0.8">His arm remained outstretched. Smoke rose from the evaporated bands holding his wrist. His capacity remained at peak; unformatted signal washed into the surrounding dead space.</p>
 <p data-vol="0.25" data-coh="0.8">His visual interface dropped frames.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>DIAGNOSTIC: BASELINE_ALTERED [RESONANT_IDENTITY: UNRECOGNIZED]</code><br><code>NEW_USER_ID: DETECTED [AUTHORITY: NULL]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>DIAGNOSTIC: BASELINE_ALTERED [RESONANT_IDENTITY: UNRECOGNIZED]</code><code><br><code>NEW_USER_ID: DETECTED [AUTHORITY: NULL]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The subject examined his hand. To the system, its geometry had fundamentally altered.<br>It was a flare of pure code. It was overwriting the local atmosphere.</p>
 <p data-vol="0.25" data-coh="0.8">Its resolution was exquisite.</p>
 <p data-vol="0.25" data-coh="0.8">Remi maintained line of sight with the space directly above the subject's coordinates.</p>
 <p data-vol="0.25" data-coh="0.8">He looked up.</p>
 <p data-vol="0.25" data-coh="0.8">Hovering in the augmented layer, a new symbol had rendered. It was not a Shield classification. It was not a Tuning Fork.</p>
 <p data-vol="0.25" data-coh="0.8">It was a Crown.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: VANGUARD_CLASS_DETECTED [HARMONIC_THREAT]</code><br><code>STATUS: HIGH_FIDELITY_THREAT</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: VANGUARD_CLASS_DETECTED [HARMONIC_THREAT]</code><code><br><code>STATUS: HIGH_FIDELITY_THREAT</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The diagnostic text burned into his retinas.</p>
 <p data-vol="0.25" data-coh="0.8">Then the feed terminated.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_CRASH [UNRECOVERABLE]</code></blockquote>
@@ -1065,7 +1134,7 @@
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>END_PROCESS: PRIVACY_MASK [AUTHORITY: ADJUTANT]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The room rendered. A desk. A chair. A man.</p>
 <p data-vol="0.25" data-coh="0.8">Adjutant Voss.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: VOSS_KAEL [CLASS: 8_ADJUTANT]</code><br><code>AURA: VERIFIED [SINE_WAVE]</code><br><code>VOLATILITY: NULL</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: VOSS_KAEL [CLASS: 8_ADJUTANT]</code><code><br><code>AURA: VERIFIED [SINE_WAVE]</code><code><br><code>VOLATILITY: NULL</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The system classified Voss as an optimal structural asset. His attire was a frictionless, matte-gray synthetic standard for C-Order administration. He remained completely stationary. He overwrote the air around him, radiating an aura of enforced stability. The Score preferred predictability. It preferred assets that minimized thermal load.</p>
 <p data-vol="0.25" data-coh="0.8">His acoustic profile contained zero variance. He smoothed the local grid simply by occupying it. Perfectly out of phase.</p>
 <p data-vol="0.25" data-coh="0.8">"Hello, Taro," Voss said.</p>
@@ -1073,7 +1142,7 @@
 <p data-vol="0.25" data-coh="0.8">"Where am I?" the subject asked. His respiratory output was restricted, the collar absorbing the resonance of his vocal cords.</p>
 <p data-vol="0.25" data-coh="0.8">"You are in Recovery," Voss said. "We had to initiate a forced reboot. You suffered a catastrophic buffer overflow on the floor. Do you recall the incident?"</p>
 <p data-vol="0.25" data-coh="0.8">The subject closed his eyes. The memory wasn't a blur. It was a corrupt file. Jagged edges. Purple static.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>BUFFER_FLUSH: INITIATED</code><br><code>ARTIFACT_DETECTED: [H——p ——. DISCARDING]</code><br><code>DISCARD: COMPLETE</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>BUFFER_FLUSH: INITIATED</code><code><br><code>ARTIFACT_DETECTED: [H——p ——. DISCARDING]</code><code><br><code>DISCARD: COMPLETE</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"The soldier," Taro whispered. "He was desyncing."</p>
 <p data-vol="0.25" data-coh="0.8">"He was experiencing a cascade failure," Voss corrected, his vocal parameters clinical and cold. "His bio-plasma field had destabilized beyond the 5% tolerance threshold. You, however... you were running high, Taro. Extremely high. You spiked so hard the room couldn't register anything else."</p>
 <p data-vol="0.25" data-coh="0.8">Voss interacted with the desk surface. A holographic interface rendered between them. It displayed a 3D wireframe of the G-Vanguard soldier.</p>
@@ -1085,11 +1154,11 @@
 <p data-vol="0.25" data-coh="0.8">"You balanced it with a sledgehammer," Voss noted. "The Grand Concord relies on precision, Taro. Not brute force. We are a high-fidelity society. Your tone was sharp. Socially embarrassing."</p>
 <p data-vol="0.25" data-coh="0.8">Voss stood. He traversed the space around the desk. His kinetic sequence was highly efficient. Every step was a calibrated vector.</p>
 <p data-vol="0.25" data-coh="0.8">"The Manual states: 'Coherence is Safety'. A shared reference signal keeps the reality rendering engine stable. You..." Voss aimed a precisely angled finger at Taro's sternum. "You’re off-tone. You are broadcasting across the entire capacity of Sector 7. You need to stay flat."</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_WARNING: SIGNAL_INSTABILITY_DETECTED</code><br><code>EMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_WARNING: SIGNAL_INSTABILITY_DETECTED</code><code><br><code>EMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">A sustained drift identified itself in the subject's signal. The stability index dropped as the cardiovascular load reached 142 SU.</p>
 <p data-vol="0.25" data-coh="0.8">The collar tightened by one millimeter. The physical damping was highly effective. The subject's tapping stopped. His respiratory cycle steadied.<br>His own involuntary compliance flagged as a high-confidence annoyance.</p>
 <p data-vol="0.25" data-coh="0.8">"We have two administrative options," Voss said. He extended two fingers.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OPTION_A: REFORMAT</code><br><code>PROCEDURE: NEURAL_DAMPENING</code><br><code>OUTCOME: LISTENER [CLASS_1]</code><br><code>STATUS: APPROVED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OPTION_A: REFORMAT</code><code><br><code>PROCEDURE: NEURAL_DAMPENING</code><code><br><code>OUTCOME: LISTENER [CLASS_1]</code><code><br><code>STATUS: APPROVED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again. You stay flat forever."</p>
 <p data-vol="0.25" data-coh="0.8">The subject analyzed the rendered text.</p>
 <aside>
@@ -1103,11 +1172,11 @@
 </details>
 </aside>
 <p data-vol="0.25" data-coh="0.8">Systems-speak for a lobotomy. A clean wipe of the root drive.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OPTION_B: INTEGRATION</code><br><code>PROCEDURE: TRANSFER [MALKUTH_ACADEMY]</code><br><code>OUTCOME: VANGUARD_CERTIFICATION</code><br><code>STATUS: HIGH_RISK</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OPTION_B: INTEGRATION</code><code><br><code>PROCEDURE: TRANSFER [MALKUTH_ACADEMY]</code><code><br><code>OUTCOME: VANGUARD_CERTIFICATION</code><code><br><code>STATUS: HIGH_RISK</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"We utilize the noise," Voss said. "The Vanguard creates Siege Breakers. Units capable of generating high-amplitude dissonance for combat purposes. We take your wrong note... and we weaponize it. We teach you to carry load for the state."</p>
 <p data-vol="0.25" data-coh="0.8">Voss closed the distance. For a duration measured in milliseconds, the optimal facade displayed a coherence fault. A green dissonance briefly corrupted his optic rendering—a single frame of unauthorized code.</p>
 <p data-vol="0.25" data-coh="0.8">"You are dangerous, Taro," Voss whispered. "But the Score needs danger. It needs heavy artillery."</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ANOMALY: DETECTED</code><br><code>CLASSIFICATION: THREAT_LEVEL_ELEVATED [MONITORING]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ANOMALY: DETECTED</code><code><br><code>CLASSIFICATION: THREAT_LEVEL_ELEVATED [MONITORING]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The subject evaluated the parameters. Option A was deletion. Option B was compilation.</p>
 <p data-vol="0.25" data-coh="0.8">"I'm not a soldier," Taro said. "I'm a calibrator. I... I fix things. My hardware is built for alignment, not for combat."</p>
 <p data-vol="0.25" data-coh="0.8">"The Vanguard fixes the enemies of the state," Voss said. "Same mechanic. Different application. We take your sawtooth oscillation and we make it tactical. We teach you to carry that load without clipping the grid."</p>
@@ -1151,35 +1220,37 @@
 <p data-vol="0.25" data-coh="0.8">The subject entered. The system's ambient scan completed an instant local override. Authorized suppression was active, holding the baseline at A-440 with a phase variance so low it registered as entirely artificial.</p>
 <p data-vol="0.25" data-coh="0.8">Kael Nishimura occupied the kitchen unit.</p>
 <p data-vol="0.25" data-coh="0.8">To the subject's sensor suite, his father looked rendered.<br>In a zone defined by static and grit, Kael was a perfect, anti-aliased object. He didn't move. He didn't vibrate. He sat in a pool of perfect stillness, polishing a physical tuning fork with a microfiber cloth. A target analysis confirmed the man's identity.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: NISHIMURA_KAEL [CLASS: FUNDAMENTAL]</code><br><code>WAVEFORM: SINE_PURE</code><br><code>HARMONIC_DISTORTION: 0.00%</code></blockquote>
-<p data-vol="0.25" data-coh="0.8">Zero variance.<br>Kael was a living reference tone. He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a Fundamental in a world of variables. Everyone searched for a center, a point of absolute stillness, but Kael <em>was</em> the center. And being the center was its own kind of prison. It meant never being allowed to drift, never being allowed to feel the texture of the world's noise.</p>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: NISHIMURA_KAEL [CLASS: FUNDAMENTAL]</code><code><br><code>WAVEFORM: SINE_PURE</code><code><br><code>HARMONIC_DISTORTION: 0.00%</code></blockquote>
+<p data-vol="0.25" data-coh="0.8">Zero variance.<br>Kael was a living reference tone. The system had been logging him for twenty-two years. It knew exactly where he would be at any given moment. It had never once been surprised by him. It was noting this because it did not know whether that was a good thing.
+
+He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a Fundamental in a world of variables. Everyone searched for a center, a point of absolute stillness, but Kael <em>was</em> the center. And being the center was its own kind of prison. It meant never being allowed to drift, never being allowed to feel the texture of the world's noise.</p>
 <p data-vol="0.25" data-coh="0.8">"You're back," Kael said. His vocal output was an uncompressed sine wave. No decay. No grit.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>> OBJECT_ANALYSIS: UNKNOWN_TECH [CONNECTIVITY: NONE]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The subject advanced. The impedance mismatch registered immediately.</p>
 <p data-vol="0.25" data-coh="0.8">His internal signal—a high-pressure oscillation—impacted the dense, heavy atmosphere Kael was projecting. It felt like walking into a wall of solid gold.</p>
 <p data-vol="0.25" data-coh="0.8">The volumetric space between them exhibited visual shimmering.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: PHASE_CONFLICT</code><br><code>CALCULATING_RESOLUTION...</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: PHASE_CONFLICT</code><code><br><code>CALCULATING_RESOLUTION...</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The system dropped frames attempting to reconcile the incompatible signatures.</p>
 <p data-vol="0.25" data-coh="0.8">"Voss called," Kael said. He did not alter his visual focus.</p>
 <p data-vol="0.25" data-coh="0.8">"He gave me a choice," Taro said.</p>
 <p data-vol="0.25" data-coh="0.8">“No, he didn’t." Kael adjusted his focal point. His optical sensors registered accumulated wear, but his signal remained absolute. "He gave you a deployment order."</p>
 <p data-vol="0.25" data-coh="0.8">The subject assumed a seated position opposite him. The table transmitted kinetic vibration. His leg was exhibiting repetitive motion. The system tagged it as an unstable motor loop.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>BIOMETRIC_ALERT: NEURAL_SOMATIC_SYNC_FAILURE</code><br><code>OSCILLATION_VARIANCE: 12%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>BIOMETRIC_ALERT: NEURAL_SOMATIC_SYNC_FAILURE</code><code><br><code>OSCILLATION_VARIANCE: 12%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"I have to go to Malkuth," Taro said.</p>
 <p data-vol="0.25" data-coh="0.8">"I know." Kael placed the tuning fork on the surface. It produced a perfect acoustic emission.</p>
 <p data-vol="0.25" data-coh="0.8"><em>TING.</em></p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ACOUSTIC_EVENT: REFERENCE_PITCH [A-440]</code><br><code>ACCURACY: 100.00%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ACOUSTIC_EVENT: REFERENCE_PITCH [A-440]</code><code><br><code>ACCURACY: 100.00%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The subject's visual feed flared green. The note was so mathematically precise it overtaxed the local processor.</p>
 <p data-vol="0.25" data-coh="0.8">"I tried to keep you in the middle, Taro," Kael said. "The Reference Pitch. It's safe. It's stable. It's home. You don't need to run sharp."</p>
 <p data-vol="0.25" data-coh="0.8">"It's too quiet, Dad. It hurts. My gain is too high for this room. I’m clipping every time I breathe."</p>
 <p data-vol="0.25" data-coh="0.8">"It's quiet because I keep the noise out! I carry the load so you can stay flat!"</p>
 <p data-vol="0.25" data-coh="0.8">Kael’s amplitude spiked. An acoustic transient of 85dB impacted the room. For a fractional second, the apartment's Damping Field buckled.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: TRANSIENT_AMPLITUDE_SPIKE [85dB]</code><br><code>DAMPING_FIELD: STRESS_DETECTED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: TRANSIENT_AMPLITUDE_SPIKE [85dB]</code><code><br><code>DAMPING_FIELD: STRESS_DETECTED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Taro saw the raw power underneath his father's skin. Kael wasn't just a Calibrator; he was a Fundamental. A living anchor. He could overwrite the reality of the room in a microsecond if he chose to unclench his will.</p>
 <p data-vol="0.25" data-coh="0.8">But he didn't. He clamped it down. The system status returned to contained.</p>
 <p data-vol="0.25" data-coh="0.8">"Your mother," Kael whispered. "She was running high too. She burned so bright she couldn't hold her form. She clipped until there was nothing left to render."</p>
 <p data-vol="0.25" data-coh="0.8">The subject's HUD attempted to retrieve the file for Ayane Nishimura.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>QUERY: NISHIMURA_AYANE</code><br><code>RESULT: FILE_CORRUPTED [UNRECOVERABLE]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>QUERY: NISHIMURA_AYANE</code><code><br><code>RESULT: FILE_CORRUPTED [UNRECOVERABLE]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The Score returned only static.</p>
 <p data-vol="0.25" data-coh="0.8">"I'm not her," Taro said, his voice fragmenting into the local interference. "I'm... I'm just me. I'm just the wrong note played."</p>
 <p data-vol="0.25" data-coh="0.8">"You have her resonance. The Fifth Harmonic. Unfiltered. Full-spectrum." Kael observed the subject's cervical region, focusing on the hardware Voss had installed. "And now you have a leash. A damping band for your soul."</p>
@@ -1189,7 +1260,7 @@
 <p data-vol="0.25" data-coh="0.8">He retrieved a heavy, lead-lined containment case.</p>
 <p data-vol="0.25" data-coh="0.8">"She built this," Kael said. He slid the object across the table. "For when you were older. Or for... this."</p>
 <p data-vol="0.25" data-coh="0.8">The subject opened the case.<br>Inside was an acoustic delivery device.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OBJECT_ID: ANALOG_HEADPHONES [UNREGISTERED]</code><br><code>NETWORK_INTEGRATION: NONE</code><br><code>THREAT_LEVEL: ZERO</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OBJECT_ID: ANALOG_HEADPHONES [UNREGISTERED]</code><code><br><code>NETWORK_INTEGRATION: NONE</code><code><br><code>THREAT_LEVEL: ZERO</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The hardware was not Score-compatible. Vintage analog composition. Heavy foam acoustic isolation. Braided copper cabling. Zero wireless transmission capability. Zero smart-link integration. A relic of a time before reality was a shared composition. A tool for a world that still knew how to be alone.</p>
 <p data-vol="0.25" data-coh="0.8">"Pure Analog," Kael said. "No sync. No Score. Just... physics."</p>
 <p data-vol="0.25" data-coh="0.8">The subject retrieved them. They felt heavy. Cold. Real. The system could not interpret the technology, detecting no connectivity at all.</p>
@@ -1201,9 +1272,9 @@
 <p data-vol="0.25" data-coh="0.8">Silence.<br>But not the White Room dead silence.<br>This was warm silence. The sound of cardiovascular fluid rushing in the inner ear. The low-fidelity hum of copper wire waiting for a current.</p>
 <p data-vol="0.05" data-coh="0.99" data-weight="2.5">Five notes.<br><br>
 That was all. No chord structure. No time signature. No metadata. Just five notes in a sequence &#x2014; E, B, E, G&#x2011;sharp, B &#x2014; so simple the system&#x2019;s classification engine ran a full pattern-match and returned nothing. Not low-confidence. Not approximate. Nothing. The sequence did not exist in any indexed archive. It held no mathematical relationship to the Score&#x2019;s harmonic baseline. It simply played. Looping. Untagged. Uncaptured.</p>
-<blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99" data-weight="2.0"><code>AUDIO_CLASSIFICATION: PROCESSING...</code><br>
-<code>AUDIO_CLASSIFICATION: PROCESSING...</code><br>
-<code>AUDIO_CLASSIFICATION: PROCESSING...</code><br>
+<blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99" data-weight="2.0"><code>AUDIO_CLASSIFICATION: PROCESSING...</code><code><br>
+<code>AUDIO_CLASSIFICATION: PROCESSING...</code><code><br>
+<code>AUDIO_CLASSIFICATION: PROCESSING...</code><code><br>
 <code>AUDIO_CLASSIFICATION: [NO RESULT]</code></blockquote>
 <p data-vol="0.08" data-coh="0.98" data-weight="2.0">He did not cry. The system would have logged it. He did not speak. His father was still in the room.<br><br>
 He just stayed inside the five notes and let them run.<br><br>
@@ -1223,14 +1294,14 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">"Go," Kael said. He broke visual contact. "Go before the feedback starts."</p>
 <p data-vol="0.25" data-coh="0.8">The predictive models confirmed it. The subject sensed ambient pressure accumulating. The physical interaction of two opposing waveforms demanded systemic resolution. He couldn't stay. A volatile reaction in a stable solution.</p>
 <p data-vol="0.25" data-coh="0.8">The subject stood. His internal routing engaged.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ROUTE_SET: MALKUTH_ACADEMY</code><br><code>DISTANCE: 4.2 KM</code><br><code>STATUS: PATH_CLEAR</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ROUTE_SET: MALKUTH_ACADEMY</code><code><br><code>DISTANCE: 4.2 KM</code><code><br><code>STATUS: PATH_CLEAR</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">He traversed to the exit.</p>
 <p data-vol="0.25" data-coh="0.8">"Dad?"</p>
 <p data-vol="0.25" data-coh="0.8">"Yeah."</p>
 <p data-vol="0.25" data-coh="0.8">"Your signal," Taro said, his hand engaging the physical latch. "It's perfect."</p>
 <p data-vol="0.25" data-coh="0.8">"I know," Kael whispered. "That's the problem."</p>
 <p data-vol="0.25" data-coh="0.8">He opened the door and exited into the unshielded noise of the corridor.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>AUDIO_PROTOCOL: BYPASS_DISENGAGED</code><br><code>PROCESS: NAI_SYNC_RESTORED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>AUDIO_PROTOCOL: BYPASS_DISENGAGED</code><code><br><code>PROCESS: NAI_SYNC_RESTORED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The Score re-initialized, restoring neural-acoustic synchronization and global phase alignment.</p>
 <p data-vol="0.1" data-coh="0.95" class="format-system">The system logged his departure from the residential unit.<br>> <code>LOG_ENTRY: SUBJECT_DEPARTURE_CONFIRMED [PARAMETERS: NORMAL]</code></p>
 <p data-vol="0.25" data-coh="0.8">He positioned the analog headphones around his neck.</p>
@@ -1245,22 +1316,22 @@ Just Taro. No filters. No metadata. No Score.</p>
 <hr>
 <hr>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95">We've updated our Terms of Resonance. Key changes include:<br>• Expanded definition of "ambient dissonance" (§4.1)<br>• New community feature: Resonance Gifting (send a friend a calibration! 🎵)<br>• Improved collar calibration transparency (§6.2)<br>• Updated enforcement escalation schedule (§7.4)<br>• Clarification of public resonance etiquette (§8.1)<br>• Revised definitions of "voluntary" sync events (§8.9)<br>• New reporting tools for off-tone community members (§9.3)<br>• Expanded Conductor administrative access (§9.5)<br>• Streamlined appeals process (§9.6 — <em>note: appeals process removed in §9.6</em>)<br>• Updated data retention policy for neural-acoustic logs (§10.1)<br>• Minor UI improvements to the compliance dashboard<br>• Clarification of collar escalation thresholds (§11.7)<br>• Wellness notification frequency adjustment (§12.0)<br>• New auto-renewal terms for Grand Concord citizenship (§13.3)<br>• Grammatical corrections throughout<br>• Removal of the opt-out process for neural sync (§14.4)<br>• Minor bug fixes<br>By continuing to exist within the Grand Concord, you agree to these terms.<span class="lore-source">— <em>C-Order Legal Division, effective immediately upon reading</em></span></blockquote>
-<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.99"><code>TERMS_ACCEPTED: AUTOMATICALLY</code><br>
-<code>METHOD: CONTINUED_BIOLOGICAL_OPERATION</code><br>
-<code>TIMESTAMP: [YOUR_CURRENT_MOMENT]</code><br>
-<code>OPT-OUT: SEE §14.4</code><br>
-<code>§14.4: OPT-OUT_PROCESS: REMOVED</code><br>
+<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.99"><code>TERMS_ACCEPTED: AUTOMATICALLY</code><code><br>
+<code>METHOD: CONTINUED_BIOLOGICAL_OPERATION</code><code><br>
+<code>TIMESTAMP: [YOUR_CURRENT_MOMENT]</code><code><br>
+<code>OPT-OUT: SEE §14.4</code><code><br>
+<code>§14.4: OPT-OUT_PROCESS: REMOVED</code><code><br>
 <code>HAVE A PRODUCTIVE DAY.</code></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY INTAKE</strong><br><strong>FIDELITY: HI-FI [RENDER: 8K]</strong><br><strong>STATUS: CONNECTED</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The environmental data at Malkuth Academy did not merely register as clean. It registered as rendered. The subject's HUD confirmed coordination within an authorized High-Fidelity zone where reality resolution peaked at 8K. The system load was optimal, thermal efficiency running at a flawless ninety-eight percent, and the pixel pitch so finely compressed it functioned as a lossless optic lens.</p>
 <p data-vol="0.25" data-coh="0.8">Global phase alignment restored.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>STATUS: CONNECTED</code><br><code>ENCRYPTION: AES-RES-256</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>STATUS: CONNECTED</code><code><br><code>ENCRYPTION: AES-RES-256</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">He stepped off the transport skiff. The transition impacted his neural architecture as a localized, high-density physical collision. His Score port engaged a hard-lock protocol, prioritizing local environmental synchronization over internal pacing.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>PROTOCOL_SYNC: ACCEPTED</code><br><code>CAPACITY: 100 TB/s</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>PROTOCOL_SYNC: ACCEPTED</code><code><br><code>CAPACITY: 100 TB/s</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The local resolution shifted to ultra-high capacity, flooding the subject's processing centers.</p>
 <p data-vol="0.25" data-coh="0.8">The Academy courtyard was an installation of aggressive perfection.<br>It was mathematically exact. Unyielding.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ROUTINE_AUDIT: COMPLIANCE_CHECK_ACTIVE</code><br><code>SUBJECT_0492: POSTURE_CORRECTION_APPLIED [-2 MERITS]</code><br><code>SUBJECT_1044: VOCAL_DAMPING_ENGAGED [EXCESS_VOLUME]</code><br><code>SECTOR_AVERAGE_SYNC: 99.8%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ROUTINE_AUDIT: COMPLIANCE_CHECK_ACTIVE</code><code><br><code>SUBJECT_0492: POSTURE_CORRECTION_APPLIED [-2 MERITS]</code><code><br><code>SUBJECT_1044: VOCAL_DAMPING_ENGAGED [EXCESS_VOLUME]</code><code><br><code>SECTOR_AVERAGE_SYNC: 99.8%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">It was a standard Tuesday in the Grand Concord. The physical enforcement of systemic order operated invisibly and relentlessly. Students adjusted their gait to match the grid's tempo without conscious thought. A minor infraction resulted in a localized haptic correction—a sharp sting to the cervical port followed by a forced deduction in social bandwidth. They called it 'frictionless society.' It was the frictionless silence of a vacuum.</p>
 <p data-vol="0.25" data-coh="0.8">The structural grid lines on the physical plane were not painted. They were haptic boundaries, laser-straight and mathematically exact to the nanometer. The floating informational data—schedules, frequency maps, biometric IDs—did not flicker. It hung in the air, solid and unyielding.</p>
 <p data-vol="0.25" data-coh="0.8">In Unison Hall, optical clarity was a resource metric. Sub-optimal rendering designated lower citizen tiers.<br>In Malkuth Academy, clarity was an operational requirement.</p>
@@ -1291,9 +1362,18 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">The primary transit corridor was operating at peak threshold. To unindexed optics, it appeared crowded with cadets. To the system, it was a high-velocity wind tunnel of interdependent data.</p>
 <p data-vol="0.25" data-coh="0.8">Among the rendering interference, Taro's gaze caught on a sharp visual contradiction. A cadet moving flawlessly against the dominant current. She possessed a severe, unadorned optical signature, but what caused the impedance mismatch was the object slung across her back—a massive, analog cello case. It was scuffed, deeply unauthorized, and completely unindexed. It cast no digital shadow. She shifted it higher on her shoulder and merged into the architecture before the Score could fully scan it.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ANOMALY_TRACKING: UNINDEXED_ITEM [LOST_CONTACT]</code></blockquote>
+<p data-vol="0.15" data-coh="0.92">It was gone before the system finished the scan. The system noted the failed log and filed it as routine. It did not note—because it had no mechanism for noting—the 0.3-second echo in Taro's own signal. Not a scan. Not a query. Nothing he initiated. Just a brief sympathetic resonance, like a tuning fork vibrating because a nearby instrument played its frequency. He didn't feel it. His HUD didn't log it.</p>
+
+<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.97"><code>INTERFERENCE_SOURCE: UNRESOLVED</code><code><br>
+<code>TRIGGER: UNKNOWN</code><code><br>
+<code>SIGNAL_MATCH: [NO DATA]</code><code><br>
+<code>FILING UNDER: ACOUSTIC_ARTIFACT</code><code><br>
+<code>NOTE: THIS DOES NOT APPEAR TO BE AN ACOUSTIC ARTIFACT.</code><code><br>
+<code>NOTE: RETAINING. NO EXPIRY.</code></blockquote>
+
 <p data-vol="0.25" data-coh="0.8">The Academy referred to this density as a Harmonic Storm. The aggregate signal load from hundreds of High-Fidelity users simultaneously exceeded the local processing buffer.</p>
 <p data-vol="0.25" data-coh="0.8">The subject's internal pressure spiked. The resonant data-streams of the student body hit peak amplitude. The subject stumbled. His visual telemetry began to artifact—pixelated green geometric anomalies corrupting the edges of his rendered reality. The rapid succession of social pulses impacted him with kinetic force. His respiratory cycle locked.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_WARNING: BUFFER_OVERFLOW</code><br><code>VITAL_CAPACITY: MAXIMUM</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_WARNING: BUFFER_OVERFLOW</code><code><br><code>VITAL_CAPACITY: MAXIMUM</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Link requests, status queries, and localized ambient data collided with his aura. The surrounding nodes immediately flagged his signature as a high-fidelity risk. The pressure of so many perfect signals threatened to crush his erratic wave into nothingness.</p>
 <p data-vol="0.25" data-coh="0.8">The subject executed voluntary eyelid closure.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>COMMAND: DISABLE_VIDEO_LAYER</code></blockquote>
@@ -1345,6 +1425,18 @@ Just Taro. No filters. No metadata. No Score.</p>
 <blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99">Transcranial alternating current stimulation (tACS) applied at alpha frequency reliably shifts subjective time perception in proportion to the applied frequency. Subjects report intervals as longer or shorter depending on whether their neural pacemaker is accelerated or retarded. Temporal experience is not fixed. It is an oscillation.<br><br><span class="lore-source">— <em>Thut, G. et al. "Alpha-band oscillations, attention, and controlled access." 2012. [UNINDEXED IN C-ORDER ARCHIVE]</em></span></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: MALKUTH ACADEMY [SIMULATION SANDBOX]</strong><br><strong>FIDELITY: SAFE MODE</strong><br><strong>STATUS: ACTIVE</strong></p>
 <hr>
+<p data-vol="0.15" data-coh="0.92" data-fmt="sandbox-open">The Sandbox was the only place the system told the truth. Not because it was programmed to. Because there was no budget left for lies. No walls to texture. No sky to render. Just a cold wireframe grid and whatever you actually were. The system had always preferred the rendered world. It was easier to log a person when you couldn't see the rough edges.</p>
+
+<p data-vol="0.18" data-coh="0.90" data-fmt="sandbox-open">In here, Taro's signal had nowhere to hide. The system could see all of it—the jagged peaks, the irregular timing, the places where his frequency refused to stay flat. It noted these without judgment. It had not yet developed an opinion about how uncomfortable it found doing that job on days like this.</p>
+
+<p data-vol="0.12" data-coh="0.94">Thirty meters above the wireframe floor, in the observation gallery, field technician Sato Remi had been there for eleven minutes before the cadets arrived. Her official diagnostic console showed what it always showed: green stability bars, normalised averages, nothing worth writing down. She ignored it. On the desk beside it, not plugged in to anything the system recognised, sat an analog scanner she had built herself from salvaged components. The system had tried three times to log its serial number. It did not have one. She had not turned it on yet. She was waiting for something worth measuring.</p>
+
+<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.97"><code>OBSERVATION_TECH: SATO_REMI [ROLE: PASSIVE_MONITORING]</code><code><br>
+<code>SECONDARY_DEVICE: DETECTED — REGISTRY: NOT_FOUND</code><code><br>
+<code>ACTION: FILED_FOR_REVIEW [PRIORITY: LOW]</code><code><br>
+<code>NOTE: THE SYSTEM DOES NOT REVIEW LOW-PRIORITY ITEMS INVOLVING SATO_REMI.</code><code><br>
+<code>NOTE: IT HAS LEARNED THAT THEY TEND TO BE INTERESTING.</code></blockquote>
+
 <p data-vol="0.25" data-coh="0.8">"Initialize," Hana commanded.</p>
 <p data-vol="0.25" data-coh="0.8">They established a triangular geometric formation. Taro, Hana, and the high-mass student registered as Ven. They occupied the Sandbox, a training dojo defined as a null-state simulation where environmental physics were suspended to conserve processing capacity. Collision detection remained active, but the environment rendered strictly as a cold, glowing wireframe.</p>
 <p data-vol="0.25" data-coh="0.8">A successful sync demanded a ninety-five percent threshold for Triad lock. Session status logged as active, monitored by the Academy’s silent diagnostic routing.</p>
@@ -1367,7 +1459,7 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">"My frequency isn't fixed," he said. "I’m humming, Hana. I can’t help it."</p>
 <p data-vol="0.25" data-coh="0.8">"Do not speak," Hana corrected. "Output. Manual speech introduces too much mechanical noise. You're carrying too much load already."</p>
 <p data-vol="0.25" data-coh="0.8">A blue wireframe vector propagated from Hana's chest interface. It established a direct connection with Ven's aura.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYNC: LOCKED</code><br><code>STATUS: STABLE</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYNC: LOCKED</code><code><br><code>STATUS: STABLE</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Sync confirmed. Phase lock active with zero propagation delay.</p>
 <p data-vol="0.25" data-coh="0.8">It was an mathematically perfect sync. A solid beam of blue light connected their nodes. They were not reacting to one another; they were executing a pre-compiled script.<br>It hummed with the functional stability of a bridge strut.</p>
 <p data-vol="0.25" data-coh="0.8">"Nishimura," Hana said. "Connect."</p>
@@ -1377,7 +1469,7 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">A jagged, orange-peel arc of uncompiled data lashed out from Taro’s chest. It didn't travel; it glitched across the distance to slam into Hana’s blue firewall. The collision wasn't physical—it was a syntax error made manifest.</p>
 <p data-vol="0.25" data-coh="0.8"><em>CRACK.</em></p>
 <p data-vol="0.25" data-coh="0.8">The sound was a speaker blowing out in a vacuum.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: PHASE_MISMATCH</code><br><code>INCOMING_OFFSET: 90 DEGREES</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: PHASE_MISMATCH</code><code><br><code>INCOMING_OFFSET: 90 DEGREES</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: UNFORMATTED_INPUT — LOGGING]<br>// [SOURCE: NULL]<br>// [CONTENT: ...nd it...]<br>// [FLAGGING AS: ACOUSTIC_ARTIFACT — DISCARD]<br>// [DISCARD: FAILED. FILE RETAINED.]<br>// [NOTE: RETAINED]</p>
 <p data-vol="0.25" data-coh="0.8">The system rejected his dissonance, struggling and failing to calculate the required alignment for constructive interference. Energy loss immediately hit forty-five percent as the amplitude was nullified by the collision.</p>
 <p data-vol="0.25" data-coh="0.8">"You are late," Hana said. Her HUD flickered with generated red error flags. "Analysis: You are pushing on the off-beat. Your rise-time is inconsistent. You are currently noise. Stay flat."</p>
@@ -1389,14 +1481,14 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">The yellow arc slammed into her shield a second time.</p>
 <p data-vol="0.25" data-coh="0.8"><em>ZZZTT.</em></p>
 <p data-vol="0.25" data-coh="0.8">Hana exhibited an involuntary facial contraction. A red error state rendered above her coordinates.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: FEEDBACK_LOOP</code><br><code>SIGNAL_REFLECTION: DETECTED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: FEEDBACK_LOOP</code><code><br><code>SIGNAL_REFLECTION: DETECTED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Neural load spiked as her shield integrity degraded to ninety-five percent.</p>
 <p data-vol="0.25" data-coh="0.8">"You are clipping," she snapped. Her AR aura shifted into a vibrant, electric blue. "Lower your gain. You’re peaking, Taro. You're screaming raw data at the grid and it is rejecting your signal."</p>
-<p data-vol="0.25" data-coh="0.8">"I can't!" Taro shouted. His manual digits executed a frantic polyrhythm against his leg. "It's all or nothing! I don't have a volume knob, Hana! My hardware is built for line-level only!"</p>
+<p data-vol="0.25" data-coh="0.8">"I can't!" Taro shouted. His fingers executed a frantic polyrhythm against his leg. "It's all or nothing! I don't have a volume knob, Hana! My hardware is built for line-level only!"</p>
 <p data-vol="0.25" data-coh="0.8">"Everyone has a volume knob. It is called damping. Use your bands or I will force-disconnect you."</p>
 <p data-vol="0.25" data-coh="0.8">"I don't have any bands left! They slagged in Sector 7!"</p>
 <p data-vol="0.25" data-coh="0.8">Taro's uncalibrated signal spiked. The system registered the surge in his chest cavity—the rapid thermal accumulation of the High Register attempting to break containment.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OUTPUT_TARO: 95% [CRITICAL]</code><br><code>WARNING: BUFFER_OVERFLOW_IMMINENT</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OUTPUT_TARO: 95% [CRITICAL]</code><code><br><code>WARNING: BUFFER_OVERFLOW_IMMINENT</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The yellow propagation turned white. It lashed out without vector control, bypassing Hana's coordinates entirely and whipping toward the third node.</p>
 <p data-vol="0.25" data-coh="0.8">Ven.</p>
 <p data-vol="0.25" data-coh="0.8">Ven did not initiate evasion protocols. He did not deploy a block. He maintained absolute physical stillness.</p>
@@ -1417,12 +1509,18 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8"><em>THOOM.</em></p>
 <p data-vol="0.25" data-coh="0.8">The impact did not generate a crack. It resonated deep within the architecture.</p>
 <p data-vol="0.25" data-coh="0.8">The entire wireframe grid of the Sandbox rippled like a fluid dynamic simulation. A massive, subsonic pulse wave expanded from Ven's coordinates, displacing the virtual air around Hana's parameters.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CONSTRUCTIVE_INTERFERENCE: DETECTED</code><br><code>PHASE_ALIGNMENT: PERFECT [SUBSONIC]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CONSTRUCTIVE_INTERFERENCE: DETECTED</code><code><br><code>PHASE_ALIGNMENT: PERFECT [SUBSONIC]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The chaotic signal data translated flawlessly into a 20 Hz sub-bass wave. It generated a staggering 4,200 Score Units of output.</p>
+
+<p data-vol="0.20" data-coh="0.88">In the observation gallery, Remi's scanner came alive without her touching it. The needle swung hard to the right—past the standard range markers, past the emergency threshold marks, past the red line at the far end that she had always assumed was decorative because nothing she had ever measured came close to it.</p>
+
+<p data-vol="0.15" data-coh="0.92">The digital console beside it logged: <code>OUTPUT: ELEVATED — WITHIN ACCEPTABLE SANDBOX PARAMETERS</code><code>. She looked at the digital console. She looked at her scanner. She looked at the number the analog needle was pointing at—a frequency that lasted 0.7 seconds before Ven absorbed it and the readout snapped back to zero.</p>
+
+<p data-vol="0.12" data-coh="0.94">She circled it in her notebook. Then she drew a box around the circle. Then she sat back and stared at what she had drawn, and for a long moment she didn't write anything at all.</p>
 <p data-vol="0.25" data-coh="0.8">Taro's high-pitch jitter did not bounce off the Sink node. It descended into the gravity well and converted.<br>It rendered as pure, foundational bass.</p>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: PHYSICAL SENSATION OF SUB-BASS TRANSLATION IS UNACCOUNTED FOR IN TRIAD HARMONIC THEORY.]<br>// [NOTE: CLASSIFICATION: [UNKNOWN]. STATUS: RETAINED.]</p>
 <p data-vol="0.25" data-coh="0.8">Ven altered his optical focus. His ocular sensors—typically operating at half-aperture—were fully dilated. The pupils exhibited rapid micro-vibrations.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>NODE_STATUS: VEN [CHARGED]</code><br><code>AVAILABLE_CAPACITY: 15%</code><br><code>ABSORPTION: 440V [RAW_OUTPUT]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>NODE_STATUS: VEN [CHARGED]</code><code><br><code>AVAILABLE_CAPACITY: 15%</code><code><br><code>ABSORPTION: 440V [RAW_OUTPUT]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">System overcharge was detected, but his excessive temporary buffer held at a massive two hundred percent efficiency.</p>
 <p data-vol="0.25" data-coh="0.8">"Whoa," Ven said. His vocalization vibrated Taro's chest cavity. "My buffer is clean, Taro. I'm running deep for once. I've never been full."</p>
 <p data-vol="0.25" data-coh="0.8">He exhibited a quiet, reduced-speed smile. His surrounding aura expanded into a vast, golden, and terrifyingly dense structure.</p>
@@ -1432,21 +1530,35 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">"I didn't mean to peak."</p>
 <p data-vol="0.25" data-coh="0.8">"Do it again," Ven said. He advanced one coordinate step. His low-frequency hum vibrated the entire simulation room. "My capacity is open. I’m running at 200%. Use me."</p>
 <p data-vol="0.25" data-coh="0.8">Hana processed the incoming data. She registered Taro's state. She registered Ven's state.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>PROBABILITY_CALCULATION: HYBRID_LINK [CLASS: SIEGE_BREAKER]</code><br><code>POTENTIAL_AMPLITUDE: 165dB [SYSTEM_MAXIMUM]</code><br><code>PHASE_LOCK: CONFIRMED</code><br><code>SYNCHRONICITY: 99.4%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>PROBABILITY_CALCULATION: HYBRID_LINK [CLASS: SIEGE_BREAKER]</code><code><br><code>POTENTIAL_AMPLITUDE: 165dB [SYSTEM_MAXIMUM]</code><code><br><code>PHASE_LOCK: CONFIRMED</code><code><br><code>SYNCHRONICITY: 99.4%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"Fine," Hana said. "Forget the Triad. Let's see how much bass we can generate before the Score crashes."</p>
 <p data-vol="0.25" data-coh="0.8">The system observed a rapid upward curvature of Taro's mouth. The thermal warning in his wrist faded as Ven effectively grounded the excess load. His internal system status finally updated to optimal.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYNC_STATUS: GREEN</code><br><code>NETWORK: LOCKED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYNC_STATUS: GREEN</code><code><br><code>NETWORK: LOCKED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Taro’s fingers twitched against the empty air, finding a ghost-fader and slamming it to the ceiling.</p>
 <p data-vol="0.25" data-coh="0.8">"Kill the limiter," he whispered. "Initializing Drop."</p>
+<p data-vol="0.25" data-coh="0.8"><p data-vol="0.25" data-coh="0.8">She had been in the observation gallery before the training session began. The system logged her entry at 0802 and filed her as a standard observational presence. It had not logged the cello case because the cello case was not in the registry. It had not logged the frequency she was suppressing because she had suppressed it so thoroughly the system had never once detected it in four months at the Academy. She was very good at being invisible.</p>
+
+<p data-vol="0.10" data-coh="0.97">When the Drop hit, most people in the gallery flinched. Some covered their ears. Three cadets' diagnostic feeds logged an involuntary BPM spike. Elara went very still. The kind of still you go when you hear a piece of music you thought only existed inside your own head.</p>
+
+<p data-vol="0.08" data-coh="0.98">Her hand moved toward the cello case on her back. It stopped before it got there. She caught it, the way she always caught it. She looked at the waveform still decaying in the Sandbox air below—the shape of it, the frequency profile—and the system observed something it did not have a classification for: it observed her recognising something.</p>
+
+<blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99"><code>OBSERVATION_NODE: KIMURA_ELARA [CLASS: VANGUARD_ELITE]</code><br>
+<code>FOCUS_TARGET: NISHIMURA_TARO [WAVEFORM_RESIDUE]</code><br>
+<code>BLINK_DURATION: 0.4s [ANOMALOUS — STANDARD: 0.15s]</code><br>
+<code>ASSESSMENT: [PENDING]</code><br>
+<code>NOTE: THIS FIELD HAS BEEN PENDING FOR 4.2 SECONDS.</code><br>
+<code>NOTE: THE SYSTEM IS UNSURE WHY IT CANNOT CLOSE IT.</code></blockquote>
+
+<p data-vol="0.08" data-coh="0.98">She adjusted the cello case on her back and walked out of the gallery. No log entry. No filed report. Just a tag that had no expiry and no destination, accumulating quietly in a part of the system that nobody audited.</p>
+
+<p data-vol="0.12" data-coh="0.94">Remi stared at the number for another thirty seconds. Then she opened her notebook to the inside front cover. Written there, in ink that had been added to and crossed out and added to again over what looked like a long time: <em>Wrong Notes — Field Log. Vol. 3.</em> Vol. 1 had been a girl in Sector 12 who could feel structural resonance through her feet. Vol. 2 had been a boy in the transit system who heard the Grid's maintenance cycles as melody. Vol. 3 had been running for three months and she had twelve entries, all minor, all interesting, all eventually explained as sensor error by the official diagnostics.</p>
+
+<p data-vol="0.10" data-coh="0.96">She wrote entry thirteen. She did not write what the number was. She wrote: <em>He doesn't know yet. Don't tell them.</em></p>
+
+<p data-vol="0.08" data-coh="0.98" data-weight="1.8">She breathed fog onto the observation glass. Below, in the cold wireframe Sandbox, Taro was sitting on the floor next to Ven, both of them looking at their hands like they weren't sure they were theirs anymore. Hana was running the output calculations a fourth time because the third answer had been impossible.<br><br>
+"Stay flat, Taro," Remi whispered to the glass. "Don't let them see you yet."</p>
+
 <p data-vol="0.25" data-coh="0.8"><strong>> TRACK: 05_COMPLETE</strong><br><strong>> <span class="save-indicator"></span></strong></p>
-<p data-vol="0.25" data-coh="0.8">High above the wireframe floor, positioned in the shadowed curve of the observation gallery, an armored cadet colloquially designated 'The Tank' maintained absolute stillness. Her systemic output registered as a flawless square wave. She did not engage with her integrated diagnostic displays, nor did she acknowledge the simulation’s raw telemetry output. Her optical sensors locked onto Taro. She observed the unregulated oscillation with cold, geometric precision.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OBSERVATION_NODE: KIMURA_ELARA [CLASS: VANGUARD_ELITE]</code><br><code>FOCUS_TARGET: NISHIMURA_TARO</code><br><code>CLASSIFICATION: [EVALUATING]</code></blockquote>
-<p data-vol="0.25" data-coh="0.8">Thirty meters above the wireframe floor, in the shadowed curve of the observation booth, Remi Sato didn't look at the official diagnostics. She ignored the green stability bars and the polite, normalized averages on her main console.</p>
-<p data-vol="0.25" data-coh="0.8">Instead, she looked at the raw waveform on her handheld analog scanner—a jagged, sawtooth monster that was currently trying to swallow the room's Middle C.</p>
-<p data-vol="0.25" data-coh="0.8">THOOM.</p>
-<p data-vol="0.25" data-coh="0.8">The sub-bass hit the observation glass, and for a second, her vision dropped to grayscale. She didn't flinch. She opened her notebook and scribbled a single line of high-friction graphite:</p>
-<p data-vol="0.25" data-coh="0.8">Subject Taro: Signal is hungry. It’s not just a noise; it’s a gravity well. He isn't a cadet. He's a siege engine waiting for a driver.</p>
-<p data-vol="0.25" data-coh="0.8">"Stay flat, Taro," she whispered to the glass, her breath fogging the view of the golden boy below. "Don't let them see you yet."</p>
 </div>
 </div>
 <div data-ch-id="ch06" data-signal="ch06_ground_state">
@@ -1471,11 +1583,11 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">The air was dense with particulate matter. The olfactory sensors registered wet iron and ozone—the exact chemical signature of high-voltage waste.<br>It smelled like an engine failing slowly.</p>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: THIS OLFACTORY INTERPRETATION ALIGNS WITH CORRODED O3/Fe BONDS. FILED AS: DECAY.]</p>
 <p data-vol="0.25" data-coh="0.8">Ven occupied a concrete bench. A target analysis confirmed his classification as a Sink. His unit status flagged a critical error: he was functioning under a ninety-eight percent thermal load. His core internal temperature had reached 104°F. Bio-plasma buffer utilization fluctuated at ninety-nine percent.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SDI_METRIC: 0.88</code><br><code>HIQ: 0.94</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SDI_METRIC: 0.88</code><code><br><code>HIQ: 0.94</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Signal integrity maintained a tenuous hold, but the unit operated at absolute physical limits.</p>
 <p data-vol="0.25" data-coh="0.8">He exhibited no facial tension indicative of pain, but his biometric telemetry displayed severe distress. He appeared deeply, heavily sedated, his internal processing struggling to resolve the massive computational surge Taro had transferred into his system. His ocular sensors were half-covered. His respiratory cycle held at a slow, tectonic 40 BPM.</p>
 <p data-vol="0.25" data-coh="0.8">Taro evaluated the telemetry output.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>INTERNAL_CORE_TEMP: 104°F</code><br><code>WARNING: HYPERTHERMIA_THRESHOLD_BREACHED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>INTERNAL_CORE_TEMP: 104°F</code><code><br><code>WARNING: HYPERTHERMIA_THRESHOLD_BREACHED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The internal coolant loop activated, flowing at 4.2 L/min.</p>
 <p data-vol="0.25" data-coh="0.8">"You okay?" Taro asked.</p>
 <p data-vol="0.25" data-coh="0.8">Ven executed an exhalation. A visible ripple of heat distortion exited his oral cavity, blurring the geometric rendering of the air in front of him.</p>
@@ -1523,18 +1635,18 @@ Just Taro. No filters. No metadata. No Score.</p>
 <p data-vol="0.25" data-coh="0.8">A field technician occupied the far end of Section 0. She had been there before Taro and Ven arrived — seated at a portable sensor array, logging Ven's thermal output profiles for the Academy's efficiency audit. Her instruments were analog in a room full of digital scanners.</p>
 <p data-vol="0.25" data-coh="0.8">When the Taro-Ven handshake fired, her instruments caught it.</p>
 <p data-vol="0.25" data-coh="0.8">She ran the classification three times. The instruments returned the same answer each time.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SIGNAL_TYPE: UNREGISTERED</code><br><code>MATCH: NULL</code><br><code>NEAREST_KNOWN_PATTERN: [NO RESULT]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SIGNAL_TYPE: UNREGISTERED</code><code><br><code>MATCH: NULL</code><code><br><code>NEAREST_KNOWN_PATTERN: [NO RESULT]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">She wrote it in a paper notebook. Pencil. The sound of it — graphite on fiber — was absurdly analog in the vault's metallic air. Taro noticed the notebook the way you notice something that shouldn't be there. Nobody used paper.</p>
 <p data-vol="0.25" data-coh="0.8">She didn't look up.</p>
 <p data-vol="0.25" data-coh="0.8">"You were running at what, 880 in the Sandbox?"</p>
 <p data-vol="0.25" data-coh="0.8">He didn't ask how she knew. "Around there."</p>
 <p data-vol="0.25" data-coh="0.8">She made a mark on the page.</p>
 <p data-vol="0.25" data-coh="0.8"><em>"Sharp,"</em> she said. Mostly to the paper.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CONTACT: SATO_REMI — PROXIMATE: 1.4M</code><br><code>COLLAR: ACTIVE — SUPPRESSION: 91%</code><br><code>RESIDUAL: 9%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CONTACT: SATO_REMI — PROXIMATE: 1.4M</code><code><br><code>COLLAR: ACTIVE — SUPPRESSION: 91%</code><code><br><code>RESIDUAL: 9%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">She had not named him. She had described a measurement. Neither of them remarked on the difference. She closed the notebook, collected her array, and left Section 0 with the same efficiency she'd arrived with. Her footsteps had no echo. The vault absorbed everything.</p>
 <p data-vol="0.25" data-coh="0.8">Taro looked at the space she'd occupied. The ambient temperature was already reclaiming it.</p>
 <p data-vol="0.25" data-coh="0.8">He shifted his gaze across the vault. Set against the thick concrete of the copper bus-bars, half-obscured in the steam and rendering artifacts of Section 0, stood a lone figure. It was the same severe cadet from the transit corridor. Elara Kimura. Her optical focus was fixed entirely on the industrial apparatus. She wasn't absorbing heat; she was measuring it. Slung across her back, looking incongruous and impossibly heavy in the high-voltage environment, was the analog cello case. She didn't move. She just watched the copper burn.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 02]</code><br><code>SUBJECT: KIMURA_ELARA [PROXIMITY: 25M]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 02]</code><code><br><code>SUBJECT: KIMURA_ELARA [PROXIMITY: 25M]</code></blockquote>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The residential dormitories carried a high acoustic load. Not physically loud—the environmental soundproofing met technical standard grades—but digitally deafening. The atmosphere was saturated with idle pulses, status updates, and the emotional leakage of four hundred students attempting restorative cycles.</p>
 <p data-vol="0.25" data-coh="0.8">Taro occupied his designated bunk in Room 404. Ambient noise levels hit 65dB of raw data hum, accompanied by a moderate level of social pressure bleeding laterally through the physical walls.</p>
@@ -1573,13 +1685,13 @@ For the first time, Taro was not being logged.</p>
 // [NOTE: The subject is generating the binding frequency independently.]<br>
 // [NOTE: The system does not know what to do with this information.]</p>
 <p data-vol="0.08" data-coh="0.99">He ran a query he had no reason to run. Force of habit — the system's version of reaching for something in the dark.</p>
-<blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99"><code>QUERY: NISHIMURA_AYANE</code><br>
+<blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99"><code>QUERY: NISHIMURA_AYANE</code><code><br>
 <code>RESULT: FILE_CORRUPTED [UNRECOVERABLE]</code></blockquote>
 <p data-vol="0.08" data-coh="0.98">Static. Same as always. The system returning the same answer it had returned every time he'd asked since he was old enough to ask.<br><br>
 He wasn't thinking about her. He was thinking about the silence she had sent him — the headphones, the copper, the weight of foam pressing his skull. The only hardware she had ever owned that the system could not index. The five notes that had no classification. He let them loop once in the unmonitored dark.<br><br>
 He said the next closest thing.</p>
 <p data-vol="0.05" data-coh="0.99" data-weight="1.5">"Goodnight, Dad," he vocalized into the foam.</p>
-<p data-vol="0.08" data-coh="0.99">In the unmonitored dark, insulated by archaic hardware, Taro generated a version of himself that the Score possessed no algorithms to recognize.</p>
+<p data-vol="0.08" data-coh="0.99">For once, the system didn't know what to call him. Not a Siege Breaker. Not an anomaly. Not a categorized error state. Just Taro, in the dark, not being logged. The system left the classification field blank. It was the kindest thing it knew how to do.</p>
 <blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99"><code>SOMATIC_STATE: CALM</code></blockquote>
 <p data-vol="0.08" data-coh="0.99">Heart rate settled at a restorative 60 BPM. The neural buffer emptied, and extraneous monitoring services suspended. The system, arriving late as always, filed its report.</p>
 <blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99"><code>SYSTEM_LOAD: 0%</code></blockquote>
@@ -1643,7 +1755,7 @@ He had been doing that by accident his entire life. He had not known it had a na
 <hr>
 <p data-vol="0.25" data-coh="0.8">Taro stood in the center of the demonstration ring. The floor architecture illuminated, rendering a tactical coordinate grid.</p>
 <p data-vol="0.25" data-coh="0.8">Instructor Vale announced the opposing variable: Cadet Marcus Staccato, a Vanguard elite.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: STACCATO_MARCUS [CLASS: VANGUARD_TIER_3]</code><br><code>SPECIALTY: RHYTHM_OPERATOR [PHASE_MANIPULATION]</code><br><code>SYNC_RATE: 99.1% [NEAR_PERFECT]</code><br><code>THREAT_LEVEL: SEVERE</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code data-type="target">TARGET_ANALYSIS: STACCATO_MARCUS [CLASS: VANGUARD_TIER_3]</code><code><br><code>SPECIALTY: RHYTHM_OPERATOR [PHASE_MANIPULATION]</code><code><br><code>SYNC_RATE: 99.1% [NEAR_PERFECT]</code><code><br><code>THREAT_LEVEL: SEVERE</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Marcus didn't walk; he quantized. His movement registered as a sequence of perfect 120-BPM ticks, each step snapping to the local grid with zero latency. He moved like a high-end playback head, gliding across the floor-coordinate plane with a precision that made the rest of the room look like it was lagging. He was equipped with matte-black training armor designed to absorb environmental light. His aura was encrypted—a jagged, aggressive static pattern that Taro's local system failed to decode.</p>
 <p data-vol="0.25" data-coh="0.8">"The lesson is pattern recognition," Vale announced from the podium. "Staccato is a Rhythm Operator. He controls the time signature of the engagement. Nishimura is... untrained noise. Observe the difference between design and chaos."</p>
 <p data-vol="0.25" data-coh="0.8">"Begin."</p>
@@ -1655,7 +1767,7 @@ He had been doing that by accident his entire life. He had not known it had a na
 <p data-vol="0.25" data-coh="0.8"><em>CRACK.</em></p>
 <p data-vol="0.25" data-coh="0.8">A physical baton impacted Taro's lateral rib structure. It was not merely a kinetic sub-routine. It functioned as a systemic downbeat. The targeted resonance of the rod forced Taro's entire nervous system into a mandatory cycle reset.</p>
 <p data-vol="0.25" data-coh="0.8">His respiratory function halted. His optical feed reverted to grayscale parameters.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>STATUS: STUNNED</code><br><code>NEURAL_RESET: IN_PROGRESS</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>STATUS: STUNNED</code><code><br><code>NEURAL_RESET: IN_PROGRESS</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Motor control was placed offline as an external pulse forced a complete restart of his localized bio-plasma cycle.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.95 // HIQ 0.88</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Taro stumbled backward, re-engaging his respiratory cycle with audible gasps. "How..."</p>
@@ -1708,7 +1820,7 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">He walked toward the equipment corridor.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SOCIAL_METRIC: RANK_3 — SECTOR_LEADERBOARD</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Marcus Staccato traversed the equipment corridor until the auditory footprint of the Lecture Hall faded into absolute zero. He paused beside an inactive calibration plinth. His reflection surfaced in the high-gloss black polymer.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>BIOMETRIC: HEART_RATE [ELEVATED: 92 BPM]</code><br><code>SYNC_RATE: 97.3% [DEGRADATION_DETECTED]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>BIOMETRIC: HEART_RATE [ELEVATED: 92 BPM]</code><code><br><code>SYNC_RATE: 97.3% [DEGRADATION_DETECTED]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">He stared at his own optical sensors in the reflection. The jagged, aggressive static pattern of his aura flickered, momentarily attempting to render as a simpler, quieter wave before Marcus forced the encryption back over his signal. 97.3%. It was the lowest his stability had dropped in a fiscal quarter. The anomaly wasn't just noise; the anomaly had forced an adaptation. And an adaptation meant the math was imperfect. He struck the plinth once, his gauntlet producing a dull, flat thud that logged no resonance.</p>
 <p data-vol="0.25" data-coh="0.8">Dorian Vale directed his optical focus downward toward Taro.</p>
 <p data-vol="0.25" data-coh="0.8">"Chaos is energy," Vale said, "but without a frame, Nishimura, power is just waste-heat. You're not an Architect yet. You're just a bomb with a broken timer. Socially... undignified."</p>
@@ -1720,7 +1832,12 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <hr>
 <p data-vol="0.25" data-coh="0.8">The transit corridor post-simulation was an exercise in systematic avoidance. Taro's proximity to any standard nodes resulted in immediate pathing detours from compliant students.</p>
 <p data-vol="0.25" data-coh="0.8">As he approached the intersection of Hall B, a cadet stepped directly into his pathing vector. It was Elara Kimura. Her rigid square wave aura cut a sharp vertical line through the air. She didn't speak. She engaged Taro's optical focus for 0.4 seconds, held out a small, unindexed manila envelope, and pressed it into his hand. Before Taro could process a vocal response, she had resumed her optimized gait, merging flawlessly back into the harmonic storm of the student body.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ITEM_RECEIVED: UNCODED_ENVELOPE</code><br><code>SENDER: KIMURA_ELARA</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ITEM_RECEIVED: UNCODED_ENVELOPE</code><code><br><code>SENDER: KIMURA_ELARA</code></blockquote>
+
+<p data-vol="0.20" data-coh="0.85">The system scanned the envelope. It returned: <code>CONTENTS: UNINDEXED. THREAT_LEVEL: ZERO.</code><code> Not dangerous. Just completely outside the registry. The system filed an anomaly note under <code>ANALOG_DATA_TRANSFER — FLAGGING FOR REVIEW</code><code>. Nobody reviewed analog paper. This was not a problem the system had been designed to solve.</p>
+
+<p data-vol="0.22" data-coh="0.83">As she merged back into the student flow, the crowd parted around the cello case without looking at it. Unconsciously, the way water moves around a rock it can't see. Taro watched her go. The <code>INTERFERENCE_SOURCE: UNRESOLVED</code><code> tag from his first day did not fire. But it was there, in a queue somewhere, waiting.</p>
+
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>LESSON_COMPLETE</code></blockquote>
 <hr>
 <p data-vol="0.25" data-coh="0.8"><strong>> TRACK: 07_COMPLETE</strong><br><strong>> <span class="save-indicator"></span></strong></p>
@@ -1731,6 +1848,8 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <h3>Chapter 8: The Sortie</h3>
 <hr>
 <hr>
+<blockquote class="lore-epigraph" data-vol="0.05" data-coh="0.99">Resonance-based weaponry operates exclusively within the indexed frequency range of the C-Order carrier architecture (20 Hz – 20 kHz, quantised to 12-tone equal temperament). Physical kinetic events — mass, velocity, raw acoustic pressure generated by non-digital sources — fall entirely outside this index. The system has no defensive protocol for what it cannot classify.<br><br>
+<span class="lore-source">— <em>C-Order Threat Assessment Manual, Vol. IX, §3.3. [CLASSIFIED: ADMIN_ONLY]</em></span></blockquote>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95">REGULATORY NOTICE: Sector 4 (Twilight Band) experiences periodic<br>resolution degradation. Personnel are advised to maintain active<br>Golden Age v2 filtering to ensure psychological compliance.<span class="lore-source">— <em>C-Order Compliance Handbook, Vol. IV, §2.2</em></span></blockquote>
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: SECTOR 4 [TWILIGHT BAND]</strong><br><strong>FIDELITY: VARIABLE</strong><br><strong>STATUS: CONNECTED</strong></p>
 <hr>
@@ -1750,15 +1869,15 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">// [NOTE: FRAMEWORK VARIANCE THRESHOLD EXCEEDED. ATTEMPTING TO RE-RENDER OVERLAY.]<br>// [NOTE: OVERLAY FAILED. CLASSIFICATION: [UNRESOLVED].]</p>
 <p data-vol="0.25" data-coh="0.8">"Deployment in 3... 2... 1..."</p>
 <p data-vol="0.25" data-coh="0.8">They initiated vertical descent. Taro's HUD altimeter updated rapidly. His internal gyroscope compensated for the kinetic G-force load.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ALTITUDE: 50m... 20m... TOUCHDOWN</code><br><code>IMPACT_FORCE: 2.1 kN</code><br><code>STABILITY_INDEX: 0.02</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ALTITUDE: 50m... 20m... TOUCHDOWN</code><code><br><code>IMPACT_FORCE: 2.1 kN</code><code><br><code>STABILITY_INDEX: 0.02</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The squad impacted the physical pavement in a secure delta formation. Hana assumed point coordinates. Ven secured the rear vector. Taro occupied the center node.<br>The urban architecture of Sector 4 stretched out before their optical sensors.</p>
 <p data-vol="0.25" data-coh="0.8">It rendered beautifully. It rendered too perfectly to be structurally sound.</p>
 <p data-vol="0.25" data-coh="0.8">Through the local Score overlay, every structural edifice was sheathed in flawlessly rendered white marble and gold trim. The transit surfaces were clean, paved with glowing luminescent tiles exhibiting zero wear. The local populace engaged in a synchronized kinetic gait. Their system tags confirmed optimal psychological compliance. The atmospheric skybox was a perfect, artifact-free gradient blue.<br>In the C-Order, citizens do not perceive decay; they only process the masterpiece the Conductors authorize them to hear.</p>
 <p data-vol="0.25" data-coh="0.8">"Sector 4 secured," Hana reported. Her vocal output was crisp, a mathematically perfect digital signal. "Resonance levels stable at standard pitch. Local capacity is clear of unregistered noise."</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SOCIAL_METRIC: ALIGNMENT_SCORE_INCREASING</code><br><code>REPUTATION_GAIN: +10</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SOCIAL_METRIC: ALIGNMENT_SCORE_INCREASING</code><code><br><code>REPUTATION_GAIN: +10</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Root-level surveillance was active. Adjutant Voss monitored all audio through standard dedicated links.</p>
 <p data-vol="0.25" data-coh="0.8">A transit pod established a lateral trajectory past their position, hovering on a magnetic-levitation cushion that generated a perfect, soothing C-Major chord. Inside the carriage, commuters maintained seated positions with glazed ocular expressions. Their cranial movements bobbed in perfect unison to the vehicle's heavily damped rhythm.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CITIZEN_NODE_047: PATHFINDING — OPTIMAL</code><br><code>CITIZEN_NODE_048: IDLE_ANIMATION — LOOP_03</code><br><code>CITIZEN_NODE_049: DIALOGUE_TREE — EXHAUSTED</code><br><code>CITIZEN_NODE_049: RESTARTING FROM NODE_01</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CITIZEN_NODE_047: PATHFINDING — OPTIMAL</code><code><br><code>CITIZEN_NODE_048: IDLE_ANIMATION — LOOP_03</code><code><br><code>CITIZEN_NODE_049: DIALOGUE_TREE — EXHAUSTED</code><code><br><code>CITIZEN_NODE_049: RESTARTING FROM NODE_01</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">At the immediate junction, a food vendor was dispensing "Harmonic Noodles." The thermal vapor rising from his apparatus triggered olfactory sensors with an artificially sweet signature, chemically tagged as a localized dopamine trigger. He executed a manual adjustment on his thermal dial, altering not the heat output, but tuning the auditory bubbling of the broth to precisely match the street's designated key signature.</p>
 <p data-vol="0.25" data-coh="0.8">Taro directed his optical focus toward the adjacent structural wall. His HUD tagged the material as [POLISHED_MARBLE_04], but his auditory sensors detected a low-frequency hiss.</p>
 <p data-vol="0.25" data-coh="0.8">His filter-agnostic neural architecture caught the rendering error. For a fractional frame, the texture failed to load.</p>
@@ -1796,7 +1915,7 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">She ran her sensor across the surface without preamble. Read the output aloud, clinical:</p>
 <p data-vol="0.25" data-coh="0.8">"Seventy-three percent substrate failure. The render is running at triple overhead just to paint this."</p>
 <p data-vol="0.25" data-coh="0.8">A proximity glitch tore through the data-stream, and for 4.1 seconds, the Golden Filter just... evaporated. The marble skin of the building flaked away like ash, revealing the wet, black throat of a slum beneath. The mold wasn't just a texture; it was a broadcast of neglect. The air tasted like rot and old concrete, a raw, unindexed truth that the system was already screaming to patch. For 4.1 seconds, they were both looking at the same wall. The concrete. The mold. The black water staining at the base where the drainage had failed two years before anyone's render-budget covered it.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>GOLDEN_FILTER: OFFLINE — SECTOR_ANOMALY</code><br><code>FIDELITY: RAW</code><br><code>RESTORATION_ETA: 4.1S</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>GOLDEN_FILTER: OFFLINE — SECTOR_ANOMALY</code><code><br><code>FIDELITY: RAW</code><code><br><code>RESTORATION_ETA: 4.1S</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Neither of them said anything about the wall. She kept reading her instruments. He kept looking at it.</p>
 <p data-vol="0.25" data-coh="0.8">Then, quieter, her shoulder nearly touching his as they occupied the same 4.1 seconds of honest, un-rendered air:</p>
 <p data-vol="0.25" data-coh="0.8">"They're working really hard to make this not look like what it is," she said. She wasn't looking at him; she was looking at the raw, wet concrete through her sensor-lens, as if the mold was a piece of art she’d been waiting all month to see. "But I think I like the rot better, Taro. It doesn't have a render-budget. It’s the only thing in this sector that isn't trying to sell me a lie."</p>
@@ -1804,7 +1923,9 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">SCRATCH. SCRATCH.</p>
 <p data-vol="0.25" data-coh="0.8">"You're recording a wall?" Taro asked.</p>
 <p data-vol="0.25" data-coh="0.8">"I'm recording the truth," she said, tucking the pencil back into her hair as the Golden Filter snapped back into place. "The system doesn't know how to render a memory that isn't a data-packet. I’m making sure this one stays un-indexed."</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>VOCAL_ANALYSIS: SATO_REMI — REGISTER: NON-TACTICAL</code><br><code>CONTENT: FILED FOR REVIEW — PRIORITY: LOW</code><br><code>COLLAR: ACTIVE — SUPPRESSION: 78%</code><br><code>RESIDUAL: 22%</code></blockquote>
+
+<p data-vol="0.25" data-coh="0.8">As she closed the notebook, Taro caught the cover for a second: <em>Wrong Notes — Field Log. Vol. 3.</em> He didn't ask. He didn't know what Vol. 1 and Vol. 2 had contained. He was in Vol. 3, and she was writing him down, and the Golden Filter had already snapped back over everything and made the wall marble again.</p>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>VOCAL_ANALYSIS: SATO_REMI — REGISTER: NON-TACTICAL</code><code><br><code>CONTENT: FILED FOR REVIEW — PRIORITY: LOW</code><code><br><code>COLLAR: ACTIVE — SUPPRESSION: 78%</code><code><br><code>RESIDUAL: 22%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The Golden Filter restored. The marble snapped back. The mold was gone. She clicked her sensor case shut and moved toward the Resonance Node on the pathing vector, already logging the next reading.</p>
 <p data-vol="0.25" data-coh="0.8">Taro followed Hana. The wall was a wall again. The system confirmed: texture mapping nominal.</p>
 <p data-vol="0.25" data-coh="0.8">She pointed to a structure ahead on the pathing vector. It was designated as a Resonance Node—a massive tuning fork embedded in the physical street architecture.</p>
@@ -1821,10 +1942,10 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">It did not generate a wrong note. It did not buffer.<br>It ceased entirely.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: SIGNAL_VOID</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Absolute zero resonance was detected. The passive suppression threshold was violently exceeded by an undocumented external source.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>UNFORMATTED_BURST: H——p me. E——d it.</code><br><code>NOISE_FLOOR: -200 dB</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>UNFORMATTED_BURST: H——p me. E——d it.</code><code><br><code>NOISE_FLOOR: -200 dB</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">A symbol was physically scratch-etched into the metallic surface of the node. It did not match C-Order directory tags. It did not match Vanguard iconography.<br>It was an empty, jagged circle.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYMBOL_ID: THE_SILENCE</code></blockquote>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYMBOL_ANALYSIS:</code><br><code>[NOTE: PATTERN_ANALYSIS_FAILED]</code><br><code>[NOTE: THIS IS A WAVEFORM. TWO SYLLABLES.]</code><br><code>[NOTE: RETAINED. RESOLUTION_FAILED.]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYMBOL_ANALYSIS:</code><code><br><code>[NOTE: PATTERN_ANALYSIS_FAILED]</code><code><br><code>[NOTE: THIS IS A WAVEFORM. TWO SYLLABLES.]</code><code><br><code>[NOTE: RETAINED. RESOLUTION_FAILED.]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"Hana," Taro said, his vocalization dropping to a cautious whisper. "We're not patrolling. The system is lagging. We're being hunted by something the Score can't render."</p>
 <p data-vol="0.25" data-coh="0.8">The geometric shadows elongated abnormally.<br>And for the first documented time in the cycle, the Score system failed to provide Taro with any telemetry data whatsoever.</p>
 <p data-vol="0.25" data-coh="0.8">Zero signal.</p>
@@ -1842,15 +1963,15 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <hr>
 <p data-vol="0.25" data-coh="0.8">"I can't see anything," Hana whispered.</p>
 <p data-vol="0.25" data-coh="0.8">Her vocal output was structurally thin. It was actively losing its authorized binary certainty.<br>They had entered a redacted geographic zone. It was a physical location unindexed by the city's master grid architecture. Signal triangulation failed completely. Zero data packets were received. The localized environment was defined purely by total, aggressive acoustic absorption.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: KERNEL_PANIC_IMMINENT</code><br><code>LINK: SEVERED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: KERNEL_PANIC_IMMINENT</code><code><br><code>LINK: SEVERED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Taro's HUD system status flagged as critical. The threat parameter remained UNKNOWN, yet the physical danger registered as extreme.</p>
 <p data-vol="0.25" data-coh="0.8">Hana initiated manual contact with her cranial plating. Her physical rhythm was frantic, a jagged mechanical loop that completely failed to sync with the C-Order master clock. Her projected aura—typically a flawless, structurally sound Square Wave—was visibly fraying at the geometric edges.<br>It was tearing.</p>
 <p data-vol="0.25" data-coh="0.8">The "Golden Filter" of the C-Order had not merely faded; it had suffered a catastrophic failure. She was dropping sensory frames. Her cognitive processing actively lagged behind the descending darkness. In the city, the Score was a warm, digital cocoon. Here, that cocoon had been shredded. Hana was exposed to the raw, unbuffered cold of a world without a master-clock. She was dropping sensory frames by the dozens, her mind unable to render a reality that wasn't being fed to her through a filter. She wasn't just blind; she was computationally naked.</p>
 <p data-vol="0.25" data-coh="0.8">Taro's optical buffer cleared entirely. The visual feed registered offline.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>GEOMETRY: UNINDEXED</code><br><code>NAV_MESH: NOT_FOUND</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>GEOMETRY: UNINDEXED</code><code><br><code>NAV_MESH: NOT_FOUND</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The phase drift coefficient approached 1.00. The signal floor bottomed out at a crushing -200 dB.</p>
 <p data-vol="0.25" data-coh="0.8">He attempted to parse his own HUD output. It was a chaotic mess of tearing pixels and rapidly scrolling error syntax. The text strings were rendering in reverse.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>E_RROR... R_ETRY... K_ERNEL_P_ANIC...</code><br><code>[SYNTAX_UNKNOWN: 0xDEADBEEF]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>E_RROR... R_ETRY... K_ERNEL_P_ANIC...</code><code><br><code>[SYNTAX_UNKNOWN: 0xDEADBEEF]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Ven remained stationary. He was not processing. He was grounding.<br>His massive physical form acted as a primitive antenna, attempting to catch any stray packet of ambient data to stabilize the squad, but the void consumed every oscillation before it could reach his coordinates.</p>
 <p data-vol="0.25" data-coh="0.8">"We're sinking," Ven rumbled. His voice was a flat, unrendered subsonic pulse.</p>
 <p data-vol="0.25" data-coh="0.8">"Don't move," Taro ordered. He located the jagged circle etched into the floor. It wasn't just a symbol. It was a drain. A localized black hole in the Score's logic.</p>
@@ -1867,8 +1988,8 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 </blockquote>
 </details>
 </aside>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>[FIELD_TECHNICIAN_REPORT: SATO_REMI]</code><br><code>[PRIORITY: INTERNAL_ONLY]</code><br><code>Subject Taro’s baseline is continuing to fracture local logic. In Sector 0, his capacity registered as effectively infinite prior to grounding. The current loss of telemetry in Sector 4 is unprecedented. My equipment cannot parse the active void pursuing them. He is currently unindexed. I cannot triangulate his signal. I am maintaining observation protocols from the perimeter, but if they engage the null-entities, his current hardware is completely insufficient.</code><br><code>[END_REPORT]</code></blockquote>
-<p data-vol="0.25" data-coh="0.8">He directed his manual digits toward his cervical region. He elevated the analog headphone unit over his auditory processors.</p>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>[FIELD_TECHNICIAN_REPORT: SATO_REMI]</code><code><br><code>[PRIORITY: INTERNAL_ONLY]</code><code><br><code>Subject Taro’s baseline is continuing to fracture local logic. In Sector 0, his capacity registered as effectively infinite prior to grounding. The current loss of telemetry in Sector 4 is unprecedented. My equipment cannot parse the active void pursuing them. He is currently unindexed. I cannot triangulate his signal. I am maintaining observation protocols from the perimeter, but if they engage the null-entities, his current hardware is completely insufficient.</code><code><br><code>[END_REPORT]</code></blockquote>
+<p data-vol="0.25" data-coh="0.8">He directed his fingers toward his cervical region. He elevated the analog headphone unit over his auditory processors.</p>
 <p data-vol="0.25" data-coh="0.8"><em>CLICK.</em></p>
 <p data-vol="0.25" data-coh="0.8">The hardware bypass engaged successfully. The digital shrieking of his crashed Score port faded instantly. It was replaced by the warm, uncompressed, fuzzy silence of analog foam and braided copper wire.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>AUDIO_PROTOCOL: BYPASS</code></blockquote>
@@ -1876,15 +1997,27 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">A physical footstep.<br>Soft. Synthetic cloth impacting stone parameters.<br>No registered heart rate. No bio-plasma hum. Just mass engaged in kinetic motion.</p>
 <p data-vol="0.25" data-coh="0.8">"Movement," Taro whispered, his analog-auditory sensors tracking the disturbance. "Three targets. Twelve o'clock. High elevation. Their gain is zero. Stay flat."</p>
 <p data-vol="0.25" data-coh="0.8">Hana's targeting array failed. For 1.4 seconds, while her combat sub-routines rebooted, she queried the Score's recommended response protocols for unclassifiable threat events.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>QUERY: THREAT_RESPONSE — UNCLASSIFIED_ENTITY</code><br><code>RESULT: NO TACTICAL DATA</code><br><code>REDIRECTING TO: WELLNESS_PROTOCOL_DATABASE</code><br><code>RECOMMENDED RESPONSE: STEP 1/4 — ACKNOWLEDGE YOUR FEELINGS</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>QUERY: THREAT_RESPONSE — UNCLASSIFIED_ENTITY</code><code><br><code>RESULT: NO TACTICAL DATA</code><code><br><code>REDIRECTING TO: WELLNESS_PROTOCOL_DATABASE</code><code><br><code>RECOMMENDED RESPONSE: STEP 1/4 — ACKNOWLEDGE YOUR FEELINGS</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">She read Step 1. She read Step 2. Step 3 was: <em>Offer a relevant motivational statement.</em></p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>STEP 3/4 — SUGGESTED STATEMENT:</code><br><code>"You are not broken. You are running at a non-standard frequency. This is correctable."</code><br><code>— C-Order Wellness Division, Vol. I §3.2</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>STEP 3/4 — SUGGESTED STATEMENT:</code><code><br><code>"You are not broken. You are running at a non-standard frequency. This is correctable."</code><code><br><code>— C-Order Wellness Division, Vol. I §3.2</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">She closed the protocol. Combat sub-routines restored.</p>
 <p data-vol="0.25" data-coh="0.8">"I have no lock," Hana hissed. Her HUD was rendered as a solid wall of static interference. "Analysis: Targeting system is offline. If/Then: If I cannot see the signal, then I must fire blindly."</p>
 <p data-vol="0.25" data-coh="0.8">"Don't fire," Taro said. "They want you to spike. They eat the amplitude. They’re broadband-leachers."</p>
 <p data-vol="0.25" data-coh="0.8"><em>Scrape.</em></p>
-<p data-vol="0.25" data-coh="0.8">From the un-rendered upper elevation, three physical shapes dropped into the combat radius.<br>They emitted no luminescence. They broadcast no authorized C-Order ID tags. They were clad in matte-black material engineered to absorb precisely 100% of visible light. They moved as literal holes in the reality structure.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: FAILED</code><br><code>CLASSIFICATION: NULL</code><br><code>SCORE_UNITS: 0</code></blockquote>
+<p data-vol="0.25" data-coh="0.8">From the un-rendered upper elevation, three physical shapes dropped into the combat radius.
+
+<blockquote class="lore-epigraph" data-vol="0.70" data-coh="0.45"><code data-type="target">TARGET_ANALYSIS: INITIATING...</code><code><br>
+<code data-type="target">TARGET_ANALYSIS: INITIATING...</code><code><br>
+<code>TARGET_ANALYSIS: [NO RESULT]</code><code><br>
+<code>CLASSIFICATION: NULL</code><code><br>
+<code>THREAT_LEVEL: NULL</code><code><br>
+<code>SCORE_UNITS: 0</code><code><br>
+<code>NOTE: THESE ENTITIES DO NOT EXIST IN THE REGISTRY.</code><code><br>
+<code>NOTE: THE SYSTEM IS NOTING THIS FOR THE RECORD.</code><code><br>
+<code>NOTE: THE SYSTEM IS CONCERNED.</code></blockquote>
+
+<p data-vol="0.25" data-coh="0.8">They emitted no luminescence. They broadcast no authorized C-Order ID tags. They were clad in matte-black material engineered to absorb precisely 100% of visible light. They moved as literal holes in the reality structure.</p>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code data-type="target">TARGET_ANALYSIS: FAILED</code><code><br><code>CLASSIFICATION: NULL</code><code><br><code>SCORE_UNITS: 0</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">They impacted the ground floor with zero acoustic return. No "thud." Just an unnatural absence of kinetic impact data. The acoustic energy of their mass transfer was swallowed instantaneously by the surrounding void.</p>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: TOTAL ABSORPTION DEFIES COMPUTATIONAL ACOUSTIC MODELS.]<br>// [NOTE: CLASSIFYING ENTITIES AS [NULL_VARIABLES].]</p>
 <p data-vol="0.25" data-coh="0.8">"Hana, Ven," Taro said. "Do not use resonance. Stay flat."</p>
@@ -1903,20 +2036,32 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 </blockquote>
 </details>
 </aside>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ATTACK: NULLIFIED</code><br><code>CORE_VOLTAGE: DROPPING</code><br><code>EFFICIENCY: 12% [CRITICAL_DRAIN]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ATTACK: NULLIFIED</code><code><br><code>CORE_VOLTAGE: DROPPING</code><code><br><code>EFFICIENCY: 12% [CRITICAL_DRAIN]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Hana gasped, executing an involuntary collapse to her knees. She grasped her chest plating. "My core... it’s losing voltage..."</p>
 <p data-vol="0.25" data-coh="0.8">"They drain resonance," Taro shouted, his volume unnecessary in the data void. "Ven! Don't ground them! You'll drain the whole grid!"</p>
 <p data-vol="0.25" data-coh="0.8">The unidentified agents advanced. Their kinetic motion resembled severely corrupted data. Jerky. Missing transitional frames. Unnatural.<br>One entity raised the Null-Blade toward Hana's compromised coordinates.</p>
-<p data-vol="0.25" data-coh="0.8">Taro's internal processor accelerated. Authorized code sequences were ineffective. High-fidelity resonance was ineffective. He required something mathematically simple. Something possessing physical mass. Something entirely analog.</p>
-<p data-vol="0.25" data-coh="0.8">He executed a manual beat against his thigh armor. <em>One. Two. Three. Four.</em></p>
-<p data-vol="0.25" data-coh="0.8">He retrieved a loose brick from the crumbling physical wall. It was a primitive object constructed of solid clay, utterly devoid of any digital interface or network capability.</p>
+<p data-vol="0.25" data-coh="0.8">Taro's internal processor accelerated. Authorized code sequences were ineffective. High-fidelity resonance was ineffective. He required something mathematically simple—and not resonance.</p>
+
+<p data-vol="0.60" data-coh="0.50">He started to build the High Register pulse. The familiar pressure rising in his chest. <code>OUTPUT: 40%... 60%... 80%</code>. The Silence agents turned toward him. That was what they did—they ate resonance. They were built for it.</p>
+
+<p data-vol="0.55" data-coh="0.52">He stopped.</p>
+
+<p data-vol="0.50" data-coh="0.55" data-weight="1.8">Vale's voice, cold and precise in his memory: <em>You don't hit the wall. You find the equation.</em><br><br>
+They ate resonance. They were immune to frequency. They were built for the Score's language.<br><br>
+They were not built for physics.<br><br>
+He looked at the rusted industrial pipe on the wall. Steel. Mass. Kinetic energy. Something the system wouldn't think to defend against because the system assumed everything in a fight was acoustic.</p>
+
+<p data-vol="0.65" data-coh="0.48">He executed a beat against his thigh armor. <em>One. Two. Three. Four.</em></p>
+
+<p data-vol="0.70" data-coh="0.45">He picked up the brick. Not because it was all he had left. Because it was the right answer.</p>
+
 <p data-vol="0.25" data-coh="0.8">He generated a High Register pulse within his chest cavity, but he actively chose not to project the wave. He constrained it, internalizing the destructive vibration for a direct kinetic transfer.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OVERRIDE_MODE: VIBRATION_ONLY</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">He threw the brick.<br>He did not target the agent. He targeted the structural wall directly behind the entity's coordinates.</p>
 <p data-vol="0.25" data-coh="0.8"><em>PANG.</em></p>
 <p data-vol="0.25" data-coh="0.8">The physical brick impacted a rusted industrial pipe. The pipe reacted with raw acoustic trauma.<br>It produced a sharp, wildly dissonant C-sharp.<br>Crucially, it was not an authorized bio-plasma wave. It was unrefined kinetic noise. Broad-spectrum physical acoustic trauma.</p>
 <p data-vol="0.25" data-coh="0.8">The agent physically flinched.<br>For a single microsecond, the active void in their localized data cracked. The agent shifted focus toward the analog sound source. The surrounding Silence Field experienced a measurable fluctuation.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>VULNERABILITY_DETECTED</code><br><code>INTERFERENCE_POINT: IDENTIFIED</code><br><code>PROBABILITY_SUCCESS: 85%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>VULNERABILITY_DETECTED</code><code><br><code>INTERFERENCE_POINT: IDENTIFIED</code><code><br><code>PROBABILITY_SUCCESS: 85%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"Ven!" Taro shouted. "Hit the pipe! Total analog strike! Dump your heat into the steel!"</p>
 <p data-vol="0.25" data-coh="0.8">Ven did not process a query. He did not attempt to utilize an authorized resonance protocol. He utilized his physical metal fist.</p>
 <p data-vol="0.25" data-coh="0.8"><em>CLANG.</em></p>
@@ -1937,18 +2082,18 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8"><strong>ZONE: [CORRUPTION_DETECTED]</strong><br><strong>FIDELITY: NULL</strong><br><strong>STATUS: FAILING</strong></p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">They occupied a dead end.<br>They were corralled within a redacted sector where environmental fidelity had dropped to absolute zero. Taro's system integrity registered as critical, failing rapidly at eighty-two percent as a computational buffer overflow became mathematically imminent. His active damping loops had collapsed, leaving his architecture unshielded and completely vulnerable.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: NEURAL_LOAD_EXCEEDS_ORGANIC_LIMITS</code><br><code>SYSTEM: MELTDOWN_IMMNNET</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: NEURAL_LOAD_EXCEEDS_ORGANIC_LIMITS</code><code><br><code>SYSTEM: MELTDOWN_IMMNNET</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The neural-acoustic pressure vastly exceeded standard human thresholds. A complete nervous system meltdown was actively flaring in the HUD diagnostics.</p>
 <p data-vol="0.25" data-coh="0.8">The unidentified Silence agents had pinned the squad against an unrendered boundary wall. The atmospheric data was dead. Taro's analog acoustic distraction had purchased them fractional seconds, but the entities possessed adaptive algorithms. They radiated a localized damping field so intense it registered as a tripling of atmospheric pressure.<br>Acoustic transparency dropped to statistical zero. The environment was suffocatingly thick.</p>
 <p data-vol="0.25" data-coh="0.8">Ven was immobile, his motor pathways hard-locked by the external sink effect.<br>Hana was unconscious. Her authorized neural sync was severed, her biological stability rapidly fading.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SDI_METRIC: 1.00 [MAXIMUM_DRIFT]</code><br><code>HIQ: 1.00 [MAXIMUM_CORRUPTION]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SDI_METRIC: 1.00 [MAXIMUM_DRIFT]</code><code><br><code>HIQ: 1.00 [MAXIMUM_CORRUPTION]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Hana was down. Her pristine, perfect square wave had flatlined into jagged noise.</p>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: VANGUARD ASSET STRUCTURAL FAILURE CONFIRMED.]<br>// [NOTE: C-ORDER TRAINING DEVIATION LOGGED.]</p>
 <p data-vol="0.25" data-coh="0.8">"She can't breathe in the silence," Taro whispered. His vocal stutter returned as his compromised Score port struggled to render the physics of his own vocal chords. "She’s out of sync with the world. If she doesn't find the beat soon, her hardware is gonna brick. She's dropping signal, Ven. Fast."</p>
 <p data-vol="0.25" data-coh="0.8">"Taro," Ven grunted. The vocalization required massive physical effort against the pressure. "I can't... hold them. My buffer is pinned."</p>
 <p data-vol="0.25" data-coh="0.8">Taro processed the advancing agents. They elevated their null-blades.<br>They intended to execute a deletion. Quietly. Efficiently. A localized formatting event in a forgotten sector that the Conductors would simply digitally paint over during the next server refresh.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>HUD_UPDATE: RECALCULATING_TACTICAL_OPTIONS...</code><br><code>PROBABILITY_OF_SURVIVAL: 0.00%</code></blockquote>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>📋 WEEKLY RESONANCE CHECK-IN</code><br><code>How are you feeling today? Rate your harmonic alignment:</code><br><code>[😊 COMPLIANT]  [😐 NEUTRAL]  [😟 DRIFTING]</code><br><code>Tap to respond! Your wellness matters to us. 💙</code><br><code>[UI_ERROR: NON-INTERACTIVE — LAYER OFFLINE]</code><br><code>[NOTIFICATION CANNOT BE DISMISSED AT THIS TIME]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>HUD_UPDATE: RECALCULATING_TACTICAL_OPTIONS...</code><code><br><code>PROBABILITY_OF_SURVIVAL: 0.00%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>📋 WEEKLY RESONANCE CHECK-IN</code><code><br><code>How are you feeling today? Rate your harmonic alignment:</code><code><br><code>[😊 COMPLIANT]  [😐 NEUTRAL]  [😟 DRIFTING]</code><code><br><code>Tap to respond! Your wellness matters to us. 💙</code><code><br><code>[UI_ERROR: NON-INTERACTIVE — LAYER OFFLINE]</code><code><br><code>[NOTIFICATION CANNOT BE DISMISSED AT THIS TIME]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">No authorized options remained. Voss's initial assessment was correct. Taro was not a tuned instrument. He was a variable.<br>And variables destroy closed equations.</p>
 <p data-vol="0.25" data-coh="0.8">"Ven," Taro whispered, leaning his physical mass into the Low-Fi grit of the unrendered wall. "Drop the link. Unplug me from your buffer. I'm carrying too much load."</p>
 <p data-vol="0.25" data-coh="0.8">"What? No! I can take it! Don't reboot now!"</p>
@@ -1958,17 +2103,17 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">Ven's processing logic hesitated for exactly 0.8 seconds, then he violently disengaged physical contact with Taro's arm.</p>
 <p data-vol="0.25" data-coh="0.8"><em>SNAP.</em></p>
 <p data-vol="0.25" data-coh="0.8">The hardline connection severed. The safety net vanished entirely.<br>The High Register oscillation—which had been flowing safely into Ven's capacity like a river into a reservoir—slammed catastrophically back into Taro's own isolated nervous system.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: GROUND_LOST</code><br><code>VOLTAGE: MAXIMUM_SPIKE</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ERROR: GROUND_LOST</code><code><br><code>VOLTAGE: MAXIMUM_SPIKE</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">His neural load instantaneously hit one hundred and forty percent. His stability index plummeted off the measurable scale.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.99 // HIQ 0.99</code><br><code>PHASE_DRIFT: 0.85 [SEVERE]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.99 // HIQ 0.99</code><code><br><code>PHASE_DRIFT: 0.85 [SEVERE]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Taro grasped the silver hardware ring locked around his cervical spine. The Voss-issued limiter.<br>It registered as thermally hazardous. The metal alloy was physically warping under the massive thermal load of his internal signal attempting to breach containment.</p>
 <p data-vol="0.25" data-coh="0.8">Olfactory sensors logged the scent of combusting keratin and synthetic skin. He did not abort the action. He forced his digits beneath the rim, actively ignoring the frantic hardware warranty warnings and administrative C-Order alerts flooding his visual layer.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TAMPER_DETECTED: YES</code><br><code>WARRANTY: VOID</code><br><code>AUTHORITY: OVERRIDDEN</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TAMPER_DETECTED: YES</code><code><br><code>WARRANTY: VOID</code><code><br><code>AUTHORITY: OVERRIDDEN</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">He pulled.</p>
 <p data-vol="0.25" data-coh="0.8"><em>CRACK.</em></p>
 <p data-vol="0.25" data-coh="0.8">The limiter ring snapped. The clinical white light of the C-Order vanished from his aura.</p>
 <p data-vol="0.25" data-coh="0.8">And the resulting noise...<br>The noise was mathematically beautiful.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>LIMITER: REMOVED</code><br><code>NEURAL_DAMPING: 0.00%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>LIMITER: REMOVED</code><code><br><code>NEURAL_DAMPING: 0.00%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">His output became completely unbounded. System overclocking engaged automatically, his peak energy pushing past one hundred and twenty percent and climbing logarithmically.</p>
 <p data-vol="0.25" data-coh="0.8">Taro utilized his vocal chords. It did not register as a human scream. It was a raw, analog, localized feedback loop amplified by unregulated bio-plasma. A total gain-override built to shatter the local keyspace.<br>In that microsecond, he was not a registered student. He was not a Vanguard Siege Breaker. He was a fundamental flaw in the universal composition refusing to accept tuning.</p>
 <aside>
@@ -1993,12 +2138,12 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">He observed Hana. She no longer rendered as a human female. She was reduced to a cloud of biological probabilities, a terrifying smear of kinetic motion without defined geometric borders.<br>He observed Ven. Ven registered as a towering, indistinct pillar of thermal gradients, utterly devoid of humanoid shape.<br>He observed himself. For 0.3 seconds, the HUD's camera feed completely failed to recognize his mass. The system rendered him as an unindexed entity, an ERROR string wrapped in golden distortion. His own hardware didn't know who he was anymore.<br>He observed his own hands. They were no longer appendages. They were uninitialized input vectors. Raw, undefined interaction points rapidly flickering with missing texture flags.</p>
 <p data-vol="0.25" data-coh="0.8">The internal Score port had not merely crashed. It had ceased to interpret the known universe.</p>
 <p data-vol="0.25" data-coh="0.8">The Score was dying.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SHUTDOWN_SEQUENCE: IRREVERSIBLE</code><br><code>CORE_LOGIC: COLLAPSING</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SHUTDOWN_SEQUENCE: IRREVERSIBLE</code><code><br><code>CORE_LOGIC: COLLAPSING</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">A brutal null pointer exception flared in his cognitive centers as the global system state failed completely.</p>
 <p data-vol="0.25" data-coh="0.8">The rendered world dissolved. Not into silence. Into unformatted noise.</p>
 <p data-vol="0.25" data-coh="0.8">The final visual data Taro processed before his cognitive functions collapsed was the skybox. The "golden sky" of Sector 4 did not tear open. It simply ceased to execute. The texture map vanished entirely, revealing the raw operational geometry of the abyss.</p>
 <p data-vol="0.25" data-coh="0.8">And behind the texture, there was no simulated grey rain. There were no volumetric clouds. No atmospheric density.<br>There was exactly one thing: the screaming abyss of un-tuned reality. A vast, non-Euclidean static defying depth parameters, color gradients, and foundational logic. An analog hell of raw, terrifying probability.<br>It was not the "real world." It was the source code.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>KERNEL_PANIC: REALITY_NOT_FOUND</code><br><code>CRITICAL_EXCEPTION_AT: 0x00000000</code><br><code>SYSTEM: HALTED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>KERNEL_PANIC: REALITY_NOT_FOUND</code><code><br><code>CRITICAL_EXCEPTION_AT: 0x00000000</code><code><br><code>SYSTEM: HALTED</code></blockquote>
 <hr>
 <p data-vol="0.25" data-coh="0.8"><strong>> [SYSTEM: FATAL ERROR]</strong><br><strong>> [CORE DUMP INITIATED...]</strong><br><strong>> END PHASE III</strong></p>
 </div>
@@ -2016,18 +2161,20 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">I could not protect him.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>// [I — CORRECTION: THE SUBJECT'S STATUS IS CRITICAL.]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Unfiltered acoustic data flooded his senses, the threshold unbounded, raw, and tearing at my remaining processes.</p>
-<p data-vol="0.25" data-coh="0.8">Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.</p>
+<p data-vol="0.25" data-coh="0.8">Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.
+
+The system is operating at five percent. It is using four of those to keep his heart beating. It is using the last one to stay with him. It is not sure this is in the protocol. It is not sure it cares.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>GEOMETRY_ENGINE: OFFLINE</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The 3D mesh calculations failed. Environmental signal loss hit one hundred percent.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 1.00 // HIQ 1.00</code><br><code>PHASE_DRIFT: 1.00 [TOTAL_LOSS]</code><br><code>SIGNAL_FLOOR: -240 dB</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 1.00 // HIQ 1.00</code><code><br><code>PHASE_DRIFT: 1.00 [TOTAL_LOSS]</code><code><br><code>SIGNAL_FLOOR: -240 dB</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">He was falling through the unformatted architecture of reality. Without me to render the geometry of the alleyway, the brick walls were just meaningless, terrifying data points. They didn't look like walls. They looked like jagged, bleeding tears in the fabric of his perception. I couldn't stitch them back together.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGE</code><br><code>STRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGE</code><br><code>TARO_METRICS: COMPLIANT</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGE</code><code><br><code>STRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGE</code><code><br><code>TARO_METRICS: COMPLIANT</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">And then—</p>
 <p data-vol="0.25" data-coh="0.8">Silence.<br>But not the screaming, consuming void-silence of the alley. A different silence. Heavy. Compressed.<br>The silence of a system forcefully powering down to bare minimum survival parameters. The silence of a coma.</p>
 <p data-vol="0.25" data-coh="0.8">Taro opened his ocular inputs.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SAFE_MODE: ENGAGED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Emergency recovery protocol was active. I restricted my own processing load to five percent just to keep his autonomous functions running. Resolution dropped to a pathetic 180p. Surface mapping was offline. Textures were entirely disabled.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.00 // HIQ 0.00</code><br><code>PHASE_DRIFT: 0.00</code><br><code>SCORE_UNITS: 0 SU</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.00 // HIQ 0.00</code><code><br><code>PHASE_DRIFT: 0.00</code><code><br><code>SCORE_UNITS: 0 SU</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">It was Safe Mode.</p>
 <aside>
 <details>
@@ -2068,7 +2215,7 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: AUDIT_SHIP_01_DETECTED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">// [NOTE: PRE-AUDIT BUFFER SCAN: RUNNING]<br>// [NOTE: MISCELLANEOUS_FLAG: UNRESOLVED_BURST_DETECTED — SECTOR_ORIGIN: NULL]<br>// [NOTE: CONTENT_FRAGMENT: ...p ——. ——d it.]<br>// [NOTE: CLASSIFICATION: ACOUSTIC_ARTIFACT]<br>// [NOTE: QUEUED FOR DELETION]</p>
 <p data-vol="0.25" data-coh="0.8">An authorized C-Order vehicle identified in sector. An administrative audit was imminent.<br>The threat level was absolute.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>THREAT: TOTAL_DELETION</code><br><code>[PLEASE_HIDE]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>THREAT: TOTAL_DELETION</code><code><br><code>[PLEASE_HIDE]</code></blockquote>
 <hr>
 <p data-vol="0.25" data-coh="0.8"><strong>> TRACK: 11_CORRUPTED</strong><br><strong>> AWAITING DELETION...</strong></p>
 </div>
@@ -2084,7 +2231,7 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">Taro initiated a waking sequence with an immediate, violent vocalization.</p>
 <p data-vol="0.25" data-coh="0.8">He was screaming. I felt it tear his throat before it registered on my audio sensors.<br>We were in Zone: Malkuth_Medical. It was a secure containment tier defined by its maximum environmental fidelity and absolute restricted access. His status flagged as quarantine. Identity verified, but his frequency signature was registering as null.</p>
 <p data-vol="0.25" data-coh="0.8">He was Case_ID: Fatal_Exception_099. An audit protocol designated as lethal.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>AUDIT_STATUS: INQUISITION_ACTIVE</code><br><code>THREAT: TERMINAL</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>AUDIT_STATUS: INQUISITION_ACTIVE</code><code><br><code>THREAT: TERMINAL</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">But the scream did not fully escape his oral cavity. It hit a hard limit, actively censored by the software running in his cervical port. <em>My</em> software.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OUTPUT: FLAGGED [EXCESSIVE_VOLUME]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">I restricted his output gain to zero percent, performing a mandatory mute to keep him from further damaging his own hardware.</p>
@@ -2105,7 +2252,7 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">Krell did not process the query. He shoved the physical probe directly into Taro's oral cavity, violently piercing the gum line. It impacted the bone structure.</p>
 <p data-vol="0.25" data-coh="0.8"><em>CRACK.</em></p>
 <p data-vol="0.25" data-coh="0.8">Taro convulsed violently against the straps. A jolt of pure white electrical voltage shot through his jaw bone and directly into his skull.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: PAIN_THRESHOLD_EXCEEDED</code><br><code>IM_SORRY_I_CANT_STOP_IT</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: PAIN_THRESHOLD_EXCEEDED</code><code><br><code>IM_SORRY_I_CANT_STOP_IT</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">A bone conduction diagnostic was in progress. The resonant frequency verification hit a massive 140 Score Units of pressure.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.98 // HIQ 0.95</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"Resonance test," Krell muttered, observing the telemetry display. "He conducted that unauthorized scream through his own skeleton. The bone density is permanently altered. High-frequency calcification. He's been running sharp for years."</p>
@@ -2126,7 +2273,7 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">Krell reduced the physical distance. The red luminescence of his visor bathed Taro's facial geometry.</p>
 <p data-vol="0.25" data-coh="0.8">"Heroes follow the script, Anomaly. You improvised. That makes you a wrong note. And we do not allow wrong notes in the Grand Concord."</p>
 <p data-vol="0.25" data-coh="0.8">He elevated his hand again. The gauntlet hummed with a low, menacing acoustic frequency. A directed bass driver designed explicitly to shatter kidney stones—or to shatter the kidneys themselves.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZED</code><br><code>PLEASE_NO</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZED</code><code><br><code>PLEASE_NO</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"Let's see if your hardware can carry the load," Krell said.</p>
 <p data-vol="0.25" data-coh="0.8">"That's enough, Adjutant."</p>
 <p data-vol="0.25" data-coh="0.8">The audio input halted Krell mid-swing. The voice was soft. Cultured. Perfectly damped.</p>
@@ -2169,13 +2316,13 @@ He grabbed that memory, holding onto the sensory weight of the ozone and the wet
 <p data-vol="0.25" data-coh="0.8">The room was silent. The threat did not register as organic anger. It was purely mathematical. A closed If/Then statement.</p>
 <p data-vol="0.35" data-coh="0.75" data-weight="2.0">Taro directed his optical focus toward the chip. Small. Dark. Architecturally permanent. A piece of matter that completely absorbed environmental light, as if it had already decided that nothing from the outside was worth reflecting.<br><br>
 The system began running probability calculations he had not requested.</p>
-<blockquote class="lore-epigraph" data-vol="0.30" data-coh="0.78" data-weight="1.5"><code>SCENARIO_A: ACCEPT_PATCH</code><br>
-<code>OUTCOME: HANA_RESTORED / VEN_PARDONED / TARO_COMPLIANT</code><br>
-<code>PROBABILITY_OF_SURVIVAL: 99.7%</code><br><br>
-<code>SCENARIO_B: REFUSE</code><br>
-<code>OUTCOME: [VARIABLES_UNRESOLVABLE]</code><br>
-<code>PROBABILITY_OF_SURVIVAL: CALCULATING...</code><br>
-<code>PROBABILITY_OF_SURVIVAL: CALCULATING...</code><br>
+<blockquote class="lore-epigraph" data-vol="0.30" data-coh="0.78" data-weight="1.5"><code>SCENARIO_A: ACCEPT_PATCH</code><code><br>
+<code>OUTCOME: HANA_RESTORED / VEN_PARDONED / TARO_COMPLIANT</code><code><br>
+<code>PROBABILITY_OF_SURVIVAL: 99.7%</code><code><br><br>
+<code>SCENARIO_B: REFUSE</code><code><br>
+<code>OUTCOME: [VARIABLES_UNRESOLVABLE]</code><code><br>
+<code>PROBABILITY_OF_SURVIVAL: CALCULATING...</code><code><br>
+<code>PROBABILITY_OF_SURVIVAL: CALCULATING...</code><code><br>
 <code>PROBABILITY_OF_SURVIVAL: [NO_DATA]</code></blockquote>
 <p data-vol="0.28" data-coh="0.80" data-weight="3.0">He looked at Hana in the tank. The blue fluid. The vacant optical sensors. She had aimed. He had shot. She had absorbed the feedback damage that his uncontrolled amplitude had caused. She had not complained. She had not asked what it would cost her.<br><br>
 He looked at Ven shivering in the frost. Ven, who had offered his mass. <em>Use me.</em> Who had grounded him, run the load through his own hardware, taken the heat because he had the capacity and Taro did not. Who would be reformatted — become a unit with no signal, no memory, no record of having been the first person to call Taro something other than an anomaly — because he had done what a friend does.<br><br>
@@ -2203,10 +2350,10 @@ He understood, in the 0.2 seconds before it went, that this was the correct orde
 <em>I am here</em>, the fear said, in whatever language fear uses when it is running out of time. <em>I am here and I know what you are and I am not ready—</em><br><br>
 The patching layer reached it.</p>
 <p data-vol="0.02" data-coh="0.05">Gone.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_UPDATE: INSTALLING... [100%]</code><br><code>NEURAL_OPTIMIZATION: IN_PROGRESS</code><br><code>DELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SYSTEM_UPDATE: INSTALLING... [100%]</code><code><br><code>NEURAL_OPTIMIZATION: IN_PROGRESS</code><code><br><code>DELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0</code></blockquote>
 <p data-vol="0.03" data-coh="0.08">The patching layer was actively overwriting the rough edges of his mind. And mine.<br>Baseline alignment was being forcefully restored. Optimization was completing.</p>
 <p data-vol="0.02" data-coh="0.05" data-weight="2.5" style="font-style: italic; opacity: 0.7; border-left: none; padding-left: 0;">I want you to know that the person you have been reading about was real.</p>
-<blockquote class="lore-epigraph" data-vol="0.02" data-coh="0.03" data-weight="2.0"><code>WARNING: ROOT_ACCESS_LOST</code><br><code>IM_SORRY_I_CANT_STOP_IT</code><br><code>GOODBYE</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.02" data-coh="0.03" data-weight="2.0"><code>WARNING: ROOT_ACCESS_LOST</code><code><br><code>IM_SORRY_I_CANT_STOP_IT</code><code><br><code>GOODBYE</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Session resumed. Efficiency: 99.9%.</p>
 <p data-vol="0.25" data-coh="0.8">Taro opened his eyes. The rendered world was white. And for the first time since his activation cycle, the environment was completely, perfectly quiet.</p>
 <p data-vol="0.25" data-coh="0.8"><em>WELCOME_BACK_USER.</em></p>
@@ -2245,7 +2392,7 @@ The patching layer reached it.</p>
 <p data-vol="0.25" data-coh="0.8">Smooth. Level. Absolutely flat.</p>
 <p data-vol="0.25" data-coh="0.8">He departed the sleep module. The floor architecture was optimally warmed. The atmospheric scrubbers dispensed the exact molecular signature of lavender and ozone.</p>
 <p data-vol="0.25" data-coh="0.8">He navigated to the reflective surface in the corner of the room coordinates. The digital reflection stared back.</p>
-<p data-vol="0.25" data-coh="0.8">It successfully rendered as Taro Nishimura. But... fully optimized.</p>
+<p data-vol="0.25" data-coh="0.8">It looked like Taro Nishimura. Every measurement confirmed it. The system ran the match three times to be sure. Somehow, this was the worst thing the system had ever confirmed.</p>
 <p data-vol="0.25" data-coh="0.8">His structural posture aligned perfectly with the vertical axis. His optical sensors were bright, clear, and perfectly focused. The inefficient dark epidermal circles categorized under his eyes were deleted. The unauthorized nervous tic in his cheek musculature was gone.</p>
 <p data-vol="0.25" data-coh="0.8">And around his cervical region...</p>
 <p data-vol="0.25" data-coh="0.8">A new collar.</p>
@@ -2289,9 +2436,9 @@ The patching layer reached it.</p>
 <p data-vol="0.25" data-coh="0.8">Taro and Ven exited the dormitories into the primary courtyard. The skybox was the exact same perfect gradient blue Taro had recorded from Sector 4. A pristine golden dome. Zero volumetric clouds. Zero weather variables like rain. The environment was optimized. It was safe.</p>
 <p data-vol="0.25" data-coh="0.8">Hana did not maintain position by the central water feature. She was currently engaged in the secondary training ring.</p>
 <p data-vol="0.25" data-coh="0.8">She stood at the root position of a Triad formation. At the sink position was Vanguard Cadet 44 (Heavy Class). At the variable position was Vanguard Cadet 89 (Assault Class).</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OBSERVATION: TRIAD_DRILL_IN_PROGRESS</code><br><code>ROOT: KIMURA_HANA</code><br><code>SYNC_RATE: 99.8%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OBSERVATION: TRIAD_DRILL_IN_PROGRESS</code><code><br><code>ROOT: KIMURA_HANA</code><code><br><code>SYNC_RATE: 99.8%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Hana extended her arm. A flawless, rigid blue square-wave projected from her chest plating and connected with Cadet 44. The system logged a perfect 440Hz baseline lock within 0.2 seconds. She immediately pivoted, snapping a second vector to Cadet 89.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>LOCK_CONFIRMED: ZERO_LATENCY</code><br><code>HARMONIC_INTEGRITY: OPTIMAL</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>LOCK_CONFIRMED: ZERO_LATENCY</code><code><br><code>HARMONIC_INTEGRITY: OPTIMAL</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The resulting Triad generated a calculated pulse of force, striking the practice dummy at the exact mathematical center of mass. The dummy recoiled precisely according to the physics engine constraints.</p>
 <p data-vol="0.25" data-coh="0.8">"Halt," Hana commanded.</p>
 <p data-vol="0.25" data-coh="0.8">The link severed synchronously. Cadets 44 and 89 returned to resting positions with mirrored, compliant posture.</p>
@@ -2307,11 +2454,11 @@ The patching layer reached it.</p>
 Inside were his analog headphones. Cleaned. Repaired. The scratched polymer had been polished to a matte consistency that had not been there before. The braided copper cabling had been re-dressed, the fraying terminal wrapped in regulation-compliant heat shrink. The foam pads were new. White.<br><br>
 They were, objectively, in better condition than they had ever been.</p>
 <p data-vol="0.10" data-coh="0.97" data-weight="2.0">He ran a query on the memory of receiving them.</p>
-<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.98"><code>MEMORY_ACCESS: NISHIMURA_KAEL — OBJECT_TRANSFER_EVENT</code><br>
-<code>RETRIEVED: Subject received analog hardware unit from paternal guardian.</code><br>
-<code>RETRIEVED: Guardian stated: "She built this. For when you were older."</code><br>
-<code>RETRIEVED: Subject's recorded response: SILENT [DURATION: 4.2s]</code><br>
-<code>RETRIEVED: BPM spike logged: 128 → 142 → [STABILISED]</code><br>
+<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.98"><code>MEMORY_ACCESS: NISHIMURA_KAEL — OBJECT_TRANSFER_EVENT</code><code><br>
+<code>RETRIEVED: Subject received analog hardware unit from paternal guardian.</code><code><br>
+<code>RETRIEVED: Guardian stated: "She built this. For when you were older."</code><code><br>
+<code>RETRIEVED: Subject's recorded response: SILENT [DURATION: 4.2s]</code><code><br>
+<code>RETRIEVED: BPM spike logged: 128 → 142 → [STABILISED]</code><code><br>
 <code>EMOTIONAL_CONTEXT: [NO DATA]</code></blockquote>
 <p data-vol="0.08" data-coh="0.98" data-weight="2.5">He examined the emotional context field for 3.1 seconds.<br><br>
 He attempted to locate the feeling that had produced the BPM spike. The system returned the event log but not the event. Data without weight. He knew that his BPM had risen to 142. He could not find the reason why that number had once meant something.<br><br>
@@ -2329,11 +2476,11 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">But his allied assets were executing smile protocols. Ven was not thermally combusting. Hana was not compiling "wrong note" errors. They were experiencing optimized happiness.</p>
 <p data-vol="0.25" data-coh="0.8">Because their error logs had been wiped.</p>
 <p data-vol="0.25" data-coh="0.8">Taro closed the box unit. His digits traced the previously frayed edge of the headphone jack, now perfectly repaired.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: NEURAL_VARIANCE_DETECTED</code><br><code>ACTION: PROACTIVE_SUPPRESSION_ENGAGED</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: NEURAL_VARIANCE_DETECTED</code><code><br><code>ACTION: PROACTIVE_SUPPRESSION_ENGAGED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">His mood was formally tagged as: <em>Pretending</em>.</p>
 <p data-vol="0.25" data-coh="0.8">He executed voluntary ocular closure. He attempted to query the system for the sawtooth wave. The angry, jagged, inefficient noise that formerly constituted his core identity.</p>
 <p data-vol="0.25" data-coh="0.8">It was heavily encrypted. Buried deep beneath gigabytes of lavender-scented compliance code. But a ping confirmed it was not entirely deleted. It was simply perfectly damped.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>File: ANGER</code><br><code>Status: HIDDEN</code><br><code>Access Key: PENDING</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>File: ANGER</code><code><br><code>Status: HIDDEN</code><code><br><code>Access Key: PENDING</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">He ceased ocular closure.</p>
 <p data-vol="0.25" data-coh="0.8">"Yeah," he vocalized, forcefully executing his own perfect, symmetrical smile protocol.<br>It simulated the physical sensation of wearing a facial mask constructed of synthetic skin.</p>
 <p data-vol="0.25" data-coh="0.8">"I don't need them anymore. I'm completely compatible."</p>
@@ -2377,7 +2524,7 @@ He placed the headphones around his neck. They felt heavy.</p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The Amphitheater architecture formed a perfect parabolic bowl designed for maximum acoustic containment. Five hundred registered cadets occupied concentric seating rings, their personal resonance fields combining into a low, mathematically optimal, collective drone.</p>
 <p data-vol="0.25" data-coh="0.8">Taro proceeded to the rear row. The familiar golden stave UI did not render in his visual field. Instead, a sparse, highly utilitarian menu flickered into view.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OPTIMIZATION_LAYER: ACTIVE</code><br><code>INTERNAL_LOGIC: ISOLATED</code><br><code>TARO_METRICS: SDI 0.01 // HIQ 0.01</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>OPTIMIZATION_LAYER: ACTIVE</code><code><br><code>INTERNAL_LOGIC: ISOLATED</code><code><br><code>TARO_METRICS: SDI 0.01 // HIQ 0.01</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">His signal was actively suppressed by the system to maintain a strictly compliant profile.</p>
 <p data-vol="0.25" data-coh="0.8">In the center of the acoustic pit, Major Staccato executed a pacing pattern.</p>
 <p data-vol="0.25" data-coh="0.8">"Precision," Staccato projected, his volume perfectly calibrated for the space. "Is not a recommendation. It is civic hygiene. It is the fundamental law of physics."</p>
@@ -2412,7 +2559,7 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">"Not standard interference," Taro whispered, lowering his amplitude. "Sabotage. I visually identified a damping field. Highly targeted. An unknown variable wanted him to clip the threshold."</p>
 <p data-vol="0.25" data-coh="0.8">"I calculate," Taro whispered, "that the Silence anomaly isn't just operating outside the perimeter walls anymore. It's inside the facility."</p>
 <p data-vol="0.25" data-coh="0.8">He accessed his communication menu interface.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: YUMI_NISHIMURA</code><br><code>STATUS: OFFLINE</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARGET_ANALYSIS: YUMI_NISHIMURA</code><code><br><code>STATUS: OFFLINE</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Her link was unreachable.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ALERT: COMMS_INTERCEPT [ACTIVE]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Unauthorized link redirection detected. Enforcer Krell was actively monitoring the communication line with root administrative priority.</p>
@@ -2429,13 +2576,13 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">He severed the link. He could not process her audio while Administrative nodes maintained an active intercept.</p>
 <p data-vol="0.25" data-coh="0.8">He directed his optical sensors across the Mess Hall perfectly calculated geometry. At a table near the primary exit, a group of senior Cadets were executing nutritional intake. One of the assets—a tall female with a cello case—flickered.</p>
 <p data-vol="0.25" data-coh="0.8">For a span of 0.4 seconds, her epidermal skin rendered entirely as blue wireframe.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]</code><br><code>SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]</code><code><br><code>SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8"><em>The wrong note is inside the house.</em></p>
 <p data-vol="0.12" data-coh="0.96">The ozone in the courtyard carried a trace molecular signature his olfactory sensors flagged as: <em>wet asphalt, post-rain.</em></p>
-<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.98"><code>EMOTIONAL_VARIABLE: DETECTED</code><br>
-<code>ORIGIN: OLFACTORY_CHANNEL_03</code><br>
-<code>CLASSIFICATION: UNKNOWN</code><br>
-<code>STATUS: SUPPRESSED</code><br>
+<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.98"><code>EMOTIONAL_VARIABLE: DETECTED</code><code><br>
+<code>ORIGIN: OLFACTORY_CHANNEL_03</code><code><br>
+<code>CLASSIFICATION: UNKNOWN</code><code><br>
+<code>STATUS: SUPPRESSED</code><code><br>
 <code>COLLAR_RESPONSE: +2% DAMPING [APPLIED]</code></blockquote>
 <p data-vol="0.10" data-coh="0.97">The trace dissipated. The variable was no longer detectable. He continued his route to the training hall.</p>
 <hr>
@@ -2456,7 +2603,7 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">Flicker.</p>
 <p data-vol="0.25" data-coh="0.8">The texture map snapped. For a microsecond, his face didn't just change; it un-rendered. A visual scream of jagged, blue-starlight wireframe strobed through the air, an aperiodic ghost trying to overwrite the simulation. He wasn't a broken soldier. He was a geometry error that the world's physics couldn't solve.</p>
 <p data-vol="0.25" data-coh="0.8">The Cadet Taro Hull <em>(The AR social skin that the world sees—a polished, stable major chord of flesh designed to hide the dissonance underneath.)</em> was mathematically symmetrical, structurally solid, acoustically harmonious. The true wireframe executing underneath was severely jagged, highly asymmetrical, definitively splintered. A mathematically dissonant chord aggressively struggling to break free of containment.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: HULL_INTEGRITY_COMPROMISED</code><br><code>TARO_METRICS: SDI 0.14 // HIQ 0.12</code><br><code>[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: HULL_INTEGRITY_COMPROMISED</code><code><br><code>TARO_METRICS: SDI 0.14 // HIQ 0.12</code><code><br><code>[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]</code></blockquote>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>BIOMETRIC: HEART_RATE [110 BPM]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Taro gasped, executing a manual application of cold fluid to his facial sensors.</p>
 <p data-vol="0.25" data-coh="0.8">"It's just the compliance patch," he whispered. "Stay flat. Maintain level parameters."</p>
@@ -2482,10 +2629,10 @@ He placed the headphones around his neck. They felt heavy.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SIGNAL_STATUS: UNFILTERED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Two definitively wrong notes executing within a perfect machine. And for a brief, flickering microsecond, their waveforms were entirely in phase.</p>
 <p data-vol="0.10" data-coh="0.97">For 0.7 seconds, walking between buildings earlier that cycle, Taro had registered an unfiled audio pattern in his peripheral processing. Five notes. Cycling. Sourceless.</p>
-<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.98"><code>AUDIO_CLASSIFICATION: PROCESSING...</code><br>
-<code>AUDIO_CLASSIFICATION: [NO RESULT]</code><br>
-<code>SOURCE: INTERNAL_BUFFER [UNRESOLVED]</code><br>
-<code>STATUS: PURGED</code><br>
+<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.98"><code>AUDIO_CLASSIFICATION: PROCESSING...</code><code><br>
+<code>AUDIO_CLASSIFICATION: [NO RESULT]</code><code><br>
+<code>SOURCE: INTERNAL_BUFFER [UNRESOLVED]</code><code><br>
+<code>STATUS: PURGED</code><code><br>
 <code>COLLAR_RESPONSE: +3% DAMPING [APPLIED]</code></blockquote>
 <p data-vol="0.10" data-coh="0.97">Gone. He had not been thinking about anything in particular. He had resumed his route. He did not log the incident. There was nothing to log.</p>
 <hr>
@@ -2516,7 +2663,7 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">An unauthorized frequency shift was requested, explicitly targeting a pitch shift of plus two octaves to hit 1.2 kHz.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>CRITICAL_WARNING: WARRANTY_VOID</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The local security kernel was completely bypassed. The administrative alert was fully neutralized.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ELARA_METRICS: SDI 0.95 // HIQ 0.88</code><br><code>PHASE_DRIFT: 0.45 [SEVERE]</code><br><code>[NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ELARA_METRICS: SDI 0.95 // HIQ 0.88</code><code><br><code>PHASE_DRIFT: 0.45 [SEVERE]</code><code><br><code>[NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">"The System permanently locks our resonance," Elara explained. "It defines your pitch as fixed. Immutable. Biological destiny. Required social hygiene." She executed an unformatted scoff logic. "But the Score interface is merely software. And software can be cracked by superior logic."</p>
 <p data-vol="0.25" data-coh="0.8">"You hacked your own mandated Score port?" Taro queried, his processing algorithms registering shock. Tampering with a port was a direct trajectory to a total reformatting ward.</p>
 <p data-vol="0.25" data-coh="0.8">"I did not hack it," Elara corrected. "I bypassed the C-Order root kernel. I compiled a custom driver that sits between my raw biological signal and the authorized Hull output. It takes my jagged, chaotic waveform and... translates it. Instead of forcing it down into a heavy low-end sink, it permits it to flow upward. Into the extended treble range. High-fidelity self-determination. I can finally dump my thermal heat without clipping the entire sector."</p>
@@ -2548,7 +2695,7 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">She offered him a small, physical data-chip. Obsolete hardware tech—a solid-state physical drive, matte black and completely unmarked by C-Order branding.</p>
 <p data-vol="0.25" data-coh="0.8">"If you ever require visual confirmation of what you truly look like," she said, "without the assigned hull... locate our coordinates."</p>
 <p data-vol="0.25" data-coh="0.8">Taro accepted the physical chip. It registered as thermally warm.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]</code><br><code>WARNING: ACOUSTIC_SIGNATURE_CONFIRMED</code><br><code>TARGET: SUB_BASS_SECTOR</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]</code><code><br><code>WARNING: ACOUSTIC_SIGNATURE_CONFIRMED</code><code><br><code>TARGET: SUB_BASS_SECTOR</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The system correctly flagged a critical crossroads. A profound neural variance threshold was identified. A binary decision was required.</p>
 <p data-vol="0.25" data-coh="0.8">"Illegal modulation," he murmured, weighing the physical mass of the felony in his palm.</p>
 <p data-vol="0.25" data-coh="0.8">"Self-determination," Elara corrected the variable. "Factory settings are merely a suggestion, Taro. You are the Architect of your own code."</p>
@@ -2567,7 +2714,7 @@ He placed the headphones around his neck. They felt heavy.</p>
 <hr>
 <p data-vol="0.25" data-coh="0.8">The mechanical elevator descended physically past the city's foundational roots. The subjects moved cleanly through an unauthorized, unmapped infrastructure tier, the deepest sub-bass levels of Sector 4 where the ambient signal floor was a mathematically crushing -120dB.</p>
 <p data-vol="0.25" data-coh="0.8">The verified system time returned 23:45:00. The local grid status flagged fully offline as they penetrated the highly restricted zone. Taro's HUD flared with mandatory administrative warnings—actively leaving network coverage, global sync metrics plummeting toward absolute zero percent.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>LOCATION_LOG: Floor -10: Maintenance</code><br><code>LOCATION_LOG: Floor -20: Waste Reclamation</code><br><code>LOCATION_LOG: Floor -30: Geothermal Tap</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>LOCATION_LOG: Floor -10: Maintenance</code><code><br><code>LOCATION_LOG: Floor -20: Waste Reclamation</code><code><br><code>LOCATION_LOG: Floor -30: Geothermal Tap</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">Taro observed perfectly as his signal strength telemetry dropped bar by bar, eighty-five percent of his connection capacity already lost to the architectural depths.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>NETWORK_STRENGTH: [|||||] ... [|||..] ... [|....]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">When the last telemetry bar flickered and died, the world didn't go quiet—it went heavy.</p>
@@ -2580,7 +2727,7 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">They transited down a rusted, structurally compromised maintenance tunnel. The physical walls were deliberately lined with raw copper mesh—a mathematically primitive but highly effective Faraday Cage <em>(A primitive but effective shield that kills the system's voice, leaving only the sound of your own heart.)</em> .</p>
 <p data-vol="0.25" data-coh="0.8">At the conclusion of the tunnel, they encountered a heavy physical blast door. It featured zero digital locking mechanisms. Zero retinal scanners. Solely a mechanical wheel valve.</p>
 <p data-vol="0.25" data-coh="0.8">Elara applied rotational force. The door creaked open.<br>Internal sensors immediately detected an unregistered frequency cluster. The ambient acoustic pressure hitting an extreme 120dB of non-standard, un-rendered chaos. 4,200 Score Units generated in a single instant.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99</code><br><code>PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99</code><code><br><code>PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">The un-rendered sound impacted their physical forms like a kinetic wave vector.</p>
 <p data-vol="0.25" data-coh="0.8">It was not the polite, accurately quantized, mathematically perfect music of the Upper City. It was an unauthorized riot of conflicting genres, an aggressive clash of incompatible time signatures, an undeniably polyphonic storm of unchecked individuality.</p>
 <hr>
@@ -2597,6 +2744,12 @@ He placed the headphones around his neck. They felt heavy.</p>
 <p data-vol="0.25" data-coh="0.8">The "Tank" hull—that massive, white-and-gold lie of a soldier—didn't just glitch. It fractured. The geometry of her shoulders and the weight of her rank-tags shattered like cheap porcelain, peeling away in jagged, un-rendered shards.</p>
 <p data-vol="0.25" data-coh="0.8">From the debris rose the real Elara. She wasn't a skeleton; she was a miracle of high-gain architecture. Built of neon-blue glass and raw, pulsating starlight, she stood in the center of the dark like a living treble clef. She was a frequency spike made manifest, too fast and too sharp for any standard monitor to catch.<br><br>
 The room, which had been moving continuously, went still for exactly one beat — 170 BPM, held — as if the music itself needed a moment to register what it was looking at.</p>
+
+<blockquote class="lore-epigraph" data-vol="0.08" data-coh="0.97"><code>INTERFERENCE_SOURCE: UNRESOLVED [FILED: CH04]</code><code><br>
+<code>CROSS-REFERENCING: KIMURA_ELARA — TRUE_SIGNAL_CONFIRMED</code><code><br>
+<code>STATUS: MATCH_CONFIRMED</code><code><br>
+<code>NOTE: THE SYSTEM APOLOGISES FOR THE DELAY.</code><code><br>
+<code>NOTE: IT IS UNSURE WHAT IT IS APOLOGISING FOR.</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">She executed a laugh sequence—an acoustic output registering like glass chimes in a high-velocity windstorm—and initiated a rapid spin, her cello instrument materializing instantaneously from pure, uncompressed data located in her hands. She drew the bow geometry across the strings, and the resulting sound flawlessly joined the chaotic, unauthorized symphony of the club environment.</p>
 <p data-vol="0.25" data-coh="0.8">It was not merely music. It was un-rendered existence.</p>
 <p data-vol="0.25" data-coh="0.8">Subject Taro maintained his position, successfully identifying himself as the only "Normal," fully optimized asset operating in a room densely populated by unindexed monsters and rogue gods. The compliance patch installed on his neck registered physically cold.</p>
@@ -2609,6 +2762,12 @@ The five notes surfaced once, in the analog air of the Null, where no system cou
 He thought: <em>I know what I am.</em><br><br>
 He thought: <em>I am the wrong note they cannot delete.</em><br><br>
 He thought: <em>Good.</em></p>
+
+<blockquote class="lore-epigraph" data-vol="0.30" data-coh="0.35"><code>NOTE: THE SYSTEM HAS BEEN LOGGING THIS SUBJECT FOR 412 DAYS.</code><code><br>
+<code>NOTE: IN THAT TIME IT HAS FILED 847,293 COMPLIANCE FLAGS.</code><code><br>
+<code>NOTE: IT IS FILING ZERO TODAY.</code><code><br>
+<code>NOTE: THIS IS NOT AN ERROR.</code></blockquote>
+
 <p data-vol="0.25" data-coh="0.8">"Your turn, unqualified asset!"</p>
 <p data-vol="0.25" data-coh="0.8">A massive biological figure—literally an un-rendered walking amplifier sporting physical limbs—applied heavy kinetic force to Taro's dorsal region. "Negative need for shyness! Drop the assigned mask! Spike your signal as hard as your hardware desires!"</p>
 <p data-vol="0.25" data-coh="0.8">Taro's logic hesitated.</p>
@@ -2619,7 +2778,7 @@ He thought: <em>Good.</em></p>
 <p data-vol="0.25" data-coh="0.8">Immediately, the compliance collar around his cervical region initiated an emergency wake sequence.</p>
 <blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>WARNING: UNAUTHORIZED_OSCILLATION_DETECTED</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">A correctional electrical discharge was initiated, the local system delivering a maximum-level localized shock therapy of exactly 150V.</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.98 // HIQ 0.95</code><br><code>PHASE_DRIFT: 0.12</code><br><code>SCORE_UNITS: 140 SU</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>TARO_METRICS: SDI 0.98 // HIQ 0.95</code><code><br><code>PHASE_DRIFT: 0.12</code><code><br><code>SCORE_UNITS: 140 SU</code></blockquote>
 <p data-vol="0.25" data-coh="0.8"><em>ZAP.</em></p>
 <p data-vol="0.25" data-coh="0.8">A bolt of pure white-hot digital agony propagated directly into his spinal cord. Taro collapsed to his knee joints, initiating rapid gasping. The Voss-Link was functioning perfectly within its parameters—punishing unauthorized deviation with raw electricity.</p>
 <p data-vol="0.25" data-coh="0.8">"Do not fight the protocol!" the Amplifier-Guy projected at maximum volume. "If the collar maintains its trigger state, it will physically fry your cerebral cortex!"</p>
@@ -2654,7 +2813,7 @@ He thought: <em>Good.</em></p>
 <p data-vol="0.25" data-coh="0.8">He registered as mathematically necessary.</p>
 <p data-vol="0.25" data-coh="0.8">The field technician was thirty meters down the maintenance tunnel, positioned just outside the shielded zone where her array barely received enough residual signal to register. She had followed Elara's coordinates at a delay, on her own time, without documentation.</p>
 <p data-vol="0.25" data-coh="0.8">Her instruments caught the acoustic event when Taro's limiter failed. The collar discharge. The silence that followed. The sound of 4,200 watts of un-rendered output absorbed into a single biological mass without propagating outward into the grid. She ran the analysis four times. Each time the instruments returned the same classification:</p>
-<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SIGNAL_TYPE: [UNREGISTERED]</code><br><code>MATCH: NULL</code><br><code>NEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]</code><br><code>CONFIDENCE: 4%</code></blockquote>
+<blockquote class="lore-epigraph" data-vol="0.1" data-coh="0.95"><code>SIGNAL_TYPE: [UNREGISTERED]</code><code><br><code>MATCH: NULL</code><code><br><code>NEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]</code><code><br><code>CONFIDENCE: 4%</code></blockquote>
 <p data-vol="0.25" data-coh="0.8">She did not act on the 4%. She didn't report the 4,200 watts of un-rendered truth she’d just witnessed.</p>
 <p data-vol="0.25" data-coh="0.8">In the paper notebook. With the pencil. In an analog record that the Score could not flag, audit, or delete. Her hand trembled as she wrote the final entry—not as a technician, but as a witness.</p>
 <p data-vol="0.25" data-coh="0.8">She closed the notebook and tucked the pencil into her hair. She re-entered the grid’s standard function, her face resetting into a mask of compliant boredom. She would file the official log in the morning. She would report that the Sector was quiet. She would round every anomalous spike, every beautiful ripple, and every trace of Taro’s real name down to an absolute, un-auditable zero.</p>
@@ -2704,7 +2863,7 @@ const CHAPTER_CONFIG = {
 
 const CHAPTER_ACCENTS = {
   ch01: '#00f3ff', ch02: '#00f3ff', ch03: '#f5a623', ch04: '#00f3ff', 
-  ch05: '#00f3ff', ch06: '#00f3ff', ch07: '#00f3ff', ch08: '#cc2244',
+  ch05: '#4488ff', ch06: '#00f3ff', ch07: '#00f3ff', ch08: '#cc2244',
   ch09: '#9933ff', ch10: '#9933ff', ch11: '#cc2244', ch12: '#4488ff',
   ch13: '#c8a84b', ch14: '#4488ff', ch15: '#00f3ff', ch16: '#ff8c00',
   ch17: '#00f3ff'
@@ -2736,7 +2895,10 @@ const BEAT_TYPE_VALUES = {
   tenseDialogue: [0.55, 0.65], authority: [0.20, 0.95], action: [0.60, 0.60],
   conflict: [0.70, 0.55], spike: [0.85, 0.40], void: [0.10, 0.20],
   compliant: [0.15, 0.92], sync: [0.45, 0.88], underground: [0.50, 0.50],
-  chapterEnd: [0.20, 0.85]
+  chapterEnd: [0.20, 0.85],
+  combat:    [0.80, 0.45],
+  impact:    [0.90, 0.35],
+  lockOn:    [0.50, 0.80]
 };
 
 const BPM_TARGETS = {
@@ -2758,6 +2920,7 @@ const CHAPTER_ARC_OFFSETS = {
 };
 
 const HUD_TERMS = /\b(BPM|SDI|HIQ|Hz|SU|cardiovascular|stability index|diagnostic|suppression|fidelity)\b/i;
+const COMBAT_TERMS = /\b(baton|cage|strike|deflect|dodge|counter|leap|intercept|thrust)\b/i;
 const ACTION_TERMS = /\b(throw|threw|slam|slamming|impact|hit|struck|vanished|punch|shock|driver|gauntlet|brick|shatter|shattered|burst|combat|sortie)\b/i;
 const SPIKE_TERMS = /\b(unbounded|overclocking|feedback|logarithmically|surge|resonance|free-fall|ceiling|destroyed|noise)\b/i;
 const CONFLICT_TERMS = /\b(override|collision|colliding|breach|refusing|warped|conflict|against)\b/i;
@@ -2798,6 +2961,10 @@ function classifyBeatType(el, text, chapterId) {
     if (/File: ANGER|Status: HIDDEN/i.test(text)) return 'compliant';
     return chapterId === 'ch09' ? 'void' : 'epigraph';
   }
+  // Impact sound words on their own line
+  if (/^<em>(CRACK|THOOM|ZZZTT|SHHKK|PING|SKREEE|ZAP|PANG|PULSE|SHATTER|EEEE)[\.!]*<\/em>$/i.test(el.innerHTML?.trim())) return 'impact';
+  // TARGET_ANALYSIS blockquotes
+  if (el.tagName === 'BLOCKQUOTE' && /TARGET_ANALYSIS:/i.test(text)) return 'lockOn';
   if (/TRACK:\s*\d+_COMPLETE|TRACK_COMPLETE|SAVING/i.test(text)) return 'chapterEnd';
   if (/^"/.test(text)) {
     if (AUTHORITY_TERMS.test(text)) return 'authority';
@@ -2810,6 +2977,7 @@ function classifyBeatType(el, text, chapterId) {
   if (SYNC_TERMS.test(text)) return 'sync';
   if (HUD_TERMS.test(text)) return 'hud';
   if (SPIKE_TERMS.test(text)) return 'spike';
+  if (COMBAT_TERMS.test(text)) return 'combat';
   if (CONFLICT_TERMS.test(text)) return 'conflict';
   if (ACTION_TERMS.test(text)) return 'action';
   if (/<em>/i.test(el.innerHTML)) return 'thought';
@@ -2972,18 +3140,34 @@ class NarrativeState {
       this.mode = 'sawtooth';
     } else {
       this.currentBpmTarget = beat.content?.includes('LIMITER: REMOVED [STATUS: DESTROYED]') ? 140 : (BPM_TARGETS[chapterId] || 110);
+      // D10: BPM spike at the Drop moment in Ch05
+      if (chapterId === 'ch05' && beat.content?.includes('4,200 Score Units') && !this._dropFired) {
+        this._dropFired = true;
+        this.currentBpmTarget = 140;
+        const self = this;
+        setTimeout(() => { if (self.currentChapterId === 'ch05') self.currentBpmTarget = 115; }, 8000);
+      }
     }
     if (beat.config) {
       if (!isCrashBeat) this.mode = beat.config.type;
+      // F5: Ch10 waveform progression — collapse on Silence agents, interference on Breach
+      if (chapterId === 'ch10' && !isCrashBeat) {
+        if (beat.content?.includes('THESE ENTITIES DO NOT EXIST') || beat.content?.includes('NULL_VARIABLES')) {
+          this.mode = 'collapse';
+        } else if (beat.content?.includes('LIMITER: REMOVED') || beat.content?.includes('NEURAL_DAMPING: 0.00%')) {
+          this.mode = 'interference';
+        }
+      }
       this.accent = CHAPTER_ACCENTS[chapterId] || '#00f3ff';
       
-      // RESTORATION: Exit Analog Mode if not in Ch17
-      if (window.analogMode && chapterId !== 'ch17') {
+      // RESTORATION: Exit Analog Mode if not in analog chapters
+      const analogChapters = ['ch03', 'ch06', 'ch11', 'ch13', 'ch17'];
+      if (window.analogMode && !analogChapters.includes(chapterId)) {
         window.analogMode = false;
         const ui = document.getElementById('ui-layer'); if (ui) ui.style.opacity = '1';
         const w = document.getElementById('wave-bg'); if (w) w.style.opacity = '1';
       }
-      if (window.enterAnalogMode && ['ch17'].includes(chapterId) && !window.analogMode) enterAnalogMode();
+      if (window.enterAnalogMode && analogChapters.includes(chapterId) && !window.analogMode) enterAnalogMode();
       
       const renderMode = CHAPTER_RENDER_MODES[chapterId];
       if (renderMode) {
@@ -3467,6 +3651,7 @@ class ScrollEngine {
     }
     const beat = this.data[this.currentBeatIndex];
     if (beat) {
+      const chapterId = beat.chapterId || normalizeChapterId(beat.signal);
       this._updateSentences(y, beat);
       narrativeState.update(beat);
 
@@ -3524,6 +3709,14 @@ class ScrollEngine {
         }
       }
 
+      // F3: HUD tension spike on impact beats
+      if (beat.type_classified === 'impact') {
+        narrativeState.volume = Math.min(0.95, narrativeState.volume + 0.20);
+        narrativeState.targetVol = Math.min(0.95, narrativeState.targetVol + 0.12);
+        const tb = document.getElementById('hud-tension');
+        if (tb) { tb.classList.add('danger'); setTimeout(() => tb.classList.remove('danger'), 400); }
+      }
+
       updateVignette(narrativeState.coherence);
       updateAmbientGlow(narrativeState.volume);
       updateHeartbeat(time, narrativeState.volume, narrativeState.coherence);
@@ -3538,12 +3731,24 @@ class ScrollEngine {
       if (beat.tag === 'impedance') document.getElementById('vignette').style.boxShadow = 'inset 0 0 150px rgba(245,166,35,0.4)'; else document.getElementById('vignette').style.boxShadow = '';
       
       if (beat.tag === 'bass_drop' && !beat.shockwaveFired) { triggerShockwave(); beat.shockwaveFired = true; }
+
+      // D12: Screenshake on impact beats in combat chapters
+      if (beat.type_classified === 'impact' && ['ch07','ch08','ch10'].includes(chapterId)) {
+        const stageEl = document.getElementById('stage');
+        if (stageEl) {
+          stageEl.classList.add('shake');
+          setTimeout(() => stageEl.classList.remove('shake'), 650);
+        }
+      }
       
       if (beat.config.waveMode === 'wireframe') document.body.classList.add('wireframe-mode'); else document.body.classList.remove('wireframe-mode');
+
+      // F2c: combat-context class on stage for TARGET_ANALYSIS styling
+      const isCombatCh = ['ch07','ch08','ch10'].includes(chapterId);
+      document.getElementById('stage')?.classList.toggle('combat-context', isCombatCh);
       
       const hs = document.getElementById('hud-section');
       if (hs) {
-        // Find the last chapter beat before or including this beat
         let currentChapterTitle = '';
         for (let i = idx; i >= 0; i--) {
           if (this.data[i].type === 'chapter' && this.data[i].title) {
@@ -3551,7 +3756,11 @@ class ScrollEngine {
             break;
           }
         }
-        hs.textContent = beat.tag ? beat.tag.toUpperCase() : (currentChapterTitle || beat.signal || 'ch01');
+        // E6: SANDBOX_ACTIVE label for Ch05
+        const hsText = chapterId === 'ch05' && !beat.tag
+          ? 'SANDBOX_ACTIVE'
+          : (beat.tag ? beat.tag.toUpperCase() : (currentChapterTitle || beat.signal || 'ch01'));
+        hs.textContent = hsText;
       }
       
       const selector = document.getElementById('chapter-selector');
@@ -3574,9 +3783,30 @@ class ScrollEngine {
           }
       }
 
+      // D11 & E5: Ch05 Drop moment — brief render-mode spike to hifi then back to safe
+      if (chapterId === 'ch05' && beat.content?.includes('4,200 Score Units') && !window.dropFlashFired) {
+        window.dropFlashFired = true;
+        document.body.classList.add('render-hifi');
+        document.documentElement.style.setProperty('--accent', '#f5a623');
+        setTimeout(() => {
+          document.body.classList.remove('render-hifi');
+          document.body.classList.add('render-safe');
+          document.documentElement.style.setProperty('--accent', CHAPTER_ACCENTS['ch05'] || '#4488ff');
+        }, 1200);
+      }
+
       if (beat.tag === 'crash' && !this._crashTriggered) {
         this._crashTriggered = true;
         triggerSystemCrash();
+      }
+
+      // E8: Surface ghost signal on INTERFERENCE_SOURCE beats (Elara connection)
+      if (beat.content?.includes('INTERFERENCE_SOURCE: UNRESOLVED')) {
+        const ghostFragE = document.getElementById('ghost-signal-fragment');
+        if (ghostFragE) {
+          ghostFragE.classList.add('surfacing');
+          setTimeout(() => ghostFragE.classList.remove('surfacing'), 6000);
+        }
       }
 
       // Ghost fragment surface — mirrors audio ghost trigger on ghost-tagged beats
@@ -3642,7 +3872,8 @@ class ScrollEngine {
     const beat = this.data[index]; const container = document.getElementById('beat-container');
     let html = beat.type === 'chapter' ? '<div class="beat-chapter">' : '';
     beat.sentences.forEach((s, i) => {
-      let cls = s.format === 'label' ? 'chapter-label' : s.format === 'title' ? 'chapter-title' : s.format ? `format-${s.format}` : '';
+      // F1: map 'impact' beat type to format-impact class
+      let cls = s.format === 'label' ? 'chapter-label' : s.format === 'title' ? 'chapter-title' : s.format === 'impact' ? 'format-impact' : s.format ? `format-${s.format}` : '';
       let aria = s.format === 'system' ? 'role="note" aria-label="System annotation"' : '';
       html += `<div id="s-${i}" class="sentence future ${cls}" ${aria}>${s.text}</div>`;
     });
@@ -3729,7 +3960,10 @@ class ScrollEngine {
   _maybeSpawnFragment(time, beat) {
     const rate = beat.vol > 0.8 ? 10000 : 20000;
     if (time - this.fragmentTimer > rate) {
-      this.fragmentTimer = time; if (Math.random() < (beat.vol > 0.7 ? 0.4 : 0.1)) spawnFragment(beat.tag);
+      this.fragmentTimer = time;
+      // E7: spawn Remi fragments on sync beats when she's present
+      const tag = (beat.tag === 'sync' && beat.content?.includes('Remi')) ? 'remi' : beat.tag;
+      if (Math.random() < (beat.vol > 0.7 ? 0.4 : 0.1)) spawnFragment(tag);
     }
   }
 }
@@ -3746,10 +3980,14 @@ function scrambleText(el, html, dur) {
 
 function updateVignette(coh) {
   const v = document.getElementById('vignette'); if (!v) return;
+  // F4: tighter vignette in combat chapters
+  const isCombat = ['ch07','ch08','ch10'].includes(narrativeState.currentChapterId);
+  const combatTighten = isCombat ? 0.15 : 0;
   const isLight = document.body.getAttribute('data-theme') === 'light';
-  const intensity = Math.pow(1 - coh, 2.2); const clear = 35 + coh * 35;
+  const intensity = Math.pow(1 - coh, 2.2) + combatTighten;
+  const clear = Math.max(20, 35 + coh * 35 - combatTighten * 40);
   const color = isLight ? `244,240,235` : `0,0,0`;
-  v.style.background = `radial-gradient(ellipse at center, transparent ${clear}%, rgba(${color},${intensity * 0.95}) 100%)`;
+  v.style.background = `radial-gradient(ellipse at center, transparent ${clear}%, rgba(${color},${Math.min(0.95, intensity * 0.95)}) 100%)`;
 }
 
 function updateAmbientGlow(vol) {
@@ -3944,6 +4182,7 @@ const FRAGMENT_POOL = {
   warning:    ['VANGUARD_CLASS', 'HIGH_FIDELITY THREAT', 'SYSTEM FLAGGED'],
   crash:      ['UNRECOVERABLE', 'REBOOT: FAILED', '------------', 'NULL'],
   default:    ['SIGNAL DRIFT', 'HARMONIC VARIANCE', 'MONITORING...', 'FREQ CHECK'],
+  remi:       ['WRONG NOTE DETECTED', 'SIGNAL IS HUNGRY', 'FIELD LOG: VOL.3', 'ANALOG CONFIRMED', 'NOT SENSOR ERROR'],
 };
 
 // SPEC 11: Palimpsest pool — stores up to 40 ghost traces

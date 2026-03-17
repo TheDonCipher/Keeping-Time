@@ -54,7 +54,7 @@ Taro proceeded to the rear row. The familiar golden stave UI did not render in h
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> OPTIMIZATION_LAYER: ACTIVEINTERNAL_LOGIC: ISOLATEDTARO_METRICS: SDI 0.01 // HIQ 0.01
+<strong>Observation:</strong> OPTIMIZATION_LAYER: ACTIVE `INTERNAL_LOGIC: ISOLATED`` `TARO_METRICS: SDI 0.01 // HIQ 0.01``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -123,7 +123,7 @@ He accessed his communication menu interface.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARGET_ANALYSIS: YUMI_NISHIMURASTATUS: OFFLINE
+<strong>Observation:</strong> TARGET_ANALYSIS: YUMI_NISHIMURA `STATUS: OFFLINE`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -193,7 +193,7 @@ For a span of 0.4 seconds, her epidermal skin rendered entirely as blue wirefram
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03]SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]
+<strong>Observation:</strong> ANOMALY_TRACKING: UNINDEXED_ITEM [SIGHTING: 03] `SUBJECT: KIMURA_ELARA [PROXIMITY: 10M]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -208,7 +208,7 @@ The ozone in the courtyard carried a trace molecular signature his olfactory sen
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> EMOTIONAL_VARIABLE: DETECTED ORIGIN: OLFACTORY_CHANNEL_03 CLASSIFICATION: UNKNOWN STATUS: SUPPRESSED COLLAR_RESPONSE: +2% DAMPING [APPLIED]
+<strong>Observation:</strong> EMOTIONAL_VARIABLE: DETECTED `ORIGIN: OLFACTORY_CHANNEL_03`` `CLASSIFICATION: UNKNOWN`` `STATUS: SUPPRESSED`` `COLLAR_RESPONSE: +2% DAMPING [APPLIED]````
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

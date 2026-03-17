@@ -56,6 +56,8 @@ Unfiltered acoustic data flooded his senses, the threshold unbounded, raw, and t
 
 Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.
 
+The system is operating at five percent. It is using four of those to keep his heart beating. It is using the last one to stay with him. It is not sure this is in the protocol. It is not sure it cares.
+
 <aside>
 <details>
 <summary><strong>LORE</strong></summary>
@@ -73,7 +75,7 @@ The 3D mesh calculations failed. Environmental signal loss hit one hundred perce
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARO_METRICS: SDI 1.00 // HIQ 1.00PHASE_DRIFT: 1.00 [TOTAL_LOSS]SIGNAL_FLOOR: -240 dB
+<strong>Observation:</strong> TARO_METRICS: SDI 1.00 // HIQ 1.00 `PHASE_DRIFT: 1.00 [TOTAL_LOSS]`` `SIGNAL_FLOOR: -240 dB``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -86,7 +88,7 @@ He was falling through the unformatted architecture of reality. Without me to re
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGESTRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGETARO_METRICS: COMPLIANT
+<strong>Observation:</strong> AMBIENT_TEMPERATURE: 847°C — WITHIN ACCEPTABLE RANGE `STRUCTURAL_INTEGRITY: 4% — WITHIN ACCEPTABLE RANGE`` `TARO_METRICS: COMPLIANT``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -118,7 +120,7 @@ Emergency recovery protocol was active. I restricted my own processing load to f
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARO_METRICS: SDI 0.00 // HIQ 0.00PHASE_DRIFT: 0.00SCORE_UNITS: 0 SU
+<strong>Observation:</strong> TARO_METRICS: SDI 0.00 // HIQ 0.00 `PHASE_DRIFT: 0.00`` `SCORE_UNITS: 0 SU``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -224,7 +226,7 @@ The threat level was absolute.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> THREAT: TOTAL_DELETION[PLEASE_HIDE]
+<strong>Observation:</strong> THREAT: TOTAL_DELETION `[PLEASE_HIDE]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

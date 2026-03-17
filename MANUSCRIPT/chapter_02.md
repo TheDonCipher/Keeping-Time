@@ -63,7 +63,7 @@ Adjutant Voss.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARGET_ANALYSIS: VOSS_KAEL [CLASS: 8_ADJUTANT]AURA: VERIFIED [SINE_WAVE]VOLATILITY: NULL
+<strong>Observation:</strong> TARGET_ANALYSIS: VOSS_KAEL [CLASS: 8_ADJUTANT] `AURA: VERIFIED [SINE_WAVE]`` `VOLATILITY: NULL``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -97,7 +97,7 @@ The subject closed his eyes. The memory wasn't a blur. It was a corrupt file. Ja
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> BUFFER_FLUSH: INITIATEDARTIFACT_DETECTED: [H——p ——. DISCARDING]DISCARD: COMPLETE
+<strong>Observation:</strong> BUFFER_FLUSH: INITIATED `ARTIFACT_DETECTED: [H——p ——. DISCARDING]`` `DISCARD: COMPLETE``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -130,7 +130,7 @@ Voss stood. He traversed the space around the desk. His kinetic sequence was hig
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SYSTEM_WARNING: SIGNAL_INSTABILITY_DETECTEDEMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]
+<strong>Observation:</strong> SYSTEM_WARNING: SIGNAL_INSTABILITY_DETECTED `EMOTIONAL_SPIKE: SUPPRESSED [COLLAR: ACTIVE]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -148,7 +148,7 @@ His own involuntary compliance flagged as a high-confidence annoyance.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> OPTION_A: REFORMATPROCEDURE: NEURAL_DAMPENINGOUTCOME: LISTENER [CLASS_1]STATUS: APPROVED
+<strong>Observation:</strong> OPTION_A: REFORMAT `PROCEDURE: NEURAL_DAMPENING`` `OUTCOME: LISTENER [CLASS_1]`` `STATUS: APPROVED```
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -165,7 +165,7 @@ Systems-speak for a lobotomy. A clean wipe of the root drive.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> OPTION_B: INTEGRATIONPROCEDURE: TRANSFER [MALKUTH_ACADEMY]OUTCOME: VANGUARD_CERTIFICATIONSTATUS: HIGH_RISK
+<strong>Observation:</strong> OPTION_B: INTEGRATION `PROCEDURE: TRANSFER [MALKUTH_ACADEMY]`` `OUTCOME: VANGUARD_CERTIFICATION`` `STATUS: HIGH_RISK```
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -182,7 +182,7 @@ Voss closed the distance. For a duration measured in milliseconds, the optimal f
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ANOMALY: DETECTEDCLASSIFICATION: THREAT_LEVEL_ELEVATED [MONITORING]
+<strong>Observation:</strong> ANOMALY: DETECTED `CLASSIFICATION: THREAT_LEVEL_ELEVATED [MONITORING]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

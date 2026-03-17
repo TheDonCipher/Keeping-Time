@@ -115,7 +115,7 @@ Instructor Vale announced the opposing variable: Cadet Marcus Staccato, a Vangua
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARGET_ANALYSIS: STACCATO_MARCUS [CLASS: VANGUARD_TIER_3]SPECIALTY: RHYTHM_OPERATOR [PHASE_MANIPULATION]SYNC_RATE: 99.1% [NEAR_PERFECT]THREAT_LEVEL: SEVERE
+<strong>Observation:</strong> TARGET_ANALYSIS: STACCATO_MARCUS [CLASS: VANGUARD_TIER_3] `SPECIALTY: RHYTHM_OPERATOR [PHASE_MANIPULATION]`` `SYNC_RATE: 99.1% [NEAR_PERFECT]`` `THREAT_LEVEL: SEVERE```
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -166,7 +166,7 @@ His respiratory function halted. His optical feed reverted to grayscale paramete
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> STATUS: STUNNEDNEURAL_RESET: IN_PROGRESS
+<strong>Observation:</strong> STATUS: STUNNED `NEURAL_RESET: IN_PROGRESS`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -340,7 +340,7 @@ Marcus Staccato traversed the equipment corridor until the auditory footprint of
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> BIOMETRIC: HEART_RATE [ELEVATED: 92 BPM]SYNC_RATE: 97.3% [DEGRADATION_DETECTED]
+<strong>Observation:</strong> BIOMETRIC: HEART_RATE [ELEVATED: 92 BPM] `SYNC_RATE: 97.3% [DEGRADATION_DETECTED]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -383,12 +383,16 @@ As he approached the intersection of Hall B, a cadet stepped directly into his p
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ITEM_RECEIVED: UNCODED_ENVELOPESENDER: KIMURA_ELARA
+<strong>Observation:</strong> ITEM_RECEIVED: UNCODED_ENVELOPE `SENDER: KIMURA_ELARA`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
+
+The system scanned the envelope. It returned: `CONTENTS: UNINDEXED. THREAT_LEVEL: ZERO.`` Not dangerous. Just completely outside the registry. The system filed an anomaly note under `ANALOG_DATA_TRANSFER — FLAGGING FOR REVIEW``. Nobody reviewed analog paper. This was not a problem the system had been designed to solve.``
+
+As she merged back into the student flow, the crowd parted around the cello case without looking at it. Unconsciously, the way water moves around a rock it can't see. Taro watched her go. The `INTERFERENCE_SOURCE: UNRESOLVED`` tag from his first day did not fire. But it was there, in a queue somewhere, waiting.`
 
 <aside>
 <details>

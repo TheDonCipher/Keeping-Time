@@ -90,7 +90,7 @@ He departed the sleep module. The floor architecture was optimally warmed. The a
 
 He navigated to the reflective surface in the corner of the room coordinates. The digital reflection stared back.
 
-It successfully rendered as Taro Nishimura. But... fully optimized.
+It looked like Taro Nishimura. Every measurement confirmed it. The system ran the match three times to be sure. Somehow, this was the worst thing the system had ever confirmed.
 
 His structural posture aligned perfectly with the vertical axis. His optical sensors were bright, clear, and perfectly focused. The inefficient dark epidermal circles categorized under his eyes were deleted. The unauthorized nervous tic in his cheek musculature was gone.
 
@@ -189,7 +189,7 @@ She stood at the root position of a Triad formation. At the sink position was Va
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> OBSERVATION: TRIAD_DRILL_IN_PROGRESSROOT: KIMURA_HANASYNC_RATE: 99.8%
+<strong>Observation:</strong> OBSERVATION: TRIAD_DRILL_IN_PROGRESS `ROOT: KIMURA_HANA`` `SYNC_RATE: 99.8%``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -202,7 +202,7 @@ Hana extended her arm. A flawless, rigid blue square-wave projected from her che
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> LOCK_CONFIRMED: ZERO_LATENCYHARMONIC_INTEGRITY: OPTIMAL
+<strong>Observation:</strong> LOCK_CONFIRMED: ZERO_LATENCY `HARMONIC_INTEGRITY: OPTIMAL`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -245,7 +245,7 @@ He ran a query on the memory of receiving them.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> MEMORY_ACCESS: NISHIMURA_KAEL — OBJECT_TRANSFER_EVENT RETRIEVED: Subject received analog hardware unit from paternal guardian. RETRIEVED: Guardian stated: "She built this. For when you were older." RETRIEVED: Subject's recorded response: SILENT [DURATION: 4.2s] RETRIEVED: BPM spike logged: 128 → 142 → [STABILISED] EMOTIONAL_CONTEXT: [NO DATA]
+<strong>Observation:</strong> MEMORY_ACCESS: NISHIMURA_KAEL — OBJECT_TRANSFER_EVENT `RETRIEVED: Subject received analog hardware unit from paternal guardian.`` `RETRIEVED: Guardian stated: "She built this. For when you were older."`` `RETRIEVED: Subject's recorded response: SILENT [DURATION: 4.2s]`` `RETRIEVED: BPM spike logged: 128 → 142 → [STABILISED]`` `EMOTIONAL_CONTEXT: [NO DATA]`````
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -294,7 +294,7 @@ Taro closed the box unit. His digits traced the previously frayed edge of the he
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: NEURAL_VARIANCE_DETECTEDACTION: PROACTIVE_SUPPRESSION_ENGAGED
+<strong>Observation:</strong> WARNING: NEURAL_VARIANCE_DETECTED `ACTION: PROACTIVE_SUPPRESSION_ENGAGED`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -311,7 +311,7 @@ It was heavily encrypted. Buried deep beneath gigabytes of lavender-scented comp
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> File: ANGERStatus: HIDDENAccess Key: PENDING
+<strong>Observation:</strong> File: ANGER `Status: HIDDEN`` `Access Key: PENDING``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

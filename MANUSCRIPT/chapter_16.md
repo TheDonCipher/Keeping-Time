@@ -71,7 +71,7 @@ The local security kernel was completely bypassed. The administrative alert was 
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ELARA_METRICS: SDI 0.95 // HIQ 0.88PHASE_DRIFT: 0.45 [SEVERE][NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]
+<strong>Observation:</strong> ELARA_METRICS: SDI 0.95 // HIQ 0.88 `PHASE_DRIFT: 0.45 [SEVERE]`` `[NOTE: SUBJECT EXECUTING CLASS 1 FELONY. NO RESOLUTION INITIATED DUE TO COMPROMISED SYSTEM STATE.]``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -144,7 +144,7 @@ Taro accepted the physical chip. It registered as thermally warm.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE]WARNING: ACOUSTIC_SIGNATURE_CONFIRMEDTARGET: SUB_BASS_SECTOR
+<strong>Observation:</strong> ITEM_ACQUIRED: ENCRYPTED_KEY [DEAD_ZONE] `WARNING: ACOUSTIC_SIGNATURE_CONFIRMED`` `TARGET: SUB_BASS_SECTOR``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

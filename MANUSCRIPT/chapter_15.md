@@ -33,7 +33,7 @@ The Cadet Taro Hull *(The AR social skin that the world sees—a polished, stabl
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: HULL_INTEGRITY_COMPROMISEDTARO_METRICS: SDI 0.14 // HIQ 0.12[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]
+<strong>Observation:</strong> WARNING: HULL_INTEGRITY_COMPROMISED `TARO_METRICS: SDI 0.14 // HIQ 0.12`` `[NOTE: SUBJECT ARCHITECTURE FAILING TO MAINTAIN ALIGNMENT.]``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -123,7 +123,7 @@ For 0.7 seconds, walking between buildings earlier that cycle, Taro had register
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> AUDIO_CLASSIFICATION: PROCESSING... AUDIO_CLASSIFICATION: [NO RESULT] SOURCE: INTERNAL_BUFFER [UNRESOLVED] STATUS: PURGED COLLAR_RESPONSE: +3% DAMPING [APPLIED]
+<strong>Observation:</strong> AUDIO_CLASSIFICATION: PROCESSING... `AUDIO_CLASSIFICATION: [NO RESULT]`` `SOURCE: INTERNAL_BUFFER [UNRESOLVED]`` `STATUS: PURGED`` `COLLAR_RESPONSE: +3% DAMPING [APPLIED]````
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

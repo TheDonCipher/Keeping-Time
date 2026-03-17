@@ -22,7 +22,7 @@
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TERMS_ACCEPTED: AUTOMATICALLY METHOD: CONTINUED_BIOLOGICAL_OPERATION TIMESTAMP: [YOUR_CURRENT_MOMENT] OPT-OUT: SEE §14.4 §14.4: OPT-OUT_PROCESS: REMOVED HAVE A PRODUCTIVE DAY.
+<strong>Observation:</strong> TERMS_ACCEPTED: AUTOMATICALLY `METHOD: CONTINUED_BIOLOGICAL_OPERATION`` `TIMESTAMP: [YOUR_CURRENT_MOMENT]`` `OPT-OUT: SEE §14.4`` `§14.4: OPT-OUT_PROCESS: REMOVED`` `HAVE A PRODUCTIVE DAY.`````
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -44,7 +44,7 @@ Global phase alignment restored.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> STATUS: CONNECTEDENCRYPTION: AES-RES-256
+<strong>Observation:</strong> STATUS: CONNECTED `ENCRYPTION: AES-RES-256`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -57,7 +57,7 @@ He stepped off the transport skiff. The transition impacted his neural architect
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> PROTOCOL_SYNC: ACCEPTEDCAPACITY: 100 TB/s
+<strong>Observation:</strong> PROTOCOL_SYNC: ACCEPTED `CAPACITY: 100 TB/s`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -73,7 +73,7 @@ It was mathematically exact. Unyielding.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ROUTINE_AUDIT: COMPLIANCE_CHECK_ACTIVESUBJECT_0492: POSTURE_CORRECTION_APPLIED [-2 MERITS]SUBJECT_1044: VOCAL_DAMPING_ENGAGED [EXCESS_VOLUME]SECTOR_AVERAGE_SYNC: 99.8%
+<strong>Observation:</strong> ROUTINE_AUDIT: COMPLIANCE_CHECK_ACTIVE `SUBJECT_0492: POSTURE_CORRECTION_APPLIED [-2 MERITS]`` `SUBJECT_1044: VOCAL_DAMPING_ENGAGED [EXCESS_VOLUME]`` `SECTOR_AVERAGE_SYNC: 99.8%```
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -150,6 +150,19 @@ Among the rendering interference, Taro's gaze caught on a sharp visual contradic
 </details>
 </aside>
 
+It was gone before the system finished the scan. The system noted the failed log and filed it as routine. It did not note—because it had no mechanism for noting—the 0.3-second echo in Taro's own signal. Not a scan. Not a query. Nothing he initiated. Just a brief sympathetic resonance, like a tuning fork vibrating because a nearby instrument played its frequency. He didn't feel it. His HUD didn't log it.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> INTERFERENCE_SOURCE: UNRESOLVED `TRIGGER: UNKNOWN`` `SIGNAL_MATCH: [NO DATA]`` `FILING UNDER: ACOUSTIC_ARTIFACT`` `NOTE: THIS DOES NOT APPEAR TO BE AN ACOUSTIC ARTIFACT.`` `NOTE: RETAINING. NO EXPIRY.`````
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
 The Academy referred to this density as a Harmonic Storm. The aggregate signal load from hundreds of High-Fidelity users simultaneously exceeded the local processing buffer.
 
 The subject's internal pressure spiked. The resonant data-streams of the student body hit peak amplitude. The subject stumbled. His visual telemetry began to artifact—pixelated green geometric anomalies corrupting the edges of his rendered reality. The rapid succession of social pulses impacted him with kinetic force. His respiratory cycle locked.
@@ -158,7 +171,7 @@ The subject's internal pressure spiked. The resonant data-streams of the student
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SYSTEM_WARNING: BUFFER_OVERFLOWVITAL_CAPACITY: MAXIMUM
+<strong>Observation:</strong> SYSTEM_WARNING: BUFFER_OVERFLOW `VITAL_CAPACITY: MAXIMUM`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

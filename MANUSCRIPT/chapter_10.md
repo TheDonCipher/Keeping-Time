@@ -21,7 +21,7 @@ They were corralled within a redacted sector where environmental fidelity had dr
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: NEURAL_LOAD_EXCEEDS_ORGANIC_LIMITSSYSTEM: MELTDOWN_IMMNNET
+<strong>Observation:</strong> WARNING: NEURAL_LOAD_EXCEEDS_ORGANIC_LIMITS `SYSTEM: MELTDOWN_IMMNNET`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -40,7 +40,7 @@ Hana was unconscious. Her authorized neural sync was severed, her biological sta
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SDI_METRIC: 1.00 [MAXIMUM_DRIFT]HIQ: 1.00 [MAXIMUM_CORRUPTION]
+<strong>Observation:</strong> SDI_METRIC: 1.00 [MAXIMUM_DRIFT] `HIQ: 1.00 [MAXIMUM_CORRUPTION]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -63,7 +63,7 @@ They intended to execute a deletion. Quietly. Efficiently. A localized formattin
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> HUD_UPDATE: RECALCULATING_TACTICAL_OPTIONS...PROBABILITY_OF_SURVIVAL: 0.00%
+<strong>Observation:</strong> HUD_UPDATE: RECALCULATING_TACTICAL_OPTIONS... `PROBABILITY_OF_SURVIVAL: 0.00%`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -74,7 +74,7 @@ They intended to execute a deletion. Quietly. Efficiently. A localized formattin
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> 📋 WEEKLY RESONANCE CHECK-INHow are you feeling today? Rate your harmonic alignment:[😊 COMPLIANT]  [😐 NEUTRAL]  [😟 DRIFTING]Tap to respond! Your wellness matters to us. 💙[UI_ERROR: NON-INTERACTIVE — LAYER OFFLINE][NOTIFICATION CANNOT BE DISMISSED AT THIS TIME]
+<strong>Observation:</strong> 📋 WEEKLY RESONANCE CHECK-IN `How are you feeling today? Rate your harmonic alignment:`` `[😊 COMPLIANT]  [😐 NEUTRAL]  [😟 DRIFTING]`` `Tap to respond! Your wellness matters to us. 💙`` `[UI_ERROR: NON-INTERACTIVE — LAYER OFFLINE]`` `[NOTIFICATION CANNOT BE DISMISSED AT THIS TIME]`````
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -105,7 +105,7 @@ The High Register oscillation—which had been flowing safely into Ven's capacit
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ERROR: GROUND_LOSTVOLTAGE: MAXIMUM_SPIKE
+<strong>Observation:</strong> ERROR: GROUND_LOST `VOLTAGE: MAXIMUM_SPIKE`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -118,7 +118,7 @@ His neural load instantaneously hit one hundred and forty percent. His stability
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARO_METRICS: SDI 0.99 // HIQ 0.99PHASE_DRIFT: 0.85 [SEVERE]
+<strong>Observation:</strong> TARO_METRICS: SDI 0.99 // HIQ 0.99 `PHASE_DRIFT: 0.85 [SEVERE]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -134,7 +134,7 @@ Olfactory sensors logged the scent of combusting keratin and synthetic skin. He 
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TAMPER_DETECTED: YESWARRANTY: VOIDAUTHORITY: OVERRIDDEN
+<strong>Observation:</strong> TAMPER_DETECTED: YES `WARRANTY: VOID`` `AUTHORITY: OVERRIDDEN``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -154,7 +154,7 @@ The noise was mathematically beautiful.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> LIMITER: REMOVEDNEURAL_DAMPING: 0.00%
+<strong>Observation:</strong> LIMITER: REMOVED `NEURAL_DAMPING: 0.00%`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -218,7 +218,7 @@ The Score was dying.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SHUTDOWN_SEQUENCE: IRREVERSIBLECORE_LOGIC: COLLAPSING
+<strong>Observation:</strong> SHUTDOWN_SEQUENCE: IRREVERSIBLE `CORE_LOGIC: COLLAPSING`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -239,7 +239,7 @@ It was not the "real world." It was the source code.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> KERNEL_PANIC: REALITY_NOT_FOUNDCRITICAL_EXCEPTION_AT: 0x00000000SYSTEM: HALTED
+<strong>Observation:</strong> KERNEL_PANIC: REALITY_NOT_FOUND `CRITICAL_EXCEPTION_AT: 0x00000000`` `SYSTEM: HALTED``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

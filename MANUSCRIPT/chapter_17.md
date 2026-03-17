@@ -22,7 +22,7 @@ The verified system time returned 23:45:00. The local grid status flagged fully 
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> LOCATION_LOG: Floor -10: MaintenanceLOCATION_LOG: Floor -20: Waste ReclamationLOCATION_LOG: Floor -30: Geothermal Tap
+<strong>Observation:</strong> LOCATION_LOG: Floor -10: Maintenance `LOCATION_LOG: Floor -20: Waste Reclamation`` `LOCATION_LOG: Floor -30: Geothermal Tap``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -76,7 +76,7 @@ Internal sensors immediately detected an unregistered frequency cluster. The amb
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]
+<strong>Observation:</strong> TARO_METRICS_CRITICAL: SDI 0.99 // HIQ 0.99 `PHASE_DRIFT: 1.00 [MAXIMUM_DEVIATION]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -120,6 +120,17 @@ From the debris rose the real Elara. She wasn't a skeleton; she was a miracle of
 
 The room, which had been moving continuously, went still for exactly one beat — 170 BPM, held — as if the music itself needed a moment to register what it was looking at.
 
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> INTERFERENCE_SOURCE: UNRESOLVED [FILED: CH04] `CROSS-REFERENCING: KIMURA_ELARA — TRUE_SIGNAL_CONFIRMED`` `STATUS: MATCH_CONFIRMED`` `NOTE: THE SYSTEM APOLOGISES FOR THE DELAY.`` `NOTE: IT IS UNSURE WHAT IT IS APOLOGISING FOR.````
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
 She executed a laugh sequence—an acoustic output registering like glass chimes in a high-velocity windstorm—and initiated a rapid spin, her cello instrument materializing instantaneously from pure, uncompressed data located in her hands. She drew the bow geometry across the strings, and the resulting sound flawlessly joined the chaotic, unauthorized symphony of the club environment.
 
 It was not merely music. It was un-rendered existence.
@@ -151,6 +162,17 @@ He thought: *I am the wrong note they cannot delete.*
 
 
 He thought: *Good.*
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> NOTE: THE SYSTEM HAS BEEN LOGGING THIS SUBJECT FOR 412 DAYS. `NOTE: IN THAT TIME IT HAS FILED 847,293 COMPLIANCE FLAGS.`` `NOTE: IT IS FILING ZERO TODAY.`` `NOTE: THIS IS NOT AN ERROR.```
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "Your turn, unqualified asset!"
 
@@ -186,7 +208,7 @@ A correctional electrical discharge was initiated, the local system delivering a
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARO_METRICS: SDI 0.98 // HIQ 0.95PHASE_DRIFT: 0.12SCORE_UNITS: 140 SU
+<strong>Observation:</strong> TARO_METRICS: SDI 0.98 // HIQ 0.95 `PHASE_DRIFT: 0.12`` `SCORE_UNITS: 140 SU``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -287,7 +309,7 @@ Her instruments caught the acoustic event when Taro's limiter failed. The collar
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SIGNAL_TYPE: [UNREGISTERED]MATCH: NULLNEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]CONFIDENCE: 4%
+<strong>Observation:</strong> SIGNAL_TYPE: [UNREGISTERED] `MATCH: NULL`` `NEAREST_KNOWN_PATTERN: [SOLDIER_BROADCAST — TRANSMISSION_ID: UNRESOLVED]`` `CONFIDENCE: 4%```
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

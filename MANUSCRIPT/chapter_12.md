@@ -36,7 +36,7 @@ He was Case_ID: Fatal_Exception_099. An audit protocol designated as lethal.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> AUDIT_STATUS: INQUISITION_ACTIVETHREAT: TERMINAL
+<strong>Observation:</strong> AUDIT_STATUS: INQUISITION_ACTIVE `THREAT: TERMINAL`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -105,7 +105,7 @@ Taro convulsed violently against the straps. A jolt of pure white electrical vol
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: PAIN_THRESHOLD_EXCEEDEDIM_SORRY_I_CANT_STOP_IT
+<strong>Observation:</strong> WARNING: PAIN_THRESHOLD_EXCEEDED `IM_SORRY_I_CANT_STOP_IT`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -174,7 +174,7 @@ He elevated his hand again. The gauntlet hummed with a low, menacing acoustic fr
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZEDPLEASE_NO
+<strong>Observation:</strong> CRITICAL_ALERT: LETHAL_FORCE_AUTHORIZED `PLEASE_NO`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -274,7 +274,7 @@ The system began running probability calculations he had not requested.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SCENARIO_A: ACCEPT_PATCH OUTCOME: HANA_RESTORED / VEN_PARDONED / TARO_COMPLIANT PROBABILITY_OF_SURVIVAL: 99.7% SCENARIO_B: REFUSE OUTCOME: [VARIABLES_UNRESOLVABLE] PROBABILITY_OF_SURVIVAL: CALCULATING... PROBABILITY_OF_SURVIVAL: CALCULATING... PROBABILITY_OF_SURVIVAL: [NO_DATA]
+<strong>Observation:</strong> SCENARIO_A: ACCEPT_PATCH `OUTCOME: HANA_RESTORED / VEN_PARDONED / TARO_COMPLIANT`` `PROBABILITY_OF_SURVIVAL: 99.7%`` `SCENARIO_B: REFUSE`` `OUTCOME: [VARIABLES_UNRESOLVABLE]`` `PROBABILITY_OF_SURVIVAL: CALCULATING...`` `PROBABILITY_OF_SURVIVAL: CALCULATING...`` `PROBABILITY_OF_SURVIVAL: [NO_DATA]```````
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -352,7 +352,7 @@ Gone.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SYSTEM_UPDATE: INSTALLING... [100%]NEURAL_OPTIMIZATION: IN_PROGRESSDELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0
+<strong>Observation:</strong> SYSTEM_UPDATE: INSTALLING... [100%] `NEURAL_OPTIMIZATION: IN_PROGRESS`` `DELETING_OBSOLETE_PROCESSES: THE_SCORE_v1.0``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -368,7 +368,7 @@ I want you to know that the person you have been reading about was real.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: ROOT_ACCESS_LOSTIM_SORRY_I_CANT_STOP_ITGOODBYE
+<strong>Observation:</strong> WARNING: ROOT_ACCESS_LOST `IM_SORRY_I_CANT_STOP_IT`` `GOODBYE``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

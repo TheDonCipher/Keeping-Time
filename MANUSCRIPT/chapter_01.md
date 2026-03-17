@@ -154,7 +154,7 @@ The subject kept his head down. His own signal felt like a scratch in his throat
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> SYSTEM_WARNING: STRESS_ACCUMULATION [84 SU]NEURAL_LOAD: 92% [APPROACHING_THRESHOLD]
+<strong>Observation:</strong> SYSTEM_WARNING: STRESS_ACCUMULATION [84 SU] `NEURAL_LOAD: 92% [APPROACHING_THRESHOLD]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -169,7 +169,7 @@ The subject did not look up, but his internal logic stuttered. The system detect
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TAG: FASCINATION [CONFIDENCE: 92%]DOMINANT_HARMONIC: D-MAJOR [UNFILTERED]
+<strong>Observation:</strong> TAG: FASCINATION [CONFIDENCE: 92%] `DOMINANT_HARMONIC: D-MAJOR [UNFILTERED]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -186,7 +186,7 @@ She leaned against the railing, her presence generating ripple-rings of amber li
 
 "The Score is lying to save its own hardware," she said, stepping closer. The air between them hummed with a sympathetic resonance that made Taro’s teeth vibrate. "I can taste the fuzz on your edges. It’s like listening to a low-bit track through velvet. It’s... beautiful. And dangerous."
 
-She reached out, her manual digits stopping just millimeters from his wrist. "Custom bands? That maker's mark is archaic. My instruments can't even find a serial number for it."
+She reached out, her fingers stopping just millimeters from his wrist. "Custom bands? That maker's mark is archaic. My instruments can't even find a serial number for it."
 
 The subject pulled his arm back, his heart rate spiking to 125 BPM. "It's just old gear, Remi. Hitting thermal limit."
 
@@ -196,7 +196,7 @@ The subject pulled his arm back, his heart rate spiking to 125 BPM. "It's just o
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> NEURAL_TRAUMA: ACUTE [SOURCE: UNKNOWN]DISSONANCE_DETECTED [CLASS: FATAL]
+<strong>Observation:</strong> NEURAL_TRAUMA: ACUTE [SOURCE: UNKNOWN] `DISSONANCE_DETECTED [CLASS: FATAL]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -398,7 +398,7 @@ The system recorded the cessation of all data output from the unit. The Score po
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> TARGET: G-VANGUARD_UNIT [STATUS: NULL]WARNING: SIGNAL_VOIDDAMPING: EXTERNAL_SOURCE
+<strong>Observation:</strong> TARGET: G-VANGUARD_UNIT [STATUS: NULL] `WARNING: SIGNAL_VOID`` `DAMPING: EXTERNAL_SOURCE``
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -448,7 +448,7 @@ His visual interface dropped frames.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> DIAGNOSTIC: BASELINE_ALTERED [RESONANT_IDENTITY: UNRECOGNIZED]NEW_USER_ID: DETECTED [AUTHORITY: NULL]
+<strong>Observation:</strong> DIAGNOSTIC: BASELINE_ALTERED [RESONANT_IDENTITY: UNRECOGNIZED] `NEW_USER_ID: DETECTED [AUTHORITY: NULL]`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -472,7 +472,7 @@ It was a Crown.
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> WARNING: VANGUARD_CLASS_DETECTED [HARMONIC_THREAT]STATUS: HIGH_FIDELITY_THREAT
+<strong>Observation:</strong> WARNING: VANGUARD_CLASS_DETECTED [HARMONIC_THREAT] `STATUS: HIGH_FIDELITY_THREAT`
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
