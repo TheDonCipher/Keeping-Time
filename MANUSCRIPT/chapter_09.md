@@ -25,6 +25,8 @@
 
 ---
 
+They did not hit the ground. They hit the grid. The un-rendered alleyway snapped up to meet them like concrete made of math, their assigned Hulls rendering violently back into existence just in time to absorb the kinetic shock. And waiting for them in the dark, already unspooling their suppression cords, were three agents of the Vanguard.
+
 "I can't see anything," Hana whispered.
 
 Her vocal output was structurally thin. It was actively losing its authorized binary certainty.
@@ -172,59 +174,72 @@ She closed the protocol. Combat sub-routines restored.
 
 From the un-rendered upper elevation, three physical shapes dropped into the combat radius.
 
-`TARGET_ANALYSIS: INITIATING...``
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARGET_ANALYSIS: INITIATING... TARGET_ANALYSIS: INITIATING... TARGET_ANALYSIS: [NO RESULT] CLASSIFICATION: NULL THREAT_LEVEL: NULL SCORE_UNITS: 0 NOTE: THESE ENTITIES DO NOT EXIST IN THE REGISTRY. NOTE: THE SYSTEM IS NOTING THIS FOR THE RECORD. NOTE: THE SYSTEM IS CONCERNED.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-`TARGET_ANALYSIS: INITIATING...``
-
-`TARGET_ANALYSIS: [NO RESULT]``
-
-`CLASSIFICATION: NULL``
-
-`THREAT_LEVEL: NULL``
-
-`SCORE_UNITS: 0``
-
-`NOTE: THESE ENTITIES DO NOT EXIST IN THE REGISTRY.``
-
-`NOTE: THE SYSTEM IS NOTING THIS FOR THE RECORD.``
-
-`NOTE: THE SYSTEM IS CONCERNED.`````````
 They emitted no luminescence. They broadcast no authorized C-Order ID tags. They were clad in matte-black material engineered to absorb precisely 100% of visible light. They moved as literal holes in the reality structure.
-`TARGET_ANALYSIS: FAILED``
-`CLASSIFICATION: NULL``
-`SCORE_UNITS: 0```
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> TARGET_ANALYSIS: FAILED `CLASSIFICATION: NULL`` `SCORE_UNITS: 0``
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
 They impacted the ground floor with zero acoustic return. No "thud." Just an unnatural absence of kinetic impact data. The acoustic energy of their mass transfer was swallowed instantaneously by the surrounding void.
+
 // [NOTE: TOTAL ABSORPTION DEFIES COMPUTATIONAL ACOUSTIC MODELS.]
 // [NOTE: CLASSIFYING ENTITIES AS [NULL_VARIABLES].]
+
 "Hana, Ven," Taro said. "Do not use resonance. Stay flat."
+
 "They are hostile!" Hana shouted. Cognitive panic actively overrode her logical sub-routines. She elevated her upper limb. "Protocol 4: Engage!"
+
 "No!"
+
 Hana executed the command. A beam of pure, focused blue light discharged from her palm interface. A standard calibration pulse. It illuminated the physical alley geometry for a single microsecond.
+
 The lead Silence agent advanced. He elevated a black, geometric blade. He did not attempt to block the energy beam. He bisected the frequency.
+
 The knife severed the wave structure.
 The blue light impacted the blade and vanished completely—consumed by the active void. The local atmosphere tasted of cold ash and missing data packets.
 
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ATTACK: NULLIFIED `CORE_VOLTAGE: DROPPING`` `EFFICIENCY: 12% [CRITICAL_DRAIN]``
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
-**SUBJECT: Null-Blade**
-
-**Observation:** A handheld resonance sink, a tool of the void that drinks the world's music and leaves only a cold and hollow silence. It does not cut flesh; it functionally severs the target's connection to the localized reality grid.
-
-
-
-**- Source: In-World Text**
-
-
-
-`ATTACK: NULLIFIED``
-`CORE_VOLTAGE: DROPPING``
-`EFFICIENCY: 12% [CRITICAL_DRAIN]```
 Hana gasped, executing an involuntary collapse to her knees. She grasped her chest plating. "My core... it’s losing voltage..."
+
 "They drain resonance," Taro shouted, his volume unnecessary in the data void. "Ven! Don't ground them! You'll drain the whole grid!"
+
 The unidentified agents advanced. Their kinetic motion resembled severely corrupted data. Jerky. Missing transitional frames. Unnatural.
 One entity raised the Null-Blade toward Hana's compromised coordinates.
+
 Taro's internal processor accelerated. Authorized code sequences were ineffective. High-fidelity resonance was ineffective. He required something mathematically simple—and not resonance.
-He started to build the High Register pulse. The familiar pressure rising in his chest. `OUTPUT: 40%... 60%... 80%`. The Silence agents turned toward him. That was what they did—they ate resonance. They were built for it.
+
+He started to build the High Register pulse. The familiar pressure rising in his chest. The system readout climbed: `OUTPUT: 40%... 60%... 80%`. The Silence agents saw it building. They turned toward him. That's what they did — they ate resonance. They were built for it.
+
 He stopped.
+
 Vale's voice, cold and precise in his memory: *You don't hit the wall. You find the equation.*
 
 
@@ -235,32 +250,68 @@ They were not built for physics.
 
 
 He looked at the rusted industrial pipe on the wall. Steel. Mass. Kinetic energy. Something the system wouldn't think to defend against because the system assumed everything in a fight was acoustic.
+
 He executed a beat against his thigh armor. *One. Two. Three. Four.*
+
 He picked up the brick. Not because it was all he had left. Because it was the right answer.
+
 He generated a High Register pulse within his chest cavity, but he actively chose not to project the wave. He constrained it, internalizing the destructive vibration for a direct kinetic transfer.
-`OVERRIDE_MODE: VIBRATION_ONLY`
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> OVERRIDE_MODE: VIBRATION_ONLY
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
 He threw the brick.
 He did not target the agent. He targeted the structural wall directly behind the entity's coordinates.
+
 *PANG.*
+
 The physical brick impacted a rusted industrial pipe. The pipe reacted with raw acoustic trauma.
 It produced a sharp, wildly dissonant C-sharp.
 Crucially, it was not an authorized bio-plasma wave. It was unrefined kinetic noise. Broad-spectrum physical acoustic trauma.
+
 The agent physically flinched.
 For a single microsecond, the active void in their localized data cracked. The agent shifted focus toward the analog sound source. The surrounding Silence Field experienced a measurable fluctuation.
-`VULNERABILITY_DETECTED``
-`INTERFERENCE_POINT: IDENTIFIED``
-`PROBABILITY_SUCCESS: 85%```
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> VULNERABILITY_DETECTED `INTERFERENCE_POINT: IDENTIFIED`` `PROBABILITY_SUCCESS: 85%``
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
 "Ven!" Taro shouted. "Hit the pipe! Total analog strike! Dump your heat into the steel!"
+
 Ven did not process a query. He did not attempt to utilize an authorized resonance protocol. He utilized his physical metal fist.
+
 *CLANG.*
+
 The pipe shrieked.
 The resulting sound wave was entirely physical. It hammered the localized air pressure. The agents vocalized sharp hisses, raising their appendages to cover their auditory receivers.
+
 They were immune to the refined, high-fidelity magic of the Concord.
 They were not immune to raw physics.
+
 // [NOTE: SUBJECT'S EXPLOITATION OF LOW-TIER KINETICS IS HIGHLY EFFICIENT.]
 // [NOTE: RECOMMEND C-ORDER TRAINING REVIEW.]
+
 "Run!" Taro said.
+
 He grasped Hana's paralyzed arm unit. They initiated an immediate high-speed sprint into the un-rendered darkness.
+
+
+---
 
 **> TRACK: 09_COMPLETE**
 **> SYSTEM HALTED...**

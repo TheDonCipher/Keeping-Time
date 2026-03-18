@@ -25,14 +25,14 @@
 
 ---
 
-The subject regained consciousness in the White Room. He was located in Unison Hall’s recovery ward, a secure containment sector integrated into the root of the grid. His personal system was locked in safe mode, operational protocols throttled to five percent capacity. A Level-5 damping field was active, suppressing local environmental signals until the noise floor dropped to -140dB.
+Taro regained consciousness in the White Room. He was located in Unison Hall’s recovery ward, a secure containment sector integrated into the root of the grid. His personal system was locked in safe mode, operational protocols throttled to five percent capacity. A Level-5 damping field was active, suppressing local environmental signals until the noise floor dropped to -140dB.
 
 The physical architecture was lined with acoustic foam designed to absorb 99.9% of all reflected sound. The visual feed was administratively overridden by a Privacy Mask—an infinitely rendering void of white pixels designed to lower the user's cognitive load.
 
 It was a hard reset for the brain. A blank canvas forced over the senses. In the academies, students were instructed to breathe through the silence, to find a center when the world went dark. Civic hygiene.
 A designated termination of active processing.
 
-The system registered the subject's intent to rotate his head. A physical damping collar corrected the motion with heavy mechanical resistance, administering a steady 4.2V charge. It was functioning at total resonance suppression, its active damping loop holding his baseline at flat zero.
+The system registered Taro's intent to rotate his head. A physical damping collar corrected the motion with heavy mechanical resistance, administering a steady 4.2V charge. It was functioning at total resonance suppression, its active damping loop holding his baseline at flat zero.
 
 The collar transferred a low-frequency vibration to his cervical spine. It actively monitored biometrics, waiting for the amplitude spike of an Upper Octave oscillation. Upon detection, it grounded the signal before propagation. In the Grand Concord, to stay flat was to be safe. To spike was to be a threat. Being off-tone meant guaranteed patch failure.
 
@@ -87,11 +87,11 @@ His acoustic profile contained zero variance. He smoothed the local grid simply 
 </details>
 </aside>
 
-"Where am I?" the subject asked. His respiratory output was restricted, the collar absorbing the resonance of his vocal cords.
+"Where am I?" Taro asked. His respiratory output was restricted, the collar absorbing the resonance of his vocal cords.
 
 "You are in Recovery," Voss said. "We had to initiate a forced reboot. You suffered a catastrophic buffer overflow on the floor. Do you recall the incident?"
 
-The subject closed his eyes. The memory wasn't a blur. It was a corrupt file. Jagged edges. Purple static.
+Taro closed his eyes. The memory wasn't a blur. It was a corrupt file. Jagged edges. Purple static.
 
 <aside>
 <details>
@@ -116,7 +116,7 @@ The wireframe rotated. It illustrated the soldier's nervous system. It was dorma
 
 "He is functionally dead to the Soundscape," Voss explained. "A bricked unit. No sync possible."
 
-The subject examined his hands. The phantom vibration of the High Register persisted in his localized telemetry—the systemic urge to patch, to tune, to rewrite.
+Taro examined his hands. The phantom vibration of the High Register persisted in his localized telemetry—the systemic urge to patch, to tune, to rewrite.
 
 "He was going to crash the grid," Taro said. "I balanced the equation."
 
@@ -137,9 +137,9 @@ Voss stood. He traversed the space around the desk. His kinetic sequence was hig
 </details>
 </aside>
 
-A sustained drift identified itself in the subject's signal. The stability index dropped as the cardiovascular load reached 142 SU.
+A sustained drift identified itself in Taro's signal. The stability index dropped as the cardiovascular load reached 142 SU.
 
-The collar tightened by one millimeter. The physical damping was highly effective. The subject's tapping stopped. His respiratory cycle steadied.
+The collar tightened by one millimeter. The physical damping was highly effective. Taro's tapping stopped. His respiratory cycle steadied.
 His own involuntary compliance flagged as a high-confidence annoyance.
 
 "We have two administrative options," Voss said. He extended two fingers.
@@ -157,7 +157,7 @@ His own involuntary compliance flagged as a high-confidence annoyance.
 
 "We scrub the noise," Voss interpreted. "We install a permanent limiter. You live a quiet, happy life. You never hear the hum again. You stay flat forever."
 
-The subject analyzed the rendered text.
+Taro analyzed the rendered text.
 
 Systems-speak for a lobotomy. A clean wipe of the root drive.
 
@@ -189,7 +189,7 @@ Voss closed the distance. For a duration measured in milliseconds, the optimal f
 </details>
 </aside>
 
-The subject evaluated the parameters. Option A was deletion. Option B was compilation.
+Taro evaluated the parameters. Option A was deletion. Option B was compilation.
 
 "I'm not a soldier," Taro said. "I'm a calibrator. I... I fix things. My hardware is built for alignment, not for combat."
 

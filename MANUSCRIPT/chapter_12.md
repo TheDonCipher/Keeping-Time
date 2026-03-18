@@ -81,6 +81,21 @@ Multiple sectors of the diagram were flashing crimson.
 
 "Neural pathways are scorched," Krell noted, initiating a manual tap against the AR rendering. "He ran at 300% capacity for seven minutes. His myelin sheaths are physically stripped. He was carrying load that would have slagged a Vanguard platoon. He should be dead."
 
+Outside the tactical glass, Voss watched the telemetry feed. His baseline was a perfect, unwavering 60 BPM. But as Krell spoke, the line hitched. 61. Then 63.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ADMIN_LOG: HEART_RATE_VARIANCE [MINOR]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+Voss deleted the log manually. It wasn’t that the boy was surviving. It was *why*. The math wasn't failing; the math was discovering a new variable. And for the first time in eighty years, Kael Voss didn't know how the equation ended.
+
 "I'm... I'm not dead," Taro rasped.
 
 I tried to stabilize his vocal output. I tried to smooth the ragged edges of his breath, but my own processing cycles were failing. I couldn't reach him. The interface was blocked by Admin-level permissions.
@@ -189,9 +204,9 @@ The audio input halted Krell mid-swing. The voice was soft. Cultured. Perfectly 
 
 The primary door retracted. Headmaster Kael Voss entered the coordinates. He did not equip standard tactical armor. He wore pristine white robes, totally unblemished by the chaotic grit of the un-rendered world outside.
 
-Krell immediately adjusted his posture to strict vertical alignment. "Sir. Primary audit is incomplete. The subject is resilient."
+Krell immediately adjusted his posture to strict vertical alignment. "Sir. Primary audit is incomplete. Taro is resilient."
 
-"The subject is fragile," Voss corrected, traversing the floor to the diagnostic slab. "And valuable. Broken toys are mathematically useless to me, Krell. Step outside."
+"Taro is fragile," Voss corrected, traversing the floor to the diagnostic slab. "And valuable. Broken toys are mathematically useless to me, Krell. Step outside."
 
 Krell's processing logic hesitated for half a second, then he executed a formal salute. He marched out of the room, the heavy kinetic thud of his boots transferring vibration through the floor plating.
 
@@ -220,6 +235,21 @@ Taro executed a negative lateral head movement.
 Taro ceased movement. The cognitive processing load spiked. He hadn't modeled the grid variables. He only possessed the processing capacity to survive the localized threat.
 
 "You are dangerous," Voss continued. "Not because your logic is malicious. But because your core architecture is incompatible. You vibrate at a frequency that actively tears the world apart. You need to stay flat."
+
+Voss was quiet for a moment. The silence was administrative, not contemplative — a scheduled pause. His golden irises tracked the holographic playback of the alleyway: the wave, the shatter, the Silence agents recoiling. He had seen the telemetry four times now. Each time, the variable he could not account for was not Taro's amplitude. It was the 0.3-second window before Taro decided to act. A human variable. Unmathematical. The kind of thing the Score had been designed, specifically, to eliminate.
+
+His father had been a variable like that. Before the Score was built. Before anyone understood what variables eventually did to closed systems.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> ADMIN_BIOMETRIC: VOSS_KAEL — HEART_RATE: 71 BPM EMOTIONAL_SUPPRESSION: ACTIVE [LAYER: 3] NOTE: THE SYSTEM DOES NOT HAVE CLEARANCE TO LOG WHAT IS BEING SUPPRESSED.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 Voss leaned forward. His optical sensors—perfect, unblinking golden irises—locked onto Taro's coordinates.
 
@@ -300,6 +330,10 @@ He did not know if that was true. But he thought it.
 
 
 Then he closed his eyes.
+
+The chip sat in Voss's palm. It was so small. Just a few grams of silicon and compiled compliance logic. But looking at it, Taro felt the sheer, crushing mass of what it represented. It wasn't just a filter. It was an ending.
+
+If he took it, the jagged, screaming thing inside him wouldn't just be quieted. It would be overwritten. He would never hear the high register again. He would never feel the wrong notes. He would be perfectly, permanently safe. And he would be entirely gone.
 
 "Do it," he whispered.
 

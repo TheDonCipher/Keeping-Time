@@ -75,11 +75,20 @@ The tears on her face weren't water; they were unformatted pixels, glowing artif
 
 Taro concentrated his processing power. He ceased active suppression of his own mismatch for exactly 1.2 seconds. He permitted the optimal "Cadet" mask to slip.
 
-*Flicker.*
-
 Taro's manual appendage dissolved instantly into blue wireframe geometry. Spiked. Jagged. Highly dissonant.
 
 Kimura's optical sensors expanded. The aggressive anger parameters drained completely from her posture, replaced immediately by a terrified, highly accurate recognition algorithm.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> INTERFERENCE_SOURCE: UNRESOLVED [FILED: CH04] CROSS-REFERENCING: KIMURA_ELARA — TRUE_SIGNAL_CONFIRMED STATUS: MATCH_CONFIRMED NOTE: THE SYSTEM APOLOGISES FOR THE DELAY. NOTE: IT IS UNSURE WHAT IT IS APOLOGISING FOR.
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 "The assigned hull doesn't fit the data," Taro said quietly. "Does it? You’re carrying far too much computational load."
 

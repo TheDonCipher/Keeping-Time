@@ -208,7 +208,7 @@ The ozone in the courtyard carried a trace molecular signature his olfactory sen
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> EMOTIONAL_VARIABLE: DETECTED `ORIGIN: OLFACTORY_CHANNEL_03`` `CLASSIFICATION: UNKNOWN`` `STATUS: SUPPRESSED`` `COLLAR_RESPONSE: +2% DAMPING [APPLIED]````
+<strong>Observation:</strong> EMOTIONAL_VARIABLE: DETECTED `ORIGIN: OLFACTORY_CHANNEL_03`` `CLASSIFICATION: UNKNOWN`` `STATUS: SUPPRESSED`` `// [NOTE: Please stay within parameters.]````
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

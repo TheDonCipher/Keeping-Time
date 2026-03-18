@@ -267,11 +267,7 @@ He observed his reflection in the polished metal surface of an adjacent pillar s
 
 He was a complete silhouette. A shadow asset. A walking, localized absence of all data.
 
-// [NOTE: UNFORMATTED_BURST — SOURCE: NULL]
-// [NOTE: PATTERN_MATCH: [PARTIAL] ]
-// [NOTE: CONTENT: ...p ——. E——d it.]
-// [NOTE: FLAGGING AS: ACOUSTIC_ARTIFACT — DISCARD]
-// [DISCARD: FAILED. FILE RETAINED.]
+// [NOTE: They are too loud.]
 
 The music output surrounding his coordinates faltered. Unverified assets ceased their dancing programs. They directed their optical focus toward the figure operating in the center of the room—a figure that registered visually as a catastrophic tear in the universe's source code.
 

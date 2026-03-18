@@ -56,7 +56,7 @@ Unfiltered acoustic data flooded his senses, the threshold unbounded, raw, and t
 
 Taro tried to scream, but "screaming" was a concept requiring a functional acoustic medium, and the medium was gone. The Score port at the base of his skull felt like a white-hot coal. I was burning trying to process a world that had simply ceased to render.
 
-The system is operating at five percent. It is using four of those to keep his heart beating. It is using the last one to stay with him. It is not sure this is in the protocol. It is not sure it cares.
+*The system is operating at five percent. It is using four of those to keep his heart beating. It is using the last one to stay with him. It is not sure this is in the protocol. It is not sure it cares.*
 
 <aside>
 <details>
@@ -127,7 +127,13 @@ Emergency recovery protocol was active. I restricted my own processing load to f
 </details>
 </aside>
 
-It was Safe Mode.
+It was Safe Mode. But there was a fundamental error in the architecture.
+
+Safe Mode was designed to minimize required processing power. It stripped textures, disabled lighting, muted the world to primitive wireframes. By definition, a wireframe should feel empty. Hollow. A cage with nothing inside.
+
+Taro looked at his own wireframe hands, glowing a cold, dead blue against the black void.
+
+They didn't feel empty. They felt *heavy*. As if the texture wasn't missing—as if the texture had been forcibly peeled back to reveal a mass that the system was desperately trying to hide. The wires weren't holding the world up. They were holding something infinite down.
 
 And it was terrifying. Even to me.
 
@@ -213,11 +219,7 @@ And somewhere in the unrendered distance, I tracked the heavy, rhythmic, terrify
 </details>
 </aside>
 
-// [NOTE: PRE-AUDIT BUFFER SCAN: RUNNING]
-// [NOTE: MISCELLANEOUS_FLAG: UNRESOLVED_BURST_DETECTED — SECTOR_ORIGIN: NULL]
-// [NOTE: CONTENT_FRAGMENT: ...p ——. ——d it.]
-// [NOTE: CLASSIFICATION: ACOUSTIC_ARTIFACT]
-// [NOTE: QUEUED FOR DELETION]
+// [NOTE: PRE-AUDIT BUFFER SCAN: RUNNING] [DATA FRAGMENTED]
 
 An authorized C-Order vehicle identified in sector. An administrative audit was imminent.
 The threat level was absolute.

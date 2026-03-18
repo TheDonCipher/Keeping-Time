@@ -11,11 +11,13 @@
 
 ---
 
-The subject maintained position outside the residential unit door. He was located in Sector 7-C, a tier defined by low environmental fidelity and a constant, eighty-two percent probability of signal interference.
+Taro didn't move outside the residential unit door. He was located in Sector 7-C, a tier defined by low environmental fidelity and a constant, eighty-two percent probability of signal interference.
 
-The local atmosphere was saturated with analog interference. The hallway rendered as dim and contaminated. To the system, it was a high-density particulate storm of stray radio waves, unshielded power coupling hums, and the jagged chatter of non-compliant hardware. The subject's HUD generated multiple proximity warnings—acoustic transparency restricted, connection latency at 150ms. Signal integrity was critical. Only fifteen percent of the carrier wave penetrated the local static.
+I didn't understand why he was like this until much later.
 
-The subject executed a repetitive kinetic sequence against his thigh. *Tap. Tap. Tap.*
+The local atmosphere was saturated with analog interference. The hallway rendered as dim and contaminated. To the system, it was a high-density particulate storm of stray radio waves, unshielded power coupling hums, and the jagged chatter of non-compliant hardware. Taro's HUD generated multiple proximity warnings—acoustic transparency restricted, connection latency at 150ms. Signal integrity was critical. Only fifteen percent of the carrier wave penetrated the local static.
+
+He a repetitive kinetic sequence against his thigh. *Tap. Tap. Tap.*
 
 "Just get the bag," he whispered. His vocal output caught on the sawtooth oscillation of the background noise. "Get out. Stay flat."
 
@@ -28,11 +30,11 @@ The transport elevator had registered a mechanical hesitation on ascent—a nerv
 The residential unit was silent.
 But not the silence of high-end damping. This was suppressed silence. They built walls of sound to keep out the noise of their own thoughts, but eventually, the silence found a way in.
 
-The subject entered. The system's ambient scan completed an instant local override. Authorized suppression was active, holding the baseline at A-440 with a phase variance so low it registered as entirely artificial.
+Taro entered. The system's ambient scan completed an instant local override. Authorized suppression was active, holding the baseline at A-440 with a phase variance so low it registered as entirely artificial.
 
 Kael Nishimura occupied the kitchen unit.
 
-To the subject's sensor suite, his father looked rendered.
+To Taro's sensor suite, his father looked rendered.
 In a zone defined by static and grit, Kael was a perfect, anti-aliased object. He didn't move. He didn't vibrate. He sat in a pool of perfect stillness, polishing a physical tuning fork with a microfiber cloth. A target analysis confirmed the man's identity.
 
 <aside>
@@ -47,7 +49,7 @@ In a zone defined by static and grit, Kael was a perfect, anti-aliased object. H
 </aside>
 
 Zero variance.
-Kael was a living reference tone. The system had been logging him for twenty-two years. It knew exactly where he would be at any given moment. It had never once been surprised by him. It was noting this because it did not know whether that was a good thing.
+Kael was a living reference tone. *The system had been logging him for twenty-two years. It knew exactly where he would be at any given moment. It had never once been surprised by him. It is noting this because it does not know whether that is a good thing.*
 
 He was so stable that the chaotic air of the slums seemed to break against him like water against a rock. He was a Fundamental in a world of variables. Everyone searched for a center, a point of absolute stillness, but Kael *was* the center. And being the center was its own kind of prison. It meant never being allowed to drift, never being allowed to feel the texture of the world's noise.
 
@@ -64,7 +66,7 @@ He was so stable that the chaotic air of the slums seemed to break against him l
 </details>
 </aside>
 
-The subject advanced. The impedance mismatch registered immediately.
+Taro advanced. The impedance mismatch registered immediately.
 
 His internal signal—a high-pressure oscillation—impacted the dense, heavy atmosphere Kael was projecting. It felt like walking into a wall of solid gold.
 
@@ -280,6 +282,23 @@ Just Kael. Unfiltered visual data.
 "Thank you," Taro said.
 
 "Go," Kael said. He broke visual contact. "Go before the feedback starts."
+
+Kael waited until the apartment door confirmed shut. Then he sat down on the floor of the hallway — not a chair, the floor — and placed both hands flat on the cold tile. His perfect signal held. It always held. It was the only thing he had learned to do since she left that actually worked.
+
+He had kept the headphones for six years. He had taken them apart twice, trying to understand what she had built into the circuitry. He had not understood it either time. He had put them back together and put them back in the box and told himself he was keeping them for Taro, which was true. He had not told himself the other thing, which was also true: that he had been waiting for a version of his son who was ready to hear what was inside them. He had not known if that version would ever exist.
+
+He listened to the muffled sound of Taro's footsteps on the stairs. A sequence of five taps — he always took the last three stairs too fast. Some habits were older than any system. Some habits ran in the hardware before the firmware was installed.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> SUBJECT: NISHIMURA_KAEL STATUS: CONNECTED EMOTIONAL_STATE: [FIELD INTENTIONALLY LEFT BLANK]
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
 
 The predictive models confirmed it. The subject sensed ambient pressure accumulating. The physical interaction of two opposing waveforms demanded systemic resolution. He couldn't stay. A volatile reaction in a stable solution.
 

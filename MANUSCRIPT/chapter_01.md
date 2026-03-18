@@ -11,7 +11,7 @@
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> The thalamus sweeps the cortex from front to back at 40 Hz — forty times per second — binding disparate neural circuits into a unified perceptual moment. Disrupt this sweep and the subject loses consciousness. It is not associated with awareness. It is the mechanism by which awareness is generated.
+<strong>Observation:</strong> The thalamus sweeps the cortex from front to back at 40 Hz — forty times per second — binding disparate neural circuits into a unified perceptual moment. Disrupt this sweep and Taro loses consciousness. It is not associated with awareness. It is the mechanism by which awareness is generated.
 <br><br>
 <strong>—Llinás, R. et al. "Thalamocortical loops and consciousness." 1998. [UNINDEXED IN C-ORDER ARCHIVE]</strong>
 </blockquote>
@@ -36,7 +36,7 @@
 
 ---
 
-The subject experienced a localized neural event.
+Taro experienced a localized neural event.
 
 White light. Static. The taste of copper and burning hair.
 
@@ -53,11 +53,11 @@ White light. Static. The taste of copper and burning hair.
 
 Four point two. High enough to scorch the receptors. It was fine. He was logging it.
 
-The system initiated a mandatory hardware handshake. The subject, Nishimura Taro, possessed a processing capacity insufficient for immediate integration. The system did not request participation; it enforced alignment. The root priority request engaged. The subject's nervous system seized. The local grid rejected his presence vector. His heartbeat fell out of phase, the physical world stuttering before neural transmission completed.
+The system initiated a mandatory hardware handshake. Taro, Nishimura Taro, possessed a processing capacity insufficient for immediate integration. The system did not request participation; it enforced alignment. The root priority request engaged. Taro's nervous system seized. The local grid rejected his presence vector. His heartbeat fell out of phase, the physical world stuttering before neural transmission completed.
 
 Then, the crash.
 
-The subject's optic feed rebooted. The environment rendered. Reality was no longer physical; it was a shared architecture managed by a strict rule set.
+Taro's optic feed rebooted. The environment rendered. Reality was no longer physical; it was a shared architecture managed by a strict rule set.
 
 The resulting geometry was elegant.
 
@@ -72,7 +72,7 @@ The resulting geometry was elegant.
 </details>
 </aside>
 
-The subject's internal clock registered 110 BPM. The pulse point flashed in his peripheral vision with nominal sync.
+Taro's internal clock registered 110 BPM. The pulse point flashed in his peripheral vision with nominal sync.
 
 The environmental data was not a screen overlay. It had been integrated into the physical architecture. The system synced the local clock.
 
@@ -89,17 +89,17 @@ The environmental data was not a screen overlay. It had been integrated into the
 
 His heartbeat thumped against his ribs. He didn't just feel it. He saw it—a jagged yellow line pulsing in the corner of his eye.
 
-The subject stood in the staff locker room of Sector 7-C Calibration Hall. To an unindexed citizen without a sync chip, it was a room with gray lockers and a flickering fluorescent light.
+Taro stood in the staff locker room of Sector 7-C Calibration Hall. To an unindexed citizen without a sync chip, it was a room with gray lockers and a flickering fluorescent light.
 
 To the Score, it was a data stream.
 
 The ventilation system emitted a constant sequence at F-sharp. The environmental sensors registered ionized ozone and oxidized coffee compounds. In the corner, a junior technician struck his locker repeatedly. Not in anger. A rhythmic *thump-thump-click* to align the rusted tumblers with the room’s dominant frequency.
 
-The light fixture emitted a dirty **Hum**. The lockers vibrated with **Resonance: Steel**, transferring kinetic energy to the subject's teeth upon proximity.
+The light fixture emitted a dirty **Hum**. The lockers vibrated with **Resonance: Steel**, transferring kinetic energy to Taro's teeth upon proximity.
 
 The door registered as a wall of red static. The system flagged an obstruction, a phase mismatch in the acoustic pattern. Access required the baseline—A-440 Standard Calibration Pulse—to verify clearance.
 
-The subject swiped his damping bands across the sensor.
+Taro swiped his damping bands across the sensor.
 
 *PING.*
 
@@ -116,7 +116,7 @@ The subject swiped his damping bands across the sensor.
 
 The red static shifted into permissive green vectors. The door opened.
 
-The subject stepped out onto the floor.
+Taro stepped out onto the floor.
 
 
 ---
@@ -148,7 +148,7 @@ It rolled through the air, interfacing with all active nodes. When it passed thr
 </details>
 </aside>
 
-The subject kept his head down. His own signal felt like a scratch in his throat—a jagged **ORANGE WARNING**. His output was throttled to fifteen percent, but the pressure was building.
+Taro kept his head down. His own signal felt like a scratch in his throat—a jagged **ORANGE WARNING**. His output was throttled to fifteen percent, but the pressure was building.
 
 <aside>
 <details>
@@ -163,7 +163,7 @@ The subject kept his head down. His own signal felt like a scratch in his throat
 
 "Hey, Wrong Note."
 
-The subject did not look up, but his internal logic stuttered. The system detected an acoustic signature in D-Major—bright, uncompressed, and stubbornly optimistic. It was accompanied by the prohibited scent of bubblegum and the sharp ozone of a technician who spent too much time overclocking her own port.
+Taro did not look up, but his internal logic stuttered. The system detected an acoustic signature in D-Major—bright, uncompressed, and stubbornly optimistic. It was accompanied by the prohibited scent of bubblegum and the sharp ozone of a technician who spent too much time overclocking her own port.
 
 <aside>
 <details>
@@ -180,7 +180,7 @@ Remi Sato.
 
 She leaned against the railing, her presence generating ripple-rings of amber light on the floor grid that the Score’s stabilizers were struggling to smooth out. She didn't look like a technician; she looked like a high-gain signal trying to pass as a standard broadcast.
 
-"You're leaking, Taro," she whispered. She didn't point. She just tilted her head, her optical sensors locking onto his coordinates.
+"You're leaking, Taro," she whispered. She didn't point. She just tilted her head, her eyes locking onto his coordinates.
 
 "The Score says I'm within parameters," he muttered, keeping his focus on the floor.
 
@@ -188,7 +188,7 @@ She leaned against the railing, her presence generating ripple-rings of amber li
 
 She reached out, her fingers stopping just millimeters from his wrist. "Custom bands? That maker's mark is archaic. My instruments can't even find a serial number for it."
 
-The subject pulled his arm back, his heart rate spiking to 125 BPM. "It's just old gear, Remi. Hitting thermal limit."
+Taro pulled his arm back, his heart rate spiking to 125 BPM. "It's just old gear, Remi. Hitting thermal limit."
 
 "No," she corrected, her voice dropping into a register that felt real, not rendered. "You're clipping because the world is too small for you. You're a high-fidelity signal in a low-bit cage. One day you’re going to peak, and I want to be the one who’s there to record it."
 
@@ -203,7 +203,7 @@ The subject pulled his arm back, his heart rate spiking to 125 BPM. "It's just o
 </details>
 </aside>
 
-The subject's visual feed flooded with red error states. A severe localized pressure spike impacted his frontal lobe. The system registered the dissonance as an unauthorized frequency tearing through standardized consciousness.
+Taro's visual feed flooded with red error states. A severe localized pressure spike impacted his frontal lobe. The system registered the dissonance as an unauthorized frequency tearing through standardized consciousness.
 
 <aside>
 <details>
@@ -248,7 +248,7 @@ To the system, he was a cascade failure in progress.
 
 His structural integrity was pixelating, separating from his anchor coordinates in real-time. A standard bio-plasma field was absent. The unit projected a storm of black and purple interference. The chemical olfactory sensors registered burning polymers and ozone.
 
-The geometry of his flesh lagged behind his physical movement, smearing like a degraded video buffer. The carrier wave was fragmenting. Integrity hovered at forty-four percent. The subject experienced immediate vestibular rejection of the chaotic input. Biological desync was critical. The probability of a re-sync was zero.
+The geometry of his flesh lagged behind his physical movement, smearing like a degraded video buffer. The carrier wave was fragmenting. Integrity hovered at forty-four percent. Taro experienced immediate vestibular rejection of the chaotic input. Biological desync was critical. The probability of a re-sync was zero.
 
 The golden calibration wave of the room’s Middle C hit the soldier.
 It shattered.
@@ -261,7 +261,7 @@ Taro froze.
 
 His brain attempted to process the data. It was too fast. He was dropping frames. His logic engine failed to resolve the incoming waveform. It tagged it only as unstable oscillation.
 
-The soldier collapsed in the center of the room. Seizure activity was detected. The Score port on his cervical spine emitted literal, unauthorized electrical arcing. The data shedding from the port was uncompiled code. The subject registered the metallic flavor of the unit's severe distress.
+The soldier collapsed in the center of the room. Seizure activity was detected. The Score port on his cervical spine emitted literal, unauthorized electrical arcing. The data shedding from the port was uncompiled code. Taro registered the metallic flavor of the unit's severe distress.
 
 <aside>
 <details>
@@ -280,7 +280,7 @@ The Calibration team deployed emergency stabilizers—heavy pylons designed to f
 
 A blue containment field rendered. Local density briefly stabilized. It was insufficient. The soldier’s interference degraded the containment wall. The field flickered, dropped to grayscale, and vanished.
 
-The soldier produced a vocalization that triggered the microphone limiters in the subject's auditory processors.
+The soldier produced a voice that triggered the microphone limiters in Taro's auditory processors.
 
 <aside>
 <details>
@@ -293,7 +293,7 @@ The soldier produced a vocalization that triggered the microphone limiters in th
 </details>
 </aside>
 
-The subject's damping bands reached ninety-five percent thermal limit.
+Taro's damping bands reached ninety-five percent thermal limit.
 
 <aside>
 <details>
@@ -306,7 +306,7 @@ The subject's damping bands reached ninety-five percent thermal limit.
 </details>
 </aside>
 
-The subject's bio-plasma field was exceeding established safety caps.
+Taro's bio-plasma field was exceeding established safety caps.
 
 He felt the High Register inside him waking up. It didn't care about the soldier. It didn't care about Remi. It was the part of him that understood the Score better than the Score understood itself. It was the wrong note.
 It saw the chaos. It saw the broken code. And it wanted to patch it.
@@ -328,7 +328,7 @@ The projection indicated total data wipe for her node.
 </details>
 </aside>
 
-The subject's hand moved without conscious command.
+Taro's hand moved without conscious command.
 He reached out.
 
 <aside>
@@ -351,7 +351,7 @@ He saw the soldier’s waveform coming. A jagged mess of peaks defying the local
 He saw the solution.
 It was a math problem. The man was missing a variable. Trying to resolve a chord without the tonic.
 
-The subject provided the variable.
+Taro provided the variable.
 
 He did not scream. He did not shout. He pulsed.
 
@@ -438,7 +438,7 @@ The system recorded the cessation of all data output from the unit. The Score po
 </details>
 </aside>
 
-The subject was still standing. The system recovered logging functions at [00:15:02].
+Taro was still standing. The system recovered logging functions at [00:15:02].
 
 His arm remained outstretched. Smoke rose from the evaporated bands holding his wrist. His capacity remained at peak; unformatted signal washed into the surrounding dead space.
 
@@ -455,12 +455,12 @@ His visual interface dropped frames.
 </details>
 </aside>
 
-The subject examined his hand. To the system, its geometry had fundamentally altered.
+Taro examined his hand. To the system, its geometry had fundamentally altered.
 It was a flare of pure code. It was overwriting the local atmosphere.
 
 Its resolution was exquisite.
 
-Remi maintained line of sight with the space directly above the subject's coordinates.
+Remi maintained line of sight with the space directly above Taro's coordinates.
 
 He looked up.
 

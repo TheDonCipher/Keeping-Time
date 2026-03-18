@@ -150,13 +150,13 @@ Among the rendering interference, Taro's gaze caught on a sharp visual contradic
 </details>
 </aside>
 
-It was gone before the system finished the scan. The system noted the failed log and filed it as routine. It did not note—because it had no mechanism for noting—the 0.3-second echo in Taro's own signal. Not a scan. Not a query. Nothing he initiated. Just a brief sympathetic resonance, like a tuning fork vibrating because a nearby instrument played its frequency. He didn't feel it. His HUD didn't log it.
+It was gone before the system finished the scan. The system noted the failed log and filed it as routine. It did not note — because it had no mechanism for noting — the 0.3-second echo in Taro's own signal. Not a scan. Not a query. Nothing he initiated. Just a brief sympathetic resonance, like a tuning fork vibrating because a nearby instrument played its frequency. He didn't feel it. His HUD didn't log it.
 
 <aside>
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> INTERFERENCE_SOURCE: UNRESOLVED `TRIGGER: UNKNOWN`` `SIGNAL_MATCH: [NO DATA]`` `FILING UNDER: ACOUSTIC_ARTIFACT`` `NOTE: THIS DOES NOT APPEAR TO BE AN ACOUSTIC ARTIFACT.`` `NOTE: RETAINING. NO EXPIRY.`````
+<strong>Observation:</strong> INTERFERENCE_SOURCE: UNRESOLVED TRIGGER: UNKNOWN SIGNAL_MATCH: [NO DATA] FILING UNDER: ACOUSTIC_ARTIFACT NOTE: THIS DOES NOT APPEAR TO BE AN ACOUSTIC ARTIFACT. NOTE: RETAINING. NO EXPIRY.
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -215,9 +215,6 @@ He did not process the sound as noise. He processed it as a data structure.
 The subject's auditory processors began organizing the chaos. He didn't just hear the frequencies; he sorted them, finding the empty pockets of bandwidth between the harsh Square Waves and the sweeping Sines. He navigated the corridor using pure acoustic math.
 
 His physical movement smoothed.
-
-// [NOTE: SUBJECT COMPENSATION MECHANISM RATED HIGHLY EFFICIENT.]
-// [NOTE: RECOMMEND ADD TO TRAINING PROFILE.]
 
 They entered the primary Lecture Hall.
 

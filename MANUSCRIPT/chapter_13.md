@@ -90,7 +90,7 @@ He departed the sleep module. The floor architecture was optimally warmed. The a
 
 He navigated to the reflective surface in the corner of the room coordinates. The digital reflection stared back.
 
-It looked like Taro Nishimura. Every measurement confirmed it. The system ran the match three times to be sure. Somehow, this was the worst thing the system had ever confirmed.
+*It looked like Taro Nishimura. Every measurement confirmed it. The system ran the match three times to be sure. Somehow, this was the worst thing the system had ever confirmed.*
 
 His structural posture aligned perfectly with the vertical axis. His optical sensors were bright, clear, and perfectly focused. The inefficient dark epidermal circles categorized under his eyes were deleted. The unauthorized nervous tic in his cheek musculature was gone.
 
@@ -189,7 +189,7 @@ She stood at the root position of a Triad formation. At the sink position was Va
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> OBSERVATION: TRIAD_DRILL_IN_PROGRESS `ROOT: KIMURA_HANA`` `SYNC_RATE: 99.8%``
+<strong>Observation:</strong> OBSERVATION: TRIAD_DRILL_IN_PROGRESSROOT: KIMURA_HANASYNC_RATE: 99.8%
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
@@ -202,7 +202,7 @@ Hana extended her arm. A flawless, rigid blue square-wave projected from her che
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> LOCK_CONFIRMED: ZERO_LATENCY `HARMONIC_INTEGRITY: OPTIMAL`
+<strong>Observation:</strong> LOCK_CONFIRMED: ZERO_LATENCYHARMONIC_INTEGRITY: OPTIMAL
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>

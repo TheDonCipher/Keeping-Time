@@ -309,7 +309,7 @@ He said the next closest thing.
 
 "Goodnight, Dad," he vocalized into the foam.
 
-For once, the system didn't know what to call him. Not a Siege Breaker. Not an anomaly. Not a categorized error state. Just Taro, in the dark, not being logged. The system left the classification field blank. It was the kindest thing it knew how to do.
+*For once, the system didn't know what to call him. Not a Siege Breaker. Not an anomaly. Not a categorized error state. Just Taro, in the dark, not being logged. The system left the classification field blank. It was the kindest thing it knew how to do.*
 
 <aside>
 <details>

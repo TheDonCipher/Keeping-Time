@@ -70,6 +70,8 @@ The room's RT60 of 0.1 seconds returned the silence to absolute zero in less tha
 
 Taro's foot had stopped its three-beat rhythm without him deciding to stop it.
 
+At the very back of the hall, leaning against the dampening panels where the instructional array didn't quite reach, Elara Kimura closed her eyes. She wasn't holding her BPM flat; she wasn't forcing compliance. The system simply didn't notice the precise, un-rendered 3/4 waltz holding her steady against the room's 4/4 gravity.
+
 He was thinking about the wall in his father's apartment. The one that had been about to give out the night his mother's signal finally peaked. He had been six. The plaster had cracked and he had pressed his palm flat against it — not to stop it, just to feel the vibration of a structure solving for zero. The way the frequency had moved through his hand. The way the wall had known, before the wall knew, that it was going to come down.
 
 
@@ -355,7 +357,28 @@ Dorian Vale directed his optical focus downward toward Taro.
 
 Taro looked up.
 
-At significant elevation, within the secure observation booth, a golden light flickered. The Headmaster was maintaining visual surveillance. And unlike Vale, the system evaluated that he was not observing Taro with disdain.
+Hana finally stopped transcribing. She had logged Marcus’s entire kinetic sequence. It was flawless. Optimal. Exactly the kind of combat geometry the C-Order demanded. She closed the file. Her HUD flashed a green compliance check.
+
+It was perfect. So why did her right hand feel cold? She looked down. Her fingers were trembling. A micro-tremor, barely a millimeter of variance, completely invisible to anyone without a Vanguard optical package. But the system felt it.
+
+<aside>
+<details>
+<summary><strong>LORE</strong></summary>
+<blockquote>
+<strong>Observation:</strong> WARNING: MOTOR_CONTROL_VARIANCE_DETECTED `DIAGNOSTIC: UNRESOLVABLE_TENSION`
+<br><br>
+<strong>- Source: In-World Text</strong>
+</blockquote>
+</details>
+</aside>
+
+She forced her hand into a fist, crushing the tremor back into compliance.
+
+*"Anomaly,"* she thought. She wasn't sure if she meant Taro, or the terrifying, un-indexed feeling in her own fingers.
+
+// [NOTE: The system is tracking a steady increase in unclassified variables in this sector.]
+// [NOTE: The system prefers when variables can be classified.]
+// [NOTE: The system is experiencing a sensation it would categorize as 'itchy' if it had a dermis.]
 
 At significant elevation, within the secure observation booth, a golden light flickered. The Headmaster was maintaining visual surveillance. And unlike Vale, the system evaluated that he was not observing Taro with disdain. The logs indicated his session had been active for fourteen minutes prior to Taro's simulation start.
 
@@ -372,6 +395,14 @@ He was checking an analog chronometer. He was timing the explosion.
 </details>
 </aside>
 
+Hana stood at the edge of the ring for 4.3 seconds after Marcus left. The system logged this as standard debrief stillness. It was not standard debrief stillness. Her internal architecture was running the simulation again — the 14-millisecond lag, the hostile damping field, the cadet who hadn't missed. Her square wave was holding at one hundred percent coherence. It was holding the way a surface holds when there is pressure underneath it.
+
+She had filed thirty-one complaints about irregular field conditions in the past fiscal quarter. Thirty-one times the system had returned: `ASSESSMENT: WITHIN_ACCEPTABLE_VARIANCE`. She had the receipts. She had always had the receipts. Having the receipts had never once changed the outcome.
+
+// [NOTE: SUBJECT CHORD_HANA: COMPLIANCE_RATE 100%.]
+// [NOTE: GRIEVANCE_LOG: 31 ENTRIES. RESOLUTIONS: 0.]
+// [NOTE: THE SYSTEM NOTES THIS WITHOUT COMMENT.]
+
 
 ---
 
@@ -383,16 +414,16 @@ As he approached the intersection of Hall B, a cadet stepped directly into his p
 <details>
 <summary><strong>LORE</strong></summary>
 <blockquote>
-<strong>Observation:</strong> ITEM_RECEIVED: UNCODED_ENVELOPE `SENDER: KIMURA_ELARA`
+<strong>Observation:</strong> ITEM_RECEIVED: UNCODED_ENVELOPESENDER: KIMURA_ELARA
 <br><br>
 <strong>- Source: In-World Text</strong>
 </blockquote>
 </details>
 </aside>
 
-The system scanned the envelope. It returned: `CONTENTS: UNINDEXED. THREAT_LEVEL: ZERO.`` Not dangerous. Just completely outside the registry. The system filed an anomaly note under `ANALOG_DATA_TRANSFER — FLAGGING FOR REVIEW``. Nobody reviewed analog paper. This was not a problem the system had been designed to solve.``
+The system scanned the envelope. It returned: `CONTENTS: UNINDEXED. THREAT_LEVEL: ZERO.` Not dangerous. Just completely outside the registry. The system filed an anomaly note under: `ANALOG_DATA_TRANSFER — FLAGGING FOR REVIEW`. Nobody reviewed analog paper. This was not a problem the system had been designed to solve.
 
-As she merged back into the student flow, the crowd parted around the cello case without looking at it. Unconsciously, the way water moves around a rock it can't see. Taro watched her go. The `INTERFERENCE_SOURCE: UNRESOLVED`` tag from his first day did not fire. But it was there, in a queue somewhere, waiting.`
+As she merged back into the student flow, the crowd parted around the cello case without looking at it. Unconsciously, the way water moves around a rock it can't see. Taro watched her go. The `INTERFERENCE_SOURCE: UNRESOLVED` tag from his first day did not fire. But it was there, in a queue somewhere, waiting.
 
 <aside>
 <details>
