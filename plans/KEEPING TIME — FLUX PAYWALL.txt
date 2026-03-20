@@ -1,0 +1,433 @@
+# KEEPING TIME — FLUX PAYWALL IMPLEMENTATION PLAN
+## Orange Money × Lore-Integrated Access Gate
+**Version:** 1.0 | **Status:** READY FOR IMPLEMENTATION
+
+---
+
+## ⚡ EXECUTIVE SUMMARY
+
+The paywall is not a paywall. It is a **narrative event**.
+
+When the reader reaches the end of Chapter 6 ("Ground State"), the C-Order's Neural-Acoustic
+Interface detects their proximity to restricted frequencies and issues a **Damping Order** —
+cutting off the Upper Register (Chapters 7–17). The reader's only path forward is to contact
+a Flux operative, acquire a **Sync Key** via the black market (Orange Money), and jailbreak
+their NAI to unlock what the C-Order suppressed.
+
+Paying P25 via Orange Money is, within the fiction, an **act of resistance.**
+
+The SNS reacts throughout: surveillance spikes when the modal opens, and a gold Alignment
+Event fires when access is granted — because the Score always notices.
+
+---
+
+## 📐 GATE POINT RATIONALE
+
+**Free:** Chapters 1–6 (The Impulse / Ground State)
+**Locked:** Chapters 7–17 (Propagation → Equilibrium)
+
+**Why after Ch06?**
+- Ch06 is titled "Ground State" — Taro's first experience of consciousness *outside* the Score.
+  Thematically, this is where the story pivots from compliance to resistance.
+- The audio engine comment in the source confirms: *"Ch06 = the chapter where Taro first
+  experiences consciousness outside the Score."*
+- Surveillance at Ch06 = 0.2 (lowest in the first act). The reader feels safe. Then the wall
+  hits. The tonal whiplash is intentional and diegetically coherent.
+- Ch07 surveillance = 0.6, Ch08 = 0.9 — the locked content escalates dramatically, which
+  justifies the value of the purchase.
+
+---
+
+## 🗺️ COMPONENT MAP
+
+The following components will be added to `KeepingTime_VolumeOne.html`:
+
+```
+[HTML ADDITIONS]
+  1. #frequency-wall         → The diegetic C-Order block, inserted after ch06 div
+  2. #flux-modal             → The FLUX/PIRATE payment modal (hidden by default)
+  3. .locked-chapters-wrap   → Wrapper div around ch07–ch17 content (hidden by default)
+
+[CSS ADDITIONS — injected into existing <style> block]
+  4. FLUX/PIRATE skin variables & classes
+  5. Scanline animation
+  6. Glitch text animation
+  7. Modal backdrop + panel styles
+  8. Frequency wall block styles
+
+[JS ADDITIONS — injected before closing </script>]
+  9.  FLUX_CONFIG object          → Orange Money number, price, Formspree ID, unlock hash
+  10. showFluxModal()             → Opens the modal + triggers SNS surveillance spike
+  11. closeFluxModal()            → Closes the modal + restores SNS state
+  12. submitSignalRequest()       → POSTs phone number to Formspree
+  13. verifyKey()                 → SHA-256 hashes entered code, compares to stored hash
+  14. unlockUpperRegister()       → Reveals ch07–17, triggers SNS Alignment Event
+  15. checkStoredAccess()         → On page load, restores access if previously purchased
+
+[SNS HOOKS — patched into existing engine]
+  16. Surveillance override on modal open  → forces surveillance to 0.99
+  17. Alignment Event on unlock            → gold pulse + classified fragment surfaces
+  18. Post-unlock SNS state               → surveillance settles at 0.85 ("it noticed")
+```
+
+---
+
+## PHASE 1 — THE FREQUENCY WALL (HTML)
+
+**Location:** Inserted directly after the closing `</div>` of the `data-ch-id="ch06"` block,
+before `<div data-ch-id="ch07">`.
+
+**What it looks like to the reader:**
+```
+> TRANSMISSION INTERRUPTED
+> FREQUENCY CLASS: RESTRICTED [C-ORDER DIRECTIVE 7]
+> CONTENT DAMPED: PHASES 2 — 5
+> REASON: DISSONANT MATERIAL // UNAUTHORIZED HARMONICS
+
+  This signal has been suppressed by the
+  Neural-Acoustic Interface.
+
+  Standard NAI clearance does not permit
+  access to the Upper Register.
+
+  — To acquire a Flux Bypass Token,
+    contact an Archive Keeper —
+
+  — Resonance Clearance Fee: 25 Pulse Credits —
+
+  [ TRANSMIT CLEARANCE REQUEST ]
+```
+
+**HTML structure:**
+```html
+<!-- ============================================================
+  FREQUENCY WALL — Inserted after ch06 closing div (~line 1729)
+  This is the lore-accurate paygate. It presents as a C-Order
+  signal interruption with a FLUX overlay cracking through.
+  
+  VISUAL SPEC:
+  - Outer frame: C-Order aesthetic (gold border, sterile mono font)
+  - Inner "crack": FLUX/PIRATE aesthetic (neon pink/cyan, glitchy)
+  - The button text is FLUX — it's a pirate action, not a C-Order action
+  
+  TESTING: Set DEBUG_MODE = true in FLUX_CONFIG to bypass payment
+  ============================================================ -->
+<div id="frequency-wall">
+  <div class="freq-wall-corder">
+    <!-- C-ORDER SUPPRESSION LAYER -->
+    <div class="freq-wall-header">
+      <span class="freq-wall-badge">C-ORDER DIRECTIVE 7</span>
+    </div>
+    <div class="freq-wall-body">
+      <p>> TRANSMISSION INTERRUPTED</p>
+      <p>> FREQUENCY CLASS: RESTRICTED</p>
+      <p>> CONTENT DAMPED: PHASES 2 — 5</p>
+      <p>> REASON: DISSONANT MATERIAL // UNAUTHORIZED HARMONICS</p>
+    </div>
+    <div class="freq-wall-description">
+      This signal has been suppressed by the Neural-Acoustic Interface.<br>
+      Standard NAI clearance does not permit access to the Upper Register.
+    </div>
+  </div>
+
+  <!-- FLUX/PIRATE CRACK — breaking through the C-Order block -->
+  <div class="freq-wall-flux">
+    <div class="flux-crack-line"></div>
+    <p class="flux-contact-text">
+      — To acquire a Flux Bypass Token, contact an Archive Keeper —<br>
+      — Resonance Clearance Fee: <span class="flux-highlight">25 Pulse Credits</span> —
+    </p>
+    <button class="flux-request-btn" onclick="showFluxModal()">
+      [ TRANSMIT CLEARANCE REQUEST ]
+    </button>
+    <p class="flux-warning">⚠ Accessing restricted frequencies may trigger surveillance escalation.</p>
+  </div>
+</div>
+
+<!-- LOCKED CHAPTERS WRAPPER — ch07 through ch17 -->
+<!-- Hidden by default. Revealed by unlockUpperRegister() -->
+<div id="locked-chapters-wrap" style="display:none;">
+  <!-- ch07–ch17 divs will be moved inside here during implementation -->
+</div>
+```
+
+---
+
+## PHASE 2 — FLUX/PIRATE CSS
+
+**Location:** Appended to the existing `<style>` block.
+
+**Design spec:**
+- Background: `#0D0010` (near-black with deep purple undertone)
+- Border: `#ff00ff` (neon magenta — illegal, FLUX-coded)
+- Text: `#00ffcc` (cyan — readable, underground)
+- Accent: `#ff00ff` (magenta glow for the "crack" elements)
+- Font: `JetBrains Mono` (already loaded — the pirate UI uses mono)
+- Effects: Scanlines overlay, glitch text flicker, pulsing border
+
+**Key animation — `fluxGlitch`:**
+The border and key text elements periodically "glitch" — a brief horizontal offset + color
+inversion — simulating an unstable, jailbroken interface.
+
+**Key animation — `scanlines`:**
+A CSS `::before` pseudo-element on the modal casts repeating horizontal lines across the
+surface, giving it the look of a low-resolution black-market terminal.
+
+---
+
+## PHASE 3 — THE FLUX MODAL (HTML)
+
+**Location:** Injected just before `</body>`, alongside the existing `#silence-lock` div.
+
+**What the reader sees (3 steps):**
+
+```
+╔══════════════════════════════════╗
+║  FLUX // ARCHIVE ACCESS TERMINAL ║  ← FLUX/PIRATE header (neon magenta)
+║  BYPASS TOKEN ACQUISITION v2.1   ║
+╠══════════════════════════════════╣
+║  ⚠ THIS TERMINAL IS UNREGISTERED ║  ← Warning (cyan, flickering)
+║  ⚠ PROCEED AT YOUR OWN RISK      ║
+╠══════════════════════════════════╣
+║  STEP 1: TRANSMIT PULSE CREDITS  ║
+║  ─────────────────────────────── ║
+║  CARRIER NODE: [ORANGE]          ║  ← Orange Money number
+║  AMOUNT: 25 PULSE CREDITS        ║
+║  REFERENCE: ARCHIVE-KEEPINGTIME  ║
+╠══════════════════════════════════╣
+║  STEP 2: BROADCAST SIGNAL FREQ   ║
+║  [Your phone number __________ ] ║  ← Input: phone number
+║  [ BROADCAST FREQUENCY ]         ║  ← Submits to Formspree
+╠══════════════════════════════════╣
+║  STEP 3: INPUT SYNC KEY          ║
+║  [Unlock code ________________ ] ║  ← Input: 6-digit code
+║  [ TRANSMIT SYNC KEY ]           ║  ← Verifies the code
+╠══════════════════════════════════╣
+║  STATUS: AWAITING TRANSMISSION   ║  ← Status line (updates live)
+║                          [CLOSE] ║
+╚══════════════════════════════════╝
+```
+
+---
+
+## PHASE 4 — ORANGE MONEY FLOW (REAL-WORLD PROCESS)
+
+This is the manual, no-API version. It works today with zero third-party integrations
+except Formspree (free tier).
+
+```
+Reader                    Website                   Author (You)
+  │                          │                          │
+  │  clicks [TRANSMIT]       │                          │
+  │─────────────────────────>│                          │
+  │                          │  modal opens             │
+  │                          │  surveillance → 0.99     │
+  │                          │                          │
+  │  pays P25 via Orange     │                          │
+  │  Money to your number    │                          │
+  │  (Reference: ARCHIVE-    │                          │
+  │   KEEPINGTIME)           │                          │
+  │                          │                          │
+  │  enters phone number     │                          │
+  │─────────────────────────>│                          │
+  │                          │  POST to Formspree       │
+  │                          │─────────────────────────>│
+  │                          │                    email arrives:
+  │                          │                    "New sync request:
+  │                          │                     +267 7X XXX XXX"
+  │                          │                          │
+  │                          │               You verify payment
+  │                          │               on Orange Money app
+  │                          │                          │
+  │                          │               You WhatsApp/SMS
+  │                          │               6-digit Sync Key
+  │<─────────────────────────────────────────────────────
+  │                          │                          │
+  │  enters Sync Key         │                          │
+  │─────────────────────────>│                          │
+  │                          │  SHA-256 hash check      │
+  │                          │  localStorage set        │
+  │                          │  SNS Alignment Event     │
+  │                          │  ch07–ch17 revealed      │
+  │<─────────────────────────│                          │
+  │  "PHASE LOCK ACQUIRED"   │                          │
+```
+
+**Your setup checklist (one-time):**
+- [ ] Register at formspree.io → create a new form → copy Form ID
+- [ ] Choose a 6-digit Sync Key (e.g., a number only you know)
+- [ ] Generate SHA-256 hash of that key at: emn178.github.io/online-tools/sha256.html
+- [ ] Confirm your Orange Money merchant/personal number
+
+---
+
+## PHASE 5 — VERIFICATION & UNLOCK (JS)
+
+**`FLUX_CONFIG` object:**
+```javascript
+const FLUX_CONFIG = {
+  // TODO: Replace before going live
+  ORANGE_NUMBER:   "7X XXX XXX",        // Your Orange Money number
+  PRICE_CREDITS:   25,                   // Amount in Pula (displayed as "Pulse Credits")
+  FORMSPREE_ID:    "YOUR_FORM_ID",       // From formspree.io
+  UNLOCK_HASH:     "REPLACE_WITH_HASH",  // SHA-256 of your 6-digit Sync Key
+  DEBUG_MODE:      true,                 // Set FALSE before going live
+  DEBUG_KEY:       "123456"              // Test code (only works when DEBUG_MODE = true)
+};
+```
+
+**`verifyKey()` logic:**
+1. Read entered code from input field
+2. If `DEBUG_MODE` is true → compare plain text to `DEBUG_KEY`
+3. If `DEBUG_MODE` is false → hash with `crypto.subtle.digest('SHA-256')`, compare to `UNLOCK_HASH`
+4. On match → call `unlockUpperRegister()`
+5. On mismatch → display `> SYNC KEY REJECTED // CARRIER WAVE MISMATCH`
+
+**`unlockUpperRegister()` logic:**
+1. Set `localStorage.setItem('kt_upper_register', 'true')`
+2. Remove `#frequency-wall` from DOM
+3. Show `#locked-chapters-wrap` (set `display: block`)
+4. Close the modal
+5. Trigger SNS Alignment Event (see Phase 6)
+6. Rebuild NARRATIVE_DATA to include ch07–ch17 beats
+7. Scroll reader to top of ch07
+
+---
+
+## PHASE 6 — SNS INTEGRATION
+
+This is what makes the unlock feel like part of the novel, not a transaction.
+
+### 6a. On Modal Open → Surveillance Spike
+```
+Effect: SURVEILLANCE_INTENSITY → 0.99
+Visual: Cursor gains maximum ring stack (danger color)
+HUD:    Section label flickers to "UNAUTHORIZED_ACCESS_DETECTED"
+Audio:  audioEngine.playEvent('bass_drop')
+```
+
+### 6b. On Verification Failure → Rejection Pulse
+```
+Effect: screen flickers (--danger color flash)
+HUD:    Brief "SYNC KEY REJECTED" text in the section label
+Audio:  Short static burst (existing 'ghost' audio event)
+```
+
+### 6c. On Successful Unlock → Alignment Event
+**This is the key moment. It must feel earned.**
+
+```
+Step 1 (0ms):     Modal closes
+Step 2 (200ms):   #frequency-wall fades out (1s transition)
+Step 3 (400ms):   audioEngine.playEvent('bass_drop') → the weight of the unlock
+Step 4 (800ms):   ALIGNMENT EVENT fires:
+                  - progress-wave path glows gold
+                  - #ghost-signal-fragment surfaces with text:
+                    "CLASSIFIED FRAGMENT — NOW COHERENT"
+                    "ACCESS LOG: UPPER REGISTER OPENED"
+                    "NOTE: THE SYSTEM HAS NOTICED."
+Step 5 (1200ms):  spawnFragment called with new 'flux_unlock' tag:
+                  Text from FRAGMENT_POOL['flux_unlock']:
+                  "> BYPASS_TOKEN: ACCEPTED"
+                  "> CLEARANCE: UPPER REGISTER"
+                  "> DIRECTIVE 7: SUSPENDED [LOCAL OVERRIDE]"
+Step 6 (2000ms):  Surveillance settles at 0.85
+                  (Post-unlock: the Score is watching you more closely now)
+Step 7 (2500ms):  ch07 content fades in
+                  HUD section updates to "CH07: THE RIVAL"
+                  BPM target shifts to 120 (ch07 value)
+```
+
+### 6d. FRAGMENT_POOL Addition
+A new `flux_unlock` key added to the existing `FRAGMENT_POOL` object:
+```javascript
+flux_unlock: [
+  '> BYPASS_TOKEN: ACCEPTED',
+  '> DIRECTIVE 7: SUSPENDED [LOCAL]',
+  '> UPPER_REGISTER: UNLOCKED',
+  '> NOTE: THE SYSTEM HAS NOTICED.',
+  '> CLEARANCE: ACTIVE'
+]
+```
+
+---
+
+## PHASE 7 — LOCALSTORAGE PERSISTENCE
+
+**On `window.onload`**, before `compileNarrative()` is called:
+```javascript
+// Check if reader has already purchased access
+// If yes: skip the wall entirely, compile all 17 chapters as normal
+function checkStoredAccess() {
+  if (localStorage.getItem('kt_upper_register') === 'true') {
+    // Silently unlock — no fanfare on return visits
+    document.getElementById('frequency-wall')?.remove();
+    const wrap = document.getElementById('locked-chapters-wrap');
+    if (wrap) wrap.style.display = 'block';
+  }
+}
+```
+
+This runs before `compileNarrative()`, so returning readers get all 17 chapters compiled
+into `NARRATIVE_DATA` without any interruption.
+
+---
+
+## 🧪 TESTING CHECKLIST
+
+Before going live, verify each state:
+
+**Debug Mode (DEBUG_MODE = true):**
+- [ ] Wall appears at correct position (after ch06 content)
+- [ ] Clicking [TRANSMIT CLEARANCE REQUEST] opens the Flux modal
+- [ ] Modal has correct FLUX/PIRATE styling (neon, scanlines, mono font)
+- [ ] Entering any phone number + clicking BROADCAST shows success message
+- [ ] Entering wrong code shows rejection state (screen flash, error text)
+- [ ] Entering "123456" triggers full unlock sequence
+- [ ] SNS surveillance spike fires on modal open
+- [ ] Alignment Event fires on successful unlock (gold pulse, ghost fragment)
+- [ ] ch07–ch17 content becomes visible and scrollable after unlock
+- [ ] Page refresh after unlock restores access (localStorage check)
+- [ ] Surveillance settles at 0.85 post-unlock (not back to 0.0)
+
+**Production Mode (DEBUG_MODE = false):**
+- [ ] Replace ORANGE_NUMBER with real number
+- [ ] Replace FORMSPREE_ID with real form ID
+- [ ] Replace UNLOCK_HASH with SHA-256 of chosen real Sync Key
+- [ ] Test Formspree email delivery (submit a test phone number)
+- [ ] Test real code hash verification end-to-end
+
+---
+
+## 📋 IMPLEMENTATION ORDER
+
+Execute in this sequence to avoid breaking the existing experience:
+
+```
+1. Add locked-chapters-wrap div (wrap ch07–ch17 in HTML)
+2. Add CSS (FLUX skin, wall styles, modal styles)
+3. Add #frequency-wall HTML (after ch06)
+4. Add #flux-modal HTML (before </body>)
+5. Add FLUX_CONFIG + all JS functions (before closing </script>)
+6. Add FRAGMENT_POOL flux_unlock entries
+7. Patch window.onload to call checkStoredAccess() first
+8. Test in DEBUG_MODE
+9. Configure production values
+10. Set DEBUG_MODE = false
+```
+
+---
+
+## 📁 FILES AFFECTED
+
+| File | Change |
+|---|---|
+| `KeepingTime_VolumeOne.html` | All changes — single file implementation |
+| `PUBLICATION_STRATEGY.md` | Note Orange Money as primary monetization channel |
+
+No new files required. No external dependencies except Formspree (free).
+
+---
+
+*"The system noticed. It always notices."*
+*— But this time, the reader chose to let it.*

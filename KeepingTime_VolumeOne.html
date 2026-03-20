@@ -809,9 +809,362 @@
     #hud.compliance-mode #hud-tension {
       background: #c8a84b;
     }
+
+    /* ── FLUX PAYWALL & BLACK MARKET UI ───────────────────────────────────────── */
+    
+    #frequency-wall {
+      margin: 4rem 0;
+      padding: 2rem;
+      background: #0D0010;
+      border: 1px solid var(--ui-border);
+      position: relative;
+      overflow: hidden;
+      font-family: var(--font-mono);
+    }
+
+    .freq-wall-corder {
+      opacity: 0.8;
+      border-left: 2px solid #c8a84b;
+      padding-left: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .freq-wall-badge {
+      background: #c8a84b;
+      color: #000;
+      padding: 2px 8px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .freq-wall-body {
+      color: #c8a84b;
+      font-size: 0.85rem;
+      line-height: 1.8;
+      margin: 1.5rem 0;
+    }
+
+    .freq-wall-description {
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+
+    .freq-wall-flux {
+      position: relative;
+      border: 1px solid #ff00ff;
+      padding: 2rem;
+      background: rgba(255, 0, 255, 0.03);
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
+      animation: fluxGlitchBorder 5s infinite;
+    }
+
+    .flux-crack-line {
+      position: absolute;
+      top: -1px; left: 10%; width: 20%; height: 2px;
+      background: #ff00ff;
+      box-shadow: 0 0 10px #ff00ff;
+    }
+
+    .flux-contact-text {
+      color: #00ffcc;
+      font-size: 0.9rem;
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 5px rgba(0, 255, 204, 0.5);
+    }
+
+    .flux-highlight {
+      color: #ff00ff;
+      font-weight: 700;
+      text-shadow: 0 0 8px rgba(255, 0, 255, 0.6);
+    }
+
+    .flux-request-btn {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      background: #ff00ff;
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+      position: relative;
+      z-index: 9999;
+      pointer-events: auto !important;
+    }
+
+    .flux-request-btn:hover {
+      background: #00ffcc;
+      color: #000;
+      box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+      transform: scale(1.02);
+    }
+
+    .flux-warning {
+      color: #ff3366;
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 1rem;
+      opacity: 0.8;
+    }
+
+    /* FLUX MODAL */
+    #flux-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(13, 0, 16, 0.95);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      backdrop-filter: blur(8px);
+      cursor: pointer; /* Indicates backdrop is clickable to close */
+    }
+
+    #flux-modal.active {
+      display: flex;
+    }
+
+    .flux-modal-panel {
+      width: 100%;
+      max-width: 500px;
+      max-height: 90vh; /* Mobile Friendly */
+      overflow-y: auto; /* Scrollable */
+      background: #0D0010;
+      border: 2px solid #ff00ff;
+      padding: 0;
+      position: relative;
+      box-shadow: 0 0 50px rgba(255, 0, 255, 0.2);
+      scrollbar-width: thin;
+      scrollbar-color: #ff00ff #0D0010;
+      cursor: default; /* Reset cursor inside the panel */
+    }
+
+    .flux-modal-panel::-webkit-scrollbar { width: 6px; }
+    .flux-modal-panel::-webkit-scrollbar-thumb { background: #ff00ff; border-radius: 3px; }
+
+    .flux-modal-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 2px, 3px 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .flux-modal-header {
+      background: #ff00ff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flux-modal-body {
+      padding: 2rem;
+      font-family: var(--font-mono);
+    }
+
+    .flux-step {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(255, 0, 255, 0.2);
+    }
+
+    .flux-step:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    .flux-step-title {
+      color: #00ffcc;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .flux-info-box {
+      background: rgba(0, 255, 204, 0.05);
+      border-left: 2px solid #00ffcc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+      color: var(--text);
+    }
+
+    .flux-input-wrap {
+      display: flex;
+      gap: 10px;
+    }
+
+    .flux-input {
+      flex: 1;
+      background: #1a0020;
+      border: 1px solid #ff00ff;
+      color: #00ffcc;
+      padding: 0.6rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .flux-input:focus {
+      box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+    }
+
+    .flux-submit-btn {
+      background: #ff00ff;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+
+    .flux-status-line {
+      font-size: 0.7rem;
+      color: #00ffcc;
+      margin-top: 1.5rem;
+      min-height: 1em;
+    }
+
+    .flux-close-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      padding: 0;
+      min-height: auto;
+      min-width: auto;
+      font-size: 0.7rem;
+      opacity: 0.8;
+    }
+
+    .flux-close-btn:hover {
+      opacity: 1;
+      color: #00ffcc;
+    }
+
+    @keyframes fluxGlitchBorder {
+      0%, 90%, 100% { border-color: #ff00ff; box-shadow: 0 0 20px rgba(255, 0, 255, 0.1); }
+      92% { border-color: #00ffcc; box-shadow: 0 0 30px rgba(0, 255, 204, 0.4); transform: translateX(-2px); }
+      94% { border-color: #ff00ff; transform: translateX(2px); }
+      96% { border-color: #00ffcc; transform: scaleY(1.02); }
+    }
+
+    .flux-terminal-text {
+      color: #00ffcc;
+      animation: fluxFlicker 0.1s infinite;
+    }
+
+    @keyframes fluxFlicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.95; }
+    }
+
+    /* Screen shake for verification failure */
+    .flux-shake {
+      animation: fluxShake 0.4s ease-in-out;
+    }
+
+    @keyframes fluxShake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-50%) translateX(-10px); }
+      40%, 80% { transform: translateX(-50%) translateX(10px); }
+    }
+
+    #flux-modal.flux-shake .flux-modal-panel {
+      border-color: var(--danger);
+      box-shadow: 0 0 40px rgba(255, 51, 102, 0.4);
+    }
   </style>
 </head>
 <body>
+<!-- SPEC 02: Silence lock overlay -->
+<div id="silence-lock">
+  <div id="silence-lock-text">
+    &gt; SIGNAL_LOSS<br>
+    &gt; ATTEMPTING_RECOVERY...<br>
+    <span style="color: var(--text-dim);">[ SUBJECT IS UNRESPONSIVE ]</span>
+  </div>
+  <div id="silence-lock-bar"></div>
+</div>
+
+<!-- FLUX // ARCHIVE ACCESS TERMINAL MODAL -->
+<div id="flux-modal" onclick="closeFluxModal()">
+  <div class="flux-modal-panel" onclick="event.stopPropagation()">
+    <div class="flux-modal-header">
+      <span>ARCHIVE ACCESS: FULL STORY UNLOCK</span>
+      <button class="flux-close-btn" onclick="closeFluxModal()">[CLOSE]</button>
+    </div>
+    <div class="flux-modal-body">
+      <div class="flux-terminal-text" style="font-size: 0.8rem; margin-bottom: 2rem; color: #fff; line-height: 1.5;">
+        You've reached the threshold. Support the author to unlock the <strong>Upper Register</strong> (Chapters 7–17) and experience the complete journey of <em>Keeping Time</em>.
+      </div>
+
+      <div style="background: rgba(255, 0, 255, 0.05); border: 1px solid rgba(255, 0, 255, 0.2); padding: 1rem; margin-bottom: 2rem; font-size: 0.75rem;">
+        <span style="color: #ff00ff; font-weight: 700;">HOW TO UNLOCK:</span>
+        <ol style="margin: 0.5rem 0 0 1.2rem; padding: 0; color: #00ffcc;">
+          <li>Transmit 25 Credits (Pula) via Orange Money.</li>
+          <li>Broadcast your phone number below to notify the author.</li>
+          <li>Enter the Sync Key you receive via SMS to unlock.</li>
+        </ol>
+      </div>
+
+      <!-- STEP 1: PAYMENT -->
+      <div class="flux-step">
+        <span class="flux-step-title">STEP 1: SEND PAYMENT</span>
+        <div class="flux-info-box">
+          ORANGE MONEY: <span id="flux-orange-num" class="flux-highlight">+267 72 977 535</span><br>
+          AMOUNT: <span id="flux-price">25</span> PULA<br>
+          REFERENCE: <span class="flux-highlight">KEEPING TIME</span>
+        </div>
+      </div>
+
+      <!-- STEP 2: PHONE SUBMISSION -->
+      <div class="flux-step">
+        <span class="flux-step-title">STEP 2: BROADCAST YOUR NUMBER</span>
+        <div class="flux-input-wrap">
+          <input type="text" id="flux-phone-input" class="flux-input" placeholder="e.g., +267 7X XXX XXX">
+          <button class="flux-submit-btn" onclick="submitSignalRequest()">[ BROADCAST ]</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: SYNC KEY -->
+      <div class="flux-step">
+        <span class="flux-step-title">STEP 3: ENTER SYNC KEY</span>
+        <div class="flux-input-wrap">
+          <input type="text" id="flux-key-input" class="flux-input" placeholder="Enter 6-digit Sync Key">
+          <button class="flux-submit-btn" onclick="verifyKey()">[ UNLOCK ]</button>
+        </div>
+      </div>
+
+      <div id="flux-status" class="flux-status-line">
+        &gt; AWAITING INPUT...
+      </div>
+
+      <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255, 0, 255, 0.2); font-size: 0.65rem; color: var(--text-dim); text-align: center;">
+        Author: <span style="color: #fff;">Kealeboga Eugene Ratshipa "TheDonCipher"</span><br>
+        Questions? Contact the author via the Orange Money number above.
+      </div>
+    </div>
+  </div>
+</div>
   <!-- SPEC 04: Waveform Progress Bar -->
   <div id="progress-container">
     <svg id="progress-wave" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" width="100%" height="20" preserveAspectRatio="none" style="position:fixed;top:0;left:0;z-index:9999;pointer-events:none;">
@@ -1725,8 +2078,43 @@ He said the next closest thing.</p>
 <p data-vol="0.25" data-coh="0.8">Consciousness went offline. Restoration cycle in progress.</p>
 <hr>
 <p data-vol="0.25" data-coh="0.8"><strong>> TRACK: 06_COMPLETE</strong><br><strong>> <span class="save-indicator"></span></strong></p>
+  <div id="frequency-wall" class="paywall-beat">
+    <div class="freq-wall-corder">
+      <!-- C-ORDER SUPPRESSION LAYER -->
+      <div class="freq-wall-header">
+        <span class="freq-wall-badge">C-ORDER DIRECTIVE 7</span>
+      </div>
+      <div class="freq-wall-body">
+        <p>&gt; TRANSMISSION INTERRUPTED</p>
+        <p>&gt; FREQUENCY CLASS: RESTRICTED</p>
+        <p>&gt; CONTENT DAMPED: PHASES 2 &mdash; 5</p>
+        <p>&gt; REASON: DISSONANT MATERIAL // UNAUTHORIZED HARMONICS</p>
+      </div>
+      <div class="freq-wall-description">
+        This signal has been suppressed by the Neural-Acoustic Interface.<br>
+        Standard NAI clearance does not permit access to the Upper Register.
+      </div>
+    </div>
+
+    <!-- FLUX/PIRATE CRACK — breaking through the C-Order block -->
+    <div class="freq-wall-flux">
+      <div class="flux-crack-line"></div>
+      <p class="flux-contact-text">
+        &mdash; To acquire a Flux Bypass Token, contact an Archive Keeper &mdash;<br>
+        &mdash; Resonance Clearance Fee: <span class="flux-highlight">25 Pulse Credits</span> &mdash;
+      </p>
+      <button class="flux-request-btn" onclick="showFluxModal()">
+        [ TRANSMIT CLEARANCE REQUEST ]
+      </button>
+      <p class="flux-warning">&#9888; Accessing restricted frequencies may trigger surveillance escalation.</p>
+    </div>
+  </div>
 </div>
-</div>
+
+<!-- LOCKED CHAPTERS WRAPPER — ch07 through ch17.
+     Hidden by default. Revealed by unlockUpperRegister(). -->
+<div id="locked-chapters-wrap" style="display:none;">
+
 <div data-ch-id="ch07" data-signal="ch07_rival">
 <div class="chapter" id="ch07">
 <h3>Chapter 7: The Rival</h3>
@@ -2911,9 +3299,21 @@ He thought: <em>Good.</em></p>
 <p data-vol="0.25" data-coh="0.8"><strong>END CHAPTER 17</strong><br><strong>END OF VOLUME ONE</strong><br><strong>END OF RECORD</strong></p>
 </div>
 </div>
+
+</div><!-- /locked-chapters-wrap -->
+
   </div>
 
 <script>
+const FLUX_CONFIG = {
+  ORANGE_NUMBER: "+267 72 977 535", // USER: Replace with your real Orange Money number
+  PRICE_CREDITS: "25",
+  FORMSPREE_ID: "mgonqapp",     // USER: Replace with your Formspree ID
+  UNLOCK_HASH: "7e09bebcfbe2dae10ef40a1cb9b496a06eca45bf91f289f228d7210f09763ff8", // SHA-256 for your secret Sync Key
+  DEBUG_MODE: false,           // Set to false for production
+  DEBUG_KEY: "SYNC-110"
+};
+
 const CHAPTER_CONFIG = {
   ch01: { type: 'harmonic-series', baseFreq: 261.63, gain: 0.028, lfoDepth: 0.003, lfoMax: 0.30, filterFloor: 500, waveMode: 'sine' },
   ch02: { type: 'sine',            baseFreq: 440,    gain: 0.022, lfoDepth: 0.001, lfoMax: 0.05, filterFloor: 750, waveMode: 'sine' },
@@ -3142,13 +3542,29 @@ function compileNarrative() {
     const chapterId = chDiv.dataset.chId || normalizeChapterId(chDiv.dataset.signal);
     const config = CHAPTER_CONFIG[chapterId] || CHAPTER_CONFIG['ch01'];
     const signal = chDiv.dataset.signal || 'ch01_zap';
-    chDiv.querySelectorAll('h3, h4, p, blockquote').forEach(el => {
+    chDiv.querySelectorAll('h3, h4, p, blockquote, .paywall-beat').forEach(el => {
       const vol = parseFloat(el.getAttribute('data-vol') || '0.25');
       const coh = parseFloat(el.getAttribute('data-coh') || '0.80');
       const tag = el.getAttribute('data-tag');
       const fmt = el.getAttribute('data-fmt');
       const content = readableBeatText(el);
-      if (el.tagName === 'H3') {
+
+      if (el.classList.contains('paywall-beat')) {
+        // SKIP if already unlocked
+        if (localStorage.getItem('kt_upper_register') === 'unlocked') return;
+
+        // SPECIAL BEAT: FLUX PAYWALL
+        NARRATIVE_DATA.push({ 
+          type: 'paywall', 
+          vol: 0.85, 
+          coh: 0.99, 
+          tag: 'paywall', 
+          signal: signal, 
+          chapterId: chapterId, 
+          config: CHAPTER_CONFIG[chapterId] || CHAPTER_CONFIG['ch01'],
+          html: el.innerHTML 
+        });
+      } else if (el.tagName === 'H3') {
         const p = el.innerText.split(':');
         const shortTitle = (p[1] || p[0]).trim().toUpperCase();
         NARRATIVE_DATA.push({ type: 'chapter', vol, coh, signal, chapterId, config, title: shortTitle, content, sentences: [{ text: p[0].trim().toUpperCase(), format: 'label' }, { text: shortTitle, format: 'title' }] });
@@ -3427,6 +3843,11 @@ class ScrollEngine {
     // ── Keyboard Navigation ──────────────────────────────────
     window.addEventListener('keydown', (e) => {
       const lock = document.getElementById('silence-lock');
+      const modal = document.getElementById('flux-modal');
+      
+      // If modal is active, let native keyboard (arrows, etc) work for modal scrolling
+      if (modal && modal.classList.contains('active')) return; 
+      
       if ((lock && lock.classList.contains('active')) || this._keyLocked) return;
 
       const idx = this._getActiveBeat(window.scrollY);
@@ -3471,6 +3892,9 @@ class ScrollEngine {
     // reading rhythm as keyboard and swipe — the Score transmits in packets,
     // not streams.
     window.addEventListener('wheel', (e) => {
+      // If modal is active, let native scroll work
+      if (document.getElementById('flux-modal')?.classList.contains('active')) return;
+
       e.preventDefault(); // Stop native scroll entirely
 
       // Accumulate signed delta
@@ -3502,12 +3926,11 @@ class ScrollEngine {
   }
   _calculateHeights() {
     let px = 0;
-    this.beatMap = this.data.map(beat => {
-      // COMMENT: data-weight multiplier for immersive pacing.
-      // 1.0 = standard (default). 2.5–3.0 = epiphany beats — reader must scroll further.
-      // 0.6 = system code blocks and zone headers — fast pass-through.
-      // Beat weight: read from the beat's first sentence element in #novel-data.
-      // Falls back gracefully to 1.0 if not found.
+    const isLocked = localStorage.getItem('kt_upper_register') !== 'unlocked';
+    this.beatMap = [];
+    
+    for (let i = 0; i < this.data.length; i++) {
+      const beat = this.data[i];
       let weight = 1.0;
       try {
         const chDiv = document.querySelector(`[data-ch-id="${beat.chapterId}"]`);
@@ -3517,9 +3940,14 @@ class ScrollEngine {
           if (matchEl) weight = parseFloat(matchEl.getAttribute('data-weight')) || 1.0;
         }
       } catch(e) {}
-      const h = (this.baseBeatHeight * weight) + Math.min(beat.sentences[0].text.length * 2, 500);
-      const start = px; px += h; return { start, end: px };
-    });
+      
+      const h = (this.baseBeatHeight * weight) + Math.min((beat.sentences?.[0]?.text?.length || 0) * 2, 500);
+      const start = px; px += h;
+      this.beatMap.push({ start, end: px });
+
+      // Truncate scroll machine if we hit the locked paywall
+      if (isLocked && beat.type === 'paywall') break;
+    }
     this.totalHeight = px;
   }
   _restoreProgress() {
@@ -3637,6 +4065,17 @@ class ScrollEngine {
     
     const idx = this._getActiveBeat(y);
     const nextBeat = this.data[idx];
+    
+    // SCROLL LOCK: Prevent progress into Ch07 if locked
+    if (nextBeat?.type === 'paywall' && localStorage.getItem('kt_upper_register') !== 'unlocked') {
+      const map = this.beatMap[idx];
+      const lockThreshold = map.start + (map.end - map.start) * 0.6;
+      if (y > lockThreshold) {
+        this.targetY = lockThreshold;
+        this.currentY = lockThreshold;
+        window.scrollTo(0, lockThreshold);
+      }
+    }
     
     // SPEC 04: Regenerate SVG path on chapter/lock/special-wave changes
     const progressSignature = [
@@ -3948,6 +4387,19 @@ class ScrollEngine {
   _getActiveBeat(y) { for (let i = 0; i < this.beatMap.length; i++) if (y >= this.beatMap[i].start && y < this.beatMap[i].end) return i; return this.data.length - 1; }
   _renderBeat(index) {
     const beat = this.data[index]; const container = document.getElementById('beat-container');
+    
+    if (beat.type === 'paywall') {
+      container.innerHTML = `<div id="frequency-wall">${beat.html}</div>`;
+      // Robust binding: find the button we just injected and wire it up
+      const btn = container.querySelector('.flux-request-btn');
+      if (btn) {
+          btn.onclick = () => { console.log("Button clicked via JS listener"); showFluxModal(); };
+      } else {
+          console.error("FLUX ERROR: Button not found in rendered paywall HTML!");
+      }
+      return;
+    }
+
     let html = beat.type === 'chapter' ? '<div class="beat-chapter">' : '';
     beat.sentences.forEach((s, i) => {
       // F1: map 'impact' beat type to format-impact class
@@ -3970,6 +4422,7 @@ class ScrollEngine {
   //        keeping the reader always inside the visible range.
   // ──────────────────────────────────────────────────────────────────────────
   _updateSentences(y, beat) {
+      if (beat.type === 'paywall') return; 
       const map = this.beatMap[this.currentBeatIndex];
       const beatProg = (y - map.start) / (map.end - map.start);
       beat.sentences.forEach((s, i) => {
@@ -4261,6 +4714,7 @@ const FRAGMENT_POOL = {
   crash:      ['UNRECOVERABLE', 'REBOOT: FAILED', '------------', 'NULL'],
   default:    ['SIGNAL DRIFT', 'HARMONIC VARIANCE', 'MONITORING...', 'FREQ CHECK'],
   remi:       ['WRONG NOTE DETECTED', 'SIGNAL IS HUNGRY', 'FIELD LOG: VOL.3', 'ANALOG CONFIRMED', 'NOT SENSOR ERROR'],
+  flux_unlock: ['SYNC KEY: ACCEPTED', 'SNS_ALIGNMENT: GOLD', 'ARCHIVE_ACCESS: GRANTED', 'BYPASS: SUCCESSFUL']
 };
 
 // SPEC 11: Palimpsest pool — stores up to 40 ghost traces
@@ -4764,22 +5218,152 @@ window.onload = async () => {
       document.head.appendChild(st);
     }
   }
+  checkStoredAccess();
   rewriteNarrativeMetadata();
   compileNarrative();
   await runHUDBootSequence();
   window.engine = new ScrollEngine(NARRATIVE_DATA);
   window.engine.init();
 };
+/* ── FLUX PAYWALL LOGIC ────────────────────────────────────────────────── */
+
+function checkStoredAccess() {
+  if (localStorage.getItem('kt_upper_register') === 'unlocked') {
+    const wrap = document.getElementById('locked-chapters-wrap');
+    const wall = document.getElementById('frequency-wall');
+    if (wrap) wrap.style.display = 'block';
+    if (wall) wall.style.display = 'none';
+  }
+}
+
+function showFluxModal() {
+  console.log("showFluxModal called");
+  const modal = document.getElementById('flux-modal');
+  if (!modal) { console.error("FLUX ERROR: Modal not found!"); return; }
+  
+  modal.classList.add('active');
+  document.getElementById('flux-orange-num').textContent = FLUX_CONFIG.ORANGE_NUMBER;
+  document.getElementById('flux-price').textContent = FLUX_CONFIG.PRICE_CREDITS;
+
+  // Persistence Check: If they've already sent their number, show it.
+  if (localStorage.getItem('kt_v1_signal_sent') === 'true') {
+    const status = document.getElementById('flux-status');
+    if (status) status.innerHTML = '<span style="color:#00ffcc">&gt; SIGNAL ALREADY BROADCASTED. AWAITING YOUR SMS KEY.</span>';
+  }
+  
+  // SNS Integration: Surveillance spike on archive breach attempt
+  if (window.narrativeState) {
+    window.narrativeState.coherence = 0.99;
+    window.narrativeState.syncHud();
+  }
+}
+
+function closeFluxModal() {
+  document.getElementById('flux-modal').classList.remove('active');
+}
+
+async function submitSignalRequest() {
+  const phone = document.getElementById('flux-phone-input').value;
+  const status = document.getElementById('flux-status');
+  
+  if (!phone || phone.length < 5) {
+    status.innerHTML = '<span style="color:var(--danger)">&gt; ERROR: INVALID_FREQUENCY</span>';
+    return;
+  }
+
+  status.innerHTML = '&gt; BROADCASTING_SIGNAL...';
+  
+  try {
+    const response = await fetch(`https://formspree.io/f/${FLUX_CONFIG.FORMSPREE_ID}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        subject: "KEEPING TIME: Sync Key Request",
+        phone: phone,
+        timestamp: new Date().toISOString()
+      })
+    });
+
+    if (response.ok) {
+      localStorage.setItem('kt_v1_signal_sent', 'true');
+      status.innerHTML = '<span style="color:#00ffcc">&gt; SUCCESS: SIGNAL BROADCASTED. Awaiting Sync Key...</span>';
+    } else {
+      status.innerHTML = '<span style="color:var(--danger)">&gt; UPLINK_FAILED. Please try again.</span>';
+    }
+  } catch (e) {
+    status.innerHTML = '<span style="color:var(--danger)">&gt; NO_CARRIER. CHECK_CONNECTION.</span>';
+  }
+}
+
+async function verifyKey() {
+  const key = document.getElementById('flux-key-input').value;
+  const status = document.getElementById('flux-status');
+  const modal = document.getElementById('flux-modal');
+
+  status.innerHTML = '&gt; VALIDATING_SYNC_KEY...';
+
+  // Debug Check
+  if (FLUX_CONFIG.DEBUG_MODE && key === FLUX_CONFIG.DEBUG_KEY) {
+    unlockUpperRegister();
+    return;
+  }
+
+  // Production Check (SHA-256)
+  const hash = await sha256(key);
+  if (hash === FLUX_CONFIG.UNLOCK_HASH) {
+    unlockUpperRegister();
+  } else {
+    status.innerHTML = '<span style="color:var(--danger)">&gt; INVALID_KEY: RESONANCE_MISMATCH</span>';
+    modal.classList.add('flux-shake');
+    setTimeout(() => modal.classList.remove('flux-shake'), 400);
+    
+    // SNS Integration: Rejection pulse
+    if (window.narrativeState) {
+      window.narrativeState.coherence = Math.max(0.1, window.narrativeState.coherence - 0.15);
+      window.narrativeState.syncHud();
+    }
+  }
+}
+
+async function sha256(message) {
+  const msgUint8 = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgUint8);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+function unlockUpperRegister() {
+  const status = document.getElementById('flux-status');
+  status.innerHTML = '<span style="color:#00ffcc">&gt; KEY_ACCEPTED. SNS_ALIGNMENT_SUCCESSFUL.</span>';
+  
+  setTimeout(() => {
+    closeFluxModal();
+    
+    localStorage.setItem('kt_upper_register', 'unlocked');
+    
+    // Recalculate heights to unlock the full scroll-machine
+    if (window.engine) {
+      window.engine._calculateHeights();
+      const sm = document.getElementById('scroll-machine');
+      if (sm) sm.style.height = window.engine.totalHeight + 'px';
+      
+      // Flash Alignment Pulse
+      triggerChapterFlash('flux_patch'); 
+      window.engine.spawnFragment('flux_unlock');
+    }
+    
+    // SNS ALIGNMENT EVENT
+    if (window.narrativeState) {
+      window.narrativeState.coherence = 0.85;
+      window.narrativeState.accent = "#c8a84b";
+      window.narrativeState.syncHud();
+    }
+  }, 1500);
+}
+
 </script>
 
-<!-- SPEC 02: Silence lock overlay -->
-<div id="silence-lock">
-  <div id="silence-lock-text">
-    &gt; SIGNAL_LOSS<br>
-    &gt; ATTEMPTING_RECOVERY...<br>
-    <span style="color: var(--text-dim);">[ SUBJECT IS UNRESPONSIVE ]</span>
   </div>
-  <div id="silence-lock-bar"></div>
 </div>
 
 
