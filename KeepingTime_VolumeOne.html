@@ -4052,7 +4052,22 @@ class ScrollEngine {
     this._snapInProgress = true;
   }
   jumpToChapter(chId) {
-    const targetIdx = this.data.findIndex(b => b.type === 'chapter' && (b.signal.startsWith(chId + '_') || b.signal === chId || (chId.length === 3 && b.signal.startsWith(chId.replace('ch', 'ch0') + '_'))));
+    const isLocked = localStorage.getItem('kt_upper_register') !== 'unlocked';
+    const num = parseInt(chId.replace('ch', ''));
+    
+    if (isLocked && num >= 7) {
+      showFluxModal();
+      // Reset selector if user picked a locked one
+      const sel = document.getElementById('chapter-selector');
+      if (sel) {
+        const beat = this.data[this.currentBeatIndex];
+        const currentChId = chapterSelectorId(beat.chapterId || normalizeChapterId(beat.signal));
+        sel.value = currentChId;
+      }
+      return;
+    }
+
+    const targetIdx = this.data.findIndex(b => b.type === 'chapter' && (b.signal.startsWith(chId + '_') || b.signal === chId || (chId.length <= 4 && b.signal.startsWith(chId.replace('ch', 'ch0') + '_'))));
     if (targetIdx !== -1) {
       this._snapToBeat(targetIdx);
     }
@@ -5228,12 +5243,27 @@ window.onload = async () => {
 /* ── FLUX PAYWALL LOGIC ────────────────────────────────────────────────── */
 
 function checkStoredAccess() {
-  if (localStorage.getItem('kt_upper_register') === 'unlocked') {
+  const isUnlocked = localStorage.getItem('kt_upper_register') === 'unlocked';
+  if (isUnlocked) {
     const wrap = document.getElementById('locked-chapters-wrap');
     const wall = document.getElementById('frequency-wall');
     if (wrap) wrap.style.display = 'block';
     if (wall) wall.style.display = 'none';
   }
+  updateChapterSelector(isUnlocked);
+}
+
+function updateChapterSelector(isUnlocked) {
+  const sel = document.getElementById('chapter-selector');
+  if (!sel) return;
+  Array.from(sel.options).forEach(opt => {
+    const num = parseInt(opt.value.replace('ch', ''));
+    if (num >= 7) {
+      const baseText = opt.textContent.replace('[LOCKED] ', '');
+      opt.textContent = isUnlocked ? baseText : `[LOCKED] ${baseText}`;
+      opt.style.color = isUnlocked ? '' : 'var(--danger)';
+    }
+  });
 }
 
 function showFluxModal() {
@@ -5358,6 +5388,9 @@ function unlockUpperRegister() {
       window.narrativeState.accent = "#c8a84b";
       window.narrativeState.syncHud();
     }
+
+    // Update UI/Selector
+    checkStoredAccess();
   }, 1500);
 }
 
